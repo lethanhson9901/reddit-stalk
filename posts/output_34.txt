@@ -1,0 +1,40 @@
+**"Tự Host" Có Gì Vui? Khám Phá Những Ứng Dụng Hay Ho Nhất Năm 2024!**
+
+"Tự host" (self-hosted) - nghe có vẻ "khô khan" và đậm chất kỹ thuật, nhưng thực ra lại là một thế giới đầy thú vị đấy! Hiểu nôm na, đó là việc bạn tự cài đặt và quản lý các ứng dụng trên máy chủ của riêng mình, thay vì phụ thuộc vào các dịch vụ của bên thứ ba. Bạn có toàn quyền kiểm soát dữ liệu, tùy chỉnh theo ý thích và tha hồ vọc vạch. Nghe "ngầu" chưa?
+
+Cuối năm 2024 sắp đến, cũng là lúc cộng đồng "tự host" sôi sục với hàng loạt ứng dụng mới ra mắt. Tác giả bài viết trên Reddit đã cất công tổng hợp lại những "ứng cử viên" sáng giá nhất, dựa trên các tiêu chí như tính năng, mức độ phổ biến và sự phát triển. Đương nhiên, danh sách này cũng mang chút "thiên vị" cá nhân, nhưng đừng lo, nó vẫn là một nguồn tham khảo tuyệt vời cho những ai muốn "đổi gió" cho hệ thống của mình.
+
+**Điểm danh một số "gương mặt" tiêu biểu:**
+
+*   **Hoarder:** "Vua" lưu trữ bookmark với khả năng tự động gắn thẻ thông minh bằng AI. Bạn nào hay quên, hay bị "ngập lụt" trong đống link cần lưu thì chắc chắn sẽ thích mê!
+*   **Pinchflat:** Tải video YouTube "thần tốc", tha hồ xem offline mà không lo giật lag.
+*   **Glance:** Bảng điều khiển (dashboard) "xịn sò", giúp bạn quản lý mọi thứ trên server một cách trực quan.
+*   **Docmost:** Nền tảng cộng tác, làm việc nhóm "cây nhà lá vườn", không lo bị "soi" dữ liệu.
+*   **Postiz:** Lên lịch đăng bài mạng xã hội, "cứu cánh" cho những ai bận rộn.
+*   **Beszel:** Giám sát hiệu suất máy chủ "nhẹ tựa lông hồng", cài đặt và sử dụng cực dễ.
+*   **ByteStash:** Quản lý code snippet, "trợ thủ đắc lực" cho các lập trình viên.
+*   **Beaver Habit Tracker:** Theo dõi thói quen, giúp bạn "kỷ luật" bản thân hơn.
+*   **Streamyfin:** Xem phim trên Jellyfin "mượt mà", hỗ trợ cả Chromecast.
+*   **Pocket ID:** Quản lý danh tính (IDP) "cây nhà lá vườn", bảo mật cao với Passkeys.
+*   **PdfDing:** Đọc và chỉnh sửa PDF "ngon lành", đồng bộ trên mọi thiết bị.
+*   **WhoDB:** Cơ sở dữ liệu "tự chế", cho phép truy vấn SQL ngay trong ứng dụng.
+*   **Dawarich:** Theo dõi vị trí, "bảo vệ" dữ liệu cá nhân khỏi các "ông lớn".
+*   **Slink:** Rút gọn link "siêu tốc", tích hợp API tiện lợi.
+*   **GoDoxy:** Reverse proxy "thần kỳ", tự động tạo cấu hình cho các container Docker.
+
+**Một số bình luận thú vị từ cộng đồng:**
+
+*   Nhiều người dùng khen ngợi Hoarder, đặc biệt là tính năng AI tagging. Một số còn chia sẻ kinh nghiệm chuyển từ Linkding sang Hoarder và cảm thấy hài lòng hơn.
+*   Beszel và Streamyfin cũng nhận được nhiều lời khen vì dễ sử dụng và hữu ích.
+*   Pocket ID được đánh giá cao nhờ tính bảo mật và đơn giản, là lựa chọn thay thế tiềm năng cho Authelia.
+*   GoDoxy (trước đây là go-proxy) gây ấn tượng mạnh với khả năng tự động tạo reverse proxy cho Docker.
+*   Dawarich được quan tâm nhờ khả năng thay thế Google Timelines, nhưng cũng có ý kiến lo ngại về vấn đề bảo mật.
+*   PdfDing được so sánh với Stirling PDF, và được đánh giá là phù hợp hơn cho việc đọc và tổ chức PDF.
+
+**Lời kết:**
+
+Danh sách trên chỉ là "phần nổi của tảng băng chìm". Thế giới "tự host" còn vô vàn điều thú vị đang chờ bạn khám phá. Hãy thử "dấn thân" vào "cuộc chơi" này, bạn sẽ không chỉ nâng cao kỹ năng IT, mà còn có cơ hội trải nghiệm những ứng dụng "độc lạ" và "chất" hơn rất nhiều so với những gì bạn đang dùng. Đừng ngại thử nghiệm, vọc vạch, và chia sẻ kinh nghiệm với cộng đồng. Biết đâu, bạn sẽ tìm thấy "chân ái" của mình trong số những ứng dụng tuyệt vời này!
+
+
+---
+Source: https://reddit.com/r/selfhosted/comments/1hpmmyp/my_favorite_selfhosted_apps_launched_in_2024/

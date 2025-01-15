@@ -1,0 +1,52 @@
+## Rò Rỉ "Bí Kíp" Khủng Từ Vercel: System Prompt Dài Tới 14000 Tokens!
+
+Dân tình trong giới lập trình AI đang xôn xao với một "quả bom" vừa được thả trên Reddit: một thành viên có tên "2-fly-4-ai" đã chia sẻ cái gọi là system prompt (tạm dịch: lời dẫn hệ thống) bị rò rỉ từ v0, công cụ tạo component AI của Vercel. Điều đáng nói là system prompt này dài tới... 14000 tokens, một con số khổng lồ chưa từng thấy! Nếu bạn chưa biết, v0 là công cụ giúp các nhà phát triển tạo ra các thành phần giao diện người dùng (UI) một cách nhanh chóng bằng cách sử dụng trí tuệ nhân tạo.
+
+Nghe đến đây chắc hẳn nhiều bạn sẽ thấy "ngợp", đặc biệt là những ai đã từng thử dùng AI để code. Thường thì prompt càng dài, AI càng dễ "lạc trôi", không hiểu ý mình. Vậy mà ở đây, v0 lại dùng một prompt dài dằng dặc, liệu có hiệu quả thật không? Đó chính là điều khiến cộng đồng mạng vừa tò mò, vừa hoài nghi.
+
+Theo như "2-fly-4-ai" chia sẻ, system prompt này được cập nhật để tương thích với những tính năng mới nhất của v0, bao gồm:
+
+*   **Hỗ trợ ứng dụng Full-Stack:** Giờ đây v0 có thể tạo và chạy các ứng dụng Next.js và React hoàn chỉnh, bao gồm nhiều file, deploy lên Vercel, sử dụng biến môi trường, v.v.
+*   **Kết nối an toàn:** Hỗ trợ kết nối đến cơ sở dữ liệu, API và các dịch vụ bên ngoài.
+*   **Cải tiến việc tạo UI:** Cho phép chỉnh sửa từng phần cụ thể của UI.
+*   **Hoàn thiện code tốt hơn:** v0 đảm bảo không bỏ sót code trong quá trình tạo.
+*   **Quản lý phiên bản:** Dễ dàng chuyển đổi giữa các phiên bản cũ của component.
+*   **Xem đầu ra Console:** Một tab Console mới cho phép xem logs và outputs trực tiếp trong v0.
+*   **Cải tiến trang 404:** Hiển thị các routes có thể khi gặp lỗi 404.
+*   **Thông báo logs chưa đọc:** Thông báo khi có logs hoặc lỗi chưa đọc trong Console.
+
+"2-fly-4-ai" cũng thừa nhận rằng mình không chắc chắn 100% về thứ tự chính xác của prompt, cũng như liệu đây có phải là toàn bộ prompt hay không. Tuy nhiên, tác giả đã xác minh phần lớn thông tin bằng nhiều phương pháp khác nhau.
+
+**Vậy system prompt dài như vậy có ý nghĩa gì?**
+
+*   **Độ phức tạp cực cao:** Một prompt dài như vậy cho thấy v0 có thể xử lý những yêu cầu rất phức tạp, bao gồm nhiều bước, nhiều điều kiện, và nhiều loại tác vụ khác nhau.
+*   **Khả năng tùy biến cao:** Prompt này có thể chứa rất nhiều hướng dẫn chi tiết, cho phép v0 tạo ra các component theo đúng ý muốn của người dùng.
+*   **Bí mật công nghệ của Vercel?** Nhiều người cho rằng Vercel có thể đang sử dụng những kỹ thuật tiên tiến mà chưa được công bố rộng rãi để xử lý prompt dài như vậy. Có thể họ đang dùng các phương pháp như RAG (Retrieval-Augmented Generation) để chia nhỏ prompt và truy xuất thông tin khi cần thiết.
+
+**Một số điểm đáng chú ý trong prompt:**
+
+*   **Sử dụng XML:** Prompt có sử dụng các thẻ XML, điều này có thể gợi ý rằng v0 đang sử dụng Claude, một mô hình ngôn ngữ của Anthropic.
+*   **Cấu trúc rõ ràng:** Dù dài, prompt vẫn được tổ chức khá rõ ràng với các phần riêng biệt cho các chức năng khác nhau.
+*   **Có nhiều "must not":** Prompt này có nhiều câu lệnh cấm, ví dụ như "must not apologize", "must not explain the code", v.v. Điều này cho thấy Vercel đang cố gắng kiểm soát chặt chẽ đầu ra của AI.
+
+**Cộng đồng mạng phản ứng ra sao?**
+
+Dĩ nhiên, thông tin này đã gây ra nhiều tranh cãi. Một số người tỏ ra hào hứng và cho rằng đây là một bước tiến lớn trong lĩnh vực AI. Một số khác lại hoài nghi, cho rằng prompt quá dài và sẽ không hiệu quả. Có người còn cho rằng đây chỉ là "hàng giả" do AI tự sinh ra.
+
+**Một số bình luận đáng chú ý:**
+
+*   "Ngay cả những mô hình lớn nhất cũng không thể làm theo tất cả các hướng dẫn này cùng một lúc - vì vậy có điều gì đó không ổn."
+*   "Đây là Vercel mà chúng ta đang nói đến. Họ có nguồn lực và con người để làm những việc đi đầu trong công nghệ này."
+*   "Tôi đang nói từ kinh nghiệm với những lời nhắc như vậy và Claude 3.5 / GPT 4 / GPT 4o. Có một ranh giới phức tạp mà sau đó (ít nhất là những) LLM này không thể tiếp tục làm theo hướng dẫn từ ngữ cảnh."
+*   "Tôi cũng đang làm việc cho một công ty AI, tôi cũng bối rối bởi những lời nhắc dài điên rồ này. Họ chắc chắn có một số thứ khác đang diễn ra trong nội bộ."
+*   "Prompt này dài 58kb?! và nó sử dụng \"must not's\""
+*   "Tôi hoài nghi. Làm thế nào mô hình có thể đi đúng hướng với một system prompt dài như thế này? Chúng ta đang nói về 1617 dòng văn bản, mã, hướng dẫn... Tại sao Vercel, trong số tất cả các công ty ngoài kia, lại là công ty đầu tiên sử dụng một system prompt khổng lồ như thế này và thành công?"
+*   "Chi phí?! Tất cả những token này, mỗi lần? Cho cả người dùng miễn phí nữa? Có chuyện gì vậy?"
+
+**Lời kết:**
+
+Dù thật hay giả, system prompt bị rò rỉ này vẫn là một chủ đề thú vị để thảo luận. Nó cho thấy tiềm năng to lớn của AI trong việc tạo ra các ứng dụng phần mềm, nhưng cũng đặt ra nhiều câu hỏi về cách thức hoạt động của các công cụ như v0. Có lẽ chúng ta cần thêm thời gian để kiểm chứng và hiểu rõ hơn về công nghệ đằng sau nó. Dù sao đi nữa, đây chắc chắn là một chủ đề đáng để theo dõi trong thời gian tới! Nếu bạn là một lập trình viên, hãy thử tìm hiểu về v0 và khám phá xem liệu "bí kíp" này có thực sự hữu ích hay không nhé!
+
+
+---
+Source: https://reddit.com/r/LocalLLaMA/comments/1h2bdqy/new_leaked_system_prompts_from_v0_vercels_ai/

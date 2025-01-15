@@ -1,0 +1,39 @@
+## Unsloth "Hạ Gục" Giới Hạn Context Length Của Phi-4, Mở Rộng Lên Tới 128K!
+
+Chắc hẳn những ai đam mê "vọc vạch" với các mô hình ngôn ngữ lớn (LLM) đều từng nghe đến Phi-4 - một "chiến binh" mạnh mẽ nhưng lại bị "trói buộc" bởi giới hạn context length (độ dài ngữ cảnh) khá khiêm tốn. Điều này khiến việc fine-tuning (tinh chỉnh) mô hình trở nên khó khăn, đặc biệt với những tác vụ đòi hỏi khả năng xử lý thông tin dài. Nhưng tin vui đây! Unsloth, một thư viện mã nguồn mở, đã "ra tay" giải cứu, giúp Phi-4 "vượt rào" giới hạn, vươn tới context length lên đến 128K - gấp 12 lần so với mức 11K trên GPU 48GB của Hugging Face + FA2!
+
+Không chỉ dừng lại ở việc "nới rộng" context length, Unsloth còn "vạch trần" và sửa chữa một số lỗi "ngớ ngẩn" trong Phi-4, giúp mô hình đạt điểm số ấn tượng hơn cả bản gốc của Microsoft trên Open LLM Leaderboard. Nghe hấp dẫn phải không? Hãy cùng "mổ xẻ" bí kíp của Unsloth và xem họ đã làm điều đó như thế nào!
+
+Trước hết, hãy nói về việc mở rộng context length. Unsloth đã tận dụng kỹ thuật LoRA (Low-Rank Adaptation) và QLoRA (Quantized LoRA) để fine-tune Phi-4 với context length "khủng" 128K. Cụ thể, với GPU 48GB, bạn có thể đạt tới 150K context, còn với GPU 80GB, con số này lên tới 300K! Điều này mở ra cánh cửa cho việc huấn luyện Phi-4 trên những tập dữ liệu đồ sộ, phức tạp hơn, từ đó nâng cao hiệu suất của mô hình.
+
+Bên cạnh đó, Unsloth đã "bắt bệnh" và "chữa trị" cho Phi-4 bằng cách chỉ ra 4 lỗi chính:
+
+1. **Lỗi Tokenizer:** Phi-4 sử dụng nhầm `<|endoftext|>` làm token kết thúc câu (EOS) thay vì `<|im_end|>`.
+2. **Lỗi Padding Token:** Cần sử dụng một padding token phù hợp, ví dụ: `<|dummy_87|>`.
+3. **Lỗi Chat Template:** Tránh thêm "assistant prompt" khi không cần thiết để tránh gây lỗi khi triển khai mô hình.
+4. **Chi tiết hơn có thể xem ở blog của Unsloth**
+
+Những lỗi này tưởng chừng như "nhỏ nhặt" nhưng lại ảnh hưởng đáng kể đến hiệu suất của Phi-4, đặc biệt là khả năng làm theo hướng dẫn (instruction following). Bằng chứng là sau khi được "chữa trị", Phi-4 đã có những cải thiện rõ rệt trong các tác vụ như:
+
+- **Lựa chọn đáp án (Multiple-choice tasks):** Mô hình đưa ra câu trả lời chính xác hơn.
+- **Tạo hình nghệ thuật ASCII (ASCII art generation):** Kết quả đầu ra "mượt mà" và đúng ý hơn.
+
+**Vậy làm sao để sử dụng Unsloth để "nâng cấp" Phi-4?**
+
+Rất đơn giản! Unsloth đã cung cấp sẵn một Colab notebook chi tiết hướng dẫn từng bước fine-tune Phi-4: [https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Phi_4-Conversational.ipynb](https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Phi_4-Conversational.ipynb)
+
+Bạn chỉ cần chuẩn bị tập dữ liệu, điều chỉnh một số tham số và "bấm nút". Unsloth sẽ lo phần còn lại!
+
+**Một số mẹo nhỏ khi sử dụng Unsloth:**
+
+- **Định dạng dữ liệu:** Nên sử dụng định dạng câu hỏi - đáp án (question-answer pairs) để đạt hiệu quả tốt nhất.
+- **Tài nguyên:** Nếu bạn có GPU 12GB, bạn có thể thử chạy notebook trên máy local, tuy nhiên có thể sẽ không đủ VRAM để fine-tune Phi-4. Khuyến khích sử dụng Colab.
+- **Context Length:** Bạn có thể điều chỉnh `max_seq_length` để thay đổi context length mong muốn.
+
+**Tóm lại,** Unsloth đã mang đến một "làn gió mới" cho cộng đồng AI, đặc biệt là những ai đang "đau đầu" với giới hạn context length của các LLM. Việc "giải phóng" Phi-4 khỏi "xiềng xích" 11K và "chữa lành" những lỗi tiềm ẩn đã mở ra tiềm năng to lớn cho mô hình này.
+
+Nếu bạn đang tìm kiếm một giải pháp để fine-tune Phi-4 với context length "khủng" và hiệu suất ấn tượng, hãy thử ngay Unsloth! Đừng quên chia sẻ kết quả và kinh nghiệm của bạn với cộng đồng nhé! Cùng nhau "khám phá" và "chinh phục" những giới hạn mới của AI!
+
+
+---
+Source: https://reddit.com/r/LocalLLaMA/comments/1hyapzu/phi4_finetuning_now_with_128k_context_length_bug/

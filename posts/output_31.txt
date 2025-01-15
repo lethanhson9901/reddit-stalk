@@ -1,0 +1,49 @@
+## Bắt Đầu Dùng Obsidian: Đừng Ngại, Cứ Ghi Chú Đi Rồi Tính!
+
+Bạn đang muốn dùng Obsidian để ghi chép, quản lý kiến thức, nhưng lại thấy choáng ngợp vì... nhiều thứ quá? Nào là plugin, nào là MOC, YAML, properties... Ôi thôi, nghe thôi đã thấy mệt! Đây chính xác là cảm giác mà một người dùng Reddit đã chia sẻ khi mới bắt đầu làm quen với Obsidian. Bạn không cô đơn đâu, rất nhiều người cũng từng như vậy đấy!
+
+Nhưng đừng lo, một "cao nhân" đã xuất hiện và mách nước: "Cứ bắt đầu ghi chép những gì bạn cần, rồi dần dần mọi thứ sẽ vào guồng". Nghe đơn giản thế thôi, nhưng đó lại là lời khuyên cực kỳ hữu ích. Thay vì cố gắng hiểu hết mọi thứ ngay từ đầu, hãy tập trung vào nhu cầu cơ bản nhất: **ghi chép**.
+
+Tuy nhiên, để giúp bạn đỡ "bơi" hơn, vị "cao nhân" này còn tận tình chia sẻ thêm một số nguồn tài liệu học Obsidian cực kỳ chất lượng. Hãy cùng điểm qua những "bí kíp" này nhé!
+
+**1. Khóa học Obsidian cơ bản từ FromSergio:**
+
+Đây là một playlist YouTube tuyệt vời dành cho người mới bắt đầu. FromSergio hướng dẫn rất chi tiết, từ những khái niệm cơ bản nhất đến cách triển khai Obsidian vào nhiều mục đích khác nhau như ghi chú hàng ngày, tạo thư viện sách, phim...
+
+*   **Ưu điểm:** Dễ hiểu, thực tế, bao quát nhiều khía cạnh.
+*   **Nhược điểm:** Hơi cũ (một số thứ như YAML đã thay đổi), nhưng vẫn rất đáng xem.
+*   **Link:** [https://youtube.com/playlist?list=PL7oLu8NfQd84\_gsyqBVSVgUmCCgcvSZMx&si=6MYDEEWorlp6KtDp](https://youtube.com/playlist?list=PL7oLu8NfQd84_gsyqBVSVgUmCCgcvSZMx&si=6MYDEEWorlp6KtDp)
+
+**2. Hướng dẫn nâng cao từ Construct By Dee:**
+
+Khi đã quen với Obsidian, bạn có thể "nâng cấp" lên với những video của Construct By Dee. Kênh này hướng dẫn chi tiết cách thiết lập Obsidian nâng cao, đặc biệt là về ghi chú hàng ngày và quản lý công thức nấu ăn.
+
+*   **Ưu điểm:** Chi tiết, chuyên sâu, hữu ích cho những ai muốn tối ưu hóa Obsidian.
+*   **Nhược điểm:** Video dài, phù hợp với người đã có nền tảng.
+*   **Link:**
+    *   Ghi chú hàng ngày: [https://youtu.be/m5SYja0V29w?si=pfGHa3M6Joghc-OP](https://youtu.be/m5SYja0V29w?si=pfGHa3M6Joghc-OP)
+    *   Quản lý công thức nấu ăn: [https://youtu.be/SNWBNIXJMac?si=6kQkqmRUo7OwnSJA](https://youtu.be/SNWBNIXJMac?si=6kQkqmRUo7OwnSJA)
+
+**3. Ứng dụng thực tế từ Prakash Joshi Pax:**
+
+Kênh YouTube của Prakash Joshi Pax (beingpax) tập trung vào các trường hợp sử dụng Obsidian nâng cao như tạo dashboard, thư viện sách, tích hợp AI...
+
+*   **Ưu điểm:** Đa dạng, sáng tạo, khai thác tối đa tiềm năng của Obsidian.
+*   **Nhược điểm:** Có thể hơi "khó nhằn" với người mới.
+*   **Link:** [https://www.youtube.com/@beingpax](https://www.youtube.com/@beingpax)
+
+**4. Hướng dẫn về MOC từ emptyharddrive:**
+
+Cuối cùng, đừng bỏ qua bài viết hướng dẫn về MOC (Map of Content) của emptyharddrive trên Reddit. Bài viết này cực kỳ súc tích, dễ hiểu, và được đánh giá là một trong những hướng dẫn về MOC tốt nhất hiện nay.
+
+*   **Ưu điểm:** Ngắn gọn, dễ hiểu, giải thích rõ ràng về MOC.
+*   **Nhược điểm:** Không có (quá tuyệt vời!).
+*   **Link:** [https://www.reddit.com/r/ObsidianMD/comments/1fd58r9/tired\_of\_cluttered\_notes\_master\_your\_vault\_with/?utm\_source=share&utm\_medium=web3x&utm\_name=web3xcss&utm\_term=1&utm\_content=share\_button](https://www.reddit.com/r/ObsidianMD/comments/1fd58r9/tired_of_cluttered_notes_master_your_vault_with/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+
+**Lời kết:**
+
+Obsidian là một công cụ mạnh mẽ, nhưng đừng để sự phức tạp ban đầu làm bạn nản lòng. Hãy bắt đầu đơn giản, ghi chép những gì bạn cần, và dần dần khám phá thêm các tính năng nâng cao. Với những nguồn tài liệu trên, hy vọng bạn sẽ sớm làm chủ được Obsidian và biến nó thành trợ thủ đắc lực cho mình! Đừng quên, cộng đồng Obsidian luôn sẵn sàng hỗ trợ bạn, vì vậy đừng ngại đặt câu hỏi và chia sẻ kinh nghiệm nhé!
+
+
+---
+Source: https://reddit.com/r/ObsidianMD/comments/1fcbhe9/i_feel_overwhelmed_on_starting_to_use_obsidian_to/lmelw5h/

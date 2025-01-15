@@ -1,0 +1,32 @@
+## Hành Trình Tự Host Một Năm: Từ Tay Mơ Đến Tín Đồ Công Nghệ!
+
+Bạn đã bao giờ nghĩ đến việc tự quản lý dữ liệu, ứng dụng của mình thay vì phụ thuộc hoàn toàn vào các dịch vụ đám mây? Nghe có vẻ phức tạp, nhưng câu chuyện của một người dùng Reddit với nickname (ẩn danh) sẽ khiến bạn phải suy nghĩ lại. Chỉ với một chiếc máy tính cũ mua trên Facebook, anh ấy đã bắt đầu hành trình "self-hosting" (tự lưu trữ) đầy thú vị và gặt hái được nhiều thành quả đáng kinh ngạc.
+
+Ban đầu, mục tiêu của anh ấy chỉ đơn giản là di chuyển kho phim ảnh và các ứng dụng giải trí từ chiếc Mac Mini cũ sang một hệ thống mới. Nhưng rồi, "cơn nghiện" self-hosting đã cuốn anh ấy đi xa hơn thế. Giờ đây, sau một năm, anh ấy đã sở hữu một hệ thống NAS (Network Attached Storage) riêng biệt, một hệ thống tương tự cho công ty, và thậm chí còn chuyển sang sử dụng nzb cho việc tải phim ảnh. Nghe thật "ngầu", phải không?
+
+Vậy, anh ấy đã làm được những gì trong năm đầu tiên đầy thử thách này? Hãy cùng điểm qua một số "chiến tích" nổi bật:
+
+*   **PaperlessNGX:**  Ứng dụng này giúp anh ấy số hóa toàn bộ hóa đơn, giấy tờ quan trọng, sắp xếp chúng gọn gàng và dễ dàng tìm kiếm. Bạn có thể tưởng tượng cuộc sống sẽ ngăn nắp hơn bao nhiêu nếu không còn phải lục tung đống giấy tờ mỗi khi cần?
+*   **Immich:**  Đây là "bảo bối" giúp anh ấy lưu trữ và quản lý kho ảnh khổng lồ của mình. Nhờ Immich, anh ấy không chỉ lưu giữ những khoảnh khắc đáng nhớ mà còn có thêm động lực để chụp ảnh nhiều hơn.
+*   **n8n:**  Công cụ tự động hóa mạnh mẽ, giúp anh ấy "lập trình" cho các tác vụ lặp đi lặp lại, tiết kiệm thời gian và công sức.
+*   **ntfy:**  Hệ thống thông báo tùy chỉnh, giúp anh ấy không bỏ lỡ bất kỳ thông tin quan trọng nào.
+*   **Cloudflare Tunnels:**  "Cánh cổng" an toàn cho phép anh ấy truy cập từ xa vào các dịch vụ của mình thông qua tên miền riêng.
+*   **TrueNAS:**  Giải pháp lưu trữ mạng (NAS) chuyên nghiệp, giúp anh ấy sao lưu dữ liệu từ MacBook một cách an toàn và hiệu quả.
+
+Ngoài ra, anh ấy còn sử dụng nhiều công cụ hữu ích khác như: trình theo dõi thời gian hoạt động của website (uptime monitor), trình kiểm tra website, Stirling PDF (công cụ chỉnh sửa PDF), và thậm chí cả công cụ phân tích SEO!
+
+Dĩ nhiên, hành trình này không phải lúc nào cũng suôn sẻ. Anh ấy cũng gặp phải những lúc "đau đầu" khi mọi thứ không hoạt động như ý muốn. Nhưng chính những thử thách đó lại mang đến niềm vui chinh phục khi tìm ra giải pháp và đưa hệ thống vào hoạt động trơn tru. Bạn biết đấy, cảm giác tự tay giải quyết vấn đề luôn tuyệt vời hơn nhiều so với việc chỉ biết cầu cứu người khác, phải không?
+
+Và hành trình self-hosting của anh ấy vẫn chưa dừng lại. Trong năm tới, anh ấy dự định thử nghiệm thêm các dịch vụ mới như:
+
+*   **Trình quản lý liên kết/bookmark:**  Một số người dùng đã gợi ý anh ấy dùng Hoarder, một giải pháp thay thế tuyệt vời cho Pocket.
+*   **Pi-hole hoặc AdGuard Home:**  Chặn quảng cáo phiền toái, giúp trải nghiệm internet "sạch" hơn.
+*   **Home Assistant:**  Biến ngôi nhà thành "smarthome" (nhà thông minh), điều khiển mọi thiết bị chỉ với vài thao tác đơn giản.
+
+Câu chuyện của người dùng Reddit này là minh chứng cho thấy self-hosting không hề "khó nhằn" như nhiều người vẫn nghĩ. Chỉ cần một chút đam mê, kiên nhẫn và tinh thần học hỏi, bạn hoàn toàn có thể tự xây dựng một "đế chế" công nghệ của riêng mình.
+
+Nếu bạn đang cân nhắc thử sức với self-hosting, hãy mạnh dạn bắt đầu ngay hôm nay! Biết đâu, bạn sẽ khám phá ra một thế giới công nghệ đầy thú vị và tự do hơn bạn tưởng đấy! Hãy nhớ, hành trình vạn dặm bắt đầu từ một bước chân. Chúc bạn thành công!
+
+
+---
+Source: https://reddit.com/r/selfhosted/comments/1hsy033/my_first_year_of_selfhosting/

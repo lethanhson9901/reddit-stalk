@@ -1,0 +1,25 @@
+## Tình Cờ Tạo Ra Công Cụ "Giống RAG Mà Xịn Hơn": Câu Chuyện Về Ragish
+
+Bạn đã bao giờ nghe đến RAG (Retrieval-Augmented Generation) chưa? Hiểu nôm na, đó là kỹ thuật giúp các mô hình ngôn ngữ lớn (LLM) như ChatGPT hay Gemini trả lời câu hỏi dựa trên một kho dữ liệu cụ thể, thay vì chỉ dựa vào kiến thức "học vẹt" của chúng. Nghe thì hay ho đấy, nhưng thực tế, RAG cũng có kha khá vấn đề. Ví dụ như tìm kiếm mơ hồ, kết quả không liên quan, hay chi phí tính toán cao. Ấy vậy mà, một người dùng Reddit đã tình cờ tạo ra một công cụ "giống RAG mà xịn hơn" - Ragish. Nghe cái tên thôi đã thấy thú vị rồi phải không? Cùng khám phá xem Ragish là gì và nó hay ho như thế nào nhé!
+
+Chuyện là thế này, tác giả bài đăng (tạm gọi là Dev) ban đầu cũng "bơi" trong mớ bòng bong của RAG. Dev nhận ra rằng, việc tìm kiếm dựa trên vector embeddings (biểu diễn dữ liệu dưới dạng vector) tuy phổ biến nhưng lại không hiệu quả. Thế là Dev loay hoay thử nghiệm và "vô tình" tạo ra Ragish. Thay vì vector, Ragish sử dụng cơ sở dữ liệu quan hệ (relational database) và truy vấn SQL. Nghe có vẻ "cổ lỗ sĩ" hơn so với vector embeddings thời thượng, nhưng hiệu quả lại bất ngờ.
+
+Vậy Ragish hoạt động như thế nào? Dev đã chia sẻ một cách khá chi tiết về quy trình xây dựng Ragish. Về cơ bản, thay vì chuyển đổi toàn bộ dữ liệu thành vector, Ragish sẽ dùng một LLM để phân tích và trích xuất thông tin quan trọng từ dữ liệu thô, sau đó lưu trữ vào các bảng trong cơ sở dữ liệu. Khi người dùng đặt câu hỏi, LLM sẽ chuyển câu hỏi đó thành câu truy vấn SQL, truy xuất thông tin từ cơ sở dữ liệu và trả về kết quả.
+
+Nghe thì có vẻ đơn giản, nhưng điểm mấu chốt ở đây là sự kết hợp khéo léo giữa sức mạnh của LLM và tính chính xác của SQL. Nhờ vậy, Ragish có thể:
+
+-   **Tìm kiếm chính xác hơn:** Thay vì tìm kiếm mơ hồ dựa trên vector, Ragish truy vấn trực tiếp vào các trường dữ liệu cụ thể, cho kết quả chính xác và liên quan hơn.
+-   **Tiết kiệm chi phí:** Việc lưu trữ và truy vấn dữ liệu trong cơ sở dữ liệu quan hệ thường tốn ít tài nguyên hơn so với vector embeddings. Dev chia sẻ rằng việc xử lý 1000 email trên chiếc laptop cũ 7 năm tuổi chỉ mất 3 phút, trong khi vector hóa 1MB văn bản có thể tốn đến 0.25 đô la và mất 15-30 phút.
+-   **Dễ dàng mở rộng:** Thêm dữ liệu mới vào Ragish đơn giản như việc thêm dữ liệu vào cơ sở dữ liệu.
+
+Tất nhiên, Ragish không phải là "viên đạn bạc" cho mọi vấn đề. Một số người dùng Reddit đã chỉ ra rằng Ragish phụ thuộc nhiều vào khả năng tạo truy vấn SQL chính xác của LLM, vốn là một điểm yếu của các mô hình này. Tuy nhiên, Dev cũng đã đề xuất một số giải pháp, như sử dụng nhiều LLM cho từng bảng dữ liệu hoặc huấn luyện LLM tốt hơn để tạo ra các truy vấn chính xác hơn.
+
+Một người dùng khác còn chia sẻ về cách kết hợp Ragish với RAG truyền thống. Họ sử dụng Named Entity Recognition (NER) để trích xuất các thực thể quan trọng, lưu trữ trong cơ sở dữ liệu quan hệ, và sử dụng vector embeddings cho phần còn lại. Cách tiếp cận "hybrid" này giúp thu hẹp phạm vi tìm kiếm, tăng độ chính xác và giảm thiểu "ảo giác" của LLM.
+
+Câu chuyện về Ragish cho thấy rằng, đôi khi những giải pháp "cổ điển" lại hiệu quả hơn những công nghệ mới nhất. Điều quan trọng là phải hiểu rõ ưu nhược điểm của từng phương pháp và kết hợp chúng một cách khéo léo. Ragish, dù chỉ là một thử nghiệm "tình cờ", đã mở ra một hướng đi mới trong việc xây dựng các hệ thống hỏi đáp thông minh, hiệu quả và tiết kiệm hơn.
+
+Nếu bạn đang "vật lộn" với RAG, hãy thử "nghía" qua Ragish xem sao. Biết đâu, bạn lại tìm thấy "chân ái" của mình trong việc xây dựng các ứng dụng AI đấy! Và đừng quên, đôi khi những ý tưởng hay ho nhất lại đến từ những lần "tình cờ" như thế này.
+
+
+---
+Source: https://reddit.com/r/Rag/comments/1h1e13w/how_i_accidentally_created_a_better_ragadjacent/

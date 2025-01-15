@@ -1,0 +1,49 @@
+## oterm 0.7.1 Ra Mắt: Trải Nghiệm Ollama Ngay Trên Terminal Với Hỗ Trợ Xuất Dữ Liệu Có Cấu Trúc!
+
+Bạn đã bao giờ cảm thấy mệt mỏi với việc phải chuyển qua lại giữa các cửa sổ khi làm việc với Ollama? Bạn muốn một cách thức tương tác với các mô hình ngôn ngữ lớn (LLMs) ngay trên terminal quen thuộc? Nếu câu trả lời là "Có", thì tin vui đây rồi! Phiên bản oterm 0.7.1 đã chính thức ra mắt, mang đến một trải nghiệm Ollama mượt mà và tiện lợi hơn bao giờ hết, đặc biệt là với tính năng hỗ trợ xuất dữ liệu có cấu trúc (Structured Output).
+
+Ngay trong không khí rộn ràng của năm mới, tác giả của oterm đã mang đến một món quà tuyệt vời cho cộng đồng người dùng Ollama. Phiên bản 0.7.1 hứa hẹn sẽ nâng tầm trải nghiệm của bạn với những cải tiến đáng giá. Vậy oterm là gì và nó có gì đặc biệt?
+
+**oterm - "Cánh Tay Phải" Đắc Lực Cho Người Dùng Ollama**
+
+oterm là một ứng dụng client chạy trên terminal (TUI) dành cho Ollama, được thiết kế với tiêu chí gọn nhẹ, đầy đủ tính năng và dễ dàng cài đặt. Điểm đặc biệt của oterm là bạn không cần phải lo lắng về các thư viện phụ thuộc, chỉ cần cài đặt oterm là bạn đã sẵn sàng "chiến" ngay!
+
+**oterm 0.7.1 Có Gì Mới?**
+
+Phiên bản mới nhất này mang đến hàng loạt tính năng hấp dẫn, giúp bạn tương tác với Ollama một cách hiệu quả và linh hoạt hơn:
+
+*   **Lưu trữ lịch sử trò chuyện:** oterm sử dụng sqlite để lưu trữ toàn bộ lịch sử trò chuyện của bạn, giúp bạn dễ dàng theo dõi và tiếp tục công việc dang dở.
+*   **Tùy chỉnh mô hình linh hoạt:** Bạn có thể tùy chỉnh mọi khía cạnh của mô hình ngôn ngữ, từ nhiệt độ (temperature) đến số lượng token tối đa, để đạt được kết quả mong muốn.
+*   **Hỗ trợ "tools":** oterm hỗ trợ các công cụ (tools) mở rộng, cho phép bạn tích hợp thêm các chức năng bổ sung vào quá trình làm việc với Ollama.
+*   **Định dạng đầu ra đa dạng:** Giờ đây, bạn không chỉ có thể yêu cầu đầu ra dạng văn bản thông thường mà còn có thể định dạng đầu ra theo JSON schemas, giúp tích hợp kết quả vào các ứng dụng khác dễ dàng hơn. Đây là một tính năng cực kỳ hữu ích cho các nhà phát triển muốn sử dụng kết quả từ Ollama trong các dự án của mình.
+*   **Cài đặt đơn giản:** Như đã nói ở trên, bạn chỉ cần cài đặt oterm, không cần thêm bất kỳ thư viện phụ thuộc nào khác. Quá trình cài đặt diễn ra nhanh chóng và dễ dàng.
+
+**Tại Sao Nên Sử Dụng oterm?**
+
+*   **Tiện lợi:** Làm việc trực tiếp trên terminal, không cần chuyển đổi giữa các cửa sổ.
+*   **Hiệu quả:** Tận dụng tối đa sức mạnh của Ollama với các tính năng tùy chỉnh và định dạng đầu ra linh hoạt.
+*   **Dễ sử dụng:** Giao diện đơn giản, trực quan, dễ dàng làm quen.
+*   **Gọn nhẹ:** Không chiếm nhiều tài nguyên hệ thống.
+
+**Một Số Ví Dụ Về Tính Năng Xuất Dữ Liệu Có Cấu Trúc:**
+
+Giả sử bạn đang xây dựng một ứng dụng cần thông tin về các bộ phim. Với oterm, bạn có thể yêu cầu Ollama trả về thông tin phim dưới dạng JSON, ví dụ:
+
+```json
+{
+  "title": "The Shawshank Redemption",
+  "year": 1994,
+  "genre": "Drama",
+  "director": "Frank Darabont"
+}
+```
+
+Hoặc bạn cần trích xuất thông tin liên hệ từ một đoạn văn bản, oterm cũng có thể giúp bạn thực hiện điều đó một cách dễ dàng bằng cách định dạng đầu ra theo JSON schema mong muốn.
+
+**Lời Kết**
+
+oterm 0.7.1 là một bước tiến đáng kể trong việc nâng cao trải nghiệm người dùng Ollama. Với những tính năng mạnh mẽ, đặc biệt là khả năng xuất dữ liệu có cấu trúc, oterm hứa hẹn sẽ trở thành công cụ không thể thiếu cho những ai thường xuyên làm việc với các mô hình ngôn ngữ lớn. Hãy cài đặt oterm ngay hôm nay và khám phá những tiềm năng to lớn mà nó mang lại! Đừng quên chia sẻ trải nghiệm của bạn với cộng đồng để cùng nhau phát triển những công cụ tuyệt vời hơn nữa trong tương lai. Năm 2025 hứa hẹn sẽ bùng nổ với những đột phá mới trong lĩnh vực AI, và oterm chắc chắn sẽ là một phần không thể thiếu trong hành trình đó!
+
+
+---
+Source: https://reddit.com/r/ollama/comments/1hs0qlu/oterm_071_released_now_with_structured_output/

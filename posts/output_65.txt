@@ -1,0 +1,46 @@
+## AI Agents: Cơn Sốt Hay Bước Tiến Thực Sự Trong Lập Trình?
+
+Gần đây, cụm từ "AI agents" (tạm dịch: tác tử AI) đang nổi lên như một hiện tượng, được quảng bá là một bước ngoặt, một cuộc cách mạng trong ngành công nghệ. Đi đâu cũng nghe, lướt mạng xã hội chỗ nào cũng thấy. Nhưng liệu "AI agents" có thực sự đột phá như lời đồn, hay chỉ là một chiêu trò marketing mới? Người dùng Reddit có nickname "u/throwaway" đã đặt ra câu hỏi này trong một bài đăng trên subreddit r/ExperiencedDevs, thu hút sự quan tâm và tranh luận sôi nổi của cộng đồng lập trình viên.
+
+Tác giả bài viết chia sẻ rằng, dù nghe rất nhiều về "AI agents" và tiềm năng thay đổi cuộc chơi của nó, anh vẫn chưa thấy được một ứng dụng thực tế nào đủ sức thuyết phục, tạo ra khoảnh khắc "ồ, hay đấy!". Thay vào đó, anh chỉ thấy hàng loạt công cụ mới ra đời để xây dựng những "agents" này. Liệu có phải chúng ta đang bị cuốn theo cơn sốt nhất thời, trong khi những bài toán mà "AI agents" đang cố giải quyết hoàn toàn có thể được xử lý hiệu quả hơn bằng các thuật toán tất định (deterministic algorithms) đơn giản hơn? Ví dụ, nhiều người đang rêu rao về "AI x crypto" và cách các "agents" có thể tự động hóa danh mục đầu tư. Nhưng nghe có vẻ sáo rỗng, vì điều đó hoàn toàn khả thi với các thuật toán truyền thống, không cần đến mô hình xác suất phức tạp của AI.
+
+Bài viết đã khơi mào cho một cuộc thảo luận sôi nổi, với rất nhiều ý kiến trái chiều. Dưới đây là một số góc nhìn thú vị từ cộng đồng:
+
+**1. Ứng dụng thực tế còn hạn chế, "tác dụng phụ" thì nhiều:**
+
+Một số ý kiến đồng tình với tác giả, cho rằng ứng dụng thực tế của "AI agents" còn rất hạn chế. Một người dùng chia sẻ: *"Spam là ứng dụng duy nhất tôi thấy 'AI agents' làm tốt. Nhiều người sẽ nói đến chatbot, nhưng tôi có một người bạn làm về chatbot, và cô ấy nói rằng xu hướng 'bịa chuyện' của mô hình AI là hoàn toàn không thể chấp nhận được với 99.99% trường hợp dùng chatbot."* Một bình luận khác bổ sung: *"Một chatbot AI của hãng hàng không Air Canada đã đưa thông tin sai lệch cho khách hàng, dẫn đến việc hãng phải bồi thường. Điều này cho thấy rủi ro khi phụ thuộc quá nhiều vào AI."*
+
+**2. "Đắt xắt ra miếng" hay "tiền mất tật mang"?**
+
+Nhiều người lo ngại rằng việc áp dụng "AI agents" có thể dẫn đến tình trạng "tiền mất tật mang". Một bình luận dí dỏm: *"Một chatbot AI gần đây đã cho tôi một phần ăn miễn phí sau khi tôi phàn nàn. Điều này xảy ra vì trong ngắn hạn, việc chatbot hào phóng và mắc lỗi có lợi cho khách hàng sẽ có lợi hơn cho doanh nghiệp. Họ không phải trả lương cho nhân viên, và khách hàng không phàn nàn vì được nhận đồ miễn phí. Tuy nhiên, khi bạn đã quen với việc chấp nhận chatbot AI, chu kỳ 'enshitification' (tạm dịch: tệ đi) sẽ bắt đầu. Các doanh nghiệp sẽ làm cho chatbot ngày càng ít hào phóng hơn và ngày càng khó chịu hơn, cho đến khi chúng trở nên keo kiệt và khó hiểu."*
+
+**3. Tiềm năng trong tương lai hay chỉ là "bong bóng" nhất thời?**
+
+Bên cạnh những ý kiến hoài nghi, nhiều người vẫn tin tưởng vào tiềm năng của "AI agents" trong tương lai. Một bình luận cho rằng: *"Đây chỉ là giai đoạn sơ khai của 'AI agents'. Giống như bong bóng dot-com, có rất nhiều công ty đang thổi phồng giá trị, nhưng những công ty cung cấp giá trị thực sự sẽ tồn tại và phát triển. Trong tương lai, 'AI agents' có thể thay thế các kỹ sư bậc trung, nhưng hiện tại thì chưa."* Một ý kiến khác bổ sung: *" 'AI agents' có thể hữu ích trong các lĩnh vực chấp nhận được tỷ lệ lỗi nhất định, ví dụ như hỗ trợ khách hàng cấp độ một. AI có thể xử lý các yêu cầu đơn giản, giúp nhân viên tập trung vào các vấn đề phức tạp hơn."*
+
+**4. "Đãi cát tìm vàng": Ứng dụng nào thực sự tiềm năng?**
+
+Một số bình luận đã chỉ ra những ứng dụng tiềm năng của "AI agents":
+
+-   **Phân tích dữ liệu phức tạp:** *"Tôi đã thấy 'AI agents' được sử dụng trong nghiên cứu khoa học để làm sạch và phân tích dữ liệu. Nó giống như việc thuê một trợ lý ảo để giúp bạn xử lý dữ liệu."*
+-   **Tự động hóa quy trình:** *"Tôi đang làm việc với 'AI agents' để tự động hóa các vấn đề thuế phức tạp. Nó giúp tiết kiệm rất nhiều thời gian và công sức."*
+-   **Tìm kiếm thông tin:** *" 'AI agents' có thể hữu ích trong việc tìm kiếm và tổng hợp thông tin từ nhiều nguồn khác nhau. Ví dụ, bạn có thể yêu cầu nó tìm kiếm tất cả thông tin về một công ty mà bạn muốn đầu tư."*
+-   **Hỗ trợ cá nhân hóa:** *"Hãy tưởng tượng một 'AI agent' giúp bạn quản lý lịch trình, mua sắm, đặt vé máy bay, v.v. Nó có thể học hỏi sở thích của bạn và đưa ra những đề xuất phù hợp."*
+
+**Kết luận:**
+
+"AI agents" đang là một chủ đề nóng, thu hút sự chú ý của cả giới công nghệ và công chúng. Tuy nhiên, còn quá sớm để khẳng định liệu đây có phải là một bước tiến thực sự hay chỉ là một cơn sốt nhất thời. Ứng dụng thực tế của "AI agents" vẫn còn hạn chế, và việc áp dụng nó cần được cân nhắc kỹ lưỡng để tránh những rủi ro không đáng có.
+
+Dù vậy, không thể phủ nhận tiềm năng của "AI agents" trong tương lai. Với sự phát triển nhanh chóng của công nghệ AI, chúng ta hoàn toàn có thể kỳ vọng vào những ứng dụng đột phá hơn nữa. Điều quan trọng là cần có cái nhìn thực tế, không bị cuốn theo những lời quảng cáo hoa mỹ, và tập trung vào việc phát triển những ứng dụng thực sự mang lại giá trị cho người dùng.
+
+**Lời khuyên:**
+
+-   Hãy tìm hiểu kỹ về "AI agents" trước khi quyết định áp dụng nó vào công việc hay cuộc sống.
+-   Đừng ngại thử nghiệm, nhưng hãy bắt đầu từ những ứng dụng nhỏ, chấp nhận được tỷ lệ lỗi nhất định.
+-   Hãy nhớ rằng "AI agents" chỉ là công cụ, và con người vẫn đóng vai trò quan trọng trong việc kiểm soát và định hướng cho nó.
+
+Tương lai của "AI agents" vẫn còn là một ẩn số, nhưng chắc chắn đây là một lĩnh vực đáng để theo dõi và khám phá. Hãy cùng chờ xem liệu "AI agents" có thể "làm nên chuyện" hay không nhé!
+
+
+---
+Source: https://reddit.com/r/ExperiencedDevs/comments/1i02lyn/what_are_your_thoughts_on_ai_agents_have_you_seen/

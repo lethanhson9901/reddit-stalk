@@ -1,0 +1,42 @@
+## Ollama Giờ Đây Đã Hỗ Trợ Xuất Dữ Liệu Có Cấu Trúc: Tin Vui Cho Dân Lập Trình!
+
+Bạn đã bao giờ rơi vào tình cảnh "dở khóc dở cười" khi phải "năn nỉ" các mô hình ngôn ngữ lớn (LLM) trả về kết quả theo định dạng JSON để tích hợp vào ứng dụng của mình chưa? Nếu có, bạn không hề đơn độc! Rất nhiều lập trình viên đã phải đau đầu tìm cách "ép" LLM xuất ra dữ liệu có cấu trúc mong muốn, và kết quả thường không như ý. 
+
+Nhưng tin vui đây rồi! Ollama, một nền tảng giúp chạy các LLM mã nguồn mở, vừa mới thông báo hỗ trợ tính năng **xuất dữ liệu có cấu trúc**. Điều này có nghĩa là gì? Nói một cách đơn giản, bạn có thể "yêu cầu" Ollama trả về kết quả theo định dạng JSON một cách chính xác và nhất quán, thay vì phải "cầu may" như trước đây. Nghe tuyệt vời phải không nào? Hãy cùng tìm hiểu sâu hơn về tính năng đột phá này nhé!
+
+### Giải Pháp Cho Nỗi Đau Đầu Của Dân Lập Trình
+
+Trước đây, việc tích hợp LLM vào ứng dụng thường gặp nhiều khó khăn do định dạng đầu ra không ổn định. Bạn phải viết thêm code để xử lý, kiểm tra và chuyển đổi dữ liệu, vừa tốn thời gian vừa dễ phát sinh lỗi. Một số lập trình viên chia sẻ rằng họ đã mất hàng tuần để "vật lộn" với việc này và cuối cùng phải bỏ cuộc.
+
+Giờ đây, với tính năng xuất dữ liệu có cấu trúc của Ollama, mọi thứ trở nên dễ dàng hơn bao giờ hết. Bạn chỉ cần định nghĩa cấu trúc JSON mong muốn, và Ollama sẽ đảm bảo LLM trả về kết quả theo đúng định dạng đó. Điều này giúp tiết kiệm thời gian, công sức và giảm thiểu rủi ro lỗi trong quá trình phát triển.
+
+### Cách Thức Hoạt Động Và Lợi Ích Mang Lại
+
+Về cơ bản, tính năng này cho phép bạn chỉ định một schema (cấu trúc) JSON cho đầu ra của LLM. Ollama sẽ sử dụng schema này để "hướng dẫn" LLM tạo ra kết quả phù hợp. Điều này tương tự như việc bạn cung cấp một "khuôn mẫu" cho LLM, và nó sẽ "đổ" dữ liệu vào khuôn đó.
+
+Một số lợi ích chính của tính năng này bao gồm:
+
+*   **Đảm bảo tính nhất quán:** Kết quả trả về luôn tuân theo cấu trúc đã định nghĩa, giúp dễ dàng tích hợp vào ứng dụng.
+*   **Tiết kiệm thời gian:** Không cần phải viết code phức tạp để xử lý và chuyển đổi dữ liệu.
+*   **Giảm thiểu lỗi:** Giảm thiểu rủi ro lỗi do định dạng đầu ra không ổn định.
+*   **Tăng năng suất:** Lập trình viên có thể tập trung vào logic nghiệp vụ thay vì loay hoay với việc xử lý dữ liệu.
+
+### Một Số Lưu Ý Và Mẹo Nhỏ
+
+Dựa trên các bình luận trên Reddit, có một số điểm bạn cần lưu ý:
+
+*   **Cập nhật Ollama:** Đảm bảo bạn đã cập nhật phiên bản Ollama mới nhất (0.5.1) trên máy tính, không chỉ cập nhật gói Python.
+*   **Kiểm tra phiên bản:** Một số người dùng gặp lỗi `ValidationError` do phiên bản không tương thích. Hãy kiểm tra phiên bản Python (khuyên dùng 3.10.10), gói Ollama (0.4.3) và Ollama (0.5.1) của bạn.
+*   **Thử nghiệm với XML:** Một người dùng chia sẻ rằng việc sử dụng thẻ XML trung gian trước khi chuyển đổi sang JSON có thể mang lại kết quả ổn định hơn. Đây là một mẹo hay đáng để thử nếu bạn gặp vấn đề với JSON.
+*   **Sử dụng cho nhiều mô hình:** Tính năng này có thể hoạt động với nhiều mô hình ngôn ngữ khác nhau, không chỉ riêng llama3.2.
+*   **Tích hợp với LangChain:** Hiện tại, LangChain chưa hỗ trợ đầy đủ tính năng này cho Ollama, nhưng hy vọng sẽ sớm được cập nhật.
+
+### Tương Lai Hứa Hẹn
+
+Tính năng xuất dữ liệu có cấu trúc của Ollama là một bước tiến lớn trong việc đơn giản hóa quá trình tích hợp LLM vào ứng dụng. Nó mở ra nhiều cơ hội mới cho các nhà phát triển, giúp họ tạo ra các ứng dụng thông minh và hiệu quả hơn.
+
+Nếu bạn đang làm việc với các mô hình ngôn ngữ lớn, hãy thử ngay tính năng này của Ollama. Nó chắc chắn sẽ giúp bạn tiết kiệm thời gian, công sức và mang lại kết quả tốt hơn. Hãy chia sẻ trải nghiệm của bạn và cùng nhau khám phá tiềm năng vô hạn của AI!
+
+
+---
+Source: https://reddit.com/r/ollama/comments/1h8a2or/ollama_now_supports_structured_outputs/

@@ -1,0 +1,56 @@
+## Dùng AI Nào Để Code Hiệu Quả? Cursor, Cline, DeepSeek, Gemini, Claude - Trải Nghiệm Thực Tế Từ Một Lập Trình Viên
+
+Chắc hẳn anh em lập trình viên chúng ta ai cũng từng "vật lộn" với đống code, debug ngày đêm để kịp deadline. Giờ đây, với sự phát triển của AI, việc code nhàn hơn rất nhiều. Nhưng chọn AI nào để "song kiếm hợp bích" đây?  Trên Reddit, một lập trình viên đã chia sẻ trải nghiệm thực tế khi dùng qua hàng loạt công cụ AI hỗ trợ code như Cursor, Cline, DeepSeek, Gemini, và Claude. Nghe thôi đã thấy "nóng" rồi phải không? Cùng khám phá xem công cụ nào "ngon" nhất nhé!
+
+**"Nhân vật chính" trong bài review gồm có:**
+
+*   **DeepSeek V2.5 & V3:** Nhanh, mạnh, giá cả phải chăng.
+*   **Google Gemini Flash 2.0:** Miễn phí nhưng chậm "rùa bò".
+*   **Claude Sonnet 3.5:** Cửa sổ ngữ cảnh (context window) lớn, xử lý tốt nhưng giá hơi "chát".
+
+Tác giả bài viết đang phát triển một ứng dụng với khoảng 50-100 file code. Anh ấy đã thử nghiệm gửi toàn bộ phần frontend và backend (với hơn 120k token) vào các AI này để xem hiệu quả ra sao.
+
+**Kết quả:**
+
+*   **DeepSeek V3:** Bị loại ngay từ vòng gửi xe vì giới hạn cửa sổ ngữ cảnh chỉ có 65k token, không đủ "nhét" hết đống code.
+*   **DeepSeek V2.5:** Nhanh "như điện", giá cả hợp lý, code ngon lành, nhưng vẫn bị giới hạn bởi cửa sổ ngữ cảnh.
+*   **Google Gemini 2.0:** Chậm đến mức "không thể chấp nhận được", mỗi yêu cầu mất ít nhất 15 giây để xử lý. Đã thế, khi thử nghiệm tính năng mới, Gemini còn "báo lỗi" ngay từ lần đầu tiên. Tác giả nhận xét rằng Gemini "không cùng đẳng cấp" với các AI khác.
+*   **Claude Sonnet 3.5:** Có cửa sổ ngữ cảnh lên đến 200k token, đủ sức "cân" cả ứng dụng lớn. Tuy nhiên, giá của Claude khá cao.
+
+**Vậy cuối cùng, tác giả chọn gì?**
+
+Dù DeepSeek 2.5 code rất "ngon" và nhanh hơn cả Claude, tác giả vẫn quay lại với **Cursor**. Lý do là gì?
+
+*   **Tính năng quay lại các phiên bản code trước:** Cursor cho phép bạn dễ dàng "quay xe" về các phiên bản code trước đó chỉ với một nút bấm. Tính năng này cực kỳ hữu ích khi bạn muốn thử nghiệm các thay đổi mà không sợ "phá hỏng" code hiện tại.
+*   **Cửa sổ ngữ cảnh lớn:** Với 200k token của Claude Sonnet, tác giả có thể thoải mái phát triển ứng dụng mà không lo bị giới hạn.
+*   **Chi phí:** Dù Cline kết hợp với DeepSeek có thể rẻ hơn, nhưng Cursor với 500 lượt gọi API Claude chỉ với 20 đô la Mỹ, cộng thêm IDE xịn sò, vẫn là lựa chọn "kinh tế" hơn.
+*   **Thỉnh thoảng "đơ":** Có những lúc Cursor hơi "ngáo ngơ" trong vài giờ, nhưng sau đó lại hoạt động bình thường.
+
+**Tuy nhiên, tác giả vẫn mong muốn tìm được một AI mã nguồn mở với cửa sổ ngữ cảnh lớn hơn 200k token và rẻ hơn Claude để quay lại dùng Cline.** Anh ấy rất ấn tượng với DeepSeek V2.5 và tin rằng V3 sẽ còn "bá đạo" hơn, nhưng tiếc là giới hạn cửa sổ ngữ cảnh 64k token lại là một trở ngại lớn. Gemini có cửa sổ ngữ cảnh "khủng" lên đến 1-2 triệu token, nhưng lại quá chậm và code không hiệu quả.
+
+**Bàn luận từ cộng đồng:**
+
+*   Nhiều người đồng ý rằng cửa sổ ngữ cảnh lớn là rất quan trọng, nhưng cũng có ý kiến cho rằng nếu thiết kế ứng dụng theo hướng module hóa, chia nhỏ các chức năng thì không cần đến cửa sổ ngữ cảnh quá lớn. Một số thành viên gợi ý dùng các công cụ như **Aider** để tối ưu hóa việc sử dụng token và quản lý nhiều file code dễ dàng hơn.
+*   Có người chia sẻ kinh nghiệm rằng các AI này rất hữu ích trong việc khởi tạo dự án nhanh chóng, nhưng sau vài lần lặp lại, chúng bắt đầu "phá hỏng" những phần code đã hoạt động tốt trước đó. Giải pháp là sử dụng AI để xây dựng khung sườn ban đầu, sau đó tự mình phát triển tiếp.
+*   Một số người dùng khác đề xuất sử dụng **Windsurf** như một giải pháp thay thế cho Cline/Cursor.
+*   Có thông tin rằng Cursor đang phát triển để hỗ trợ DeepSeek trực tiếp.
+
+**Bài học rút ra:**
+
+*   Mỗi AI đều có ưu và nhược điểm riêng. Hãy thử nghiệm và tìm ra công cụ phù hợp nhất với nhu cầu của bạn.
+*   Cửa sổ ngữ cảnh lớn rất quan trọng khi làm việc với các dự án lớn.
+*   Thiết kế ứng dụng theo hướng module hóa có thể giúp giảm bớt sự phụ thuộc vào cửa sổ ngữ cảnh lớn.
+*   Hãy tận dụng AI để tiết kiệm thời gian và công sức, nhưng đừng phụ thuộc hoàn toàn vào chúng.
+
+**Lời khuyên:**
+
+*   Nếu bạn mới bắt đầu, hãy thử dùng Cursor vì nó dễ sử dụng và có IDE tích hợp sẵn.
+*   Nếu bạn muốn tiết kiệm chi phí, hãy thử Cline kết hợp với DeepSeek.
+*   Nếu bạn cần cửa sổ ngữ cảnh lớn, hãy cân nhắc Claude Sonnet (nếu bạn có đủ ngân sách) hoặc chờ đợi các AI mã nguồn mở với cửa sổ ngữ cảnh lớn hơn ra mắt.
+*   Luôn kiểm tra kỹ code do AI tạo ra và đừng ngại chỉnh sửa nếu cần.
+
+Hy vọng bài viết này đã cung cấp cho bạn cái nhìn tổng quan về các công cụ AI hỗ trợ code hiện nay. Hãy thử nghiệm và chia sẻ kinh nghiệm của bạn với cộng đồng nhé!
+
+
+---
+Source: https://reddit.com/r/ChatGPTCoding/comments/1hp7cgd/ive_used_cursor_with_claude_and_cline_with/

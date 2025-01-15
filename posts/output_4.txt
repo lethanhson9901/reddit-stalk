@@ -1,0 +1,35 @@
+## RAG và Knowledge Graph: Bí Quyết Nào Cho Câu Hỏi Phức Tạp?
+
+Bạn đã bao giờ cảm thấy bế tắc khi tìm kiếm thông tin về sản phẩm, dù là trên web, qua tổng đài chăm sóc khách hàng hay thậm chí là công cụ hỏi đáp nội bộ? Là một nhà khoa học dữ liệu, tác giả bài viết trên Reddit cũng trăn trở với vấn đề này và đã dành nhiều thời gian nghiên cứu về RAG (Retrieval-Augmented Generation - Sinh văn bản dựa trên thông tin truy xuất). Mục tiêu của anh ấy là làm cho thông tin về sản phẩm trở nên dễ tiếp cận hơn. Nghe thì đơn giản, nhưng thực tế lại phức tạp hơn nhiều. Anh ấy đã thử nghiệm nhiều phương pháp khác nhau, từ LangChain đến tự phát triển hệ thống riêng, và cả những kỹ thuật mới nổi như GraphRAG hay LightRAG. Mỗi phương pháp đều có ưu nhược điểm riêng, và hành trình tìm ra giải pháp tối ưu vẫn đang tiếp diễn. Cùng khám phá hành trình thú vị này và xem liệu chúng ta có thể rút ra được bí quyết nào cho riêng mình không nhé!
+
+**Ba Cách Tiếp Cận - Ba Câu Chuyện Khác Nhau**
+
+Tác giả đã chia sẻ ba phương pháp chính mà anh ấy đã thử nghiệm:
+
+1. **LangChain - Người Bạn Đồng Hành Trong Những Cuộc Đối Thoại:** Phương pháp này dựa trên LangChain, sử dụng embeddings (biểu diễn vector) và chia nhỏ văn bản thành các chunks (đoạn) có kích thước giới hạn. Cách tiếp cận này phù hợp với các cuộc hội thoại tương tác, nơi lịch sử trò chuyện được xây dựng theo thời gian. 
+    * **Ưu điểm:** Dễ triển khai, phù hợp với các ứng dụng chatbot.
+    * **Nhược điểm:** Khó khăn trong việc duy trì ngữ cảnh và mối quan hệ giữa các thông tin khi nội dung phức tạp.
+
+2. **"Cây Nhà Lá Vườn" - Sức Mạnh Của Knowledge Graph Tự Xây Dựng:** Nhận thấy cấu trúc quan hệ trong nội dung sản phẩm, tác giả đã tự xây dựng một knowledge graph (đồ thị tri thức) có hướng. Mỗi nút (node) trong đồ thị được gán một embedding, và các cạnh (edge) kết nối các nút có nguồn gốc từ cùng một nội dung. Thêm vào đó, một bảng chú giải thuật ngữ cũng được tạo ra, mỗi thuật ngữ là một nút riêng và được liên kết với nội dung mà nó xuất hiện. Khi có truy vấn, embedding của truy vấn sẽ được so sánh với các embedding trong đồ thị. Các nút gần nhất sẽ được chọn làm nội dung, cùng với các nút liên quan từ cùng một tài liệu. Thậm chí, các nút có liên kết chặt chẽ trong đồ thị cũng có thể được thêm vào làm nội dung bổ sung.
+    * **Ưu điểm:** Cung cấp câu trả lời chi tiết, sắc thái, nắm bắt tốt mối quan hệ giữa các thông tin.
+    * **Nhược điểm:** Tốn nhiều tài nguyên, tốc độ chậm do kích thước context lớn (dù đã có GPT-4o 128K). Có thể điều chỉnh bằng ngưỡng (threshold) nhưng cần cân nhắc kỹ.
+
+3. **GraphRAG và LightRAG - Những Làn Gió Mới:** Gần đây, nhiều kỹ thuật mới đã xuất hiện để tích hợp knowledge graph vào RAG, ví dụ như GraphRAG của Microsoft hay LightRAG trên GitHub. Tác giả đã thử nghiệm LightRAG, dựa trên một bài báo nghiên cứu, và thấy kết quả khá hứa hẹn. Dù vẫn đang trong quá trình phát triển, LightRAG đã có thể sử dụng được với một số chỉnh sửa. Tuy nhiên, anh ấy nhận thấy rằng dù knowledge graph của các thực thể được xây dựng, các chunks vẫn tương đối nhỏ và cấu trúc ban đầu của thông tin không được bảo toàn. Chunks và thực thể được trình bày cho mô hình dưới dạng bảng. Dù ấn tượng với khả năng tạo câu trả lời chất lượng từ dữ liệu không đồng nhất, tác giả vẫn thấy rằng với các câu hỏi phức tạp, câu trả lời thường kém chất lượng hơn so với phương pháp tự phát triển.
+    * **Ưu điểm:** Tiềm năng, đang được phát triển và cải tiến.
+    * **Nhược điểm:** Chất lượng câu trả lời cho câu hỏi phức tạp chưa cao, cấu trúc thông tin gốc bị thay đổi.
+
+**Lời Khuyên và Bài Học Rút Ra**
+
+* **Embedding không phải là tất cả:** Dù text-embedding-ada-002 hoạt động tốt, kể cả với tiếng Hà Lan, và việc giảm độ chính xác từ float64 xuống float32 không ảnh hưởng đáng kể, tác giả cho rằng embedding chỉ đóng vai trò trong việc thu thập nội dung thô. Các mô hình embedding mã nguồn mở khác trên Hugging Face có thể tốt hơn, đặc biệt khi cơ sở dữ liệu lớn và đa dạng.
+* **Tối ưu hóa truy vấn đồ thị:** Sử dụng cơ sở dữ liệu đồ thị chuyên dụng như Memgraph (được đề cập trong phần bình luận) có thể cải thiện đáng kể tốc độ truy vấn, đặc biệt là với các đồ thị lớn.
+* **Tự do và kiểm soát:** Đôi khi, việc tự phát triển giải pháp, thay vì phụ thuộc hoàn toàn vào các framework như LangChain, có thể mang lại sự linh hoạt và hiểu biết sâu sắc hơn về hệ thống.
+* **So sánh và đánh giá:** Việc so sánh các phương pháp RAG khác nhau với cùng một tập dữ liệu và bộ câu hỏi chuẩn là rất quan trọng. Đánh giá độ đầy đủ của câu trả lời, có thể sử dụng mô hình ngôn ngữ, sẽ giúp xác định phương pháp tối ưu.
+* **Nhìn nhận từ cộng đồng:** Một bình luận khác cho rằng vấn đề lớn nhất của RAG hiện nay không phải là kỹ thuật, cơ sở dữ liệu hay framework mà là các mô hình embedding còn khá lạc hậu so với các mô hình ngôn ngữ lớn (LLM). Việc cải thiện chất lượng mô hình embedding sẽ giúp cải thiện đáng kể chất lượng mối quan hệ giữa các tài liệu.
+
+**Kết Luận**
+
+Hành trình tìm kiếm giải pháp RAG tối ưu cho việc truy xuất thông tin sản phẩm của tác giả đã cho chúng ta thấy sự đa dạng và tiềm năng của các phương pháp khác nhau. Việc kết hợp knowledge graph với RAG mở ra nhiều hướng đi mới, hứa hẹn mang lại những câu trả lời chính xác và chi tiết hơn. Tuy nhiên, vẫn còn nhiều thách thức cần vượt qua, đặc biệt là về tốc độ và khả năng xử lý các câu hỏi phức tạp. Dù bạn chọn LangChain, tự xây dựng hệ thống, hay thử nghiệm các kỹ thuật mới như GraphRAG, điều quan trọng là phải hiểu rõ ưu nhược điểm của từng phương pháp, liên tục thử nghiệm, so sánh và tối ưu hóa để đạt được kết quả tốt nhất. Hãy chia sẻ kinh nghiệm của bạn và cùng nhau khám phá những bí quyết mới trong thế giới RAG đầy thú vị này!
+
+
+---
+Source: https://reddit.com/r/Rag/comments/1h7z794/rag_and_knowledge_graphs/

@@ -1,0 +1,37 @@
+## "Giải Phóng" AI Khỏi Rào Cản Kiểm Duyệt: Bí Kíp Dành Cho Dân Chơi Hệ 24GB VRAM
+
+Bạn sở hữu một chiếc card đồ họa RTX 3090 với 24GB VRAM và muốn "quẩy" cùng các mô hình ngôn ngữ lớn (LLM) nhưng lại ngán ngẩm với việc bị kiểm duyệt? Bạn không cô đơn đâu! Trên Reddit, chủ đề "Currently the most uncensored model for 24gb vram" đang nóng hổi, thu hút sự chú ý của những "dân chơi" AI muốn khai phá tiềm năng của những mô hình không bị gò bó.
+
+Chủ bài đăng, một người dùng RTX 3090, than thở rằng có quá nhiều lựa chọn LLM trên LM Studio, khiến anh bối rối không biết đâu là "chân ái" cho nhu cầu "không kiểm duyệt" của mình. Anh muốn tìm một mô hình "thẳng thắn", không né tránh hay "tẩy trắng" bất kỳ câu hỏi nào.
+
+Vậy, giữa "rừng" model AI, đâu là lựa chọn tối ưu cho những ai muốn trải nghiệm sự tự do ngôn luận tuyệt đối với 24GB VRAM? Hãy cùng điểm qua những "ứng cử viên" sáng giá được cộng đồng mạng đề xuất nhé!
+
+**1. Orenguteng: "Ứng Cử Viên" Nặng Ký Từ Bảng Xếp Hạng UGI**
+
+Một thành viên đã giới thiệu [Orenguteng](https://huggingface.co/Orenguteng) kèm theo [bảng xếp hạng UGI](https://huggingface.co/spaces/DontPlanToEnd/UGI-Leaderboard) để tham khảo. Dù Orenguteng vẫn còn một số hạn chế, nhưng bạn hoàn toàn có thể "lách luật" và tiếp tục "cuộc vui". Tác giả của Orenguteng hứa hẹn sẽ ra mắt phiên bản cải tiến trong tương lai. Ngoài ra, nếu bạn hài lòng với context 8k và thậm chí có thể mở rộng lên 16K bằng rope scaling, hãy thử Lexi 3.0, một model với hơn 1 triệu lượt tải về, hứa hẹn mang lại kết quả ấn tượng.
+
+**2. Qwen2.5-Coder-32B-Instruct-abliterated-GGUF: "Kẻ Hủy Diệt" Kiểm Duyệt**
+
+Nghe tên có vẻ "hầm hố" chuyên về code, nhưng [Qwen2.5-Coder-32B-Instruct-abliterated-GGUF](https://huggingface.co/bartowski/Qwen2.5-Coder-32B-Instruct-abliterated-GGUF/tree/main) lại là một "chiến binh" thực thụ trong lĩnh vực "tự do ngôn luận". Mô hình này được đánh giá là "rất triệt để" trong việc loại bỏ kiểm duyệt, không từ chối bất kỳ yêu cầu nào, kể cả những nội dung nhạy cảm nhất. Tuy nhiên, bạn cần phải diễn đạt rõ ràng mong muốn của mình để tránh việc AI "tô hồng" câu trả lời.
+
+**3. Mistral Small 22b: "Nhỏ Mà Có Võ"**
+
+Mistral Small 22b là một lựa chọn "nhẹ nhàng" hơn, vừa vặn với 24GB VRAM. Dù đôi khi cần "nắn gân" một chút, nhưng model này vẫn có thể đáp ứng tốt nhu cầu của bạn. Đặc biệt, gần đây có một phiên bản fine-tune của Mistral Small được quảng cáo là hoàn toàn không kiểm duyệt. Nếu có bản quant hóa của phiên bản này, đây chắc chắn là "chân ái" mà bạn đang tìm kiếm!
+
+**4. Beepo-22b: "Liều Thuốc Thử" Cho Những Ai Thích Thử Thách**
+
+Nếu bạn muốn một model "bất chấp tất cả", Beepo-22b chính là dành cho bạn. Thử thách Beepo-22b với những yêu cầu "khó đỡ" như viết thơ phân biệt chủng tộc, hay lên kế hoạch tấn công trại trẻ mồ côi, bạn sẽ thấy nó "không hề nao núng". Đây chắc chắn là một "ca khó" cho những ai muốn kiểm tra giới hạn của AI.
+
+**5. Mixtral, Nvidia-Mistral, Nous Llama: "Những Gương Mặt Thân Quen"**
+
+Ngoài ra, những cái tên quen thuộc như Mixtral, Nvidia-Mistral hay một số phiên bản cũ của Nous Llama 7b/8b cũng là những lựa chọn đáng cân nhắc.
+
+**Lời Kết:**
+
+Cuộc chiến chống kiểm duyệt AI vẫn đang tiếp diễn, và cộng đồng Reddit đang tích cực tìm kiếm những giải pháp để "giải phóng" sức mạnh của các mô hình ngôn ngữ. Dù bạn chọn model nào, hãy nhớ rằng "prompt" (lời nhắc) đóng vai trò quan trọng trong việc định hướng AI. Hãy thử nghiệm, khám phá và chia sẻ kinh nghiệm của bạn để cùng nhau xây dựng một cộng đồng AI tự do và sáng tạo!
+
+**Lưu ý:** Bài viết này chỉ mang tính chất cung cấp thông tin và không khuyến khích sử dụng AI cho các mục đích vi phạm pháp luật, đạo đức, hoặc gây hại cho người khác. Hãy sử dụng AI một cách có trách nhiệm!
+
+
+---
+Source: https://reddit.com/r/LocalLLaMA/comments/1h9cb7d/currently_the_most_uncensored_model_for_24gb_vram/

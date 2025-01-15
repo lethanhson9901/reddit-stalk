@@ -1,0 +1,43 @@
+## Hỏi Đáp về RAG: Bí Kíp Xử Lý Hơn 200 File PDF Siêu Dài
+
+Bạn đang "vật lộn" với đống tài liệu PDF khổng lồ để xây dựng hệ thống RAG (Retrieval-Augmented Generation)? Bạn không cô đơn đâu! Một người dùng Reddit với nickname (ẩn danh) đã chia sẻ câu chuyện tương tự khi phải xử lý hơn 200 file PDF, mỗi file dày tới 800-1000 trang, khiến hệ thống RAG của anh ấy "ì ạch" và trả lời sai be bét. Nghe nản đúng không?
+
+Nhưng đừng vội bỏ cuộc! Bài viết này sẽ mổ xẻ vấn đề, phân tích giải pháp mà tác giả đang áp dụng, đồng thời gợi ý thêm nhiều "bí kíp" từ cộng đồng Reddit để bạn "nâng cấp" hệ thống RAG của mình. Biết đâu, bạn sẽ tìm thấy "chân ái" giúp chinh phục kho tài liệu PDF đồ sộ kia!
+
+**Vấn đề nan giải: 200+ file PDF, mỗi file cả ngàn trang!**
+
+Hãy tưởng tượng bạn có một kho tài liệu hướng dẫn kỹ thuật với hơn 200 file PDF. Mỗi file dày cộp, chứa hàng tá thông tin quan trọng. Nhiệm vụ của bạn là xây dựng một chatbot có thể "hiểu" và trả lời các câu hỏi liên quan đến nội dung trong đống tài liệu đó. Nghe thì có vẻ "ngầu", nhưng thực tế lại là một "cơn ác mộng" với nhiều người.
+
+**Giải pháp hiện tại của tác giả:**
+
+Anh chàng này đã sử dụng Azure Document Intelligence để trích xuất thông tin và chia nhỏ tài liệu thành các "chunk" (đoạn văn bản). Mỗi chunk bao gồm nội dung đoạn văn, tiêu đề trang và tiêu đề liền trước. Sau đó, anh ấy dùng mô hình "text-embedding-ada-002" của OpenAI để nhúng (embed) các chunk này và lưu trữ trên Azure index search service.
+
+Giao diện chatbot được xây dựng bằng Streamlit. Khi người dùng đặt câu hỏi, hệ thống sẽ nhúng câu hỏi, tìm kiếm 5 chunk "tương tự" nhất bằng Vectorsearch, sau đó dùng GPT-3.5 để "chấm điểm" mức độ liên quan của từng chunk (từ 50 đến 100). Chỉ những chunk có điểm trên 70 mới được giữ lại. Cuối cùng, khoảng 3 chunk "xịn" nhất sẽ được đưa vào làm ngữ cảnh cho mô hình GPT trả lời câu hỏi ban đầu.
+
+Nghe qua thì có vẻ bài bản, nhưng kết quả lại không như mong đợi. Chatbot thường xuyên trả lời sai, dường như "lạc lối" giữa biển thông tin. Tác giả nghi ngờ nguyên nhân là do số lượng file PDF quá lớn và mỗi file lại quá dài.
+
+**Cộng đồng Reddit "hiến kế":**
+
+Rất may, cộng đồng Reddit đã nhiệt tình "hiến kế" giúp tác giả cải thiện hệ thống RAG. Dưới đây là một số gợi ý đáng chú ý:
+
+1. **Chuyển đổi PDF sang định dạng text:** Nhiều người khuyên nên chuyển đổi toàn bộ file PDF sang dạng text thuần (TXT) để đơn giản hóa quá trình xử lý. Việc này chỉ cần làm một lần, nhưng sẽ giúp loại bỏ nhiều rắc rối do cấu trúc phức tạp của PDF gây ra. Một số công cụ được gợi ý là Adobe Acrobat API hoặc tự code tool.
+
+2. **Cải thiện OCR:** Azure Document Intelligence không phải lúc nào cũng là lựa chọn tốt nhất. Một số gợi ý thay thế bao gồm Zerox và dsParse, sử dụng mô hình VLM (Vision Language Model) cho kết quả OCR chính xác hơn.
+
+3. **Nâng cấp mô hình:** GPT-3.5 và "text-embedding-ada-002" đã cũ. Hãy thử dùng GPT-4o Mini và "text-embedding-3-large" để có hiệu suất tốt hơn.
+
+4. **Tăng số lượng chunk:** 5 chunk là quá ít. Hãy thử tăng lên 100 chunk trước khi rerank và 20 chunk sau khi rerank.
+
+5. **Rerank thông minh hơn:** Thay vì "chấm điểm" từng chunk riêng lẻ (pointwise reranking), hãy thử listwise reranking hoặc sử dụng các công cụ rerank chuyên dụng như Cohere hoặc Voyage.
+
+6. **Kết hợp Vector Search và Keyword Search:** Ngoài Vector Search, hãy thử kết hợp thêm tìm kiếm từ khóa (BM25) để tận dụng lợi thế của các thuật ngữ kỹ thuật thường xuất hiện trong tài liệu.
+
+7. **Sử dụng Visual Embeddings:** Một giải pháp tiên tiến hơn là sử dụng visual embeddings thay vì text embeddings. Colivara là một API cung cấp giải pháp này, cho phép nhúng cả hình ảnh và văn bản, hứa hẹn mang lại kết quả tốt hơn cho các tài liệu có nhiều hình ảnh.
+
+**Lời kết:**
+
+Xây dựng hệ thống RAG với kho tài liệu PDF lớn là một thách thức không nhỏ. Tuy nhiên, với sự kiên trì, thử nghiệm và học hỏi từ cộng đồng, bạn hoàn toàn có thể vượt qua. Hãy thử áp dụng những gợi ý trên, điều chỉnh cho phù hợp với ngữ cảnh của mình và đừng ngại chia sẻ kinh nghiệm với mọi người. Chúc bạn thành công!
+
+
+---
+Source: https://reddit.com/r/Rag/comments/1h8205b/suggestions_to_improve_rag_with_200_pdfs/

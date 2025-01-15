@@ -1,0 +1,44 @@
+## Chạy Trình Duyệt Web Ngay Trên Máy Tính Cá Nhân Với Một Card Đồ Họa 3090: Chuyện Tưởng Không Tưởng Mà Lại Có Thật!
+
+Bạn đã bao giờ nghĩ đến việc có thể điều khiển trình duyệt web chỉ bằng những câu lệnh đơn giản, hoàn toàn chạy trên máy tính cá nhân mà không cần kết nối internet? Nghe có vẻ khó tin, nhưng đó chính xác là những gì mà một người dùng Reddit với nickname "pascscha" đã làm được, và chia sẻ trong một bài đăng trên subreddit r/LocalLLaMA. Điều thú vị là, tất cả chỉ cần một chiếc card đồ họa RTX 3090!
+
+Thoạt nghe, nhiều người sẽ nghĩ ngay đến các dịch vụ đám mây hay API đắt đỏ. Nhưng không, pascscha đã sử dụng một công cụ có tên là "Browser Use" (https://github.com/browser-use/browser-use) kết hợp với mô hình ngôn ngữ lớn (LLM) qwen2.5:32b để thực hiện điều này ngay trên máy tính cá nhân của mình. Nghe thật hấp dẫn phải không? Nhưng thực tế thì việc này có dễ dàng như chúng ta tưởng?
+
+Trong bài đăng của mình, pascscha đã chia sẻ một video minh họa quá trình hoạt động của hệ thống. Anh ấy đã yêu cầu hệ thống tìm bài đăng về "Browser Use" trên subreddit r/LocalLLaMA, sau đó tìm bình luận hài hước nhất. Và kết quả thật bất ngờ, hệ thống đã thực hiện chính xác yêu cầu và đưa ra câu trả lời: "Bình luận hài hước nhất là của u/chitown160: 'yeah as soon as I saw that part I was like that knuckles meme.'"
+
+Tuy nhiên, để đạt được thành quả này, pascscha đã phải vượt qua một số trở ngại. Anh ấy chia sẻ rằng hệ thống không hoạt động "ngay lập tức" mà cần phải sửa hai lỗi, chi tiết được mô tả trong issue này: [https://github.com/browser-use/browser-use/issues/158](https://github.com/browser-use/browser-use/issues/158).
+
+**Vậy, Browser Use là gì và nó hoạt động như thế nào?**
+
+Browser Use là một thư viện mã nguồn mở cho phép các mô hình ngôn ngữ lớn (LLM) tương tác với trình duyệt web. Nó hoạt động như một "cầu nối" giữa LLM và trình duyệt, cho phép LLM thực hiện các thao tác như:
+
+*   **Điều hướng trang web:** Mở các trang web, click vào các liên kết, điền vào các biểu mẫu,...
+*   **Trích xuất thông tin:** Lấy nội dung văn bản, hình ảnh từ trang web.
+*   **Tương tác với các thành phần:** Scroll trang, nhập liệu, chọn các tùy chọn,...
+
+**Làm thế nào để chạy Browser Use trên máy tính cá nhân?**
+
+Pascscha đã chia sẻ script mà anh ấy sử dụng, bạn có thể tham khảo tại đây: [https://gist.github.com/pascscha/221127dbf53faff92d7f17b7bae60c9b](https://gist.github.com/pascscha/221127dbf53faff92d7f17b7bae60c9b). Về cơ bản, script này dựa trên hướng dẫn trong README của Browser Use, nhưng có thêm một số chỉnh sửa để khắc phục lỗi.
+
+**Một số lưu ý khi sử dụng Browser Use:**
+
+*   **Vấn đề về thu thập dữ liệu:** Browser Use thu thập dữ liệu sử dụng ẩn danh để cải thiện sản phẩm. Bạn có thể tắt tính năng này bằng cách đặt biến môi trường `ANONYMIZED_TELEMETRY=false`. Tuy nhiên, tên biến này gây ra nhiều tranh cãi vì sự không rõ ràng. Liệu nó tắt việc ẩn danh hóa dữ liệu hay tắt hoàn toàn việc thu thập dữ liệu? Đây là một điểm cần lưu ý.
+*   **Độ chính xác:** Một số người dùng đã thử nghiệm Browser Use và nhận thấy độ chính xác chưa cao, đôi khi mắc phải những lỗi nhỏ gây khó chịu. Pascscha cho rằng việc điều chỉnh prompt (lời nhắc) có thể cải thiện đáng kể độ chính xác.
+*   **Lựa chọn LLM:** Pascscha sử dụng qwen2.5:32b, nhưng bạn cũng có thể thử nghiệm với các LLM khác, miễn là chúng hỗ trợ function calling (gọi hàm).
+
+**Ứng dụng tiềm năng của Browser Use là gì?**
+
+Browser Use mở ra rất nhiều tiềm năng ứng dụng thú vị, chẳng hạn như:
+
+*   **Tự động hóa các tác vụ web:** Đặt vé máy bay, mua sắm trực tuyến, điền biểu mẫu,...
+*   **Trích xuất dữ liệu từ web:** Thu thập thông tin sản phẩm, tin tức,...
+*   **Hỗ trợ kiểm thử phần mềm:** Tự động hóa các kịch bản kiểm thử trên trình duyệt.
+*   **Xây dựng các trợ lý ảo thông minh:** Tạo ra các chatbot có khả năng tương tác với web.
+
+**Lời kết:**
+
+Câu chuyện của pascscha cho thấy sức mạnh tiềm tàng của việc kết hợp các công cụ mã nguồn mở và LLM để tạo ra những ứng dụng đột phá. Dù vẫn còn một số hạn chế, Browser Use hứa hẹn sẽ mở ra một kỷ nguyên mới cho việc tương tác với web, nơi mà chúng ta có thể điều khiển trình duyệt chỉ bằng những câu lệnh đơn giản. Nếu bạn là một người đam mê công nghệ, hãy thử trải nghiệm Browser Use và khám phá những khả năng tuyệt vời mà nó mang lại! Hãy tưởng tượng một ngày bạn chỉ cần ngồi và ra lệnh, còn máy tính sẽ tự động làm mọi việc trên trình duyệt cho bạn. Thật tuyệt vời phải không nào?
+
+
+---
+Source: https://reddit.com/r/LocalLLaMA/comments/1huau1d/browser_use_running_locally_on_single_3090/

@@ -1,0 +1,40 @@
+## Ollama và Bài Toán Xử Lý Song Song: Khi "Đông Người" Không Hẳn Là Vui!
+
+Bạn đã bao giờ rơi vào tình cảnh "lực bất tòng tâm" khi phải xử lý nhiều yêu cầu cùng lúc chưa? Đó chính xác là những gì đang xảy ra với Ollama, một công cụ tuyệt vời để chạy các mô hình ngôn ngữ lớn (LLM) cục bộ, khi phải đối mặt với bài toán xử lý song song. Trên Reddit, một người dùng đã chia sẻ trải nghiệm "đau thương" của mình khi cố gắng thiết lập Ollama để xử lý nhiều yêu cầu cùng lúc nhưng bất thành. Nghe có vẻ đơn giản: gửi nhiều yêu cầu cURL đến cùng một mô hình, mong đợi nhận được phản hồi đồng thời. Nhưng thực tế lại phũ phàng hơn nhiều, các yêu cầu vẫn phải "xếp hàng" chờ đợi, chẳng khác gì cảnh chen chúc mua vé giờ cao điểm.
+
+Vậy vấn đề nằm ở đâu? Tại sao Ollama, một công cụ mạnh mẽ, lại "bó tay" trước thử thách tưởng chừng đơn giản này? Hãy cùng "mổ xẻ" vấn đề và tìm ra giải pháp nhé!
+
+Người dùng Reddit này đã thực hiện đầy đủ các bước cần thiết: dừng dịch vụ Ollama, thiết lập các biến môi trường `OLLAMA_NUM_PARALLEL` (số lượng yêu cầu xử lý đồng thời), `OLLAMA_MAX_LOADED_MODELS` (số lượng mô hình tối đa được tải) và `OLLAMA_MAX_QUEUE` (kích thước hàng đợi tối đa), rồi khởi động lại dịch vụ. Tuy nhiên, dù đã "cầu cứu" đến 4 luồng xử lý song song (`OLLAMA_NUM_PARALLEL=4`), Ollama vẫn "ì ạch" xử lý từng yêu cầu một.
+
+**Điểm mấu chốt nằm ở cách thức áp dụng các biến môi trường.** Một số người dùng khác đã chỉ ra rằng, việc thiết lập biến môi trường riêng lẻ rồi mới khởi động Ollama có thể không có tác dụng. Thay vào đó, cần phải **thiết lập các biến này ngay khi khởi động Ollama** hoặc **chỉnh sửa trực tiếp trong file cấu hình dịch vụ systemd**.
+
+Ví dụ, thay vì làm các bước riêng lẻ, bạn có thể khởi động Ollama với câu lệnh:
+
+```bash
+OLLAMA_NUM_PARALLEL=4 OLLAMA_MAX_LOADED_MODELS=4 OLLAMA_MAX_QUEUE=2048 ollama serve
+```
+
+Hoặc chỉnh sửa file `ollama.service` (thường nằm trong `/etc/systemd/system/`):
+
+```
+[Service]
+Environment="OLLAMA_NUM_PARALLEL=4"
+Environment="OLLAMA_MAX_LOADED_MODELS=4"
+Environment="OLLAMA_MAX_QUEUE=2048"
+```
+
+Sau đó, nhớ chạy `sudo systemctl daemon-reload` và `sudo systemctl restart ollama.service` để áp dụng thay đổi.
+
+**Ngoài ra, một số "cao thủ" còn chia sẻ thêm bí kíp:**
+
+- **Nếu bạn chỉ muốn chạy một mô hình duy nhất,** hãy đặt `OLLAMA_MAX_LOADED_MODELS=1`. Điều này giúp Ollama tập trung toàn bộ tài nguyên vào mô hình đó, tối ưu hóa hiệu suất.
+- **Thử nghiệm với `OLLAMA_NUM_PARALLEL`:** Giá trị mặc định có thể chỉ là 1 hoặc 4 tùy thuộc vào cấu hình máy. Hãy thử tăng giá trị này lên (ví dụ: 16) để xem liệu có cải thiện được tình hình hay không.
+- **Sử dụng Flash Attention:** Kích hoạt tính năng này (`OLLAMA_FLASH_ATTENTION=1`) có thể giúp giảm bộ nhớ sử dụng, từ đó tăng khả năng xử lý song song.
+
+Tuy nhiên, cũng cần phải thừa nhận rằng, **khả năng xử lý song song của Ollama vẫn còn nhiều hạn chế.** Một người dùng đã thẳng thắn chia sẻ rằng Ollama "rất tệ" trong việc xử lý song song và lưu lượng cao. Nếu bạn sở hữu card đồ họa RTX, **exllamav2** có thể là một lựa chọn thay thế đáng cân nhắc với hiệu suất vượt trội hơn hẳn.
+
+**Tóm lại,** việc "ép" Ollama xử lý song song không hề đơn giản. Nó đòi hỏi sự hiểu biết về cách thức hoạt động của công cụ, cũng như một chút "mày mò" thử nghiệm để tìm ra cấu hình tối ưu. Dù Ollama có thể chưa phải là "nhà vô địch" trong lĩnh vực này, nhưng với những mẹo nhỏ trên, hy vọng bạn có thể cải thiện phần nào hiệu suất xử lý và tránh được cảnh "chờ dài cổ" khi sử dụng. Hãy nhớ rằng, "chậm mà chắc" đôi khi vẫn tốt hơn là "nhanh mà ẩu", nhất là khi làm việc với các mô hình ngôn ngữ lớn!
+
+
+---
+Source: https://reddit.com/r/ollama/comments/1hmoaqf/ollama_parallelism/

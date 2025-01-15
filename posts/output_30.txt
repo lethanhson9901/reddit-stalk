@@ -1,0 +1,37 @@
+## Bí Kíp "Nặn" Ý Tưởng Sản Phẩm Độc Đáo với Chuỗi Prompt Thần Kỳ
+
+Bạn đang "bí" ý tưởng cho sản phẩm mới? Bạn muốn tạo ra một thứ gì đó đột phá, đón đầu xu hướng nhưng lại không biết bắt đầu từ đâu? Đừng lo, một "vị cứu tinh" đã xuất hiện trên Reddit với một chuỗi prompt (lệnh) cực hay ho, giúp bạn "nặn" ra ý tưởng sản phẩm một cách sáng tạo và hiệu quả. Nghe có vẻ khó tin, nhưng hãy cùng khám phá xem chuỗi prompt này "thần kỳ" đến mức nào nhé!
+
+Tác giả bài đăng (xin phép được giấu tên) chia sẻ rằng mình đã có những trải nghiệm thú vị khi sử dụng chuỗi prompt này để lên ý tưởng sản phẩm. Mặc dù đôi khi AI (trí tuệ nhân tạo) đưa ra những ý tưởng có phần "điên rồ" như "Nền tảng học tập qua giọng nói Holo", nhưng nhìn chung, nó đã cung cấp rất nhiều thông tin hữu ích để tác giả suy ngẫm và phát triển.
+
+**Vậy chuỗi prompt này hoạt động như thế nào?**
+
+Về cơ bản, chuỗi prompt này là một loạt các câu lệnh được thiết kế để dẫn dắt AI từng bước trong quá trình lên ý tưởng. Mỗi câu lệnh sẽ khai thác một khía cạnh cụ thể của ý tưởng sản phẩm, từ việc xác định xu hướng thị trường, phân tích vấn đề, cho đến việc đề xuất giải pháp và xây dựng lộ trình phát triển.
+
+**Đây là cấu trúc của chuỗi prompt:**
+
+`INDUSTRY=[ngành mục tiêu], TREND=[xu hướng hoặc công nghệ hiện tại], PROBLEM=[vấn đề cụ thể cần giải quyết]`
+
+`Liệt kê 10 xu hướng hoặc công nghệ mới nổi trong INDUSTRY có khả năng làm thay đổi thị trường hoặc tạo ra cơ hội mới.~ Xác định 5 nỗi đau chính hoặc nhu cầu chưa được đáp ứng trong INDUSTRY, tập trung cụ thể vào những vấn đề liên quan đến PROBLEM.~ Tạo ra 10 ý tưởng sản phẩm độc đáo hoặc "khác thường" kết hợp các khía cạnh của TREND với việc giải quyết PROBLEM trong INDUSTRY. Đừng lo lắng về tính khả thi ở giai đoạn này.~ Đối với mỗi ý tưởng trong số 10 ý tưởng, hãy mô tả ngắn gọn chức năng cốt lõi và lợi ích chính cho người dùng trong một câu.~ Chọn 3 ý tưởng hứa hẹn nhất từ danh sách. Đối với mỗi ý tưởng, hãy xác định 3 nhóm người dùng mục tiêu tiềm năng và các trường hợp sử dụng cụ thể của họ.~ Đối với 3 ý tưởng hàng đầu, hãy động não 5 tính năng hoặc khả năng độc đáo giúp mỗi sản phẩm khác biệt với các giải pháp hiện có trong INDUSTRY.~ Tưởng tượng những trở ngại hoặc thách thức tiềm ẩn cho mỗi ý tưởng trong số 3 ý tưởng hàng đầu. Liệt kê 3 trở ngại chính cho mỗi ý tưởng và đề xuất các cách có thể để vượt qua chúng.~ Kết hợp các yếu tố từ 3 ý tưởng hàng đầu để tạo ra 2 khái niệm sản phẩm lai có thể cung cấp các giải pháp toàn diện hơn cho PROBLEM.~ Đối với mỗi khái niệm lai trong số 2 khái niệm, hãy mô tả kịch bản "một ngày sử dụng" cho thấy cách sản phẩm sẽ được sử dụng và tác động của nó đối với người dùng.~ Đánh giá 2 khái niệm lai và 3 ý tưởng hàng đầu ban đầu dựa trên sự đổi mới, tiềm năng thị trường và sự phù hợp với TREND. Xếp hạng chúng từ hứa hẹn nhất đến ít hứa hẹn nhất.~ Đối với ý tưởng được xếp hạng cao nhất, hãy phác thảo lộ trình sản phẩm cơ bản bao gồm 3 giai đoạn phát triển và các mốc quan trọng để đưa sản phẩm ra thị trường.`
+
+**Lưu ý:** Bạn cần thay thế các biến `INDUSTRY`, `TREND`, và `PROBLEM` bằng thông tin cụ thể của bạn.
+
+**Điểm hay của chuỗi prompt này là gì?**
+
+*   **Kích thích sáng tạo:** Bằng cách yêu cầu AI đưa ra những ý tưởng "khác thường", chuỗi prompt này giúp bạn thoát khỏi lối mòn suy nghĩ thông thường và khám phá những khả năng mới.
+*   **Phân tích chuyên sâu:** Chuỗi prompt không chỉ dừng lại ở việc đưa ra ý tưởng mà còn yêu cầu AI phân tích các khía cạnh quan trọng như nhóm người dùng mục tiêu, tính năng độc đáo, trở ngại tiềm ẩn, v.v.
+*   **Xây dựng lộ trình:** Bước cuối cùng của chuỗi prompt là phác thảo lộ trình phát triển sản phẩm, giúp bạn có cái nhìn tổng quan về các bước cần thực hiện để biến ý tưởng thành hiện thực.
+
+**Một số mẹo khi sử dụng chuỗi prompt:**
+
+*   **Cung cấp thông tin chi tiết:** Càng cung cấp thông tin cụ thể cho các biến `INDUSTRY`, `TREND`, và `PROBLEM`, AI càng có thể đưa ra những ý tưởng phù hợp và hữu ích.
+*   **Sử dụng công cụ hỗ trợ:** Tác giả bài đăng gợi ý sử dụng tiện ích mở rộng ChatGPT Queue để tự động chạy chuỗi prompt, giúp bạn tiết kiệm thời gian và công sức.
+*   **Kết hợp với nghiên cứu:** Đừng phụ thuộc hoàn toàn vào AI. Hãy kết hợp kết quả từ chuỗi prompt với nghiên cứu thị trường và kiến thức chuyên môn của bạn để đưa ra quyết định sáng suốt.
+
+**Lời kết:**
+
+Chuỗi prompt này thực sự là một công cụ hữu ích cho những ai đang tìm kiếm ý tưởng sản phẩm mới. Nó không chỉ giúp bạn "nặn" ra ý tưởng mà còn cung cấp cho bạn một khung làm việc để phát triển ý tưởng đó một cách bài bản. Hãy thử áp dụng chuỗi prompt này và biết đâu, bạn sẽ tạo ra được sản phẩm "để đời" tiếp theo! Đừng quên chia sẻ những ý tưởng thú vị mà bạn tạo ra được nhé!
+
+
+---
+Source: https://reddit.com/r/ChatGPTPro/comments/1f8flhj/prompt_chain_for_brainstorming_product_ideas/

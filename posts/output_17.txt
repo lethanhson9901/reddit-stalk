@@ -1,0 +1,43 @@
+## Kho Tàng Kiến Thức RAG: Từ Cơ Bản Đến Nâng Cao, Tất Cả Trong Một!
+
+Bạn có đang "ngụp lặn" trong biển thông tin về RAG (Retrieval-Augmented Generation) mà vẫn thấy mông lung, rối bời? Nào là video YouTube, bài báo khoa học, blog,... mỗi nơi một ít, khiến bạn cảm thấy như đang lạc vào mê cung không lối thoát? Đừng lo, bạn không cô đơn! Tác giả bài viết trên Reddit cũng từng trải qua cảm giác "khủng hoảng" tương tự khi bắt đầu xây dựng các ứng dụng RAG trong suốt 3 tháng qua.
+
+Nhưng thay vì bỏ cuộc, tác giả đã quyết định "dọn dẹp" mớ hỗn độn ấy bằng cách tổng hợp tất cả những gì đã học được vào một kho lưu trữ (repo) duy nhất trên GitHub. Repo này như một cẩm nang toàn diện về RAG, từ những khái niệm cơ bản nhất cho đến các kỹ thuật nâng cao, tất cả đều được trình bày rõ ràng, dễ hiểu trong 5 notebook Jupyter. Nghe hấp dẫn phải không? Hãy cùng khám phá xem repo này có gì đặc biệt nhé!
+
+### **Có Gì Trong "Kho Báu" RAG Này?**
+
+Repo này được chia thành 5 phần chính, tương ứng với 5 notebook Jupyter, dẫn dắt bạn đi từ "tân binh" đến "cao thủ" RAG:
+
+1. **Khởi động cùng RAG:** Giới thiệu tổng quan về RAG pipeline, cách thiết lập, embeddings, vector stores - những viên gạch đầu tiên để xây dựng ứng dụng RAG.
+2. **Kỹ thuật truy vấn đa dạng (Multi-query):** Khám phá các chiến lược truy vấn thông minh, giúp nâng cao hiệu quả tìm kiếm thông tin.
+3. **Chiến lược truy xuất nâng cao (Advanced retrieval):** Đi sâu vào các phương pháp truy xuất phức tạp hơn, tối ưu hóa kết quả trả về.
+4. **Tinh chỉnh (Fine-tuning):** Hướng dẫn cách "huấn luyện" mô hình RAG để phù hợp hơn với nhu cầu cụ thể của bạn.
+5. **Sắp xếp lại (Reranking) và hơn thế nữa:** Tìm hiểu cách sắp xếp lại kết quả tìm kiếm, nâng cao độ chính xác và liên quan.
+
+**Điểm cộng to đùng:** Tác giả còn cẩn thận trích dẫn nguồn tài liệu tham khảo rõ ràng, giúp bạn dễ dàng tra cứu và mở rộng kiến thức. Đặc biệt, bạn chỉ cần sao chép file `.env.example`, thêm API key của mình là có thể chạy thử các notebook ngay lập tức. Quá tiện lợi phải không nào?
+
+### **Không Chỉ Là Repo, Mà Còn Là Một Cộng Đồng!**
+
+Tác giả rất mong nhận được phản hồi và ý tưởng đóng góp từ cộng đồng để hoàn thiện repo hơn nữa. Đây không chỉ là một kho tài liệu, mà còn là nơi để những người đam mê RAG cùng nhau học hỏi, chia sẻ và phát triển.
+
+**Một số bình luận thú vị từ cộng đồng:**
+
+*   Nhiều người dùng bày tỏ sự cảm kích và đánh giá cao giá trị của repo, hứa hẹn sẽ "nghiền ngẫm" và áp dụng vào thực tế.
+*   Một số bạn đặt câu hỏi về phần mềm vẽ sơ đồ, và được giải đáp là Excalidraw.
+*   Có người nhận ra một số notebook được phát triển dựa trên video "LangChain from Scratch" của Lance Martin, kỹ sư LangChain, và tác giả xác nhận, đồng thời hứa hẹn sẽ bổ sung thêm nhiều tài nguyên mới.
+*   Một bạn đề xuất thêm thông tin về cách triển khai ứng dụng RAG và đánh giá hiệu suất, và tác giả cho biết đây chính là kế hoạch tiếp theo, cùng với việc sử dụng các công cụ như LangSmith và RAGAS.
+*   Một bình luận chia sẻ về khó khăn khi truy vấn cơ sở dữ liệu hơn 100 cột và đề xuất giải pháp, được tác giả nhiệt tình góp ý và giới thiệu notebook liên quan trong repo.
+
+**Thành công ngoài mong đợi và dự án bRAG AI đầy hứa hẹn:**
+
+Chỉ sau chưa đầy 48 giờ, repo đã nhận được hơn 380 sao, 35 nghìn lượt xem và hơn 600 lượt chia sẻ! Con số ấn tượng này cho thấy sức hút mạnh mẽ của chủ đề RAG và giá trị thiết thực mà repo mang lại.
+
+Nhờ sự ủng hộ nhiệt tình từ cộng đồng, tác giả đang phát triển **bRAG AI** ([bragai.tech](https://www.bragai.tech/)), một nền tảng hứa hẹn mang đến nhiều tính năng đột phá như tương tác với hàng trăm file PDF, truy vấn kho mã nguồn GitHub, tích hợp video YouTube, avatar kỹ thuật số,... Dự án sẽ ra mắt vào tháng tới, và bạn có thể đăng ký danh sách chờ ngay từ bây giờ!
+
+### **Lời Kết:**
+
+Repo "Comprehensive RAG" thực sự là một nguồn tài nguyên quý giá cho bất kỳ ai muốn tìm hiểu và xây dựng ứng dụng RAG. Với cách trình bày khoa học, dễ hiểu, cùng tinh thần chia sẻ cởi mở, repo này chắc chắn sẽ giúp bạn tiết kiệm thời gian, công sức và nhanh chóng "nâng trình" RAG của mình. Đừng quên nhấn "sao" trên GitHub để ủng hộ tác giả và tham gia cộng đồng RAG đầy sôi động này nhé! Hãy bắt đầu hành trình chinh phục RAG ngay hôm nay!
+
+
+---
+Source: https://reddit.com/r/LangChain/comments/1gsita2/comprehensive_rag_repo_everything_you_need_in_one/

@@ -1,0 +1,43 @@
+## Chán Ngấy Việc Khởi Tạo Dự Án Django? Công Cụ Này Sẽ Giúp Bạn!
+
+Bạn là lập trình viên Django? Bạn đã bao giờ cảm thấy mệt mỏi với việc phải thiết lập đi thiết lập lại một dự án Django mới, cấu hình đủ thứ từ cơ sở dữ liệu, giao diện, đến tích hợp các tính năng như đăng nhập mạng xã hội hay hàng đợi tác vụ? Nếu câu trả lời là "có", thì tin vui cho bạn đây! Một công cụ mang tên **Django App Generator** vừa ra đời, hứa hẹn sẽ "giải phóng" bạn khỏi những công việc nhàm chán đó.
+
+Trên Reddit, một lập trình viên đã chia sẻ về công cụ này, và ngay lập tức thu hút sự chú ý của cộng đồng. Điều thú vị là, **Django App Generator** hoàn toàn **miễn phí** và **mã nguồn mở**, cho phép bạn tùy chỉnh, tạo và tải mã nguồn về chỉ trong vài cú click chuột. Nghe hấp dẫn phải không nào? Hãy cùng khám phá xem công cụ này có gì đặc biệt nhé!
+
+### Django App Generator: "Vũ Khí Bí Mật" Cho Lập Trình Viên Django
+
+Django App Generator, đúng như tên gọi, là một công cụ giúp bạn tự động hóa quá trình khởi tạo dự án Django. Thay vì phải làm thủ công từng bước, bạn chỉ cần truy cập trang web, lựa chọn các tùy chỉnh mong muốn, và *bùm* - mã nguồn sẵn sàng để bạn tải về!
+
+Dưới đây là những gì bạn có thể tùy chỉnh với công cụ này:
+
+*   **Giao diện (UI):** Chọn từ hơn 10 giao diện khác nhau như AdminLTE, Soft Dashboard,... tha hồ "thay áo" cho ứng dụng của bạn!
+*   **Cơ sở dữ liệu (DB):** Dễ dàng chuyển đổi giữa SQLite (mặc định), PostgreSQL, MySQL/MariaDB.
+*   **Bảng cơ sở dữ liệu:** Không chỉ tạo bảng, bạn còn có thể định nghĩa các mối quan hệ giữa chúng.
+*   **Mở rộng User Model:** Thêm các trường tùy chỉnh cho model User, đáp ứng nhu cầu riêng của dự án.
+*   **Đăng nhập mạng xã hội:** Tích hợp tính năng đăng nhập bằng GitHub chỉ với vài thao tác đơn giản.
+*   **Hàng đợi tác vụ (Celery):** Xử lý các tác vụ bất đồng bộ một cách dễ dàng.
+*   **API động (Dynamic API):** Tự động tạo các endpoint API bảo mật cho từng model, giúp quản lý dữ liệu hiệu quả.
+*   **Docker:** Hỗ trợ Docker, giúp bạn dễ dàng triển khai ứng dụng.
+*   **CI/CD:** Cung cấp các script CI/CD cho Render, giúp tự động hóa quá trình triển khai.
+
+### Bí Mật Đằng Sau Sự Linh Hoạt Của Django App Generator
+
+Vậy điều gì làm nên sự khác biệt của Django App Generator so với các công cụ khác như Cookiecutter? Câu trả lời nằm ở cách thức hoạt động của nó.
+
+Thay vì chỉ đơn thuần thay thế chuỗi như Cookiecutter, Django App Generator sử dụng kết hợp giữa việc tạo mã nguồn từ template và thư viện **Astor** để thao tác với cây cú pháp trừu tượng (AST). Điều này cho phép công cụ cập nhật cấu hình dự án, thêm/bớt ứng dụng, thay đổi model một cách linh hoạt và chính xác, điều mà Cookiecutter khó có thể làm được.
+
+Một lập trình viên đã so sánh Django App Generator với JHipster (một công cụ tương tự cho Java) và nhận xét rằng lõi của Django App Generator không bị ràng buộc với bất kỳ ngôn ngữ cụ thể nào. Điều này mở ra tiềm năng cho việc mở rộng công cụ sang các ngôn ngữ khác như JavaScript, hứa hẹn sẽ hỗ trợ tạo các dự án NestJS/React trong tương lai.
+
+### Hướng Tới Tương Lai: Nâng Cấp Và Hoàn Thiện
+
+Hiện tại, Django App Generator đang tạo ra khoảng 20 ứng dụng mỗi ngày và mã nguồn được tự động lưu trữ trên GitHub. Đây là một con số ấn tượng, cho thấy tiềm năng phát triển mạnh mẽ của công cụ này.
+
+Trong tương lai, nhà phát triển dự định tích hợp thêm nhiều nhà cung cấp OAuth, DataTables, và thậm chí là một trình xây dựng trang (page builder) trực quan.
+
+### Lời Kết: Hãy Thử Và Trải Nghiệm!
+
+Django App Generator là một công cụ đầy hứa hẹn, giúp đơn giản hóa và tăng tốc quá trình phát triển ứng dụng Django. Nếu bạn đang tìm kiếm một giải pháp để "giải phóng" bản thân khỏi những công việc khởi tạo dự án lặp đi lặp lại, hãy thử ngay Django App Generator. Biết đâu, đây chính là "trợ thủ đắc lực" mà bạn đang tìm kiếm bấy lâu nay! Hãy dùng thử, chia sẻ cảm nhận và góp ý để công cụ ngày càng hoàn thiện hơn nhé!
+
+
+---
+Source: https://reddit.com/r/django/comments/1hwdqy3/opensource_free_django_app_generator_select/

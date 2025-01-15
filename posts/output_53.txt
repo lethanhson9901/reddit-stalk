@@ -1,0 +1,48 @@
+## MCP Là Gì Mà Dân Tình Xôn Xao Thế Nhỉ?
+
+Dạo gần đây, dân tình trong giới công nghệ, đặc biệt là những ai đam mê AI, đang rần rần bàn tán về một thứ gọi là MCP. Nghe tên thì có vẻ "nguy hiểm", nhưng thực chất nó là gì mà lại khiến mọi người "hype" đến vậy? Bài đăng của một bạn giấu tên trên Reddit đã đặt ra câu hỏi này và thu hút rất nhiều bình luận sôi nổi. Bạn ấy chia sẻ rằng mới biết đến MCP gần đây và thực sự không hiểu tại sao nó lại được tung hô nhiều đến thế trên Facebook, Twitter, YouTube. Liệu MCP có gì đặc biệt hơn so với chức năng gọi hàm (function calling) của các mô hình ngôn ngữ lớn (LLM) vốn đã được các nhóm sử dụng để xây dựng sản phẩm từ trước?
+
+Nếu bạn cũng đang "mù mờ" như bạn giấu tên kia, thì đừng lo, bài viết này sẽ giúp bạn "giải ngố" về MCP và lý giải cơn sốt này.
+
+Trước hết, hãy hiểu đơn giản thế này: **MCP (Model Context Protocol) là một giao thức giúp Claude (một AI của Anthropic) có thể "giao tiếp" với các công cụ và dịch vụ bên ngoài một cách dễ dàng và linh hoạt hơn.** Nó giống như một "phiên dịch viên" giúp Claude hiểu và sử dụng các công cụ khác nhau để hoàn thành nhiệm vụ.
+
+Vậy, MCP khác gì so với "function calling" thông thường?
+
+- **Function calling:** Giống như việc bạn có nhiều loại sạc khác nhau cho từng loại điện thoại. Mỗi lần muốn kết nối với một công cụ, bạn cần phải thiết lập riêng, khá rắc rối và tốn thời gian.
+- **MCP:** Giống như bạn có một chiếc sạc đa năng USB-C, dùng được cho tất cả các thiết bị. MCP tạo ra một chuẩn chung, giúp AI có thể "nói chuyện" với bất kỳ công cụ hay nguồn dữ liệu nào một cách thống nhất.
+
+**Điểm "ăn tiền" của MCP chính là sự linh hoạt và khả năng mở rộng.** Một bình luận đã ví von rất hay: "MCP là function calling động." Nghĩa là, bạn có thể cài đặt các "MCP server" khác nhau, cho phép Claude kết nối với Obsidian (để đọc ghi chú), blog (để phân tích văn phong), và thậm chí tự động viết và đăng bài blog mới chỉ từ một câu lệnh! Điều tuyệt vời là bạn không cần phải code, chỉ cần cài đặt server và ra lệnh cho AI.
+
+**Hãy tưởng tượng bạn có thể:**
+
+-   **Biến Claude thành trợ lý cá nhân:** Kết nối với Notion, Claude có thể quản lý công việc, ghi chú, và lên kế hoạch cho bạn, thậm chí tự động tạo ticket dựa trên yêu cầu.
+-   **Tự động hóa các tác vụ:** Kết nối với các công cụ như ExaSearch, UseScraper, Stability-ai, Claude có thể tự động tìm kiếm thông tin, thu thập dữ liệu, tạo ảnh, và nhiều hơn thế nữa.
+-   **Mở rộng khả năng của Claude:** MCP cho phép bạn "cài đặt" thêm các chức năng mới cho Claude, giống như cài app cho điện thoại vậy.
+
+**Tại sao dân tình lại "hype" đến vậy?**
+
+-   **Giải quyết vấn đề "đau đầu" trong phát triển AI:** Thay vì phải code từng kết nối, MCP cung cấp một giao thức chung, xử lý mọi thứ từ quyền truy cập đến thực thi.
+-   **Tăng năng suất:** Một bình luận chia sẻ rằng MCP là "bước nhảy vọt lớn nhất" về năng suất của họ.
+-   **Tiềm năng vô hạn:** "Bầu trời là giới hạn," một bình luận khác khẳng định. Bạn có thể lập trình để AI làm bất cứ điều gì bạn có thể làm.
+-   **Hướng tới tương lai "một ứng dụng thống trị tất cả":** Một số người tin rằng MCP là bước đệm để tạo ra một "siêu ứng dụng" AI, có thể truy cập vào mọi dữ liệu và API, thay thế các ứng dụng CRUD (Create, Read, Update, Delete) truyền thống.
+
+**Tuy nhiên, cũng có những ý kiến trái chiều:**
+
+-   Một số người cho rằng MCP chỉ là "function calling" được đặt tên hoa mỹ, không có gì đột phá.
+-   Vấn đề bảo mật khi cho phép AI truy cập vào API cũng được đặt ra.
+
+**Kết luận:**
+
+Dù còn nhiều tranh cãi, không thể phủ nhận rằng MCP đang tạo ra một làn sóng mới trong cộng đồng AI. Nó mang đến sự tiện lợi, linh hoạt và tiềm năng to lớn cho việc phát triển các ứng dụng AI. Dù bạn là developer hay chỉ là người dùng bình thường, hãy thử tìm hiểu về MCP, biết đâu nó sẽ thay đổi cách bạn làm việc và sáng tạo với AI!
+
+**Lời khuyên:**
+
+-   Hãy bắt đầu bằng việc tìm hiểu các MCP server có sẵn trên GitHub.
+-   Thử kết nối Claude với các công cụ bạn thường dùng.
+-   Đừng ngại thử nghiệm và khám phá tiềm năng của MCP.
+
+MCP có thể là "game changer" trong lĩnh vực AI, hãy cùng chờ xem nó sẽ mang đến những điều thú vị gì trong tương lai!
+
+
+---
+Source: https://reddit.com/r/ClaudeAI/comments/1hy6dj9/why_people_are_so_hyped_about_mcp/
