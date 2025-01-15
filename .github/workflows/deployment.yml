@@ -26,6 +26,11 @@ jobs:
       - name: Install Dependencies
         run: npm ci
         
+      - name: Create directories
+        run: |
+          mkdir -p posts public
+          [ -f "posts/sample-post.txt" ] || cp sample-post.txt posts/
+        
       - name: Build
         run: npm run build
         
