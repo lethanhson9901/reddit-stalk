@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/reddit-stalk/static/css/main.dbf558b5.css",
-    "main.js": "/reddit-stalk/static/js/main.d60a97a3.js",
+    "main.js": "/reddit-stalk/static/js/main.46ee0743.js",
     "index.html": "/reddit-stalk/index.html",
     "main.dbf558b5.css.map": "/reddit-stalk/static/css/main.dbf558b5.css.map",
-    "main.d60a97a3.js.map": "/reddit-stalk/static/js/main.d60a97a3.js.map"
+    "main.46ee0743.js.map": "/reddit-stalk/static/js/main.46ee0743.js.map"
   },
   "entrypoints": [
     "static/css/main.dbf558b5.css",
-    "static/js/main.d60a97a3.js"
+    "static/js/main.46ee0743.js"
   ]
 }
