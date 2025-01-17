@@ -1,30 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   darkMode: 'class',
   theme: {
     extend: {
-      typography: {
-        DEFAULT: {
-          css: {
-            maxWidth: 'none',
-            color: '#333',
-            a: {
-              color: '#0079D3',
-              '&:hover': {
-                color: '#FF4500',
-              },
-            },
-          },
-        },
-      },
-    },
+      colors: {
+        'reddit-dark': '#1a1a1b',
+        orange: {
+          500: '#ff4500',  // Reddit's orange
+          600: '#e03d00',
+        }
+      }
+    }
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/line-clamp'),
-  ],
+  plugins: [],
 }
