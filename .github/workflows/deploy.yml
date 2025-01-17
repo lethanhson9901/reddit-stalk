@@ -32,5 +32,7 @@ jobs:
         with:
           branch: gh-pages
           folder: build
-          token: ${{ secrets.DEPLOY_TOKEN }}  # Add this line
+          token: ${{ secrets.DEPLOY_TOKEN }}
           clean: true
+          clean-exclude: |
+            .nojekyll
