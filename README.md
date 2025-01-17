@@ -6,6 +6,8 @@
 
 A modern, responsive Reddit content explorer built with React and Tailwind CSS. Browse and search through Reddit communities with a beautiful, dark-mode supported interface.
 
+![alt text](image.png)
+
 ## ✨ Features
 
 - 🌗 Dark/Light mode support with system preference detection
