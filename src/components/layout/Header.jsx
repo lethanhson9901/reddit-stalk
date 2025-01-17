@@ -7,7 +7,7 @@ const Header = ({ searchQuery, setSearchQuery, darkMode, setDarkMode }) => (
       <div className="flex items-center gap-4">
         <div className="w-8" />
         <button 
-          onClick={() => window.location.href = '/'}
+          onClick={() => window.location.href = `${process.env.PUBLIC_URL || '/reddit-stalk'}`}
           className="text-xl font-bold flex items-center gap-1 hover:opacity-80 transition-opacity"
         >
           <span className="text-orange-500">Reddit</span>
