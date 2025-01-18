@@ -16,7 +16,7 @@ A modern, responsive blog and content management platform built with React, Fire
 - 📊 Reading time estimation
 - 🎨 Modern UI with Tailwind CSS
 - 🎯 Category-based content filtering
-- 🔒 Firebase-powered admin authentication
+- 🔒 Secure Firebase admin authentication
 - 🔐 Public/Private post management
 
 ## 🚀 Demo
@@ -60,9 +60,6 @@ REACT_APP_FIREBASE_DATABASE_URL=your_firebase_database_url
 REACT_APP_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id
 REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
-
-# Admin Credentials and Initialization
-REACT_APP_ADMIN_INIT_KEY=your_admin_initialization_key
 REACT_APP_BASE_URL=http://localhost:3000
 ```
 
@@ -74,12 +71,35 @@ npm start
 ## 🔧 Firebase Setup
 
 ### Authentication
-- Enable Email/Password authentication in Firebase Console
-- Create an admin user with the email specified in `.env`
+1. Enable Email/Password authentication in Firebase Console
+2. Create a new admin user through the Authentication section
+3. Note down the admin user's UID from the Authentication dashboard
 
 ### Realtime Database
-- Set up database rules to secure admin access
-- Create an `admins` node to manage admin privileges
+1. Create a new Realtime Database
+2. Set up the following security rules:
+```json
+{
+  "rules": {
+    "admins": {
+      ".read": "auth != null",
+      ".write": "auth != null && (!data.exists() || root.child('admins').child(auth.uid).val() === true)"
+    },
+    "posts": {
+      ".read": true,
+      ".write": "auth != null && root.child('admins').child(auth.uid).val() === true"
+    }
+  }
+}
+```
+3. Add the admin user's UID to the database with this structure:
+```json
+{
+  "admins": {
+    "YOUR_ADMIN_UID": true
+  }
+}
+```
 
 ## 🚀 Deployment
 
@@ -96,7 +116,7 @@ The project uses GitHub Actions for continuous deployment to GitHub Pages:
 ## 🔐 Admin Access
 
 1. Navigate to `/admin`
-2. Log in with the admin credentials
+2. Log in with your Firebase admin credentials
 3. Manage posts, toggle visibility, and edit content
 
 ## 🤝 Contributing
@@ -112,7 +132,9 @@ The project uses GitHub Actions for continuous deployment to GitHub Pages:
 - Never commit sensitive information like API keys
 - Use environment variables for configuration
 - Implement proper Firebase security rules
-- Rotate admin credentials periodically
+- Keep admin credentials secure and rotate periodically
+- Database rules enforce admin-only write access to posts
+- Admin authentication is verified through Firebase Auth and Realtime Database
 
 ## 📄 License
 
