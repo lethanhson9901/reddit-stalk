@@ -26,6 +26,9 @@ jobs:
         run: npm run build
         env:
           CI: false
+          REACT_APP_ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
+          REACT_APP_ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          REACT_APP_BASE_URL: 'https://lethanhson9901.github.io/reddit-stalk'
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

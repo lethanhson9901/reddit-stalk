@@ -19,6 +19,8 @@ A modern, responsive Reddit content explorer built with React and Tailwind CSS. 
 - 🔝 Scroll to top functionality
 - 🎨 Modern UI with Tailwind CSS
 - 🎯 Category-based content filtering
+- 🔒 Admin authentication system
+- 🔐 Public/Private post management
 
 ## 🚀 Demo
 
@@ -44,16 +46,50 @@ cd reddit-stalk
 npm install
 ```
 
-3. Start the development server:
+3. Set up environment variables:
+```bash
+# Copy environment example files
+cp .env.example .env.development
+cp .env.example .env.production
+
+# Edit the environment files with your configurations
+```
+
+4. Start the development server:
 ```bash
 npm start
 ```
 
-## 🔧 Configuration
+## 🔧 Environment Configuration
 
-The application can be configured through the following environmental variables:
-- Create a `.env` file in the root directory
-- Add any necessary configuration variables
+The application uses different environment files for development and production:
+
+### Development Environment (.env.development)
+```env
+REACT_APP_ADMIN_USERNAME=your_admin_username
+REACT_APP_ADMIN_PASSWORD=your_admin_password
+REACT_APP_BASE_URL=http://localhost:3000/reddit-stalk
+```
+
+### Production Environment (.env.production)
+```env
+REACT_APP_ADMIN_USERNAME=your_admin_username
+REACT_APP_ADMIN_PASSWORD=your_admin_password
+REACT_APP_BASE_URL=https://lethanhson9901.github.io/reddit-stalk
+```
+
+### Environment Variables
+| Variable | Description | Required |
+|----------|-------------|----------|
+| REACT_APP_ADMIN_USERNAME | Admin login username | Yes |
+| REACT_APP_ADMIN_PASSWORD | Admin login password | Yes |
+| REACT_APP_BASE_URL | Base URL for the application | Yes |
+
+### Important Notes
+- Never commit your actual environment files (.env.development, .env.production)
+- Keep your admin credentials secure
+- Use different credentials for development and production
+- The .env.example file serves as a template and can be committed to the repository
 
 ## 📝 Usage
 
@@ -63,6 +99,24 @@ The application can be configured through the following environmental variables:
 4. Toggle between dark and light modes using the theme switcher
 5. Click "Read more" to view full posts
 6. Use the scroll-to-top button for easy navigation
+
+### Admin Features
+1. Access admin login at `/admin`
+2. Manage post visibility (public/private)
+3. Edit and delete posts
+4. View all posts regardless of visibility status
+
+## 🚀 Deployment
+
+1. Update your production environment variables:
+```bash
+# Edit .env.production with your production settings
+```
+
+2. Deploy to GitHub Pages:
+```bash
+npm run deploy
+```
 
 ## 🤝 Contributing
 
