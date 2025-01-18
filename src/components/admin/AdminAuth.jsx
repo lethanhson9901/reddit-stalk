@@ -1,25 +1,37 @@
 import React, { useState } from 'react';
 import { Lock, LogIn, ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+import { ref, get } from 'firebase/database';
+import { auth, database } from '../../firebase/config';
 
 const AdminAuth = ({ onLogin }) => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (
-      username === process.env.REACT_APP_ADMIN_USERNAME && 
-      password === process.env.REACT_APP_ADMIN_PASSWORD
-    ) {
-      onLogin(true);
-      localStorage.setItem('isAdmin', 'true');
-    } else {
-      setError('Invalid credentials');
-    }
-  };
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [error, setError] = useState('');
+    const navigate = useNavigate();
+  
+    const handleSubmit = async (e) => {
+      e.preventDefault();
+      try {
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
+        // Check if user is admin
+        const adminRef = ref(database, `admins/${userCredential.user.uid}`);
+        const adminSnapshot = await get(adminRef);
+        
+        if (adminSnapshot.exists() && adminSnapshot.val() === true) {
+          onLogin(true);
+          localStorage.setItem('isAdmin', 'true');
+          navigate('/admin');
+        } else {
+          setError('User is not an admin');
+          auth.signOut();
+        }
+      } catch (error) {
+        console.error('Login error:', error);
+        setError('Invalid credentials');
+      }
+    };
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900">
@@ -48,14 +60,14 @@ const AdminAuth = ({ onLogin }) => {
           )}
           
           <div>
-            <label htmlFor="username" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-              Username
+            <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+              Email
             </label>
             <input
-              id="username"
-              type="text"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
+              id="email"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 text-gray-900 dark:text-white"
               required
             />

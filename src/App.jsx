@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import AppContent from './AppContent';
+import AdminInitialization from './components/admin/AdminInitialization';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(() => {
-    if (typeof window !== 'undefined') {
-      return window.matchMedia('(prefers-color-scheme: dark)').matches;
-    }
-    return false;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
 
   useEffect(() => {
@@ -19,9 +17,16 @@ const App = () => {
   }, [darkMode]);
 
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <AppContent darkMode={darkMode} setDarkMode={setDarkMode} />
-    </BrowserRouter>
+    <HashRouter>
+      <Routes>
+        <Route path="/admin/initialize" element={
+          <div className="min-h-screen bg-white dark:bg-gray-900">
+            <AdminInitialization />
+          </div>
+        } />
+        <Route path="/*" element={<AppContent darkMode={darkMode} setDarkMode={setDarkMode} />} />
+      </Routes>
+    </HashRouter>
   );
 };
 

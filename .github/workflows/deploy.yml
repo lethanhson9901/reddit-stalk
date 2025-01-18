@@ -3,6 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   build-and-deploy:
@@ -22,13 +23,27 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Create .env file
+        run: |
+          cat << EOF > .env
+          REACT_APP_BASE_URL=https://lethanhson9901.github.io/reddit-stalk
+          REACT_APP_FIREBASE_API_KEY=${{ secrets.REACT_APP_FIREBASE_API_KEY }}
+          REACT_APP_FIREBASE_AUTH_DOMAIN=${{ secrets.REACT_APP_FIREBASE_AUTH_DOMAIN }}
+          REACT_APP_FIREBASE_PROJECT_ID=${{ secrets.REACT_APP_FIREBASE_PROJECT_ID }}
+          REACT_APP_FIREBASE_STORAGE_BUCKET=${{ secrets.REACT_APP_FIREBASE_STORAGE_BUCKET }}
+          REACT_APP_FIREBASE_MESSAGING_SENDER_ID=${{ secrets.REACT_APP_FIREBASE_MESSAGING_SENDER_ID }}
+          REACT_APP_FIREBASE_APP_ID=${{ secrets.REACT_APP_FIREBASE_APP_ID }}
+          REACT_APP_FIREBASE_MEASUREMENT_ID=${{ secrets.REACT_APP_FIREBASE_MEASUREMENT_ID }}
+          REACT_APP_FIREBASE_DATABASE_URL=${{ secrets.REACT_APP_FIREBASE_DATABASE_URL }}
+          REACT_APP_ADMIN_INIT_KEY=${{ secrets.REACT_APP_ADMIN_INIT_KEY }}
+          EOF
+
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
         env:
           CI: false
-          REACT_APP_ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
-          REACT_APP_ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
-          REACT_APP_BASE_URL: 'https://lethanhson9901.github.io/reddit-stalk'
+          PUBLIC_URL: /reddit-stalk
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
