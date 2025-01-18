@@ -13,23 +13,36 @@ const AdminAuth = ({ onLogin }) => {
   
     const handleSubmit = async (e) => {
       e.preventDefault();
+      setError('');
+      
       try {
+        // Sign in with email/password
         const userCredential = await signInWithEmailAndPassword(auth, email, password);
-        // Check if user is admin
+        
+        // Check if user exists in admin list
         const adminRef = ref(database, `admins/${userCredential.user.uid}`);
         const adminSnapshot = await get(adminRef);
         
-        if (adminSnapshot.exists() && adminSnapshot.val() === true) {
+        if (adminSnapshot.exists()) {
+          // User is an admin
           onLogin(true);
           localStorage.setItem('isAdmin', 'true');
+          localStorage.setItem('adminUid', userCredential.user.uid);
           navigate('/admin');
         } else {
-          setError('User is not an admin');
-          auth.signOut();
+          // User exists but is not an admin
+          setError('Access denied: User is not an administrator');
+          await auth.signOut();
         }
       } catch (error) {
         console.error('Login error:', error);
-        setError('Invalid credentials');
+        if (error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password') {
+          setError('Invalid email or password');
+        } else if (error.code === 'auth/too-many-requests') {
+          setError('Too many login attempts. Please try again later.');
+        } else {
+          setError('An error occurred. Please try again.');
+        }
       }
     };
 
