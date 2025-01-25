@@ -1,0 +1,290 @@
+{
+    "items": [
+        {
+            "title": "I made this using Django and tailwind",
+            "author": "Aj412803",
+            "text": "I\u2019ve been learning Django for the past year and working on various small projects. While searching for ideas to build a project that could solve real-time problems, one of my photographer friends suggested an idea: \"Hey AJ, can you build something where I can share and showcase my event photos with clients?\" (He\u2019s a wedding photographer.) He wanted a way to share photos of live weddings through a website, using a QR code.\n\nInspired by this, I built [**ShareMySnaps**](https://sharemysnaps.anujjamdade.site/) \u2014a platform that allows users to create digital albums in minutes. Although there are many products available in the market, this project was entirely for my learning experience.\n\nHere are some features of the app:\n\n1. Users need to sign up via their Google account.\n2. On the dashboard, users can create a folder, which will automatically be created in their Google Drive.\n3. When users click to upload an image, they are redirected to their Google Drive page to upload.\n4. Users can download a beautiful QR code that links to their gallery page.\n5. The gallery page fetches all the photos from the specific folder and showcases them on the gallery website.\n6. Each gallery has its own dedicated page, and these pages are customizable (currently, the customization options are basic).\n\nMany more features will be added in the future!\n\n  \nYou can check out the project here:\n\n* [**GitHub Repo**](https://github.com/anujjamdade007/sharemysnaps)\n* [**Live Demo**](https://sharemysnaps.anujjamdade.site/)\n\n",
+            "subreddit": "django",
+            "comments": [
+                {
+                    "author": "teodorkostadinov",
+                    "text": "Looks great! Fast to load for me as well. Do you use any CDN?",
+                    "replies": [
+                        {
+                            "author": "Aj412803",
+                            "text": "No sir"
+                        }
+                    ]
+                },
+                {
+                    "author": "pearlzebra",
+                    "text": "Looks good. Clever with hosting the images at Google. Then you dont have spend storage on hosting the images and dont have to worry about any legal stuff is case of a data breach or loss.   \nWhere/how do you host the app?",
+                    "replies": [
+                        {
+                            "author": "Aj412803",
+                            "text": "Thanks alot for reply. Deployed On vps with dokku, its my first time with hosting. And its first ever project I deployed."
+                        }
+                    ]
+                },
+                {
+                    "author": "pavankk-623",
+                    "text": "Good work",
+                    "replies": [
+                        {
+                            "author": "Aj412803",
+                            "text": "Thanks alot"
+                        }
+                    ]
+                },
+                {
+                    "author": "lurkerburzerker",
+                    "text": "Thank you for this!",
+                    "replies": [
+                        {
+                            "author": "Aj412803",
+                            "text": "\ud83d\udc96\ud83d\ude4f"
+                        }
+                    ]
+                },
+                {
+                    "author": "EmbarrassedJacket256",
+                    "text": "Looks good. Congrats",
+                    "replies": [
+                        {
+                            "author": "Aj412803",
+                            "text": "Heyy thanks"
+                        }
+                    ]
+                },
+                {
+                    "author": "shadow_-elite",
+                    "text": "Awesome. What are the services your used to deploy",
+                    "replies": [
+                        {
+                            "author": "Aj412803",
+                            "text": "Heyy thanks, I rented out vps and used dokku to deploy"
+                        }
+                    ]
+                },
+                {
+                    "author": "convicted_redditor",
+                    "text": "Where is it hosted?\nBeautiful landing page though, did you use a template or built it from scratch?",
+                    "replies": [
+                        {
+                            "author": "Aj412803",
+                            "text": "Thanks for reply, I used ready to use components and merged in one place. And hosted on vps",
+                            "replies": [
+                                {
+                                    "author": "convicted_redditor",
+                                    "text": "self hosted vps or from hosting providers like Railway (which I use), vercel, render, etc.?\n\nAlso, can you tell me where did you find ready to use components? I am rebuilding landing page."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "kim-mkuu",
+                    "text": "Nicely done. Kudos.",
+                    "replies": [
+                        {
+                            "author": "Aj412803",
+                            "text": "Thanks alot"
+                        }
+                    ]
+                },
+                {
+                    "author": "geektousif",
+                    "text": "which vps are you using ? I mean the provider from where you bought. and also the specs of the system and cost",
+                    "replies": [
+                        {
+                            "author": "Aj412803",
+                            "text": "I grabbed Black Friday deal from racknerd 1vcpu with 1gb ram and 20gb ssd in ~11$ for year"
+                        }
+                    ]
+                },
+                {
+                    "author": "jillesme",
+                    "text": "This is nice! You're using Tailwind from a CDN I see. You can set it up with Vite to scan all your HTML templates and only include the classes you use. Would make it even faster"
+                },
+                {
+                    "author": "thawancomt",
+                    "text": "Nice work man, I have forked and I'm ready to colaborate",
+                    "replies": [
+                        {
+                            "author": "thawancomt",
+                            "text": "btw, I open a PR fixing one bug :)"
+                        }
+                    ]
+                },
+                {
+                    "author": "R5600x",
+                    "text": "Beautiful colors! How did you setup the google auth, is there a django package for?"
+                }
+            ]
+        },
+        {
+            "title": "Resurrected: Announcing django-guardian 3.0.0rc1",
+            "author": "thclark",
+            "text": "Hi All,\n\nOur beloved [django-guardian](https://github.com/django-guardian/django-guardian) (object level permissions for django) went unmaintained for a long time. After a lot of patience we've managed to resurrect the project and get all the permissions in place for the associated github, pypi, rtd accounts etc.\n\nToday I released 3.0.0rc1 which brings django version support up to date and containes a whole ton of bugfixes, doc improvements and minor features. I'm very confident in it and expect to make this a full release over the next couple of months.\n\n[In this PR](https://github.com/django-guardian/django-guardian/pull/841) I explain why we've made this a major version release, although this shouldn't break your setup and \\*should\\* be a drop in replacement.\n\nIf you try this, please post because I want to hear your experience!\n\n",
+            "subreddit": "django",
+            "comments": [
+                {
+                    "author": "dpgraham4401",
+                    "text": "I've used guardian in recent past, and also worked without it. It's always worked, but the inactive repo always made me feel... uncomfortable since it's usually crucial to any app that uses it.\n\n Happy to see the project is getting some TLC.\n\nBest of luck!"
+                },
+                {
+                    "author": "marcpcd",
+                    "text": "Congrats on the hard work.\nIt\u2019s so great to see this library alive !"
+                },
+                {
+                    "author": "duf59252",
+                    "text": "Congrats and thanks a lot for the hard work !"
+                }
+            ]
+        },
+        {
+            "title": "Django + HTMX",
+            "author": "Loud_Quail_7247",
+            "text": "I am playing around for a while now with this combo with mixed feelings.\nIt\u2019s really hard to remain a clear structure when rendering only with partials, snippets and including it then in content\u2026\nDo you struggle with that too? Is there any helpful resource how not to lose track with the overall structure? \n\n",
+            "subreddit": "django",
+            "comments": [
+                {
+                    "author": "jrenaut",
+                    "text": "I've been struggling with this too. The solution I've used so far, until I figure something better, is naming the view files something like myview.html then myview__table.html and myview__nav.html so they sort together naturally. The bit after the double underscore is the name of the partial.",
+                    "replies": [
+                        {
+                            "author": "maptaincorgan",
+                            "text": "I'm stealing this idea! \ud83d\ude43"
+                        }
+                    ]
+                },
+                {
+                    "author": "MegaAndyBear",
+                    "text": "If I\u2019m understanding right - there\u2019s an essay about it: https://htmx.org/essays/template-fragments/\n\nAnd I found Django-template-partials was the most intuitive way to do exactly what he described in the essay"
+                },
+                {
+                    "author": "microgem",
+                    "text": "They serve completely different purposes, use HTMX to enable dynamic behaviour on client-side (e.g. trigger polling or based on HTMX triggers from server), Django just returns responses."
+                },
+                {
+                    "author": "edcculus",
+                    "text": "I have not gone down that path, but they had a podcast episode on Talk Python about it. Maybe there are some useful tidbits there."
+                },
+                {
+                    "author": "EmbarrassedJacket256",
+                    "text": "I like to organize these templates in subfolders like components, interactions, modals depending on the project architecture. And for the views I don't have any standard defined besides that they need to be match easily with the actual views. Works very well while I work on the application. Tends to have a bit of remember curve looking at project I haven't touch for a while"
+                }
+            ]
+        },
+        {
+            "title": "DRF first or wait?",
+            "author": "mufasis",
+            "text": "In a hypothetical situation where you wanted to deliver an MVP with minimal functionality to showcase an idea, but you knew one day it would also be an app, would you build DRF from the beginning or iterate into DRF over time?",
+            "subreddit": "django",
+            "comments": [
+                {
+                    "author": "Own-Construction-344",
+                    "text": "You know you will need an API so go with DRF or ninja from the beginning"
+                },
+                {
+                    "author": "Ok_Animal_8557",
+                    "text": "An API-first approach does not add much work to your workflow, definitely go with your choice of rest framework",
+                    "replies": [
+                        {
+                            "author": "mufasis",
+                            "text": "Are you in the ninja camp or DRF?",
+                            "replies": [
+                                {
+                                    "author": "Ok_Animal_8557",
+                                    "text": "I write DRF. Having looked at the Ninja performance claims it seems promising though (no experience with Ninja)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "joncorv",
+                    "text": "Depends on your resources. \n\nIf you have a front-end team that\u2019s ready to jam instantly with their js framework of choice, then build your rest endpoints straight away. But if you\u2019re a real small backend team, then why not build your templates with jinja2, tailwind, Flowbite/HTMX/Alpine? That to me feels like by far the easiest way to jam out an mvp with the least amount of complexity."
+                },
+                {
+                    "author": "you_zir_name",
+                    "text": "MVP should be simple and fast. Unless you have/are someone with great knowledge of a frontend framework then it's a waste of time to create an API. If it actually becomes something then convert it to an API. I don't know ninja but making serializers is simple once you already have a good idea of the view."
+                },
+                {
+                    "author": "MathematicianNew7915",
+                    "text": "Go first DRF. \nFor the front end you will have a lot of good stuff available to get it something up quick."
+                },
+                {
+                    "author": "ayman_f",
+                    "text": "DRF is a fantastic framework. I think it makes sense to enable it since the begining with a minimum viable configuration that works for you, start using it where needed and evolve it over time. \n\n\n\nI haven't tried Django Ninja yet to an extent that I can comment about but DRF is just solid and passed the test of time. If I'm in a hurry or on a deadline I'd go for DRF."
+                },
+                {
+                    "author": "bishwasbhn",
+                    "text": "For an MVP that'll grow into an app - I'd suggest starting with whatever lets you ship fastest while keeping Django's batteries-included philosophy intact. That's actually why I built Djapy - I got tired of fighting with other frameworks just to use Django's built-in features. You know that pain when you want to use Django's default router or auth, but your REST framework makes you jump through hoops? Yeah, that's exactly what we fixed.\n\nThe reason? A few months back, one of our users was in the exact same boat - wanted to start small but knew they'd need more complex features later. With DRF, you'd have to set up a bunch of boilerplate upfront. With Ninja, you'd need to use their router system instead of Django's. Djapy just... uses what Django already gives you. Want to use Django's URL patterns? They just work. Need the auth system? It's there, no extra config needed.\n\n[Djapy](https://github.com/Bishwas-py/djapy) takes this approach - start super minimal (seriously, check out the basic CRUD example in our [docs](https://djapy.io/)), but it has all the advanced stuff (async, caching, complex queries) ready when you need them. We just shipped async support in [0.2.0.dev1](https://pypi.org/project/djapy/0.2.0.dev2/) that makes scaling super smooth, all while keeping Django's patterns intact.\n\nPlus - and this is something I'm pretty proud of - the learning curve is actually gentler than both DRF and Ninja because you're working with pure Python patterns and Django conventions from the start. No need to learn a whole new way of doing things just to get started.\n\nWould love to hear more about what you're building - might be able to suggest some specific patterns that could help! \ud83d\ude80",
+                    "replies": [
+                        {
+                            "author": "mufasis",
+                            "text": "Interesting, will take a look."
+                        }
+                    ]
+                },
+                {
+                    "author": "StandardIntern4169",
+                    "text": "DRF from the beginning, but would go for Django Ninja not DRF",
+                    "replies": [
+                        {
+                            "author": "mufasis",
+                            "text": "Why?",
+                            "replies": [
+                                {
+                                    "author": "jannealien",
+                                    "text": "If you have anything else than simple crud, go with DRF. Otherwise you end up building a lot of stuff yourself with Ninja."
+                                },
+                                {
+                                    "author": "azkeel-smart",
+                                    "text": "Because it's cleaner code and far easier to learn."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "mininglee",
+                    "text": "I prefer DRF through development time progresses. Ninja or FastAPI are easy to start, but you have to write bunch of codes when just adding a simple feature. DRF gives you the same simple feature by adding a line of code."
+                },
+                {
+                    "author": "Pristine_Run5084",
+                    "text": "By definition if there is no app right now then adding an api layer would fall outside the scope of MVP."
+                },
+                {
+                    "author": "chi11ax",
+                    "text": "I cast my vote for Ninja.\n\nCode is cleaner, and it works well with how I structure my apps which is just to have the endpoint authenticate user then either call my functions from my lib and serve the results or just validate data before passing to my lib functions.\n\nSo in this way, I guess the API can wait as I build out my library, then unit tests or command line to get data, then finally build the API and front end app."
+                },
+                {
+                    "author": "babige",
+                    "text": "If you can DRF it's so easy and fast to set up"
+                },
+                {
+                    "author": "Megamygdala",
+                    "text": "If you know you need to build an API, go with django-ninja + DRF app for authentication"
+                },
+                {
+                    "author": "kankyo",
+                    "text": "Ninja over DRF first of all.\n\nBut it depends on the idea. For basic CRUD type stuff iommi is going to be much faster than hand wiring endpoints and writing a frontend.",
+                    "replies": [
+                        {
+                            "author": "mufasis",
+                            "text": "Why ninja?",
+                            "replies": [
+                                {
+                                    "author": "kankyo",
+                                    "text": "Imo it's just nicer. Which makes sense as it's newer and have stolen great ideas from fastapi."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

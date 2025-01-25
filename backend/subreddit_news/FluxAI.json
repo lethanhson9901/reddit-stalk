@@ -1,0 +1,43 @@
+{
+    "items": [
+        {
+            "title": "Close - FLUX.1 dev",
+            "author": "kevin32",
+            "text": "[External Link]",
+            "subreddit": "FluxAI",
+            "comments": []
+        },
+        {
+            "title": "One Prompt, Four AI Image Models: Flux 1.1 Pro, Photon, Stable Diffusion 3.5 Large, Sana \ud83c\udfa8\ud83e\udd16\ud83d\udc47",
+            "author": "Any-Friendship4587",
+            "text": "[External Link]",
+            "subreddit": "FluxAI",
+            "comments": [
+                {
+                    "author": "coldasaghost",
+                    "text": "So.. what was the prompt then",
+                    "replies": [
+                        {
+                            "author": "Any-Friendship4587",
+                            "text": "Prompt: A realistic, well-lit human hand in sharp focus, slightly weathered with visible details like wrinkles and texture. The hand is centered and reaching forward. The background is a dim, foggy forest with soft moonlight filtering through the trees, creating a mysterious and eerie atmosphere. No NSFW content."
+                        }
+                    ]
+                },
+                {
+                    "author": "Any-Friendship4587",
+                    "text": "I used the model comparison feature of [Eachlabs AI](https://www.eachlabs.ai/) to run multiple models simultaneously and compare their outputs with a single prompt."
+                },
+                {
+                    "author": "StlCyclone",
+                    "text": "Of course SDXL is a finger short.",
+                    "replies": [
+                        {
+                            "author": "silenceimpaired",
+                            "text": "Thats okay, I found the missing finger in image 2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

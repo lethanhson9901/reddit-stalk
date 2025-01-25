@@ -1,0 +1,20 @@
+{
+    "items": [
+        {
+            "title": "8 steps to get a project to 1,000 users",
+            "author": "felixheikka",
+            "text": "My\u00a0SaaS\u00a0now has 4,000+ users and it took only five months to get here.\n\nI believe the process to get here is actually quite straightforward, it's not easy, but it is straightforward.\n\nIf I had to start over with a new SaaS, here's how I would do it:\n\n1. Find a problem you want to solve. To get ideas, look at problems you experience yourself, and industries you have previous experience in.\n2. Interview at least 10 people (more is better) who experience the problem to understand: how they're currently solving the problem, how big of a pain it is to them, and how much they're willing to pay for a solution. The interview can simply be a survey, a quick call, or back-and-forth messaging.\n3. With the input you\u2019ve now gathered, create an MVP that solves the problem in a simple way, no extra fancy features, just solve the problem.\n4. Share the MVP to the same people you interviewed for free in exchange for feedback.\n5. Use feedback to improve the MVP.\n6. Market the product within communities of your target audience to get the first 100 users.\n7. Use the feedback gathered from the first 100 users to develop the MVP into a full-fledged product.\n8. Launch on Product Hunt.\n\nThis is pretty much exactly what we did for our\u00a0[SaaS](https://buildpad.io/?ref=Reddit)\u00a0and it took about 1.5 months to get from our MVP launch to our first 1,000 users.",
+            "subreddit": "EntrepreneurRideAlong",
+            "comments": [
+                {
+                    "author": "acqz",
+                    "text": "I'm stuck on #4. Users are reluctant to give feedback, even though they were fine taking a survey initially. How did you get feedback from MVP users?"
+                },
+                {
+                    "author": "juliency",
+                    "text": "I followed a similar path and reached stage 4. Out of 16 initial responses, only 3 provided meaningful feedback. Doing the math, it seems I\u2019d need at least 50 initial responses to get insights from 10 people. Did you experience a similar pattern with your interviews?"
+                }
+            ]
+        }
+    ]
+}

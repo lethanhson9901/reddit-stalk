@@ -1,0 +1,80 @@
+{
+    "items": [
+        {
+            "title": "I am about to lose my mind",
+            "author": "jxv110",
+            "text": "I am the CEO of a company that owns two brands - we sell bike vacations and multi-activity holidays globally. Our company has six [stripe.com](http://stripe.com) accounts. One for each brand natively in USD, EUR, and CAD. We have bank accounts, employees, and legal business entities in all regions. One of my brand CAD accounts (which is a simple LLC wholly owned by the parent company) cannot get re-verified and will be shutdown in 5 days. This is after two extensions, 60+ emails, 5 chats, and countless phone calls. This is obviously a monumental waste of my time. Can anyone recommend any alternatives for our situation? We are a midsize company - about $20m in revenue - and apparently [Stripe.com](http://Stripe.com) doesn't want our business anymore.",
+            "subreddit": "fintech",
+            "comments": [
+                {
+                    "author": "SnowMinimum2364",
+                    "text": "That sounds like an incredibly frustrating situation, and I\u2019m sorry you\u2019re dealing with it. Stripe is often great for startups and smaller businesses, but as companies scale and have complex setups (multiple currencies, regions, and entities like yours), these types of issues seem to pop up more often.\n\nHave you looked at Adyen or Checkout.com? They both have global reach and handle multi-currency / cross-border payments.\n\nYou could also consider a payment orchestration layer, something like Finix or Payoneer. They route payments through multiple processors, so you have built-in redundancy in the case you might run into issues with any one of them."
+                },
+                {
+                    "author": "123eire",
+                    "text": "Sorry man - I know a few acquirers in Europe that I can intro but probably not much help"
+                },
+                {
+                    "author": "123eire",
+                    "text": "Hit them up on Twitter - seems to be a good way to get them to respond"
+                },
+                {
+                    "author": "yallskiski",
+                    "text": "MX?",
+                    "replies": [
+                        {
+                            "author": "emperorOfTheUniverse",
+                            "text": "> MX\n\nDoes MX do payments?"
+                        }
+                    ]
+                },
+                {
+                    "author": "Successful-Plan-7332",
+                    "text": "I might be able to help! We are a Canadian based payments as a service. We have API and out of the box dashboard for local payment rails (EFT, eTransfer, Bill Pay). We would be able to support this business for you!"
+                },
+                {
+                    "author": "HombreDeStutz",
+                    "text": "I feel you, the same thing just happened to me with Stripe and a CAD account a few weeks ago. Not sure what directive came down but it completely upended a few days of work for me. \n\nI temporarily worked together a solution using Squarespace payments which hosts our static site and now I'm having issues getting the money out because Plaid won't connect with our bank. Hoping to build out a better solution with our in-person payment provider (Elavon) once I can get this sorted out. PayPal checkout was another option I considered just to get up and running quickly, but not something I wanted long term.\n\nBest of luck.",
+                    "replies": [
+                        {
+                            "author": "jxv110",
+                            "text": "thanks.  this is insidious.  they simply do not understand how to read our paper work.  the parent company was approved for CAD, the subsidiary- wholly owned by parent with no directors but with  its own bank accounts, etc has been endlessly milling in their Kafka like support queue.",
+                            "replies": [
+                                {
+                                    "author": "jxv110",
+                                    "text": "I should add that the parent company CAD account was verified - after some work - without issue....the wholly owned subsidiary is apparently stuck in a Kafka doom loop."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "alicantetocomo",
+                    "text": "Would highly suggest Helcim. Adyen (but they will want your whole book) or Moneris once you run out of all options."
+                },
+                {
+                    "author": "neondeli",
+                    "text": "DM\u2019d."
+                }
+            ]
+        },
+        {
+            "title": "Starting GDPR compliance for a small business? Here\u2019s how I made it manageable",
+            "author": "Dokonani",
+            "text": "When I first started helping startups with compliance, it felt overwhelming. There\u2019s so much to track, and I saw businesses struggle with basics like consent forms or data management. That\u2019s why I created a simple GDPR Starter Checklist to help with the essentials like policies, consent, and data mapping. It\u2019s totally free and has been helpful to others who are just starting. If it sounds useful, let me know, and I\u2019ll share the link!",
+            "subreddit": "fintech",
+            "comments": [
+                {
+                    "author": "hyperphase",
+                    "text": "Yes please",
+                    "replies": [
+                        {
+                            "author": "Dokonani",
+                            "text": "DM'd you! :)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

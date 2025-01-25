@@ -1,0 +1,204 @@
+{
+    "items": [
+        {
+            "title": "Disconnecting a Lambda from a VPC via IaC",
+            "author": "Chemical-Macaron1333",
+            "text": "Hey all.\n\nUse SAM, CDK and recently terraform.  \n\nOne of my team mistakenly added a Lambda to a VPC so i removed  the VPC. It take > 30 minutes to update the lambda and delete the security group. For this project we use TF.  When i have done this in the past via CDK, it would normally take ages to complete the action.  I thought that it would be a lot smoother in TF through.  Is there a trick to do it so we don\u2019t end up waiting 30 minutes? ",
+            "subreddit": "aws",
+            "comments": [
+                {
+                    "author": "nevaNevan",
+                    "text": "I\u2019d love to know the fix.\n\nIIRC, the terraform resource for lambda used to support changing the lambda SG (on the eni) before deleting the SG. However, they depreciated it.\n\nIIRC, the issue is that the lambda orphans the eni, which TF has no control over. \n\nWhen it tries to delete the SG though, it\u2019s still attached to that AWS managed eni\u2026 which is cleaned up lazily by AWS. So, it can take a while and hold up your TF destroy operation.",
+                    "replies": [
+                        {
+                            "author": "Chemical-Macaron1333",
+                            "text": "Thanks for that explanation."
+                        }
+                    ]
+                },
+                {
+                    "author": "CorpT",
+                    "text": "Private Subnet Lambdas are weird.  I\u2019ve had them take a very long time to delete with CDK.  I don\u2019t think there is much you can do."
+                },
+                {
+                    "author": "stage_freak",
+                    "text": "Unfortunately, not that i have heard of. AWS networking infrastructure updates takes longer due to backend propagation."
+                },
+                {
+                    "author": "AmpouleSpanner",
+                    "text": "Yes.\n\nYou have to update the Lambda configuration in-place, to remove the `VpcConfig` attribute. The Lambda will then still exist, but have no ties to the VPC. You also have to find the ENI associated with the Lambda, before the VpcConfig is updated, and once the update is done, wait for the ENI to be cleaned up; it takes ~30 seconds. Then you can delete the Lambda.\n\nI usually achieve this via a custom resource in CloudFormation, no idea how you'd do that in TF"
+                },
+                {
+                    "author": "IHKPruefling",
+                    "text": "I wrote a CloudFormation Custom Resource that disattaches the VPC from the Lambda function before deleting the function itself. But this is also inconsistent at best because even then from time to time ENIs get stuck in status \"Available\" (meaning they are not attached to any resource) and you still cannot delete the Security Group. You then either need to delete these ENIs manually or you need to create yet another function to clean up these \"leftover ENIs\".\n\nI really hope AWS enhances this functionality because its a pain for every CICD user to deal with VPC-based Lambda functions.",
+                    "replies": [
+                        {
+                            "author": "nekokattt",
+                            "text": "those ENIs cannot be manually deleted anymore either, you have to wait for the timeout."
+                        }
+                    ]
+                },
+                {
+                    "author": "nekokattt",
+                    "text": "the 30 minutes is because AWS made an arguably silly decision a couple of years back to defer the removal of hyperplane ENIs so that it can take up to around an hour for them to be dropped after the owning Lambda is destroyed. Until those ENIs get removed, you cannot remove security groups using them.\n\nThere is nothing you can do about it, unfortunately. Per AWS support (as I have personally queried this), it is working as intended.\n\nYou used to be able to work around it by swapping security groups around on the ENI (and Terraform's AWS provider used to do this too) but AWS pushed a change that prevents customers amending hyperplane ENIs after creation when they are associated with the Lambda.\n\nMy guess is AWS have some kind of batch process that reaps these rather than it being on demand for internal performance reasons, but it is a terrible user experience when you are developing with IaC and may wish to create and destroy resources a lot to ensure things work correctly."
+                }
+            ]
+        },
+        {
+            "title": "Courses for devs",
+            "author": "taotau",
+            "text": "Looking for recommendations for refresher/learning courses targeted at senior Devs who have to wear DevOps hats.\n\nI'm running a moderately sized inherited micro monolith on AWS.  We use ecs, sqs, rds, lambdas and all the associated services.\n\n I have a decent grasp on the things that are set up, but it is all a few years old.  \n\nI'd like to do some AWS focused training to learn some contemporary best practices.  I have some budget to spend.  Accreditations are nice but not required.  \n\nI have a decent grasp on core software engineering principles and low level networking concepts.\n\n",
+            "subreddit": "aws",
+            "comments": [
+                {
+                    "author": "Abadabadon",
+                    "text": "FOLLOWING"
+                },
+                {
+                    "author": "GooberMcNutly",
+                    "text": "See what's available for the DevOps specialty certification."
+                },
+                {
+                    "author": "balu2gani",
+                    "text": "Digital class room is trainings that comes with annual subscription of AWS skill builder platform"
+                },
+                {
+                    "author": "badlydrawnboyz",
+                    "text": "if you just wanted accreditation tutorials dojo has great practice tests. \n\nIf you actually want to learn I would say find a course that offers labs.  \n\nBut for some of the best practices they will try to push you to AWS specific services that may be inferior. For example, I prefer github actions over code pipeline / codebuild for CI/CD and Terraform over cloudformation for IaC. \n\nGood luck on your devOps journey.\n\nGood subreddit for certs: https://www.reddit.com/r/AWSCertifications/"
+                }
+            ]
+        },
+        {
+            "title": "Help with fargate!!!",
+            "author": "Fancy-Active8808",
+            "text": "Hi guys! I am currently working on a new go repo that just has a health check endpoint to start off with. After running the app and in the docker container locally and successfully hitting the health check endpoint, I haven\u2019t had any luck being able to deploy on ECS fargate. The behavior I currently see is the cluster spins up a task, the health check fails without any status code, and then a new task is spun up. Cloudwatch is also unfortunately not showing me any logs and I have also validated the security group config is good between the alb and application. Does anyone have any guidance for how I can resolve this?",
+            "subreddit": "aws",
+            "comments": [
+                {
+                    "author": "Junior-Assistant-697",
+                    "text": "Does the task execution role have permissions to pull the image from ECR? Look in the ECS console at one of the stopped tasks and see if there are errors. Pull/permission errors will not show up in cloudwatch because the logger doesn't initialize until the container actually starts. What you are seeing is typically during image pull to set the task up. It also may be trying to access SSM or secrets manager to pull in secrets if you have that configured in your task definition.",
+                    "replies": [
+                        {
+                            "author": "Fancy-Active8808",
+                            "text": "In the stopped task I see there was an error code 137 but no other errors",
+                            "replies": [
+                                {
+                                    "author": "lpmi-13",
+                                    "text": "137 is usually out of memory"
+                                },
+                                {
+                                    "author": "Junior-Assistant-697",
+                                    "text": "137 indicates potential memory trouble. Check the fargate task size and what you are setting for memory reservation in the task def."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "yoginbu",
+                    "text": "does Task show any errors in logs? these logs can be seen under task menu",
+                    "replies": [
+                        {
+                            "author": "Fancy-Active8808",
+                            "text": "No luck, just an error code 137 from the failed task"
+                        }
+                    ]
+                },
+                {
+                    "author": "Fancy-Active8808",
+                    "text": "Only error I have been able to see from the tasks so far is an error code 137"
+                },
+                {
+                    "author": "soldatz",
+                    "text": "Double-check your task-execution role has permission to pull from ECR and read any secrets or parameters you may have configured. EDIT: also to write logs to CloudWatch, which if I recall can give more debugging info in the console."
+                }
+            ]
+        },
+        {
+            "title": "Probably very stupid question",
+            "author": "thejuiciestlucy",
+            "text": "I am very new to AWS. I did a few searches for an answer with mixed results.\n\n\nI had created a handful of Lambdas functions, some SQS queues, and a DynamoDB database while logged in to my root user account. I know that's not best practice.\n\n\nThese objects had all been there for a few weeks at least in addition to an S3 bucket with a single test file. Yesterday I logged in and everything but the S3 bucket and test file was gone without a trace. One of the results I got from searching indicated my account may have been compromised and to contact AWS support.\n\n\nI did that but they basically said if I didn't have Backup setup there was nothing they could do and they couldn't tell me why it happened.\n\n\nI can recreate everything I'd set up and it's just for me to learn but is this a thing that just happens? Stuff just disappears?",
+            "subreddit": "aws",
+            "comments": [
+                {
+                    "author": "cknipe",
+                    "text": "Things should absolutely not just disappear. Are you looking in the correct region?",
+                    "replies": [
+                        {
+                            "author": "The_Real_Ghost",
+                            "text": "Every time I've logged in and wondered where all my services went, it's because I was in the wrong region. Really easy thing to overlook, especially if you are new.\n\nBut OP, get MFA set up on that account ASAP so you don't get compromised.",
+                            "replies": [
+                                {
+                                    "author": "thejuiciestlucy",
+                                    "text": "I do have MFA set up. I know I didn't mention that. I will check the region. Thanks!"
+                                },
+                                {
+                                    "author": "cknipe",
+                                    "text": "I think we've all had that experience. \ud83d\ude02 I hope that's all OP's problem is."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "cloud-formatter",
+                            "text": "Yep, got sweaty hands more than once while looking at the wrong region. In S3 you see all buckets, regardless what region you are in."
+                        },
+                        {
+                            "author": "enjoytheshow",
+                            "text": "100% the issue lol. We\u2019ve all done it OP"
+                        }
+                    ]
+                },
+                {
+                    "author": "thejuiciestlucy",
+                    "text": "Thank you all for the help. It was, in fact, a region issue.\n\n\nAppreciate the time you all took to respond and will make the other adjustments you all called out",
+                    "replies": [
+                        {
+                            "author": "flippedalid",
+                            "text": "Not realizing you're in the wrong region and freaking out is a normal thing. It happens to just about everyone I've worked with on AWS. Don't worry about it."
+                        },
+                        {
+                            "author": "FredOfMBOX",
+                            "text": "Your next task (after MFA) is to learn to set up billing alarms so that you have warning if you go over what you\u2019re comfortable spending."
+                        }
+                    ]
+                },
+                {
+                    "author": "CorpT",
+                    "text": "No.  Stuff doesn\u2019t disappear.  Make sure you\u2019re in the right region."
+                },
+                {
+                    "author": "Legitimate-Smile-985",
+                    "text": "Nope, things don't just disappear.\n\nCheck if you're in the right region first (happens to me all the time lol).\n\nIf it really is gone you can use CloudTrail (in that particular region) to check API calls done through the account from the past few weeks."
+                },
+                {
+                    "author": "solo964",
+                    "text": "Note on the terminology: there's no \"root user account\". Users in AWS don't have accounts; they're just identities with credentials and permissions. There's an AWS account and it has an \"AWS account root user\" (or \"root user\" for short). Also, if you are new to AWS, be aware of [root user best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-best-practices.html)."
+                },
+                {
+                    "author": "jsonpile",
+                    "text": "It definitely seems like a region issue (as others in this thread have indicated).  You're probably in a different region in console.\n\nPoints of evidence: S3 is a global service, so viewing S3 in console will show buckets in all regions (although you can create buckets in specific regions such as us-east-1).\n\nLambda, SQS, DynamoDB are all region specific.\n\nAnd you've called this out - I recommend using an IAM role or IAM User over the root user.  Would definitely recommend setting up MFA for the root user and only using root when absolutely necessary as break-glass.  IAM Users are less preferred, but that would be a step up from root."
+                },
+                {
+                    "author": "ZaitsXL",
+                    "text": "Go check Cloudtrail to see where it might go"
+                },
+                {
+                    "author": "nolanday64",
+                    "text": "Easy mistake to make, we've all done it as other said.   What strikes me is that whoever you contacted at AWS Support didn't immediately suggest checking your region."
+                },
+                {
+                    "author": "AtlantaRene",
+                    "text": "I think all of us have learnt that lesson once. Welcome to the team!"
+                },
+                {
+                    "author": "nekenlight",
+                    "text": "That's seems strange, no it should not disappear.  \n  \nYou can still watch who was connected into the cloudtrail event page. And try to investigate from there. The event name should be something like \"ConsoleLogin\". then you can have some information. Cloudtrail logs are not alterable.\n\nAlso, if you recreate everything, make sure to enable MFA, especially on the root user.\n\nBut, to be honest, I would close the account, recreate one from scratch, enable root user MFA. Create a IAM user (if it's for personnal use) and use one this to connect/deploy."
+                },
+                {
+                    "author": "jazzjustice",
+                    "text": "Have you looked at CloudTrail ? Who is paying for this is? If its you stop now, and get some training or will be another famous case begging to get a bill pardoned..."
+                }
+            ]
+        }
+    ]
+}

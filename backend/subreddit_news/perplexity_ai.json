@@ -1,0 +1,100 @@
+{
+    "items": [
+        {
+            "title": "DeepSeek R1 with search vs Perplexity pro vs gemini deep research compared. All three of them had errors but Perplexity Pro seems better overall versus Gemini being the worst. DeepSeek R1 looks very promising here - how has your experience with DeepSeek been so far?",
+            "author": "johnty8765",
+            "text": "[External Link]",
+            "subreddit": "perplexity_ai",
+            "comments": [
+                {
+                    "author": "okamifire",
+                    "text": "Since I started using it 8 months ago or so I've loved Perplexity.  I haven't given DeepSeek enough of a chance to compare it, but Gemini is leagues worse than Perplexity in all cases I tried.  I'm personally a huge fan of Perplexity."
+                },
+                {
+                    "author": "Glittering_River5861",
+                    "text": "Lots of people talk shit about perplexity but it never failed me once, DeepSeek is also very good, I mostly use it when I have to do some troubleshooting while installing something\u2019s via terminal or things like that, Gemini is worst of them.",
+                    "replies": [
+                        {
+                            "author": "alexx_kidd",
+                            "text": "Gemini is meant for research mostly"
+                        }
+                    ]
+                },
+                {
+                    "author": "Darknight1",
+                    "text": "My biggest problem and concern with Deepseek is the censorship and political bias. Even on distilled models running locally it's hard to trust.",
+                    "replies": [
+                        {
+                            "author": "ThreeKiloZero",
+                            "text": "mine is China is spamming Deepseek in every AI community nonstop."
+                        },
+                        {
+                            "author": "notbadhbu",
+                            "text": "how often are you searching about Tianamen square lmao",
+                            "replies": [
+                                {
+                                    "author": "Darknight1",
+                                    "text": "Sure, but that's not the right question. What *else* is it lying about?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "East-Ad8300",
+                    "text": "I ran on perplexity pro again, it showed openAI missed Anthropic. \n\nYour results are random, run it again you will get different results.\n\nAI search is in a very nascent unreliable search, perplexity pro considered to be the best is extremely unreliable, misses critical info, hallucinates new info. For complex queries human is required.\n\n  \nPerplexity response\n\n  \nSeveral U.S. companies closed multiple venture funding rounds exceeding $1 billion in 2024. Below are the notable ones, including details of each round such as the month, amount raised, and lead investors.\n\n\n\n\\## Companies with Multiple $1B+ Rounds in 2024\n\n\n\n\\*\\*1. OpenAI\\*\\*\n\n\\- \\*\\*Round 1\\*\\*: \n\n  \\- \\*\\*Month\\*\\*: October\n\n  \\- \\*\\*Amount\\*\\*: $6.6 billion\n\n  \\- \\*\\*Lead Investors\\*\\*: Thrive Capital, SoftBank, Nvidia, Microsoft\n\n\\- \\*\\*Round 2\\*\\*: \n\n  \\- \\*\\*Month\\*\\*: September\n\n  \\- \\*\\*Amount\\*\\*: $1 billion (part of a larger funding round)\n\n  \\- \\*\\*Lead Investors\\*\\*: Not specified\n\n\n\n\\*\\*2. xAI\\*\\*\n\n\\- \\*\\*Round 1\\*\\*:\n\n  \\- \\*\\*Month\\*\\*: May\n\n  \\- \\*\\*Amount\\*\\*: $6 billion\n\n  \\- \\*\\*Lead Investors\\*\\*: Sequoia, Valor Equity Partners, Fidelity\n\n\\- \\*\\*Round 2\\*\\*:\n\n  \\- \\*\\*Month\\*\\*: November\n\n  \\- \\*\\*Amount\\*\\*: $1 billion\n\n  \\- \\*\\*Lead Investors\\*\\*: Not specified\n\n\n\n\\*\\*3. CoreWeave\\*\\*\n\n\\- \\*\\*Round 1\\*\\*:\n\n  \\- \\*\\*Month\\*\\*: May\n\n  \\- \\*\\*Amount\\*\\*: $1.1 billion\n\n  \\- \\*\\*Lead Investors\\*\\*: Coatue Management, Fidelity, Altimeter Capital\n\n\\- \\*\\*Round 2\\*\\*:\n\n  \\- \\*\\*Month\\*\\*: December\n\n  \\- \\*\\*Amount\\*\\*: $1 billion (specific details not fully disclosed)\n\n  \n\nThese companies have demonstrated significant investor confidence in their business models and growth potential within the rapidly evolving AI sector. The funding rounds reflect a strong trend of venture capital flowing into AI technologies as they continue to gain traction in various industries."
+                }
+            ]
+        },
+        {
+            "title": "Perplexity agents vs security?",
+            "author": "M00NDoG_",
+            "text": "I am using perplexity agents but the amount of permissions requested by it is SCARY. How is our data safe when perplexity can access every file on my mobile? Even it can see every notification including OTPs and bank sms. I am not sure how secure this is. Anyone has any idea? ",
+            "subreddit": "perplexity_ai",
+            "comments": [
+                {
+                    "author": "bruhbrosky",
+                    "text": "This is true. I hope someone from their team answers these real concerns."
+                },
+                {
+                    "author": "topestkek",
+                    "text": "Terms of service?"
+                },
+                {
+                    "author": "Sharp_House_9662",
+                    "text": "U can change permissions, i have not granted permission for notifications & sms."
+                },
+                {
+                    "author": "AutoModerator",
+                    "text": "Hey u/M00NDoG_!\n\nThanks for sharing your feature request. The team appreciates user feedback and suggestions for improving our product.\n\nBefore we proceed, please use the subreddit search to check if a similar request already exists to avoid duplicates.\n\nTo help us understand your request better, it would be great if you could provide:\n\n- A clear description of the proposed feature and its purpose\n- Specific use cases where this feature would be beneficial\n\nFeel free to join our [Discord](https://discord.gg/perplexity-ai) server to discuss further as well!\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/perplexity_ai) if you have any questions or concerns.*"
+                }
+            ]
+        },
+        {
+            "title": "What is this?",
+            "author": "Environmental_Ad7950",
+            "text": "[External Link]",
+            "subreddit": "perplexity_ai",
+            "comments": [
+                {
+                    "author": "thecompbioguy",
+                    "text": "Are you running Claude as your language model? Probably, you've hit Claude's constitutional guide rails."
+                },
+                {
+                    "author": "mansomer",
+                    "text": "Can you share the convo link?",
+                    "replies": [
+                        {
+                            "author": "Environmental_Ad7950",
+                            "text": "[https://www.perplexity.ai/search/i-want-you-to-keep-the-same-bi-UFuoTZBUS0eQKMqtNuR6qw#2](https://www.perplexity.ai/search/i-want-you-to-keep-the-same-bi-UFuoTZBUS0eQKMqtNuR6qw#2)"
+                        }
+                    ]
+                },
+                {
+                    "author": "AutoModerator",
+                    "text": "Hey u/Environmental_Ad7950!\n\nThanks for reporting the issue. Please check the subreddit using the \"search\" function to avoid duplicate reports. The team will review your \nreport.\n\nGeneral guidelines for an effective bug report, please include if you haven't:\n\n- Version Information: Specify whether the issue occurred on the web, iOS, or Android.\n- Link and Model: Provide a link to the problematic thread and mention the AI model used.\n- Device Information: For app-related issues, include the model of the device and the app version.\n- Connection Details: If experiencing connection issues, mention any use of VPN services.\n\n- Account changes: For account-related & individual billing issues, please email us at support@perplexity.ai\n\nFeel free to join our [Discord](https://discord.gg/perplexity-ai) server as well for more help and discussion!\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/perplexity_ai) if you have any questions or concerns.*"
+                }
+            ]
+        }
+    ]
+}

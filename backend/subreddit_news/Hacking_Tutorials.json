@@ -1,0 +1,64 @@
+{
+    "items": [
+        {
+            "title": "Are hacking Sims a good way to get into actual hacking?",
+            "author": "No-Difficulty6982",
+            "text": "28 year old male working two labor intensive jobs, that amount to a 50-60 hour work week. I'm trying to replace the free time I use playing videogames/going out to bars/doom scrolling /watching movies etc with intense learning and feel maybe learning about computers and the art of programming could be very fulfilling.\n\nI know I need to learn as much about computers as possible, perhaps look into some courses on LinkedIn regarding A+ certs, but also wondered if hacking Sims like Bitburner, Hacknet, or even buildapc games on steam could be considered a reliable way to get into the skill.\n\nLet me know your thoughts if you have played any sim and/or reccomendations.",
+            "subreddit": "Hacking_Tutorials",
+            "comments": [
+                {
+                    "author": "Arc-ansas",
+                    "text": "I doubt it. Just do Tryhackme or Hackthebox Academy.  They will teach you a ton.",
+                    "replies": [
+                        {
+                            "author": "gh0st-Account5858",
+                            "text": "![gif](giphy|QMZpnb79N5BN0wsSM3)"
+                        }
+                    ]
+                },
+                {
+                    "author": "DJ0x",
+                    "text": "I've been in the cyber industry for about 5 years and also have a degree and masters in it. Would say there are some half decent hacking games on steam but they won't teach you real world techniques. Better off going on try hack me and hack the box if you want a real taste of it . Also would be good to learn some basic computing fundamentals before hand though. A+ is a good start check out professed messers videos."
+                },
+                {
+                    "author": "inapollomind",
+                    "text": "Not a hacker but I guess you should get started in anything hacking if you want to learn, even if it\u2019s Sims, just to get the taste of it and that would be your starting point, build from there"
+                },
+                {
+                    "author": "DemandRemote3889",
+                    "text": "Try anonymous hacker simulator on steam"
+                },
+                {
+                    "author": "Rick11234",
+                    "text": "its what got me, i played anonymous hacking simulator"
+                },
+                {
+                    "author": "JustAnotherPoopDick",
+                    "text": "You'd be better off setting up homelabs of active directory (assuming you're learning that) or just try hackthebox."
+                },
+                {
+                    "author": "mizirian",
+                    "text": "Just hack your friends like me and my people did back in the day. We'd set up scenarios and make fake accounts and VMs to try various exploits on each other (all with consent, of course). \n\nReal world beats a sim every time.",
+                    "replies": [
+                        {
+                            "author": "happytrailz1938",
+                            "text": "It's very presumptuous to think they have friends. Hard to find time with jobs like that."
+                        }
+                    ]
+                },
+                {
+                    "author": "riverside_wos",
+                    "text": "Capture The Packet for the top tier stuff."
+                },
+                {
+                    "author": "IdkWhyAmIHereLmao",
+                    "text": ">\u00a0but also wondered if hacking Sims like Bitburner, Hacknet, or even buildapc games on steam could be considered a reliable way to get into the skill.\n\nI mean, if you want to relax and have fun, sure, but these games don't really have any useful irl applications, it's for the vibe mostly, I really enjoyed Hacknet and Nite Team 4"
+                },
+                {
+                    "author": "happytrailz1938",
+                    "text": "As someone who went from academia to factory work and 1 labor intensive job and worked another 30+ in odd jobs to make enough for rent and food... the simulators are fun for a week or two and give you keywords but arent close to the real thing. Hackthebox or tryhackme are much better bang for your buck as far as time and even money. \n\nAnother avenue is to look up BSides and see if there is one near you. Its a low-cost community driven hacker conference. That's really where it all clicked for me. Your time when you're living like that is precious, and your money needs to be spent wisely.\n\nThe other recommendation is to go to local cyber security or hacking meetups. You can usually find them on meetup.com. People just meet to geek out, but you can usually score cheap or free used lab equipment from people who have been in the field for a while. It's old and crusty hardware that isn't terribly efficient, but it's a great way to build a home lab, have a personal (and cost effective) cyber range and to learn a lot. \n\nGood luck from a rando on the internet who made it out. Stick with it, and you'll look back years from now trying to figure out how to help others doing the same thing. As always happy hacking!"
+                }
+            ]
+        }
+    ]
+}

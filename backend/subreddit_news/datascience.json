@@ -1,0 +1,246 @@
+{
+    "items": [
+        {
+            "title": "I made a guide to help people understand Docker",
+            "author": "M0shka",
+            "text": "When I first started out using Docker it was really confusing. I made a guide to help people understand what Docker is used for. Please let me know what you think and if you have any feedback \n\nhttps://youtu.be/QtH-RqFcDFc?si=PtQe7z7kZ2vlF_3Q",
+            "subreddit": "datascience",
+            "comments": [
+                {
+                    "author": "aucontraire4",
+                    "text": "Nice tutorial mate!",
+                    "replies": [
+                        {
+                            "author": "M0shka",
+                            "text": "Thank you!"
+                        }
+                    ]
+                },
+                {
+                    "author": "lucasduenas",
+                    "text": "Finally someone that explains this in a simple way!"
+                },
+                {
+                    "author": "ghetto-garibaldi",
+                    "text": "Nice video!"
+                },
+                {
+                    "author": "wylie102",
+                    "text": "It\u2019s good. An idea to include in your next video, comparison to using local environments with tools like pixi or conda and the advantages/disadvantages."
+                },
+                {
+                    "author": "TeaTimeTactician",
+                    "text": "I've been using Docker for many years. I still find it very confusing! Thank you for this!"
+                },
+                {
+                    "author": "HibiscusSabdariffa33",
+                    "text": "I wish someone would do the same for GitHub",
+                    "replies": [
+                        {
+                            "author": "M0shka",
+                            "text": "You mean this? https://youtu.be/G5CcDH-5j7w?si=igxd3cM4kM-siI2L",
+                            "replies": [
+                                {
+                                    "author": "HibiscusSabdariffa33",
+                                    "text": "Thank you!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "ottawalanguages",
+                    "text": "not bad!"
+                },
+                {
+                    "author": "fnehfnehOP",
+                    "text": "Thanks!"
+                },
+                {
+                    "author": "Calm-Interview5968",
+                    "text": "This is awesome. Thank you!"
+                },
+                {
+                    "author": "Grapphie",
+                    "text": "Really good intro! One question \u2013 where did you get those images/animations from the first half of the video?",
+                    "replies": [
+                        {
+                            "author": "M0shka",
+                            "text": "Thanks for the comment! Some AI, some canva stock images!"
+                        }
+                    ]
+                },
+                {
+                    "author": "polandtown",
+                    "text": "bravo!"
+                },
+                {
+                    "author": "Loud-Durian-4755",
+                    "text": "Thanks for sharing."
+                },
+                {
+                    "author": "Analytics_Fanatics",
+                    "text": "nice man. Great video. Very helpful. thanks for sharing."
+                },
+                {
+                    "author": "Hot_Freedom54",
+                    "text": "that's cool"
+                },
+                {
+                    "author": "conan_edagawa",
+                    "text": "Very well explained mate!"
+                },
+                {
+                    "author": "FreddieKiroh",
+                    "text": "Good intro into the purpose of docker"
+                }
+            ]
+        },
+        {
+            "title": "My job search Sankey",
+            "author": "autisticmice",
+            "text": "I just accepted a job offer, it took a bit over a year of low intensity search. I'm probably missing a handful of LinkedIn's quick applies that ghosted me. For all of the others, I customised cover letters and resume. I started getting more replies from December 2024. I also got the distinct impression that many companies are desperate to hire people with gen AI experience. Some facts about my search:\n\nLocation: UK\n\nNeed visa: no\n\nYoE: 5\n\nEducation: Stats PhD\n\nRemote jobs: 32 out of 42\n\nIf you are out there searching, good luck!\n\nhttps://preview.redd.it/55tnjk6muzee1.png?width=1834&format=png&auto=webp&s=7bea094c205d56e4d4e48f568632b5baf3e3945e\n\nhttps://preview.redd.it/a41fii7muzee1.png?width=640&format=png&auto=webp&s=048b2d1dacff58fdc0e850f266deec4890a0447d\n\n  \n",
+            "subreddit": "datascience",
+            "comments": [
+                {
+                    "author": "harsh82000",
+                    "text": "How do you feel your PhD has helped you in the industry?",
+                    "replies": [
+                        {
+                            "author": "autisticmice",
+                            "text": "It has definitely been a plus, but one that can definitely be out-shined by actual experience. There are few jobs where a lack of PhD is a deal breaker or a serious shortcoming.\n\nWhile a PhD offers some assurance to the hiring managers that you have a good handle of the fundamentals, they will take someone with 3 years of relevant experience over a PhD any day."
+                        }
+                    ]
+                },
+                {
+                    "author": "-space-witch-",
+                    "text": "Nice job OP, great ratio. It's encouraging to see these more optimistic examples, compared to the ones with hundreds of applications and 3 callbacks. I like being reminded that it's not all doom and gloom out there.",
+                    "replies": [
+                        {
+                            "author": "Monowakari",
+                            "text": "PhD prob helped"
+                        }
+                    ]
+                },
+                {
+                    "author": "Visual-Sand-43",
+                    "text": "Congratulations on your job offer! I hold a PhD in computer science with research experience in data analysis and machine learning. However, I\u2019ve been facing challenges in securing a data science role, primarily due to a lack of industry experience in the field. Could you offer any advice on how I might successfully transition into a data science position?",
+                    "replies": [
+                        {
+                            "author": "autisticmice",
+                            "text": "thanks! In my experience, I would say the bare minimum to get a job offer in data science is to actually know the basics (data analysis techniques, types of models, data cleaning, library ecosystem) and to have good interviewing skills. I think the latter is often underestimated. Have some prepared answers, have in mind a couple projects you can talk about in depth, prepare some interesting questions for the interviewers,  answer questions clearly and concisely, ask clarifying questions.  Interviewing skills have probably the highest ROI for aspiring data scientists.\n\nThe above will give you a shot. If you can complement that with actual relevant experience, then all the better."
+                        },
+                        {
+                            "author": "broski_",
+                            "text": "Why not try Software Engineering? It's a more robust and well defined job in my opinion.\n\nIt's hard for juniors and people with little experience currently so I would say just send out as many resumes as you can and keep options open."
+                        }
+                    ]
+                },
+                {
+                    "author": "broski_",
+                    "text": "Congrats! I have a phd in a quantitative science and 3 YOE as DS + Canadian citizen:\n\nApplications to\n\nUSA (have held TN Visa): 90\n\nCanada: 20\n\n  \nzero responses (not even an initial call)!\n\n:("
+                }
+            ]
+        },
+        {
+            "title": "Imposter syndrome as a DS",
+            "author": "Snoo27165",
+            "text": "Hello! I'm seeking some career advice and tips. I've essentially been pigeon-holed into a TPM position with a Data Scientist title for the past 2.5 years. This is my first official DS role, but I was in analytics for several years before. The team I joined had no real need for a data scientist, and have really been using me as a PM for reporting/partner management. I occasionally get to do data science \"projects\" but they let me decide what to analyze. Without real engagement from partners around business needs, this ends up being adhoc analyses with minimal business impact. I've been looking for a new role for over a year now but the market is terrible. I'm in the process of completing the OMSA program, so I'm not terribly rusty on stats/ML concepts, but I'm starting to feel insecure in my abilities to cut it as a DS IRL. A new hire recently joined a team within my broader org and asked me how I productionalize my code but I never have and it made me feel like an imposter. Does anyone have tips or encouragement? ",
+            "subreddit": "datascience",
+            "comments": [
+                {
+                    "author": "OnlyThePhantomKnows",
+                    "text": "\\* Find a Open Source project (or a topic that you can do).  Get a github repo and start committing.   Build yourself an active repo and hence a rep.  The only way to knock of the rust on code is to code.  The only way to figure out how to productize your code is to do it.  \n\n\\* Start spending 30 minutes to an hour on linkedin.  Follow the topics you want to use.  Make 3 comments a week (thoughtful) and one post a month.  You should do this for a while.  Tech people generally will check your linkedin profile as part of the initial resume review (after it gets past HR/AI).  \n\nAnd the most important piece of advice.  Fake it until you make it.  We all feel like imposters at times. (I am an embedded software engineer)  The world changes so fast that something you learned a couple of years ago may be obsolete.  You have to plan on learning continuously.",
+                    "replies": [
+                        {
+                            "author": "Birder",
+                            "text": "I sure hope that good recruiters not actually rank you by how hard you shill on linkedin."
+                        }
+                    ]
+                },
+                {
+                    "author": "Normal_Profit_9186",
+                    "text": "I agree with \u201cfake it until you make it approach\u201d.  Data Science is such an ambiguous term as well that unless ML is specifically in your title, many DS are nothing more than \u201canalysts\u201d.  What helped me the most was focusing less on being fluent in R/Python and more on completing real projects.  If allowed, download a dataset from your company and attempt to solve a real problem.  Find YouTube videos of others solving similar problems and take your time with it.., most importantly, finish the project.",
+                    "replies": [
+                        {
+                            "author": "Sensei_Zedonk",
+                            "text": "Exactly this. Titles in data are terrible. Data science and analytics gets overlapped title-wise and makes it difficult to separate yourself from anything other than analyst",
+                            "replies": [
+                                {
+                                    "author": "Stark_Raving_Sane04",
+                                    "text": "Came here to reiterate this. Since this is such a new an evolving industry, nothing is truly standardized. Keep on learning, keep on practicing, keep on trying."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "existential_Cry_SlS",
+                            "text": "I agree"
+                        }
+                    ]
+                },
+                {
+                    "author": "kevinkaburu",
+                    "text": "The 'fake it until you make it' approach can really work here. Data Science is such a broad field that roles can vary a lot. Focus on completing real projects\u2014download a dataset and solve a problem. Use YouTube for guidance. It\u2019s more about the projects you finish than the languages you use."
+                },
+                {
+                    "author": "slowcanteloupe",
+                    "text": "When i'm learning something, I write a medium post about it, and write it down step by step like i'm explaining it to a middle schooler.  I assume no math beyond algebra, no coding experience, no understanding of Data Science.  If there's code, I mention the libraries i'm using, the functions i'm using, why I pick particular parameters etc.\n\nIts  been about 6 years, and i've forgotten a lot of it, but anytime I need to relearn it, its a helpful primer to reground me in stuff i previously learned.  As a side benefit, it generates some small amount of passive income.\n\nEdit:  Stuff i've written usually has some sort of grounding in the real world.  Like \"How probability works in the lottery!\"  \"Normal distributions!  What is it?\"  \"Heteroskedasticity!  The funnest word in Data Science!\""
+                }
+            ]
+        },
+        {
+            "title": "Building a Reliable Text-to-SQL Pipeline: A Step-by-Step Guide pt.1",
+            "author": "phicreative1997",
+            "text": "[External Link]",
+            "subreddit": "datascience",
+            "comments": [
+                {
+                    "author": "Atmosck",
+                    "text": "Sql is already text",
+                    "replies": [
+                        {
+                            "author": "phicreative1997",
+                            "text": "Technically it should be NL 2 SQL but text2sql became the popular lingo",
+                            "replies": [
+                                {
+                                    "author": "Atmosck",
+                                    "text": "Sql is already natural language. That's like the whole point of SQL"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Silent_Group6621",
+                            "text": "Maybe it means sql high on NLP"
+                        }
+                    ]
+                },
+                {
+                    "author": "wagwagtail",
+                    "text": "Why anyone uses SQL in today's serverless tech stacks is beyond me.\u00a0\n\n\nJust use hive partitioning with object storage."
+                }
+            ]
+        },
+        {
+            "title": "What to expect from this Technical Test?",
+            "author": "one_more_throwaway12",
+            "text": "I applied for a SQL data analytics role and have a technical test with the following components\n\n* Multiple choice SQL questions (up to 10 mins)\n* Multiple choice general data science questions (15 mins)\n* SQL questions where you will write the code (20 mins)\n\nI can code well so Im not really worried about the coding part but do not know what to expect of the multiple choice ones as ive never had this experience before. I do not know much of the like infrastructure of sql of theory so dont know how to prepare, especially for the general data science questions which I have no idea what that could be. Any advice? ",
+            "subreddit": "datascience",
+            "comments": [
+                {
+                    "author": "LiftsandLaughs",
+                    "text": "Have you checked Glassdoor for this company?",
+                    "replies": [
+                        {
+                            "author": "one_more_throwaway12",
+                            "text": "Yes it has nothing on this, I went through every input \ud83d\ude14"
+                        }
+                    ]
+                },
+                {
+                    "author": "Maple_Mathlete",
+                    "text": "Roles in data vary greatly from industry to industry. So from a general standpoint, assume to be asked about fundamentals like normalization, ACID, Truncate vs delete vs drop, having vs where, aggregations, some joins questions, something about indexing/views/CTE's, primary and foreign keys stuff."
+                }
+            ]
+        }
+    ]
+}

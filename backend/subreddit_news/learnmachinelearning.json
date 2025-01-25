@@ -1,0 +1,414 @@
+{
+    "items": [
+        {
+            "title": "All-in-One AI&ML Resources (God Level Files)",
+            "author": "Attitude_Alone",
+            "text": "FREE WEBSITES TO LEARN ML.\n\n1. [Polo Club - AI Fundamentals from Scratch](https://poloclub.github.io/#research-ai) (HIGHLY RECOMMENDED)\n2. [AI by Hand - Best for Understanding Architectures](https://aibyhand.substack.com/) (HIGHLY RECOMMENDED)\n3. [Hugging Face Documentation](https://huggingface.co/docs)\n4. [ML MASTERY](https://machinelearningmastery.com)\n5. [3Blue1Brown - Math & AI Fundamentals](https://www.3blue1brown.com/) (VISUAL MATH AND AI CONCEPTS)\n6. [TensorFlow Official Website](http://tensorflow.org/)\n7. [Learn PyTorch](https://www.learnpytorch.io/) (HIGHLY RECOMMENDED)\n8. [https://www.freecodecamp.org](https://www.freecodecamp.org)\n9. [Linear algebra Visualization](https://immersivemath.com/ila/learnmore.html) (VISUAL MATH)\n\nNeural Networks (NN)\n\n1. [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/)\n2. [Fast.ai - Neural Networks](https://www.fast.ai/)\n3. [AI Courses - Thinkific](https://dair-ai.thinkific.com/)\n\nDeep Learning (DL)\n\n1. [Deep Learning - Substack](https://cameronrwolfe.substack.com/)\n2. [Deep Learning with Python - GitHub](https://github.com/fchollet/deep-learning-with-python-notebooks)\n3. [Deep Learning for Computer Vision - YouTube Playlist](https://youtube.com/playlist?list=PL5-TkQAfAZFbzxjBHtzdVCWE0Zbhomg7r&si=lY9pbZRVrDrIYX6M)\n\nMachine Learning (ML) & Frameworks\n\n1. [Awesome Machine Learning Visualizations](https://medium.com/analytics-vidhya/awesome-machine-learning-visualizations-5208f1617ec5)\n\nLarge Language Models (LLM)\n\n1. [Hands-On Large Language Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models)\n2. [YouTube Playlist on LLMs](https://youtube.com/playlist?list=PLPTV0NXA_ZSgsLAr8YCgCwhPIJNNtexWu&si=hvEr6eDNKmGJgEOX)\n3. [Stanford CS229 I Machine Learning I Building Large Language Models (LLMs)](https://youtu.be/9vM4p9NN0Ts?si=mtgqlePIS95RBEGb)\n4. [Understanding LLMs from Scratch - Towards Data Science](https://towardsdatascience.com/understanding-llms-from-scratch-using-middle-school-math-e602d27ec876)\n5. [LLM Tutorial - GitHub](https://github.com/ShawhinT/YouTube-Blog/blob/main/LLMs/README.md)\n\nReinforcement Learning (RL)\n\n1. [Reinforcement Learning Research Paper](https://arxiv.org/abs/2412.05265)\n\nGenerative Adversarial Networks (GANs)\n\n1. [GANs - GitHub](https://ym2132.github.io/)\n\nCohere LLM University (BEST PLACE TO LEARN RAG)\n\n1. [Cohere RAG](https://cohere.com/llmu)\n\nLanguage Vision Models (LVM)\n\n1. [Introducing Large Vision Models](https://www.nocode.ai/introducing-large-vision-models-lvms/)\n\nFine-Tuning and Embeddings\n\n1. [Fine-Tuning Embedding Models - Marqo AI](https://www.marqo.ai/courses/fine-tuning-embedding-models)",
+            "subreddit": "learnmachinelearning",
+            "comments": [
+                {
+                    "author": "ironman_gujju",
+                    "text": "Add d2l.ai",
+                    "replies": [
+                        {
+                            "author": "iamdanieljohns",
+                            "text": "Would you do [d2l.ai](http://d2l.ai) or [fast.ai](http://fast.ai) first?"
+                        }
+                    ]
+                },
+                {
+                    "author": "hc_fella",
+                    "text": "the Learn Pytorch page is what landed me my job. It's an absolutely amazing resource!!"
+                },
+                {
+                    "author": "CatalyzeX_code_bot",
+                    "text": "Found [14 relevant code implementations](https://www.catalyzex.com/paper/arxiv:2412.05265/code) for \"Reinforcement Learning: An Overview\".\n\nIf you have code to share with the community, please add it [here](https://www.catalyzex.com/add_code?paper_url=https://arxiv.org/abs/2412.05265&title=Reinforcement+Learning%3A+An+Overview) \ud83d\ude0a\ud83d\ude4f\n\nCreate an alert for new code releases here [here](https://www.catalyzex.com/alerts/code/create?paper_url=https://arxiv.org/abs/2412.05265&paper_title=Reinforcement Learning: An Overview&paper_arxiv_id=2412.05265)\n\n--\n\nTo opt out from receiving code links, DM me."
+                },
+                {
+                    "author": "wzhings",
+                    "text": "Thanks. it looks like the page of Language Vision Models is down. Can you double check it?"
+                },
+                {
+                    "author": "13ducttape",
+                    "text": "Leaving a comment so i can try out these resources later"
+                },
+                {
+                    "author": "Far-Amphibian-1571",
+                    "text": "Any good course or project based course on Vision Transformers?",
+                    "replies": [
+                        {
+                            "author": "ironman_gujju",
+                            "text": "You can make skin analysis model",
+                            "replies": [
+                                {
+                                    "author": "Far-Amphibian-1571",
+                                    "text": "Can you share some resources such as the data for training and what vision transformer models can we use?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "wertnerve",
+                    "text": "God bless you, thank you for this"
+                },
+                {
+                    "author": "ash4reddit",
+                    "text": "Wonderful resources! Thank you for sharing and making this community more open for everyone!"
+                },
+                {
+                    "author": "Mindless_Penalty_752",
+                    "text": "beautiful work"
+                },
+                {
+                    "author": "fractalimaging",
+                    "text": "Thank you so much for the info, will look into this \ud83d\ude4f\ud83d\ude4f\ud83d\ude4f"
+                },
+                {
+                    "author": "menino5",
+                    "text": "Thank you"
+                },
+                {
+                    "author": "jasonb",
+                    "text": "Thanks for the mention to my old Machine Learning Mastery blog.\n\nI had a ton of fun writing books/tutorials on ML from about 2013 to 2021, after which I sold the site/IP."
+                },
+                {
+                    "author": "Commercial-Fly-6296",
+                    "text": "Thank you"
+                }
+            ]
+        },
+        {
+            "title": "Understanding the KL divergence",
+            "author": "zen_bud",
+            "text": "[External Link]",
+            "subreddit": "learnmachinelearning",
+            "comments": [
+                {
+                    "author": "rootware",
+                    "text": "Forget expectation values for a second. \nKL divergence is basically the difference between two things (I) the mutual information entropy of a probability distribution p with another probability distribution q,  and (ii) the mutual information entropy of p with itself.\n\nWhat does that even mean intuitively? It kinda means something like this: you can think of the mutual entropy as being the ability to distinguish. Let's say you're measuring a variable x, and you start accumulating a list of measurements e.g. x= 1, x=2.5, and so on.\nJust based on the measurements, how fast can you tell whether the data x is coming from probability distribution p(x) or probability distribution q(x)? The ability to tell two probability distributions apart is conceptually connected to the difference of their mutual entropy and KL diverence.",
+                    "replies": [
+                        {
+                            "author": "newtonscradle38",
+                            "text": "Fantastic answer.",
+                            "replies": [
+                                {
+                                    "author": "rootware",
+                                    "text": "Thank you haha, I work in using ML for science so learned how to communicate this stuff the hard way"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Stormzrift",
+                    "text": "Didnt read the whole paper but if you\u2019re trying to understand KL-divergence for diffusion definitely recommend [this paper](https://arxiv.org/abs/2208.11970)\n\nAlso been a while but p(x) and q(x) is often a reference to the forward and reverse probability distributions. Distributions as noise is added and as noise is removed.\n\nNot an exact answer but might help",
+                    "replies": [
+                        {
+                            "author": "zen_bud",
+                            "text": "My issue is that most authors, it seems, interchange the concepts of random variables, probability distributions, and probability density functions which makes it difficult to read. For example, the author in that paper you linked uses p(x, z) to mean the joint pdf but then uses that in the expectation which makes no sense.",
+                            "replies": [
+                                {
+                                    "author": "TheBeardedCardinal",
+                                    "text": "Probability density functions are still functions. They take an input and produce an output. They have constraints, sure, but that doesn\u2019t mean they aren\u2019t functions. I doubt there would be any confusion if I were to say\n\nExpectation of x^2 with x drawn from distribution p(x).\n\nThere we have x as a random variable and we take an expectation over a function of that variable. Same thing here. Just replace x^2 with p(x)\n\nProbability distributions aren\u2019t some weird magic math thing, they are functions that are non negative and integrate to 1. Other than that you can use them just like any other function.\n\nWe also do this same thing with importance sampling. By introducing a ratio of two probability distributions into the expectation we have sample over one distribution while taking the expectation with respect to another. Having a pdf inside an expectation is actually rather common and important in machine learning."
+                                },
+                                {
+                                    "author": "OkResponse2875",
+                                    "text": "I think you will be able to read these papers much better if you learn some more probability.\n\nProbability distributions are a function associated with a random variable. When this random variable is discrete we call it a probability mass function, and when it is continuous, we call it a probability density function. \n\nYou take an expected value with respect to a probability distribution - such as the joint distribution p(x,z)."
+                                },
+                                {
+                                    "author": "Stormzrift",
+                                    "text": "Oh okay well I might be able to help. Other comments have mentioned it now but you\u2019re not taking the expectation of the pdfs directly. \n\nWhen you take expectations for continuous random variables, you have an integral( x * f(x) )dx where you\u2019re integrating over all values and weight it by respective their probabilities. This results in the expected value.\n\nIn this case, you\u2019re sampling some random variable from the q distribution (denoted by the E_x~q part which is the compacted integral). Then the possible values the random variable can take on is mapped by the inner functions, which in this case describes the difference between the two pdfs. So this would look like integral((log (q(x) / p(x)) * q(x)) dx"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "OkResponse2875",
+                    "text": "The expectation of a non-random variable is the variable itself, and its variance will be 0.\n\nI don\u2019t understand where they are taking this expectation in the image you have provided, on said non-random variable\n\nA random variable is a function applied to the output of some experiment that has inherent randomness to it\n\nFor example: let\u2019s say the experiment is we flip a coin 10 times \n\nYou can define any number of random variables from this, such as number of heads, number of tails + 2, ratio of heads to tails, etc.\n\nThe density function is used to then describe how this random variable is distributed"
+                },
+                {
+                    "author": "bennybuttons98",
+                    "text": "\"How can you take the expectation of a non random variable\"  \nA function of a random variable is a random variable, so it makes sense to take its expectation. So without getting to bogged down in formality, a random variable X is a function X: O-> R (from the sample space to the reals- technically I also need X to be a measurable function but don't worry about that, also the target needn't be R but again don't worry about that). Then, f(X), where f: R->R, is itself a composition of functions f(X): O->R by the assignment o in O goes to X(o) to f(X(o)). But then f(X) is a function from the sample space to R, that's exactly what a random variable is, so f(X) is a random variable. Now it doesn't matter that if I call f \"q(x)\" instead, and it doesn't matter that \"q(x)\" is also a distribution, it's still just a function\n\nIf you understood the above, you're done, f(X) is also a random variable and so it also has all the same properties as any other random variable- namely same definition of expectation, variance etc.\n\nYou could also just \"define\" the expectation of a function f defined on a random variable X\\~p(X) where p is the distribution of X, to be E\\[f\\] = integral(f(x)p(x) dx). With this in mind, see what happens when you think of D\\_KL(q||p) as that integral. Now if I let f(x)=log(q(x)/p(x)) the integrand becomes: f(x)p(x)dx. Look familiar? This is the expectation of f(x)! So now finally write this as E\\[f(x)\\] and sub in f(x)=log(q/p)\n\nThere's a better interpretation of the KL divergence in terms of a sum of the entropy of the distribution minus the cross entropy of the two distributions which, imo, is more intuitive. But if the word \"entropy\" isn't familiar to you then ignore this for now- it'll come up later :)"
+                },
+                {
+                    "author": "arg_max",
+                    "text": "Your issue is that you think you have an intuitive understanding of random variables, expectations, and density functions, but you probably don't know how they are properly defined.\n\nThe reality is that there's nothing really happening in the image when you look at it from a measure-theoretic perspective. The fact that you can write E\\_{x \\~ q}\\[ f(x) \\] = integral f(x) q(x) dx is pretty much just the definition of what a density is (via radon nikodym) on the push-forward measure of x. But you really can't argue about formally without some basic definitions and thinking about the underlying probability space.\n\nAnd honestly, you don't really need to. If you see someting like E\\_x\\~p(x) \\[ f(x) \\] and think integral f(x) p(x) dx that is totally fine in almost all cases.",
+                    "replies": [
+                        {
+                            "author": "zen_bud",
+                            "text": "The author defines p(x) as the pdf of the random variable X. Where little x takes values in the random variable support. However, then the author uses the same p(x), with little x, to mean that it is now a function of a random variable where little x is now the random variable. That is what is confusing me."
+                        }
+                    ]
+                },
+                {
+                    "author": "zen_bud",
+                    "text": "The link to the paper (page 7) is here https://arxiv.org/pdf/2312.10393#page7"
+                },
+                {
+                    "author": "icecream_sandwich07",
+                    "text": "The expectation is taken over x, which is where the randomness comes from. It has a pdf given by q. You are measuring the average \u201cdistance\u201d of q and p as measured by log(q/p), averaging over the distribution of x as given by q(x)"
+                },
+                {
+                    "author": "fedetask",
+                    "text": "If I understood correctly, your point is that x can be a random variable, but p(x) is a density function and, as such, it is a non-random variable, am I correct?\n\nFrom a purely mathematical point of view, the expected value of p(x) is computable and would be \u2211p(x)p(x) = \u2211p(x)\\^2, I don't know if there is any particular use of it but nothing prevents us to compute it.\n\nComing back to the KL divergence, in the expectation x is sampled from the distribution q, therefore it would make sense to consider the expected value of p(x): the values of x are random and come from a different distribution (q), so you can see p(x) as a function of a random variable, and therefore a random variable itself. It also makes sense to compute the expected value of log(q(x)/p(x)), i.e. if we sample values of x from q, what is the average log-ratio of q(x)/p(x)?\n\nAs others suggested, it is best to understand KL divergence from an information-theoretical perspective (mutual information, entropy) but from a purely mathematical and probabilistic perspective there is nothing that prevents us to compute expected values of functions of random variables (e.g. x\\^2, e\\^x, etc), including when the function is the pdf p(x) itself"
+                },
+                {
+                    "author": "sr_ooketoo",
+                    "text": "Suppose we are interested in determining if a random variable X follows distribution q or distribution p. If p and q are \"very similar\" distributions, then determining which distribution X is drawn from is hard, but if p and q are very different, then it should be easy. We would like then a sense of what similarity between distributions means, or rather, a \"distance metric\" between distributions. The KL divergence is one such choice (though it is not a true metric, nor a unique choice). It is a natural choice from and information theoretic standpoint, but lets break it down without the info theory motivation just to see why you might expect it to work.\n\nSuppose you observe a random variable X and find result x. You don't know if it came from distribution q or distribution p, so you calculate log(q(x)/p(x)). If this number is positive, it is more likely that x came from q, and if it is negative, probably came from p. Note if p(x) and q(x) are identical, this is zero. Now suppose that X really is distributed as q(x). You calculate E\\_q\\[log(q(x)/p(x))\\]. First you note that this is always greater than or equal to zero, and is zero if and only if q(x) = p(x) almost everywhere.  Also, if q(x) is many more times likely than p(x) (i.e., the distributions are disimilar) for most x in regions where q(x) is large, then this expectation will be large. So in some sense, this quantity denotes the distance between distributions q and p.\n\nHowever, D(p||q) =/= D(q||p), and doesn't satisfy a triangle equality, so this is not a true distance metric between distributions. It does however let one compare multiple distributions against a \"base\" distribution to find which is closest. It is common to for p to be a \"true\" distribution, and to find model parameters that parametrize q in such a way that minimize its distance from p. In fact, one can use the second derivative of D\\_KL with respect to such parameters to construct a Riemannian metric over the space of possible parameters/models, consideration of which lets one derive effecient optimization algorithms. As an example, if your model changes very slowly with respect to changes in the first parameter, your model space will be flat in that direction, and in each time step you can change the parameter a lot during optimization by following geodesics of this induced metric. This helps a lot with slow convergence on flat loss landscapes."
+                }
+            ]
+        },
+        {
+            "title": "Prepare for interview in one week from zero",
+            "author": "minerullll",
+            "text": "I have an Adobe ML intern interview in one week, but I have absolutely no experience with ML. I know it\u2019s unrealistic to really learn ML in such a short time, but I want to increase my chances as much as possible. I\u2019m feeling pretty overwhelmed and unsure where to even start.\n\nThe interview is split 50% LeetCode, 50% ML. I\u2019m confident in my LeetCode skills, so I\u2019m hoping that might balance out a weaker ML performance. For context, I\u2019m good at algebra and calculus, but I\u2019ve never taken the time to properly learn statistics or probability.\n\nWhat should my plan be? Should I focus on learning the math behind ML first, or dive straight into ML concepts and hope to pick up the math as I go? Or someone please give me any other approach, ML feels very overwhelming especially with low time.",
+            "subreddit": "learnmachinelearning",
+            "comments": [
+                {
+                    "author": "guywiththemonocle",
+                    "text": "how did u get the interview in this first place",
+                    "replies": [
+                        {
+                            "author": "minerullll",
+                            "text": "No idea tbh, my whole CV is only backend and competitive programming.",
+                            "replies": [
+                                {
+                                    "author": "iamamirjutt",
+                                    "text": "How good are you at competetive? I mean, what are your leetcode stats ?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "TakethThyKnee",
+                    "text": "Take the google crash course on ML",
+                    "replies": [
+                        {
+                            "author": "minerullll",
+                            "text": "Thanks, this looks like exactly what I need.",
+                            "replies": [
+                                {
+                                    "author": "TakethThyKnee",
+                                    "text": "You\u2019re welcome. I suggest you understand how certain tests work, data cleaning, and maybe visualization?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "reddit4bellz",
+                    "text": "Remember 2x speed on videos"
+                },
+                {
+                    "author": "MaximumSea4540",
+                    "text": "I think you can finish Cousera's Machine Learning Specialization in a day or two if you wanted to. Its beginner friendly and pretty comprehensive too!",
+                    "replies": [
+                        {
+                            "author": "minerullll",
+                            "text": "On the website it says \\~ 2 months at 10 hours a week, so \\~80 hours, do you think it can be done in less than 20?",
+                            "replies": [
+                                {
+                                    "author": "sheldonism",
+                                    "text": "yes quite easily"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "PoolZealousideal8145",
+                    "text": "Experienced hiring manager over here...I could easily imagine an ML internship on an engineering team that involves no actual model building. Like, the job could be focused on workflows to help researchers keep better track of models. That would still be an \"ML\"  internship, but you wouldn't actually need to know much about ML to do the job. While I don't think it hurts to do a quick crash course, so you can speak the language of the interviewer, I'd advise against bending over too far backward for the position, because either it's a no-ML-background-needed role, or you're unlikely to succeed at it anyways.",
+                    "replies": [
+                        {
+                            "author": "highlifeed",
+                            "text": "What is ur advice for a DE who wants to pivot to ML/DS?",
+                            "replies": [
+                                {
+                                    "author": "PoolZealousideal8145",
+                                    "text": "The easiest way is to just start doing the work in your day job, like find excuses to build models. This is good for two reasons: it helps you build a case for making the switch, and you may also find you don\u2019t like that work after all, and save yourself the pain of finding out the hard way."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "MaterialThing9800",
+                    "text": "Math behind may be useful",
+                    "replies": [
+                        {
+                            "author": "minerullll",
+                            "text": "How much out of the 7 days you think I should focus on math? I have \\~45 hours to study in that time.",
+                            "replies": [
+                                {
+                                    "author": "iamamirjutt",
+                                    "text": "If you have 7 days. Maybe, try 100 page ML book. It's to-the-point and covers a lot of concepts."
+                                },
+                                {
+                                    "author": "MaterialThing9800",
+                                    "text": "It would depend a lot on where you\u2019re coming from and how much you already know. I\u2019d make a list of all possible topics to know and divide by the day. (Not just the math part, but all of it)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Tetradic",
+                    "text": "I also recommend the 100 page ML book."
+                },
+                {
+                    "author": "SemperZero",
+                    "text": "Learn the very basics, split test train, evaluation metrics like accuracy/f1, overfitting, linear regression, simple feed forward neural networks. I highly recommend most of 3b1b's videos on all ML related topics.\n\nIf you're really good at algos and math, this stuff should only take a couple of hours to get."
+                },
+                {
+                    "author": "prhbrt",
+                    "text": "Andrew Ng's course"
+                },
+                {
+                    "author": "CheapAd3557",
+                    "text": "Stat quest. Joshua Starmer. Thank me later",
+                    "replies": [
+                        {
+                            "author": "KafkaOnTheWeb",
+                            "text": "This one! Definitely look up his videos for the topics you identify as most important! :)"
+                        }
+                    ]
+                },
+                {
+                    "author": "MacGenAl",
+                    "text": "I think you should go for the ML concepts and then end to end machine learning\u00a0 approach how you will solve the given problem.talking about mathematics behind it you can revise important concepts."
+                },
+                {
+                    "author": "Exact_Motor_724",
+                    "text": "One of my recent interview for a bank they asked me to explain transformers and agents rag that new methods",
+                    "replies": [
+                        {
+                            "author": "Severe-Librarian5240",
+                            "text": "which interview, can u explain position?"
+                        }
+                    ]
+                },
+                {
+                    "author": "Tyron_Slothrop",
+                    "text": "Man, if you get this job the world makes no sense lol",
+                    "replies": [
+                        {
+                            "author": "highlifeed",
+                            "text": "What do u mean? He has 7 days to study and it\u2019s an internship. Everyone starts somewhere."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "why the third image has 4 dimensions, how could i fix this?",
+            "author": "Beyond_Birthday_13",
+            "text": "[External Link]",
+            "subreddit": "learnmachinelearning",
+            "comments": [
+                {
+                    "author": "Grand-Produce-3455",
+                    "text": "Looks like you have a RGBA image in the dataset. You could use Image.open(image_path).convert(\u201cRGB\u201d) if you don\u2019t care about your alpha channel. You could also look into alpha blending if the alpha channel is important.",
+                    "replies": [
+                        {
+                            "author": "Beyond_Birthday_13",
+                            "text": "thanks",
+                            "replies": [
+                                {
+                                    "author": "Zerokidcraft",
+                                    "text": "PIL loads all 4 channels of a png file & this gets converted to tensor.\n\nI'm suspecting your dataset contains both png and jpg images."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "SomeTreesAreFriends",
+                    "text": "MRI images are always grayscale consisting of arbitrary values, no RGB needed. Also, don't ever compress and flip images unless you want to do data augmentation for training, instead look into patch-based U nets",
+                    "replies": [
+                        {
+                            "author": "donobinladin",
+                            "text": "This is subtle but great advice. One of the best ways to get additional positive cases are slight rotations, flips, and skews of an image. Still has some pitfalls but can really boost test set performance"
+                        }
+                    ]
+                },
+                {
+                    "author": "karxxm",
+                    "text": "are you looking into an abscess?",
+                    "replies": [
+                        {
+                            "author": "Beyond_Birthday_13",
+                            "text": "whats that?, i am doing brain tumor detection"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Rants That Can Hopefully be a Lesson for Some",
+            "author": "CheetahGloomy4700",
+            "text": "\n#### Background \n\nSome details are vague, so as to not dox myself, my previous and present employers. \n\n\nSo, I _was_ working as a machine learning engineer for a logistics company, and not gonna lie, but was doing amazing stuff in terms of bringing real models trained in house to life. We were doing forecasting, audience clustering, a lot of supervised learnings on tabular, semi structured and unstructured data, had a mature MLOps cycle, were using GCS buckets together with JuceFS for model persistence, redis and Kubernetes for inference blah blah. No, I was not doing it alone, but I enjoyed the process. The technology stacks I used? \n\n* tensorflow, good old fashioned, together with tfserve\n* K8s, Docker, fastapi and airflow for deployment \n* autogluon, to ray etc. again, for training \n* dask, spark and ray for for feature engineering \n\nWhat I really enjoyed was the MLOps component, in fact you can even say I was an MLOps guy. \n\n#### The Twist\n\nThen came this recruiter, for a position of an _AI engineer_. Well, I have never been the one to worry too much about the job title, but the company seemed promising, offered me a decent pay bump. I thought \n\n> An AI engineer cannot be that different from an ML engineer, right? \n\nFor all intent and purpose, they meant the same thing to me. \n\nBoy, was I wrong? \n\nSo, they interviewed me. Some coding tests (which was easy enough for me), followed by interview with another _principal AI engineer_, some VP, HR etc. Th principal AI engineer asked mostly about my previous work, CV, some basic questions about models and stuff. The rest were mostly general cultural discussion. \n\nThe job description was pretty generic, when I probed, they said they are still exploring use cases of AI within the company, but they do have a lot of data and stuff. So, may be I was not discerning enough, may be I should have been more cynical, but here I am. \n\nIn my new place, people simply have no concept of machine learning, in fact even the term is rarely used. I am the second _AI engineer_. \n\nAnd it seems the rest of the company, rather than understanding or even taking any interest in AI, is only interested in the _magical_ aspects of AI, which effectively means \n\n* prompt engineering and LLM, a lot of it...of course, what can be more _magical_ than getting a bot to chat, right? \n* yes, there is something more magical...getting the bot to generate images/videos. Again, things that look _sexy_ on a screen, are considered real AI. \n\nWho has patience to optimise a deployment pipeline, carrying out inference and recommendations for millions of user with nothing more complicated than XGBoost, when you can send a prompt to OpenAI to flash an image of a Hamster riding a rocket with Elon Musk, right? \n\nYeah, I kid you not, doing that passes as a great achievement, and the _principal AI engineer_ who interviewed me, takes great pride in generating such contents. \n\nAnd just today, he had the balls to say frameworks like tfserve, torch, to ray, spark etc. are obsolete in today's era. On further probing, he admitted he has never even _touched_ any of them in an capacity whatsoever. \n\nNo, I am not saying knowing one framework makes anyone a God, but can you imagine the nerve? Or you guys think the same in this sub? \n\nSo, thanks for listening, but guys, is it that different being an _AI engineer_ than being an _ML Engineer_? I never knew. \n\nAnd above all, if AI engineers are primarily responsible for \n\n* going to some _GUI_ (e.g. vertex AI studio) to generate contents\n* use a jupyter notebook to make API calls to OpenAI, Anthropic or whatever have you\n\nthen why cannot generic backend engineers do that? I am questioning myself now, as in what am I doing that any backend dev guy cannot? Why do companies need special titles of AI engineer (and putting them on a pedestal) to call someone's API? \n\nAny developer worth a shit can call an API, there is nothing special in calling OpenAI api if that's what you are doing, right? \n\nYes, I know now. Because 50% of my duty is...creating AI culture and awareness. \n\nNo, not tuning models on tensorflow, or brainstorm over the best ML inference pipeline, but to impress people with magical sides of AI. \n\n\nSeems like ChatGPT has ruined the whole discipline of machine learning now. \n",
+            "subreddit": "learnmachinelearning",
+            "comments": [
+                {
+                    "author": "aligatormilk",
+                    "text": "Preach brother. Stay close to the math. LLMs are important, but they are just one facet. Understanding vector databases, embeddings, NNs, and classical ML with scikit learn MATTERS. People will find that LLMs are limited, and that deep understanding of classical ML still bears much low hanging fruit. I think what you are dealing with is the realities of business, in that people are largely self important (I.e. \u201cI know AI, I work in big tech!\u201d Where in reality they are VP of IT at a manufacturing firm of 100 employees that set up a chatgpt api pipeline).\n\nKeep studying and keep being patient. It will feel constantly that you are explaining things to 5yos who only learn with pictures. You have a job rn in what is about to be a shit show of an economy. Treasure it, but also realize being in a place full of regarded MBAs who have no mathematical skill is no place to grow. Keep studying, let coding, and improving your GitHub. Keep responding to recruiters on your LinkedIn. Eventually you will find that 160k+ remote role that lands you among people who actually know how to build a kubernetes cluster, or what a validation set is, rather than claim they are a master of RAG because their company bought A subscription to GKE and they have an OpenAI apikey\n\nI feel your pain brother stay strong",
+                    "replies": [
+                        {
+                            "author": "CheetahGloomy4700",
+                            "text": "\\> \u00a0master of RAG because their company bought A subscription to GKE and they have an OpenAI apikey\n\nTruer words have rarely been spoken dude. It continues to amaze me."
+                        }
+                    ]
+                },
+                {
+                    "author": "DigThatData",
+                    "text": "That role sounds like what I'd expect for the JD \"AI Engineer\" and that sucks that you didn't understand that you were being hired to basically be a \"prompt engineer\". You are wildly overqualified for this role, but that doesn't mean you can't crush it. You have a lot of super powers that this org has never seen before, and you can demonstrate how to integrate more performant and lower cost solutions to achieve more reliable outputs than they have been getting relying on LLMs to do everything for them. Show them that an LLM is a force multiplier, not the entire solution.\n\nI think the lesson here is to keep in mind that the interview isn't just for them to evaluate you but for you to evaluate the role. Ask about what a normal day-to-day might look like, what kinds of projects you'll be working on, who are the stakeholders, the level of engineering maturity, etc. Don't just rely on the job title, terms like \"AI Engineer\" and... well, really all of the job titles in this space are extremely ambiguous, context dependent, and in flux."
+                },
+                {
+                    "author": "BIG-BRO-100",
+                    "text": "This post smells like ChatGpt",
+                    "replies": [
+                        {
+                            "author": "CheetahGloomy4700",
+                            "text": "Because ChatGPT was trained on my writings that are all over the internet. You are welcome."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "My simple Imagine processing with Tensorflow",
+            "author": "Bright_Walker_49",
+            "text": "[External Link]",
+            "subreddit": "learnmachinelearning",
+            "comments": [
+                {
+                    "author": "Flamboyant_Nine",
+                    "text": "You could add more convolutional layers with Batch Normalization to improve feature extraction and stabilize training. Batch Normalization can help the network converge faster and reduce sensitivity to weight initialization. Additionally, if you notice the model's performance plateauing during training, you can implement a learning rate scheduler to adjust the learning rate dynamically. This helps the model escape local minima or saddle points.\n\nAlso if you want to take the project to the next level, you could make it to predict the opponent's next move based on their previous moves ; ) (in the context of a live game between the user and the model)"
+                },
+                {
+                    "author": "Useful_Molasses6816",
+                    "text": "Nice imagine processing dude"
+                },
+                {
+                    "author": "Available_Tax_5004",
+                    "text": "Dude playing rock paper scissor with AI now."
+                }
+            ]
+        },
+        {
+            "title": "Struggling with hyperparameters in deep learning projects",
+            "author": "Cod_Weird",
+            "text": "I feel that I have a solid understanding of the basic concepts of deep learning, and I don't struggle with understanding different architectures or approaches. However, when it comes to the practical side of things, I'm completely lost. How many layers should I use? How many parameters? Which activation function or optimizer should I choose? And so on.\n\nI have an idea for a simple autoencoder project, but these questions are really holding me back. Can anyone recommend good books or articles on how to approach these decisions? I\u2019m looking for informative sources, and I\u2019m not afraid of mathematical complexity, by the way",
+            "subreddit": "learnmachinelearning",
+            "comments": [
+                {
+                    "author": "polandtown",
+                    "text": "[https://playground.tensorflow.org/](https://playground.tensorflow.org/)\n\n  \nLearn via experience: make projects, model solutions, and toil through learning their nuances. \n\nAs for your autoencoder project, start with academic review papers to survey modern frameworks and go from there in applying them."
+                }
+            ]
+        }
+    ]
+}

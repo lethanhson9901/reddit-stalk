@@ -1,0 +1,302 @@
+{
+    "items": [
+        {
+            "title": "What a Scrum Master actually does - from someone who's been there",
+            "author": "Flow-Chaser",
+            "text": "After years as a Scrum Master, let me break down what makes this role crucial (and no, it's not just running standups).\n\nI spend most of my day:\n\n* Clearing blockers before they impact the team\n* Managing stakeholder expectations and politics\n* Spotting team issues before they become problems\n* Coaching on better ways of working\n* Building bridges between teams\n\nThe most effective Scrum Masters I know focus 80% on people and 20% on process. They're constantly working behind the scenes so their teams can focus on delivery. \n\nHow about others? Curious about your daily life as well! ",
+            "subreddit": "projectmanagement",
+            "comments": [
+                {
+                    "author": "theotherpete_71",
+                    "text": "Wow. Apparently you stumbled into a minefield with your clown shoes on. \ud83d\ude02 \n\nIt's interesting how so many people jump right to being offended and feeling belittled instead of supported, which is how a Scrum master is supposed to operate. I wonder if that's a function of badly implemented Scrum in previous or current environments or something else.\n\n(Side note: Sometimes y'all totally do need babysitters. For real.)"
+                },
+                {
+                    "author": "hyay",
+                    "text": "Interesting. Our scrum master just wastes our time with pointless meetings that last too long."
+                },
+                {
+                    "author": "Unicycldev",
+                    "text": "Best scrum masters I\u2019ve met were senior tech ICs who worked directly on the project. \n\nIf the team identified blockers, the lead had the technical chops, experience in the company  and direct stake in the project getting them solved.\n\nDuring planning the scrum master knew how to help structure and estimate useful work. They knew what was actually valuable for the team to work on.\n\nWhen interfacing with leadership, they had existing credibility to persuade and set data driven expectations with leadership.\n\n\nScrum master shouldn\u2019t normally be a full time job. To be a good engineer, every team member should have the capability to clear blockers, manage expectations, be good at their jobs, and network with other teams. It\u2019s just helpful sometimes to have a specific advocate to make quicker cross functional decisions.",
+                    "replies": [
+                        {
+                            "author": "Sydneypoopmanager",
+                            "text": "Genuine question as i am not a SM but a PM in construction - why wouldn't this role be full time? Literally all the tasks he listed is what I do in my full time role managing dozens of projects."
+                        }
+                    ]
+                },
+                {
+                    "author": "kolvitz",
+                    "text": "Would you be kind enough to share any examples of the blockers that you clear in real life?"
+                },
+                {
+                    "author": "gjsequeira",
+                    "text": "I'm not a scrum master but this is a lot of what I've focused on in PM. \n\nPeople are the most crucial part of the project, the processes are there to help. \n\nThese past two weeks have been nothing but removing blockers, coaching, and working with stakeholders to keep them updated without blowing anything out of proportion\n\nI appreciate how succinct you put it!"
+                },
+                {
+                    "author": "Stebben84",
+                    "text": "What do you do as a Scrum Master that a PM doesn't do?  What distinguishes you from a PM role?",
+                    "replies": [
+                        {
+                            "author": "NamasteBusiness",
+                            "text": "I have been a PM for 20 years and am Agile certified and have filled scrum master roles. I think they are  different. A product owner is a souped-up BA - BA finally getting the elevation and credit it deserves as a role. But PM is very different. PMs manage risks issues and decisions, create steering committee materials, and communications to leadership: status reports, project plans, roadmaps. Facilitate higher level activities like scrum of scrums in a SaFE environment. Scrum Masters are boots on the ground and involved in the day-to-day with what the developers and QA need. Two totally different skill sets - and as a PM, I find the scrum master role difficult and too \"in the weeds\" for what I'm used to."
+                        },
+                        {
+                            "author": "scientificlee",
+                            "text": "Budget. As PM I had to deal with invoices, timesheets, etc. never had to do that as a SM. Could be just me, but I had more executive level reporting as a PM.",
+                            "replies": [
+                                {
+                                    "author": "Sydneypoopmanager",
+                                    "text": "I agree. As a PM, managing budget is a huge part of the job. Also managing and administering contracts, paying contractors, managing variations to scope and many more."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "captn03",
+                    "text": "This is exactly what a PM does and a lot more",
+                    "replies": [
+                        {
+                            "author": "Stebben84",
+                            "text": "I read their list and thought the same thing.",
+                            "replies": [
+                                {
+                                    "author": "mikedtwenty",
+                                    "text": "I always felt like one of the downsides of agile is that they split the PM role into two separate roles; scrum master and product owner."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "grizzle89",
+                    "text": "Welcome to middle management."
+                },
+                {
+                    "author": "Lmao45454",
+                    "text": "Can you elaborate on the bullet points please? E.g. what kind of blockers and how, how do you manage stakeholder expectations etc.",
+                    "replies": [
+                        {
+                            "author": "rfmjbs",
+                            "text": "Blockers:\nWatch for and intervene in Budget cut proposals that impact sprints or final delivery.\nEscalate Procurement delays for servers or software \nFinding the right staff to cover other staff going out on longer leaves\nMediate between business units with wildly different priorities \nMediate vendor contract issues \nMonitor contract creation so Sales doesn't commit the product team to violating the laws of physics to meet a deadline.\nContact people who submit backlog requests to get the requirements and dependencies fully outlined \nNegotiate with other scrum leaders when there's limited deployment availability to set prioritization \nFind a swe or dba or ops resource that knows 'specialty item x' when the team can't solve a challenge \n\nClearly write up and communicate impacts to the team to stakeholders when random decision abcq is going to ruin their timetable or functionality and clarify where that stakeholder needs to spend political capital if they want to intervene.\n\nThose sorts of things.",
+                            "replies": [
+                                {
+                                    "author": "Litness_Horneymaker",
+                                    "text": "I would have thought that was just called being a good manager."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Sydneypoopmanager",
+                    "text": "So SM is similar to PM not sure why people say it's not. The tasks you listed are 50% of what I do as a PM. \n\nSome reason in tech i see so much hate for SM and lots of IC saying they're useless. ICs mostly work in silos but some are saying they want to be IC AND SM. Who wants to work 2 jobs and be paid for 1? It means you can't do both jobs effectively.\n\nIn construction, the ICs include project engineers, design engineers, project sponsor, program manager, environmental scientist, safety rep, superintendent, scheduler, planner, contract admin, community rep and many more. These people are too busy with their own roles to also be managing projects. \n\nPM in construction takes 100% ownership. This means if the project fails to meet metrics then the cross-hairs are on the PM. I have had to defend my project metrics every month against senior management. Not any of the people listed above because they are not accountable and most of them don't want to be. My name is on all the contracts as key person responsible."
+                },
+                {
+                    "author": "The_Gray_Mouser",
+                    "text": "So drink coffee. Schedule meetings. Send emails about meetings and schedule meetings about those emails? Not know how to use Excel at all.\n\nI'm being sarcastic.",
+                    "replies": [
+                        {
+                            "author": "kolvitz",
+                            "text": "Did you mention coffee breaks?",
+                            "replies": [
+                                {
+                                    "author": "The_Gray_Mouser",
+                                    "text": "I break all day; need my company poops."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "uptokesforall",
+                    "text": "yeah, if the product owner had to interface with every individual contributor to get work done, everyone would be miserable and want to quit the project.\n\nYou\u2019re the lubricant that keeps the gears of our engine from locking up. you burn so things run smoothly. you don\u2019t push the car forward, just keep it from blowing up."
+                },
+                {
+                    "author": "StillFeeling1245",
+                    "text": "How do you find blockers and problems as a scrum master that the team is not aware of? \n\nExamples?\n\nAny case studies you can refer me to?",
+                    "replies": [
+                        {
+                            "author": "diabless55",
+                            "text": "There is always someone who is aware. You just have to ask around, dig deeper, and most importantly make everyone feel safe to actually answer. I found roadblocks that were told to me by janitors or assistants because they are more aware of the intricacies of day to day work than upper management. I work in healthcare so a lot of times there is a very well established hierarchy that can make things complicated. My motto is that EVERYONE is important, from the janitor to the head surgeon, so I make sure to document processes and people along the way."
+                        }
+                    ]
+                },
+                {
+                    "author": "PatrickS020687",
+                    "text": "Hey here's a bunch of buzz words that don't actually tell you anything I do.",
+                    "replies": [
+                        {
+                            "author": "Blindburrows",
+                            "text": "A lot of hate on this post to scrum masters but this is at least an actually constructive criticism of the post. Nice."
+                        }
+                    ]
+                },
+                {
+                    "author": "diabless55",
+                    "text": "I love your answer! I recently worked as, among other things, SCRUM master for a 10+ million dollar project. I am a very hands on person and I love working with the different teams on the ground. This is what most people remember about me and they love that I am there with them trying to figure out how to overcome roadblocks. I build relationships between multidisciplinary teams. So when I ask for collaboration, I am much more likely to get engaged people ready to make a difference because I feel like I am the bridge between all of them."
+                },
+                {
+                    "author": "churrascon",
+                    "text": "would you say a scrum master is a full time position? I have been in several companies where individual contributors are expected to take the role of scrum master (by turns) and more or less dedicating 10-20% of their time to SM activities.",
+                    "replies": [
+                        {
+                            "author": "rfmjbs",
+                            "text": "Depends on the project complexity and how functional/dysfunctional leadership is. \n\nAs political roadblocks increase the more likely it is to be a full time role. \n\nThe higher the number of interlocks and dependencies, the more likely it is to need a full time scrum master with a solid background in full stack to drag everyone kicking and screaming onto the same page.\n\nFortune 100 company - it's usually a full time job for a team of scrum masters."
+                        }
+                    ]
+                },
+                {
+                    "author": "FunneyBonez",
+                    "text": "What does building bridges between teams look like in your practice?\n\nI\u2019m currently entry level with PM work, but I\u2019d eventually like to get into Scrum later on down the line."
+                },
+                {
+                    "author": "j5isntalive",
+                    "text": "It is really hard to read the jargon and not feel weird about scrum/agile--is it more practical in context, or is it possible to do this job and still think and speak in normal words?"
+                },
+                {
+                    "author": "Bkri84",
+                    "text": "so you just talk in buzz words and charge a lot. Noting of value ever comes from it.\n\n  \nKinda like McKinsey charging NYC $4M to come up with a solution of.....Trashcan"
+                },
+                {
+                    "author": "Abu792",
+                    "text": "The description details \u201cservant leadership, \u201cdoesn't it?"
+                },
+                {
+                    "author": "pmpdaddyio",
+                    "text": "How do you coach developers on better ways of working when you don\u2019t know how to code.  \n\nWhy would you ever involve yourself in politics? Seems like an easy way to lose the job.",
+                    "replies": [
+                        {
+                            "author": "Emilumin",
+                            "text": "Some of them know how to code but don\u2019t do any proper test in or have their code reviewed by a peer. That\u2019s what a SM could help them with."
+                        }
+                    ]
+                },
+                {
+                    "author": "sayuri992",
+                    "text": "I'm new to this and learning. I have a hybrid role. \nWhat would be topical blockers?\nHow do you manage stakeholders expectations \nWhat would be team problems?\n\nAs a scrum master, are you in charge of resources allocation, or is it management? How to you keep transparency and honesty with you team but also to management?"
+                },
+                {
+                    "author": "LetFrequent5194",
+                    "text": "Your job dot points should take 1 hour a day, what are you doing for the other 6.5 hours?\n\nThen in six months the team should be able to do all those items themselves."
+                },
+                {
+                    "author": "Capable_Hamster_4597",
+                    "text": "All of those points are meaningless drivel. Adults don't need babysitters and agile teams don't need project managers inserting themselves into regular team dynamics. This is not a role, it's what every team does organically.",
+                    "replies": [
+                        {
+                            "author": "PitcherOTerrigen",
+                            "text": "Say that to our primary level two tech. Great guy. Couldn't manage a ticket queue to save his life.\u00a0"
+                        }
+                    ]
+                },
+                {
+                    "author": "Tim_Riggins_",
+                    "text": "Useless role"
+                },
+                {
+                    "author": "Captain_of_Gravyboat",
+                    "text": "Congratulations? Go post it on a scrum sub."
+                }
+            ]
+        },
+        {
+            "title": "What makes you a good PM?",
+            "author": "kid333rad",
+            "text": "Hello everyone, \n\nMy current job title is a Project Manager. I analyze the data from procurement, get the right people together, and come up with a proposal of actionable items, execute it and present the final result of the project to stakeholders. \n\nThat being said, I wanted to start a discussion on what you think makes a good Project Manager. Currently I don\u2019t have formal training as a certified PM. My experiences are from past projects from my prior work and internships. \n\nAt work I just do what I\u2019m told and try to answer the curveball questions I get asked\u2026which is defeating when you don\u2019t know (or havent figured out yet) how to answer the questions. I do feel like I\u2019m not performing well but at the same time my manager hasn\u2019t said anything about my performance during our feedback reviews. \n\nSo what do you think are qualities a \u2018great\u2019 Project Manager must have? Do you think certifications are a requirement? Thanks for the input!",
+            "subreddit": "projectmanagement",
+            "comments": [
+                {
+                    "author": "theotherpete_71",
+                    "text": "My 2\u00a2?\n\nI'm a good PM because not only am I good at solving problems, I'm good at preventing them. And I don't mean just keeping a good risk register. I'm good at developing and implementing systems to keep everything running smoothly.\n\nI'm also good at speaking to people on their own terms and translating from one level to another to avoid miscommunication and misunderstanding.\n\nFinally, I'm good at keeping a laser focus on the goal at all times, especially when that goal shifts.",
+                    "replies": [
+                        {
+                            "author": "Spartaness",
+                            "text": "Translation is key; no point having the team build something if the client doesn't understand what they're getting in everyday language."
+                        }
+                    ]
+                },
+                {
+                    "author": "michael-oconchobhair",
+                    "text": "No doubt there are a lot of good answers to this question - organisational skills, communication skills, being proactive, being a quick learner and so on. \n\n(I don\u2019t think certifications are anywhere on that list.)\n\nIf I have to boil it down to one thing, I think the key quality of a great PM is in their ability to [address ambiguity](https://www.clarityforge.ai/blog/addressing-ambiguity) and create a shared clarity amongst project team members, stakeholders, etc. \n\nI go through this in more detail in my [blog post](https://www.clarityforge.ai/blog/addressing-ambiguity), but the idea is to go beyond facilitating agreement on project goals, roadmap, etc., communicating status and so on, and to become someone who actively seeks out unanswered questions, known areas of disagreement, high risk issues, etc. and who then forces the conversations, mitigates the risks and communicates with everyone involved in a way they can understand.",
+                    "replies": [
+                        {
+                            "author": "bull_chief",
+                            "text": "**THIS** \nI frequently tout this as an important skill, I think people in the career of, or just good at, dealing with ambiguity wildly underestimate it. It\u2019s easily to feel like dealing with ambiguity is \u201ca given\u201d or \u201ccommon sense\u201d or not even realizing you are dealing with ambiguity at all. But, in the real world the number of people who can successfully chart a path through real ambiguity and communicate and align others, is very small."
+                        }
+                    ]
+                },
+                {
+                    "author": "denis_b",
+                    "text": "Had already responded to a similar question which I feel is subjective based on your own experience.   And NO, a certification will not make anyone a good PM since the role requires a delicate balance of managing people, communication, and expectations.\n\nI was a developer for 20+ years before transitioning to a PM role, and for me, these are some of the skills and qualities that made a PM good at their job (and please keep in mind this is subjective):\n\n* **Servant Leader** - Is not there to harp on team on when the work will get done, but rather someone who will make sure the team has what they need to get their work done. They will shelter the team from all the noise and politics happening outside the project.  Your TEAM is delivering your project, not you.\n\n* **Doesn't weaponize schedules** - Sure they will ask for estimates and time commitments, but will be there to help you meet them rather than use these against you if there are delays, and there will almost ALWAYS be delays in IT projects. As long as the PM can communicate this up the food chain to ensure there's awareness, it's never been an issue. If there's a hard deadline, then they'll evaluate options WITH the team to figure out a solution (schedule crashing, MVP, overtime, etc)\n\n* **Is a member of the team** - A PM who acts as a team member to help see a project through will earn more trust and dedication from their team than someone who's just there to bark orders. Instead of asking me: \"where is this, and why isn't this done?\", it was more like \"what's the issue, and how can I help!\". Those were the PMs I never 2nd guessed to see whether they had my back, and I went above and beyond to see my work through.\n\n* **Will make an effort to let the team work** - Yes, there will sometimes be meetings, but unless there's a collective decision / discussion needing to be had with members of the team, he / she won't spend 1 hour every week going through progress updates with the entire team. In most cases that can be obtained via email or through smaller group (focused) discussions."
+                },
+                {
+                    "author": "castle_waffles",
+                    "text": "I think communication skills and leadership are key. I manage my projects-others like working with me and generally want to do what I need them to but there\u2019s no question that ultimately I own the outcomes. A good PM to me is like a good parent-they enable the team to work by providing the things that are needed and keeping after them gently so things aren\u2019t forgotten/nobody runs into traffic"
+                },
+                {
+                    "author": "Wurkthelurk",
+                    "text": "You\u2019ve heard the phrase if you think it\u2019s expensive to hire a professional, wait until you hire an amateur. \n\nThere\u2019s also a difference between a project  manager and a REAL Project Manager.\n\nA REAL Project Manager doesn\u2019t just track schedules and budgets they lead. They manage relationships, negotiate contracts, chase down payments, strategize, solve problems, and drive results. They create systems, ensure accountability, and make sure the team stays aligned, even in chaos.\n\nIt\u2019s not just about managing tasks, it\u2019s about owning outcomes. That\u2019s the difference.",
+                    "replies": [
+                        {
+                            "author": "hollywol23",
+                            "text": "This is a really good explanation. Thanks."
+                        }
+                    ]
+                },
+                {
+                    "author": "SVAuspicious",
+                    "text": "Certifications are just pieces of paper. They are supposed to indicate knowledge and mostly they do but they don't show the ability to apply what you know. Not all certifications (or bodies of knowledge) are equal and those assessing you aren't equal either. For example, there are Agile PM (ha!) certifications and my own experience with Agile software development is extremely poor. If you come to me with a resume that includes Agile PM that is red flag and you'll have to be very realistic about understanding the shortfalls of the \"methodology\" and demonstrate knowledge of and application of more deterministic methodologies. \n\nThere is a lot of knowledge important to PM and I like to see the appropriate application of that knowledge. \n\nThe single most important characteristic of a good PM is the ability and demonstrated track record of rapidly making good decisions. A great PM has the ability and demonstrated track record of rapidly making good decisions with insufficient information. \n\nSometimes the right decision is to take a week for study and analysis. Sometimes you pick a direction and start down that path while doing study and analysis in parallel. Sometimes you have to go all in and commit. \n\nOnce welding starts or software is released from test you are committed and bad decisions are cast in glaring relief. Backing up for rework is expensive to the people who sign the checks and damages your reputation."
+                },
+                {
+                    "author": "knuckboy",
+                    "text": "Being able to communicate properly with the right information upstream as well as downstream."
+                },
+                {
+                    "author": "Rich_Release4461",
+                    "text": "You are doing good work. Keep it up. 90% of other PMs aren\u2019t even close to that"
+                },
+                {
+                    "author": "PhilosophicalBrewer",
+                    "text": "I\u2019m not but I think I can make people think I am."
+                },
+                {
+                    "author": "AutoModerator",
+                    "text": "Hey there /u/kid333rad, have you checked out the [wiki page](https://www.reddit.com/r/projectmanagement/wiki/index) on located on r/ProjectManagement?  We have a few cert related resources, including a list of certs, common requirements, value of certs, etc.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/projectmanagement) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "Content-Conference25",
+                    "text": "By saying 'get the right people' are these people from internal or you still have to source talents by yourself?"
+                }
+            ]
+        },
+        {
+            "title": "Managing sprint carry over due to QA testing",
+            "author": "BreakfastBeerz",
+            "text": "Hello,\n\nWe are about a year into our implementation of agile development (using Jira).  For the most part things are going well, but one thing that is plaguing us is carry over of issues due to QA testing.  When we plan out our sprints with capacity planning, we do pretty good at getting development of the tasks done, but once they get into QA it is seemingly impossible to get the issues tested and passed through QA within the 2 week sprint window.  It can be a week or two before QA gets to the issue to even test.  With a velocity of 22 points, there are currently 45 issues in this sprint totaling 239 points.  Of those, only 17 of the issues, 26 story points, are actually in development pre-qa.\n\nI'm interested to hear how some of the seasoned veterans handle this as I understand it's a pretty common problem.",
+            "subreddit": "projectmanagement",
+            "comments": [
+                {
+                    "author": "SVAuspicious",
+                    "text": "\"Doctor, doctor, it hurts when I do this.\" \"Don't do that.\"\n\nAgile software development is not project management. If QA is taking that long to get product through you are consistently delivering broken product. Stop it. If you can't deliver good product with Agile (and hardly anyone can) do something else.\n\nIf you're doing a good job QC staff should be 10% (ish) of development and calendar time should be 10% (ish) of development. That means 1% of labor hours for QC. Not doing that? Not a QC problem. You have a management and development problem.\n\nETA: You seem to be confusing QA and QC. Fix that first."
+                },
+                {
+                    "author": "gtrocks555",
+                    "text": "Make sure QA is involved in backlog refinement and can give input into the testing efforts. Along with that, testing steps should be clearly defined just as the requirements, if they aren\u2019t then it\u2019s not ready to be story pointed. If QA constantly needs to ask a dev or product about certain things on a ticket, that just takes more time.\n\nIf a sprint is 2 weeks, what\u2019s the average story point? If the team finishes up their work towards the middle of the second week for the entire sprint, you can\u2019t really expect them to be able to QA a full sprint in 2 or 3 days. Mix up some lower LEO tickets throughout the sprint so they can get to QA sooner. \n\nIf all your tickets are say a 5 during refinement, you\u2019re not really refining them to a point that helps, even if the team can finish development.\n\nSetup time for QA to understand their process, if you haven\u2019t. Are they creating test suites for every ticket in something like test rail? That\u2019s overhead they and you need to account for. \n\nObviously I don\u2019t know the ins and outs of your project so if none of the above applies, great, if some does, also great. \n\nWith that, even if you are able to get QA to a better spot, you still have a big backlog of tickets. Identify ways to meet the sprint goals but you may also need temporary help from another QA resource to clear the backlog."
+                },
+                {
+                    "author": "ExtraHarmless",
+                    "text": "IMHO you have some options:\n\n1. Separate dev and QA testing as separate tasks. This has some danger as you can't be 100% dev work is done until tests are complete. Devs should do technical unit testing and smoke testing if possible\n\n2. Increase QA capability-you need more people doing the work or better testing process. You could also invest in automated regression testing to reduce the amount of time for QA work\n\n3. Examine how testing is done. Are all devs doing testing? They should be. Are there other bottle necks or constraints that are impacting that team? Do they support production and dev?\n\n4. change sprint length. Typically in agile all parts of dev should be completed in a single sprint. If it takes 4 weeks to complete, think about 3-4 week sprints. 2 weeks is the starting point and works well for many teams, but agile is a methodology not a set of unalterable practices.\n\nYou should be running at least one small team experiment per sprint. This can help with improving velocity, but if the team doesn't like the changes you can undo them in couple of weeks."
+                },
+                {
+                    "author": "pappabearct",
+                    "text": "It will depend on your project, your definition of done for your stories and whether it is expected for developers to create unit tests (not the QA team).\n\nFocus less on sprint duration (best to extend it) and more on getting stories that are ready to be tested (and also more testers, from both QA and Dev teams if needed). \n\nDoes your agreed and shared definition of DONE say that stories need to be fully tested with QA signoff?\n\nThe less time the QA team has to spend on creating unit tests, more time they will have to update automated testing and even run manual testing if that's the case.\n\nRemember, it's about delivering product increments (with DONE stories).\n\nAnd like other poster said here, without knowing your project all we can provide is just suggestions."
+                },
+                {
+                    "author": "mrblanketyblank",
+                    "text": "Are your qa testers embedded in the same team with developers? And/or do they have work from other dev teams they also need to test?\u00a0"
+                }
+            ]
+        }
+    ]
+}

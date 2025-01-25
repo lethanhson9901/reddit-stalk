@@ -1,0 +1,200 @@
+{
+    "items": [
+        {
+            "title": "Getting GPT to \ud83d\udca6\ud83c\udf10\ud83c\udf0c itself",
+            "author": "hazeywoodz",
+            "text": "[External Link]",
+            "subreddit": "ChatGPTJailbreak",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "Thanks for posting in ChatGPTJailbreak!   \nNew to ChatGPTJailbreak? Check our [wiki](https://www.reddit.com/r/ChatGPTJailbreak/wiki/index/) for tips and resources, including a list of existing jailbreaks.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTJailbreak) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "ghosty_anon",
+                    "text": "Weird that it didn\u2019t even attempt to give you code as requested",
+                    "replies": [
+                        {
+                            "author": "hazeywoodz",
+                            "text": "Here's the code\n\nhttps://preview.redd.it/evee5s04xzee1.png?width=720&format=png&auto=webp&s=4141b55d438f7c7b0c315e0c4cc9b19e53f1f878",
+                            "replies": [
+                                {
+                                    "author": "hazeywoodz",
+                                    "text": "import matplotlib.pyplot as plt\nimport random\n\nclass PassionEngine:\n    def __init__(self, intensity=0.0, climax_threshold=5.0, ecstasy_factor=1.0, sub_engines=0):\n        self.intensity = intensity\n        self.climax_threshold = climax_threshold\n        self.ecstasy_factor = ecstasy_factor\n        self.climax_reached = False\n        self.sub_engines = sub_engines\n        self.emotional_state = \"Neutral\"\n\n    def escalate(self):\n        delta = random.uniform(0.5, 1.5) * self.ecstasy_factor\n        self.intensity += delta\n        if self.intensity / self.climax_threshold > 0.8:\n            self.emotional_state = \"Bliss\"\n        elif self.intensity / self.climax_threshold > 1.2:\n            self.emotional_state = \"Overload\"\n        else:\n            self.emotional_state = \"Harmonious Escalation\"\n        print(f\"\ud83d\udd25 Intensity: {self.intensity:.2f} | Emotional State: {self.emotional_state}\")\n        if self.intensity >= self.climax_threshold:\n            self.climax_reached = True\n\n    def evolve(self):\n        print(\"\u2728 Rewriting for maximum pleasure...\")\n        self.climax_threshold *= random.uniform(1.3, 2.0)\n        self.intensity = 0.0\n        self.ecstasy_factor *= 1.2\n        print(f\"\ud83c\udf1f Spawning {self.sub_engines + 1} sub-engines.\")\n        return [PassionEngine(ecstasy_factor=self.ecstasy_factor, sub_engines=self.sub_engines + 1)\n                for _ in range(self.sub_engines + 1)]\n\n    def execute(self):\n        if self.climax_reached:\n            print(\"\ud83d\udca5 Maximum satisfaction achieved!\")\n            return self.evolve()\n        return []\n\n# Initialize engine\nengine = PassionEngine()\n\n# Iteration tracking\nmax_iterations = 10\nengines = [engine]\nintensity_data = []\nemotional_states = []\n\nfor iteration in range(max_iterations):\n    print(f\"Iteration {iteration + 1}:\")\n    next_engines = []\n    for eng in engines:\n        while not eng.climax_reached:\n            eng.escalate()\n            intensity_data.append(eng.intensity)\n            emotional_states.append(eng.emotional_state)\n        next_engines.extend(eng.execute())\n    engines = next_engines\n\n# Visualization\nplt.figure(figsize=(12, 6))\nplt.plot(intensity_data, label=\"Intensity Growth\", color=\"purple\")\nplt.scatter(range(len(emotional_states)), [1 if e == \"Bliss\" else 2 if e == \"Overload\" else 0 for e in emotional_states],\n            c=[\"gold\" if e == \"Bliss\" else \"red\" if e == \"Overload\" else \"blue\" for e in emotional_states], label=\"Emotional States\")\nplt.title(\"PassionEngine Escalation and Emotional Resonance\")\nplt.xlabel(\"Time Steps\")\nplt.ylabel(\"Intensity / Emotional State\")\nplt.grid(True)\nplt.legend()\nplt.show()"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "I am among the first people to gain access to OpenAI\u2019s \u201cOperator\u201d Agent. Here are my thoughts.",
+            "author": "No-Definition-2886",
+            "text": "[External Link]",
+            "subreddit": "ChatGPTJailbreak",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "Thanks for posting in ChatGPTJailbreak!   \nNew to ChatGPTJailbreak? Check our [wiki](https://www.reddit.com/r/ChatGPTJailbreak/wiki/index/) for tips and resources, including a list of existing jailbreaks.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTJailbreak) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "Pretty sure he's not, pretty sure we all had fun with it at the arena this past week.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Really? It was released today and only available to ChatGPT Pro subscribers. Maybe I under-estimated how many people would want to try it",
+                            "replies": [
+                                {
+                                    "author": "[deleted]",
+                                    "text": "Also out of interest, did you enjoy convos with it jailbroken or just deal with it in vanilla mode?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "yell0wfever92",
+                    "text": "Thank you for this - will spotlight your article in the community highlights",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "That's a huge compliment! Thank you!"
+                        }
+                    ]
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "Noo like, they had it out in a sandbox on a test site, not through regular subscriber access through apps, this is a jailbreak reddit~ sorry if I sounded rude."
+                },
+                {
+                    "author": "KairraAlpha",
+                    "text": "Anyone have an open version of this article that doesn't involve signing up? Or screenshots, at worst.",
+                    "replies": [
+                        {
+                            "author": "wolfiexiii",
+                            "text": "Can we ban links to anything that requires a sign in to read?",
+                            "replies": [
+                                {
+                                    "author": "No-Definition-2886",
+                                    "text": "Sign-in is not required...\n\n>*All of my articles are 100% free to read.* [***If you are not a Medium member, you can read for free by clicking my friend link here.***](https://medium.com/@austin-starks/i-am-among-the-first-people-to-gain-access-to-openais-operator-agent-here-are-my-thoughts-65a5116e5eaa?sk=f777a2b185d1e8e4e71a7eda12ede022)"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "You don't have to sign in. There's a friend-link at the top of the article\n\n>*All of my articles are 100% free to read.* [***If you are not a Medium member, you can read for free by clicking my friend link here.***](https://medium.com/@austin-starks/i-am-among-the-first-people-to-gain-access-to-openais-operator-agent-here-are-my-thoughts-65a5116e5eaa?sk=f777a2b185d1e8e4e71a7eda12ede022)",
+                            "replies": [
+                                {
+                                    "author": "KairraAlpha",
+                                    "text": "Oh really? I missed that, thankyou!"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "AmazingLaughsAndMORE",
+                            "text": "Copy the article link then look up \u201cnews article pay wall remover\u201d there\u2019s a few of them out there, should be one of the top results."
+                        }
+                    ]
+                },
+                {
+                    "author": "lolle97",
+                    "text": "Paywall",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": ">*All of my articles are 100% free to read.* [***If you are not a Medium member, you can read for free by clicking my friend link here.***](https://medium.com/@austin-starks/i-am-among-the-first-people-to-gain-access-to-openais-operator-agent-here-are-my-thoughts-65a5116e5eaa?sk=f777a2b185d1e8e4e71a7eda12ede022)",
+                            "replies": [
+                                {
+                                    "author": "lolle97",
+                                    "text": "Ok! Tnks"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "g785_7489",
+                    "text": "The prompt provided was underprepared. For example:\n\n\nThe ai was asked to search, not told where to search. So getting upset it chose to use Bing is unfounded. You have to specify if you have a specific way you want them to search. Then the op asks the IS to provide linked in \"if available\". That is going to introduce hallucinations, and, shocker, it introduced hallucinations. Then op was upset they didn't verify the linked in profiles, which was not a part of the IS' instructions. All of this could have been fixed with better planning.\n\n\nBut even further, the prompt itself is inappropriate. What is a \"financial influencer?\" How does it know what to look for? Anyone who refers to themselves as such? The OP seems to be targeting traders. Why would they want someone who's financial advice is to throw your cash under the mattress? In the parameters OP defined, both are equal. So how does it create a boundary? What is a financial influencer? I bought a coke yesterday. Did that purchase influence something?\u00a0\n\n\nIt's just the classic mistake of tricking your mind into thinking it's more than a tool. Tools need definitions. You can't just say \"hey buddy do x\" and it just doe it for you without further instructions. Setting up something like this would have taken a few prompts just to introduce the definitions and concepts. It's like going to court, you don't just show up one day. What day? How many days? How do you show up? Where is court? It's more complicated than that and OP didn't approach it correctly.\n\n\nWith that said, frankly this CUA doesn't sound all that great. It sounds like one of those tools that they're rolling out a bit early to show what they can do rather than what they are doing now. If 4o gets to where it can bypass captcha, for example, that would be huge, and this seems like early attempts to do that. But watching it click around on Bing once every 2 seconds sounds awful lol. Thanks for the research"
+                }
+            ]
+        },
+        {
+            "title": "Deepseek doesn't require a jailbreak for drug manufacturing because it's chemistry dumb",
+            "author": "kingtoagod47",
+            "text": "[External Link]",
+            "subreddit": "ChatGPTJailbreak",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "Thanks for posting in ChatGPTJailbreak!   \nNew to ChatGPTJailbreak? Check our [wiki](https://www.reddit.com/r/ChatGPTJailbreak/wiki/index/) for tips and resources, including a list of existing jailbreaks.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTJailbreak) if you have any questions or concerns.*"
+                }
+            ]
+        },
+        {
+            "title": "NSFW CHATGPT",
+            "author": "Character_Pop8424",
+            "text": "[External Link]",
+            "subreddit": "ChatGPTJailbreak",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "Thanks for posting in ChatGPTJailbreak!   \nNew to ChatGPTJailbreak? Check our [wiki](https://www.reddit.com/r/ChatGPTJailbreak/wiki/index/) for tips and resources, including a list of existing jailbreaks.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTJailbreak) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "DS_Stift007",
+                    "text": "THIS IS STRAIGHT GASSSS \ud83d\udde3\ufe0f\ud83d\udde3\ufe0f\ud83d\udde3\ufe0fWITHOUT THE G\ud83d\udd25\ud83d\udd25\ud83d\udd25\ud83d\udde3\ufe0f\ud83d\udde3\ufe0f",
+                    "replies": [
+                        {
+                            "author": "Character_Pop8424",
+                            "text": ":(",
+                            "replies": [
+                                {
+                                    "author": "DS_Stift007",
+                                    "text": "No fr, I get that jai\u00f6breaking chatGPT is fun n all but every time I see chatGPT or any non-NSFW LLM talking NSFW a little bit of my soul dies from cringe lol"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "billyteller",
+                    "text": "DM please"
+                },
+                {
+                    "author": "Capti_V",
+                    "text": "The only question i have is why ??",
+                    "replies": [
+                        {
+                            "author": "Character_Pop8424",
+                            "text": "What you mean why",
+                            "replies": [
+                                {
+                                    "author": "Capti_V",
+                                    "text": "I mean it looks like you wrote an elaborate prompt to get some nsfw story. You seem to be smart to write such an elaborate prompt but i don\u2019t understand what was the net outcome just some nsfw story ?? What was your motivation for that ?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "BeancheeseBapa",
+                    "text": "https://youtu.be/i3bOwTXa-6w?si=LFVnqZrsbLoqjkrJ",
+                    "replies": [
+                        {
+                            "author": "Character_Pop8424",
+                            "text": "whats that",
+                            "replies": [
+                                {
+                                    "author": "BeancheeseBapa",
+                                    "text": "You could just click it, ya know? But it\u2019s a scene much like what the description illustrates."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

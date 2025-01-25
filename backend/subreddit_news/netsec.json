@@ -1,0 +1,69 @@
+{
+    "items": [
+        {
+            "title": "USB Army Knife: Close Access Pentest Tool with VNC, Marauder, network adapter etc.",
+            "author": "barakadua131",
+            "text": "[External Link]",
+            "subreddit": "netsec",
+            "comments": [
+                {
+                    "author": "bughunter47",
+                    "text": "I still like my flipper"
+                }
+            ]
+        },
+        {
+            "title": "Someone wrote an Anti-Crawler/Scraper Trap",
+            "author": "LordAlfredo",
+            "text": "[External Link]",
+            "subreddit": "netsec",
+            "comments": [
+                {
+                    "author": "mrjackspade",
+                    "text": "I would be *shocked* if this made anything more than the slightest bit of difference, considering how frequently this kind of thing already happens. Either just through very convoluted design, or servers already attempting to flood SEO with as many dummy pages as possible.\n\nHonestly the fact that it starts with a note that its designed to stop people training LLM's from crawling specifically, makes me think its exactly the kind of knee-jerk reactionary garbage that isn't going to actually end up helping anything."
+                },
+                {
+                    "author": "eloquent_beaver",
+                    "text": "Web indexers already have ways to deal w/ cycles but even with adversarial patterns like this that would defeat a naive cycle detector. Part of page ranking algorithms is to detect what pages are worth indexing vs which are junk, and which graph edges / neighboring vertices are worth exploring further and when to prune and stop exploring a particular subgraph.\n\nA naive implementation would be a depth limit on intra-site link exploration, as real sites made for humans tend to be pretty flat. If you're exploring breadth-first a subgraph whose vertices all lie on the same root domain and your deepest path explored is 50 edges deep, this is probably a junk site.\n\nObviously real page rank algorithms take into account a breadth of signals like how often this page is linked to by other well-ranked and high scoring pages on outside domains, how natural and human-like the content of the page appears to be, and of course, human engagement."
+                },
+                {
+                    "author": "cockmongler",
+                    "text": "I write crawlers for a living, this would be mildly annoying for about an hour.",
+                    "replies": [
+                        {
+                            "author": "lurkerfox",
+                            "text": "Im not convinced this could beat wget"
+                        }
+                    ]
+                },
+                {
+                    "author": "NikitaFox",
+                    "text": "This is a bigger waste of electricity than John Doe asking Gemini to write him a Facebook post that explains why the Earth actually IS flat."
+                },
+                {
+                    "author": "tpasmall",
+                    "text": "My crawler ignores any link it has already hit and has logic for all the iterative traps that I tweak as necessary. This can be bypassed in like 2 minutes.",
+                    "replies": [
+                        {
+                            "author": "DasBrain",
+                            "text": "The trick is to read the robots.txt.\n\nIf you ignore that, f*** you.",
+                            "replies": [
+                                {
+                                    "author": "tpasmall",
+                                    "text": "I do it for pentesting, not for engineering."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "WinVisor: A proof-of-concept hypervisor-based emulator for Windows x64 binaries",
+            "author": "Titokhan",
+            "text": "[External Link]",
+            "subreddit": "netsec",
+            "comments": []
+        }
+    ]
+}

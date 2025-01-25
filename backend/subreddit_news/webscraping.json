@@ -1,0 +1,52 @@
+{
+    "items": [
+        {
+            "title": "Getting data from network tab",
+            "author": "expiredUserAddress",
+            "text": "Suppose there is a website in which the API call is not consistent, so you need to extract all the XHRs from it. Is it possible. I tried selenium but that does not work",
+            "subreddit": "webscraping",
+            "comments": [
+                {
+                    "author": "alex3321xxx",
+                    "text": "Puppeteer/playwright can pull that info from network tab from devtools"
+                },
+                {
+                    "author": "casual_review_guy",
+                    "text": "Are you trying to record traffic ? If so, just use Charles proxy or proxyman and record a session to find what you need."
+                },
+                {
+                    "author": "Zambucafy",
+                    "text": "I don't think people will be able to give you precise help, given how broadly you have phrased your question.\n\n* Are we talking about GET or POST requests?  \n* What makes API call inconsistent?\n  * The URL structure?\n  * The response format?\n\nMy money is on the URL structure. If it's the URL: From which point onward does the URL become unpredictable? What's common about different calls? What parameters make the URL unpredictable?  \n  \nIf there's wonky parameters included in the URL that you cannot predict (e.g. some odd ID or hash), see if you can derive them from another XHR's response.\n\nIf the hash is generated through client side (potentially obfuscated) JavaScript, then best of luck to you."
+                },
+                {
+                    "author": "ZorroGlitchero",
+                    "text": "haha good luck with selenium, i know how to do it but i use a chrome extension to enter the network tab and get all the beautiful XHRs , hidden apis, cookies, everything."
+                },
+                {
+                    "author": "IceCreamMonomaniac",
+                    "text": "Have a look at seleniumwire.\n\nI am pretty confident it will work for your needs."
+                },
+                {
+                    "author": "__VenomSnake__",
+                    "text": "If URL is changing but its producing the consistent or at least expected data on the page, its possible that URL params are encoded. Few days back I was scraping a website where filters, offset, limit all were base64 encoded twice (once individual k,v pairs were encoded and then joined string was encoded). It was first time I encountered it but copy pasting URLs in chatgpt and claude helped me figure that out."
+                },
+                {
+                    "author": "LoveThemMegaSeeds",
+                    "text": "Use a proxy and then set up a service to query the files created by the proxy"
+                },
+                {
+                    "author": "matty_fu",
+                    "text": "You haven't included enough detail for people to give you proper advice"
+                },
+                {
+                    "author": "adrianhorning",
+                    "text": "Just use the api. Copy as node fetch. Add a user agent. Using browser automation for this is way overkill"
+                },
+                {
+                    "author": "Financial-Maximum830",
+                    "text": "Not sure if this is what you\u2019re referring to but I\u2019ve come across a site that has a beautiful backend api which I can capture in live sessions from the dev tooling. But when I run from python it detects and fails. Also detects chromium in playwright or selenium. Basically has to be a real browser to work. \n\nBut yes in the past with other sites I\u2019ve used playwright to run an https call to generate session headers and cookies which I can feed into the request header for the api. When the api call starts failing, time to get a new session header"
+                }
+            ]
+        }
+    ]
+}

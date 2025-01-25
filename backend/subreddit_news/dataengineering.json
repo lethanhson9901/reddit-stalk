@@ -1,0 +1,658 @@
+{
+    "items": [
+        {
+            "title": "How We Cut S3 Costs by 70% in an Open-Source Data Warehouse with Some Clever Optimizations",
+            "author": "AssistPrestigious708",
+            "text": "If you've worked with object storage like Amazon S3, you're probably familiar with the pain of those sky-high API costs\u2014especially when it comes to those pesky list API calls. Well, we recently tackled a cool case study that shows how our open-source data warehouse, **Databend**, managed to reduce S3 list API costs by a staggering 70% through some clever optimizations.Here's the situation: Databend relies heavily on S3 for data storage, but as our user base grew, so did the S3 costs. The real issue? A massive number of list operations. One user was generating around 2,500\u20133,000 list requests per minute, which adds up to nearly *200,000* requests per day. You can imagine how quickly that burns through cash!We tackled the problem head-on with a few smart optimizations:\n\n1. **Spill Index Files**: Instead of using S3 list operations to manage temporary files, we introduced spill index files that track metadata and file locations. This allows queries to directly access the files without having to repeatedly hit S3.\n2. **Streamlined Cleanup**: We redesigned the cleanup process with two options: automatic cleanup after queries and manual cleanup through a command. By using meta files for deletions, we drastically reduced the need for directory scanning.\n3. **Partition Sort Spill**: We optimized the data spilling process by buffering, sorting, and partitioning data before spilling. This reduced unnecessary I/O operations and ensured more efficient data distribution.\n\nThe optimizations paid off big time:\n\n* **Execution time**: down by 52%\n* **CPU time**: down by 50%\n* **Wait time**: down by 66%\n* **Spilled data**: down by 58%\n* **Spill operations**: down by 57%\n\nAnd the best part? S3 API costs dropped by a massive *70%* \ud83d\udcb8If you're facing similar challenges or just want to dive deep into data warehousing optimizations, this article is definitely worth a read. Check out the full breakdown in the original post\u2014it\u2019s packed with technical details and insights you might be able to apply to your own systems. [https://www.databend.com/blog/category-engineering/spill-list](https://www.databend.com/blog/category-engineering/spill-list)",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "ShoddyWaltz4948",
+                    "text": "Can I mention them in my next interview??"
+                },
+                {
+                    "author": "Pretend-Relative3631",
+                    "text": "Love this kind of content"
+                },
+                {
+                    "author": "Stoic_Akshay",
+                    "text": "Could you expand more on 3?",
+                    "replies": [
+                        {
+                            "author": "AssistPrestigious708",
+                            "text": "Our most significant optimization involved rethinking data spilling. Previously, data blocks were spilled to storage immediately. Now, we buffer incoming data, sort it, and spill it in optimized partitions.The partitioning process starts with sampling data blocks to determine the best partition boundaries, ensuring even data distribution and minimizing partition numbers. The restore process is equally efficient, retrieving data in partition order to reduce unnecessary I/O operations. The Lazy Spill Implementation delays spilling to maximize memory use and cut down on unnecessary I/O operations.",
+                            "replies": [
+                                {
+                                    "author": "assface",
+                                    "text": "> Now, we buffer incoming data, sort it, and spill it in optimized partitions.\n\nSo it's just a shuffle phase?"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Been 7 years in Engineering Manager and now back to Senior Data Engineer role at the age of 40",
+            "author": "datamadx",
+            "text": "Since I got laid off due to the startup being out of money and shutting down the company, as a manager in the past 7 years, I feel like I have a gap in technical implementation, where most of my involvement was in architecting and decision making. Sometimes, I need to dive deep into specific technology to have more visibility of my solutions. However, it\u2019s nearly impossible as I\u2019ve been tightening my time for the daily operational stuff, KPI, meetings, people management, etc.\n\nI got a few offers to join as a senior or lead data engineer in either startups or corporations. Is it worth making this move? In my country, there are not many opportunities for senior IC roles. The highest I would say is Data Architect, which earns like a manager or most senior managers; it is infrequent to be on par with a director or VP.\n\nWhat are the possible paths for me in the future? If I have to move back to a managerial role, would it be a challenge since the upcoming role is going to be IC the most and less of management? Leadership, I believe, is still something that exists even in an IC role. ",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "pandas_as_pd",
+                    "text": "I know 3-4 folks who switched from management to IC and I did the same. We're all happier now.\n\nThat said, very senior IC roles are de facto management roles. A principal engineer or an architect is expected to lead, mentor, influence and coordinate between different parts of the business.",
+                    "replies": [
+                        {
+                            "author": "dev_lvl80",
+                            "text": "Not exactly. As a principal, I do not lead team or influence directly folks. Instead, for instance, I can make critical decisions or support p0 system,  or outline MVP alone, which nobody is capable of.  SME on legacy systems.\n\nYou might be mixed role staff/lead, where career forks into: IC or Management, but once you  passed Staff level, you are IC, not manager.\n\nIMO"
+                        }
+                    ]
+                },
+                {
+                    "author": "LargeSale8354",
+                    "text": "I joined a company to be in an IC role when Big Data became a thing. Because of HR rules the salary put me into the \"management\" band. Because I was in that band In HR's eyes I had to have direct reports, go on management training etc. I didn't actually get to do anything I wanted to do.\nI was a mediocre manager at best and I feel sorry for the people under me. I'm also Aspergers so was completely lost at sea with regard to the politics of management. I did my best to make it work but after 18 months I couldn't take it anymore. Leaving an IC role was the worst mistake of my life.\n\nGetting back into an IC role was tough because 2 years out means you have to play catch up and the tech world moves bloody fast in 2 years.\n\nI'm much happier in an IC role but it has been hard work and painful.",
+                    "replies": [
+                        {
+                            "author": "reviverevival",
+                            "text": "I was lucky to realize it wasn't for me pretty quickly. I wasn't bad at it, but it always felt like I'd spend x amount of time making a decision and overseeing its implementation, then 2x amount of time communicating it, justifying it, and reporting on its status. The wheels of bureaucracy would've ground me to dust."
+                        }
+                    ]
+                },
+                {
+                    "author": "HG_Redditington",
+                    "text": "I went from a more IT Manager level position which was a data warehouse product owner, managing architecture, projects and vendors back to a lead DE role so I could focus on getting more cloud centric experience. I think the main issue as a lead DE is you get just a little bit more money for a crap-load more responsibility and workload. I have an IC contractor in my team who chose to step back from management/lead roles and he's really effective. The tacit learnings from being a more senior guy previously are valuable to his problem solving in his current role. If I could go back five years that's probably a better choice."
+                },
+                {
+                    "author": "JaJ_Judy",
+                    "text": "Just switched into IC after 4 years of management when I couldn\u2019t take my hands off the keyboard and got too emotionally invested in protecting the team.\n\nThe game has changed - there are tools out there that let you architect and effectively PR machine generated code (check out windsurf and flows in codeium). \u00a0\n\nI feel I\u2019m more effective as an IC than I was with like two direct reports :)"
+                },
+                {
+                    "author": "dev_lvl80",
+                    "text": "Once you reached plateau as engineer then it's time to switch to managerial area. \n\nHaving said that's it's very individual who you are ;)\n\nBut, once it comes to money, things might look drastically different. \n\n\\>Leadership, I believe, is still something that exists even in an IC role.\n\nO yeah, even junior can have leadership skills, but it does not mean junior wants to be leader.\n\nIMO"
+                },
+                {
+                    "author": "ChennaiSprKngs",
+                    "text": "I am on the same boat as you. Just do what you like. Don\u2019t care about the title. You can always switch to any role you want as long as you have the right skill."
+                }
+            ]
+        },
+        {
+            "title": "Fast JSON Processing in Real-time Systems: simdjson and Zero-Copy Design",
+            "author": "dani_estuary",
+            "text": "[External Link]",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "math-bw",
+                    "text": "This is really cool! Great explanation"
+                }
+            ]
+        },
+        {
+            "title": "How are you using genAI in your pipelines?",
+            "author": "Bananaforscale0",
+            "text": "At my company, as I am sure with yours, management has been pushing us to find genAI use cases.\n\nOne thought I've had is add a step in some of my data flows that sends data from BigQuery (via a python app running on Cloud run) to openai's API to summarize text data. Reducing the text string from 10000 characters to 200 - 250 character summaries. It makes human interaction with this text data much easier for our stakeholders.\n\nWhat sort of data products are you creating with genAI at your work?\n\nEdit for clarity",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "umognog",
+                    "text": "I dislike the term AI here as it's just what we've had for years already: ML\n\nAI to me in this context would be something like; I feed the JSON response from an API into an AI engine along with the business purpose I'm retrieving it for. It reviews data that is new and accurately decides if it applies to the business purpose or not and therefore to consume it into the data store & structure. I give it no training data, it reaches out to stakeholders for more information if needed, chases the stake holder for 8 weeks for a reply, escalates it to their manager, gets a reply and uses it. And I've not told it to do any of that.",
+                    "replies": [
+                        {
+                            "author": "Witty_Tough_3180",
+                            "text": "5 years ago people called all ML operations AI. Now it's shifted from ML to GenAI which is not the perfect direction but it freed ML from that confusion",
+                            "replies": [
+                                {
+                                    "author": "umognog",
+                                    "text": "It feels weird saying \"5 years ago\" but yeah, it all gained mainstream momentum in everyday workplaces about 2017/2018. Still feels like only 3 years ago."
+                                },
+                                {
+                                    "author": "RecognitionSignal425",
+                                    "text": "how about GenML?"
+                                },
+                                {
+                                    "author": "nemec",
+                                    "text": "> 5 years ago people called all ML operations AI\n\nAll ML *is* AI. The fact that the unwashed masses think GenAI is the only type of AI now doesn't change that fact. AI has a rich history going back 50-70 years."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Bananaforscale0",
+                            "text": "Mate, you build an AI product like that and you'd be a billionaire for sure",
+                            "replies": [
+                                {
+                                    "author": "umognog",
+                                    "text": "Absolutely would, but this is my point; too many people are just rebranding ML as AI.\n\nI think in business terms people got fed up of investing in ML everywhere for little return (sure there are some applications with great returns, but many more are not). So to keep the funding going, it was called AI."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Any_Rip_388",
+                    "text": "I\u2019m not lol\n\nGenAI is a solution looking for a problem at this stage.",
+                    "replies": [
+                        {
+                            "author": "Bananaforscale0",
+                            "text": "So glad I have this hammer, now I'll I need to do is find some nails..."
+                        },
+                        {
+                            "author": "financialthrowaw2020",
+                            "text": "Yep. And when you know your stuff, genAI hallucinations become incredibly clear."
+                        },
+                        {
+                            "author": "RecognitionSignal425",
+                            "text": "\\*solution looking for financial investment"
+                        },
+                        {
+                            "author": "McNoxey",
+                            "text": "Bruh. If you think this I think you\u2019re falling behind. GenAI is at an incredible place rn. It\u2019s up to you to utilize it.",
+                            "replies": [
+                                {
+                                    "author": "Any_Rip_388",
+                                    "text": "I use it, just not in data pipelines."
+                                },
+                                {
+                                    "author": "Bananaforscale0",
+                                    "text": "Are you building data products with it? I'm struggling to see how to fit the square peg in the round whole"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "xmBQWugdxjaA",
+                    "text": "Just Copilot but it's meh.\n\nI imagine it'd be more useful for BQ queries, but for both copilot and SQL it needs to have a way to use the language server / database status context.\n\nAtm it just predicts stuff even though the symbols don't exist and it won't compile.\n\nAlso DeepSeek is the new OpenAI now.",
+                    "replies": [
+                        {
+                            "author": "Bananaforscale0",
+                            "text": "I agree, we have seen the most value from using copilot as a coding assistant, otherwise we are struggling to find practical use case",
+                            "replies": [
+                                {
+                                    "author": "xmBQWugdxjaA",
+                                    "text": "It's amazing at converting JSON examples to structs or vice versa at least.\n\nBut I find the big models like DeepSeek or Claude to be better for larger code.\n\nBut they also won't generate a diff automatically so there's still a lot of friction to use it which slows things down (and it's not cheap enough to be always on, but I also don't want it to generate everything and overwrite changes like in Cursor)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "scaledpython",
+                    "text": "Does management want \"Gen AI\" or \"value\"?",
+                    "replies": [
+                        {
+                            "author": "Bananaforscale0",
+                            "text": "If I here management talk about finding value using genAI one more time, I'm going to jump into a data lake\n\n\nEdit clarity"
+                        },
+                        {
+                            "author": "BJNats",
+                            "text": "They think they want value but from what I\u2019ve seen they want first and foremost to sound like they\u2019re doing advanced, forward looking stuff to their peers. Hence the mania for AI in places it makes no sense"
+                        }
+                    ]
+                },
+                {
+                    "author": "nydasco",
+                    "text": "GenAI is a solution to a number of problems. It may be the best solution to some of these problems, but that will depend on any number of factors. If you\u2019ve got a solution and you\u2019re looking for a problem, you\u2019re starting at the wrong end of the equation.\n\nInstead, find a problem worth solving. Then looking at the available solutions. One of those might be GenAI. If it\u2019s the right one will depend on your company and circumstances.",
+                    "replies": [
+                        {
+                            "author": "Bananaforscale0",
+                            "text": "Great way to turn the problem around! Find problems first, then as if AI is a usable solution. Now we just need to tell my director that haha"
+                        }
+                    ]
+                },
+                {
+                    "author": "New-Addendum-6209",
+                    "text": "The only use I can think of for standard standard data warehouse work would be automated data profiling and alerting.",
+                    "replies": [
+                        {
+                            "author": "Bananaforscale0",
+                            "text": "What do you mean by 'automated data profiling'?"
+                        }
+                    ]
+                },
+                {
+                    "author": "FireNunchuks",
+                    "text": "I started exploring with gen ai and decided to pivot my product from a rss aggregator with knowledge management features to a newsletter ai assistant.\n\n\nYou find the sources and articles you want to share in your newsletter and it generates a full issue rephrasing the content. And it works really well. I used several prompts for different parts to reduce the scope of black box and have more predictable results.",
+                    "replies": [
+                        {
+                            "author": "FireNunchuks",
+                            "text": "And I use this new knowledge with some of my clients for more data oriented tasks."
+                        }
+                    ]
+                },
+                {
+                    "author": "13ass13ass",
+                    "text": "You\u2019ll have to allow for hallucinations in your use case.\n\nFor me it\u2019s mostly useful in code gen, docs gen, code review, troubleshooting. All very important parts of DE but in each case I\u2019m manually reviewing the outputs as a quality control step.\n\nSo I guess I would put it to you. Which part of your pipelines require your manual review and can you become the \u201chuman in the loop\u201d by incorporating GenAI?"
+                },
+                {
+                    "author": "Fabulous-Bee-3417",
+                    "text": "I think it\u2019s a mistake to try using AI to recreate a whole pipeline. It would be too much of a black box and is almost guranteed to not work. However, I\u2019ve found genAi to be good at solving specific small problems and for learning. I\u2019m new to DE, so learning how programs (like FME) function and grasping the terminology through AI has been very effective. This applies to the vast majority of topics as well tbh, AI is a great assistant, not a substitute for competence.",
+                    "replies": [
+                        {
+                            "author": "Bananaforscale0",
+                            "text": "Oh chatGPT has really helped me for asking questions on subject areas I'm not an expert in, networking for example. But building pipelines? Not so useful"
+                        }
+                    ]
+                },
+                {
+                    "author": "ppsaoda",
+                    "text": "I only use them to explain complex yaps in confluence. That's it."
+                },
+                {
+                    "author": "StevesRoomate",
+                    "text": "Our pipelines are already classical ML.  The data science team comes up with the algorithms and we optimize schedule manage them. We are looking at adding some GenAI API call features but nothing can be used without a manual review step in the workflow."
+                },
+                {
+                    "author": "seanpool3",
+                    "text": "One way I have had a little bit of value with LLMs in pipelines\n\nI set up a framework of feeding table schemas, API responses, etc in order to dynamically generate JSON that is fed into the pipelines and checked each run to make schema adjustments. Also can simultaneously document which is helpful. When dealing with many sources this has been really helpful and saves a lot of time in my experience.\n\nNote: this is overkill for most situations and also has a little bit of risk with the hallucinations (although forcing compliant json schema from OpenAI works pretty well)"
+                },
+                {
+                    "author": "financialthrowaw2020",
+                    "text": "If you've ever used genAI to try to solve a technical problem that wasn't easily googlable back before Google broke search, you'd know this is a fools errand. It hallucinates bullshit often and even when corrected it doesn't actually provide solutions if you're a skilled engineer. Better for basic stuff but so is everything else."
+                },
+                {
+                    "author": "GimmeSweetTime",
+                    "text": "We're trying to establish security measures around the use of AI first. We don't have initiatives to use it other than search help."
+                },
+                {
+                    "author": "rotterdamn8",
+                    "text": "Not for a pipeline itself, but for rewriting on-prem code to PySpark. I have a shit ton of SAS and pandas/Numpy code to move to Databricks.\n\nIt\u2019s not perfect, but definitely saving a lot of time. \n\nAlso I want to use it to create documentation. One of the pain points of the code I have to migrate is that there\u2019s no documentation. All the knowledge is either in people\u2019s heads or has left the company. Ugh."
+                },
+                {
+                    "author": "nikhelical",
+                    "text": "we are building a data engineering tool powered by genai. Hence vis chat you can create pipeline, then orchestrate it. For more code control we have even kept options to include sql yaml python also\n\nwebsite is https://AskOnData.com"
+                }
+            ]
+        },
+        {
+            "title": "Data Engineers, what is your story ?",
+            "author": "NinjaGingerVirgin",
+            "text": "Hi peeps, i've wanted to know how did you manage to land on this pathway that you are at. \n\nRecently i've left my job as a support but previously i was working as big data engineer for about 4 months cause one of the bootcamp offered me an internship after that there were absolutely no project to put me into so i got laid off, needed financial stability asap so i've started working as a support. After 2 years i've realized how much i've really missed working as an engineer - it brought me a fulfillment in what i did.\n\nNow, all i have is a short four month of professional experience. If you were to start over, what would you do to be at the position you are now. How would you start where would you focus and how would build your career?\n\nWanted to post on r/dataengineeringjobs but from what i can see i've only spotted jobs offers and such.",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "laegoiste",
+                    "text": "I have over a decade of experience in IT - in various roles. If I had to do it again, the only thing I'd do differently is to not stick to my comfort zone in my early years and move onto more challenging roles. However, it did play a big part in my strong(ish) linux and networking foundations. \n\nI have since worked as a webdev, BI analyst, platform engineer, data engineer and now back to platform engineer (same company where I was a DE). Each of these roles played a part in the knowledge that I have today and I find that as long as I don't stop being interested in learning new things, I will keep improving.",
+                    "replies": [
+                        {
+                            "author": "NinjaGingerVirgin",
+                            "text": "Thank you for reply."
+                        },
+                        {
+                            "author": "Remarkable_Bag419",
+                            "text": "Can I dm you for some advice ?",
+                            "replies": [
+                                {
+                                    "author": "Emotional-Cry-9983",
+                                    "text": "Please post the advice here. For us who are just starting the journey."
+                                },
+                                {
+                                    "author": "laegoiste",
+                                    "text": "sure!"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Emotional-Cry-9983",
+                            "text": "Would you encourage anyone to start now? And where?",
+                            "replies": [
+                                {
+                                    "author": "laegoiste",
+                                    "text": "That's too broad of a question. Start what exactly? \nWhere is almost too easy: fix your basics first. I assume it's for DE: Python and SQL is a no-brainer here."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Ecofred",
+                    "text": "Ecology -> Data Management-> DbDev/DE. The constant: working with systems.\n\nIf something I would have spent less time in the Data Management. It was not as rewarding as the tech stuff I currently do.\n\nYour 2 years of support may not be directly related, but it is still experience no 4 month DE would have. You will be able to build on that.",
+                    "replies": [
+                        {
+                            "author": "NinjaGingerVirgin",
+                            "text": "Thank you for encouragement. Currently landed a few interviews with HR but not with Senior Engineers or managers of department. As of now i'm thinking of doing a project so i could at least attract attention to something else."
+                        }
+                    ]
+                },
+                {
+                    "author": "itsthekumar",
+                    "text": "Try networking, attending careers fairs etc. \n\nI think short of that maybe a degree program?"
+                },
+                {
+                    "author": "padeye242",
+                    "text": "Funny enough, I'm not quite there yet. I have been a lumper for ages, but I've always been borderline obsessed with keeping everything orderly in my warehouse. The job was extremely demanding and I began to get injured more often. A SQL developer friend of mine suggested I learn SQL and he'd hire me. I had no idea that this even existed. I've been learning all about it, and getting certifications. My father was a machinist and my sister became a pharmacist by way of chemical engineering. I always wanted to be a cartoonist, but that didn't pan out. It'd be funny if I become a data engineer. Right now, it's an interesting hobby, but it's pushing all the right buttons \ud83d\ude09"
+                },
+                {
+                    "author": "mailed",
+                    "text": "I was a dev for 10+ years, landed a very SQL-heavy job, discovered the MSBI stack, then ended up with jobs using BigQuery + dbt stopping in Azure + Databricks along the way\n\nIf I had to start over I'm not sure I'd even go into data. I'm very likely about to leave. But I probably would have just started building stuff earlier"
+                },
+                {
+                    "author": "MikeDoesEverything",
+                    "text": "> If you were to start over, what would you do to be at the position you are now. How would you start where would you focus and how would build your career?\n\nThis question gets asked all the time in exactly this phrasing.  Because this question gets asked all the time, if you search for \"start over\" in the search bar, you're going to get loads of answers.",
+                    "replies": [
+                        {
+                            "author": "NinjaGingerVirgin",
+                            "text": "Yeah im just asking for your personal opinion not google's articles lol.",
+                            "replies": [
+                                {
+                                    "author": "inrusswetrust12",
+                                    "text": "I think OP meant searching it in the subreddit lol"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "C4 Models and Data Architecture",
+            "author": "nydasco",
+            "text": "[External Link]",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "GShenanigan",
+                    "text": "Nice write up. I'm a big fan of C4, the various levels of zoom is perfect for working with different types of people and moving between contexts as needed during discussions. Mermaid.js has pretty decent compatibility too.",
+                    "replies": [
+                        {
+                            "author": "nydasco",
+                            "text": "Thank you! Yes, I\u2019m a fan of Mermaid. Very easy to build out a number of visuals. Thank you for the feedback."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Data Engineer or Software Engineer",
+            "author": "Neat-Growth-5340",
+            "text": "Hi,\n\nI'm a fresh graduate with a Master's Degree and have been on the job search. \nI have two offers, one being a Data Engineer and the other one being an Android Software Engineer. The data engineering role would be in a consulting company doing work for external clients and the official title is Data Scientist, but not as much building the models themselves but rather everything around it, while the SE role is for a very popular comparison portal here in Munich, Germany. If you're in Germany you'll probably know which one I'm talking about.\n\nI am having a hard time deciding. I have experience in Android, have built an application as a freelancer for a client. I don't have as much experience in DE, I have played around with Apache Kafka services and setting up the Cloud infrastructure for Real Time Data Processing. I liked it so far and find it very interesting. I also see the potential of this field, considering that the use of AI is rising abruptly, which means the same trend for DE probably. Also, I'm honestly afraid of LLMs affecting the need for classical SEs.\nWith the assumption that the pay is the same, could you share some thoughts with me regarding this? Thanks in advance.\n",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "threeminutemonta",
+                    "text": "I like raw data engineering in python, sql, bash, cron, interfacing with apis and even web scrapping when absolutely necessary. I think glue these together using tools like airflow is neat.\n\nThough I currently dislike the cloud vendors product /service layers they put on top of this. Perhaps this is lack of training. I\u2019m sure I could learn quickly on job (with existing working setup not fresh new project) on the job though current market all want explicit experience in my area.\n\nAnd I absolutely hate the low code products that get pushed on DE. And find some people really do kick ass though it gets messy.\n\nSo depending on what is the data engineering stack they are using. And that a hodgepodge of scripts is okay especially if it has source control, diagrams, code review and unit tests. This last bits tends to gets missed! Code review is where you will learn most from seniors. And unit tests are extremely hard in DE so get skipped. \n\nIn summary unless they are a stellar diligent data engineering team perhaps start with android assuming they have source control, code review and unit tests.",
+                    "replies": [
+                        {
+                            "author": "Neat-Growth-5340",
+                            "text": "The tech stack would in short be Dagster, DBT, Terraform, Kubernetes, Data Bricks. Does this give you perhaps more context?\u00a0",
+                            "replies": [
+                                {
+                                    "author": "threeminutemonta",
+                                    "text": "I\u2019d be fairly excited to work with this stack as it\u2019s very open source. Assuming the team have glued it together solid which seems likely with Terraform this could be great."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "inanimate_animation",
+                    "text": "I wonder if people would agree that it\u2019s easier to pivot from SE to DE than to pivot from DE to SE? Is there one you think you\u2019d like more? Better pay? Could always do the SE job first and pivot into DE later if you don\u2019t like it / it doesn\u2019t work out.",
+                    "replies": [
+                        {
+                            "author": "Diligent_Fondant6761",
+                            "text": "Depends! The definition of DE differ so much these days.... In some companies someone who knows SQL is a data engineer\n\nWhereas In some companies DE are a combination of SRE, DevOps, SE , platform engineer. A regular SE would really struggle moving to this role",
+                            "replies": [
+                                {
+                                    "author": "Neat-Growth-5340",
+                                    "text": "To maybe provide some more context, the DE job would probably be in the direction of the second description, so a mix of SRE, DevOps, SE, Platform Engineer.\u00a0"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "lemonfunction",
+                            "text": "Started off as a backend SWE at my last job. Ended up doing DPE/DE for my current company. I definitely think going from SWE to DE is way easier than DE to SWE. The DEs at my current company who wanna do SWE have a much harder time competing against those who are applying in for SWE."
+                        }
+                    ]
+                },
+                {
+                    "author": "Yamitz",
+                    "text": "It\u2019s really easy to get pigeonholed into a role/responsibilities/tech stack in DE that won\u2019t let you transition your experience to SWE. \n\nUnless you\u2019re really into data and analytics, or want to be more business focused, I would start as a SWE."
+                },
+                {
+                    "author": "DenselyRanked",
+                    "text": "Congrats and I would take the SWE role first to start a career. \n\nDE is still not a properly defined role, as you can tell with the DS offer you received, and you may run into trouble finding your next DE role if you don't have YOE in a particular data stack or focus area (cloud provider, query engine, DevOps, security, finance, search, dashboards, etc.).  DE can also be more of a meeting heavy,  internal client-facing role if you don't have anyone on your data team to gather requirements."
+                },
+                {
+                    "author": "BattleBackground6398",
+                    "text": "Long term I see DE and SE blending further and further, so don't worry about lock-in.  Largely I think it's whether you're more database-side vs application-side.  Any modern app has DB support, and vice versa, how else do you get fancy table to DO something.  Maybe ask which you would rather debug the apps or models?\n\nDon't be (too) afraid of LLM-AI.  It'll take the programming out of SEngineering but not the engineering."
+                },
+                {
+                    "author": "DerelictMan",
+                    "text": "I worked as an Android dev for a decade and have been a DE for 4 years now. I'm the sort of DE who uses JVM languages (Kotlin and Scala), Kubernetes, Terraform, and Databricks. (At my job, the folks working on models and ML stuff use Python and up until recently were called Data Scientists). I say all that because I've noticed here that many DE jobs are actually what my company would call DS jobs, so I felt it necessary to clarify.\n\nI think this is a tough decision and both are good choices, and it depends mainly on what you want to be spending your time doing. \n\nAndroid is a lot of wrangling the framework itself. A lot of fighting the too-long feedback loop of making a change, building the app, pushing it to a real device (when I stopped Android development, testing on a real device was still the way I and most of my colleagues iterated). Lots of multi-threading, working with coroutines. Lots of frameworks.\n\nDE (my kind of DE) is mostly writing, troubleshooting, and optimizing pipelines. Good bit of SQL, good bit of reasoning about performance. A lot of interacting with AWS or Azure, using kubernetes, helm, terraform. In my job there's also backend API development, but that will probably differ from place to place.\n\nI have enjoyed both but I find DE work a little less aggravating personally.\n\nFeel free to message me if you have any questions about my experiences."
+                },
+                {
+                    "author": "lemonfunction",
+                    "text": "Don't worry about LLMs replacing SWEs, they'll replace DEs too lols.\n\nJust get in and do your best work."
+                }
+            ]
+        },
+        {
+            "title": "Getting scammed during a recruiting process",
+            "author": "Dazzling-Mission-563",
+            "text": "Hello everyone, this my first reddit post !  \nI had a meeting with a recruiter 1 week ago for a data engineer position that was successfull. At the end of the meeting the recruiter told me that the next round is going to be a technical task.  \nThe tricky thing is that they asked me to sign a contract in which I've to say that I allow the company to use my work even if they are not hiring me at the end of the process.  \nI'll also get paid for my work, which make it better, but also make me think that it might just be a \"clean\" way for them to do it ...  \nIs that something that all the company do ?\n\nThank you in advance for your help.",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "MikeDoesEverything",
+                    "text": "> Is that something that all the company do ?\n\nNo."
+                },
+                {
+                    "author": "dfwtjms",
+                    "text": "Not normal, make sure they pay you as if it was a consulting gig."
+                },
+                {
+                    "author": "po1k",
+                    "text": "Drop it. And welcome to the club"
+                },
+                {
+                    "author": "madam_zeroni",
+                    "text": "You should come back and say what the task was. I imagine and interview question would be something small that takes ~30 minutes max, but then why scam someone for 30 minutes of work?",
+                    "replies": [
+                        {
+                            "author": "Dazzling-Mission-563",
+                            "text": "Yes I'll definitly come back to update you.  \nIt's not going to be only 30 minutes. The recruiter told me the task should take me around 7 hours, which is why they will pay me for it.",
+                            "replies": [
+                                {
+                                    "author": "andpassword",
+                                    "text": "This seems fair to me (depending on particulars...if they try to pay you $8/hr, no).  \n\nThere are a lot of places which will try to give you a 7 hour technical task and expect you to complete it for free, and moreover will use your work on their website.\n\nI personally took live tables and ran them through a homomorphic obfuscation, so that e.g. Mary Smith of 123 Any St. became Ghsur Hisne who lived on 593 Gsjeuusl Dl.  Every primary key was the same digits but we scrambled all the other data, then provided it to analyst candidates and asked questions like 'which salesperson improved the most from month 1 to month 2?'.  Was an easy way to just make sure they weren't completely making stuff up, but probably now they could run it through ChatGPT in a minute."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "dataindrift",
+                    "text": "I've only seen it, where they gave a  simple bug for you to fix as part of the interview processes."
+                },
+                {
+                    "author": "NoleMercy05",
+                    "text": "Glad you smelled out the scam. Add that to your resume!\nGood luck out there!"
+                }
+            ]
+        },
+        {
+            "title": "Propose architecture for data problem",
+            "author": "huzaimakhan",
+            "text": "Hey guys, my company is initiating a project which will gather our customer's data (around 10k-50k records per month) and will try to map it back to our huge database of 250 million records in Clickhouse. Right now, we're ingesting data from our customers using a web service that dumps the data into kafka (AWS MSK) and exporting nightly all the data to S3. An ideal solution should be consuming the data from S3, doing some transformations on them, joining it with our data in Clickhouse, and then dump the joined data (alongwith some metadata) to somewhere (undecided right now, could be postgres, clickhouse, or just another S3 file).\n\nWe built a prototype for it by loading the data from Clickhouse and S3 (customer's data) into Motherduck (duckDB), doing all the transformations, cleanup and joining using DBT. This is working fine for prototype but we're unsure if it will scale or not (and the cost we will incur when scaling for this arch versus other tools like prefect, airflow, databricks, snowflake, etc) and whether it will be worth using snowflake or other similar tools. For context, our entire infrastructure today runs on AWS (including Clickhouse).\n\nNeed help from experts on this problem about proposing an architecture that can scale while being considerate about cost. ",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "Mythozz2020",
+                    "text": "https://github.com/ClickHouse/clickhouse-connect/issues/281\n\nYou should be able to map your 250 million clickhouse data as a duckdb table without having to move it into duckdb.\n\nThen just join your daily data with the larger dataset with just duckdb.\n\nhttps://duckdb.org/docs/guides/python/sql_on_arrow.html\n\nhttps://clickhouse.com/docs/en/integrations/data-formats/arrow-avro-orc#working-with-arrow-format",
+                    "replies": [
+                        {
+                            "author": "huzaimakhan",
+                            "text": "yup, that's what we're doing. Loading Clickhouse data into duckdb.",
+                            "replies": [
+                                {
+                                    "author": "Mythozz2020",
+                                    "text": "I think it would be possible to treat a clickhouse table as a duckdb table without actually loading it physically into duckdb using ETL, etc.\n\nOr the reverse. Treat the incoming data as an arrow stream for clickhouse processing.."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "DeonEmyr",
+                    "text": "If its batch ETL and cost conscientious, perhaps try Hadoop and HiveQL for the transformations?\n\nSqoop to dump into a relational database.",
+                    "replies": [
+                        {
+                            "author": "huzaimakhan",
+                            "text": "It's batch for prototype only. It will be real-time when we go-live.",
+                            "replies": [
+                                {
+                                    "author": "DeonEmyr",
+                                    "text": "Perhaps Flink or KSQL DB - but im not sure which is more cost efficient. The video below goes into some detail\n\n  \n[https://www.youtube.com/watch?v=Wqko7MunKZs](https://www.youtube.com/watch?v=Wqko7MunKZs)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "saintmichel",
+                    "text": "You could probably try to do some computations with the numbers that you have now, and then from there try to see where there might be bottlenecks. For me the order of optimization should be 1) data model 2) data format 3) query / ETL / code 4) platform 5) vertical scaling 6) horizontal scaling\n\nsome of the considerations also might be more on your long term maintenance requirements"
+                },
+                {
+                    "author": "OliveIndividual7351",
+                    "text": "An ideal solution for you sounds like GlassFlow? [https://www.glassflow.dev/](https://www.glassflow.dev/)",
+                    "replies": [
+                        {
+                            "author": "OliveIndividual7351",
+                            "text": "GlassFlow can consume data from S3, perform transformations and enrichments, and then dump the processed data to your desired destination like PostgreSQL, Clickhouse, or another S3 file.",
+                            "replies": [
+                                {
+                                    "author": "huzaimakhan",
+                                    "text": "Looks interesting. But their number of integrations are quite low. Specially there's no support for loading data from S3."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "geoheil",
+                    "text": "Hi, see [https://github.com/l-mds/local-data-stack](https://github.com/l-mds/local-data-stack) and [https://georgheiler.com/post/dbt-duckdb-production/](https://georgheiler.com/post/dbt-duckdb-production/) and [https://georgheiler.com/event/magenta-pixi-25/](https://georgheiler.com/event/magenta-pixi-25/)\n\n  \nTLDR: It depends.\n\n  \nBut:\n\n  \n\\- If you partition the data correctly\n\n\\- Use a resource provider like k8s\n\n\\- An orchestrator like dagster\n\n\\- Process the individual partitions in parallel - you can go a very long way with a duckdb based deployment.\n\n\n\nIf you conclude you need faster/more large scale JOIN operations then [https://www.starrocks.io](https://www.starrocks.io) may be with looking into.\n\n  \nYou may be interested in evaluating incremental computation via [https://github.com/feldera/feldera](https://github.com/feldera/feldera)"
+                },
+                {
+                    "author": "astrick",
+                    "text": "why can't you load the nightly customer file in S3 to Clickhouse, transform and join it there with SQL?"
+                },
+                {
+                    "author": "dan_the_lion",
+                    "text": "[Estuary](https://httsp://estuary.dev) could replace all of your data movement flows with a single tool. It can read data from Kafka, S3 and push into Clickhouse and Motherduck all with dedicated connectors, in real-time. It also has a dbt Cloud integration for the transformations.\n\nDisclaimer: I work at Estuary, let me know if you have any questions, happy to help!"
+                },
+                {
+                    "author": "mrocral",
+                    "text": "Give [Sling](https://slingdata.io) a try. It can read and write from/into S3 (csv, json, parquet), Clickhouse, DuckDB and Motherduck.\n\nSomething like this to read files from S3 incrementally:\n\n```\nsource: aws_s3\ntarget: motherduck\n\nstreams:\n  fodler/{YYYY}/{MM}/{DD}/*.csv:\n    object: my_schema.files\n    mode: incremental\n```"
+                }
+            ]
+        },
+        {
+            "title": "ETL jobs with Trino",
+            "author": "turboline-ai",
+            "text": "Is it a good choice to do ETL with Trino? \n\nTrino uses SQL to do the query and I have seen big ETL jobs done solely using SQL \u2014 no pandas, no Pyspark, no dask, just SQL (obv. there is SparkSQL).\n\nI was curious because my team is planning on powering everything using Trino after watching a presentation by data engineers at Lyft who use it for their ETL. \n\nI am the PM for this project and I just want to lookout for pitfalls of using this approach.",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "ReporterNervous6822",
+                    "text": "Yep my team does a lot of transformations using trino against iceberg into wherever we need it"
+                },
+                {
+                    "author": "lester-martin",
+                    "text": "(DISCLAIMER: Starburst DevRel) you absolutely can do your ETL with Trino and many, like Lyft, have been doing that for years. I'd definitely consider having a Trino cluster for all your interactive querying and another cluster for your ETL job and look into enabling fault-tolerant execution, [https://trino.io/docs/current/admin/fault-tolerant-execution.html](https://trino.io/docs/current/admin/fault-tolerant-execution.html), on that one. You can assemble all your SQL together with simple scripts if that's your thing, or use more rich workflow/orchestration tools like Dagster, Airflow, dbt, etc. Starburst has some additional features on our enhanced Trino setup, but I'll let you ping me separately if you want to hear some of that \"sales pitch\".  :)  GOOD LUCK!!",
+                    "replies": [
+                        {
+                            "author": "FireboltCole",
+                            "text": "Don't forget the Trino Gateway for routing queries between your different clusters, especially if you're at scale and need to add more for analytics.\n\n  \nThough it all depends on scale and how much data you're working with. At small (<10GB) scales of data, you can probably get away with just using one cluster for everything and keeping it simple. At larger scales, Trino may not perform quite as well as Spark for ETL, but there's a lot to be gained from using one system for everything and not having to juggle different systems and SQL dialects.",
+                            "replies": [
+                                {
+                                    "author": "lester-martin",
+                                    "text": "100% Cole!!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Teach-To-The-Tech",
+                    "text": "Yeah, it's actually one of the main ways that people use Trino. Strangely enough, I just wrote a piece on this exact topic a few weeks back: [https://www.starburst.io/blog/etl-sql/](https://www.starburst.io/blog/etl-sql/) \n\nHope it's helpful. The short answer is that this is absolutely one of the use cases and can be a powerful and easy way to do ETL."
+                },
+                {
+                    "author": "gman1023",
+                    "text": "Trino is what AWS athena uses under the covers. it's a good solution  but it always depends on your tasks and goals"
+                }
+            ]
+        },
+        {
+            "title": "Has anyone migrated from ab initio to databricks? Was it worth it",
+            "author": "harnishan",
+            "text": "I have heard many conpanies in the usa have migrated from ab initio as its very expensive to use and doesn't offer any better performance than spark. Was it worth migrating? Are you liking databricks from a developer perspectivd?",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "InteractionHorror407",
+                    "text": "I worked with Ab Initio 5-6 years ago, awful tool from a long gone era but haven\u2019t used it recently. It did the job back then, but have been working on databricks + spark + AWS/Azure for the past 3 years and will never look back. It\u2019s completely different from ab initio, but modern and feature rich.\n\nDeveloper experience is good, you can work with databricks with sdk, cli, REST api, pipeline and infra as code or just notebooks and sql if you like.",
+                    "replies": [
+                        {
+                            "author": "harnishan",
+                            "text": "Yeah it does feel outdated...i dnt knw why big banks/insurance companies still prefer ab initio....",
+                            "replies": [
+                                {
+                                    "author": "InteractionHorror407",
+                                    "text": "Generally I think it keeps people from losing their jobs.. I\u2019m seeing the same resistance with SAS folks. Managers care about preserving the status quo / use a legacy tool because if their team is downsized or re-skilled, they are next in line"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Azure Data Factory (Python Functions) - Need guidance",
+            "author": "LarryWinters69",
+            "text": "My company is currently migrating from SAP Data Service to Azure (Data Factory).\n\nEveryone is new to this so we are currently experimenting.\n\nAfter recreating a few of the earlier jobs (Get max date from table, SQL another table using this max date as filter, insert new rows into table) as pipelines, the costs are very large considering the small amount of work being done.\n\nOur current piplines are basically copy to blob > get max date from table > use procedure to insert > delete files \u2013 but we will need to do more transforms and stuff later on.\n\nI have read that using SQL Stored procedures / Python as Azure Function as much as possible is the way to go. Only us DF as an orchestrator and use COPY\u00a0 -the rest should be done in Python /SQL.\n\nI have tried googling, but I can\u2019t find that many examples of a typical Python ETL flow that are a bit beyond the basic.\n\nCan I find a few examples somewhere? I am familiar with Pandas and know how to use that, but I am completely new to Azure and best practices when doing ETL.\n\nFor example, you need to pull in 3 different tables / (perhaps blob storage files?) and get MAX(DATE) from a 4^(th) table (as to not work with ALL the data all the time) \u2013 do a comparison, do a join, groupby, add to Azure SQL storage? What would this look like?\n\n\u00a0Also this part: \"get MAX(DATE) from a 4^(th) table (as to not work with ALL the data all the time)\" - what is the best approach here? Is this how it's commonly done, or are there better ways of doing it?\n\nAnother thing. I have 2 tables (one PD dataframe, 1 Azure SQL table). I need to insert new values / update changed values. How is this done in Python Azure functions? When doing it in Data Service, you have a Table comparison transform that does this, but I want to avioid this as much as possible in Data Factory and only use Python SQL.  \n\n\u00a0Any help is appreciated.",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "drollerfoot7",
+                    "text": "Looks like you might want to look into databricks/synapse for your code related necessities",
+                    "replies": [
+                        {
+                            "author": "LarryWinters69",
+                            "text": "Trust me, I've raised that. This is a Corp decision made elsewhere. DataBricks is another cost added and seems to be a bit overkill for our use case. We are talking a couple of 10k-100k of rows per day. I could do most of the ETL from my laptop. I can't because everything needs to be accessible from everywhere - \"low/no code\" etc.\n\nBut everything is going to Azure, so this is what I have to work with unfortunately. It's a good learning experience anyhow.",
+                            "replies": [
+                                {
+                                    "author": "drollerfoot7",
+                                    "text": "I see. Do they think the same about synapse? It's basically ADF + notebooks. And the smallest sparkpool is like 3 euros/hour (only billed when it's in use). You can even build a dedicated/serverless sql pool and store your data there. That way it's all in one place and accessible anywhere\n\nThere are also dataflows in ADF which are low code but pretty expensive."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "[DBT] How do you handle upstream schema changes with snapshots?",
+            "author": "Jeannetton",
+            "text": "Hey r/dataengineering,\n\nI\u2019ve been working with dbt snapshots, and I recently ran into a challenge: an upstream schema change resulted in a column being renamed in the source table.\n\nSince dbt snapshots rely on `unique_key` and `check_cols` to track changes, I\u2019m curious about how others handle these situations. Specifically:\n\n* How do you deal with column renames in a way that avoids breaking the snapshot or duplicating data?\n   * Is it a common practice to join sql insert the old data into the new column? \n   * Do you just rebuild the snapshot and \"lose\" the old data? \n* Do you have proactive processes or tools in place to handle schema changes like this?\n* Any tips for ensuring historical data remains consistent?\n\nWould love to hear how you\u2019ve approached this problem! Thanks in advance for sharing your experiences and insights.",
+            "subreddit": "dataengineering",
+            "comments": [
+                {
+                    "author": "rycolos",
+                    "text": "Won't \\`snapshot\\` just add a new col in that case? I'd then just handle it in downstream models in whichever way made the most sense for the data at hand. If it was just a straight rename and no business logic change or content change (like new identifiers being added to a key or something) I'd just coalesce the 2 versions in my BI-friendly model.",
+                    "replies": [
+                        {
+                            "author": "Jeannetton",
+                            "text": "You're right, DBT will just create a new column. I guess I didn't think about adding a coalesce in a downstream model- bu tthta's an excellent point",
+                            "replies": [
+                                {
+                                    "author": "rycolos",
+                                    "text": "There's probably a better, \"best practice\" way to handle it, but I'm a team-of-one so I go with quick and dirty generally"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

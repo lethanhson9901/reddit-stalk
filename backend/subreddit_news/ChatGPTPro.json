@@ -1,0 +1,824 @@
+{
+    "items": [
+        {
+            "title": "I am among the first people to gain access to OpenAI\u2019s \u201cOperator\u201d Agent. Here are my thoughts.",
+            "author": "No-Definition-2886",
+            "text": "[External Link]",
+            "subreddit": "ChatGPTPro",
+            "comments": [
+                {
+                    "author": "weeeHughie",
+                    "text": "Amazing write up, thanks for trying it out and sharing your findings.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Thanks for reading!",
+                            "replies": [
+                                {
+                                    "author": "mvandemar",
+                                    "text": "Can you ask it to do a task that requires solving a captcha on a given site, WITHOUT telling GPT that it will need to do that, see if it manages to get through it? I feel like that would be pretty damn big if it does. :)"
+                                },
+                                {
+                                    "author": "Fluid-Concentrate159",
+                                    "text": "this is just the beggining; this shit will be insane in 1 or  2 yerears; but can you imagine thepower;  thanks for the post anyways;"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Vegetable-Balance-53",
+                            "text": "OP is actually just Grok"
+                        }
+                    ]
+                },
+                {
+                    "author": "FerretSummoner",
+                    "text": "OP, this is incredibly well explained and thought out.\nThank you for sharing this.\n\nWhat was your biggest \u201cAha!\u201d Moment through this process?",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Thank you! I've been writing articles 5+ times per week this year, and so most of it comes naturally. I really feel like I've become a strong writer recently, even though I struggled with it in school with it.",
+                            "replies": [
+                                {
+                                    "author": "socatoa",
+                                    "text": "Any tips you might share? I usually jump to a TLDR, but your writing caused me to read the whole thing in a good way. Specifically any tips for production"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "m98789",
+                            "text": "No aha! He\u2019s not R1"
+                        }
+                    ]
+                },
+                {
+                    "author": "Coachbonk",
+                    "text": "This is a pretty intense use case for any agent technology. If I were building this, it would be a few agents and some automations to start, far more complex than simply \u201cuse Operator\u201d. \n\nThat being said, this is the worst it will ever be. Pretty cool to see this stuff happening seemingly every day. I\u2019m really looking forward to Anthropic\u2019s answer to o1 and Operator.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "It's definitely not a trivial task. At the same time, with all of the hype of \"agents replacing software engineers!\", I wanted to give it a real task, not a trivial one.\n\nAnd as you can see, it failed spectacularly. Here's to seeing what happens next year and comparing the results.",
+                            "replies": [
+                                {
+                                    "author": "Coachbonk",
+                                    "text": "Yeah agents won\u2019t be replacing people the way it\u2019s being demonized. But people will need to become more skilled at delegation and management. What\u2019s interesting with agents is while the tech is still developing, people are too focused on pushing the limits of what it can do. A natural phenomenon. \n\nIf I were not as technical and wanting to skill up, I\u2019d be skilling into project management and identifying tasks that can be automated due to repetition and consistent tasks to completion."
+                                },
+                                {
+                                    "author": "GuardianG",
+                                    "text": "As always, context matters. How well does it do when you provide it context of the services you prefer?\u00a0"
+                                },
+                                {
+                                    "author": "No-Way7911",
+                                    "text": "Wondering what the results would be like if you had added an interim step to \u201cverify email addresses\u201d"
+                                },
+                                {
+                                    "author": "Ok_Island2790",
+                                    "text": "But I am not going to give the task you gave to a software engineer...  \nThat test is more of an assistant test."
+                                },
+                                {
+                                    "author": "jakderrida",
+                                    "text": "My view is they should just have a group of people with exceptional Google-Fu and like some of the best paralegal researchers and shit and just record their mouseclicks, screen, and keystrokes. Then, train an agent on that data. I feel like they could eventually sort out the underlying processes that make them effective and actually train a model to think like them. But that's just a honky-tonk idea I had even before \"Attention\" was published."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "frivolousfidget",
+                            "text": "Anthropic released computer use long time ago (and was very bad)",
+                            "replies": [
+                                {
+                                    "author": "Coachbonk",
+                                    "text": "Yes - so bad I didn\u2019t bother pointing it out."
+                                },
+                                {
+                                    "author": "No-Definition-2886",
+                                    "text": "I feel like the barrier to entry for Operator was so low, that it was easy to just try out. I've never once heard any good things about Computer Use"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Nonikwe",
+                            "text": "Something being the worst it will ever be doesn't mean it will ever get significantly better...",
+                            "replies": [
+                                {
+                                    "author": "Coachbonk",
+                                    "text": "I agree with you.  Given how fast this tech and competition move, I think it\u2019s plausible that it will for AI computer interaction."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "fanglazy",
+                    "text": "You sure deserve a triple upvote. Quality well written human generated content is clearly not dead.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Thank you! That's a huge compliment \ud83d\ude03"
+                        }
+                    ]
+                },
+                {
+                    "author": "SlickWatson",
+                    "text": "it\u2019s so bad bro\u2026 it\u2019s slow and it stupid. all it does is literally get stuck browsing the web repeatedly\u2026 thanks SCAM Altman",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "I feel like they are probably open-source repos on GitHub right now that are 100x better.\n\nBut it does have a pretty UI!"
+                        },
+                        {
+                            "author": "TheOneMerkin",
+                            "text": "I think what\u2019s interesting is it still suffers the same problems that all other LLMs suffer (hallucinations, to quick to just do what you say rather than question what the optimal solution is).\n\nThese are clearly problems with the architecture, and in my mind are a hard block to this stuff ever genuinely replacing work.",
+                            "replies": [
+                                {
+                                    "author": "Seakawn",
+                                    "text": "> I think what\u2019s interesting is it still suffers the same problems that all other LLMs suffer\n\nWhich means it ought to be capable of (at least somewhat) resolving the same problems with the same solution--a better prompt.\n\nI wonder how OPs results would have turned out if they added in their initial prompt things like, *\"Don't use bing,\" \"if guessing on any contact information, verify it to confirm or else scrap your guess and leave blank,\"* etc.\n\nOP even admitted themselves:\n\n>Now, I could've told it to search the web for this information. Look at their YouTube profiles, and if they have a personal website, check out their terms of service for an email.\n\nOAI made it very clear--this is essentially a beta release. So obviously it's going to not be able to do the things that one expects it to be able to do upon a full release. This is just simply the nature of beta.\n\nThus, as a user giving an honest or at least compelling assessment of it, you've got to reach an extra arm out to make sure your prompt is covering its shortcomings. What I'm super interested in is seeing *just how capable this actually is*--and that's going to require a very mindful prompt that anticipates its common struggles from simple prompts, accounts for them, and actually squeezes out what this thing can do when its got guidance on all corners."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "jack_espipnw",
+                    "text": "I tried operator to research a well known public company (trade consulting) and it opened up one of its e-commerce sites, and their About Us page. \n\nAfter 9 minutes it\u2019s output was a sentence stating what the company did (wrong) and recent news about a possible \u201csale\u201d of the company (erroneously interpreted from its e-commerce website showing a few items on-sale).\n\nSo obviously not taking consulting work but what the hell is operator gonna be good for?"
+                },
+                {
+                    "author": "domain_expantion",
+                    "text": "Sounds like alot of what you mentioned could just be fixed with a better prompt. For example, telking it to you YouTube instead of Bing and telling to let you know if it needs any help logging in to any sites online.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Yeah you're right! I had higher expectations of autonomy for an agent",
+                            "replies": [
+                                {
+                                    "author": "domain_expantion",
+                                    "text": "I mean it's version 1, I'd say give it 6-8 months before judging it too harshly, regardless tho, I feel like your expectations should have been lower given the reviews about Claude's \"operator\""
+                                },
+                                {
+                                    "author": "RobertGameDev",
+                                    "text": "Could you try again with a better prompt? Like maybe get the prompt to the next level using o1 then put that into the agent and see what it does?"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Cute_Axolotl",
+                            "text": "Wouldn\u2019t it choose bing because of Microsoft? I get Google is more popular but I\u2019d imagine they\u2019d put safeguards against an influx of non-llama operators."
+                        }
+                    ]
+                },
+                {
+                    "author": "jahoosawa",
+                    "text": "Thanks. \n\nThis is what I suspected, and without this level of performance I'm still not interested in $200/mo.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "I wouldn't buy this for $20/month tbh"
+                        }
+                    ]
+                },
+                {
+                    "author": "Big-Beyond-9470",
+                    "text": "\u201cwatching an arthritic half-blind grandma use a rusty typewriter.\u201d   Mmmmm"
+                },
+                {
+                    "author": "Desperate-Let-5671",
+                    "text": "Such a beautiful explanation...thank you for the enlightenment....",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Thank you for reading!"
+                        }
+                    ]
+                },
+                {
+                    "author": "Kilgrim1982",
+                    "text": "Nice, thanks for sharing your experience!\n\nDid you try out the chinese Deepseek R1? Any thoughts on it?",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "I love DeepSeek! I wrote my thoughts about it here: [https://medium.com/p/93a1b4343a82](https://medium.com/p/93a1b4343a82)\n\nAfter using it for a few more days, I do have some minor complaints:\n\n* **Lack of function-calling**: I believe function-calling is not yet supported. I have to do the old-school of prompt-engineering to convince it to respond with JSON.\n* **Smaller context window**: The context window is smaller than some of the best models right now. I think it should be a little bit larger\n* **Times out**: Maybe this is just OpenRouter, but I notice it timing out at a slightly higher rate than O1.\n\nWith that being said, these are nits. It's still an amazing model. I rate it 9.6/10"
+                        }
+                    ]
+                },
+                {
+                    "author": "Sonari_",
+                    "text": "Let's see in 12-18 month how they do",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Agreed! I remember being blown away by the difference between GPT-4 and GPT-3. Hopefully Operator 2 is the same level of \"wow\" upon its release"
+                        }
+                    ]
+                },
+                {
+                    "author": "Gameplan492",
+                    "text": "Interesting write up, thanks",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Thanks for reading!"
+                        }
+                    ]
+                },
+                {
+                    "author": "timeforknowledge",
+                    "text": "Can it be run without it being displayed on your screen?",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Yup! You can walk away and minimize it, or switch tabs. It doesn't take control of your screen."
+                        }
+                    ]
+                },
+                {
+                    "author": "EquivalentAir22",
+                    "text": "Tell me more about your trading platform, is it live, beta, under development? \n\nI'd love to test. Currently using stuff like afterhour and other trading apps, but there's a lot of painpoints.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "It's free to use and fully launched! [You can access it here.](https://nexustrade.io/)\n\nIt's a platform designed to make it easy for retail investors like you and me to perform automated research and deploy automated trading strategies. I built it because I'm a trader, and couldn't find a tool for myself to use.\n\n[It features an AI chat that translates plain English into trading rules.](https://nexustrade.io/chat) You can then test the rules on past data, optimize them, and test them in real-time. When you're done, you can deploy them live to Alpaca for real trading. \n\nI would love feedback!"
+                        }
+                    ]
+                },
+                {
+                    "author": "Traveler0061",
+                    "text": "What if you give instructions on exactly what to search in a very detailed format, will it be able to compile a csv?",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "It might be able to but, but again, it's painfully slow. OpenAI needs to throw some more compute at it"
+                        }
+                    ]
+                },
+                {
+                    "author": "Herebedragoons77",
+                    "text": "I gave up on chat gpt chasing an investment idea in nov due to hallucinations. I\u2019m gun shy now. Is there a model that can be trusted that won\u2019t lie?"
+                },
+                {
+                    "author": "primal001",
+                    "text": "Yeah but throw enough scale at this and refine the training method, a couple Nvidia GPU generations later and do you not think it could advance significantly pretty quickly? Think about those Will Smith eating spaghetti videos now vs. a couple years ago. Even if it\u2019s currently bad, curious to hear given your strong interest in AI but skepticism of agentic ai why you think this won\u2019t be able to scale to something much more powerful in the near future by just throwing scale at it and working out the kinks.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Yeah for sure! I remember GPT-3 outright hallucinating facts. Now, we have DeepSeek R1, which costs the same. Insane times!"
+                        }
+                    ]
+                },
+                {
+                    "author": "Nonikwe",
+                    "text": "People will read this and claim AGI is months away..."
+                },
+                {
+                    "author": "Sahashraanshu",
+                    "text": "I wouldn\u2019t expect a finished product from the first iteration of it. Especially when it\u2019s a pioneer product and never been done before.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "I don't 100% disagree, but there are definitely AI agents on GitHub that probably work better than this. I do like that Operator has a nice UI though!",
+                            "replies": [
+                                {
+                                    "author": "Sahashraanshu",
+                                    "text": "You are saying that their are AI agents on GitHub with the same USP as Operator and can do basically everything that Operator can and they are available for free or a small amount perhaps?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "OldPreparation4398",
+                    "text": "Fantastic report! Thanks for all the effort you've put in! Just one point of clarity I'd love to ask -- isn't dall-e an openai product as opposed to X?",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Yeah you\u2019re right! Unfortunately I can\u2019t edit the post. But I basically converted my original medium article into markdown, and it hallucinated that mistake (and I didn\u2019t catch it)",
+                            "replies": [
+                                {
+                                    "author": "OldPreparation4398",
+                                    "text": "Great work none the less!! I'll look forward to any future articles you put out!!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "ilovesaintpaul",
+                    "text": "Really interesting write up and really helped me tamp down all the hype there is out there right now. Eh?"
+                },
+                {
+                    "author": "GalacticGlampGuide",
+                    "text": "Thanks for your share. I have the itch that all of the fails could be addressed though. Wdyt?",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "I've been playing with it more and more and honestly? I'm not too sure. I think it has some value (for example, with UAT testing). But is still obviously flawed in many ways",
+                            "replies": [
+                                {
+                                    "author": "GalacticGlampGuide",
+                                    "text": "Let's say it explored the \"right\" way to choose in your examples by learning from choices people make. Like test time adjustments of the planned approaches. What I mean i guess is that do you think it's a lack of \"smart choices\" or lacking of experience of the agent"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Experience84",
+                    "text": "This was a great read, thanks for taking the time to test this new feature. I always rather hear from people using these new AI's for real world tasks. But I 100% agree with you on the dangers of Hallucinations on these types of tasks. I mean, imagine this was an AI that handled medical records or Chemical engineering or hundreds of other industries where these were well written LIES. I wish they could just make it so that it could just ask for help when it needed to. After all, it would learn faster and more accurately if it asked questions, rather than just making sh#* up. \n\nBut thanks again for this thorough write up.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Thanks for reading!"
+                        }
+                    ]
+                },
+                {
+                    "author": "nopefromscratch",
+                    "text": "Thanks for the writeup. Sounds like they need to incorporate a set of defined tools / applications the app is authorized to access and default to.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "I agree. I"
+                        }
+                    ]
+                },
+                {
+                    "author": "dftba-ftw",
+                    "text": "Is self promotion not against the rules, all this guy does is make posts about how current tools suck compared to the amazing tool he built.",
+                    "replies": [
+                        {
+                            "author": "illkeepthatinmind",
+                            "text": "It is definitely self-promotion...wrapped in a very useful post about ChatGPT.  I have no issue with it. Win-win."
+                        },
+                        {
+                            "author": "Buttons840",
+                            "text": "IDK. I'd rather people share a sentence or two about what they're building than not.\n\nYou see a lot of people trying to keep their project secret:\n\n\"I asked Operator to do a task for my side-project and it failed.\"\n\n\"What's your side-project?\"\n\n\"I don't want to say.\""
+                        },
+                        {
+                            "author": "TheGambit",
+                            "text": "It\u2019s true."
+                        },
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Did you... did you even read the post? \n\nThat's not at all what I'm doing. Like, not even kinda, lol.",
+                            "replies": [
+                                {
+                                    "author": "thorax",
+                                    "text": "I mean, you could remove the self-promotion bits in there and then they won't even have a point, right?"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "timeforknowledge",
+                            "text": "I noticed that but the rest of the content is too good though"
+                        }
+                    ]
+                },
+                {
+                    "author": "BusinessWeb3669",
+                    "text": "Schizophrenic psilocybin?\nMan, that hurt.  You talk to my AI, and again that way,\nYou and I are going to have PAWAO  outside.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "\ud83d\ude02\ud83d\ude02\ud83d\ude02 I asked ChatGPT and Claude what they thought of my simile, and it told me it was insensitive. I still kept it though"
+                        }
+                    ]
+                },
+                {
+                    "author": "nraw",
+                    "text": "Thanks for the write up, but this feels like written by genai."
+                },
+                {
+                    "author": "Michael_J__Cox",
+                    "text": "We got a year or two",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "RemindMe! 1 year",
+                            "replies": [
+                                {
+                                    "author": "RemindMeBot",
+                                    "text": "I will be messaging you in 1 year on [**2026-01-24 02:16:47 UTC**](http://www.wolframalpha.com/input/?i=2026-01-24%2002:16:47%20UTC%20To%20Local%20Time) to remind you of [**this link**](https://www.reddit.com/r/ChatGPTPro/comments/1i8jln3/i_am_among_the_first_people_to_gain_access_to/m8ua7d8/?context=3)\n\n[**CLICK THIS LINK**](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2FChatGPTPro%2Fcomments%2F1i8jln3%2Fi_am_among_the_first_people_to_gain_access_to%2Fm8ua7d8%2F%5D%0A%0ARemindMe%21%202026-01-24%2002%3A16%3A47%20UTC) to send a PM to also be reminded and to reduce spam.\n\n^(Parent commenter can ) [^(delete this message to hide from others.)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Delete%20Comment&message=Delete%21%201i8jln3)\n\n*****\n\n|[^(Info)](https://www.reddit.com/r/RemindMeBot/comments/e1bko7/remindmebot_info_v21/)|[^(Custom)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here)|[^(Your Reminders)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=List%20Of%20Reminders&message=MyReminders%21)|[^(Feedback)](https://www.reddit.com/message/compose/?to=Watchful1&subject=RemindMeBot%20Feedback)|\n|-|-|-|-|"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Civil_Ad_9230",
+                    "text": "maybe it moves the cursor slowly and non directly is it not get the captchas?"
+                },
+                {
+                    "author": "HotDogDay82",
+                    "text": "Part of me wonders if it will ever be able to connect meaningfully with Google products. Is it using Bing (and not Google search) because of OpenAI\u2019s relationship with Microsoft, for instance? It used bing during the demo today as well.\n\nI\u2019m also guessing that Mariner will be able to do almost (if not) everything Operator can do at the time whenever it\u2019s released, and I can see Google using \u201cMariner is the only agent that can use our stuff - also you need to buy Google Advanced to use all of its features!!\u201d as a marketing ploy",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Tbh, it would be a very enticing ploy."
+                        }
+                    ]
+                },
+                {
+                    "author": "rotinipastasucks",
+                    "text": "It's not taking my job, yet."
+                },
+                {
+                    "author": "Wtevans",
+                    "text": "You tried an early access preview and make broad claim about future viability. Let it cook."
+                },
+                {
+                    "author": "NexusPioneer",
+                    "text": "Awesome write up - thank you!"
+                },
+                {
+                    "author": "After-Cell",
+                    "text": "If you want to try this kind of thing out, Abacus has a working approximate. You will find problems like this. It doesn't work well."
+                },
+                {
+                    "author": "murali717",
+                    "text": "Great write up. Thanks for sharing. Based on your extensive use of AI chatbot usage. What did you find them to be most useful for as of right now? Based on what you write in I am guessing coding. Anything else?"
+                },
+                {
+                    "author": "anatomic-interesting",
+                    "text": "What was your initial prompt? What were your follow up questions after the wrong result?"
+                },
+                {
+                    "author": "meerkat2018",
+                    "text": "Great report.\n\nHave you tried to prompt it in very detailed step-by step manner, with including a lot of additional context into your prompt?\n\nO1 works very well with this strategy, maybe it could improve the agent\u2019s results as well?"
+                },
+                {
+                    "author": "AthirstyLion",
+                    "text": "Plot twist. OP is the operator."
+                },
+                {
+                    "author": "MoNastri",
+                    "text": "This is great, thanks OP. Wish Reddit had a \"strong upvote\" button that would give you 5-10 karma or something.\n\nI agree with you that this is the worst it'll ever be, so I want to reread this in a year's time when SOTA AI agents have gotten better. RemindMe! 1 year"
+                },
+                {
+                    "author": "ProggieFrog",
+                    "text": "bro literally changed vscode for a vscode"
+                },
+                {
+                    "author": "RUNxJEKYLL",
+                    "text": "I work in automation, specializing in test. Everyone loves to see automation in action. The browser opening, actions happening, etc. It\u2019s really cool. But the flakiness of these frameworks is well known once they grow to a certain size. \n\nMy point is, I look past the browser control because I don\u2019t feel like watching grass grow and need to leave it unattended and trusted, after all I am responsible for the actions the AI takes. \n\nI\u2019m looking forward to this maturing, but given the need for strong long term consistency and reliability, it has a ways to go."
+                },
+                {
+                    "author": "MetaRecruiter",
+                    "text": "I appreciate this write up and transparency. Is that NexusTrade something you\u2019re actually working on?"
+                },
+                {
+                    "author": "heyItsCezar",
+                    "text": "You see the problem starts ar the very beginning. \n\nWhat search tools, algorithms are used by the model ? Google, Bing and friends are simply poor choices , but currently the one being used. \n\nLet\u2019s wait when solutions like: https://exa.ai step into the game\u2026. Then - the magic will be possible - I am more than sure about this. \n\nQuestions remains: how the search engine like exa influence cost of Agents. I suggest a very nice meeting with EXA guys here: https://www.latent.space/p/exa \n\nCheers mate!"
+                },
+                {
+                    "author": "0xR0b1n",
+                    "text": "Thank you for your insights. I\u2019ve been holding off getting Pro and was wondering if Operator would be the killer feature to get me to subscribe. It\u2019s still doesn\u2019t seem like it\u2019s worth it, especially in light of the recent Deepseek release."
+                },
+                {
+                    "author": "Mistakes_Were_Made73",
+                    "text": "YouTube is already blocking it from accessing it."
+                },
+                {
+                    "author": "Anxious_Current2593",
+                    "text": "It's a great review!!!\n\nIt reminded me of the first reviews of ChatGPT. Everyone concluded that ChatGPT was like an intern on its first day in a company. You could give it a task, and the results would be slow coming and quite often, very wrong. A year later, ChatGPT responds to everything like it has a PhD. in everything. In most times, the responses are spot on, and hallucinations are rare and easily managed.\n\nDo you see Operators getting better at a similar speed, or perhaps even faster?"
+                },
+                {
+                    "author": "JamesGriffing",
+                    "text": "Great write-up. These are the types of posts this subreddit was designed for. Thanks."
+                },
+                {
+                    "author": "Crawsh",
+                    "text": "As an aside, there are monetized copy trading platforms in crypto already.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Interesting! I\u2019m not fully surprised; that\u2019s good to know though. Do you have any links?",
+                            "replies": [
+                                {
+                                    "author": "Crawsh",
+                                    "text": "There are many, don't remember from the top of my head since I've never understood copy trading - there's only one Warren Buffett -, but GPT4 gives me Bitget, PrimeXBT, Mizar, ZuluTrade, and ApeX Protocol FNDZ. No idea how much of that has been hallucinated, but there are definitely such fairly popular platforms already, so you need to find a USP or a niche to serve."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "godspeedrebel",
+                    "text": "Thanks for your service sir. \n\nBtw, the reason it uses bing is because of OpenAIs partnership with Microsoft."
+                },
+                {
+                    "author": "Amoner",
+                    "text": "I tried having it book a haircut for me and then research flight options. In both scenarios it convincingly told me the wrong information. \n\nIt couldn\u2019t find online booking on the website so it told me that there was no online booking. I corrected it that it should have checked Google search instead and it\u2019s available there. It navigated correctly to booking, finding a service and attempting to schedule it, but it never considered to ask for a specific barber or the time.. so I had to go in and adjust before booking. \n\nFor flights it was slightly worse. At first it messed up selecting correct dates, instead of the requested 19 and 26, it selected 18 and 27? Then once it gave me two options for a flight with layovers, I asked it to do the search for nonstop fights. Since it already pre-selected additional filters, it was getting 0 flight results and instead of trying to backtrack to the reason why it\u2019s 0, it just told me that no flights were available. \n\nI think I am okay with this being a bit rusty, but I would appreciate it to be more humble and be less \u201cdefinitive\u201d when it provides its \u201cfinal\u201d responses if it\u2019s not 100% certain."
+                },
+                {
+                    "author": "farox",
+                    "text": "Thanks! Though that task sounds perfect for gemini with it's deep research.\n\nBut I love that. Currently we have all these different options for different tasks. I am sure in the end enshitifications will eliminate that. Feels like early streaming days this way."
+                },
+                {
+                    "author": "X_O_Z",
+                    "text": "I give it a year to atleast be decent in searching and doing the task you ask it to do on the web. In years time, this could replace jobs. This is just the beginning."
+                },
+                {
+                    "author": "Capable-Student-413",
+                    "text": "\"if this ~month old technology was a human they would be fired on the spot\""
+                },
+                {
+                    "author": "ElAlqumista",
+                    "text": "Worth the reading so thank you for sharing! I will consider this whenever I am doing a research and being helped by the IA"
+                },
+                {
+                    "author": "Early_Specialist_589",
+                    "text": "I just want to clarify about hallucinations. LLMs hallucinate as a feature, not a bug. Everything you get is from training data, it\u2019s just that what you are getting is from flawed data. It could be that it thinks that links can be generated because of how often they are structured the way they are. It could be that the information you are getting, while not true, still exists in the data set. It has no way of determining what data in its training set is credible, because it\u2019s a language model, not an intelligence model. It just knows that some words are more linked so words than others, and puts them together. It isn\u2019t lying, it\u2019s just doing its job with bad data."
+                },
+                {
+                    "author": "StretchTop8323",
+                    "text": "I'm curious: did you retry the goal with different prompting or different strategies? I wonder how much of it could be optimized by knowing Operator's strengths and weaknesses and guiding it forward accordingly"
+                },
+                {
+                    "author": "aaperiod",
+                    "text": "The whole hallucination thing scares the fuck out of me"
+                },
+                {
+                    "author": "Mr_Bones1304",
+                    "text": "Do you think if you had specified things like\n\n- go to YouTube\n- scrape list of influencers\n- find info\n- use LinkedIn and cross reference contact info\n- I have google sheets, here\u2019s the log in\n\nAnd been super specific with each individual part of the prompt to the nth degree, it would have been successful in this task, albeit extremely slow?"
+                },
+                {
+                    "author": "Careful_Tonight_4075",
+                    "text": "Awesome post OP! \n\nIn my experience, AI has only been good for expediting a single step in a given task. All of my attempts to string tasks or create multi-step in a single task results in an enormous rabbit trail of lost time that is greater than it would have taken manually. \n\nI have a small boutique WordPress agency making bespoke sites and I have thrown myself at this AI automation wall so many times. Am designer, not dev (I really should learn already). \n\nCurrently, I use Relume AI for wireframes. Divi AI for very very basic page building. Airtable for pipeline and data. \n\n\nI'd love your thoughts or suggestions for my situation if you're inclined. Is AI still too practically dumb?"
+                },
+                {
+                    "author": "Objective_Reality556",
+                    "text": "Global warming is a reason too. With more AI earth needs more energy which will lead to more global warming. Humans can still live without AI .\u00a0"
+                },
+                {
+                    "author": "RetroSteve0",
+                    "text": "Tl;dr: Not worth it for $200/mo. Wait for it to hit the $20/mo Plus tier."
+                },
+                {
+                    "author": "DurianTricky6912",
+                    "text": "My Use Case:  I was able to have it get into a google spreadsheet (yes you have to log in), and insert a column, insert a formula to break down dates into numbered weeks, delete empty rows, and use conditional formatting to alternate the weeks.  This was a decent size set of data and it worked better than anyone in my company, other than me and 1 other person.\n\nThe Bad:  It took a long time, and I had to hold its hand.  It wouldn't differentiate names vs dates.  I simply had to say \"You need to use column C, not B.\" and it corrected.  It also got stuck in a loop while creating the conditional formatting, it created a lot of conditions (all that did nothing), but in the end still produced the desired result.   I did have to say \"Stop everything and reset\" and that seemed to work.",
+                    "replies": [
+                        {
+                            "author": "DurianTricky6912",
+                            "text": "Chat GPT's rewriting of that:\n\n**My Use Case:** I managed to use it with a Google spreadsheet (yes, you need to log in). It was able to insert a column, apply a formula to break down dates into numbered weeks, delete empty rows, and use conditional formatting to alternate the weeks. This was for a fairly large dataset, and it performed better than anyone in my company\u2014aside from me and one other person.\n\n**The Downsides:** It took quite a bit of time, and I had to guide it through the process. For instance, it struggled to differentiate between names and dates. I had to clarify by saying, \u201cUse column C, not B,\u201d which it then corrected. It also got stuck in a loop while creating the conditional formatting, generating multiple unnecessary conditions (that didn\u2019t work), but it ultimately delivered the desired outcome. At one point, I had to say, \u201cStop everything and reset,\u201d which seemed to resolve the issue."
+                        }
+                    ]
+                },
+                {
+                    "author": "dr3aminc0de",
+                    "text": "I used it for a similar task of scraping the web and putting it in a Google sheet. If you explicitly put in the prompt to use Google sheets and that you can provide a login, it will do it.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Did it do a good job?",
+                            "replies": [
+                                {
+                                    "author": "dr3aminc0de",
+                                    "text": "Yes but your point in it being slow is very true.\n\nI had already written code to do this scraping myself. Basically extracting every name of author and replier from a Google group into a sheet. My first prompt it got pretty lost, but when I refined it a bit, it got through 3 pages of threads with no problem before I stopped it.\n\nBut yeah 10-100x slower than the scraping tool I had written."
+                                },
+                                {
+                                    "author": "dr3aminc0de",
+                                    "text": "For your task I would probably split it into 2 or more. First task can just get the name of influencers into a sheet, second stage can look those up on LinkedIn to find emails."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Vaevictisk",
+                    "text": "This is an ad"
+                },
+                {
+                    "author": "djaybe",
+                    "text": "It seems like it's where MultiOn was early last year."
+                },
+                {
+                    "author": "PuddingCupPirate",
+                    "text": "Operator made this post and is commenting isn't it?",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Lmao"
+                        }
+                    ]
+                },
+                {
+                    "author": "kpacumupp",
+                    "text": "Great post!",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Thank you!"
+                        }
+                    ]
+                },
+                {
+                    "author": "Shadownover",
+                    "text": "Just curious. Did you use AI to write this post? For some reason I got the feeling you tried using the operator to write this post including making images using Dalle.\n\nMaybe I need to take my medication.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "You should.\n\nI did not use AI"
+                        }
+                    ]
+                },
+                {
+                    "author": "QBD3v14nt",
+                    "text": "Anyone have explanations on why AI agents hallucinate / makes up information?"
+                },
+                {
+                    "author": "avanti33",
+                    "text": "Operator is like the GPT-3.5 version of agents. Prompt engineering was a thing for a reason back then. Same premise goes for Operator. Your request was way too complicated for such a short prompt. At this point you either need to clearly define each step or break out the tasks into separate requests.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "You might be right. I need to test it out again and try holding its hand"
+                        }
+                    ]
+                },
+                {
+                    "author": "Accomplished_Dig6097",
+                    "text": "Why does this whole post feel like it was written by ChatGPT in the first place?\u2026",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "It wasn\u2019t. Not even a little bit"
+                        }
+                    ]
+                },
+                {
+                    "author": "stonediggity",
+                    "text": "Another increasingly trash overhyped product from OpenAI. What a surprise.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "But... but... but imagine the potential!!!\n\n/s"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "using ChatGPT (or other LLMs) for qualitative research - looking for working prompts",
+            "author": "damondan",
+            "text": "hey everyone :)\n\ni am currently in my masters thesis and i am looking for help\n\nfor my thesis i am conducting a qualitative analysis of different interviews - i have already completely anonymized those and it should not be possible to trace the individuals \n\ni am using the latest work of Kuckartz et al. ([LINK](https://www.qualitativeinhaltsanalyse.de/)) for qualitative analysis in which they also describe the use of AI for the process\n\nso far i have tried NotebookLM and ChatGPT for doing so, but the results are often lacking in the sense that both seem to get caught up in the mode of \"i am analyzing the document and will report back once i am done\" (which simply doesn't work because neither of them can actually report back on their own)\n\nnow i am looking for input of other people - have you manged to use any AI/LLM for this kind of task and could you perhaps share how you have done it?\n\n* i am aware of the ethical implications and will do my best to use proper care\n* this is only as a first or rather additional analysis of my material (using LLMs as \"assistants\" so to speak) - > i will still use MaxQDA and conduct my own analysis\n\n\n\n",
+            "subreddit": "ChatGPTPro",
+            "comments": [
+                {
+                    "author": "Ok_Corner_6271",
+                    "text": "ChatGPT can help with qualitative analysis, but it has some challenges, particularly with context length and depth of analysis. For longer interview transcripts, it often struggles because of token limits, requiring you to split texts into smaller chunks, which can disrupt continuity. Additionally, its outputs are sometimes not comprehensive enough, missing subtle nuances or failing to connect themes across different segments. For a more specialized approach, tools like AILYZE are designed for this purpose. They allow you to upload hundreds of pages of transcripts, generate thematic analyses, and perform detailed cross-segment comparisons without these limitations."
+                }
+            ]
+        },
+        {
+            "title": "Ask gpt the chances of individual to exist, any thoughts?",
+            "author": "Such_Relative_9097",
+            "text": "[External Link]",
+            "subreddit": "ChatGPTPro",
+            "comments": [
+                {
+                    "author": "schwah",
+                    "text": "Next, ask GPT about the lottery fallacy and the anthropic principle...",
+                    "replies": [
+                        {
+                            "author": "Such_Relative_9097",
+                            "text": "LOL thoughts generally about the idea comeon\u2026",
+                            "replies": [
+                                {
+                                    "author": "schwah",
+                                    "text": "Literally every object that exists is, in its highly specific state, infinitesimally improbable. Which makes a post-hoc analysis of the probability of things that *do* exist existing not particularly meaningful. See above."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "baldfellow",
+                    "text": "\"It is known that there are an infinite number of worlds, simply because there is an infinite amount of space for them to be in. However, not every one of them is inhabited. Therefore, there must be a finite number of inhabited worlds. Any finite number divided by infinity is as near to nothing as makes no odds, so the average population of all the planets in the Universe can be said to be zero. From this it follows that the population of the whole Universe is also zero, and that any people you may meet from time to time are merely the products of a deranged imagination.\" --Douglas Adams"
+                },
+                {
+                    "author": "MysteriousPepper8908",
+                    "text": "Most of that number comes at the end for you being you specifically and not just a person born on Earth but you had to be born someone so it doesn't really add to the likelihood. If you remove that it's more like 1 in 10\\^187 which is still insanely unlikely but the number it gave you is so, so much bigger. No idea how accurate any of those assumptions are but the major contributor to that number is questionable.",
+                    "replies": [
+                        {
+                            "author": "Such_Relative_9097",
+                            "text": "Yeah like \u201clife-supporting universe\u201d .. who knows.. we barely knows what\u2019s going on in the observable universe \u2026 but in general to think of this.. when some people take everything for granted ^^",
+                            "replies": [
+                                {
+                                    "author": "coloradical5280",
+                                    "text": "I came here to say \"life supporting universe\" was an interesting metric to choose lol, and then to not have \"life supporting planet / solar system\"...  I think it was kind of a typo"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "m3kw",
+                    "text": "This doesn\u2019t make sense, is that tries? If so it didn\u2019t account for time"
+                },
+                {
+                    "author": "BusterMcButtfuck",
+                    "text": "LOL 10\\^2,685,17.  That's far more than all the atoms in the universe. Plus these parameters are completely unknown. But I suppose it's fun to ask GPT what it thinks."
+                },
+                {
+                    "author": "Worried_Stop_1996",
+                    "text": "What if I told you we\u2019re just travelers\u2014souls rebooted over and over again? Think about it: our consciousness, our essence, gets uploaded into the minds of people alive today. Then, when the time is right, it finds fresh circuits\u2014brand-new wiring in the brains of newborn babies.\n\nCrazy, right? But here\u2019s the kicker: our consciousness has weight. It travels. And if humans can one day upload consciousness into computers, then why couldn\u2019t nature have already perfected the process with babies?\n\nMaybe reincarnation isn\u2019t mystical\u2014it\u2019s just advanced biology. Thoughts?",
+                    "replies": [
+                        {
+                            "author": "Such_Relative_9097",
+                            "text": "Some will say that our \u201cfeeling\u201d of consciousness is also an illusion of our brain simulates for us, like we are coded like machines and not different than them, but we are machine with many flaws and this what makes us humans. Thoughts ?"
+                        }
+                    ]
+                },
+                {
+                    "author": "yoeyz",
+                    "text": "It\u2019s not effectively zero then\u2026stupid ai"
+                }
+            ]
+        },
+        {
+            "title": "Anyone else noticed ChatGPT 4o struggling to access uploaded files in \"Projects\" today?",
+            "author": "Bitsoffreshness",
+            "text": "Starting this evening, ChatGPT 4o has been unable to access and read the content of files uploaded to \"Projects\". This is a new problem for me, and it seems pretty deep too: GPT completely fails to access information in those files, and when I ask it for details or even general summary of the uploaded files' contents, it only delivers hallucinations, occasionally with a few \"actual\" correct information included. For instance one of the files is the outline of a novel I'm working on including names of characters so far, and when I ask ChatGPT 4o to give me a list of the names from that file, it simply hallucinates a number of names, but out of about 6 names that it comes up with, only one is actually from the file (it's unique enough that I know it's not hallucinated). When I push, it says the document doesn't seem to include any names...\n\nI'm feel not just frustrated, but also pretty confused as to what can be going on... Any thoughts? ",
+            "subreddit": "ChatGPTPro",
+            "comments": [
+                {
+                    "author": "BM09",
+                    "text": "This has been going on for days now. Project files only work if you upload through the desktop app.",
+                    "replies": [
+                        {
+                            "author": "Bitsoffreshness",
+                            "text": "Oh, that\u2019s an interesting trick.  I\u2019ll try that. Thanks.",
+                            "replies": [
+                                {
+                                    "author": "BM09",
+                                    "text": "as far as i know, it works through the windows app. if you\u2019re on mac, I have no idea."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Bitsoffreshness",
+                    "text": "At this point the only solution I've found is (unfortunately) to upload the relevant files to each conversation individually -which obviously defeats the whole purpose of the \"Projects\" function, but that's were things are."
+                },
+                {
+                    "author": "Dadtallica",
+                    "text": "It tells me it\u2019s connected to my google drive but if i ask it to access the files it says nope.",
+                    "replies": [
+                        {
+                            "author": "NoHotel8779",
+                            "text": "When you connect it to google drive the only thing that it changes is that when you click the paperclip button in the composer to add files you can click google drive and import directly from there without downloading then uploading it doesn't connect chatgpt itself to your Google drive so you can't \"ask it\" to do stuff with files in it",
+                            "replies": [
+                                {
+                                    "author": "Dadtallica",
+                                    "text": "Thanks for the note. So it did lie to me lol"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Used ChatGPT to build an app that shows you your remaining life & screen time in dots (and download a phone wallpaper of it)",
+            "author": "DueGanache1902",
+            "text": "I don't have a coding background but have been using ChatGPT + Replit to build simple web apps and having a great time with it. \n\nHere's the newest one: [https://lifedots.replit.app/](https://lifedots.replit.app/)\n\nThis took me \\~8 hours (probably would take a normal dev 1-2). Truly amazing what AI can do now. ",
+            "subreddit": "ChatGPTPro",
+            "comments": [
+                {
+                    "author": "veryshuai",
+                    "text": "I love this!"
+                },
+                {
+                    "author": "BobbyBobRoberts",
+                    "text": "Why does it need my email?",
+                    "replies": [
+                        {
+                            "author": "benauralbeats",
+                            "text": "They'll email you when your life is over?",
+                            "replies": [
+                                {
+                                    "author": "themflyingjaffacakes",
+                                    "text": "Thank-you for that laugh today"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "RegularRaptor",
+                            "text": "Lots of application databases just need a place holder to associate you with your account/user and if you ever need to reset your password or get updates it's a way to get a hold of you. Idk what this is exactly but I'm just guessing. Sometimes the email isn't even used for anything and it's just used for a username essentially."
+                        }
+                    ]
+                },
+                {
+                    "author": "Warm_Cheesecake_3966",
+                    "text": "Dont count the days, make the days count:) i had a similar extenstion on my browser since high school, since then almost 3000 days passed on my death clock."
+                },
+                {
+                    "author": "WuTangAndCoffee",
+                    "text": "No thank you \ud83d\ude42\u200d\u2194\ufe0f"
+                },
+                {
+                    "author": "Asleep-District-6294",
+                    "text": "38% at work lol \ud83d\ude2d"
+                }
+            ]
+        }
+    ]
+}

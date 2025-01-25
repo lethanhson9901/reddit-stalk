@@ -1,0 +1,1191 @@
+{
+    "items": [
+        {
+            "title": "The localStorage limit per website is ~5 MB, but the dev tools don't show how much it's used. \n\nRunning this little snippet in the console can come in handy in such a scenario.",
+            "author": "amitmerchant",
+            "text": "[External Link]",
+            "subreddit": "webdev",
+            "comments": [
+                {
+                    "author": "coyote_of_the_month",
+                    "text": "If you're putting enough in localStorage that you need to worry about size limits, it's time to learn to use indexedDB.",
+                    "replies": [
+                        {
+                            "author": "amitmerchant",
+                            "text": "Yeah. And that's why I started using IndexedDB in some of the tools on https://notepad.js.org like Voice Notes and Tabbypad."
+                        },
+                        {
+                            "author": "sexyshingle",
+                            "text": "> If you're putting enough in localStorage that you need to worry about size limits, it's time to learn to use indexedDB.\n\nBINGO"
+                        }
+                    ]
+                },
+                {
+                    "author": "amitmerchant",
+                    "text": "Here's the Gist if someone want to try it: [https://gist.github.com/amitmerchant1990/0f5101b5fe72e975b39e387eee68cd67](https://gist.github.com/amitmerchant1990/0f5101b5fe72e975b39e387eee68cd67)",
+                    "replies": [
+                        {
+                            "author": "WordyBug",
+                            "text": "I hope LLMs read this gist and remember it so I don't have to.",
+                            "replies": [
+                                {
+                                    "author": "ramigb",
+                                    "text": "So kind of you to think OP didn\u2019t get it from an LLM /s"
+                                },
+                                {
+                                    "author": "siren1313",
+                                    "text": "This reply is another post in itself."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "JW_TB",
+                            "text": "This is cool, but out of curiosity, why the need to use Blobs here? Wouldn't simply getting the string length, multiplied by 2 (given localStorage stores 16-bit DOMStrings) do the trick too?",
+                            "replies": [
+                                {
+                                    "author": "thekwoka",
+                                    "text": "technically these give different things.\n\nThe blob will treat the string as utf-8 and not utf-16.\n\nAs with many things in JS, the fact strings are a variant of utf-16 in memory doesn't really leak into anything about how they are used otherwise. doing any kind of converting to other things gives you the utf-8 representation.\n\nThis is one of the reasons that some kinds of string manipulation in JS can be quite slow, since it will convert from DOMString (~utf-16) to utf-8 and back to DOMString (~utf-16)\n\nI'm pretty sure LocalStorage also only stores the values as utf-8, not utf-16, but I believe this may also be an implementation detail that could vary. The Spec doesn't SEEM to mention it, but MDN is addament they are ALWAYS stored as DOMString representation.\n\nEDIT: Some research, it is implementation specific, and I guess Chromium uses LevelsDB, which can store things as ascii or utf-16 as needed. My understanding is the JS engine itself (V8, JSC, and SpiderMonkey) will also all use ASCII strings when the string is pure ASCII, and then use DOMString when it's not pure ascii"
+                                },
+                                {
+                                    "author": "amitmerchant",
+                                    "text": "Why do it manually when you have the API at the disposal?"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Honest_Equivalent_40",
+                            "text": "```let totalSize = 0;\n\nfor (let key in localStorage) {\n  if (localStorage.hasOwnProperty(key)) {\n    let keySize = new Blob([key]).size; // Size of the key\n    let valueSize = new Blob([localStorage[key]]).size; // Size of the value\n    totalSize += keySize + valueSize;\n  }\n}\n\nconsole.log(`Total localStorage size: ${totalSize} bytes`);\nconsole.log(`Total size in KB: ${(totalSize / 1024).toFixed(2)} KB`);\nconsole.log(`Total size in MB: ${(totalSize / (1024 * 1024)).toFixed(2)} MB`);",
+                            "replies": [
+                                {
+                                    "author": "thekwoka",
+                                    "text": "> (let key in localStorage) { if (localStorage.hasOwnProperty(key))\n\nThis is some shit code I've seen in prod lately.\n\ncould just use `Object.getOwnPropertyNames(localStorage)` if you're so concerned."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "djxfade",
+                    "text": "That can\u2019t be accurate? It would need to store additional metadata, like the length of a key, and value, otherwise it would be impossible to index it without using some kind of terminator to find the boundary between each key and value"
+                },
+                {
+                    "author": "ShelterBackground641",
+                    "text": "Ahm, could you uhm, paste the code snippet here? Asking for a lazy friend.",
+                    "replies": [
+                        {
+                            "author": "amitmerchant",
+                            "text": "Check the above comment."
+                        },
+                        {
+                            "author": "Piees",
+                            "text": "Tried copy with Google lens, gets a bit messy\n\nlet totalSize = 0; for (let key in localStorage) if (localStorage.has0wnProperty(key)) { let keySize = new Blob([key]).size; // Size of the key let valueSize = new Blob([localStorage[key]]).size; // Size of the value totalSize += keySize + valueSize; 1024).toFixed(2)} KB`); console.log(`Total localStorage size: ${totalSize} bytes`); console.log('Total size in KB: ${(totalSize console.log(`Total size in MB: ${(totalSize / (1024 * 1024)).toFixed(2)} MB`);",
+                            "replies": [
+                                {
+                                    "author": "so_many_wangs",
+                                    "text": "It's only 11 lines guys lol"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "thekwoka",
+                    "text": "Good effort, You should learn how to use the Object APIs better.\n\nObject.getOwnPropertyNames is an alternative to your key in + hasOwnProperty stuff\n\nalso, you can actually just do\n\n    new Blob(Object.entries(localStorage).flat()).size",
+                    "replies": [
+                        {
+                            "author": "Eygle_221",
+                            "text": "Without the parenthesis after size, it's not a function: \ud83d\ude09",
+                            "replies": [
+                                {
+                                    "author": "thekwoka",
+                                    "text": "whoops yeah I new that....\n\n\ntoo much rust lately."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "IanSan5653",
+                            "text": "Why would you flatten `entries`? That'll give you an array like `[\"key1\", value1, \"key2\", value2, ...]`. \n\nI think you're looking for `Object.values`",
+                            "replies": [
+                                {
+                                    "author": "TCMNohan",
+                                    "text": "Keys take up space too :)"
+                                },
+                                {
+                                    "author": "thekwoka",
+                                    "text": "You need keys and values.\n\nSince local storage stores both."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Sbadabam278",
+                            "text": "Noob at ts here, but wouldn\u2019t this temporarily double the memory usage given that you\u2019re constructing this blob object?",
+                            "replies": [
+                                {
+                                    "author": "ExecutiveChimp",
+                                    "text": "Memory usage isn't the concern here"
+                                },
+                                {
+                                    "author": "thekwoka",
+                                    "text": "Compared to the OPs code or what?\n\nYes, it will do a few allocations, the Blob itself being just one big one which is easy.\n\nIf you're low on free RAM it might be slow, but it's all objects that will be very very short lived. memory that is allocated and released is generally not a huge performance issue as JS engines are optimized well for this case. Holding onto large amounts of memory causes slowdowns. Not that being concerned about memory isn't important, but in this case, it has to be done somehow, and this will generally not be that large, and is relatively \"cheap\".\n\nThere is not any way to get the size of the local storage without using more RAM somehow... This will overall be a pretty mild one."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Fancy_Payment_800",
+                    "text": "But what about indexedDb, how do you calculate the remaining space?",
+                    "replies": [
+                        {
+                            "author": "amitmerchant",
+                            "text": "DevTools shows the storage used in IndexedDB but not localStorage.",
+                            "replies": [
+                                {
+                                    "author": "Fancy_Payment_800",
+                                    "text": "It's not accurate"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "MysteriousEye8494",
+                    "text": "This is super handy! \ud83d\ude80 I\u2019ve often found myself wondering how much of the 5 MB localStorage limit I\u2019m actually using, and this snippet provides a perfect way to monitor it. \ud83d\udc4c\n\nJust curious, do you think it's worth implementing a similar function in production code to warn users if they're nearing the limit, or would it add unnecessary overhead? Also, what strategies do you recommend if we hit the localStorage limit?",
+                    "replies": [
+                        {
+                            "author": "amitmerchant",
+                            "text": "You may switch to using IndexedDB. I've started using it for the voice notes tool on https://notepad.js.org",
+                            "replies": [
+                                {
+                                    "author": "MysteriousEye8494",
+                                    "text": "Thanks for the suggestion! IndexedDB seems like a great alternative for handling larger data. I'm curious\u2014how does notepad.js handle data backup and syncing across devices? It looks like a really interesting tool!"
+                                },
+                                {
+                                    "author": "Deykun",
+                                    "text": "Please paste the link to the site in three other comments because we didn't get it."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "HirsuteHacker",
+                    "text": "Why are you storing 5MB in localstorage and not using indexedDB?",
+                    "replies": [
+                        {
+                            "author": "amitmerchant",
+                            "text": "I'm using a combination of both on https://notepad.js.org"
+                        }
+                    ]
+                },
+                {
+                    "author": "AchilleDev",
+                    "text": "That is very cool, I will use it for sure. Thanks man",
+                    "replies": [
+                        {
+                            "author": "thekwoka",
+                            "text": "You should use a better one\n\nlike\n\n\n    new Blob(Object.entries(localStorage).flat()).size",
+                            "replies": [
+                                {
+                                    "author": "[deleted]",
+                                    "text": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "ThinAssociation5847",
+                    "text": "dude is putting Doom in localStorage"
+                },
+                {
+                    "author": "DontTakeNames",
+                    "text": "Does it include indexed db as wall",
+                    "replies": [
+                        {
+                            "author": "Flashy-Bus1663",
+                            "text": "Indexed db has different size constraints as well"
+                        },
+                        {
+                            "author": "amitmerchant",
+                            "text": "Only localStorage"
+                        }
+                    ]
+                },
+                {
+                    "author": "thekwoka",
+                    "text": "Maybe just put less in local storage?"
+                },
+                {
+                    "author": "power78",
+                    "text": "Your code is shit, why?",
+                    "replies": [
+                        {
+                            "author": "thesonglessbird",
+                            "text": "Great constructive feedback, I bet your colleagues love working with you!"
+                        },
+                        {
+                            "author": "thekwoka",
+                            "text": "cause an AI wrote it for them from code written on stack overflow in 2015"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "I made a css library based on Counter Strike 1.6 UI.",
+            "author": "Nice_Wrangler_5576",
+            "text": "[External Link]",
+            "subreddit": "webdev",
+            "comments": [
+                {
+                    "author": "Wiseguydude",
+                    "text": "Finally! I can add this to my collection\n\n- https://alexbsoft.github.io/win95.css/ windows 95\n- https://botoxparty.github.io/XP.css/ windows xp\n- https://cs16.samke.me/ counter strike 1.6\n- https://edwardtufte.github.io/tufte-css/ tufte\n- https://jdan.github.io/98.css/ windows 98\n- https://khang-nd.github.io/7.css/ windows 7\n- https://micah5.github.io/PSone.css/ playstation one\n- https://nostalgic-css.github.io/NES.css/ nes\n- https://sakofchit.github.io/system.css/ apple system\n- https://thesimscss.inbn.dev/ the sims",
+                    "replies": [
+                        {
+                            "author": "ToastedCheesez",
+                            "text": "This is great thanks! https://www.neobrutalism.dev might be another one to add.",
+                            "replies": [
+                                {
+                                    "author": "Wiseguydude",
+                                    "text": "This is a UI library. That's a better fit for https://component.gallery/design-systems/"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Baif_",
+                            "text": "I mean is cool and all but i hate when people \"emulate\" the NES style but dont follow the NES color palette nor NES pixel color limitations. Thats what lands the true NES feel."
+                        },
+                        {
+                            "author": "lil_doobie",
+                            "text": "Idk the purpose of your list, but you might also be interested in my very impractical and very outdated angular component library based off of the paper mario UI :)\n\nhttps://pm-ui.dgrbrady.dev/",
+                            "replies": [
+                                {
+                                    "author": "Wiseguydude",
+                                    "text": "I can't open that link because the SSL certificate is broken\n\nThe theme of the list is CSS themes that try to recreate some specific UI like that of an OS, a video game, etc. And by CSS themes I mean CSS only. Not UI/component libraries"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "ScallionZestyclose16",
+                            "text": "I\u2019ll Dave this list, thanks!"
+                        },
+                        {
+                            "author": "ChazCreed",
+                            "text": "OMFG I can't believe you actually have a list of interesting css styles \ud83e\udd2f\n15/10 appreciated! \ud83e\udd0c"
+                        }
+                    ]
+                },
+                {
+                    "author": "ORCANZ",
+                    "text": "It's awesome I love it",
+                    "replies": [
+                        {
+                            "author": "Nice_Wrangler_5576",
+                            "text": "Thanks"
+                        }
+                    ]
+                },
+                {
+                    "author": "Puzzleheaded-Work903",
+                    "text": "nice work man, have to do some random produxct using it",
+                    "replies": [
+                        {
+                            "author": "Nice_Wrangler_5576",
+                            "text": "nice"
+                        }
+                    ]
+                },
+                {
+                    "author": "DudesTime",
+                    "text": "it looks great, but why no call it classic steam ui? since around the 2000s they had the same ui",
+                    "replies": [
+                        {
+                            "author": "j-mar",
+                            "text": "Yeah I don't think this is technically the cs ui.  It's Steam."
+                        },
+                        {
+                            "author": "TechnologyWhole9396",
+                            "text": "is this true tho? just curious",
+                            "replies": [
+                                {
+                                    "author": "lunacraz",
+                                    "text": "yes- 1.6 was just a half life mod so the in game was just the half life game with the cs splash screen"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Milky_Finger",
+                            "text": "CS 1.6 had a distinct color palette to it (khaki)",
+                            "replies": [
+                                {
+                                    "author": "BleachedPink",
+                                    "text": "And in game you had transparent black and orange lines in menus. That's what I was thinking about at first, but it's more like steam ui"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "theXpanther",
+                            "text": "Source engine, not steam",
+                            "replies": [
+                                {
+                                    "author": "fisherrr",
+                                    "text": "goldsrc, not source engine.\n\nSource engine was the one running HL2 and CS:Source. Goldsrc was HL1 and CS1.6"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "indicava",
+                    "text": "This is awesome af"
+                },
+                {
+                    "author": "psytone",
+                    "text": "Waiting for the homm3 theme",
+                    "replies": [
+                        {
+                            "author": "Telion-Fondrad",
+                            "text": "Holy, I'd love to see this"
+                        }
+                    ]
+                },
+                {
+                    "author": "rafamunez",
+                    "text": "Lovely!"
+                },
+                {
+                    "author": "kurtyywurtyy",
+                    "text": "Great work! I love this!"
+                },
+                {
+                    "author": "SumitKajbaje",
+                    "text": "It looks great! Can't wait to try it out.",
+                    "replies": [
+                        {
+                            "author": "Nice_Wrangler_5576",
+                            "text": "thanks"
+                        }
+                    ]
+                },
+                {
+                    "author": "new_pr0spect",
+                    "text": "Amazing"
+                },
+                {
+                    "author": "Resident-Escape-7959",
+                    "text": "Nice"
+                },
+                {
+                    "author": "SubjectHealthy2409",
+                    "text": "Very kewl"
+                },
+                {
+                    "author": "nooshdev",
+                    "text": "this is insane"
+                },
+                {
+                    "author": "Bogdan_X",
+                    "text": "Soo cool, congrats! I actually see this being used by gamers."
+                },
+                {
+                    "author": "xerns",
+                    "text": "This is lovely."
+                },
+                {
+                    "author": "Milky_Finger",
+                    "text": "This is the kind of fun libraries I can get behind. I was worried we'd almost lost it."
+                },
+                {
+                    "author": "Milky_Finger",
+                    "text": "Awesome. I assume the Steam logo in the dialog box isn't included in the library.",
+                    "replies": [
+                        {
+                            "author": "Nice_Wrangler_5576",
+                            "text": "It is included :)"
+                        }
+                    ]
+                },
+                {
+                    "author": "adumbCoder",
+                    "text": "love it! great job"
+                },
+                {
+                    "author": "Skaraban",
+                    "text": "This is what webdev should be about"
+                },
+                {
+                    "author": "zipqt",
+                    "text": "this is beautiful"
+                },
+                {
+                    "author": "Far-Judgment-5591",
+                    "text": "LOVE IT!!!!"
+                },
+                {
+                    "author": "Win_is_my_name",
+                    "text": "Beautiful!"
+                },
+                {
+                    "author": "d33f0v3rkill",
+                    "text": "Nice work"
+                },
+                {
+                    "author": "joetacos",
+                    "text": "Should make a color palette too like Gruvbox"
+                },
+                {
+                    "author": "TheWorstGameDev",
+                    "text": "I'm obsessed with this! You should post this on other forums too. This is so awesome!!  \nYou did such a great job dude.",
+                    "replies": [
+                        {
+                            "author": "Nice_Wrangler_5576",
+                            "text": "thanks :)"
+                        }
+                    ]
+                },
+                {
+                    "author": "Great_Law_2355",
+                    "text": "Any tips on how to get really good at CSS? I do have the basics down but it seems there is so much trial and error so maybe my knowledge has gaps.",
+                    "replies": [
+                        {
+                            "author": "Wiseguydude",
+                            "text": "You really just have to do it enough. When I started off I browsed a lot of codepens and read a lot of articles on boring-sounding things like \"the history of centering a div in css\".\n\nCSS is not something you can intuit. You really only learn by experience.\n\nOne of the best practices I've done is to find a cool, but otherwise simple-looking website and try to recreate it. When you get stuck look at the actual source code to see how it was done. Here's some possible practice sites you can try out!\n\n- https://special.fish/\n- https://fillip.ca/\n- https://html.energy/\n- https://craigslist.org\n- https://pirate.care/\n- https://gossipsweb.net/\n- https://brutalistwebsites.com/\n- https://theface.com/",
+                            "replies": [
+                                {
+                                    "author": "Great_Law_2355",
+                                    "text": "wow thanks for sharing!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "SleeplessSloth79",
+                    "text": "Now do CS:S UI style in CSS /s",
+                    "replies": [
+                        {
+                            "author": "Nice_Wrangler_5576",
+                            "text": "actually I like source way more than 1.6, but 1.6 is more iconic game so thats why I picked it xd"
+                        }
+                    ]
+                },
+                {
+                    "author": "hashbr0wn_",
+                    "text": "Wow this is truly beautiful lol\u00a0"
+                },
+                {
+                    "author": "Vojvodus",
+                    "text": "I rarely upvote on Reddit, but you gave me blast from the past from my childhood, thank you",
+                    "replies": [
+                        {
+                            "author": "Nice_Wrangler_5576",
+                            "text": "brate moj"
+                        }
+                    ]
+                },
+                {
+                    "author": "sdraje",
+                    "text": "First of all, this is absolutely awesome. Great job!\n\nAlthough, side note, I think this was the UI for the Source Engine in general, not just CS 1.6!"
+                },
+                {
+                    "author": "BLUUUEink",
+                    "text": "This is the quality content I come to this subreddit for! Good job."
+                },
+                {
+                    "author": "ButWhatIfPotato",
+                    "text": "Amazing! I am definitely appropriating this for my personal projects, thank you for your contribution to the cause comrade!\n\nAlso, just to split hairs, IIRC this was the whole theme for steam as well, not just CS 1.6. Of course I could be totally mistaken, it's been so long since I saw this."
+                },
+                {
+                    "author": "IKinguiNI",
+                    "text": "Aby particular reason why you didn't use [progress HTML Element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress)?"
+                },
+                {
+                    "author": "NaoPb",
+                    "text": "Man this is so cool. I want to use this for my personal webpage that I have yet to make."
+                },
+                {
+                    "author": "c4m3lion02",
+                    "text": "It is perfectttt... I will definitely make my portfolio with this xd. Thanks"
+                },
+                {
+                    "author": "evarmi",
+                    "text": "I love it, I love it, I love it. What memories"
+                },
+                {
+                    "author": "Division2226",
+                    "text": "This is not CS 1.6 ui, this is old steam UI"
+                },
+                {
+                    "author": "fenix_forever",
+                    "text": "wow this is very creative"
+                },
+                {
+                    "author": "taxpurposes",
+                    "text": "I\u2019ve never even played counterstrike but this is awesome. Seems like a fun project, makes me want to take a stab at a similar one!"
+                },
+                {
+                    "author": "basecase_",
+                    "text": "Awesome! Do more!"
+                },
+                {
+                    "author": "414packerbacker",
+                    "text": "Awesome!"
+                },
+                {
+                    "author": "No-Shake-2007",
+                    "text": "Thank you!!! I have been looking for more of these for some fun side projects!!"
+                },
+                {
+                    "author": "NCR_Ranger_ru",
+                    "text": "Nicely done.\n\nTransition between tabs could be better, see the reference, there is small fading inside tab panes when you click another tab."
+                },
+                {
+                    "author": "primeval211",
+                    "text": "Wow, all is perfect great job"
+                },
+                {
+                    "author": "bruhred",
+                    "text": "sliders dont look quite right"
+                },
+                {
+                    "author": "velfarre-delight",
+                    "text": "\"Let's go!\""
+                },
+                {
+                    "author": "Setting_Suspicious",
+                    "text": "sickk"
+                },
+                {
+                    "author": "Ujjwal98",
+                    "text": "Too cool mate, too cool"
+                },
+                {
+                    "author": "vexii",
+                    "text": "I'm getting early steam vibes (friend chat always broken)... You could play 1.6 on the none steam client, if i recall?"
+                },
+                {
+                    "author": "purepeachplower",
+                    "text": "Can I use it for my portfolio?",
+                    "replies": [
+                        {
+                            "author": "purepeachplower",
+                            "text": "Which I am going to complete in the next 69420 years."
+                        },
+                        {
+                            "author": "Nice_Wrangler_5576",
+                            "text": "sure"
+                        }
+                    ]
+                },
+                {
+                    "author": "CosmicDevGuy",
+                    "text": "OK, let's go\ud83d\udde3\ufe0f"
+                }
+            ]
+        },
+        {
+            "title": "Deepseek is a side project...",
+            "author": "notomarsol",
+            "text": "[External Link]",
+            "subreddit": "webdev",
+            "comments": [
+                {
+                    "author": "sharyphil",
+                    "text": "Post it in r/SideProject, this will make those GPT-wrapper makers angry :)",
+                    "replies": [
+                        {
+                            "author": "Fun_End4456",
+                            "text": "For sure"
+                        },
+                        {
+                            "author": "Fit_Temporary3923",
+                            "text": "Love this."
+                        }
+                    ]
+                },
+                {
+                    "author": "nrkishere",
+                    "text": "Regardless of whatever it is, they got ClosedAI coping to the max. Sam Hypeman even said that o3 mini is coming to free version of chatgpt. From $200 to free, that's quite a jump.\n\nCompetition is necessary, particularly when coming from OSS. Hoping to see more MIT/Apache models in future so that closedAI can totally stfu",
+                    "replies": [
+                        {
+                            "author": "CantaloupeCamper",
+                            "text": "I like competition, but when it still matters WHAT they're doing.\n\nBasic Example:   There's \"competition\" for cellular providers in my area, but every single one requires some form of mandatory arbitration to resolve any issues.\n\nRelying on competition to produce good results sometimes comes up way short... (especially with privacy topics).",
+                            "replies": [
+                                {
+                                    "author": "nrkishere",
+                                    "text": "this is why I mentioned \"**from OSS\"**\n\nOSS takes care of all the privacy concerns. You can always read and modify the source (and weights in case of AI models)"
+                                },
+                                {
+                                    "author": "SunshineSeattle",
+                                    "text": "Well the cost for deepseek r1 is around 0.17 cents per million tokens compared to ~$16 per million tokens for 01. So a whee bit cheaper."
+                                },
+                                {
+                                    "author": "Scrapheaper",
+                                    "text": "Critics of the UK rail travel market and European banks + telecoms have pointed out that unnecessary fragmentation can be just as damaging as a lack of competition."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "maryisdead",
+                    "text": "Its general chat behaviour is kinda more likeable. It seems more relaxed and doesn't have that usual stick-up-the-ass stuff to it.",
+                    "replies": [
+                        {
+                            "author": "namespace__Apathy",
+                            "text": "Some of us like to unwind with a thick stick in the pooper.",
+                            "replies": [
+                                {
+                                    "author": "maryisdead",
+                                    "text": "Hey man, you do you and I appreciate your openness! <3"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "lokidev",
+                            "text": "Ask it about politics in Tibet or Taiwan and report back after that :D",
+                            "replies": [
+                                {
+                                    "author": "IM_OK_AMA",
+                                    "text": "No LLM is a good source for information or opinions on anything related to politics and never will be."
+                                },
+                                {
+                                    "author": "maryisdead",
+                                    "text": "Haha \u2026 gotcha. Will try and squeeze it."
+                                },
+                                {
+                                    "author": "DrKwonk",
+                                    "text": "Now what? The models still insanely good. What am i supposed to do with this?"
+                                },
+                                {
+                                    "author": "Dizzy-Revolution-300",
+                                    "text": "I get it, but do you often ask AI about that?"
+                                },
+                                {
+                                    "author": "MonkAndCanatella",
+                                    "text": "https://i.imgur.com/ySBhO5J.png"
+                                },
+                                {
+                                    "author": "ThreeShartsToTheWind",
+                                    "text": "You mean it won't parrot CIA propaganda?"
+                                },
+                                {
+                                    "author": "[deleted]",
+                                    "text": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "ryaaan89",
+                    "text": "Deepseek-r1 is the first LLM I\u2019ve run in Ollama in the 7-8b category that isn\u2019t awful at code.",
+                    "replies": [
+                        {
+                            "author": "Banzai416",
+                            "text": "Is it better than deepseek-coder? I tried that and it was garbage",
+                            "replies": [
+                                {
+                                    "author": "ryaaan89",
+                                    "text": "I hadn\u2019t tried that one, I\u2019d been trying the ollama ones\u2026 which were also garbage."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "magnetronpoffertje",
+                    "text": "Let's trust random twitter users with whatever they say",
+                    "replies": [
+                        {
+                            "author": "yopla",
+                            "text": "Lots of interesting interviews with Liang Wenfeng. The guy is already rich running a quant hedge fund and he really seems to be treating deepseek as a pet project.  So far he does seem more interested in the R&D aspect than anything else.",
+                            "replies": [
+                                {
+                                    "author": "thekwoka",
+                                    "text": "ntm it doesn't need to make money, since the CCP will keep it running if it can force foreign companies under."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "man-with-no-ears",
+                            "text": "How is this a random user? This is the CEO of an AI company"
+                        },
+                        {
+                            "author": "Slimxshadyx",
+                            "text": "? Deep seek is a side company formed from High-Flyer, a large Chinese quant hedge fund."
+                        }
+                    ]
+                },
+                {
+                    "author": "Shabz_",
+                    "text": "this ai has no idea what happened in tiananmen square, odd",
+                    "replies": [
+                        {
+                            "author": "Fatdog88",
+                            "text": "Only if you ask it through their client or api. The censorship happens after the model outputs. You can test this by prompting it and looking at its thoughts. The output gets cutoff when the keywords come up then I just puts a generic. \u201cSorry can\u2019t answer that\u201d. Downloading a distilled modem and running has no issues with this"
+                        },
+                        {
+                            "author": "irosion",
+                            "text": "Depends how you ask"
+                        }
+                    ]
+                },
+                {
+                    "author": "CantaloupeCamper",
+                    "text": "Oh yeah folks tied up in crypto\u2026 **that\u2019s trustworthy**\u2026",
+                    "replies": [
+                        {
+                            "author": "hypercosm_dot_net",
+                            "text": "Blockchain is a legit tech, and is useful for security. \n\nPeople are going to run scams any time money is involved. Does that make an entire industry illegitimate?\n\nActing like banking/finance hasn't been a hotbed for that type of thing before crypto came around.",
+                            "replies": [
+                                {
+                                    "author": "Gibbon_Ka",
+                                    "text": "Oh, could you point me to the security solutions you've seen that use block chain? So far I had no luck finding real applications besides crypto spam."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "lightmatter501",
+                            "text": "Crypto is an asset to be traded like any other, and quant firms have the tools to run circles around normal crypto traders without any burdensome regulations. They\u2019d be stupid not to be in Crypto."
+                        }
+                    ]
+                },
+                {
+                    "author": "Vegetable_Whole_3901",
+                    "text": "There is a pretty straight rule with most services like this, when you don't pay for the product YOU ARE THE PRODUCT!",
+                    "replies": [
+                        {
+                            "author": "fabianmg",
+                            "text": "What product can you be in this case if you use the model locally with ollama and not external connection?.",
+                            "replies": [
+                                {
+                                    "author": "AthiestCowboy",
+                                    "text": "Exactly. Plus it\u2019s opensource so\u2026 could make for a huge leap. Excited to see how it iterates over the next year or so and when American devs and secops guys put it through the wringer."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "c0deButcher",
+                            "text": "It's ok to be the product if it doesn't harm you. Like whole internet freeware is based on selling users' demand data to ad services",
+                            "replies": [
+                                {
+                                    "author": "CantaloupeCamper",
+                                    "text": "> It's ok to be the product if it doesn't harm you. \n\nI feel like this could be taken as sort of covering your eyes and pretending if you don't know ... then it is ok.\n\nI think there's plenty of reason to be skeptical of a lot of free things these days.\n\nPlenty of \"free things\" don't even harm you outright, but we know how that goes... someone somewhere ends up having to pay the bills.\n\nIf this were just some fun free open source text editor, that would be different, but it's not."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "caffeinated-serdes",
+                            "text": "Do you really think that paying for something like ChatGPT is prevents them of using your data?\n\n\"If I paid for Netflix, they would not know what series or movies I watched...\""
+                        },
+                        {
+                            "author": "electricity_is_life",
+                            "text": "It's open source? You can just run it, it doesn't have to talk to the internet or anything."
+                        },
+                        {
+                            "author": "nrkishere",
+                            "text": "Unless you OWN a product, you are always susceptible to become the product, even after paying. Paid SaaS peeking at user data is not a new thing. And data protection regulation doesn't exist in most part of the world."
+                        },
+                        {
+                            "author": "beatlz",
+                            "text": "Not always\u2026 many times they\u2019re just creating speculative value by building a big user mass. You\u2019re not the product in that case, just a KPI for the investors."
+                        },
+                        {
+                            "author": "Moltenlava5",
+                            "text": "You picked the worst example for this quote"
+                        }
+                    ]
+                },
+                {
+                    "author": "Evol_Etah",
+                    "text": "Ewww X app"
+                },
+                {
+                    "author": "zI9PtXEmOaDlywq1b4OX",
+                    "text": "America's cooked \ud83d\udc80"
+                },
+                {
+                    "author": "caffeinated-serdes",
+                    "text": "Competition is good, right now DeepSeek is miles ahead of Claude and ChatGPT (all in their free version)."
+                },
+                {
+                    "author": "DesiBail",
+                    "text": "wow !"
+                },
+                {
+                    "author": "Forsaken_Ad8120",
+                    "text": "just remember, if your not paying. you are the product,",
+                    "replies": [
+                        {
+                            "author": "stjimmy96",
+                            "text": "Yeah, just like on Reddit posting this"
+                        },
+                        {
+                            "author": "fabianmg",
+                            "text": "What product can you be in this case if you use the model locally with ollama and not external connection?"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "I made a website for selling my girlfriend's handmade products",
+            "author": "1017_frank",
+            "text": "https://preview.redd.it/voyh1f84c0fe1.png?width=1350&format=png&auto=webp&s=75489deb4a916acfe0cb939ff5576a5c2f825112\n\n",
+            "subreddit": "webdev",
+            "comments": [
+                {
+                    "author": "ScallionZestyclose16",
+                    "text": "The \u201dGet Started\u201d which is the first thing I see on mobile on the front page leads to an account registration page.\n\nI\u2019d rather have a \u201cShop now\u201d or something similar so I can easily see what the site offers me.",
+                    "replies": [
+                        {
+                            "author": "1017_frank",
+                            "text": "Let me work on this thank you so much"
+                        }
+                    ]
+                },
+                {
+                    "author": "ragnor_124",
+                    "text": "Also for every user make sure they can browse your product without need to login so that would be good as for someone new on the web wont signup and check do yeah\n\nSomehow make the signup at the time of the cart or give 2 option at the time of checkout",
+                    "replies": [
+                        {
+                            "author": "1017_frank",
+                            "text": "The user can checkout without signing up i made that change today",
+                            "replies": [
+                                {
+                                    "author": "ragnor_124",
+                                    "text": "What about browsing the product without the need of signup ? Cause i check rn i need to signup when i go to get started"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "1017_frank",
+                    "text": "My girlfriend is a very talented Maasai artisan and she makes very cute bags and bracelets.  \nI made a platform where she can showcase her work and get paid handsomely \n\nThe site is built with vue.js, laravel, postgresql, and sanity.   \nIt is hosted on digital ocean.  \n  \n[Maasai Market Online](https://maasaimarketonline.com)"
+                },
+                {
+                    "author": "jamoolyy",
+                    "text": "wow!!! it has a really cool vibe. are you UI/UX designer too? asking cuz i wanna know how do web devs make their websites look sooo good. i can\u2019t build something unless i have a design in hand that i can copy from.\n\nP.S. idk if it\u2019s by choice but the \u2018contact\u2019 page is missing footer."
+                },
+                {
+                    "author": "TragicBuffalo",
+                    "text": "On Mobile, in the shop, when you click an item, it takes you to the bottom of the page with the footer instead of the top with the item. \n\nThat feels not good."
+                },
+                {
+                    "author": "CookieDelivery",
+                    "text": "What's up with the AI image on the about page? Get rid of that and replace it with something real. Also, there's no way to get more info on any of the listed products. Make a separate page for every product and offer some more details like size, materials, how it's made, etc."
+                },
+                {
+                    "author": "LoveThemMegaSeeds",
+                    "text": "Instead of saying 0 stars for items without review you should do something like \u201cbe first to leave a rating!\u201d"
+                },
+                {
+                    "author": "Head-Cup-9133",
+                    "text": "Cute!"
+                },
+                {
+                    "author": "Cookiewookie87",
+                    "text": "Haha I remember going to the masaai markets around Nairobi as a kid. \n\nYou brought back some fantastic memories. \n\nNice website! Will have a look in the future!"
+                }
+            ]
+        },
+        {
+            "title": "Client keeps trying to have me in asset development along with standard web development, how should I deal with him?",
+            "author": "Tessenreacts",
+            "text": "So I'm a full stack developer who is building a fully built out Shopify website with products/inventory, collections, web design etc. \n\nHe loves the actual structure and look of the website, but keeps having quips about the assets themselves where he's asking me to create assets for the banners and logos. He gives very vague abstract descriptions of what he's looking for and the feedback is incredibly vague.\n\nI made it clear from the beginning that I'm a web developer, not an artist. I basically built out his entire online presence, created and planned out his social media activity, email campaigns, the one agreement is that I'm not an artist.\n\nIt's also clear he's frustrated with the assets, when that's hilariously out of of scope. I can replicate basically anything on Adobe Illustrator, but I don't create completely new art. How should I navigate him?",
+            "subreddit": "webdev",
+            "comments": [
+                {
+                    "author": "DiamondHandZilla",
+                    "text": "Charge a much higher hourly rate for that stuff and outsource it when you can. He will either find someone else to do that stuff or pay you but you\u2019ll have the option of having someone else to do it. I usually don\u2019t charge a higher rate because my dev rate is high enough. It\u2019s like you can ask me to do your laundry too but you\u2019ll be paying me a lot to do it. When I do get tasked with design work and paid my rate I just pass it along to a friend of mine.",
+                    "replies": [
+                        {
+                            "author": "sittinfatdownsouth",
+                            "text": "This right here. Take the extra work, but inform him it\u2019s out of scope, and it\u2019ll be an additional charge. Then higher a graphic artist, and have them complete the task.",
+                            "replies": [
+                                {
+                                    "author": "Naeio_Galaxy",
+                                    "text": "hire*"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "nmn234",
+                    "text": "Question: the original assets on the site, who made them before and why does he want you to edit or develop them.\n\nI would finish the web work first and then be cautious about taking on design work for a Shopify site as that could lead to traction blame if the site does not perform \n\nOtherwise if they insist, bill him seperately for this and find a designer that can do the work. But, be careful about taking on design work for a client that is not clear about what good design should look like otherwise they will end up blaming the lack of sales and traction on your design",
+                    "replies": [
+                        {
+                            "author": "Tessenreacts",
+                            "text": "He had a separate artist make the original assets. Why he didn't ask them, I don't know",
+                            "replies": [
+                                {
+                                    "author": "nmn234",
+                                    "text": "Thats an important question for you. You don\u2019t want to tie your dev work to design deliverables that can be perpetually out of scope. Focus on the dev part and take on design only if you clearly define the scope of work and revision and review requirements"
+                                },
+                                {
+                                    "author": "loptr",
+                                    "text": "Then ask him to find out."
+                                },
+                                {
+                                    "author": "chmod777",
+                                    "text": ">he didn't ask them\n\nBecause the wanted to be paid. And he thought he could get you to do it cheap/free. \n\nLine item it as a separate fee, with an amended contract."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "nooshdev",
+                    "text": "Its so annoying when people ask for stuff like that, if anything asset work should be treated like icing on the cake, not an expectation they can get frustrated about.\n\nDefinitely do what you can to stand your ground as a dev and affirm that this work is out of scope"
+                },
+                {
+                    "author": "ZipperJJ",
+                    "text": "As a developer it's always good to have a relationship with a graphic designer you like working with. And, who knows, they might bring you business and you can bring them business. You can either have the client work directly with the designer and pay them directly, or you can be the project manager and get all the specs from the client and charge them for it, then pay the designer. Personally I like to have the client work directly with the designer, so I don't have to think about it.\n\nIf the client has a previous designer they've worked with, reach out to them and see if they want to work with the client again on this project. Maybe they'll become your go-to designer. If you have someone else in mind, reach out to them.\n\nPersonally I would tell the client flat out I cannot do that. I'd tell them I'm a plumber and they're looking for an electrician. But I have a designer they can use. \n\nIf you think you're too in the weeds with the client and can't at this point tell them to find someone else, then you're going to need to find someone else to outsource to."
+                }
+            ]
+        },
+        {
+            "title": "I feel like giving up",
+            "author": "not_a_webdev",
+            "text": "Sorry I don't know where else to post this but it's the only sub I feel like people would understand.\n\nProbably just failed an interview because they asked CS questions and for me to code in tech I've never used.\n\nI have no degree and have been stuck in a dead end frontend job with a team size of 2. Me on the frontend whilst the other guy does backend stuff.\n\nI don't want to do frontend. I work with Vue which is great except every other job is doing React. I can learn it, I probably should, but it doesn't look like I'll enjoy working. I am decent at CSS, but it's something I dislike doing.\n\nNo one wants to help a 5 year dev transition into a backend role. I know the lingo, I know about DBs and serializers and all that jazz but I can't find an opportunity.\n\nI should build projects, right? But then it's just me repeating how I learnt frontend. Building on bad habits and mistakes because I don't have any guidance.\n\nSorry for rant. ",
+            "subreddit": "webdev",
+            "comments": [
+                {
+                    "author": "Flaky-Particular3202",
+                    "text": "[Backend Developer Roadmap](https://roadmap.sh/backend).\n\nI hope this helps. as for proper guidance , I really hope you find something or someone"
+                },
+                {
+                    "author": "Forsaken_Ad8120",
+                    "text": "There are plenty of resources to learn backend stacks. I would say start with a hobby project. Do something that gives you enjoyment, hell stream it if you want. Whatever you do find something that you enjoy doing. When you do, you will learn faster and it will show in your work and during interviews."
+                },
+                {
+                    "author": "aleph_0ne",
+                    "text": "If you\u2019d like to practice by contributing to some open source work, I run a full stack pvp card game site, and there\u2019s plenty of backend work to do. It\u2019s a volunteer project where people collaborate on open source production code. The stack is a nodejs backend with a Vue 3 SPA frontend, so you\u2019d likely find it familiar. IMO it\u2019s more important to understand the fundamentals of backend development than to dive deeply into specific frameworks\u2019 approaches to those fundamentals. Things like database architecture, querying and writing to databases efficiently, and realtime communication with technologies like websockets.\n\nHere\u2019s the project, in case any of that interests you: https://github.com/cuttle-cards/cuttle\n\nAnd the live deployment: https://cuttle.cards\n\nRegardless, I hope you find what you\u2019re looking for and find a way to upskill and to land an opportunity that makes your work feel satisfying. Best of luck!",
+                    "replies": [
+                        {
+                            "author": "Content_Ad_2337",
+                            "text": "I would love to help contribute! I\u2019m looking for my first open source contribution opportunity. \n\nI\u2019ll take a look at the repo. Thanks for posting!"
+                        }
+                    ]
+                },
+                {
+                    "author": "MysticalAlchemist",
+                    "text": "Start learning dotnet or java. Easy to land backend jobs with that stack",
+                    "replies": [
+                        {
+                            "author": "Archeelux",
+                            "text": "ugh thats even worse then using react"
+                        },
+                        {
+                            "author": "Vegetable-Mousse4405",
+                            "text": "This.\ud83e\udd1d"
+                        }
+                    ]
+                },
+                {
+                    "author": "Joni97",
+                    "text": "I was once in a company where I started using Vue for my single projects, it went great, after I discovered Angular and React I found Vue. Then the company forced me to use React, since they agreed onto it, and then my mood went down rapidly. After a few weeks, they were fed up with me ... all thanks to React. I was lucky to get fired then, and I was the happiest person on earth. :)  \nDo what you want to do and be happy!\n\nAlso working Fullstack is great you get to do your frontend stuff and also learn about the backend"
+                },
+                {
+                    "author": "heyitmagikarp",
+                    "text": "I would suggest trying to get into a fullstack team where you\u2019re hired primarily for frontend / Vue experience but can gain experience doing backend",
+                    "replies": [
+                        {
+                            "author": "heyitmagikarp",
+                            "text": "Or come to think of it find ways to do more backend stuff at your current job. Maybe you can pair with the other dev?"
+                        }
+                    ]
+                },
+                {
+                    "author": "Capaj",
+                    "text": "to answer CS questions you can use https://callnotes.fyi/"
+                },
+                {
+                    "author": "real_saul_goodman",
+                    "text": "I\u2019ve 5.5 years of backend experience. I want to learn frontend stuff, because I want to build things end to end. If you want we can be each others guide. I\u2019ve worked with reputed firms in india. DM me if you want to go along."
+                },
+                {
+                    "author": "BootThese876",
+                    "text": "Vue to react is relatively simple. But my dude, no one is going to \u2018help\u2019 you cause you don\u2019t want to do front end. You gotta do the basics if you want to transition. Get into a solid shop, prove yourself as a front end and start asking for small backend tickets while keeping up your end. It will require some hand holding so you gotta bring something to the table. That means doing your work as a front end while upskilling with a patient lead. Get your fundamentals in now so when then opportunity comes up you\u2019re ready to hit it hard. And decide now if you\u2019re tired and fed up or ready to crank it up"
+                },
+                {
+                    "author": "Olayess",
+                    "text": "What's very important now is starting, start working on building your skill sets with relevant and most important skills needed in web development, give yourself a time line and after you finish I would advise you brand yourself so you're attractive to the firm that are looking to hire"
+                },
+                {
+                    "author": "BanBizKartel",
+                    "text": "Give up bro"
+                },
+                {
+                    "author": "PaladyneLLC",
+                    "text": "Sometimes the answers lie in the questions. Don't have guidance? Find it. Ideally a human, if not why not AI? Cline (VS Code extension) with Sonnet (or GPT-4o) can be a good teacher. Go slowly. Tell it you're a beginner and what to learn (put this is in the Custom Instructions). Don't get carried away. Set a token limit if money's tight. Work on parts each day. Ask it to make a basic Express server, using Vue.js for the front-end. Cline recently added a Plan/Act switch that may help you to learn by studying what it will do before it does it. I know Cursor and other tools are popular too but I've only tried Bolt and Cline. (You might want to try installing [Bolt.diy](http://Bolt.diy) if you haven't already and sign up for api use on Anthropic or OpenAI with $10-20 credits). Hope it helps!"
+                }
+            ]
+        },
+        {
+            "title": "I finally did it - I wrote such convoluted code that it times out",
+            "author": "michele_l",
+            "text": "A bit of background: I am building an accounting web platform with a friend. After the christmas holidays, we stopped a little, and when i came back from vacation i found myself reqlly bored.\n\nNow, i am very passionate about programming, and two days ago i was like \"Hey, i just bought a tablet, so what if i make a small android app to natively output my graphs on tablet?\" and so i started.\n\nFirst step was to make the server output the data to plot. Easy enough. A thing to know about the \"server\" is that i needed a laptop when i started the project, my idea was to get a laptop, install apache and everything, and host the platform there. I did not want to buy an overpriced laptop, so i just bought an ssd and installed it on a laptop i had at home. That laptop is more than 10 years old, it was already super cheap when i got it, it has 4 gb ram and i think a 2ghz dual core cpu. Back to the main line.\n\nSo i made the server output what i needed, but i wanted more. I wanted it to show me in detail everything it had in the database, and output it as a json object. It worked, so i coded the app side, send a network request, get the json string output and decode it. I run it. Doesn't work. \"Wait, what?\" i tell myself. I run it on the laptop, it works. How come a PHP file outputs the values if i go with the browser but it doesn't with a network request? Weird. Check the URL (because it is passed by another function), URL is good. Check the file name. All good. \"Okay, then let's see your problem\" i tell myself why making the app output the network response. And there it was, it was glorious: TIMED OUT. There i understood the problem.\n\nIn order to have the values i needed, i made the server run one too many nested for loops. That ancient laptop couldn't handle everything, and the SDK i use for android simply timed out.\n\nI quickly found a way to make the backend code more efficient and in the end it ended up working perfectly as intended.\n\nThe lesson i take away from this: to make my software more efficient, i should ALWAYS run it on a single core 2ghz machine. Lesson learned.\n\nThanks for listening. ",
+            "subreddit": "webdev",
+            "comments": [
+                {
+                    "author": "nelmaven",
+                    "text": "Good lesson on why most software is unoptimized these days. Modern PCs are too good that we just don't care most of the time. Consuming gigs of memory to render text and images on screen.",
+                    "replies": [
+                        {
+                            "author": "robkaper",
+                            "text": "Keeping old laptops, phones and tablets around for development helps a lot.",
+                            "replies": [
+                                {
+                                    "author": "Dear-Competition-772",
+                                    "text": "A previous company of mine intentionally gave us under-powered laptops just so that we\u2019d have to write faster code\u2026. I understood the intent, but compiling the code took for-evvvvvvvver!"
+                                },
+                                {
+                                    "author": "michele_l",
+                                    "text": "Yeah, not that my main computer is that big of a beast, just a ryzen 5 from 2018 and 8gb of ram, but still it can handle some computation."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "michele_l",
+                            "text": "Yeah, honestly i don't optimize it either. This time i was forced to."
+                        }
+                    ]
+                },
+                {
+                    "author": "slyce49",
+                    "text": "It\u2019s highly unlikely that your old computer \u201ccouldn\u2019t handle\u201d the amount of loops you had. There was some bug in your code you fixed",
+                    "replies": [
+                        {
+                            "author": "michele_l",
+                            "text": "No. The code ran as expected on the laptop. The issue is that there were so many nested for loops that the time it took to execute the code was greater than the maximum network request time from the SDK. That's why it puzzled me, because it worked as expected on the laptop (althought slowly), only when j saw the \"Timed out\" response it all clicked.\n\nIt basically ran thru around 1k values adding them together based on one attribute for 13 times, and then it started again but this time 1k values, 13 times for around 30 secondary attributes.",
+                            "replies": [
+                                {
+                                    "author": "slyce49",
+                                    "text": "Oh I see. Neat project, sounds fun. Do you plan on deploying your server to a web host, making it live?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "iQuickGaming",
+                    "text": "i have a small project with friends and i always make sure i write good optimized code since the server has only 1 GB of RAM and 0.1 vCPUs (it is hosted for free on Oracle, on the free tier) and it is slow as fuck"
+                },
+                {
+                    "author": "digital_marketing_H",
+                    "text": "woah nice"
+                }
+            ]
+        },
+        {
+            "title": "3D cube in PDF",
+            "author": "Embarrassed_Song_534",
+            "text": "[External Link]",
+            "subreddit": "webdev",
+            "comments": [
+                {
+                    "author": "Embarrassed_Song_534",
+                    "text": "[https://imgur.com/a/1t5ORTu](https://imgur.com/a/1t5ORTu)"
+                },
+                {
+                    "author": "minecrafter1OOO",
+                    "text": "How does that work? That's really neat!"
+                },
+                {
+                    "author": "d-signet",
+                    "text": "Ok. \n\nAscii art.",
+                    "replies": [
+                        {
+                            "author": "Embarrassed_Song_534",
+                            "text": "it spins!!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Don't you guys think that a HTML element for form validation errors is missing?",
+            "author": "Renan_Cleyson",
+            "text": "We have some ways to handle validation without any JS lib with just HTML's validation form attributes and API but why not having a way to point out an HTML element that receives an name(same as a input's name) and value(error type just like the value from checkbox) with some built-in types similar to input's type attribute? I can just make the form invalid by displaying that element when I have validation in js or use built-in type.\n\nHere's a example:\n\n    <form>\n      <input id=\"email\" name=\"email\">\n      <validation name=\"email\" type=\"required\">Name is required</validation>\n      <!-- Only shows when invalid -->\n      <validation name=\"email\" type=\"custom\" value=\"email-exists\">The e-mail already exists</validation>\n    </form>\n    <script>\n      function debounce(func, timeout = 500) {\n        // debounce function imp\n      }\n      const debouncedEmailCheck = debounce((email, onValidate) => {\n        // Do request to check email availability  \n      });\n      email.addEventListener(\"input\", (event) => {\n        const email = document.getElementById(\"email\");\n        const emailExistsValidation = document.querySelector(\"validation[value='email-exists']\");\n    \n        debouncedEmailCheck(event.taget.value, (isValid) => {\n          // validation DOM element will have an attribute invalid so we can make it invalid or not with JS\n          emailExistsValidation.invalid = isValid\n        })\n      });\n    </script>",
+            "subreddit": "webdev",
+            "comments": [
+                {
+                    "author": "shgysk8zer0",
+                    "text": "We have tooltips for built-in things and can pretty easily implement most of the HTML element cases via eg `input:user-invalid + .validation` and other similar pseudo-classes. With some more advanced options to get a specific kind of validation using `:user-invalid:required`.\n\nReally, I'm not sure I'd want either devs to be able to override built-in form validation hints or to have basically duplication of them.",
+                    "replies": [
+                        {
+                            "author": "Renan_Cleyson",
+                            "text": ">We have tooltips for built-in things\n\nThis is the first problem for me, I rarely see or implement tooltips on websites for error messages, and worse than that is having to rely on bad UX and UI from the browser. We already have many things that we need to use libs or write some JS abstraction and CSS hacks to overcome non-customizable HTML built-ins like checkboxes, date pickers, and many other inputs. I just realized or maybe have the misconception that built-in HTML validation is overcomplicated and could be much more extensible with a more idiomatic approach with HTML.\n\n>and can pretty easily implement most of the HTML element cases via eg input:user-invalid + .validation and other similar pseudo-classes. With some more advanced options to get a specific kind of validation using :user-invalid:required\n\nI don't think that is easy, I surely can do that in minutes, but it's not even flexible, in my experience, relying on CSS sibling selectors makes styling very hard and incompatible with some ways of arranging elements.\n\n>Really, I'm not sure I'd want either devs to be able to override built-in form validation hints or to have basically duplication of them.\n\nThat is what makes my idea a fantasy :( backward compatibility. Having the current built-in form validation together with another one will overlap and cause many issues.",
+                            "replies": [
+                                {
+                                    "author": "shgysk8zer0",
+                                    "text": ">I rarely see or implement tooltips on websites for error messages\n\n> I'm talking about the free, built-in ones you get. Just setting `required` gives you \"This input is required\". Similar for `setCustomValidity()`.\n\nIf you really want to implement it, my instinct is a web component with typical form-related attributes (`form`, `for`, etc). Have `<slot>` for the different validation error types. Add an `invalid` listener on `connectedCallback()` and remove it on `disconnectedCallback()`, possibly changing it via `attributeChangedCallback()`. Find the relevant input easily by `document.forms[this.form].elements[this.for]`."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Blue_Moon_Lake",
+                    "text": "For your need, there's\n\n    input.setCustomValidity(\"My custom error message\");\n\nOr I minsunderstood what you're trying to do.\n\nWhat I always found to be missing is a \"field\" element that pair label and input/textarea.\n\n    <field>\n        <label>My label as a block</label>\n        <input type=\"text\" name=\"my-field\" />\n    </field>\n\nYes you can put the input in the label, but then you need a div around the text.  \nAlso, clicking the label will focus the input, so you may not want your label to be a big box.",
+                    "replies": [
+                        {
+                            "author": "Renan_Cleyson",
+                            "text": ">For your need, there's\n\n>input.setCustomValidity(\"My custom error message\");\n\nI have two problems with this: I can't customize the tooltip nor have a fixed element instead of a tooltip from setCustomValidity which is also browser-specific, the other problem is I need to write JS to define content that could be more idiomatic to have as HTML.\n\nThe first problem is a big NO to me and AFAIK that is also true for most devs out there, we would use many built-in inputs otherwise like the HTML date and time pickers but we can't rely on every browser for UX. We still can solve this with pseudo-classes just like the other comment showed. But it's much more idiomatic to write some HTML for that.\n\nThe second problem is my main point. I'm aware that we currently can handle validation, and customize it, but it's not worth it even for simple pages if the UX and UI matter, then we end up using JS for something that maybe we could just write some markup.\n\nThe issues with adding what I suggested are kind of a fantasy tbh, very hard to make it work with how browsers currently handle validation I think, still current built-in HTML validation seems like a very bad design choice to me. Seems like a very important visual piece that could be just easy to write and style needs a lot of overhead to work.",
+                            "replies": [
+                                {
+                                    "author": "armahillo",
+                                    "text": "why not use the label tag, applying a validation class to it?\n\nHTML isnt a form markup language, its a document markup language that can display forms"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "zurribulle",
+                            "text": "What's the point of adding a semantic element with the only purpose of acting as a wrapper? just use a div and set your for and id props correctly",
+                            "replies": [
+                                {
+                                    "author": "Blue_Moon_Lake",
+                                    "text": "- the input is not part of the label so it shouldn't be inside the label element\n- not needing to deal with fucking ids as you would get semantic pairing\n- you could have other elements in your field that shouldn't be part of the label"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "How to design a good looking website if your client doesn't have any content?",
+            "author": "flextape9989",
+            "text": "I freelance Nextjs websites and recently I was contracted to make a website for a small indie game developer. He had a reference which was helpful but he didn't have any content aside from the cover photos of his games and . This project is over and I'm somewhat happy with the result but I feel it could be better... It looks pretty generic as I really couldn't do much with what I was given. At the end of the day, the job is over, the client was happy, and I got paid and he paid extra to not have my credit on the footer. I'm just wondering how I can make websites not look generic when you have very minimal content. Sorry I don't want to share any specific details for give the website...",
+            "subreddit": "webdev",
+            "comments": [
+                {
+                    "author": "manfairy",
+                    "text": "I have a n8n instance on digital ocean. Connect it to some AI services (Open AI, Huggingface, Perplexity, etc.) and then build flows. You can quickly fill a database with fake articles that you can use as placeholders or even let it write fitting content. Same goes for imagery.",
+                    "replies": [
+                        {
+                            "author": "jaketeater",
+                            "text": "For development purposes, I\u2019ve used AI/stock images to show the client the value of good images to nudge them into seeing the value. \n\nOtherwise, typography and some low key animation can make up for a lot, as well as custom graphics.\n\nEdit: I made a mistake. This was a reply to the OP, not to the comment. Sorry."
+                        }
+                    ]
+                },
+                {
+                    "author": "Bhyn",
+                    "text": "Let me take a different approach.. **The entire purpose of a website is its content.**\n\nWhen people visit a game dev's site they expect to find certain things: a list of games they've made, what the games are about, photos/videos of gameplay, can their device play it, where can they buy it, info about the creators, guides or manuals, etc, etc.\n\nIf your site doesn't providing what the user is looking for, will they have a positive experience? will they purchase from you? is there a point to even having a website?\n\nYou need to be very upfront with this when you start working with a new client. Discuss the purpose of the website with them then give them a list of the content you require to start designing. If they aren't meeting the deadlines you set for content, give them a call and go through your list. Make lots of notes. Write what you need or send your notes to a web copywriter. It can be like pulling teeth to get people to write a 150 word blurb but they will chat for 30 minutes easy.\n\nYou don't need 100% of the content to start designing. But be careful of too much placeholder. I've found clients are more likely to not give you the info you need, sections get removed, and the design starts to fall apart.\n\nIt's tough to make something look good when you have nothing to work with. So impress the importance of content, work with them to get that content, then make a great website."
+                }
+            ]
+        },
+        {
+            "title": "Request Quest - fun game to identify when browser calls network request (lots of tricky questions!)",
+            "author": "sohang-3112",
+            "text": "[External Link]",
+            "subreddit": "webdev",
+            "comments": []
+        }
+    ]
+}

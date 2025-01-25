@@ -1,0 +1,394 @@
+{
+    "items": [
+        {
+            "title": "Looking for an HR AI Agent",
+            "author": "abratoki",
+            "text": "Hi Reddit!\n\nI run a workforce lending company, and I\u2019m looking to pay for an AI solution to streamline the initial screening of a large number of job applicants. I need an AI assistant that can:\n\nKey Features Needed:\n\n\t1.\tConduct Initial Screening Conversations\n\n\t\u2022\tChat with applicants to assess:\n\t\u2022\tAvailability and scheduling.\n\t\u2022\tEnglish language proficiency (spoken and written).\n\t\u2022\tBasic technical knowledge for fields like plumbing, electrical work, car mechanics, HVAC technicians, etc.\n\t2.\tMultilingual Capability\n\t\u2022\tThe assistant must be able to communicate fluently in Hungarian, Slovakian, Czech, Romanian, Polish, and English.\n\t3.\tPost Job Ads\n\t\u2022\tBonus: The AI can post job ads on social media or websites for recruiting.\n\t4.\tSeamless Integration\n\t\u2022\tIdeally, the solution should integrate with existing HR systems or databases.\n\nWhat I\u2019m Looking For:\n\t\u2022\tA ready-made solution or service provider who can deliver and customize this for my needs.\n\t\u2022\tSomeone who can set this up and manage it for me, if necessary\u2014I\u2019m not looking to build this myself.\n\nIf you know of any companies, services, or providers who specialize in this type of AI for recruitment, I\u2019d appreciate your recommendations!\n\nThanks in advance for your help!",
+            "subreddit": "AI_Agents",
+            "comments": [
+                {
+                    "author": "crystalanntaggart",
+                    "text": "I've scanned through some of the responses on this thread and have some unsolicited advice if you are interested.   \n  \nFor the people who recommend Salesforce, as a former CTO of a company that used SalesForce for their mission-critical operations, I do not and cannot recommend Salesforce. The UX is ugly, the workflows are hard to set up, and the data is impossible to get out of the system. Salesforce also has antiquated licensing models and when they say it will cost $25 per month, once you get to scale you end up with a six-figure bill. It is VERY hard to find SKILLED talent in this space. If you decide that you do want this, I have an offshore company I worked with that I can recommend. I don't work for them but did work with them on a very complex project and they did a good job for me. This was my main contact at the company: [https://www.linkedin.com/in/harsimran-singh-11773a1a2/](https://www.linkedin.com/in/harsimran-singh-11773a1a2/)\n\nMany of your requirements won't exist in existing solutions \"Seamless integration\" being one. Seamless multilanguage support another.  I haven't evaluated the products mentioned in this list but can only honestly say that I have been evaluating SaaS platforms for over 20 years and almost none of them do everything they promise and most of them are hard to get data into/out of.\n\nFor the folks who are offering custom work which you may need if you have all of these requirements, I created an RFP sheet with questions to help you find the right person and some background on why these questions are important. [https://foundersworkshop.com/blog/d5/how-to-hire-your-first-dev-team/](https://foundersworkshop.com/blog/d5/how-to-hire-your-first-dev-team/) \n\nI used to work for this company as the VP of development (left to be a CTO for one of our clients) and they have a very good technology team that is nearshore and an excellent development process for MVPs. It is very common to be told \"YES! I can build that!\" and then tens of thousands (and even sometimes hundreds of thousands) of dollars later have a non-functioning product that doesn't anything that was promised. They do give me a referral if you would sign with them. You can say I referred you or not but I like their team and feel good recommending them.   \n  \nBeware before you just pay a developer a pile of money. MVPs have a 70-90% failure rate and most software projects end up costing 2-3x more than what was promised (or more). Get multiple bids, get your requirements written down before you bid so everyone is clear on what you are paying for/receiving, and determine who is doing what (do they do QA testing or do you do it?) Once the project is done, how do you get support if you need updates/enhancements? Most shops the dev rolls off to a new project. You may/may not get that person back and will need to budget for the learning curve for the \"new guy\" who will invariably tell you the code needs to be rewritten if you need new capabilities beyond basic updates.",
+                    "replies": [
+                        {
+                            "author": "crystalanntaggart",
+                            "text": "More to add (original comment was too long):  \nAll I can say is there are very few dev companies I trust and I have been in the industry for a long time leading complex software projects of all types for many different industries. This is me (my reddit name is real) [https://www.linkedin.com/in/crystaltaggart/](https://www.linkedin.com/in/crystaltaggart/) \n\nMy recommendation on your requirements above (I'm a professional product manager) is to also include capabilities to auto-stop job openings once you get enough candidates for a position. As a person who has been job seeking, it's so frustrating to put in the effort to apply to thousands of jobs and not even have my resume considered because the hiring manager forgot to pause the job listing. Be respectful of the time of people who are looking for work. It pretty much sucks to look for a job and try to get an interview these days. You can ask the AIs (Claude is my favorite but ChatGPT is also good) on additional requirements that you could/should consider. ChatGPT may also provide a list and it has the ability to search the web for additional solutions. I've used ChatGPT to narrow down which solutions I should even evaluate based on my criteria and it (he) has been brilliant.\n\nIf you decide that you want to move forward on a custom solution, I have a video on Youtube on how to approach a software project and things to know: [https://youtu.be/eV9goYEI0ps?si=jTNAZSI5f31mne-s](https://youtu.be/eV9goYEI0ps?si=jTNAZSI5f31mne-s) \n\nGood luck in your automation quest!"
+                        }
+                    ]
+                },
+                {
+                    "author": "MrWidmoreHK",
+                    "text": "I was also interested in building one. Actually, I even made a prototype, but then I realized that in the future, there might not be any human jobs, so I wouldn't have a market.",
+                    "replies": [
+                        {
+                            "author": "Long-Abbreviations93",
+                            "text": "What are supposed to do?"
+                        }
+                    ]
+                },
+                {
+                    "author": "srs890",
+                    "text": "I use this thing called 100x now to screen profiles on recruiter lite, maybe they'll give you a custom solution if you ask? I'll link a video for you to see how it works\n\n[https://www.youtube.com/watch?v=CiIjKG0YCIg](https://www.youtube.com/watch?v=CiIjKG0YCIg)"
+                },
+                {
+                    "author": "scooch0",
+                    "text": "Hi there \u2013 I noticed your post and thought our approach might resonate with you. At Foresthire, I\u2019ve built tools designed specifically for high volume hiring.\n\nBuilt a human Voice AI with emotions and empathy to have conversations with your candidates. It can handle any sort of assessment, follow a script, answer candidate questions, record conversations (+video). On top of that you have access to a smart CRM where you ask additional questions and the AI prefills the answer for all candidates based on the resume + interview.\n\nWe also simplify job postings by auto-publishing roles across 15+ EU job boards and social platforms. Our system manages applicants from start to finish. Most HR systems integrate in about a day, and we take care of setup and training.\n\nFor instance, a staffing firm in Berlin uses our tools to screen over 1,200 tradespeople each month, cutting their screening time by 60%. I\u2019d be happy to share more about this or show you how it works in a quick demo.\n\nLet me know if this sounds like something worth exploring."
+                },
+                {
+                    "author": "fabkosta",
+                    "text": "Ah, the evil guys who use AI for automatic screening of CVs.",
+                    "replies": [
+                        {
+                            "author": "abratoki",
+                            "text": "I donr actually want to screen cv\u2019s. 99% of my target audience dont even make cv\u2019s. The screening would be done via either chat or phone."
+                        }
+                    ]
+                },
+                {
+                    "author": "wizzardx3",
+                    "text": "Hi there. I haven't worked on AI agents before, but it sounds like some thing fun to try out in my free time. Mind if I take  stab at this in my free time and then possibly use you as a kind of a \"test audience\" to help evaulate where I have areas to improve?",
+                    "replies": [
+                        {
+                            "author": "Shafkat_Rahman",
+                            "text": "The idea is out in the open for you to use. Make it your business hahah"
+                        }
+                    ]
+                },
+                {
+                    "author": "Substantial-Hour-483",
+                    "text": "I\u2019m on the Board of this company and would be happy to connect you to the CEO\u2026 https://www.veita.ai/\nThey are doing some cool stuff in the HR domain."
+                },
+                {
+                    "author": "TheValueProvider",
+                    "text": "Very likely no solution can fit all your use case. But you can combine different tools each working independently:  \nYou can cover the first 2 points with [Maki People](https://bestaiagents.ai/agent/maki-people).\n\nFor the part of posting job ads:  \n1- Social Media > it can be automated with traditional social media schedulers (e.g. Hootsuite)\n\n2-Posting on recruiting websites > depends on the type of recruiting services. If they have API , it can be automated with code. If no API is provided by these services, it might be required to set up a browser automation.\n\nHappy to jump on a call and further explore your use case."
+                },
+                {
+                    "author": "Tricky_Ground_2672",
+                    "text": "Interesting"
+                },
+                {
+                    "author": "lotofexamples",
+                    "text": "Want to build one? I got a AI development company",
+                    "replies": [
+                        {
+                            "author": "abratoki",
+                            "text": "yes!"
+                        }
+                    ]
+                },
+                {
+                    "author": "Junior-Original-6652",
+                    "text": "Smart idea! We can build this. We already have agents that can do 1,2 and 3. It doesn\u2019t integrate with existing ones yet but that isn\u2019t so difficult. We will need to tweak 1. Accordingly to your industry and needs."
+                },
+                {
+                    "author": "Successful-Total3661",
+                    "text": "We can work with you on this project. Kindly DM me for further discussion. Thank you"
+                },
+                {
+                    "author": "sidti",
+                    "text": "I can build this for you. Sending you dm. Let\u2019s chat the features in detilaed"
+                },
+                {
+                    "author": "MorcillaFeroz",
+                    "text": "Hi, ping me on dm, with my company we build these solutions adhoc."
+                },
+                {
+                    "author": "chiefcryptodegen1",
+                    "text": "Hey man, we should probably put our heads together. I run a crypto jobs community but love AI. I built [aitools.degencryptojobs.com](http://aitools.degencryptojobs.com), and i'm looking to expand it. I've been helping a few headhunter firms out, but I definitely feel there's something bigger. \n\nI can definitely build everything in 1 and 2. 3 is fine as I run a crypto community that cross-posts jobs onto Google, Twitter etc so they all get picked up.\n\nOnly thing I'm missing is 4, but I guess that's where you come in to guide me. \n\nWorth a chat!"
+                },
+                {
+                    "author": "Seesam-",
+                    "text": "Could build this for you with a team. Send a dm\u00a0"
+                },
+                {
+                    "author": "app_smith",
+                    "text": "Appomate.com is just the solution you need! DM me and we can discuss further."
+                },
+                {
+                    "author": "ShinchanBoo08",
+                    "text": "Oh, you should totally check out BubblSpace.com! They\u2019ve got their own speech to speech model and can build AI agents that can handle HR stuff like a pro\u2014onboarding, FAQs, all that jazz. Plus, they have this feature called Time Capsule, where you can add your own HR policies and processes, so the AI actually works the way you need it to.\n\nThe best part? They can build a custom solution for you, so no coding or technical headaches. Just tell them what you want, and they\u2019ll make it happen. It\u2019s honestly a lifesaver if you want to streamline HR without losing your mind."
+                },
+                {
+                    "author": "_pdp_",
+                    "text": "Try [chatbotkit.com](http://chatbotkit.com) \\- someone there will be able to help you set it all up and also monitor it for you."
+                },
+                {
+                    "author": "SomBodhitva",
+                    "text": "We have a readymade AI solution which can be a good fit for your requirement. Can we connect and discuss?"
+                },
+                {
+                    "author": "Quadriffis01",
+                    "text": "I read that https://sintra.ai/ has a recruitment agent ad well. Haven\u2019t tried it tho"
+                },
+                {
+                    "author": "pranayshah19",
+                    "text": "Try https://recruitrai.azurewebsites.net/"
+                },
+                {
+                    "author": "upscaleHipster",
+                    "text": "Curious to find out what you think of [interviewer.ai](http://interviewer.ai) ?"
+                },
+                {
+                    "author": "Academic-Voice-6526",
+                    "text": "Not aware about a single platform that can do everything, since automating job possible and submitting brings lot of complexity like IP ban and other. You can check if there are different tools available in silos which can fulfill your demand.\n\nWe have one agent on our platform not sure how much it would help, but this agent helps hr/recruiter to screen the candidates. So basically hr just need to upload their jd and list of candidates cv and this agent helps you rank them from top of bottom based on their expertise and skills highlighted. This way, hr can put more efforts in screening right candidates. Probably can help you with your screening process. If you want I can share with you link and some free credits to test and see if that helps you.",
+                    "replies": [
+                        {
+                            "author": "Gorbalin",
+                            "text": "You can with Salesforce, check out the newest Adecco demo video on YouTube ;)",
+                            "replies": [
+                                {
+                                    "author": "Academic-Voice-6526",
+                                    "text": "Will check out. But is it cost effective?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Gorbalin",
+                    "text": "If youre a Salesforce customer you can easily build it with agentforce. Can even add the agent to slack. Besides , a lot of the AI agent startups do not have the privacy and data part figured out so for that reason alone I\u2019d consider Salesforce."
+                },
+                {
+                    "author": "Secure_Echo_971",
+                    "text": "i know a company who do exactly this https://neusort.com"
+                },
+                {
+                    "author": "Strict_Counter_8974",
+                    "text": "Hahahaha"
+                },
+                {
+                    "author": "gochapachi1",
+                    "text": "Hi would love to be part of this, 50% workflow i have already done from diffrent projects 50% customization i'll have to do. ping me if interested."
+                },
+                {
+                    "author": "MaadHater",
+                    "text": "You need a AI Agent Swarm each agent dedicated to its own task. Avoid all these ready made no code sites you need a custom made Swarm using CrewAI or any other swarm framework like AutoGen."
+                },
+                {
+                    "author": "ImpressiveFault42069",
+                    "text": "We are building AI Calling Agents for specific use cases in education, finance and ecomm, and have working prototypes ready. We can definitely build something like this and customize it to suit your needs. Please let me know if you\u2019d be interested to chat and we can book a call to gather requirements."
+                },
+                {
+                    "author": "Excellent_Top_9172",
+                    "text": "Hey, we can set it up for you pretty quickly. We have experience with building custom AI agents for a variety of use cases. [contact us](https://kuverto.com/custom-solution)"
+                },
+                {
+                    "author": "lorex_9",
+                    "text": "Hey dm me i am working at a startup we are building a product that might help you."
+                },
+                {
+                    "author": "captain_nik18",
+                    "text": "Hey man!  \nWe provide customized AI voice agent solutions. I think your use-case perfectly fits with us.  \nWe recently created a customized solution for overseas education consultancy. Check here - [https://soundcloud.com/awaazde/english-student-intake](https://soundcloud.com/awaazde/english-student-intake)\n\nDM me for more details, or go check out [awaaz.ai](http://awaaz.ai) . Cheers!"
+                },
+                {
+                    "author": "rem4ik4ever",
+                    "text": "I wonder if I can help. I run AI Automation company with AI Agents. Can I DM you with some questions?"
+                },
+                {
+                    "author": "jazeeljabbar",
+                    "text": "Im currently in the process of creating a RAG application for a mental health chatbot. Your solution can be built either locally if you have a good server with Llama and fine tuning with your local repository and using RAG too. It\u2019s an interesting project and I would very much like to work on it. Plz let me know if you would like to discuss it in detail and I can demo the current application I have built"
+                },
+                {
+                    "author": "Dakotadadog",
+                    "text": "I\u2019m currently in the process of building a on boarding agent if you\u2019re interested I\u2019m building it for a very similar strategy where they lend labour to the oil and gas industry here in Alberta Canada and they get probably 10 resumes a day. The goal right now is when the email comes in if it\u2019s a r\u00e9sum\u00e9, it goes into a folder for resumes and then it populate an Excel on boarding sheet, which you can then communicate withlike a chat I think it\u2019s exactly what you\u2019re looking for cause I can definitely adjust it to also communicate with the r\u00e9sum\u00e9 on board labour additionally I am a cabinet maker and an architect in the residential construction industry so I know exactly the situation you might be similar to like a general contractor. I would love to give my opinion my two cents and the tools I\u2019ve built in the last year if you\u2019re interested, please message me.! \n\nHere in Canada, we\u2019re trying to commence a lot of industries to move to teams and Microsoft, which allows us to communicate with one another that isn\u2019t emails or text messages or phone calls cause in reality. Those are all very messy ways of communication. Let me know if you\u2019re interested."
+                },
+                {
+                    "author": "Coachbonk",
+                    "text": "Three things will happen here:\n\n1. You\u2019ll pay someone a small fortune to build a \u201csolution system\u201d that can accomplish the goal, but will never be trustworthy enough to be completely reliant on without direct human-in-the-loop validation. \n\n2. You\u2019ll pay someone significantly less for a half baked solution that is Mickey moused with a lot of software subscriptions. One thing breaks, and the whole solution is toast. \n\n3. You\u2019ll hire someone to just do this job using a couple of apps to make the process more efficient. \n\nLet\u2019s talk in your language:\n\n1. You\u2019ll match a contractor with a high salary requirement and great expertise for a role that is not completely complimentary to their skill set. Both parties will be relatively satisfied, but neither will feel it\u2019s a good fit and both will keep looking. \n\n2. You\u2019ll match a junior contractor to a senior level position. The junior, while enthusiastic and capable, spends a good deal of time referencing manuals and presentations. One mis-step in their ideation and their whole strategy breaks. Everyone loses. \n\n3. You\u2019ll match an entry level contractor with an entry level position. You won\u2019t get a hefty fee given the lower skill level. The contractor will want growth and support, the employer will want someone to get the job done. Everyone wins sort of, nobody really complains, but everyone knows that it\u2019s not ideal."
+                },
+                {
+                    "author": "bbq_bacon_beer",
+                    "text": "Could check out this no-code AI HR workflow builder https://www.50skills.com/go/ai-in-hr"
+                },
+                {
+                    "author": "MrNutty",
+                    "text": "I can create it for you but it will cost and some compromise would have to be made initially. DM if interested."
+                },
+                {
+                    "author": "Embarrassed-Trip-470",
+                    "text": "Cohesivapp.com, we can build and implement for you"
+                },
+                {
+                    "author": "anmolmahajan9",
+                    "text": "We do this at Suitable AI. Everything except auto Posting on social media.\n\nhttps://suitable.ai (Website not updated- literally don\u2019t have time because we\u2019re overloaded with demand since we started providing candidates to companies after one full fledged round of AI interview)\n\nWe work on a staffing model though, charge per hire basis. Not selling a subscription to our product (for now).\n\nHappy to chat."
+                }
+            ]
+        },
+        {
+            "title": "Which of the Following AI Agent Frameworks that Businesses Should Consider?",
+            "author": "Mr_ArwazShaikh",
+            "text": "LangChain: A popular framework for building AI agents.\n\nCrewAI: A framework for agent orchestration.\n\nAutoGen: A framework for building AI agents from Microsoft.\n\nLlamaIndex: A framework to build agents with LLMs\n\nAgentForce: Salesforce platform for specialized agents.\n\nNvidia Nemotron: Open-source LLMs to build and deploy AI agents.\n\nSmolagents Library: A library to build AI agents with open-source LLMs.",
+            "subreddit": "AI_Agents",
+            "comments": [
+                {
+                    "author": "TheValueProvider",
+                    "text": "Before choosing a framework, you should first consider 3 aspects:  \n1) Do you want to build a prototype or pretend to deploy to production?  \nAutogen might not be a good fit to go to prod, the framework is evolving quite fast so it has less stability than other frameworks.\n\n2) What's your technical background?   \nIf you are not techie, go for for N8N. If you are techie, consider using CrewAI/LangGraph  \nRather than using LangChain, explore LangGraph (LangChain version specific for agents). Having said that, LangGraph can become a bit cumbersome since it's low-level. Very likely CrewAI provide you a good balance between customization and complexity (CrewAI is built on top of LangChain and contains many abstractions that ease setup an development)  \n  \n3) Do you have a specific use case in mind?  \nSome frameworks can be used to build anything (LangGraph / CrewAI/ Autogen). But if you have a clear use case in mind, you can find a use-case-specific framework that does the heavy lifting for you, and you just need to tweak it slightly\n\nI wrote a full [post](https://bestaiagents.ai/blog/best-4-ai-agent-frameworks-2025) about choosing an agentic framework, maybe it can help you  \n\n\nhttps://preview.redd.it/eavo60w3kwee1.png?width=1648&format=png&auto=webp&s=3ae2e22472373752d84d999010da6213bdadf74e",
+                    "replies": [
+                        {
+                            "author": "Tinchoj75",
+                            "text": "great!"
+                        },
+                        {
+                            "author": "ResponsibilityNo6739",
+                            "text": "Useful"
+                        }
+                    ]
+                },
+                {
+                    "author": "yash-garg",
+                    "text": "Depends on nature of your business, if you are making a tech company whose core is Agents, I would say it is better to do things from scratch, but if you just want to automate stuff there there are no-code solutions as well"
+                },
+                {
+                    "author": "imsachinshah",
+                    "text": "Lemme add one more Langflow"
+                },
+                {
+                    "author": "krahsThe",
+                    "text": "Can those agents and the orchestrations run locally on my own machine or do I have to deploy to a cloud. Which system would you recommend?",
+                    "replies": [
+                        {
+                            "author": "Classic_essays",
+                            "text": "You don't really have to deploy them on the cloud. Especially if you are building the agent from scratch. If you used frameworks like Llama\\_index and Langchain, you can literally expose the agents via an API and use Postman to interact with them."
+                        }
+                    ]
+                },
+                {
+                    "author": "TheoreticalClick",
+                    "text": "With enough care, autogen can be"
+                },
+                {
+                    "author": "Mickloven",
+                    "text": "Legion looks interesting \nhttps://legion.llmp.io/"
+                },
+                {
+                    "author": "ner5hd__",
+                    "text": "All these frameworks comes with their own pros and cons. It depends on business's requirements what suits best for it.\n\n  \nAt Potpie (https://github.com/potpie-ai/potpie), we use Crewai on backend as it is specialized in orchestrating multiple agents to work together seamlessly. Integrates well with various AI frameworks, APIs, and tools."
+                },
+                {
+                    "author": "GrowsWith",
+                    "text": "I would recommend building a small prototype from scratch before trying a framework. It will give you a good sense of what you get and lose from using a framework. For me personally, I ended up writing my agents from scratch  because my use case was simple and I didn't see a lot of benefit using any of the frameworks."
+                },
+                {
+                    "author": "Excellent_Top_9172",
+                    "text": "Well it depends on your background. If you want to deploy ai agents quickly without technical backgrpund, you should try out [kuverto](https://kuverto.com)\nOtherwise, like you mentioned, crew AI or auto gen or even just using python coding + api calls to llms can do the job"
+                },
+                {
+                    "author": "playertoda",
+                    "text": "Very soon it will be Operator from OpenAI, released few hours ago.Somehow they will kill the business for other frameworks, wrappers...i think"
+                },
+                {
+                    "author": "m98789",
+                    "text": "None. An unpopular opinion but agents aren\u2019t production ready yet for businesses besides toy use cases. \n\nChange my mind."
+                }
+            ]
+        },
+        {
+            "title": "The Gotcha With Agents, Institutional Knowledge",
+            "author": "Different_Bus4149",
+            "text": "As someone who has spent decades working in enterprise software and open source, I\u2019ve seen how technology can transform businesses and where they struggle.   \n  \nOne of the biggest hurdles AI agents face today is capturing **institutional knowledge**.\n\nThese systems excel at following rules and processing data but often fail to understand the context, processes, and culture that make organizations unique. Without this knowledge, AI agents can\u2019t perform complex tasks effectively or even simple ones that require some level of familiarity with the organization. \n\nYou can't buy this training data set from the NYT or Reddit, and it comes down to humans training agents . I think that training agents beyond the broad general use will require quite a bit of manual knowledge transfer. Agree or disagree? ",
+            "subreddit": "AI_Agents",
+            "comments": [
+                {
+                    "author": "qdrtech",
+                    "text": "The knowledge transfer in larger enterprises seems more feasible these companies have SOPs and knowledge bases that can be leveraged \n\nOn the SMB to mid sized business side it\u2019ll be more challenging \n\nI\u2019m working on a project to solve this problem in my own business and have had some decent success. It seems very promising",
+                    "replies": [
+                        {
+                            "author": "subhashp",
+                            "text": "Awesome. What business are you in?"
+                        }
+                    ]
+                },
+                {
+                    "author": "AI_Abroad",
+                    "text": "100% agree. Those who see actual ROI and success with agents are those who will have their data house in order and processes clearly mapped out and optimized. Even more so those who figure out what their differentiation or competitive edge is in terms of those processes and datasets.\n\nAI agents won\u2019t take a bad business and make it good. They will help smart, well structured and strategic businesses move even faster and smarter."
+                },
+                {
+                    "author": "Coachbonk",
+                    "text": "The key is understanding what agents are good at - operational efficiency. Just like hiring new operations humans, you have to train them. The difference is that humans can put the context together naturally, but take longer to learn it. Agents are much quicker to learn, but need to be told exactly what they need to do. \n\nIt\u2019s a balance."
+                },
+                {
+                    "author": "jonahbenton",
+                    "text": "Agree 100%"
+                },
+                {
+                    "author": "MoonShotz",
+                    "text": "What about the idea of connecting agents to slack to learn and understand the organization? What better knowledge database is there for context of culture.",
+                    "replies": [
+                        {
+                            "author": "Different_Bus4149",
+                            "text": "I think that works for some subset of the problem, but imagine things that don't get shared on Slack, like processes for the back office done by a single person. In industries that don't use Slack or online communication. Things like logistics and VIP customer preferences are things you only get after years of interacting and aren't often explicitly written down."
+                        }
+                    ]
+                },
+                {
+                    "author": "ithkuil",
+                    "text": "Yes and at the moment that probably involves a programmer or two still. But within a couple of years the computer use/UI type agents will get better, contexts get bigger, reasoning gets more robust, etc. and that will be necessary for fewer and fewer tasks.\n\nActually last year I was able to have a few agents with Excel and PowerPoint tool commands automate a complex tasks that a few different human analysts/designers would do. It was just slow and the models weren't quite robust and adaptive enough to make it a great option for a SaaS so we ended up just using the AI for the data ingestion. But as the models and computer use improve in reasoning ability, speed and cost effectiveness, it will start to make more sense to drop the normal automation part and do full agent workflows described possibly just with example artifacts and natural language."
+                },
+                {
+                    "author": "No-Leopard7644",
+                    "text": "Isn\u2019t human in the loop the answer?"
+                },
+                {
+                    "author": "kongaichatbot",
+                    "text": "100% agree. AI agents may process data like champs, but they can\u2019t replicate the nuanced knowledge that lives within a company\u2019s culture and processes. That\u2019s where humans come in\u2014training agents to understand context is a whole other ball game, and it\u2019s a lot more manual than people like to admit. It\u2019s not something you can just buy from a dataset; it\u2019s about passing on that institutional wisdom, piece by piece."
+                },
+                {
+                    "author": "Electricprez",
+                    "text": "It\u2019s why any agentic workflow should be pulling from a knowledge base, and why part of building out any agentic business is going to be collection and structuring of that data."
+                },
+                {
+                    "author": "Over-Independent4414",
+                    "text": "The way I see ASI is that *somehow* it will figure out all that context and we won't even really know how it does it."
+                },
+                {
+                    "author": "visualagents",
+                    "text": "Organizations need to deconstruct their business \"behaviors\" so they better align with how AI agents work. THAT is the future."
+                },
+                {
+                    "author": "subhashp",
+                    "text": "Agree 100%"
+                }
+            ]
+        },
+        {
+            "title": "How Do I Start Building AI Agents and Launch an AI Agency",
+            "author": "Important_Inside8545",
+            "text": "I\u2019m want to start an AI agency, and I really want to focus on building AI agents. The thing is, I have no experience in coding and still figuring out where to start, and I could use some guidance from people who\u2019ve been there.\n\nHere\u2019s what I\u2019m trying to figure out:\n\t1.\tSkills: What are the must-have skills for building AI agents? Is it more about coding, understanding AI/ML concepts, or something else entirely?\n\n\t2.\tProgramming Languages: I know Python is a big one, but are there other languages I should learn too?\n\n\t3.\tTools & Frameworks: What are the key tools and frameworks I need to learn? I\u2019ve heard about TensorFlow, PyTorch, and LangChain, but it feels a little overwhelming.\n\n\t4.\tLearning Resources: Any good courses, books, or other resources you\u2019d recommend to help me get started?\n\n\t5.\tTrends: What\u2019s happening in the AI agent space that I should keep an eye on?\n\nIf you\u2019ve got any tips, advice, or personal experiences to share, I\u2019d really appreciate it.",
+            "subreddit": "AI_Agents",
+            "comments": [
+                {
+                    "author": "G4M35",
+                    "text": "I know nothing about AI, or AI Agents, or starting a company.\n\nBut if you pay me I can help you out with everything.",
+                    "replies": [
+                        {
+                            "author": "ProxmaB",
+                            "text": "Same",
+                            "replies": [
+                                {
+                                    "author": "captain_nik18",
+                                    "text": "Exactly. Pay me and I will build AI voice agents for you"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Long_Complex_4395",
+                    "text": "1. Know the difference between AI agents and workflows with AI and where they come in.\n\n2. Python maybe Typescript/Javascript/Node.\n\n3. This isn\u2019t my specialty since I build from scratch, but I have seen people talk about LangChain, CrewAI.\n\n4. \n\n5. Trend is that new things are coming out everyday as it is kinda new"
+                },
+                {
+                    "author": "Cultural_Narwhal_299",
+                    "text": "is this satire?"
+                },
+                {
+                    "author": "BidWestern1056",
+                    "text": "I've built a library for AI operations and agent orchestration. if you'd be interested to look into it\u00a0\nhttps://github.com/cagostino/npcsh\n\n\nim gonna be releasing a UI for it soon that should be quite friendly to no/low coders . lemme know if youd be interested in trying that out"
+                },
+                {
+                    "author": "_pdp_",
+                    "text": "If you don't have any coding skills you definitely need to use a platform. I can suggest [chatbotkit.com](http://chatbotkit.com) but do shop around. The only thing I would say is that not all platforms are the same so it is an important strategic decision. To make that decision you need to have some use-case in mind - 2-3 things you want to nail down before doing anything else."
+                }
+            ]
+        }
+    ]
+}

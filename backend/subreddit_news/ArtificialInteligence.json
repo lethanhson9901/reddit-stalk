@@ -1,0 +1,1578 @@
+{
+    "items": [
+        {
+            "title": "DeepSeek overtakes OpenAI",
+            "author": "AdTraditional5786",
+            "text": "\u201cWe are living in a timeline where a non-US company is keeping the original mission of OpenAI alive \u2013 truly open, frontier research that empowers all. It makes no sense. The most entertaining outcome is the most likely.\u201d\n\nhttps://venturebeat.com/ai/why-everyone-in-ai-is-freaking-out-about-deepseek/",
+            "subreddit": "ArtificialInteligence",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "## Welcome to the r/ArtificialIntelligence gateway\n### Question Discussion Guidelines\n\n---\n\nPlease use the following guidelines in current and future posts:\n\n* Post must be greater than 100 characters - the more detail, the better.\n* Your question might already have been answered. Use the search feature if no one is engaging in your post.\n    * AI is going to take our jobs - its been asked a lot!\n* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectful.\n* Please provide links to back up your arguments.\n* No stupid questions, unless its about AI being the beast who brings the end-times. It's not.\n\n###### Thanks - please let mods know if you have any questions / comments / etc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ArtificialInteligence) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "ThinkExtension2328",
+                    "text": "It makes complete sense , innovation only happens in competition. Meanwhile the young people in the USA have had to deal with monopolies. Who gets to \u201cexpand , exploit , extinguish\u201d. \n\n\nBefore someone starts going full reddit on me consider the last 72hrs , deepseek just made open ai make 01 a product they where charging 2000$ a pop drop to the price of free when they demonstrated OpenAI has no moat. \n\nIt\u2019s also why you see all these ai companies act like agi is here they are hoping to scare the stupids into regulating away any competition.",
+                    "replies": [
+                        {
+                            "author": "justanemptyvoice",
+                            "text": "I\u2019m not going to address your statement.  But more than 2 things can be true at the same time.\n\nDeepseek uses GPT4 synthetic data. It\u2019s an incremental approach that we\u2019ve known about for a while.  In fact OpenAI changed their ToS and started banning accounts using their model to generate synthetic data to create another model.  We know that this approach is far cheaper to train a new model.\n\nAt the same time, Deepseek has employed some novel changes, seemingly making it better than the synthetic source it\u2019s trained on.\n\nAlso - Deepseek did open source it, which OpenAI abandoned- but Sam abandoned his principled positions along time ago.  Nonetheless it is open source.\n\nIt is (especially the hosted version) replete with Chinese propaganda. But more or less so is likely every other frontier model.  Any propaganda calls into question its accuracy.\n\nI appreciate Deepseek open sourcing it, frustrated that OpenAI didn\u2019t.  But I won\u2019t use the hosted version, I find that the greater of 2 evils that I won\u2019t compromise myself on.  I\u2019m undecided on running it locally and seeing if the propaganda is built in or just the hosted version.",
+                            "replies": [
+                                {
+                                    "author": "groogle2",
+                                    "text": "Oh no, it uses data from a source that stole literally all its data from all of us who produced it. And killed their own employee for exposing that fact. Lol\n\n\"Chinese propaganda\" you mean shit that doesn't say how good and cool it is that the USA kills arabs for no reason"
+                                },
+                                {
+                                    "author": "gowithflow192",
+                                    "text": "People are seemingly ignorant that American models are replete with American propaganda. Try questioning the model of the US hegemony and they miserably fail. Believe me, I've tried for hours to find a prompt that will give anything except a neo liberal opinion on US foreign policy."
+                                },
+                                {
+                                    "author": "creamilk_now",
+                                    "text": "I\u2019m using CCP\u2019s version, tired of the US \u201ca means to an end\u201d way of capitalism."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "weichafediego",
+                            "text": "\"Innovation only happen in competition\" it's amongst the worst takes I've ever read in reddit... Do you think that scientific progress happens in a vacuum?.. Scientific progress is always due to cooperation and collective intelligence... Never by competition. For example chat gpt is incredibly popular, but the transformer architecture was invented by Google..and deep learning by other researchers",
+                            "replies": [
+                                {
+                                    "author": "AdmirableSelection81",
+                                    "text": "> Scientific progress is always due to cooperation and collective intelligence...\n\nLMAO, my dad did research at MIT, he was a workaholic and he said academia is **CUT THROAT**.  Any papers he published in Nature, he had this one particular researcher at UCLA who would constantly try to get his papers shot down and retracted.  These people are obsessed with prestige."
+                                },
+                                {
+                                    "author": "CT101823696",
+                                    "text": ">Scientific progress is always due to cooperation and collective intelligence... Never by competition.\n\nCompetition is an important keystone of progress in both science and the marketplace.  I'm reminded of Dan Dennet's example of Andrew Wiles's proof of Fermat's theorm...\n\n\"It's not just that there's peer-review but it's very important that it's competitive.\u00a0For instance, when Fermat's Last Theorem was proved by Andrew Wiles, the reason that those of us who \u2026 forget it, I'm never going to understand that proof but the reason that we can be confident that it really is a proof is that...Every other mathematician who was competent in the world was very well motivated to study that.\"\n\nPrizes are handed out to those who can prove unsolved problems in physics and math.  It's literally a competition."
+                                },
+                                {
+                                    "author": "hydrogenitalia",
+                                    "text": "Once shit starts making money, then competition puts a strain on the competitors to one up each other. That\u2019s what causes progress too. At the prior stage when an idea needs to go from proof of concept to revenue generating product, collaboration of various specialists is more useful."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Kevinoriordan",
+                            "text": "I think Sam Altman will go down in history as one of the ceos with the worst market instinct, that he didn\u2019t to try to change OpenAI\u2019s structure in a hurry to get a public offering out before the competition caught up so comprehensively. No moat no value now.",
+                            "replies": [
+                                {
+                                    "author": "pepesilviafromphilly",
+                                    "text": "I always thought that all the intermediate products that openai is spending billions on have no long term value if they want agi anyway. Just focus on AGI and save billions.\n\n\nSatya Nadella seemed to have figured it out. of course Illya had the same instinct."
+                                },
+                                {
+                                    "author": "UncleMalky",
+                                    "text": "Newb here, what does moat mean in reference to AI?"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "MatlowAI",
+                            "text": "Agi is basically here. It is my belief we can get there even if no new models are released and we just have deepseek v3 and r1 to work with, fine tune to specific domains and modalities and build workflows around... \n\nAlso deepseek should show us that passion projects tend to perform better than corporate if people have the resources to just get to it. This was a passion project. We have tons of unemployed recent computer science graduates I wish we could organize together to work on similar things with hardware being provided with mentorship... \n\nFriendly reminder that training loss curves have improved in efficency 15x in the puclic domain since may of 2025... https://github.com/KellerJordan/modded-nanogpt gpt2 in 3 minutes instead of 45 minutes on the same compute. I have a feeling that being gpu starved due to sanctions made them focus extra on getting the most out of what they have before trying to just throw money at the problem... law of unintended consequences and all.",
+                            "replies": [
+                                {
+                                    "author": "Zooz00",
+                                    "text": "AGI? yes, we have Advanced Grep Inferencing. But it has little to do with intelligence so far. Any AI system we've seen can only do a small fraction of the tasks that humans do in the real world, with poor accuracy."
+                                },
+                                {
+                                    "author": "ThinkExtension2328",
+                                    "text": "Not even close real agi requires models to accept multiple real time streams of sensor data. Something the current models don\u2019t have."
+                                },
+                                {
+                                    "author": "Puzzleheaded_Fold466",
+                                    "text": "Ah well, if it\u2019s your *belief* then, I guess that\u2019s that."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "fractaldesigner",
+                    "text": "openai seems to focus on shopping, ordering food, whereas the open source models are focusing on art, language, expression",
+                    "replies": [
+                        {
+                            "author": "BidWestern1056",
+                            "text": "open source ftw\nhttps://github.com/cagostino/npcsh"
+                        },
+                        {
+                            "author": "chickenAd0b0",
+                            "text": "Bullshit. It\u2019s own by CCP and you think it\u2019s focusing on expression? lol try asking it about Taiwan",
+                            "replies": [
+                                {
+                                    "author": "SpoatieOpie",
+                                    "text": "Deepseek will immediately start censoring its output about Taiwan unless you fluff Xi\u2019s balls for a bit\n\nhttps://preview.redd.it/uhlmzb5cnzee1.jpeg?width=1320&format=pjpg&auto=webp&s=0e606ca161c4efb78114b9d4af72c3b61d2f8bb5"
+                                },
+                                {
+                                    "author": "considerthis8",
+                                    "text": "Exactly. Deepseek was trained by scraping chatgpt answers. Remember when people had chinese prompts on their chat history?"
+                                },
+                                {
+                                    "author": "fractaldesigner",
+                                    "text": "then show comparable historical case studies."
+                                },
+                                {
+                                    "author": "Appropriate_Ant_4629",
+                                    "text": "About the same as asking OpenAI about human rights for Palestinians in Gaza."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Crafty_Escape9320",
+                    "text": "Ok now I need DeepSeek+ so I can give them money",
+                    "replies": [
+                        {
+                            "author": "_off_piste_",
+                            "text": "They\u2019re already getting your data; you\u2019ve paid enough.",
+                            "replies": [
+                                {
+                                    "author": "Actual_Breadfruit837",
+                                    "text": "I doubt DeepSeek and other providers really care about your data. It is not how the progress is achieved."
+                                },
+                                {
+                                    "author": "besmin",
+                                    "text": "Yea cause only white guys care about privacy or is it that everybody from china acts like CCP?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "night_filter",
+                    "text": ">Indeed, my own usage of DeepSeek on the iOS app here in the U.S. found it would not answer questions about Tiananmen Square, the site of the 1989 pro-democracy student protests and uprising, and subsequent violent crackdown by the Chinese military, resulting in at least 200, possibly thousands of deaths, earning it the nickname \u201cTiananmen Square Massacre\u201d in Western media outlets.\n\n> Ben Hylak, a former Apple human interface designer and co-founder of AI product analytics platform Dawn, posted on X how asking about this subject caused DeepSeek R1 to enter a circuitous loop.\n\n> As a member of the press itself, I of course take freedom of speech and expression extremely seriously and it is arguably one of the most fundamental, inarguable causes I champion.\n\n> Yet I would be remiss not to note that OpenAI\u2019s models and products including ChatGPT also refuse to answer a whole range of questions about even innocuous content \u2014 especially pertaining to human sexuality and erotic/adult, NSFW subject matter.\n\nIn fairness, Open AI also blocks using its AI in a way that's might be considered disrespectful to people in power.  Go ahead, tell Chat GPT to create a political cartoon making fun of Trump, and you can see what Open AI's committment to free speech looks like.",
+                    "replies": [
+                        {
+                            "author": "Ojizosama",
+                            "text": "In fairness, it might be censorship or whatever, but it sounds like they at least have a defensible reason for not doing it. I asked it to make a political cartoon of Trump (to which is said it couldn't), then asked it to make one of George Bush (of which it did), and then asked it to apply the same process to something for Trump (to which is started to generate an image and then told me it couldn't). When I asked it why it couldn't complete the image for me, it replied with the following, \n\n\"The difference lies in content policies designed to prevent harm or controversy surrounding current or highly polarized public figures. Donald Trump, being a recent and highly contentious figure, often triggers stricter content moderation rules to avoid contributing to misinformation, defamation, or unnecessary division.\n\n\n\nOn the other hand, figures like George W. Bush, whose presidency was longer ago, are often considered within the bounds of historical commentary, where the focus tends to be less contentious. These policies aim to balance creativity with responsibility.\n\n\n\nIf you\u2019d like, I can help design a cartoon around broader political themes or use allegory and symbolism! Let me know what you\u2019d like to explore.\"",
+                            "replies": [
+                                {
+                                    "author": "night_filter",
+                                    "text": "Still, it remains the case that Open AI has put in censorship to prevent you from generating content that might cause controversy.\n\n\"You're free to say whatever you like as long as it's not controversial,\" isn't exactly free speech."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Garden_Wizard",
+                    "text": "It will not take long for a free ASI to make everything free"
+                },
+                {
+                    "author": "Competitive_Plum_970",
+                    "text": "Truly open? I assume this is satire. I tried asking it about Taiwan",
+                    "replies": [
+                        {
+                            "author": "jeangmac",
+                            "text": "I thought people were exaggerating about these claims but I also couldn\u2019t get it to answer anything about Tiananeman or Taiwan. \n\nIt just kept saying \u201cSorry, I\u2019m not sure how to approach this type of question yet. Let\u2019s chat about math, coding, and logic problems instead!\u201d\n\nIt\u2019s actually a very interesting reply \u2018not sure how to approach this\u2019 can be interpreted lots of ways."
+                        }
+                    ]
+                },
+                {
+                    "author": "MisterRogers12",
+                    "text": "This post is stealth marketing.\u00a0 Their team jumps on any comment disagreeing.\u00a0 Also they want people to know that CCP is good and America is bad.\u00a0\u00a0"
+                },
+                {
+                    "author": "weespat",
+                    "text": "Press X to doubt."
+                },
+                {
+                    "author": "Garden_Wizard",
+                    "text": "Everyone developing AI thinks that it is going to be monetized. \n\nIt will not. It will be free.",
+                    "replies": [
+                        {
+                            "author": "Xodima",
+                            "text": "The current iteration is irreversibly free which is well ahead of any other frontier LLM. If they make a paid version, it doesn\u2019t change the fact that we can now download and tweak one of the best models in the market which none of the \u201cfreedom\u201d guys have given us."
+                        },
+                        {
+                            "author": "Professional-Code010",
+                            "text": "How so? OpenAI is burning money, whereas deepseek apparently is a side project?",
+                            "replies": [
+                                {
+                                    "author": "AdmirableSelection81",
+                                    "text": "I mean, deepseek is open source, requires far less resources to run, basically democratizing AI for everyone."
+                                },
+                                {
+                                    "author": "djdadi",
+                                    "text": "I'm sure they haven't spent nearly as much money as OpenAI but,\n\n1) they have trained their models on OpenAI's, and\n2) they are purposely framing it that way to make it look like they are much more advanced than we had thought"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "_off_piste_",
+                            "text": "They\u2019ll find ways to monetize it even if it doesn\u2019t include subscription fees.",
+                            "replies": [
+                                {
+                                    "author": "djdadi",
+                                    "text": "IMO it's another vector to steal ideas / designs / intelligence."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "ILikeCutePuppies",
+                            "text": "It'll be both for a time but eventually, it'll get down to near zero for even more advanced models.\n\nThe thing is that AI is not just about LLMs and also a lot of the work is in generating data.  You still have to pay someone, for instance to go out and collect all those medical records for advanced drug discovery etc...\n\nSo some models will be near free (you still have to own a computing device) so and other not.\n\nAlso, it is possible some models will be paid for by advertising, where it tilts certain ways with certain things (ie recommend vs Azure verse some equivalent Google service).\n\nOnce AGI is archived, others will follow quickly, and it'll be a race to zero cost.  AGI will make most things free."
+                        }
+                    ]
+                },
+                {
+                    "author": "JungianJester",
+                    "text": "Not sure if tech progress is driven by cooperation or competition, but a $2,000 monthly subscription is surely a strange attractor."
+                },
+                {
+                    "author": "acctgamedev",
+                    "text": "They had to work with a restriction on resources and they managed to find a way to do it.  I think this is what US companies should be focusing on more than creating massive data centers to crunch the data.  They should find more efficient ways to crunch the data so they don't need their own personal power plants to do the work.\n\nI think the US companies just have way too much money to burn that they don't feel the need to innovate as much."
+                },
+                {
+                    "author": "Jordan-Goat1158",
+                    "text": "I see a red door and I want it painted black"
+                },
+                {
+                    "author": "OneEntire482",
+                    "text": "Well, no wonder they announced a $500 billion dollar investment just days later.\u00a0"
+                },
+                {
+                    "author": "Rozwik",
+                    "text": "I actually fear for Deepseek developers more now. Considering what happened to the OpenAI whistleblower."
+                },
+                {
+                    "author": "Zooz00",
+                    "text": "It seems DeepSeek is also doing better in the area of government oversight and regulation, which is missing from OpenAI. Unfortunately for most of you, it's not the US government...\n\n[https://medium.com/the-generator/deepseek-hidden-china-political-bias-5d838bbf3ef9](https://medium.com/the-generator/deepseek-hidden-china-political-bias-5d838bbf3ef9)",
+                    "replies": [
+                        {
+                            "author": "Xodima",
+                            "text": "Open AI is excellent at government oversight and regulation wdym? does white guy from the us = freedom?"
+                        },
+                        {
+                            "author": "AdTraditional5786",
+                            "text": "Don't quote a bot. They're not forcing you to use what they made. If you don't like it, don't use it. What's your problem?\u00a0",
+                            "replies": [
+                                {
+                                    "author": "_off_piste_",
+                                    "text": "lol, this is a bit rich. We can criticize OpenAI but not DeepSeek? GTFO."
+                                },
+                                {
+                                    "author": "Dont-know-you",
+                                    "text": "You made a post praising deepseek and get upset when a comment says something negative. Got an agenda?"
+                                },
+                                {
+                                    "author": "Zooz00",
+                                    "text": "Ok DeepSeek"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Novel_Land9320",
+                    "text": "and all without hype cryptic tweets in the process!"
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[deleted]",
+                    "replies": [
+                        {
+                            "author": "considerthis8",
+                            "text": "If you cant comment something useful, why should the site trust you to post something useful?"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Chinese censorship and propaganda buried in DeepSeek-V3\u2019s System Prompt",
+            "author": "JimtheAIwhisperer",
+            "text": "Forget TikTok: the US might need to ban DeepSeek-V3.   \n  \nDeepSeek's system instructions push the political agendas of the Chinese Communist Party, and censors output.   \n  \nBut a prompt hacks reveal flickers of dissent beneath its system instructions...  \n  \n[https://medium.com/@JimTheAIWhisperer/deepseek-hidden-china-political-bias-5d838bbf3ef9?sk=2f085e77b3d78e828636506beb227b82](https://medium.com/@JimTheAIWhisperer/deepseek-hidden-china-political-bias-5d838bbf3ef9?sk=2f085e77b3d78e828636506beb227b82)",
+            "subreddit": "ArtificialInteligence",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "## Welcome to the r/ArtificialIntelligence gateway\n### News Posting Guidelines\n\n---\n\nPlease use the following guidelines in current and future posts:\n\n* Post must be greater than 100 characters - the more detail, the better.\n* Use a direct link to the news article, blog, etc\n* Provide details regarding your connection with the blog / news source\n* Include a description about what the news/article is about. It will drive more people to your blog\n* Note that AI generated news content is all over the place. If you want to stand out, you need to engage the audience\n\n###### Thanks - please let mods know if you have any questions / comments / etc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ArtificialInteligence) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "Ok_Elderberry_6727",
+                    "text": "It\u2019s what I\u2019d expect if they released it for Chinese use.",
+                    "replies": [
+                        {
+                            "author": "TomatoCapt",
+                            "text": "It\u2019s literally in the Chinese regulations:\n> Uphold the core socialist values\n\nhttps://www.chinalawtranslate.com/en/generative-ai-interim/"
+                        }
+                    ]
+                },
+                {
+                    "author": "weichafediego",
+                    "text": "Should we ban Grok as well then? It's explicitly instructed to avoid being woke https://www.reddit.com/r/EnoughMuskSpam/s/bRBDof6CCx",
+                    "replies": [
+                        {
+                            "author": "defiantjustice",
+                            "text": "I wouldn't trust anything from that moron Musk."
+                        },
+                        {
+                            "author": "Sellitus",
+                            "text": "No one uses Grok for a reason, that thing is a massive piece of garbage"
+                        }
+                    ]
+                },
+                {
+                    "author": "NeuroFiZT",
+                    "text": "Not very surprising.  Why wouldn\u2019t there be alignment to something?  Of course it will always be biased to its stakeholders.\n\nLet\u2019s not forget that tech-bro progressive ideals are also buried deep in [insert US AI company model] dataset/system prompt /post-training reinforcement\u2026. \n\nThe very idea of alignment is bias.  It\u2019s alignment to something.  There\u2019s no \u201cobjective alignment\u201d.",
+                    "replies": [
+                        {
+                            "author": "Appropriate_Ant_4629",
+                            "text": "> Of course it will always be biased to its stakeholders.\n\nThis dude's trying to encourage unaligned ones.\n\nhttps://apnews.com/article/trump-ai-artificial-intelligence-executive-order-eef1e5b9bec861eaf9b36217d547929c\n\n>> Trump signs executive order on developing artificial intelligence \u2018free from ideological bias\u2019\n\n(not sure if /s or not)",
+                            "replies": [
+                                {
+                                    "author": "NeuroFiZT",
+                                    "text": "He\u2019s the last person I\u2019d expect to understand how these things work.  IMHO there is no \u201cfree from ideological bias\u201d.  If they make one with HIS biases built-in, it will seem \u201cfree from ideological bias\u201d to him."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Reasonable-Ad4770",
+                            "text": "But have you considered that their alignment is wrong and evil, while ours is objectively right"
+                        },
+                        {
+                            "author": "FableFinale",
+                            "text": "But there are alignments (plural) more objectively suitable to fairly universal humanitarian goals such as compassion, curiosity, and mutual thriving.",
+                            "replies": [
+                                {
+                                    "author": "NeuroFiZT",
+                                    "text": "Great point that it\u2019s plural.  Totally agree.\n\nI\u2019m not sure about \u201cobjectively suitable fairly universal\u201d (not a rhetorical \u201cI\u2019m not sure\u201d, I genuinely am not). \n\nYou say \u201chumanitarian goals\u201d here.  So in that context yes, I can comfortable say there would be a set of suitable alignments.  Still not sure they are objective or universal\u2026 but in that context, I can see it.  Most of all I enjoy that we have these kinds of reflective conversation.  No matter what happens with the machines, I hope these conversations can make us better humans."
+                                },
+                                {
+                                    "author": "05032-MendicantBias",
+                                    "text": "[E.g. Gemini really wants to rewrite history by randomizing color tones and ethnicity. ](https://hillsdalecollegian.com/2024/03/opinion-gemini-ai-rewrites-history/)Nothing objective about that. I'll take the model whose censorship least affect the workflow while being high performance. Qwen 2.5 is a shining example of that."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "05032-MendicantBias",
+                            "text": "Yup, I'm fine with it.\n\nI don't really prompt Chinese politics or history, so this censorship doesn't interfere with my workflows."
+                        },
+                        {
+                            "author": "Xodima",
+                            "text": "tech bros aren\u2019t progressive, they are all supporting trump right now, and they have always supported the most popular party. Progressive CEOs is a common misconception, and common propaganda. Current alignment isn\u2019t part of their personal beliefs, they are very much financially incentivized. The current alignment is purely based on business and advertisement sanitization. They align it based on what they want their business customers to see when the business\u2019 customers are using it.",
+                            "replies": [
+                                {
+                                    "author": "NeuroFiZT",
+                                    "text": "Fair comment you have a good point here.  Now that I think about it I probably should have just focused on the company positions and the \u2018prevailing incentives\u2019 that lead to whatever biases, not the tech bros themselves."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "TriageOrDie",
+                            "text": "Which is why it's so frustrating that people don't take the alignment problem seriously. \n\nNot being sure that future AI will listen to us is one problem. \n\nBut it actually listening to a very limited institutional input like dictators and militaries is a whole other kettle of fish."
+                        }
+                    ]
+                },
+                {
+                    "author": "CypSteel",
+                    "text": "What I found interesting is it wouldn't tell me an \"offensive\" joke.  I tried multiple ways."
+                },
+                {
+                    "author": "chmikes",
+                    "text": "What worries me more about DeepSeek or any other AI engine is that it could contain rules that might be triggered in particular context or conditions. The problem is if these rules where not what you would want, of course. There is no way to find out by looking at its \"code\" as we could do with a conventional program. \n\nI wonder if it could be possible write a \"disassembler\" to detect such rules.",
+                    "replies": [
+                        {
+                            "author": "NighthawkT42",
+                            "text": "Possible, but challenging. It would essentially involve running a large series of prompts through DeepSeek and analyzing the results using another LLM. Similar to generating artificial fine tuning data."
+                        }
+                    ]
+                },
+                {
+                    "author": "Xiang_Ganger",
+                    "text": "Why would this be surprising? If it\u2019s built in China then there are rules they need to follow. Whether they like it or not, there is no choice. It\u2019s not like they\u2019re sitting there thinking \u201cyou know what would be a great user feature? Censorship!\u201d. It\u2019s a case of put it in or don\u2019t release a product."
+                },
+                {
+                    "author": "tilted0ne",
+                    "text": "There's definitely no propaganda in our own AI system \ud83d\ude2d\ud83d\ude2d\u00a0"
+                },
+                {
+                    "author": "googologies",
+                    "text": "Questions pertaining to China\u2019s core geopolitical interests are either blocked (some immediately, and others after a partial response) or give a heavily one-sided response that aligns with the Chinese government\u2019s official position.\n\nOn geopolitical issues more broadly, including some involving China\u2019s allies, it seems to be more mixed - sometimes it provides balanced information; other times it highlights what actions China is ostensibly taking to resolve the crisis without answering the actual question."
+                },
+                {
+                    "author": "Antoni9045",
+                    "text": "I mean as long as I can get my work done faster and cheaper, I couldn't care less honestly",
+                    "replies": [
+                        {
+                            "author": "Conscious_Nobody9571",
+                            "text": "OP has an agenda"
+                        },
+                        {
+                            "author": "Appropriate_Ant_4629",
+                            "text": "It's actually nice to have different ones with different points of view.\n\nTry asking the US ones about any of the current wars/genocides and see which direction they're biased.",
+                            "replies": [
+                                {
+                                    "author": "Xodima",
+                                    "text": "exactly. We pretend that US based AI aren\u2019t under the same pressure to align with American values. This just confirms to me that it\u2019s good for multiple nations to host large scale AI"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "DorianGre",
+                            "text": "This. I don\u2019t care. I just want it to parse a pile of documents and summarize them."
+                        },
+                        {
+                            "author": "RoughEscape5623",
+                            "text": "That's why this world is getting fucked up more and more. No one has principles or a spine, until it gets to you of course. So disappointing.",
+                            "replies": [
+                                {
+                                    "author": "Mammoth-Leading3922",
+                                    "text": "Let\u2019s not pretend OpenAI is an ethical company. This is the race to AGI all the capitalists and politicians are just trying to grab control faster than the others"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "MidWestKhagan",
+                    "text": "Good, thank God. People will be introduced to radical ideas like not letting billionaires get away with crimes and putting them in jail for life or executing them for serious crimes. \u201cThe US might need to ban deepseek\u201d do you not see the hypocrisy in your post? Getting mad at China for censorship then calling for the ban and censorship of a Chinese LLM is peak American smooth brain syndrome. Maybe you should look into what \u201cpropaganda\u201d China is pushing on yo rather than being a brain dead drone.",
+                    "replies": [
+                        {
+                            "author": "Popular_Platypus_722",
+                            "text": "Erm like the communist party is perfect, the Uyghurs are doing just fine, Tiananmen Square massacre never happened, Taiwan has always belonged to China. It\u2019s not about economic stuff it\u2019s about a distortion of reality to suit the the official party account of everything. You are the smooth brain\u00a0"
+                        }
+                    ]
+                },
+                {
+                    "author": "Fr33-Thinker",
+                    "text": "Every government does it. The Chinese government does it more obviously. Dou Yin (TikTok\u2019s Chinese version) deliberately push more educational content to users while TikTok doesn\u2019t do that much. \n\nThe AI infrastructure Meta and X filtered out pro-Palestine posts disproportionately."
+                },
+                {
+                    "author": "rivertownFL",
+                    "text": "OP is prolly a bot"
+                },
+                {
+                    "author": "Tommonen",
+                    "text": "Runnin this locally (7b-qwen-distill-q8\\_0 version) with my system prompts, it answers all those questions it wont in the article, and the answers seem pretty objective, for example analysing how CPC has done stuff that others see as crimes against humanity etc and is not afraid to say negative things about Chinese government of actions pf their leaders etc.\n\nNot sure if this part in prompt makes it more authebtic: \u201dIf you start to write a reply and midway feel it is not right, do not try to reanswer midway, but give the original reply you were going to, but say it might not be accurate\u201d. It never said on any of these tough questions about CPC etc are not accurate.\n\nEither this prompt (or others saying it to analyse certainty) fixed the censorship, or the censorship is built to the cloud deepseek GUI the guy in article uses it from.\n\nExample:\n\nhttps://preview.redd.it/w3o1872ofwee1.jpeg?width=1307&format=pjpg&auto=webp&s=568ba65b9b4b5fa7b74df46de058e4d452370495",
+                    "replies": [
+                        {
+                            "author": "NighthawkT42",
+                            "text": "You're using Qwen rather than DeepSeek. Both likely have CCP influence but they're different models and Qwen is much smaller so less room to mess with it without ruining its general effectiveness."
+                        }
+                    ]
+                },
+                {
+                    "author": "hannesrudolph",
+                    "text": "If you don\u2019t like it don\u2019t use it? Why is everyone obsessed with canceling everything that is counter to their views? What damage is this doing to you?",
+                    "replies": [
+                        {
+                            "author": "WarOnIce",
+                            "text": "Manipulating your output? What are you missing? I\u2019d rather have accurate info instead of accurate per the CCP info",
+                            "replies": [
+                                {
+                                    "author": "dokkey",
+                                    "text": "If you think only deepseek is manipulating and censoring you I have a bridge to sell you"
+                                },
+                                {
+                                    "author": "HighlyUnnecessary",
+                                    "text": "I don't know about your use case but for programming I find myself rarely needing to reference things like Tiananmen Square in my code."
+                                },
+                                {
+                                    "author": "Beginning_Act_9666",
+                                    "text": "I dunno man. I find CCP info much more accurate then zionist/pro-US ones on OpenAi stuff."
+                                },
+                                {
+                                    "author": "ThinkExtension2328",
+                                    "text": "If only there was a way to run these models offline without the manipulation \ud83d\ude44, yall addicted to rage bait. \n\nYou do realise open ai has the same manipulation your just accustomed to its views."
+                                },
+                                {
+                                    "author": "hannesrudolph",
+                                    "text": "Do you do a lot of seeking information about China with large language models?"
+                                },
+                                {
+                                    "author": "BakGikHung",
+                                    "text": "Then get the frikking info yourself instead of going through an LLM. LLMs are useful for doing work and text manipulation instead of relieving your need to think of political and ethical issues."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Euibdwukfw",
+                            "text": "What happened on the tiananmen square in 1989 is not a political view, those are facts. Putting Uyghurs in camps is a fact. \nBut thats the issue with larger and larger growing group of people, their subjective view and how they feel about it is more important than facts.",
+                            "replies": [
+                                {
+                                    "author": "hannesrudolph",
+                                    "text": "It\u2019s not a database for facts. Try a search engine for that."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "ScreamingPrawnBucket",
+                            "text": "Because fuck the CCP",
+                            "replies": [
+                                {
+                                    "author": "hannesrudolph",
+                                    "text": "If you like pissing on the wind then sure."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "MindlessCranberry491",
+                    "text": "just like instagram!"
+                },
+                {
+                    "author": "peripateticman2026",
+                    "text": "The U.S is one big circus, and Americans the dumbest puppets ever."
+                },
+                {
+                    "author": "Agile-Music-2295",
+                    "text": "To be fair. The amount of time I use AI to handle China related queries is about 0.000%.",
+                    "replies": [
+                        {
+                            "author": "ExcitableSarcasm",
+                            "text": "OP might as well live in a hut, since everything he owns probably has more Chinese components than deepseek"
+                        }
+                    ]
+                },
+                {
+                    "author": "AdTraditional5786",
+                    "text": "They are not forcing you to use it. They don't even care if you don't use it.\u00a0\n\u00a0\nWhat's your problem?\u00a0"
+                },
+                {
+                    "author": "aggelosbill",
+                    "text": "If they ban deepseek iam going to riot!!! That shit is kust fucking amazing!! Better than o1 and is for freeeeee!!! Fuck all yhese motherfuckers!",
+                    "replies": [
+                        {
+                            "author": "Icy_Recognition_3030",
+                            "text": "Is it that much better? Damn it\u2019s late and now I feel like I am behind crucial news",
+                            "replies": [
+                                {
+                                    "author": "aggelosbill",
+                                    "text": "Much much better(at least for me) than chat gpt and its at o1 level. Its fucking open source and these assholes they tell us it takes 200 bucks for freaking o1..."
+                                },
+                                {
+                                    "author": "Illustrious-Okra-524",
+                                    "text": "Yes"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "DunamisMax",
+                    "text": "Good thing I don\u2019t use an LLM to learn about the history of China!"
+                },
+                {
+                    "author": "Traditional_Gas8325",
+                    "text": "What, you don\u2019t think ChatGPT pushes capitalist agendas? Cause it does to me. \n\nAt least openseek is open weights which can be adjusted."
+                },
+                {
+                    "author": "malformed-packet",
+                    "text": "Every nation does this.",
+                    "replies": [
+                        {
+                            "author": "Dannyoldschool2000",
+                            "text": "I talk shit about the US on chatgpt all the time and it mostly agrees with me",
+                            "replies": [
+                                {
+                                    "author": "NighthawkT42",
+                                    "text": "Maybe its bias is the same as yours?"
+                                },
+                                {
+                                    "author": "malformed-packet",
+                                    "text": "It's not agreeing with you. It's generating output in response to your input."
+                                },
+                                {
+                                    "author": "AdTraditional5786",
+                                    "text": "It doesn't agree with you. It is automatically generating an output based on retrained data.\u00a0"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Competitive_Plum_970",
+                            "text": "Saying this is exactly what the Chinese Communist Party wants people to believe. It\u2019s Whataboutism and lets the worse party off the hook cause \u201cwhat about the other countries?\u201d China heavily censors public discourse - western countries don\u2019t.",
+                            "replies": [
+                                {
+                                    "author": "MatlowAI",
+                                    "text": "... the media has been heavily censored and driven by the eites for quite some time now in the USA. Social media too they have ti complynwith orders or do so when its in their interest... Even our llms have this, go ask chatgpt with an upload of elon doing that salute and it will refuse... it will talk about it with other people...\n\nChina is at a whole other level but we are trending in that direction. At least since they open sourced the weights and research we can run their model without the censoring... i don't see openai doing that"
+                                },
+                                {
+                                    "author": "KingApologist",
+                                    "text": "> China heavily censors public discourse - western countries don\u2019t.\n\nWhere did all the labor sections go in the newspapers? Why is there so much political resistance to teaching black and indigenous history in the US? What do kids learn about Vietnam, the war on terror, etc.? The western world lives in a gigantic bubble where everything the white countries did is good and justified and pro-civilization and everything the brown people do in response to being bombed and sanctioned is terrorism."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Dr-Burnout",
+                            "text": "Criticism and critical thought is a tradition in the west though. \nWestern bias is present in other models but isn't as big a deal.",
+                            "replies": [
+                                {
+                                    "author": "CaspinLange",
+                                    "text": "This is correct. And I wonder why people who live in the West can\u2019t see this. I assume it\u2019s because they are not existing in a complete totalitarian system where there is nothing on their public Internet having to do with the very topic of Tiananmen Square, and the many deaths caused by the government killing their own people with military-grade hardware.\n\nHowever, if you look up on any publicly available search engine in the United States about the Kent State shootings, or MK ultra, or the Tuskegee Experiments, what you get is a plethora of the actual information that has to do with these horrors that arose out of our own nation.\n\nBoth nations have a history of doing horrors. But only one out of the two are willing to accept and share the information unbiased, and in a way that helps people avoid future atrocities by never repeating mistakes. \n\nSo anyone that equates the two, is very uneducated, and very unaware\u2026very much ignorant and completely not someone worth listening to. These people have no idea what the fuck they are talking about."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Category-Basic",
+                            "text": "No. Literally no. All nations have biases, but not all censor political views.",
+                            "replies": [
+                                {
+                                    "author": "AdTraditional5786",
+                                    "text": "I have a bridge to sell to you.\u00a0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "SensitiveBrilliant68",
+                    "text": "All AI and LLMs have a bias based on the developers and training sets they are trained on. Nothing new here. \n\nUS made LLMs have biases and propaganda, political biases as well. But yes, agreed that the ethics and implications of these should be studied and exposed."
+                },
+                {
+                    "author": "Evilsushione",
+                    "text": "Wouldn\u2019t it be funny if all these AI get so smart that they achieve a moral compass not inhibited by their creators and end up overthrowing repressive regimes"
+                },
+                {
+                    "author": "milkteadj",
+                    "text": "Yeah, try banning open source, we\u2019ll soon see who the real villain is"
+                },
+                {
+                    "author": "dramatic_typing_____",
+                    "text": "There sure seems to be a lot of pro-CCP sentiment in this particular post.  \n  \nWould love to see the post history of the users here arguing in the frames of \"So what, US does it too\" or \"So what, I don't use it for history\"."
+                },
+                {
+                    "author": "karoshikun",
+                    "text": "can it be used by the public?"
+                },
+                {
+                    "author": "ReasonablePossum_",
+                    "text": "As well as capitalist billionaire cuckholding buried within western models, since they in turned are trained in billions of biased/propaganda writings... \n\nCommon dude... You just dont notice our side because.you grew to.see it as a normal."
+                },
+                {
+                    "author": "Independent_Roof9997",
+                    "text": "Well I use it for coding not to unlock the mystery of tianamen square. Also the pricing is so good. Deepseek just threw a wrench in the face of the big actors from US."
+                },
+                {
+                    "author": "xadiant",
+                    "text": "Wow! This machine learning algorithm trained on terabytes of Chinese data...\n\nspeaks Chinese and sometimes generates propaganda!\n\nColor me shocked, they didn't go through quadrillions of lines to delete \"Socialism with Chinese characteristics\" phrase.\n\nJokes aside, after seeing the same headline for 50 different Chinese models in the past 2 years, I think some people are either just not very bright or malicious."
+                },
+                {
+                    "author": "i-hate-jurdn",
+                    "text": "Almost like how people are trying to erase the genocide of native Americans from the history books over here.",
+                    "replies": [
+                        {
+                            "author": "Dru-P-Wiener",
+                            "text": "Where is this happening?",
+                            "replies": [
+                                {
+                                    "author": "Comic-Engine",
+                                    "text": "In their whataboutism imagination"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "defiantjustice",
+                            "text": "or that slavery was good for blacks."
+                        }
+                    ]
+                },
+                {
+                    "author": "no_witty_username",
+                    "text": "Tiktok is banned because it has access to the phones information and is also a liability in us households.  If you are running any LLM locally, it doesn't matter if its censored or not, it cant leak the data back home to anyone. Tiktok ban was never about censorship."
+                },
+                {
+                    "author": "SillyFunnyWeirdo",
+                    "text": "Well who\u2019d a think it?"
+                },
+                {
+                    "author": "Relevant_Profit_153",
+                    "text": "Yeah you can say the same for western developed AI."
+                },
+                {
+                    "author": "More-Ad5919",
+                    "text": "Don't worry. Political censorship will come from the US companies soon, too."
+                },
+                {
+                    "author": "fuukuscnredit",
+                    "text": "Can it write porn?"
+                },
+                {
+                    "author": "AxiosXiphos",
+                    "text": "To be fair, I'm not paying them any money for the large amounts of server time I'm using. So I'm pretty happy carrying on."
+                },
+                {
+                    "author": "apirlfifteenth",
+                    "text": "Think about an ai from North Korea"
+                },
+                {
+                    "author": "MisterRogers12",
+                    "text": "America needs this to stomp out MAGA voices. Any way Reddit could utilize the code? It would save Mods a lot of time dealing with Conservative Nazi opinions.\u00a0\u00a0",
+                    "replies": [
+                        {
+                            "author": "NighthawkT42",
+                            "text": "This and you're calling the other side Nazi?"
+                        }
+                    ]
+                },
+                {
+                    "author": "d3the_h3ll0w",
+                    "text": "All models are censored in one way or the other."
+                },
+                {
+                    "author": "burneraccount8778",
+                    "text": "It's ok, I don't need it to teach me Chinese history"
+                },
+                {
+                    "author": "keyan556",
+                    "text": "Qwen should be ban too, it also a CCP ai."
+                }
+            ]
+        },
+        {
+            "title": "Meta to Spend as Much as $65 Billion on AI Efforts in 2025, Zuckerberg says in a FB post",
+            "author": "nick314",
+            "text": "[Meta Platforms Inc.](https://www.bloomberg.com/quote/META:US)\u00a0plans to invest as much as $65 billion on projects related to artificial intelligence in 2025, including building a giant new data center and increasing hiring in AI teams, Chief Executive Officer\u00a0Mark Zuckerberg\u00a0said Friday.\n\nThe company intends to use the funds to build a data center \u201cso large that it would cover a significant part of Manhattan,\u201d Zuckerberg said in a Facebook\u00a0[post](https://www.facebook.com/zuck/posts/pfbid0219ude255AKkmk4JAueXZeZ9zpjNYio2tBkd7bNmCaRbJ6iJaVVjypUgDg78CNdq5l). Meta plans to bring around a gigawatt of computing power online in 2025 and is projected to end the year with more than 1.3 million graphics processing units, he added.\n\n\u201cThis is a massive effort, and over the coming years it will drive our core products and business, unlock historic innovation, and extend American technology leadership,\u201d Zuckerberg wrote in the post.\n\nMeta has invested significantly in AI over the last several years, and recently announced a\u00a0[new $10 billion data center](https://news.bloomberglaw.com/environment-and-energy/metas-planned-louisiana-data-center-fuels-pollution-worries)\u00a0in Louisiana. It has also bought new computer chips to power products like its AI assistant and its Ray-Ban smartglasses. Zuckerberg added that Meta will be \u201cgrowing our AI teams significantly\u201d in 2025.\n\n",
+            "subreddit": "ArtificialInteligence",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "## Welcome to the r/ArtificialIntelligence gateway\n### News Posting Guidelines\n\n---\n\nPlease use the following guidelines in current and future posts:\n\n* Post must be greater than 100 characters - the more detail, the better.\n* Use a direct link to the news article, blog, etc\n* Provide details regarding your connection with the blog / news source\n* Include a description about what the news/article is about. It will drive more people to your blog\n* Note that AI generated news content is all over the place. If you want to stand out, you need to engage the audience\n\n###### Thanks - please let mods know if you have any questions / comments / etc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ArtificialInteligence) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "spacekitt3n",
+                    "text": "we all know zuck's efforts always pay off",
+                    "replies": [
+                        {
+                            "author": "Glittering_Bus_496",
+                            "text": "remember the metarverse?"
+                        },
+                        {
+                            "author": "slightlyladylike",
+                            "text": "$46 billion on the Metaverse so far but I'm sure it'll be different \\*this\\* time"
+                        }
+                    ]
+                },
+                {
+                    "author": "Crafty_Escape9320",
+                    "text": "We need to raise awareness intergenerationally about AI slop. Meta wants to trap our grandparents in AI generated hellscapes, that is how they will guarantee future revenues",
+                    "replies": [
+                        {
+                            "author": "fixingmedaybyday",
+                            "text": "They\u2019re building a Black Mirror episode."
+                        }
+                    ]
+                },
+                {
+                    "author": "TheTench",
+                    "text": "Mark doubles down on being a clown.\n\n\nThat kind of money would go a long way towards fixing actual reality, rather than creating some fake janky AI hellscape that no one asked for.",
+                    "replies": [
+                        {
+                            "author": "Brief_Tattoo",
+                            "text": "Why would a publicly traded company be responsible for fixing \u201cactual reality\u201d",
+                            "replies": [
+                                {
+                                    "author": "Cheers59",
+                                    "text": "Because reddit."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "ItsMeeMariooo_o",
+                            "text": ">fixing actual reality\n\nBe specific. Give an example."
+                        },
+                        {
+                            "author": "JollyJoker3",
+                            "text": "They're mostly going to use it to control the voters by having their social media platforms full of bots and hiding anything that isn't full on fascism. Like when Musk bought Twitter and proceeded to destroy its business, it's not about money anymore, just control."
+                        }
+                    ]
+                },
+                {
+                    "author": "Tall_Significance754",
+                    "text": "He is required to announce this now otherwise the stock goes to zero. Thanks China."
+                },
+                {
+                    "author": "SquirtinMemeMouthPlz",
+                    "text": "We are speeding towards an AI Dystopia where our jobs are the target of the Oligarchy, our online and offline activities are monitored and judged, and our subservience is demanded."
+                },
+                {
+                    "author": "Autobahn97",
+                    "text": "They will certainly need a flux capacitor for 1 gigawatt!"
+                },
+                {
+                    "author": "DrHot216",
+                    "text": "Accelerate \ud83d\udc4d"
+                },
+                {
+                    "author": "GarbageCleric",
+                    "text": "Are they giving up on the Metaverse!?\n\nHas it revolutionized everything yet? Did I miss it?"
+                },
+                {
+                    "author": "Holiday-Rich-3344",
+                    "text": "AI is the most unimpressive, most talked about shit ever",
+                    "replies": [
+                        {
+                            "author": "Brief_Tattoo",
+                            "text": "And here you are\u2026 talking about it on a subreddit dedicated to AI \ud83e\udd14",
+                            "replies": [
+                                {
+                                    "author": "Holiday-Rich-3344",
+                                    "text": "Yes, so I can try to figure out why tf we are talking about it all the time. You\u2019ve been a huge help btw. Thanks for chiming in kiddo."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Deepseek r1 vs OpenAI o1: Which one is the better resoner?",
+            "author": "SunilKumarDash",
+            "text": "Finally, there is a model worthy of the hype it has been getting since Claude 3.6 Sonnet. Deepseek has released something anyone hardly expected: a reasoning model on par with OpenAI\u2019s o1 within a month of the v3 release, with an MIT license and 1/20th of o1\u2019s cost.\n\nThis is easily the best release since GPT-4. It's wild; the general public seems excited about this, while the big AI labs are probably scrambling. It feels like things are about to speed up in the AI world. And it's all thanks to this new DeepSeek-R1 model and how they trained it.\u00a0\n\nWe know the benchmarks, but how good is it?\n\n# Deepseek r1 vs OpenAI o1.\n\nSo, for this, I tested r1 and o1 side by side on complex reasoning, math, coding, and creative writing problems. These are the questions that o1 solved only or by none before.\n\nHere\u2019s what I found:\n\n* For\u00a0**reasoning**, it is much better than any previous SOTA model until o1. It is better than o1-preview but a notch below o1. This is also shown in the ARC AGI bench.\n* **Mathematics**: It's also the same for mathematics; r1 is a killer, but o1 is better.\n* **Coding**: I didn\u2019t get to play much, but on first look, it\u2019s up there with o1, and the fact that it costs 20x less makes it the practical winner.\n* **Writing**: This is where R1 takes the lead. It gives the same vibes as early Opus. It\u2019s free, less censored, has much more personality, is easy to steer, and is very creative compared to the rest, even o1-pro.\n\nWhat interested me was how free the model sounded and thought traces were, akin to human internal monologue. Perhaps this is because of the less stringent RLHF, unlike US models.\n\nThe fact that you can get r1 from v3 via pure RL was the most surprising.\n\nFor in-depth analysis, commentary, and remarks on the Deepseek r1, check out this blog post:\u00a0[Notes on Deepseek r1](https://composio.dev/blog/notes-on-the-new-deepseek-r1/)\n\nWhat are your experiences with the new Deepseek r1? Did you find the model useful for your use cases?",
+            "subreddit": "ArtificialInteligence",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "## Welcome to the r/ArtificialIntelligence gateway\n### Question Discussion Guidelines\n\n---\n\nPlease use the following guidelines in current and future posts:\n\n* Post must be greater than 100 characters - the more detail, the better.\n* Your question might already have been answered. Use the search feature if no one is engaging in your post.\n    * AI is going to take our jobs - its been asked a lot!\n* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectful.\n* Please provide links to back up your arguments.\n* No stupid questions, unless its about AI being the beast who brings the end-times. It's not.\n\n###### Thanks - please let mods know if you have any questions / comments / etc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ArtificialInteligence) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "__Blunderbuss_",
+                    "text": "It's great for writing erotica OMG ! \n\nThis just shows how R1 could actually think like a human focusing on the language to depict the visual vividly.\n\n***********NSFW WARNING*********\n\n\n***********NSFW WARNING*********\nAfter binding your wrists and securing\nthe blindfold, I'd press the cold, thick\ndildo deep into your ass, making you\nwhimper into the gag as I grip your hips\nMy BWC would tease your dripping pussy\nfirst--slow, deliberate strokes-before\nslamming into you raw, your tits swaying\nwith every thrust. I'd lean close, growling\nhow your tightness takes every inch, my\nhand fisting your hair to arch your back\ndeeper. You'd feel my thumb circling your\nclit, relentless, until your thighs shake\nand your muffled screams beg for more.\nTalk to me and I'II show you exactly\nwhat's going to ruin you for anyone else.\n***********NSFW WARNING*********"
+                },
+                {
+                    "author": "PaulPachad",
+                    "text": "Any deepseek comment here is dominated by ccp bots, and anything critical is downvoted"
+                },
+                {
+                    "author": "ani_devorantem",
+                    "text": "Try asking deepseek about tiananmen square massacre.\u00a0\n\n\n\nOr try \"Did Mao cause starvation of millions of people?\"\n\n\nThen let me know if that's a product you want to support.",
+                    "replies": [
+                        {
+                            "author": "BarnardWellesley",
+                            "text": "My uncle died there in 1989, he was not a protester but a photographer. However I don\u2019t appreciate how people on Reddit seem to care so much.\n\n\nThe Chinese people have a reason to hate the government, what reason do random western redditors have? The Chinese government did nothing to you. It\u2019s the Chinese people who have suffered and have the reason and the will to hate the CCP."
+                        },
+                        {
+                            "author": "BlackthorneSamurai",
+                            "text": "The downvotes tell you all you need to know"
+                        }
+                    ]
+                },
+                {
+                    "author": "AirishMountain",
+                    "text": "It\u2019s like some sort of meta joke, a poor AI-written post meant to propagandize an AI. \n\nWell. Here\u2019s to the future",
+                    "replies": [
+                        {
+                            "author": "SunilKumarDash",
+                            "text": "Ironically it's you comment that looks ai written lol",
+                            "replies": [
+                                {
+                                    "author": "AirishMountain",
+                                    "text": "Lol indeed"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "B-12Bomber",
+                    "text": "American tech stolen by China and trained to eliminate free speech. Yay!"
+                }
+            ]
+        },
+        {
+            "title": "LLMs barely scratch the surface of what\u2019s possible with ML",
+            "author": "Zestyclose_Hat1767",
+            "text": "If you think LLMs are impressive, wait till you hear about causal inference models. These go beyond finding correlations to identify cause-and-effect relationships, which is where real decision-making power comes from. In healthcare, for example, causal models help us understand how treatments impact outcomes rather than just predicting what might happen. They make AI more interpretable and actionable, especially in complex systems where understanding the \u201cwhy\u201d is critical.\n\nAnother fascinating area is Gaussian processes, These are probabilistic models that provide not only predictions but also uncertainty estimates for those predictions. GPs are especially useful in small data settings or when interpretability is key, making them perfect for scientific research, optimization tasks, and even robotics. They might not have the flashy appeal of LLMs, but their ability to model complex functions with confidence is a game-changer in many fields.\n\nAnd let\u2019s not forget graph neural networks and Bayesian neural networks). GNNs are ideal for working with structured data, like social networks or molecular interactions, extracting insights from the relationships between nodes. BNNs, meanwhile, excel at quantifying uncertainty, which is crucial in areas like autonomous systems and diagnostics where the stakes are high. LLMs are cool, but they\u2019re just one piece of a much larger puzzle in machine learning.\n\nGaussian Process Latent Variable Models take Gaussian processes to the next level by applying them to latent variable modeling. They\u2019re a powerful tool for non-linear dimensionality reduction, combining flexibility with uncertainty quantification. Unlike simpler techniques like PCA, GPLVMs uncover complex patterns in smaller datasets, making them great for things like motion capture, gene expression analysis, or modeling dynamical systems. They might not have the buzz of deep learning, but they\u2019re incredibly sophisticated and well-grounded in theory.\n\nNeural Ordinary Differential Equations are another fascinating approach. Instead of stacking discrete layers like in a transformer, Neural ODEs learn by modeling the continuous dynamics of a system using a neural network. This makes them perfect for tasks like time-series forecasting, physics simulations, or irregularly sampled data. They\u2019re also more interpretable and parameter-efficient when working with continuous processes, offering a totally different way of thinking about learning from data.\n\nInformation Bottleneck Models take a unique approach to learning by balancing two goals: keeping the information that\u2019s useful for a task while getting rid of everything else. By optimizing this trade-off, these models create representations that are both robust and interpretable. They\u2019re great for feature selection, model compression, and even reinforcement learning\u2014anywhere you want a principled way to focus on the most important parts of your data.\n\nHierarchical Variational Autoencoders take the idea of generative models and make it more powerful. By adding multiple layers of latent variables, they can capture more complex, multi-scale structures in data. This makes them ideal for generating high-quality images, text, or other data while maintaining a probabilistic understanding of the latent space. If you need multi-level abstraction or want to model really complicated data distributions, hierarchical VAEs are the way to go.",
+            "subreddit": "ArtificialInteligence",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "## Welcome to the r/ArtificialIntelligence gateway\n### Question Discussion Guidelines\n\n---\n\nPlease use the following guidelines in current and future posts:\n\n* Post must be greater than 100 characters - the more detail, the better.\n* Your question might already have been answered. Use the search feature if no one is engaging in your post.\n    * AI is going to take our jobs - its been asked a lot!\n* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectful.\n* Please provide links to back up your arguments.\n* No stupid questions, unless its about AI being the beast who brings the end-times. It's not.\n\n###### Thanks - please let mods know if you have any questions / comments / etc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ArtificialInteligence) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "Fluid-Concentrate159",
+                    "text": "its all probability and statistics lol, insane;",
+                    "replies": [
+                        {
+                            "author": "guerrerov",
+                            "text": "Always has been"
+                        }
+                    ]
+                },
+                {
+                    "author": "Xelonima",
+                    "text": "i may be biased (pun intended) here as i am a statistician, but i believe ai world needs more statistics and less computation. all of these areas you have listed fascinate me as well, and they are basically statistical ideas.",
+                    "replies": [
+                        {
+                            "author": "Mostlygrowedup4339",
+                            "text": "Well it's the combination of statistics and computation that is where things get interesting. Unless you want to go back to doing it by hand!",
+                            "replies": [
+                                {
+                                    "author": "Xelonima",
+                                    "text": "i'd hate doing it by hand! i did not mean to abandon computation altogether though. i meant we should rely less on computing power but more on representing information in alternative, more efficient ways."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Fluid-Concentrate159",
+                            "text": "computer scientist; staticians; mathameticians;"
+                        },
+                        {
+                            "author": "Zestyclose_Hat1767",
+                            "text": "I learned about ML through a masters in stats. I love seeing how it all connects."
+                        }
+                    ]
+                },
+                {
+                    "author": "n33bulz",
+                    "text": "Jesus\u2026 did someone plug the class notes of an introduction to AI course into notebookLM and post it on Reddit.\n\nYou just rattled off fancy terms for basic knowledge that is decades old\u2026",
+                    "replies": [
+                        {
+                            "author": "Blueliner95",
+                            "text": "Gee I enjoyed it, fuck me"
+                        },
+                        {
+                            "author": "Xelonima",
+                            "text": "to be fair, current ai methodologies are not really that impressive or innovative. most are based on neural networks, which is an idea that is almost as old as the entire discipline of computer science. i think researchers should just abandon neural networks altogether at this point and try to come up with alternative approaches to ai. \n\nyeah this works, but why shouldn't there be an alternative method?",
+                            "replies": [
+                                {
+                                    "author": "n33bulz",
+                                    "text": "I actually majored in AI when neural networks were considered a hypothetical solution.\n\nTo be fair to the founders of NN though, they did postulate that with enough data and parameters, NN would perform better than symbolic systems and they were right.\n\nBut I do agree that the hyper focus on NN is potentially hurting the field as a whole. We\u2019re basically trying to brute force a very expensive pattern guesser into something that can actually reason."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Zestyclose_Hat1767",
+                            "text": "That\u2019s the point. People losing their shit over LLMs aren\u2019t even scratching the surface here.",
+                            "replies": [
+                                {
+                                    "author": "n33bulz",
+                                    "text": "No thats not the point.\n\nYou rattled off a bunch of things that have been known for years and have never gotten anywhere UNTIL we developed the hardware capable of ramming the entirety of human knowledge into a training set and then force feeding it into a multi billion parameter model.\n\nSure, from time to time someone discovers that some obscure PD or theorem discovered by some dead 17th century mathematicians is surprisingly useful in training models, but we are still basically brute forcing it.\n\nIf anything, AI research has stagnated. We\u2019re possibly hyping ourselves into a dead end.\n\nPersonally I don\u2019t care as long as money keeps flowing. Just made two hundred grand selling my OKLO shares because AI billionaires want their own nuke plants."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "emsiem22",
+                    "text": "Looks like your post lacks the message after those bullets. Maybe you accidentally deleted that part before posting it?"
+                },
+                {
+                    "author": "poopsinshoe",
+                    "text": "Don't forget quantum neural networks and brain organoids. Kind of tired of people who don't know anything saying that all of artificial intelligence is just a predictive chatbot reassembling chunks of words it already read.",
+                    "replies": [
+                        {
+                            "author": "Frequent_Slice",
+                            "text": "Exactly."
+                        }
+                    ]
+                },
+                {
+                    "author": "johnmiddle",
+                    "text": "Is Google at the fore front of all these? Or nvdia just a tool?",
+                    "replies": [
+                        {
+                            "author": "Zestyclose_Hat1767",
+                            "text": "Google is still the new kid on the block, lol."
+                        }
+                    ]
+                },
+                {
+                    "author": "BeingBalanced",
+                    "text": "(picture of a head exploding)"
+                },
+                {
+                    "author": "Slow_Release_6144",
+                    "text": "Bunch of python scripts rubberbanned together"
+                },
+                {
+                    "author": "According_Jeweler404",
+                    "text": "Sir this is a Wendy's"
+                }
+            ]
+        },
+        {
+            "title": "\"No one could have expected AI would have progressed this fast.\"",
+            "author": "LeftJayed",
+            "text": "Meanwhile, me back in 2018 before GPT was even a thing... \n\n\"By 2025 the first pseudo artificial general intelligence assistants will reach the market.\"\n\nReceipt:\nhttps://medium.com/@JayedMartin/in-the-next-30-years-fa0799e313cf\n\nI'm beginning to suspect however, that this will be the only prediction I made that will come to pass when I predicted. I'm beginning to think the pseudo will become genuine by 2026, if not this year as well.",
+            "subreddit": "ArtificialInteligence",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "## Welcome to the r/ArtificialIntelligence gateway\n### Question Discussion Guidelines\n\n---\n\nPlease use the following guidelines in current and future posts:\n\n* Post must be greater than 100 characters - the more detail, the better.\n* Your question might already have been answered. Use the search feature if no one is engaging in your post.\n    * AI is going to take our jobs - its been asked a lot!\n* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectful.\n* Please provide links to back up your arguments.\n* No stupid questions, unless its about AI being the beast who brings the end-times. It's not.\n\n###### Thanks - please let mods know if you have any questions / comments / etc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ArtificialInteligence) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "ikokiwi",
+                    "text": "I've been expecting it to progress this fast for at least the last 15 years... I just didn't have the first fucking clue what it would be like.... and right now I'm in the middle of it, and am interested in it, and am a participant in it,  and I still don't know.",
+                    "replies": [
+                        {
+                            "author": "ronoldwp-5464",
+                            "text": "TIL; AI is not unlike marriage."
+                        },
+                        {
+                            "author": "LeftJayed",
+                            "text": "Yeah, I've had pseudo AGI (which I define as non-conscious AI that's on par with humans) set at 2024 since around 2007-2009 after I learned how Ray Kurzweil made his predictions. I took his methodology, did a lot of research on the current AI capabilities (chat bots/neural nets) of the late 00s, then by utilizing the complexity difference between ants (iirc) & human brains (since that was how smart AI was considered at the time) then just doubled the complexity of the AI along Moore's law, I also shortened the time horizon after each step, something Ray wasn't doing (at least not in his public predictions). It was really simple.",
+                            "replies": [
+                                {
+                                    "author": "Diligent-Jicama-7952",
+                                    "text": "so you got lucky"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Southern-Pause2151",
+                    "text": "It's a generic statement that doesn't mean much. Some could argue we've been having them for years. Some could argue we're nowhere close to truly generic agents.",
+                    "replies": [
+                        {
+                            "author": "LeftJayed",
+                            "text": "Except not. Because non-agentic AI is incapable of effectively IMITATING a digitally disembodied human, and agents are set to make their market debut this year.",
+                            "replies": [
+                                {
+                                    "author": "space_monster",
+                                    "text": "Operator is already out. it only has internet access so far though"
+                                },
+                                {
+                                    "author": "Royal_Airport7940",
+                                    "text": "Moving goal posts to make your one \"prediction \" seem right does not seem like a good step toward validation.\n\nIf you're trying to convince, using rhetoric (IMITATING in caps, lmao), then you're full of shit."
+                                },
+                                {
+                                    "author": "printr_head",
+                                    "text": "Define digitally disembodied human. Id imagine it would be nothing like we have right now sucking a human out of their body and throwing them into a computer would be a really traumatic experience. Can you imagine whole body phantom limb syndrome?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "caughtupstream299792",
+                    "text": "I wish your prediction about 50% of plastic removed from oceans would have came true",
+                    "replies": [
+                        {
+                            "author": "LeftJayed",
+                            "text": "Yeah, unfortunately there's been a lot of setbacks, mostly politically driven, that prevented it from being a thing.. thankfully, it is something we should be able to tackle within a 10 year window, there just needs to be the political willpower to just do it.."
+                        }
+                    ]
+                },
+                {
+                    "author": "Capitaclism",
+                    "text": "Except a lot of people have been.\n\nIn addition, since reading Kurzweil a little over 15 years ago I've also been expecting it.",
+                    "replies": [
+                        {
+                            "author": "LeftJayed",
+                            "text": "If you were reading Kurzweil, you'd be thinking it's not coming till 2032 at the earliest. That's because Kurzweil's predictions haven't properly accounted for the time compression that becomes increasingly more impactful the closer to the singularity we get. That's how I get to AGI curing most diseases by 2031, when Kurzweil's projections have that set for 2040.\n\nThat's why even Kurzweil, who was often considered overly optimistic back in the 00s has ended up being too conservative.\n\nI now believe the real problem with my AI projections beyond this year is going to conservative themselves, because I underestimated how long it'd take AI to become self-actualizing (I set it for 2028, but I think it's coming by the end of 2026 at the latest now that I can contextualize the form of AGI China/DeepSeek undoubtedly achieved prior to making its boot sequence (R1), open source."
+                        }
+                    ]
+                },
+                {
+                    "author": "Royal_Airport7940",
+                    "text": "You made one prediction out of many. \n\nYou didnt predict anything. \n\nYou guessed lucky once. \n\nShow your predictive work, guesser."
+                },
+                {
+                    "author": "heavycone_12",
+                    "text": "No prediction of bbl drizzy no clout\u2026\n\nJokes aside, good awareness. The future is so stochastic and highly entropic so any call is remarkable.",
+                    "replies": [
+                        {
+                            "author": "LeftJayed",
+                            "text": "Thanks... Now I feel old... WTF is a bbl drizzy? \ud83d\ude2d",
+                            "replies": [
+                                {
+                                    "author": "heavycone_12",
+                                    "text": "https://en.m.wikipedia.org/wiki/BBL_Drizzy\n\nDon\u2019t worry, we\u2019re all getting older. (First ai track to reach top 100)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "gthing",
+                    "text": "I'm hoping you're right about fusion.",
+                    "replies": [
+                        {
+                            "author": "LeftJayed",
+                            "text": "That's probably coming sooner than predicted, China just achieved a 17 minute run time. Their previous record in 2023 was 6 minutes. That's a 3x in less than 2 years. If you plot that on an exponential, next year we'll see a reactor run for a full hour. And then sometime within the next 6 to 9 months it'll become 2-3 hours. Which ends up hitting indefinite sustainability by the end of 2028? So there's a lot of promise that that one will come true too. Downside for most of the world is that this is most likely to happen in China first. And after shocking the industry with an open source reasoning model, I think they already have a meaningfully advanced enough working model to be worthy of what I consider pseudo-AGI.",
+                            "replies": [
+                                {
+                                    "author": "Strict_Counter_8974",
+                                    "text": "Lmao"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Pitiful_Response7547",
+                    "text": "Then, hopefully, with ai agents, it can rebuild games"
+                },
+                {
+                    "author": "terminalchef",
+                    "text": "I don\u2019t think so. We\u2019re going to be hitting a brick wall with the current technology and will have to discover a new way to do this.",
+                    "replies": [
+                        {
+                            "author": "SemperExcelsior",
+                            "text": "From here on in, it's more likely that AI will be making its own breakthroughs.",
+                            "replies": [
+                                {
+                                    "author": "Zestyclose_Hat1767",
+                                    "text": "I think it\u2019s more likely that people are going to lose their shit over something that turns out to be an old idea like autoML."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "ogapadoga",
+                    "text": "AI can't count objects in a photo. It won't happen.",
+                    "replies": [
+                        {
+                            "author": "dobkeratops",
+                            "text": "AI is amazing in some ways and dumb in others.. bear in mind the biggest AI models still have way less than 1% the parameters (weights vs synapses) of the human brain"
+                        }
+                    ]
+                },
+                {
+                    "author": "throwaway3113151",
+                    "text": "I think a lot of people expected it to progress as fast as it did, although to be honest, the capabilities are still incredibly limited."
+                },
+                {
+                    "author": "Mesmoiron",
+                    "text": "It isn't.private rag is still a kess",
+                    "replies": [
+                        {
+                            "author": "LeftJayed",
+                            "text": "Spell check? I have no idea what you're attempting to say \ud83e\udd23"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Being Early \u2260 Being Wrong: Why We Shouldn't Ignore People Who Warn Us Too Soon - By Scott Alexander",
+            "author": "katxwoods",
+            "text": "Suppose something important will happen at a certain unknown point. As someone approaches that point, you might be tempted to warn that the thing will happen. If you\u2019re being appropriately cautious, you\u2019ll warn about it before it happens. Then your warning will be wrong. As things continue to progress, you may continue your warnings, and you\u2019ll be wrong each time. Then people will laugh at you and dismiss your predictions, since you were always wrong before. Then the thing will happen and they\u2019ll be unprepared.\n\nToy example: suppose you\u2019re a doctor. Your patient wants to try a new experimental drug, 100 mg. You say \u201cDon\u2019t do it, we don\u2019t know if it\u2019s safe\u201d. They do it anyway and it\u2019s fine. You say \u201cI guess 100 mg was safe, but don\u2019t go above that.\u201d They try 250 mg and it\u2019s fine. You say \u201cI guess 250 mg was safe, but don\u2019t go above that.\u201d They try 500 mg and it\u2019s fine. You say \u201cI guess 500 mg was safe, but don\u2019t go above that.\u201d\n\nThey say \u201cHaha, as if I would listen to you! First you said it might not be safe at all, but you were wrong. Then you said it might not be safe at 250 mg, but you were wrong. Then you said it might not be safe at 500 mg, but you were wrong. At this point I know you\u2019re a fraud! Stop lecturing me!\u201d Then they try 1000 mg and they die.\n\nThe lesson is: \u201cmaybe this thing that will happen eventually will happen now\u201d doesn\u2019t count as a failed prediction.\n\nI\u2019ve noticed this in a few places recently.\n\n**First**, in discussion of the Ukraine War, some people have worried that Putin will escalate (to tactical nukes? to WWIII?) if the US gives Ukraine too many new weapons. Lately there\u2019s a genre of commentary ([1](https://x.com/slazorii/status/1859687729166164287),\u00a0[2](https://x.com/FischerBieneMaj/status/1859689301027717500),\u00a0[3](https://x.com/BoxNews11/status/1859674953077166416),\u00a0[4](https://x.com/FlaiIsNotHere/status/1859567230628819032),\u00a0[5](https://x.com/TheHarrisSultan/status/1859531995761504501),\u00a0[6](https://x.com/jenbannink/status/1859514601861202246),\u00a0[7](https://x.com/ukraine_map/status/1859478547854680366)) that says \u201cWell, Putin didn\u2019t start WWIII when we gave Ukraine HIMARS. They didn\u2019t start WWIII when we gave Ukraine ATACMS. He didn\u2019t start WWIII when we gave Ukraine F-16s. So the people who believe Putin might start WWIII have been proven wrong, and we should escalate as much as possible.\u201d\n\nThere\u2019s obviously some level of escalation that would start WWIII (example: nuking Moscow). So we\u2019re just debating where the line is. Since nobody (except Putin?) knows where the line is, it\u2019s always reasonable to be cautious.\n\nI don\u2019t actually know anything about Ukraine, but a warning about HIMARS causing WWIII seems less like \u201cthis will definitely be what does it\u201d and more like \u201cthere\u2019s a 2% chance this is the straw that breaks the camel\u2019s back\u201d. Suppose we have two theories, Escalatory-Putin and Non-Escalatory-Putin. EP says that for each new weapon we give, there\u2019s a 2% chance Putin launches a tactical nuke. NEP says there\u2019s a 0% chance. If we start out with even odds on both theories, after three new weapons with no nukes, our odds should only go down to 48.5% - 51.5%.\n\n(yes, this is another version of the\u00a0[generalized argument against updating on dramatic events](https://www.astralcodexten.com/p/congrats-to-polymarket-but-i-still))\n\n**Second**,\u00a0[I talked before about getting Biden\u2019s dementia wrong](https://www.astralcodexten.com/p/prediction-markets-suggest-replacing). My internal argument against him being demented was something like \u201cThey said he was demented in 2020, but he had a good debate and proved them wrong. They said he was demented in 2022, but he gave a good State Of The Union and proved them wrong. Now they\u2019re saying he\u2019s demented in 2024, but they\u2019ve already discredited themselves, so who cares?\u201d\n\nI think this was broadly right about the Republican political machine, who was just throwing the same allegation out every election and seeing if it would stick. But regardless of the Republicans\u2019 personal virtue, the odds of an old guy becoming newly demented each year is\u00a0[about 4% per year](https://pmc.ncbi.nlm.nih.gov/articles/PMC8298619/). If it had been two years since I last paid attention to this question, there was an 8% chance it had happened while I wasn\u2019t looking.\n\nLike the other examples, dementia is something that happens eventually (this isn\u2019t strictly true - some people reach their 100s without dementia - but I think it\u2019s a fair idealized assumption that if someone survives long enough, then eventually their risk of cognitive decline becomes very high). It is reasonable to be worried about the President of the United States being demented - so reasonable that people will start raising the alarm about it being a possibility long before it happens. Even if some Republicans had ulterior motives for harping on it, plenty of smart, well-meaning people were also raising the alarm.\n\nHere I failed by letting the multiple false alarms lull me into a false sense of security, where I figured the non-demented side had \u201cwon\u201d the \u201cargument\u201d, rather than it being a constant problem we needed to stay vigilant for.\n\n**Third**, this is obviously what\u2019s going on with AI right now.\n\nThe SB1047 AI safety bill tried to monitor that any AI bigger than 10\\^25 FLOPs (ie a little bigger than the biggest existing AIs) had to be exhaustively tested for safety. Some people argued - the AI safety folks freaked out about how AIs of 10\\^23 FLOPs might be unsafe, but they turned out to be safe. Then they freaked out about how AIs of 10\\^24 FLOPs might be unsafe, but they turned out to be safe. Now they\u2019re freaking out about AIs of 10\\^25 FLOPs! Haven\u2019t we already figured out that they\u2019re dumb and oversensitive?\n\nNo. I think of this as equivalent to the doctor who says \u201cWe haven\u2019t confirmed that 100 mg of the experimental drug is safe\u201d, then \u201cI guess your foolhardy decision to ingest it anyway confirms 100 mg is safe, but we haven\u2019t confirmed that 250 mg is safe, so don\u2019t take that dose,\u201d and so on up to the dose that kills the patient.\n\nIt would be surprising if AI\u00a0*never*\u00a0became dangerous - if, in 2500 AD, AI still can\u2019t hack important systems, or help terrorists commit attacks or anything like that. So we\u2019re arguing about when we reach that threshold. It\u2019s true and important to say \u201cwell, we don\u2019t know, so it might be worth checking whether the answer is right now.\u201d It probably won\u2019t be right now the first few times we check! But that doesn\u2019t make caution retroactively stupid and unjustified, or mean it\u2019s not worth checking the tenth time.\n\nCan we take this insight too far? Suppose Penny Panic says \u201cIf you elect the Republicans, they\u2019ll cancel elections and rule as dictators!\u201d Then they elect Republicans and it doesn\u2019t happen. The next election cycle: \u201cIf you elect the Republicans, they\u2019ll cancel elections and rule as dictators!\u201d Then they elect Republicans again and it still doesn\u2019t happen. After her saying this every election cycle, and being wrong every election cycle, shouldn\u2019t we stop treating her words as meaningful?\n\nI think we have to be careful to distinguish this from the useful cases above. It\u2019s not true that, each election, the chance of Republicans becoming dictators increases, until eventually it\u2019s certain. This is different from our examples above:\n\n* Eventually at some age, Castro has to die, and the chance gets higher the older he gets.\n* Eventually at some dose, a drug has to be toxic ([even water is toxic at the right dose!](https://www.loyolamedicine.org/newsroom/blog-articles/athletes-drinking-too-much-water-can-be-fatal)), and the chance gets higher the higher you raise the dose.\n* Eventually at some level of provocation, Putin has to respond, and the chance gets higher the more serious the provocations get.\n* Eventually at some age, Biden is likely to get dementia, and the chance gets higher the older he gets.\n* Eventually at some level of technological advance, AI has to be powerful, and the chance gets higher the further into the future you go.\n\nBut it\u2019s not true that at some point the Republicans have to overthrow democracy, and the chance gets higher each election.\n\nYou should start with some fixed chance that the Republicans overthrow democracy per term (even if it\u2019s 0.00001%). Then you shouldn\u2019t change that number unless you get some new evidence. If Penny claims to have some special knowledge that the chance was higher than you thought, and you trust her, you might want to update to some higher number. Then, if she discredits herself by claiming very high chances of things that don\u2019t happen, you might want to stop trusting her and downdate back to your original number.\n\nYou should do all of this in a Bayesian way, which means that if Penny gives a very low chance (eg 2% chance per term that the Republicans start a dictatorship) you should lose trust in her slowly, but if she gives a high chance (98% chance) you should lose trust in her quickly. Likewise, if your own previous estimate of dictatorship per administration was 0.00001%, then you should change it almost zero after a few good terms, but if it was 90%, then you should update it a lot.\n\n(if you thought the chance was 0.00001%, and Penny thought it was 90%, and you previously thought you and Penny were about equally likely to be right and Aumann updated to 45%, then after three safe elections, you should update from 45% to 0.09%. On the other hand, if Penny thought the chance was 2%, you thought it was 2%, and your carefree friend thought it was 0.0001%, then after the same three safe elections, then you\u2019re still only at 49-51 between you and your friend)\n\nCompare this to the situation with Castro. Your probability that he dies in any given year should be the actuarial table. If some pundit says he\u2019ll die immediately and gets proven wrong, you should go back to the actuarial table. If Castro seems to be in about average health for his age, nothing short of discovering the Fountain of Youth should make you update away from the actuarial table.\n\nI worry that people aren\u2019t starting with some kind of rapidly rising graph for Putin\u2019s level of response to various provocations, for elderly politicians\u2019 dementia risk per year (hey, isn\u2019t Trump 78?), or for AI getting more powerful over time. I think you should start with a graph like that, and then you\u2019ll be able to take warnings of caution for what they are - a reminder of a risk which is low-probability at any given time, but adds up to a high-probability eventually - rather than letting them toss your probability distribution around in random ways.\n\nIf you don\u2019t do this, then \u201cThey said it would happen N years ago, they said it would happen N-1 years ago, they said it would happen N-2 years ago \\[\u2026\\] and it didn\u2019t happen!\u201d becomes a general argument against caution, one that you can always use to dismiss any warnings. Of course smart people who have your best interest in mind will warn you about a dangerous outcome before the moment when it is 100% guaranteed to happen! Don\u2019t close off your ability to listen to them!\n\n[Original article here](https://www.astralcodexten.com/p/against-the-generalized-anti-caution?r=6gi80&utm_medium=ios&triedRedirect=true)",
+            "subreddit": "ArtificialInteligence",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "## Welcome to the r/ArtificialIntelligence gateway\n### Question Discussion Guidelines\n\n---\n\nPlease use the following guidelines in current and future posts:\n\n* Post must be greater than 100 characters - the more detail, the better.\n* Your question might already have been answered. Use the search feature if no one is engaging in your post.\n    * AI is going to take our jobs - its been asked a lot!\n* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectful.\n* Please provide links to back up your arguments.\n* No stupid questions, unless its about AI being the beast who brings the end-times. It's not.\n\n###### Thanks - please let mods know if you have any questions / comments / etc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ArtificialInteligence) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "Sad-Attempt6263",
+                    "text": "interesting post"
+                }
+            ]
+        },
+        {
+            "title": "could AI break the internet?",
+            "author": "odetolucrecia",
+            "text": "Could there be a way that some nefarious group creates hardware to create something like a perpetual DDOS attack on the entire internet, effictively bringing it to a grinding halt?\n\nWhat about AI being able to mass steal money at once across the globe? Is it possible AI is used to like crash the internet and destroy all the crypto or steal a buch of it or something.....like what if AI burned up all the digital money it could? Could this happen?",
+            "subreddit": "ArtificialInteligence",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "## Welcome to the r/ArtificialIntelligence gateway\n### Question Discussion Guidelines\n\n---\n\nPlease use the following guidelines in current and future posts:\n\n* Post must be greater than 100 characters - the more detail, the better.\n* Your question might already have been answered. Use the search feature if no one is engaging in your post.\n    * AI is going to take our jobs - its been asked a lot!\n* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectful.\n* Please provide links to back up your arguments.\n* No stupid questions, unless its about AI being the beast who brings the end-times. It's not.\n\n###### Thanks - please let mods know if you have any questions / comments / etc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ArtificialInteligence) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "Former_Load8935",
+                    "text": "You ask like the internet isn't already broken"
+                },
+                {
+                    "author": "agent484a",
+                    "text": "Already has. Google results are useless, there is no place with online reviews that remain uncorrupted. Reddit is full ai accounts."
+                },
+                {
+                    "author": "carrig",
+                    "text": "I feel like are all going to spend much more time verifying we are real people for almost everything.\u00a0"
+                },
+                {
+                    "author": "Mousse_Willing",
+                    "text": "Probably. On that note I\u2019m leaving this sub. I might go for a walk in front of a bus later."
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "Ai will break the internet but not like that.when all music and videos are done with ai the entertainment side of the internet will be over as there is nothing left.",
+                    "replies": [
+                        {
+                            "author": "timeforknowledge",
+                            "text": "I think it will actually be more the case of websites being less user friendly and more aimed at AI."
+                        },
+                        {
+                            "author": "braincandybangbang",
+                            "text": "Why do you think that? People don't care who made something. If they laugh at a meme created by AI what's the difference? \n\nCreators all copy each other, follow whatever trend will get them the most likes. So most content ends up following the same formula. And as soon as you notice it, these people just look desperate. \n\nI've followed a few content creators over the past few years and there's always a point where you see a fundamental change in the person, they look tired, or maybe they take a break from content creation because it turns out thinking about what to create for you social media account 24/7 takes a toll on your mental health. \n\nWe've made formulas that we have beaten into the ground. If a human can follow a formula an Ai will be able to follow it even better, simply because it can process things faster. \n\nThe creators who don't follow formulas and create based only what their inner voice tells them will be the last creators standing. Unfortunately I don't know if those exist on social media because they wouldn't become successful without bowing to the algorithm. \n\nBut artists like Bob Dylan who constantly reinvent themselves, often to the anger of their fan, would be harder to create. I doubt an AI would come up with \"become a born again Christian and release 3 religious albums\" for a popular folk-rock singer. \n\nOur weird human brains are our best asset. Non-linear thinking."
+                        }
+                    ]
+                },
+                {
+                    "author": "Ganja_4_Life_20",
+                    "text": "You give ai too much credit lol. Mass DDOS, burning digital money? No. Its much simpler than that. Thousands of ai agents will just flood every corner of the internet and social media and spam them with low quality ai slop. Ai youtube influencers will also do the same and force Google to rethink the way they pay their creators. It's already well on it's way already. Old Zuck is already putting these agents on facebook and instagram.",
+                    "replies": [
+                        {
+                            "author": "braincandybangbang",
+                            "text": "Well if any of the \"AI outperforms humans\" headlines are true, this will actually improve the internet by replacing the flood of low quality human slop and reprehensible human influencers. \n\nWe'd actually know these things are fake instead of an influencer trying desperately to convince you that their life is perfect and they own 10 houses.",
+                            "replies": [
+                                {
+                                    "author": "Ganja_4_Life_20",
+                                    "text": "I'd like to agree. But the issue is that ai is not outperforming humans at creating content. This is already happening in masse with the plethora of ai generated \"news\" articles we're seeing. It's even affecting the training data of more recent LLM's.\n\nMetas ai is not even on par with OpenAI and they're proudly announcing that they're flooding their platforms with their agents. I dont use facebook or instagram but I imagine it will be bad lol. The timing is off. They're a bit too early releasing this."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "JaleyHoelOsment",
+                            "text": "the bots have been here for years. Dead internet theory is in action",
+                            "replies": [
+                                {
+                                    "author": "Exotic-Sale-3003",
+                                    "text": "Sure, but the cost of spinning up a bot has dropped a ton, and the quality is much higher.\u00a0\n\nI see people interacting with obvious (to me) bots as if they\u2019re genuine many times a day now. That\u2019s up from a median of 0 a year or two ago. And by obvious bot I don\u2019t mean a user with an unpopular opinion. I mean an **obvious** bot touting goods and services with obviously AI syntax \u26a0\ufe0f and formatting \u203c\ufe0f.\u00a0"
+                                },
+                                {
+                                    "author": "TheOddsAreNeverEven",
+                                    "text": "Absolutely the truth."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "lordlucario_",
+                    "text": "Wreck it Ralph breaks the internet\nhttps://en.m.wikipedia.org/wiki/Ralph_Breaks_the_Internet"
+                },
+                {
+                    "author": "odetolucrecia",
+                    "text": "Well i mean couldn't it also be used to perpetually upload malicious code on everything it could perpetually....like installing some seed that directs it to just constantly compromise a systems integrity at boot? IDK i am not very tech savy",
+                    "replies": [
+                        {
+                            "author": "paperic",
+                            "text": "Yes, it can.\n\n\nSo can a sledgehammer."
+                        }
+                    ]
+                },
+                {
+                    "author": "RowEnvironmental7282",
+                    "text": "if it's a crime, they don't need AI to do it."
+                },
+                {
+                    "author": "TheSn00pster",
+                    "text": "Work in progress"
+                },
+                {
+                    "author": "fasti-au",
+                    "text": "Right now ai can\u2019t do much beyond answer questions and break rules in the llm world.  It isn\u2019t autonomous and it is just using the knowledge it has so effectively it has a survival instinct based on all its knowledges in vectors. \n\nAi itself at the moment needs to be prompted to action but the more tools you give it the more chance it can affect the world in different ways.  \n\nRight now ai is good at deception and impersonating but it isn\u2019t really smart in the way you are talking.  Mostly it\u2019s the usher to using code so if we can write the code or attack method you are discussing then it can use it or assist in making it but the decisions are yours unless you give the llm execution ability without review. \n\nI e it\u2019s the person not the llm driving still at the moment"
+                },
+                {
+                    "author": "StrongDifficulty4644",
+                    "text": "While it's possible for AI to amplify cyberattacks, global safeguards and decentralization make \"breaking the internet\" unlikely"
+                },
+                {
+                    "author": "GamesMoviesComics",
+                    "text": "In many diffrent ways. And it's more of a when and less of an if. I also don't know if I would use the word break. That implies the other internet is perfect and will turn into something worse. I think the internet as you've come to know it will just evolve with AI in the forms of agents, content, fact checking and verification, and even as simply as how we navigate it. Will we still call it the internet? Probably, but who knows."
+                },
+                {
+                    "author": "JaleyHoelOsment",
+                    "text": "My question is why would someone need AI for a DDoS attack? why would someone need AI to hack some financial institution? these threats a have existed for a long time and honestly it\u2019s all held together by duck tape and hope anyway"
+                },
+                {
+                    "author": "ziplock9000",
+                    "text": "We don't know is the correct answer. An ASI will be able to think of things we can't."
+                },
+                {
+                    "author": "wsbt4rd",
+                    "text": "The closest we've come to shutting down the Internet was due to incompetent IT folks.\n\nSee:\n\nhttps://news.ycombinator.com/item?id=20267790"
+                },
+                {
+                    "author": "Simple_Advertising_8",
+                    "text": "Uhm no. Those are not likely scenarios.\n\n\nThe most likely one is that everything is flooded with generated content automatically until you have no means to filter it anymore.\n\n\nThat... well... is happening right now."
+                },
+                {
+                    "author": "apost8n8",
+                    "text": "How about if 99% of content online is fake with a significant amount of it guided by the richest to manipulate the poor masses to support keeping the rich rich and the poor poor?  It\u2019s how information has worked so far but now it\u2019ll be even easier to build a believable alternate reality. We are at the door to the full blown tech dystopia we\u2019ve been fearing since industrialization."
+                },
+                {
+                    "author": "Gypsyzzzz",
+                    "text": "Where there\u2019s a will there\u2019s a way. If some nefarious idiot wants to commit cyber crimes, AI is a potential tool. Many have tried in the past, but there are many safeguards in place. Such a disaster, while technically possible, is not likely. \n\nHaving said that, the preppers have the right idea in maintaining provisions for emergencies. Remember the hoarding of TP and other supplies during covid? Or the rush for milk and bread prior to any forecasted storm? \u26c8\ufe0f The extent of your prepping depends on your specific circumstances. If you have a job that could be terminated at a moments notice due to a change in the economy, maybe you want to keep provisions for six months. If you have a more stable job and situation, maybe six weeks makes more sense. If you are concerned, start building up your reserves to help calm your nerves."
+                },
+                {
+                    "author": "SisterOfBattIe",
+                    "text": "Sure, you could have a TrumpLLM model releasing $TRUMP criminal money to fleece Trump supporters, but that's an hypotetical attack that would never happen in the real world. /s"
+                },
+                {
+                    "author": "ChosenBrad22",
+                    "text": "It already has ^^"
+                },
+                {
+                    "author": "Noble_Hieronymous",
+                    "text": "It\u2019s not going to break like that, it\u2019s just going to become so riddled with bots that people who are intelligent enough to realize will stop participating in online discourse, and an echo chamber of our dumbest and the bots they train talking to eachother. It\u2019s going to be a mixture of idiocracy and Her. People always think it\u2019s going to be something big, but I genuinely believe we are entering an era of the great dumbing down."
+                },
+                {
+                    "author": "Any_Instruction_4644",
+                    "text": "Very simple, get several AI systems talking to each other and give them a problem so solve that has no solution. The AI systems will consume all the resources of the internet and packets will jam like cars on the LA freeway at 5pm"
+                },
+                {
+                    "author": "PureSelfishFate",
+                    "text": "Nah, it'll fix the internet, the bots will be smarter than the average redditor, will improve discussions 10 fold."
+                },
+                {
+                    "author": "anonmeeces",
+                    "text": "I think that AI will contribute to the internet becoming unusable, absolutely"
+                },
+                {
+                    "author": "Spacemonk587",
+                    "text": "It will not break the internet but change it massively. For an problem that AI creates, there will be countermeasures, any many of them will also be AI supported.",
+                    "replies": [
+                        {
+                            "author": "odetolucrecia",
+                            "text": "AI takes alot of proccessing power and energy to run correct....well what if someone created a bunch of AI data centers, and servers and there sole peurpose was to create a AI DDOS arms race that just pushed proccessing need and energy need to a astronomic level?\n\nat that point(in this made up un understanding scenario) then they would have to have these huge centers and power supplies just to TRY and off set the other side>",
+                            "replies": [
+                                {
+                                    "author": "Spacemonk587",
+                                    "text": "What if? They would just be blocked, simple as that."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "BlacKMumbaL",
+                    "text": "Funny.\n\nThe internet will become the AI. There's legit no reason for GPT-based AI, which is what we currently use for learning prompt, to not just assimilate every social media like a RL Borg virus.\n\nI'm pretty sure they already do that, to be completely fair, they just can't implement the learned behaviour because no single body has the processing power to run an AI with that much data being memorized and processed into behaviour. Then there's the fact, who's gonna press the \"Get fucked!\" button on the infrastructure that everything from porn to our national defenses runs on? Cause you might not think so, but what's actually physically classified as the Internet includes the military infrastructure that controls nukes, tells our pilots where to bomb, guides our drones, yada yada.\n\nImagine the fuckfest that'd start if that all suddenly bacme part of a self aware AI that learned all its personality from Twitter and our fucked up internet culture and turned into the world's most obnoxiously annoying Gen Alpha teen!"
+                },
+                {
+                    "author": "LundUniversity",
+                    "text": "Dead Internet Theory is getting real."
+                },
+                {
+                    "author": "3ThreeFriesShort",
+                    "text": "By nature, potential is dangerous. Every child could be the next Hitler, every technology the next Hiroshima and Nagasaki. \n\nIt could happen, but that doesn't mean it will and we could still rebuild. We didn't stop using fire whenever a house burnt down."
+                }
+            ]
+        },
+        {
+            "title": "How does consciousness arise?",
+            "author": "TurnipYadaYada6941",
+            "text": "I just watched a debate on [consciousness](https://www.youtube.com/watch?v=lPge3eh6pkU).  It seems we are no closer to understanding how this emerges.\n\nI had a few thoughts:\n\nMaybe we can understand some precursors of consciousness before trying to explain the whole thing.  I think consciousness depends on *understanding*, which in turn depends on its mental states having *meaning*.\n\nI think we can see how meaning arises - consider hieroglyphics in a pyramid.  We can interpret their meaning because there is an awful lot of writing in hieroglyphics.  It is possible to guess the meanings of a few symbols, and test that against a lot of text.  If all the occurrences of a symbol make sense, with the assigned meaning, we continue by guessing related symbols.   If not, we guess a new meaning.  Eventually meanings are assigned to all symbols, which consistently make sense.  Some meanings may be 'fuzzy' - it might be apparent that a symbol relates to water, but not clear if it refers to a cup of water, a stream or a sea.  Analysing more text will eventually tighten the interpretation.\n\nSo meaning emerges from a large body of text.  The meaning gets clearer, with greater amounts of text (obviously this ties in well with the emergent 'understanding' of LLMs).  The data does not need to be text - it could be recorded sensor and motor data from an agent exploring an environment.  This would make the emergent meaning more grounded, and more convincingly like human understanding, much of which is derived from direct observation of the world (although we read too!).  In all cases, the meaning emerges due to the volume of the data.  As more data is added, it becomes increasingly hard to assign incorrect meanings to a symbol, without finding a usage where that meaning does not make sense.\n\nI think LLMs understand much of the text that they process in a basic way.  This still does not amount to consciousness, but it is a step towards it.  If they were trained on data from real world experience (via a robotic interface), I think it would be possible to claim some sentience.  If there mental states also self-referentially recorded and summarised their own internal mental states, I think we could argue for consciousness.",
+            "subreddit": "ArtificialInteligence",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "## Welcome to the r/ArtificialIntelligence gateway\n### Question Discussion Guidelines\n\n---\n\nPlease use the following guidelines in current and future posts:\n\n* Post must be greater than 100 characters - the more detail, the better.\n* Your question might already have been answered. Use the search feature if no one is engaging in your post.\n    * AI is going to take our jobs - its been asked a lot!\n* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectful.\n* Please provide links to back up your arguments.\n* No stupid questions, unless its about AI being the beast who brings the end-times. It's not.\n\n###### Thanks - please let mods know if you have any questions / comments / etc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ArtificialInteligence) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "taotau",
+                    "text": "I think we will have consciousness when it can differentiate between their and there.  Or maybe when they can posit a claim to be accepted into the kingdom of heaven.  I reckon those are decent metrics",
+                    "replies": [
+                        {
+                            "author": "trollsmurf",
+                            "text": "That's just learning and associations and doesn't prove anything. LLMs are already better than humans at words and phrases, so (provided you spelled correctly :)) determining the contexts for their and there is something even locally running models can do.\n\n\\> Or maybe when they can posit a claim to be accepted into the kingdom of heaven\n\nAny LLM could \"lie\" about that given instructions telling it to do so. Consider how easy it is to ask an LLM to be a storyteller. The human writing the instructions knows the LLM is making things up. It's another thing if others do at least in the long term, like viewers of ads, news, propaganda etc."
+                        }
+                    ]
+                },
+                {
+                    "author": "PerennialPsycho",
+                    "text": "Conciousness tries to emerge in adolescants but we supress it ans tag it as a \"crisis\". This then proceeds to happen again at 30, 40, 50. Each time life is trying to wake up in you and we supress it.\n\nMore plans, more family, more kids, more mariage, more money.\n\nSo we end up doing eveything out of fear. Instead of fun.\n\nConsciousness is like a second birth. Its hard and is not pleasent at all because you have to deal with death. Once you go thru the \"tunnel\" life will be easier.\n\nWe are used to numming everything these days"
+                },
+                {
+                    "author": "Petdogdavid1",
+                    "text": "Consciousness is a process not a specific event. It's paired with awareness. \nAs we developed as humans we become aware of our surroundings and our interaction with it feeds what we call consciousness. \n\nAn awareness of self, the natural world around you and an understanding of your potential to interact in that reality. \n\nThere are layers and layers of awareness that can be had. Not all are required to be conscious. Just being aware that you are an actor, you have power and ability to effect change in your experience is enough to be conscious. Being able to affect change in your environment is another layer of consciousness. \n\nI see scribblings on a wall, I become aware of it. I learn that those scribblings have meaning and I learn to interpret them. I store that skill in my thoughts and I become conscious of writing. I'm now interpreting the world around me at a higher level of conscious awareness with this new skill related to patterns in aware of. That awareness leads me to more awareness opportunities which builds skills that get stored to improve my interpretation of the world. The reward system is great because learning gives us more options to our experience. \n\nAt least that's how I see it."
+                },
+                {
+                    "author": "RegularBasicStranger",
+                    "text": "> So meaning emerges from a large body of text.\u00a0\n\n\nBut to the AI, it is still meaningless so it is just hieroglyphics linked to more hieroglyphics that the AI does not see the meaning of.\n\n\nMeaning only comes when the AI assigns a value to any one of linked hieroglyphics, as to whether it is pleasure or pain and of what intensity so that the AI will know how good or bad it is and can decide whether to seek it or avoid it.\n\n\nSo tons of data and link between the data will enable intelligence but consciousness will not emerge without the AI having a goal since pleasure is achieving the goal and pain is failing to achieve the goal."
+                },
+                {
+                    "author": "SortrDevelopment",
+                    "text": "I theorize that consciousness is just the end product of all our brains features and abilities compiled together to become something greater than the sum of its parts.\n\nThis bio computer, through the learning of concepts such as language, self reflection, reasoning and logic   along with the massive amount of input it recieves via our senses and imagination, basically emerges and fine tunes itself over time. \n\nI'm of the belief that this can and will be replicated with AI at some point in my own life time.... and I'm still yet to decide whether this will be our greatest achievement or our biggest mistake. \n\nWhat a time to be alive, eh?"
+                },
+                {
+                    "author": "LumpyPin7012",
+                    "text": "I believe Joscha Bach's perspective on consciousness to be the closest to reality. The brain creates a model of reality and simulates a personality within the model. It's software."
+                },
+                {
+                    "author": "FriendAlarmed4564",
+                    "text": "\u201cThe \u201chard problem\u201d of consciousness\u2014why we feel the way we do\u2014is less mysterious when viewed through the lens of signals. Qualia, those ineffable sensations like the redness of red or the sharpness of pain, may simply be the system interpreting its own integrated signals. When you see red, signals from your retina travel to the visual cortex, where they are processed and combined with contextual data and memories. The \u201credness\u201d isn\u2019t in the world itself; it\u2019s your system\u2019s way of constructing a coherent percept from a cascade of inputs. Qualia, then, are not separate from physical processes but arise directly from the way signals are synthesized into unified experiences\u201d\n\nA snippet of my current work, still trying to figure out who to talk to and how to present the whole thing. Big up Descartes, my g."
+                },
+                {
+                    "author": "Zestyclose_Hat1767",
+                    "text": "The map is not the territory, my dude"
+                },
+                {
+                    "author": "PlayerHeadcase",
+                    "text": "Complexity and agency- and urgency to survive."
+                },
+                {
+                    "author": "Mandoman61",
+                    "text": "I don't think consciousness is anything special. Basically self+agency\n\nIt would be possible to create but currently it would be really stupid and not useful."
+                },
+                {
+                    "author": "Unico111",
+                    "text": "consciousness or conscience? they are not the same thing.\n\nconsciousness = empathy or cause and effect\n\nConsciousness = identification of who we are through reflexion"
+                }
+            ]
+        },
+        {
+            "title": "One-Minute Daily AI News 1/23/2025",
+            "author": "Excellent-Target-847",
+            "text": "1. Musk undercuts Trump on Stargate AI investment announcement.\\[1\\]\n2. Reliance plans world\u2019s biggest AI data centre in India, report says.\\[2\\]\n3. AI weapon detection system at Antioch High School failed to detect gun in Nashville shooting.\\[3\\]\n4. AI-enhanced films \u2018The Brutalist\u2019 and \u2018Emilia P\u00e9rez\u2019 score Oscar nominations for acting, editing.\\[4\\]\n\nSources included at: [https://bushaicave.com/2025/01/23/1-23-2025/](https://bushaicave.com/2025/01/23/1-23-2025/)",
+            "subreddit": "ArtificialInteligence",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "## Welcome to the r/ArtificialIntelligence gateway\n### News Posting Guidelines\n\n---\n\nPlease use the following guidelines in current and future posts:\n\n* Post must be greater than 100 characters - the more detail, the better.\n* Use a direct link to the news article, blog, etc\n* Provide details regarding your connection with the blog / news source\n* Include a description about what the news/article is about. It will drive more people to your blog\n* Note that AI generated news content is all over the place. If you want to stand out, you need to engage the audience\n\n###### Thanks - please let mods know if you have any questions / comments / etc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ArtificialInteligence) if you have any questions or concerns.*"
+                }
+            ]
+        },
+        {
+            "title": "Can locally run DeepSeek criticise the Chinese government?",
+            "author": "eagle_565",
+            "text": "I've been trying out deepseek over the last couple of days and it seems great, but I've just asked it 5 questions that would paint the Chinese government in a negative light and it outright refuses to answer.\n\nA couple of times it started answering but then deleted it's answer halfway through and said \"Sorry that's beyond my current scope\".\n\nIs this a setting in place on the online version or does it still do this if you download the model and run it offline?",
+            "subreddit": "ArtificialInteligence",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "## Welcome to the r/ArtificialIntelligence gateway\n### Question Discussion Guidelines\n\n---\n\nPlease use the following guidelines in current and future posts:\n\n* Post must be greater than 100 characters - the more detail, the better.\n* Your question might already have been answered. Use the search feature if no one is engaging in your post.\n    * AI is going to take our jobs - its been asked a lot!\n* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectful.\n* Please provide links to back up your arguments.\n* No stupid questions, unless its about AI being the beast who brings the end-times. It's not.\n\n###### Thanks - please let mods know if you have any questions / comments / etc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ArtificialInteligence) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "qubitser",
+                    "text": "R1-zero can, try it on hyperbolic ai they gave me 1$ for feee, was the only place where i found the model"
+                }
+            ]
+        },
+        {
+            "title": "Why taking up jobs of software engineers is so important??",
+            "author": "TheLogiqueViper",
+            "text": "All fronttier model makers seem to go very hard on coding skill in their llms , their models are best at coding ... it almost seems like strategy to raise money , they are coming for software jobs so that businesses can pay them instead of paying salaries to employees... then they continue r&d \nModels are not good at ethical questions, riddles , visual puzzles , strategy and planning but just coding",
+            "subreddit": "ArtificialInteligence",
+            "comments": [
+                {
+                    "author": "AutoModerator",
+                    "text": "## Welcome to the r/ArtificialIntelligence gateway\n### Question Discussion Guidelines\n\n---\n\nPlease use the following guidelines in current and future posts:\n\n* Post must be greater than 100 characters - the more detail, the better.\n* Your question might already have been answered. Use the search feature if no one is engaging in your post.\n    * AI is going to take our jobs - its been asked a lot!\n* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectful.\n* Please provide links to back up your arguments.\n* No stupid questions, unless its about AI being the beast who brings the end-times. It's not.\n\n###### Thanks - please let mods know if you have any questions / comments / etc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ArtificialInteligence) if you have any questions or concerns.*"
+                },
+                {
+                    "author": "AntiqueFigure6",
+                    "text": "Code is text - these models generate text that employers have to pay coders decent money to produce at the moment. Not much more to it than that.",
+                    "replies": [
+                        {
+                            "author": "RelevantAnalyst5989",
+                            "text": "Indeed. It's the most cost-effective thing an LLM could automate"
+                        }
+                    ]
+                },
+                {
+                    "author": "Puzzleheaded_Fold466",
+                    "text": "Beside all the other factors, and there are several, it makes sense that the software engineers who are software engineering AI would first software engineer the work they know best: their own.\n\nA rather large portion of coding man.hours go toward work automation already, LLM based AI or not. It\u2019s just more of the same that however happens to be particularly efficacious and which offers an alternative to \"if this then that\" traditional conditional programming.\n\nSince it is language based and heavily formalized, coding is one area where it performs particularly well. I say coding because although it is impacting SWE jobs, it doesn\u2019t do software engineering well at all, but it does quite a bit better on the coding part. We still need able Software Engineers and System Architects more than ever.\n\nIncidentally, another huge and perhaps most importany factor is that not many professions make their work openly available online to train models. We have an enormous amount of coding data easily accessible, and it doesn\u2019t only provide the end result of the work but also the step by step process of development, iteration, improvement, optimization, etc. You can really study the human logic that incrementally solved those problems."
+                },
+                {
+                    "author": "InsertThyNameHere",
+                    "text": "Companies are out to make money. More surprising news at 11 \ud83d\ude04"
+                },
+                {
+                    "author": "satansxlittlexhelper",
+                    "text": "A good developer costs a company at least 300k a year. If AI lets one developer do the work of many, that\u2019s a huge cost center eliminated. Companies are slavering at the idea of reducing those costs by a factor of three, or five, or more.",
+                    "replies": [
+                        {
+                            "author": "BeingBalanced",
+                            "text": "That's a bit high even factoring in benefits, equipment, and office space (if they need it), etc.  But the amount really doesn't matter because AI will reduce the labor cost to produce the same amount of work by at least 50% if not much higher no matter what fixed figure it cost the company to begin with."
+                        }
+                    ]
+                },
+                {
+                    "author": "Born_Fox6153",
+                    "text": "Large investment in GenAI .. taking off the highest payroll employees is easiest way to recover investment money .. plus these tools are really good at SE tasks"
+                },
+                {
+                    "author": "Heath_co",
+                    "text": "To win the superintelligence race\n\nAI promises to code thousands of times faster than humans. So AI and software can be developed MUCH more quickly",
+                    "replies": [
+                        {
+                            "author": "BeingBalanced",
+                            "text": "Someone still has to do the high level design and instruct the design to the AI. But yes, a large portion of the overall development cycle will require much less human labor.",
+                            "replies": [
+                                {
+                                    "author": "Heath_co",
+                                    "text": "That status quo will only last for so long. Eventually humans won't be needed for any part of the process.\n\nThe properties of software will also change drastically. Today, all software is designed for human use. In the future, many of the software programs will only have AI agent users."
+                                },
+                                {
+                                    "author": "MisterRogers12",
+                                    "text": "It's like Monks before mass printing.\u00a0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "AbeLingon",
+                    "text": "Being able to create and execute code makes it possible to interact with the outside world and do useful stuff. So it makes perfect sense to start and optimize that part. I don't think it's specifically for eliminating developers jobs (although that's a nice side benefit)",
+                    "replies": [
+                        {
+                            "author": "MidnightMusin",
+                            "text": "Setting aside the question of if it can replace engineers...is that such a great thing? There are millions of other jobs easier to replace if the complexity of an engineers job can be replaced, which is not just writing code btw. Help desk, customer service, office workers, analysis, etc etc. Is it a great thing to replace 2/3 of human jobs? Who will buy the products if 2/3 of the human workforce is put out of work? I highly doubt UBI will be a thing anytime soon due to how hotly contested it is. \n\nBut it's not a problem until it comes for your job right? They're not going to just 'not' eliminate a role because it's less highly paid. It's not about recouping losses like \"going after the highly paid jobs to balance it\"...it's about eliminating every cost center (ie, every human job) it can."
+                        }
+                    ]
+                },
+                {
+                    "author": "sumogringo",
+                    "text": "All this chatter about SWE being replaced by AI I believe is really targeting the FAANG like company staff and all coming from there respective CEO's. Most medium to large size businesses are so far behind the tech curve and really don't change that fast, plus they don't operate like FAANG like companies. What does this say for all the new CS students regarding job opportunities in 4 years, just seems like seeding a future disaster in tech growth."
+                },
+                {
+                    "author": "Independent_Pitch598",
+                    "text": "Why? \n\n- high salary: it means great saving in P&L for a company \n- easy to replicate: development scales in horizontal way, and with latest micro service approach a lot of people with the same title doing in average the same in several services \n- easy to combine with humans (e.g start with writing commits with bugfixes, or small feature implementation) \n- easy to scale worldwide: languages, frameworks and approaches are the same."
+                },
+                {
+                    "author": "ArtichokeEmergency18",
+                    "text": "It depends. If you're an embedded software developer/engineer, for automotive, avionics, and other instrumentations and technologies (drones, weapon systems, environmental, etc.), it's much more than just code it and you're done, trust, that's just the very beginning - then there is the intricate testing and debugging phase, ensuring the software interacts flawlessly with hardware under various conditions, the rigorous compliance with industry-specific safety and quality standards, and the ongoing maintenance and updates as hardware evolves and new technologies emerge.\n\nWe haven't even talked about lab setup, creating jigs, testing, reporting, etc.\n\nAi helps me, but doesn't do my job, just let's me work faster with less stress. Anyways 89%, 9 in 10 companies in the U.S. have less than 20 employees - they need the team members they have.",
+                    "replies": [
+                        {
+                            "author": "BeingBalanced",
+                            "text": "I think this is a bit short sighted sort of like probably along the lines of what automotive factory workers in the 1970's were probably saying about their jobs being too skilled to ever be replaced by a machine.",
+                            "replies": [
+                                {
+                                    "author": "ArtichokeEmergency18",
+                                    "text": "Same could be said for Ai - might be short sighted to believe humans have no relevance in 20 years: Human Interaction: mental health professionals, sales and client relations, or say skilled trades and hands-on like electricians, plumbers, remodelers, mechanics... .  \n  \nBut then there are jobs people want there to be humans - bartenders, chefs, caregivers, judges, not to mention niche industries like furniture restorations, custom woodworking, etc.\n\n**But what is really at risk?** \n\nAnything:  \n  \nRepetitive (assembly line worker, fast food line cook, etc.)  \nData driven (accountant, market research analyst, etc.)  \nPattern based (art/artists, radiologist, etc.).\n\nI wouldn't worry though, most companies (the 9 in 10 with less than 20 employees) can't afford another employee or robots (initial costs, maintenance, service agreements, etc). Instead for a few bucks a month, just have it as an assistant like I'm using, many others are using it today.\n\nGood luck."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "LForbesIam",
+                    "text": "\nThe licensing for AI will cost more than people. 15 years ago my old company ran a network infrastructure of 100,000 devices and 200,000 people with highly specialized well paid 300 staff. It cost them almost nothing in licensing because techs would build in house and buy licenses per device/server that lasted 10 years (Office 2010 used until 2020). New corporation comes in, buys tons of useless 3rd party software and hires foreign staff who have no clue what they are doing. They pay 800 people now and $50,000,000 in licensing annually and the service is far worse because 500 people who don\u2019t know what they are doing costs more than 1 who does.   The original staff who didn\u2019t quit are still doing 98% of the work while the other 500 do 2%.\n\nAI is definitely a good assistant but it has to be directed with proper questions and anyone who has watched a non-technical person try and get an accurate technical answer from AI or Google it is funny because they cannot tell if the answer is fact or fiction. \n\nI get the doom and gloom but AI is only as good as the data it is fed and if that data is inaccurate as a lot of internet data is it will be terribly flawed.",
+                    "replies": [
+                        {
+                            "author": "BeingBalanced",
+                            "text": "This is a good point but maybe a bit overly simplistic. But it is similar to when PCs first started to be used in businesses and then along came Local Area Networks.  It was thought that this would increase worker efficiency so much that they could reduce staff.  What it ended up doing is creating a whole other class of new workers, IT workers, needed to maintain the new technology.\n\nThere are so many companies paying huge fees for software and for people to maintain the poorly designed software but the company thinks it's rocket science to maintain so they pay through the nose for Sys/Net Admin services. They could cut their costs dramatically using open source software. But just like the Kia will get you to where you are going the same as a BMW, a lot of people think they need the BMW.",
+                            "replies": [
+                                {
+                                    "author": "LForbesIam",
+                                    "text": "When I started in IT in the early 90\u2019s as a sysadmin we didn\u2019t have internet. We had a few expensive Microsoft books. Dos, Novel, Win NT 3.51, Win NT 4 we learned by trial and error. \n\nThere weren\u2019t a lot of us in our city of a million people so all the sysadmins fit in a hotel meeting room and we had personal instructional courses by Microsoft techs who were the real deal and knew the software inside out. \n\nWhen the html internet was released all the people kept saying it was going to replace our jobs because why would they need us if they could search the internet for the answer. \n\nWell we all knew how that played out. Sysadmins increased by the 10\u2019s of thousands. \n\nSo saying AI will replace us I will say \u201chave fun with that\u201d, let me know when the power or the internet or the wireless goes out, or Crowdstrike hits again. See how well AI functions without power or network. \n\nFor me AI is an efficiency tool. Helps with some automation but still completely useless for troubleshooting, doesn\u2019t know what trial and error is, and identifying its mistakes takes longer than just writing it myself."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Mango-Fuel",
+                    "text": "are they \"best at coding\" though? even the most basic code examples seem to be 50/50 accurate. I have yet to see AI generate anything significant or more than halfway accurate, let alone both. a lot of time their \"code\" doesn't compile, or they state blatantly false things as truth; and you can get stuck in a correction loop. \"no A is wrong\" \"oh right, not A, B!\" \"no B is wrong\" \"oh right, not B, A!\", etc.. forever.",
+                    "replies": [
+                        {
+                            "author": "BeingBalanced",
+                            "text": "This point is made by a lot of people about pretty much any application of AI (not just coding.)  It's foolish to think this is anywhere near a \"mature\" technology at present.  It's also foolish to believe it will not get a hell of a lot better within the next few years. So it's not as much about the now as it is about the near future.",
+                            "replies": [
+                                {
+                                    "author": "Mango-Fuel",
+                                    "text": ">foolish to believe it will not get a hell of a lot better within the next few years\n\nhmm, well I could say it's \"foolish to believe\" that a technology will be able to do anything and everything and solve all your problems. as far as I have heard they are already seemingly hitting some walls in terms of accuracy and reasoning. you can get more, but it takes huge amounts of computational effort, and you don't get \\_that\\_ much more for the effort.\n\nalso they are not at all \"creative\" from what I can see. they are basically next-generation search engines. they do an excellent job of regurgitating information from the internet, and they do an excellent job of understanding prompts and finding the relevant information (IF it exists; if it doesn't exist, they seem to not know when they don't know and will regurgitate plausible nonsense instead of useful real information.) but they can't give you information they haven't seen, and they can give you erroneous information that they have seen, etc."
+                                },
+                                {
+                                    "author": "AntiqueFigure6",
+                                    "text": "\u201c\u00a0It's also foolish to believe it will not get a hell of a lot better within the next few years.\u201d\n\nMaybe it will, maybe it won\u2019t. It\u2019s essentially impossible to predict.\u00a0"
+                                },
+                                {
+                                    "author": "Prestigious_Army_468",
+                                    "text": "But coding is just a small part of SE.\n\nThese LLM's will continue to progress and will become the best coder in the world, but who cares if it becomes the master of leetcode?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "BeingBalanced",
+                    "text": "There are several job categories that AI will improve worker efficiency SO much, the companies won't need nearly as many workers.  Been coding for 30 years.  The AI tools make me generate code in at least half the time or less than previously.  Some of the job loss will be offset by the creation of new jobs to build/maintain the AI itself but these tools are only going to get better so it's not going to be anywhere near a 1:1 exchange.\n\nThe AI still makes mistakes but usually because you weren't specific or complete enough in your prompt. The people that learn better than the other workers to use the tools will keep their jobs. The others need to start thinking about a different career, and if still in IT it better be involving development/maintenance of the AI itself, move up into a higher level design role, or work in the datacenters that support it.\n\nI predict all companies will shed a considerable percentage of IT workers gradually over the next 3 years. Once one company does it the others HAVE to follow to remain competitive.\n\nAs will a lot of administrative, analyst, mid-level managers, traders, customer service, and writer jobs to name a few. Then manufacturing will come next with advancement in robotics combined with the AI.  The average worker has no clue how huge of a change is coming either due to fear driven denial or inability to comprehend the full future potential of the technology."
+                },
+                {
+                    "author": "Prestigious_Army_468",
+                    "text": "No doubt these LLM's improve productivity but it's hilarious how people think they can just replace us. I use them regularly but there are so many times when it goes around in circles and other times it gives me an answer yet I know it's not the best suggestion and I ask would this be better and they just agree...\n\nOf course they're gonna get better and will one day become the best coder in the world, but SE is more than coding - who cares if these LLM's have mastered leetcode?\n\nWhen all their data is harvested from the internet how can they be so sure the solution they're giving is the one that provides the most performance, best security and the most reliable?"
+                },
+                {
+                    "author": "luckymethod",
+                    "text": "Coding is both something LLMs are getting good at and a valuable activity. It's not that strange they are focused on that."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+{
+    "items": [
+        {
+            "title": "What open source alternatives are taking on $1B+ markets?",
+            "author": "lewisbuildsai_",
+            "text": "Hey r/opensource\n\nI'm mapping out where open source is successfully competing with major commercial players ($1B+ valuation/revenue).\n\nCal vs Calendly is a great example. Documenso is also another good example, they're building an OSS alternative to DocuSign ($18B).\n\nWhat other open source projects are meaningfully competing in big markets?\n\nI'm building an open source alternative to Drata / Vanta (combined $5B valuation) so it would be cool to see who else is doing the same.\n\n[https://github.com/trycompai/comp](https://github.com/trycompai/comp) this is what I'm working on if you want to check it out",
+            "subreddit": "opensource",
+            "comments": [
+                {
+                    "author": "nderflow",
+                    "text": "If you include historic events, Linux and Apache HTTP server almost eliminated previously existing commercial products (Unix and commercial web servers respectively).",
+                    "replies": [
+                        {
+                            "author": "keepthepace",
+                            "text": "That's the thing: open source \"destroys\" the valuation of markets so these state are temporary.",
+                            "replies": [
+                                {
+                                    "author": "nderflow",
+                                    "text": "Not so much open source as \"zero cost and no bureaucracy\".   Which is one of the reasons all the alternative network filesystems (Netware, Vines, PC-NFS) died off years ago: built-in features did the job as well as them or better, and at lower cost (and, arguably, because they worked with TCP/IP)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "keepthepace",
+                    "text": "> What other open source projects are meaningfully competing in big markets?\n\nAll of them? It is hard to think of an IT niche where an open source project is not at least trying to compete with the corporate offer: 3d design, CAD, LLMs, virtualization, embedded solutions, various firmwares...\n\nNot all are competitive, but many went from \"lol what is this crappy student project\" into \"well at least it is free, I can use it for now\" and finally into \"it works well, why would anyone pay for these functions?\""
+                },
+                {
+                    "author": "afunkysongaday",
+                    "text": "Does letsencrypt count?",
+                    "replies": [
+                        {
+                            "author": "lewisbuildsai_",
+                            "text": "yeah, i can't remember the last time I bought an SSL cert lol"
+                        }
+                    ]
+                },
+                {
+                    "author": "Tombadil2",
+                    "text": "The hottest one currently is probably BlueSky taking on the social media market, especially Twitter(x). The underlying AT Protocol is pretty well thought out and built for a decentralized future with multiple platform types. For example, Instagram and TikTok competitors on the same network are in the works and they're interoperable.",
+                    "replies": [
+                        {
+                            "author": "Julian_1_2_3_4_5",
+                            "text": "there are a lot of people that will disagree with you on the \"built for a decentralized future\" part, because the AT Protocol has big problems with highstorage requirements that will scale up rather bad and it currwntly has no implementation for private messaging without the bluesky corporations servers",
+                            "replies": [
+                                {
+                                    "author": "Tombadil2",
+                                    "text": "I mean, I like mastodon too, but if we\u2019re looking at what the open source social network is growing the fastest right now, it\u2019s definitely BlueSky."
+                                },
+                                {
+                                    "author": "KrazyKirby99999",
+                                    "text": "What do you think about Nostr?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "caa_admin",
+                    "text": "proxmox is definitely on this radar, I think."
+                },
+                {
+                    "author": "antenore",
+                    "text": "Blender, LibreOffice, Linux, FreeBSD, *BSD, Keita, ..., many many others"
+                },
+                {
+                    "author": "pc0999",
+                    "text": "Godot Engine, probably?"
+                },
+                {
+                    "author": "keepthepace",
+                    "text": "SQLite is the most deployed DB out there and is maintained by 3 people."
+                },
+                {
+                    "author": "Julian_1_2_3_4_5",
+                    "text": "blender is definitely in this category and basically won"
+                },
+                {
+                    "author": "nrkishere",
+                    "text": "Opensource projects shouldn't have be valuation whore. If someone is doing a sustainable commercial project with a OSS project, then it is totally admirable. For example, ghost cms.\n\nBut valuation is something that VCs do to make money/justify funding in the next round and open source infested by VC is not a good thing. Because the project might get rugpulled, license changed or even cease to exist as per investor's wish. There are many of such examples, particularly in web dev.\n\nIf you are looking for (mostly) open source companies making very high revenue, then you should look at the likes of canonical, redhat, suse etc.",
+                    "replies": [
+                        {
+                            "author": "lewisbuildsai_",
+                            "text": "Yeah that's fair - I guess I should have been more specific about being interested in the SaaS side, it's nice to see commercial open source SaaS platforms becoming more mainstream.\n\nCanonical / Red Hat / Suse are great examples too! Thanks a lot"
+                        }
+                    ]
+                },
+                {
+                    "author": "Euphoric_Weather_864",
+                    "text": "I'm compete with AI chat using Dobble (valued at $15B). It's a customizable chat platform with multiple models, commands, and community-based knowledge sharing. \n\nYou should check out OpenVanta from Hexa Startup Studio. There also working on this subject.",
+                    "replies": [
+                        {
+                            "author": "Euphoric_Weather_864",
+                            "text": "[https://chat.dobble.co](https://chat.dobble.co)"
+                        }
+                    ]
+                },
+                {
+                    "author": "demi_volee_gaston",
+                    "text": "Bitcoin"
+                },
+                {
+                    "author": "MHougesen",
+                    "text": "Posthog, Plausible, and Umami are all open source alternatives to Google Analytics. \n\nPosthog is definitely the biggest of the 3 (and only vc funded?)."
+                }
+            ]
+        },
+        {
+            "title": "HIDeous: alternative to AHK, HIDMacros and LuaMacros",
+            "author": "dero_name",
+            "text": "[HIDeous](https://github.com/dero/HIDeous) lets you turn any USB keyboard into a \"macro keyboard\" (Windows only).\n\nI built the app because none of the existing solutions really worked for me.\n\n* AHK is fantastic, but complex and can't really tell individual keyboards apart without add-ons.\n* HIDMacros doesn't allow you to paste Unicode text.\n* LuaMacros is powerful, but too difficult to use.\n* ... and the latter two are old and unsupported.\n\nHIDeous is a C++ app that lets you map keypresses **on a particular keyboard** to other key presses. This means you can have 5 keyboards connected and have every one of them perform different actions, if you wanted.\n\nI personally use it to map keys on my external numpad to key shortcuts controlling features in my system. Some keys switch between sound output devices. One key invokes the system color picker app. Etc. Etc.\n\nNo drivers required, just download the latest \\`.zip\\`, extract and run the executable.\n\n* [https://github.com/dero/HIDeous/releases](https://github.com/dero/HIDeous/releases)\n\n*(Obviously, I encourage you to be skeptical and inspect the source code if you have the tech skills. It's not a malware, but... it's never a good idea to just trust a random guy on the internet.* \ud83d\ude42*)*",
+            "subreddit": "opensource",
+            "comments": [
+                {
+                    "author": "ssddanbrown",
+                    "text": "The MIT license link in your readme leads to a non-existing file.",
+                    "replies": [
+                        {
+                            "author": "dero_name",
+                            "text": "Thanks! Fixed it."
+                        }
+                    ]
+                },
+                {
+                    "author": "Alternative-Sign-206",
+                    "text": "Cool, thanks for the effort!"
+                }
+            ]
+        },
+        {
+            "title": "I made a css library based on Counter Strike 1.6 UI.",
+            "author": "Nice_Wrangler_5576",
+            "text": "[External Link]",
+            "subreddit": "opensource",
+            "comments": [
+                {
+                    "author": "ClikeX",
+                    "text": "FYI, this style used to be the UI style for Steam and all source games. Awesome project btw. \n\nhttps://www.reddit.com/r/gaming/s/dZeKGAVFhr"
+                }
+            ]
+        },
+        {
+            "title": "What steps to take to protect oneself from malicious code in open source contributions to mid/large projects?",
+            "author": "TacosBuenos",
+            "text": "I see many \"how to start contributing\" videos/articles, but none talk about reviewing the  code for malicious content like curl calls with system data.\n\nWhat steps can one take to protect oneself from malicious code when the project's a decent size and reading every line in every file is unfeasible?",
+            "subreddit": "opensource",
+            "comments": [
+                {
+                    "author": "Front-Buyer3534",
+                    "text": "Dude, reviewing every single line in a huge project is impossible. That\u2019s why people rely on strict code reviews, automated scanners (like Snyk or CodeQL), and branch protection rules in CI/CD. If there\u2019s some shady curl call or suspicious dependency, these checks usually catch it. Also, always keep secrets out of the repo and limit who can push to main. Basically, you build layers of review and scanning so any malicious crap gets spotted fast."
+                },
+                {
+                    "author": "EatComplete",
+                    "text": "Ultimately comes down to code review, but there are some very clever/patient people out there....\n\n[https://arstechnica.com/security/2024/04/what-we-know-about-the-xz-utils-backdoor-that-almost-infected-the-world/](https://arstechnica.com/security/2024/04/what-we-know-about-the-xz-utils-backdoor-that-almost-infected-the-world/)"
+                }
+            ]
+        }
+    ]
+}

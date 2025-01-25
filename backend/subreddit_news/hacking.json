@@ -1,0 +1,580 @@
+{
+    "items": [
+        {
+            "title": "How do I stop these, I\u2019ll do anything",
+            "author": "MCosine9",
+            "text": "[External Link]",
+            "subreddit": "hacking",
+            "comments": [
+                {
+                    "author": "smalaki",
+                    "text": "looks like your info was compromised in one way or another.. log in to each of these accounts (go do the respective websites manually, don't follow any password reset links from unsolicited messages) and change password asap\n\ni'd say also change passwords for all of your other accounts as well as much as you can remembrer",
+                    "replies": [
+                        {
+                            "author": "faccenda",
+                            "text": "\\^ this\n\nEDIT: + make sure to not reuse the password from multiple services, i suggest you use a password manager such as Bitwarden, 1Password, Keeper, KeePass\n\nEDIT 2: + wherever it is possible, switch from SMS 2FA to Application Based (such as Google Authenticator) or Passkeys",
+                            "replies": [
+                                {
+                                    "author": "Djglamrock",
+                                    "text": "+1 for Bitwarden"
+                                },
+                                {
+                                    "author": "Immortal_Elder",
+                                    "text": "I use Bitwarden and have a unique generated password for each site , plus MFA for all sites/services that support it."
+                                },
+                                {
+                                    "author": "ComprehensiveHat2557",
+                                    "text": "How do you all trust a third-party site to keep valuable passwords. What happens if they get breached? What happens if you are no longer able to access that information. Just asking to see if I can trust"
+                                },
+                                {
+                                    "author": "CozyAurora",
+                                    "text": "Keeper always bugs out on me"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Live_Eye9793",
+                            "text": "And check your email for any rules that may be forwarding to unauthorized persons."
+                        },
+                        {
+                            "author": "Niuqu",
+                            "text": "Also if you can, change from SMS verification to Authenticator OTP code. You can use Google Authenticator, Apple's Passwords, Bitwarden etc for this. This way you don't get constant SMS spam when someone tries to access your account. But change your 2FA method after you have changed your passwords to unique and complex ones (Bitwarden has an excellent password generator)."
+                        },
+                        {
+                            "author": "Shoddy-Possession-35",
+                            "text": "To add to this accurate answer get yourself a Yubikey (or open source alternative) to further lock down your accounts where possible. Implement MFA.\u00a0"
+                        },
+                        {
+                            "author": "das_Licht_",
+                            "text": "Or even better, buy your own domain (~$7/year) and set up a separate e-mail on each page.\nFor example Amazon@Asslicker2000.com\nThis has three big advantages.\n\n1. you know immediately which provider has leaked your data in the event of sudden spam.\n2. the registration only works with one account, automatic trying out of further logins will definitely fail.\n\n3. you can also use it for applications to appear serious if you use application@asslicker2000.com as an email, for example. \n\nNevertheless, different passwords everywhere!"
+                        },
+                        {
+                            "author": "send_me_boobei_pics",
+                            "text": "Might consider changing the email addresses too.\nThat was the only way I could get the pw reset emails to stop on my home depot account."
+                        },
+                        {
+                            "author": "R1V3NAUTOMATA",
+                            "text": "Definetly a virus got their info."
+                        },
+                        {
+                            "author": "zerthwind",
+                            "text": "I would add make a long, difficult password at that."
+                        },
+                        {
+                            "author": "mixmuxv",
+                            "text": "Why ? They just want his pass ,and get his email only"
+                        }
+                    ]
+                },
+                {
+                    "author": "lowkeybanned",
+                    "text": "I think your data was leaked, and you most likely reuse the same password across all platforms, they are trying to access all of your accounts.\n\nBest thing is to go and change all of your passwords (even for accounts that you didn't get a msg from) and make sure each platform has a different password.",
+                    "replies": [
+                        {
+                            "author": "falling2918",
+                            "text": "it could also be sms bombing"
+                        },
+                        {
+                            "author": "wylaika",
+                            "text": "I'd say, especially from those he didn't get a msg as it means they could have access to it without any security.\n\nGood luck for the third millenia bureaucracy.\n\nTry a sequential password and use a different one for each site,a password that is not \"password-reddit-95\"."
+                        },
+                        {
+                            "author": "26542654",
+                            "text": "I've had to reset hundreds of passwords after notification of a breach (not because they're all the same - but because I am paranoid about security). I found out that the fastest way to do it is to click on the \"forgot password\" option when trying to login"
+                        }
+                    ]
+                },
+                {
+                    "author": "neurocase-1995",
+                    "text": "Turn into john wick and hunt down the people responsible"
+                },
+                {
+                    "author": "-St4t1c-",
+                    "text": "Stop clicking on jerkmate links",
+                    "replies": [
+                        {
+                            "author": "Wes_Mantooth007",
+                            "text": "He's looking for feasible options"
+                        }
+                    ]
+                },
+                {
+                    "author": "Known_Management_653",
+                    "text": "That looks like a SMS bombing attempt. \nIt's quite ingenious to be honest, they basically abuse the register pages to get the site to send you emails and SMS. Your only home would be to block the numbers or change the number. Blocking the numbers is a bit useless if it's not paired with a pattern spam marker. So basically you'll need an app that is capable of flagging similar numbers with the ones you have manually flagged and block incoming SMS or calls. Not sure what app to recommend, but changing the number seems the easier way. \nAlso how frequent are the messages?",
+                    "replies": [
+                        {
+                            "author": "ZealousidealPie4653",
+                            "text": "This happened to me about 2 years ago. I am not joking I got about 200 texts every 10 minutes. They ended up somehow turning off my line, then reactivating it on another device that they had. From there they were able to get into my bank using 2fa, since now they will be receiving the codes. Scary shit, I got back everything I lost thankfully and switched phone providers and banks. \n\nOP; go into these accounts turn off 2FA and reset the password. After that, change your number asap. With the new number reactivate 2fa although I would recommend using a 2fa app if your able to(Microsoft Authenticator) you may want to create a new email that you use specifically for sensitive accounts and no where else."
+                        },
+                        {
+                            "author": "26542654",
+                            "text": "I recommend Robokiller <3"
+                        }
+                    ]
+                },
+                {
+                    "author": "CuntyBunchesOfOats",
+                    "text": "Better hope that scammer didn\u2019t check reddit to get that 2step auth code you just posted"
+                },
+                {
+                    "author": "intelw1zard",
+                    "text": "A lot of the times the scammers are flooding you with SMS to hide an important SMS.\n\nThey likely are hacking into your bank or an important account to steal something. \n\nI would change all your important account (like banking) passwords ASAP and make sure to implement 2FA on all where possible.",
+                    "replies": [
+                        {
+                            "author": "jonas2789",
+                            "text": "This. It happenned to me last year. I started getting ground 100 emails per minute. Every page You can imagine sent me a registration confirmation. After dogging where it all started, they managed to get into an account i had and ordered something with a cloned credit card."
+                        }
+                    ]
+                },
+                {
+                    "author": "carterpape",
+                    "text": "You\u2019ll do anything? Pick a password manager, create new passwords for every online account you can find, and save those passwords in the password manager."
+                },
+                {
+                    "author": "PuzzleheadedGrand69",
+                    "text": "It is just sms bombing..nothing to worry about, just put your phone on flight mode for few mins and it will be get proper",
+                    "replies": [
+                        {
+                            "author": "GoesByName",
+                            "text": "Apt"
+                        },
+                        {
+                            "author": "whitelynx22",
+                            "text": "I'm not from the US so I wasn't sure, but I thought the same. Just block the number or do put the phone on DnD/Airplane mode. I always tell people that I might be unreachable and will call back when I give out my number. (Unless you just got a date with a beautiful girl)\n\nStill, it's cool that people are having a discussion about different aspects of smart phone security!"
+                        }
+                    ]
+                },
+                {
+                    "author": "Green_Glove39",
+                    "text": "It is sms bombing. You cannot do anything, I suppose.\nOne method is to go to every such site and there is an option to protect yourself by giving your number there."
+                },
+                {
+                    "author": "Honeybun_Landscape",
+                    "text": "If you tap the top left where it says Filters you can have your messages only show known senders (in your contacts). Also if you long press on the message there is an option to Hide Alerts.\n\nIf you want to stop it at the source, it depends if these are tied to actual accounts you own. First step would be to change the passwords on these accounts. If that doesn\u2019t work you might have to contact support from the services themselves. It is also possible someone made an account and uses your phone number, in which case good luck, but they may be able to help you if you prove that you\u2019re being harassed."
+                },
+                {
+                    "author": "10fingers6strings",
+                    "text": "Give me your Coinbase login credentials\u2014I\u2019ll make it stop."
+                },
+                {
+                    "author": "CM375508",
+                    "text": "Change ALL of your passwords now. If they are getting MFA requests they are logging in correctly. These are just the ones with MFA, you likely have others without it."
+                },
+                {
+                    "author": "exomyth",
+                    "text": "You're reusing the same password everywhere, don't you?\n\nGet a password manager, and change all your passwords for every account you can think of. Make every password for every website unique (that is what the password manager is for)"
+                },
+                {
+                    "author": "immortalsteve",
+                    "text": "You're getting assblasted by someone with a login cred. You need to change every password to something unique for this entire list of services they have conveniently provided for you here."
+                },
+                {
+                    "author": "TheSheWhoSaidThats",
+                    "text": "Boy lots of useless comments on here. \n\n- get your info removed from datamining sites like [this](https://www.wired.com/story/opt-out-data-broker-sites-privacy/)\n\n- change all your passwords into UNIQUE passwords (if you have an iphone you can see all your compromised accounts under settings)\n\n- add yourself to the Do Not Call Registry here: 1-888-382-1222 see also advice [here](https://www.fcc.gov/consumers/guides/stop-unwanted-robocalls-and-texts)"
+                },
+                {
+                    "author": "GiggleyDuff",
+                    "text": "You used the same password everywhere"
+                },
+                {
+                    "author": "Lumiit",
+                    "text": "I think you got a verification code"
+                },
+                {
+                    "author": "junkstar23",
+                    "text": "I got you DM your social security and a scan of your ID and passport. I'll take care of it for you \n\n\nObligatory/s because mods are banned happy",
+                    "replies": [
+                        {
+                            "author": "Substantial-Dust5513",
+                            "text": "Dude. Who the hell gives their social security number to a stranger? Hopefully, OP isn't stupid enough to fall for this."
+                        }
+                    ]
+                },
+                {
+                    "author": "MCosine9",
+                    "text": "But none of the those account names/apps are things that I have or had in the past",
+                    "replies": [
+                        {
+                            "author": "drunk_bender",
+                            "text": "Someone might spam you with fake codes so that you miss the real one"
+                        },
+                        {
+                            "author": "Dramatic_Art4329",
+                            "text": "you have been bombed {its a message bomber most probably }"
+                        },
+                        {
+                            "author": "robbieduram",
+                            "text": "Is it a relatively new (to you) phone number? I think numbers are reused after a certain amount of time so maybe someone is trying to log into their own accounts but the codes are being sent to their previous (now your) number. Not sure what the solution would be other than changing your number but someone may be trying to access their own accounts with a new phone. Be careful if anyone contacts you at that number though, it could be legitimately the previous owner of that phone number or a scam to get the verification codes."
+                        },
+                        {
+                            "author": "[deleted]",
+                            "text": "[deleted]",
+                            "replies": [
+                                {
+                                    "author": "Spidaaman",
+                                    "text": "Totally unnecessary to change their phone number."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "b3542",
+                            "text": "Change your phone number."
+                        }
+                    ]
+                },
+                {
+                    "author": "Beautiful_Watch_7215",
+                    "text": "Throw your phone away."
+                },
+                {
+                    "author": "teasy959275",
+                    "text": "turn off your phone. You\u2019re welcome"
+                },
+                {
+                    "author": "Jenghrick",
+                    "text": "Change all your passwords using a password manager that randomly generates new passwords. Don't use any old passwords anymore."
+                },
+                {
+                    "author": "Creative_Beginning58",
+                    "text": "https://www.google.com/search?q=838-204-4888\n\nLots of info out there associated with this number."
+                },
+                {
+                    "author": "larsmeneer_",
+                    "text": "get a new phone number."
+                },
+                {
+                    "author": "Hot-Rise9795",
+                    "text": "Use Stop Calling Me for Android."
+                },
+                {
+                    "author": "Magical_Idiot4u",
+                    "text": "I might be wrong but there's this app called Boom it Up , so the person might be using your phone number to prank you and that app just spams with such OTP and there's nothing actually like real OTP stuff innit. So just sign up and put your number in for yourself to not get spammed like this. Also, this app is only available on Android but ya hafta download from browser."
+                },
+                {
+                    "author": "g0atofwar",
+                    "text": "This is SMS bombing it will stop in a few days by itself"
+                },
+                {
+                    "author": "mothererich",
+                    "text": "Get a land line."
+                },
+                {
+                    "author": "Rambling-Rooster",
+                    "text": "have you tried not verifying?"
+                },
+                {
+                    "author": "std_colector",
+                    "text": "this made me want to play dead cells for some reason despite not being related to the game at all"
+                },
+                {
+                    "author": "KheyotecGoud",
+                    "text": "Someone has access to your email and is requesting password resets on these accounts.\u00a0"
+                },
+                {
+                    "author": "tilda0x1",
+                    "text": "Reset the password foe those services. Check your email in haveibeenpwned.com and you will see where the data breach comes from."
+                },
+                {
+                    "author": "peter9811",
+                    "text": "If you don't have those accounts I'd probably a prank, haha"
+                },
+                {
+                    "author": "Figure-Any",
+                    "text": "Report them as spam"
+                },
+                {
+                    "author": "StrangerInsideMyHead",
+                    "text": "You'd better hope whoever it is doesn't know your reddit name. Otherwise you just gave them what they want :)"
+                },
+                {
+                    "author": "Corben11",
+                    "text": "I'm getting a similiar thing but it was the idiot who had my number before me. \n\nSo they are trying to get into her account or it's just her. \n\nI checked my activity or attempts on the accounts and none of them."
+                },
+                {
+                    "author": "Newbieflipper0",
+                    "text": "If you have accounts in all of these platforms its time to be changing passwords. In another case if you dont have accounts in all of these, someone or some people have your number. It can be harmless like someone trying to SMS BOMB you and just cause frusturation. I have had this before and it just goes away some after some time. SMS bombing is mostly harmless if you dont give these codes to anyone"
+                },
+                {
+                    "author": "dna11101",
+                    "text": "I wonder if it could be a skimmed sim card. They're getting these same texts and using the codes... Just a thought."
+                },
+                {
+                    "author": "mason4290",
+                    "text": "Change your passwords if you\u2019re really willing to do anything. And then thank Christ that you turned 2FA on because they\u2019d be logged in without it."
+                },
+                {
+                    "author": "Redreddington0928",
+                    "text": "Chamge your phone number and don't reply \"stop\" to any random messages that say to \"reply stop to opt out\" if you do it shows the scammers the phone number is active and then boom 1000 messages back to back everyday. I dealt with the same mess and changed numbers about 2 months ago"
+                },
+                {
+                    "author": "hack-effect",
+                    "text": "Looks like someone is message bombing you. Get to cyber cell authorities they will track it down."
+                },
+                {
+                    "author": "MegaAlex",
+                    "text": "Is this a new phone? Could be the person who had it before still has that phone on their profile of sorts.   \nThe easiest is to get a new phone number. Ya donkey!"
+                },
+                {
+                    "author": "sagatj",
+                    "text": "Thank you for sharing all the verification codes here. That's exactly what I needed.  \n  \nBest regards,  \nYour friendly hacker \ud83d\ude1d"
+                },
+                {
+                    "author": "f0o-b4r",
+                    "text": "By changing your password immediately. And then use a proper password manager.\n\nGenerate passwords of a minimum of 22 characters long (alpha-numerical with symbols)."
+                },
+                {
+                    "author": "Dangerous_Action_356",
+                    "text": "anything?"
+                },
+                {
+                    "author": "Suitable_Ring_6756",
+                    "text": "Change your password for those accounts and get a password manager (Bitwarden, Dashlane, etc.). Should also check the have I been pwnd database to see if there are other accounts that have been leaked publicly."
+                },
+                {
+                    "author": "Seeandobserve88",
+                    "text": "Update your 2FA from SMS to Authenticator app. That would help if the messages are authentic and coming from the said website."
+                },
+                {
+                    "author": "Dastari",
+                    "text": "2FA spam is often used to try and bury a legit message that the bad actor doesn\u2019t want you to see, you get signed up to a site designed to spam you so that you miss a critical message like the confirmation of an order from one of your legit services that they have gained access too.\n\nA lot of good advice in this posts comments. But go through every message to check for anything suspicious still."
+                },
+                {
+                    "author": "HyperDiaperSniper",
+                    "text": "Also, don't click the links. Obviously. but just block each time they come thru. I think there's an algorithm that recognizes when none of the links or texts are read. (Happened to me for years) Until I learned youre just a swipe and a click away from freedom. Times 100. But it's worth it."
+                },
+                {
+                    "author": "Internal-Wish2758",
+                    "text": "Use yubikey instead of passwords"
+                },
+                {
+                    "author": "Bbqhavana",
+                    "text": "Change your email address and password for each service affected."
+                },
+                {
+                    "author": "YukariPSO2",
+                    "text": "Change your passwords"
+                },
+                {
+                    "author": "dnc_1981",
+                    "text": "Change your number"
+                },
+                {
+                    "author": "NeighborhoodThin7806",
+                    "text": "Make a new email and change your email everywhere"
+                },
+                {
+                    "author": "captthulkman",
+                    "text": "Reply stop"
+                },
+                {
+                    "author": "KenRoy312",
+                    "text": "If you have a google email address you can make a [alias](https://www.101domain.com/gmail_email_aliases.htm) by adding a \u201c+\u201d to the end of your email just before the @, add anything you like, and you still get your emails sent to you. I\u2019m not sure about other email providers. \n\nFor example I\u2019ll set my Coinbase email address to \u201c[realemail]+coinbase41@gmail.com\u201d\nAnd you still get your emails sent to you. It makes it harder for hackers to guess your real username. \n\nFor every website do something different. If you add a number, abbreviated, or make obscure, it makes it even more harder for hackers to guess what email you used.\n\nAlso buy 2 Yubi keys. \ud83d\ude42",
+                    "replies": [
+                        {
+                            "author": "whereisrinder",
+                            "text": "This is the way.  I would occasionally get  \"forgot your password\" emails (which are harmless but annoying). After implementing this it stopped."
+                        }
+                    ]
+                },
+                {
+                    "author": "occamsrzor",
+                    "text": "Anything? ;)"
+                },
+                {
+                    "author": "Specific_Ostrich_393",
+                    "text": "Ask your phone provider to change numbers"
+                },
+                {
+                    "author": "TheAutisticSlavicBoy",
+                    "text": "get new phone number"
+                },
+                {
+                    "author": "Kriss3d",
+                    "text": "Dude. You got access to someone's coinbase.."
+                },
+                {
+                    "author": "Picatrixter",
+                    "text": "Most probably, someone found an unprotected api endpoint (used by some mobile app for example) and can trigger the sms to whatever number they want - they probably know you personally or have your number and are just messing with people. Like an annoying hoax"
+                },
+                {
+                    "author": "lordd1_",
+                    "text": "I found a random number and leaked it to the dark web. And that number appeared to be you. Tsk tsk tsk... very unlucky. If you try to stop these scam messages, it's a possibility that you won't."
+                }
+            ]
+        },
+        {
+            "title": "Activision gets caught accessing user camera and microphone in BO6",
+            "author": "critical-th1nk",
+            "text": "[External Link]",
+            "subreddit": "hacking",
+            "comments": [
+                {
+                    "author": "nachoismo",
+                    "text": "Is there a paper or a technical write-up or something? I don't think I can stand listening to this basic level analysis trying to make it sound like accessing a dll is satanic or something. It's aggravating to listen to",
+                    "replies": [
+                        {
+                            "author": "rich97",
+                            "text": "tHiS wIlL sHoCk YoU!!!!\n\nNot really, no."
+                        },
+                        {
+                            "author": "Informal_Practice_80",
+                            "text": "The person being quoted in the video has a YouTube channel who gave a conference that apparently has a bit more professional tone.\n\nBut in OPs video there are patents highlighted which do seem to show malicious intent."
+                        }
+                    ]
+                },
+                {
+                    "author": "EverythingIsFnTaken",
+                    "text": "Certainly *somone* has run some monitoring while running the game to see what's going on, no?\n\nWhile this youtuber is spinning it to sound like they're really up to no good, he's raising valid points (if not a bit hyperbolic). \n\nI'd look into it and see what I could see but I haven't paid for a CoD game since Cold War and I'm not likely to buy another one any time soon.",
+                    "replies": [
+                        {
+                            "author": "mawesome4ever",
+                            "text": "If you buy one, send it my way after you\u2019re done analyzing. I\u2019d like to play some COD"
+                        }
+                    ]
+                },
+                {
+                    "author": "DigitallyBorn",
+                    "text": "This is almost certainly a big nothing burger at best and clickbait scare shit at worst.\n\n1. Companies patent things and don't implement them all the time. Just because they have a patent doesn't mean they're using it, and it certainly doesn't mean they're using it _in this game_. \n\n2. Just because a dll is loaded, doesn't mean that it's used. \n\n3. Just because a dll is used, doesn't mean it's *fully* used. There could be a helper function (like a useful math function) that's available in that driver that the game is using without engaging the camera hardware.\n\n4. nvCamera is an NVidia driver -- not a driver distributed in windows or CoD. It seems likely that initializing the suite of NVidia drivers (SDK) includes this driver.\n\n5. DLLs are still run within the security context of their host processes. In this case, it's either the context of the video card drivers or the context of the game itself. I believe that this would be within the context of the game and, if so, the code in any DLL referenced by the game would not have wide open access to your whole system (_unless you run the game as administrator_). There's no evidence provided that the nvCamera DLL is a dependency of the anti-cheat software or video card drivers (that would have elevated access).\n\n6. If you use NVidia Experience, it adds an overlay to games that supports live streaming _with camera overlay_. This will absolutely load nvCamera. I don't know the particulars, but it's entirely possible that the NVidia Experience overlay may be injected into the game process and would appear as though it's loaded by the game, even though the game doesn't directly depend on that DLL.\n\nI'm with /u/nachoism -- without a technical write up this is garbage.",
+                    "replies": [
+                        {
+                            "author": "mandreko",
+                            "text": "not to mention that NVCamera64.dll is part of Nvidia's Ansel project (https://www.nvidia.com/en-us/geforce/technologies/ansel/). This likely is named \"Camera\" because it lets you take screenshots from a sort of \"virtual camera\" in the games that asupport it.\n\nThis guy is making an uneducated jump to \"OMG they're using my webcam\" just based on a filename.\n\nBig fat nothingburger."
+                        },
+                        {
+                            "author": "Perlentaucher",
+                            "text": "Yeah, I would be more concerned if they didn't use dll with regulated use cases but developed their own mechanisms of circumventing system dlls to directly access mic and cam.\n\nAlso ntdll, really? lol"
+                        },
+                        {
+                            "author": "Onkelcuno",
+                            "text": "Shouldn't it be super easy to confirm any outgoing network traffic during gameplay and after shutdown (were supposedly game processes stayed active?). I don't own the game, so i can't check.\n\nSecondly, if we look at the worst case, if this IS the grand evil super botnet the video tells us about, wouldn't that be a security risk? Say the game really sends all player inputs, video feed etc. to activision, couldn't one just send them malicious data via those means? Yes, they surely have protection for anything that recieves data from the player, but hypothetically? Technically nothing would stop a player to fake a webcam and send oldschool gore-videos, no? what about malicious code?"
+                        }
+                    ]
+                },
+                {
+                    "author": "ALampWithLegs",
+                    "text": "This video is so unbelievably stupid. It is extremely annoying when people who don\u2019t know what they\u2019re doing make uninformed grandiose statements.  \n\nFirstly, NOTHING and I mean NOTHING is suspicious about ntdll. Ntdll is a system module meant for interacting with the kernel. EVERY SINGLE WINDOWS PROCESS USES IT. ALL OF THEM. IF YOURE RUNING A GAME ON WINDOWS ITS IN THERE. \n\nWhich brings me to the next dumbass statement.   \u201cThis other game had 0 dlls\u201d. As I stated before. Not possible. All processes load a select few dlls for the system.  \n\nThirdly, them importing NvCamera does not mean they\u2019re spying on your webcam. Every executable whether it\u2019s process or dll or whatever will import dlls and if they rely on other dlls they will import them. Let\u2019s say that you use a prebuilt game engine that may want to allow the people who use that engine to access the camera. The engine is going to use that dll. There are literally a billion reasons they might import it, if the person who did this investigation knew what they were doing they would be analyzing behavior beyond seeing what dlls get imported. \n\nAnd finally they link a patents vaguely about facial scanning and point to that as proof that cod is spying on you with 0 evidence.\n\nJust a little due diligence would be nice."
+                },
+                {
+                    "author": "madknives23",
+                    "text": "What\u2019s crazy is there a ton of apps, cell phones and pretty much any tech we use today has this ability and no one really cares. \ud83e\udd37\u200d\u2642\ufe0f",
+                    "replies": [
+                        {
+                            "author": "Fecal-Facts",
+                            "text": "Why steal people's data when they just give it up \u00af\u2060\\\u2060_\u2060(\u2060\u30c4\u2060)\u2060_\u2060/\u2060\u00af"
+                        },
+                        {
+                            "author": "whitelynx22",
+                            "text": "I do, but you are right of course. (I give permissions \"Only this time\" which doesn't solve the issue but it's better than nothing).\n\nPeople don't realize what those apps could do. And, since they download them through Apple or Google, they assume that they are perfectly safe. A disaster waiting to happen. Oops, it happened already and I've lost count. (Fortunately, afaik it wasn't as bad as it could have been. How many times can you dodge a bullet?l)"
+                        },
+                        {
+                            "author": "Javidor42",
+                            "text": "Because most of them don\u2019t do it and that can be factually checked"
+                        }
+                    ]
+                },
+                {
+                    "author": "Commercial_Run_7759",
+                    "text": "Another reason we need to ban Kernel level anti-cheat."
+                },
+                {
+                    "author": "EcstaticImport",
+                    "text": "Did somebody just discover that DLLs are a thing? - so cute \u263a\ufe0f"
+                },
+                {
+                    "author": "DAT_DROP",
+                    "text": "Also, Epic has been using bots in Rocket League to buffer playerbase numbers for at least a year now\n\nThey seem to be hosted on the US Central servers:\n\n[https://www.reddit.com/r/conspiracy/comments/1cpxhfx/the\\_bots\\_currently\\_infesting\\_rocket\\_league\\_are/](https://www.reddit.com/r/conspiracy/comments/1cpxhfx/the_bots_currently_infesting_rocket_league_are/)"
+                },
+                {
+                    "author": "GrandmaPunk",
+                    "text": "That\u2019s why you always check permissions"
+                },
+                {
+                    "author": "DAT_DROP",
+                    "text": "This is the type of shenanigans that led me to buy ROG Zephyrus gaming laptops- that do have have a camera at all."
+                },
+                {
+                    "author": "akiffff3",
+                    "text": "Can someone teach me how to hack a gmail account?"
+                }
+            ]
+        },
+        {
+            "title": "The U.S. is trying to unravel a hacking plot that targeted climate activists",
+            "author": "crustose_lichen",
+            "text": "[External Link]",
+            "subreddit": "hacking",
+            "comments": [
+                {
+                    "author": "bogusnot",
+                    "text": "Petro-Fascism has arrived. They are scared that libertarians will actually realize that the easiest way to have sovereignty of the self is to control your own energy supply via solar, electric hardware at your house/car."
+                },
+                {
+                    "author": "iceink",
+                    "text": "i would suspect private corporate espionage or an internal group from the alphabet people themselves\n\ni don't see why independent hackers would do this unless they're real fukin dum, i mean, do you want to be able to drink water in the near future?",
+                    "replies": [
+                        {
+                            "author": "iGoalie",
+                            "text": "The article says an Israeli hacker based in the UK hired Indian hackers\u2026 but it\u2019s super light on what they actual did\u2026 \n\nThe article basically said Exon hired a lobbies firm that may have hired hackers to do something\u2026",
+                            "replies": [
+                                {
+                                    "author": "iceink",
+                                    "text": "Isreali is basically an extension of the US intelligence apparatus"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "MalwareDork",
+                    "text": "> U.S. is trying to extradite an Israeli private investigator named Amit Forlit from the United Kingdom for allegedly orchestrating the hacking campaign.\n\nOh, so NCO is involved to some greater or lesser degree. This is the third major Israeli scandal I've heard of the past two years."
+                }
+            ]
+        },
+        {
+            "title": "Hundreds of fake Reddit sites push Lumma Stealer malware",
+            "author": "intelw1zard",
+            "text": "[External Link]",
+            "subreddit": "hacking",
+            "comments": [
+                {
+                    "author": "BigCryptographer2034",
+                    "text": "Sounds about right"
+                }
+            ]
+        },
+        {
+            "title": "looking for emails messages using dorks",
+            "author": "Illustrious_Boss2947",
+            "text": "acutally im using this dork , so far so good some messages i have might seen but i dont know if there is a better way to find email messages on the internet?\n\n    # Google Dork: intext:\"Index of\" \"email.txt\"",
+            "subreddit": "hacking",
+            "comments": [
+                {
+                    "author": "LinearArray",
+                    "text": "Here are some more:\n\n```\nintext:\"Index of\" \"email.txt\"\nintitle:\"index of\" \"emails\" OR \"email list\"\n\"@gmail.com\" OR \"@yahoo.com\" filetype:txt\nfiletype:xlsx OR filetype:csv \"email\"\nsite:example.com \"email\"\ninurl:\"/emails\" OR inurl:\"/mailinglist\" filetype:txt\nsite:github.com \"email\" OR \"email list\"\n```"
+                },
+                {
+                    "author": "intelw1zard",
+                    "text": "some others\n\n      intext:\"Index of\" filetype:eml\n      intext:\"Index of\" intext:\"email\" intext:\"mail\"",
+                    "replies": [
+                        {
+                            "author": "unicito1",
+                            "text": "cool, thanks"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Suggestion for bypassing anti-debug measures using LD_PRELOAD flag (CTF)",
+            "author": "Electronic_Sort_2918",
+            "text": "Hello everybody, it's been a while i'm learning reverse engineering. Today i've stumbled upon a CTF that uses a simple anti-dbg measure, using just ptrace and PTRACE\\_TRACEME flag. By gathering some infos I saw that there is a simple hook I can use, suing the LD\\_PRELOAD flag. I did some tests on some programs that i wrote and seems effective. The problem about the CTF is that uses a dlopen of a specific lib in the system, it seems to be more relevant than the custom lib that I load with that flag obviously. Maybe I can solve the problem with patching but first I want to try solving the thing this way. Clearly there is something that I am missing here. I post here also the code if it might help.\n\n  `ptrace_sym = 0x61727470;`\n\n  `local_1b = 0x6563;`\n\n  `local_19 = 0;`\n\n  `libhandle = dlopen(\"libc.so.6\",1);`\n\n  `if (libhandle == 0) {`\n\n`/* WARNING: Subroutine does not return */`\n\n`exit(1);`\n\n  `}`\n\n  `sym = (code *)dlsym(libhandle,&ptrace_sym);`\n\n  `if (sym == (code *)0x0) {`\n\n`/* WARNING: Subroutine does not return */`\n\n`exit(1);`\n\n  `}`\n\n  `(*sym)(0,0);`  \n",
+            "subreddit": "hacking",
+            "comments": [
+                {
+                    "author": "Spriy",
+                    "text": "i have no idea if it\u2019s relevant and i\u2019m sure you already know this, but just in case, DLL search order is cool\n\nhttps://learn.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-search-order"
+                }
+            ]
+        }
+    ]
+}

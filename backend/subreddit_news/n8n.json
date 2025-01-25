@@ -1,0 +1,132 @@
+{
+    "items": [
+        {
+            "title": "Built a more powerful AI node on top of Vercel AI SDK \ud83d\udd25",
+            "author": "feliche93",
+            "text": "[External Link]",
+            "subreddit": "n8n",
+            "comments": [
+                {
+                    "author": "Horizon-Dev",
+                    "text": "Nice",
+                    "replies": [
+                        {
+                            "author": "feliche93",
+                            "text": "u/Horizon-Dev thanks \ud83d\ude4f If you find any bugs or have any other ideas. One of the key features I'd also love to add is \\`batching\\`, so you can process a lot of data faster, instead of having it to wrap with a loop."
+                        }
+                    ]
+                },
+                {
+                    "author": "frankentag",
+                    "text": "Cool \ud83d\udc4c\ud83e\udd29",
+                    "replies": [
+                        {
+                            "author": "feliche93",
+                            "text": "\ud83d\ude4f"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Will OpenAI Operator replace n8n?",
+            "author": "IllPreparation6406",
+            "text": "",
+            "subreddit": "n8n",
+            "comments": [
+                {
+                    "author": "Calm_Run93",
+                    "text": "unlikely. n8n provides a lot of filtering and streamlining needed to get the task done without onerous amounts of text the hammer the ai into doing what you want"
+                },
+                {
+                    "author": "Necessary_Weight",
+                    "text": "It will eventually have an API and we will integrate into our N8N workflows. Programmatically processing of and integration with arbitrary APIS is not going away anytime soon and the Operator is simply another tool in the toolbox of the automators guild \ud83d\udcaa"
+                },
+                {
+                    "author": "ChuckleBerryCheetah",
+                    "text": "How so? N8N doesn\u2019t have proper browser use workflows currently. Only Agentic ones for automating tasks. Correct me if I\u2019m wrong. But browser use isn\u2019t comprehensive yet. Apart from basic puppeteer etc.",
+                    "replies": [
+                        {
+                            "author": "Necessary_Weight",
+                            "text": "You can combine it with Latenode which has a headless browser node, if I understand your use case correctly"
+                        }
+                    ]
+                },
+                {
+                    "author": "Lanky-Football857",
+                    "text": "They have different purposes.\n\nN8N allows complex logic and n8n agents can interact with any API you want and your other workflows, which operator can\u2019t \n\nOperators on the other hand can browse online like a person and click stuff, which N8N can\u2019t.\n\nN8N is light years ahead as an enterprise agentic automation tool \u2013 Operator is light years ahead in automating agentic browsing and clicking stuff"
+                },
+                {
+                    "author": "stonediggity",
+                    "text": "No way. Operator is trash.",
+                    "replies": [
+                        {
+                            "author": "Huetarded",
+                            "text": "I had a similar thought while watching the demo. The whole time, I was thinking about how I could have gone to OpenTable and booked my own reservation faster than Operator worked it out.\n\nI'm sure over time it will improve, and of course, with larger tasks you can walk away from, it will be helpful, but I am always annoyed when we create fancy tech solutions to solve non-issues \ud83e\udd37\ud83c\udffc\u200d\u2642\ufe0f",
+                            "replies": [
+                                {
+                                    "author": "stonediggity",
+                                    "text": "They are putting out rubbish products, charging you for them and essentially open sourcing the trouble shooting while pocketing the profits."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "SlowZeck",
+                    "text": "N8n could work locally, without internet on your data with custom model and datas. So not aiming the same market"
+                },
+                {
+                    "author": "SnooRadishes9735",
+                    "text": "Most likely the Operator API will work inside of n8n so the two systems will work together.  \n\nInteresting to see how quickly they will pivot away from \u201chuman in the loop\u201d to truly automated.  I assume that\u2019s what the API will be."
+                },
+                {
+                    "author": "Mysterious_Doctor552",
+                    "text": "Nope."
+                },
+                {
+                    "author": "areyoucleam",
+                    "text": "No"
+                },
+                {
+                    "author": "Argenzuela",
+                    "text": "Is not Jesus"
+                },
+                {
+                    "author": "ScubaRacer",
+                    "text": "No. They solve different use cases."
+                }
+            ]
+        },
+        {
+            "title": "Tool agent error with Structured Output Parser",
+            "author": "too_much_lag",
+            "text": "I'm working on getting my model to produce a structured output, but I'm encountering an inconsistent error that's driving me crazy. The error message reads:\n\n>\n\nThe frustrating part is that the error seems completely random, sometimes the model works perfectly, and other times it throws this error without any noticeable changes to the input or configuration.\n\nHas anyone else run into this issue? What could be causing this inconsistency, and how can I ensure the model reliably fits the required format? ",
+            "subreddit": "n8n",
+            "comments": [
+                {
+                    "author": "perrylawrence",
+                    "text": "Not seeing your error message.",
+                    "replies": [
+                        {
+                            "author": "haf68k",
+                            "text": "That\u2019s how LLMs work. Had same issues and figured  out that the json was not \u201eperfect\u201c. Sometimes a quote or a comma was missing, or a text includes not escaped quotes (missing backslash). \nThe larger the output, the larger the failures. \nTry different models or reduce the output size. \nPass single items only (in a loop) instead of passing a list of many items to the Agent. \nWhen generating text, generate the text only without Output Decoder. \nUse a second agent for creating a second text, when necessary. \nWhen required use a final agent (can work with a cheap model) to verify the texts, by asking if the text fits the guidelines."
+                        }
+                    ]
+                },
+                {
+                    "author": "BeenThere11",
+                    "text": "What model are you using .\nAnd how do you know call the model.\nYou mean llm model ?"
+                },
+                {
+                    "author": "RyudSwift",
+                    "text": "You must be referring to the JSON output structure. Prevalent in all they do.\n\nI'm assuming since I had that issue for a while and at time I use a code node to get the right output since it still happens. \n\nCode node was coded using gpt."
+                },
+                {
+                    "author": "Necessary_Weight",
+                    "text": "I add a code node to parse the output. I also don't use the structured output node as I have not found a way to change the prompt it appends. I instead put the json schema in the user prompt for the AI node.\n\nYou can also use a second ai node to parse it for you"
+                }
+            ]
+        }
+    ]
+}

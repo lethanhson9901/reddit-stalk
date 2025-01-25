@@ -1,0 +1,1599 @@
+{
+    "items": [
+        {
+            "title": "How realistic does my photo look?",
+            "author": "Able-Ad2838",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "Krindus",
+                    "text": "Good enough to be used by a scammer pretending to be an angel investor while using Korean influences widely available profile pictures.",
+                    "replies": [
+                        {
+                            "author": "Able-Ad2838",
+                            "text": "Damn hopefully not lol",
+                            "replies": [
+                                {
+                                    "author": "tutman",
+                                    "text": "\ub108\ubb34 \ub2a6\uc5c8\uc5b4 \uce5c\uad6c!"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Juanitomdq",
+                            "text": "what's an angel investor?",
+                            "replies": [
+                                {
+                                    "author": "0nionSama",
+                                    "text": "Someone who invests angels instead of moneys"
+                                },
+                                {
+                                    "author": "daqqar123",
+                                    "text": "Angel investors are good capitalists they give you the investments to make your product but don\u2019t demand anything (aside from the returns of their investment)"
+                                },
+                                {
+                                    "author": "Krindus",
+                                    "text": "As far as I understand it, it's supposed to be a specific type of venture capitalist, I've heard the term 3 times, and all from different scammers. None of the actual VCs I've talked to use the term. It's just part of the hook for the scam, it sounds good and trustworthy"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "WINDOWS91",
+                    "text": "Pretty good, but check fingernails, upper lip, and base of index finger"
+                },
+                {
+                    "author": "lordpuddingcup",
+                    "text": "Any tips for how you got the detail especially skin so good",
+                    "replies": [
+                        {
+                            "author": "Able-Ad2838",
+                            "text": "Luckily the model I trained had some really good up-close pictures.  This part of the prompt also helped as well: The image is a high-quality photograph featuring an attractive Asian woman with smooth, flawless skin, free of freckles, illuminated by dramatic, high-contrast lighting. Her striking, bright green eyes are vivid and captivating, reflecting the light with depth and clarity. Her gaze is direct yet mysterious, expressing a blend of curiosity and subtle vulnerability. The lighting is diffused through a glass surface, casting soft, dappled shadows across her face for added texture and intrigue. Her hairstyle features medium-length, softly curled dark brown hair with gentle volume, framing her face naturally and elegantly. Her makeup emphasizes her features: a light blush highlights her cheekbones, soft eyeliner enhances her striking green eyes, and a glossy, light pink lip color adds a fresh and polished touch.",
+                            "replies": [
+                                {
+                                    "author": "lordpuddingcup",
+                                    "text": "Likely the other thing is it\u2019s a high quality closeup\n\nNow outpaint it to add more XD\n\nA lot of people do full body shots all at once at 1024 and expect to see skin detail\u2026 in the like 3 pixels of skin lol"
+                                },
+                                {
+                                    "author": "SDSunDiego",
+                                    "text": "Looks like you've also added film grain. I find adding a bit of grain does wonders for realism. Its the secret sauce for a lot of my generations."
+                                },
+                                {
+                                    "author": "ai0xf",
+                                    "text": "How you trained it?"
+                                },
+                                {
+                                    "author": "zthrx",
+                                    "text": "Can you share the model and loras? thanks"
+                                },
+                                {
+                                    "author": "EnthusiasmPopular480",
+                                    "text": "How did you train that model?"
+                                },
+                                {
+                                    "author": "[deleted]",
+                                    "text": "[deleted]"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "emreloperr",
+                            "text": "I'm also interested. Skin is pretty good \ud83e\udd0c",
+                            "replies": [
+                                {
+                                    "author": "Able-Ad2838",
+                                    "text": "I also stacked loras which adds to the realism"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "deepmindfulness",
+                    "text": "At first glance this is obviously quite realistic and\u2026\n\nAnd if I were searching this hard I\u2019d say: There are many problems with this photo that make it look unreal. (I\u2019ve started becoming hyperaware of detecting incongruities in photos lately, for obvious reasons.)\n\nFirst, an image, taken this close to someone\u2019s face would have more lens distortion around the edges. \n\n There are also inconsistencies in the way the light looks. The light on her face is extremely even and soft, but the highlights in her eyes are sharp and harsh. You can always tell the kind of light that is being used in a photograph, based on the shape of the reflection in people\u2019s eyes. \n\nThe eyes are too sharp. In a photo like this, the softness of the skin would also be as soft within the eyes. The hand is also sharper than the face which wouldn\u2019t make sense unless there\u2019s a ton of Photoshop or it was a fake image. \n\nI think something that most AI images suffer from and this image is included is that it looks too much like a fashion model. The makeup is perfect and the skin is perfect and even though it looks like an ordinary person, the sample images is referring to are all from models and The details don\u2019t really add up other than being individually perfect.\n\nI once heard someone explain Egyptian echography in that each part of the image was an ideal view of that portion of the body. The nose is in profile cause that\u2019s the easiest way to see the nose and the eye is head on because that\u2019s the easiest way to see the eye and the face is in profile , etc. etc. The figure is broken up into separate pieces that all look perfect but together look quite stylized. This is how I see this image.\n\nThe nose is perfect, and the forehead is perfect and the eyes are perfect, but they don\u2019t cohere. This is the biggest telltale I find in AI photos these days is that there\u2019s not a coherence of quality throughout the image. \n\nThat said, 99% of people would have no idea\n\nEdit: yes, a heavily photoshopped image could also look this unreal. \ud83e\udd37\ud83c\udffb\u200d\u2642\ufe0f",
+                    "replies": [
+                        {
+                            "author": "macmadman",
+                            "text": "Dude shush, you\u2019re fine-tuning AI rn \ud83d\ude02",
+                            "replies": [
+                                {
+                                    "author": "ddapixel",
+                                    "text": "Yep, that's the actual point of all of these \"realism feedback plz\" posts. \n\nSometimes they're not even hiding that their ultimate goal is to deceive people (not in this case - OP might have seen previous unsuccessful attempts here and fine-tuned his data collection algorithm to receive what he wants)."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Able-Ad2838",
+                            "text": "Thank you for the analysis.  I agree it it's like that the combined perfections is what makes it imperfect."
+                        },
+                        {
+                            "author": "ancient_lech",
+                            "text": "allow me to be blunt (but hopefully not rude), and say that it's easy to \"analyze\" an image like this when you know it's AI to begin with. Have you done any double-blind testing on yourself to see if your analyses are as apt as you think? This reminds me a lot of the internet detective work about how people can spot photoshopped images, and I'm reminded of all the times when a photo was [actually authentic even when people thought it wasn't](https://www.highsnobiety.com/p/kanye-west-bianca-censori-outfit/) ... in short, real life is easily as \"fake\" or unpredictable. There's also a self-serving bias going on where we remember the times we were right, but we obviously won't remember any time an AI-gen image went right under our nose.\n\npretty much critique here can be explained by other means:\n\ndistortion: modern cameras have high megapixel sensors, and a shot of this quality could've easily been taken from a slight distance and cropped\n\n\"softness\": I don't really see this, especially if you zoom in. If anything, it's the reverse of what you say -- we can easily see her skin texture from a distance, but we can't see the individual threads of her irises even if we zoom in. Something I notice now is that despite the high resolution, there aren't any/many skin pores visible, which I don't think happens unless someone really cakes on the makeup, but then we wouldn't see the kind of texture in this pic... but I could be wrong about that.\n\nlighting: maybe, but this still seems like a stretch. The reflections in her eyes could be an object in her field of view that's catching some light behind her, or self-lit like a phone. The phone doesn't necessarily have to be the thing taking the photo either.\n\nalso, photoshop exists and any post-process enhancements and such can cause lighting inconsistencies.\n\nface coherence: I'm not really sure what this is supposed to mean. This face is completely within the bounds of a normal face, albeit leaning towards pretty or idealized, but that in itself isn't a very good indicator of being fake. I'm almost certain I've seen a Japanese celebrity with a face similar to this, minus the green eyes. I don't see any weird idealized Egyptian or Picasso-like skewed perspective; everything looks exactly like it should from this angle. But I don't know; maybe you meant something else that wasn't explained well here. \n\nI guess I can agree about looking too much like fashion models, but this particular woman is different enough from the \"default SD pretty girl face\" that it doesn't immediately strike that neuron, and she's not so absurdly beautiful or doll-like that it's really all that implausible either.\n\nif I had to have any critique for her face, it'd probably be that most people have some level of asymmetry, even if it's very minor -- check out any top model or celeb pics and it's fairly easy to see. It's very difficult to find any in this pic, but because symmetry is generally associated with beauty and attractiveness, it's probably not something people will think of. This is probably one of those things that people unconsciously pick up on and describe as \"too perfect,\" even if they can't quite put it to words.\n\nso my critiques are: lack of skin pores, hyper-symmetry, and a very oddly-curved fingernail... and even all these aren't really definite give-aways. She's got an exceptional face, but people take pictures of exceptional things, so...\n\nAgain, definitely helps to know first that it was AI-gen to begin with.",
+                            "replies": [
+                                {
+                                    "author": "Daiwon",
+                                    "text": "For the eyes, the reflections should be out of focus. With the apparent depth of field this image has, it would be impossible to have those reflections be in focus. But this is something you have to really think about, and doesn't trigger that instinctual \"wrongness\" that AI sometimes has. \n\nThe nail would be the only clear sign of AI to me."
+                                },
+                                {
+                                    "author": "deepmindfulness",
+                                    "text": "k"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "mercm8",
+                            "text": "lol what\n\n> First, an image, taken this close to someone\u2019s face would have more lens distortion around the edges. \n\nUnless they have the ability to zoom or crop\n\n> The eyes are too sharp. In a photo like this, the softness of the skin would also be as soft within the eyes. The hand is also sharper than the face which wouldn\u2019t make sense unless there\u2019s a ton of Photoshop or it was a fake image. \n\nSame effect happens in many images that have only been slightly touched by photoshop\n\n> rambling nonsense\n\ncome on",
+                            "replies": [
+                                {
+                                    "author": "Aerroon",
+                                    "text": "> Same effect happens in many images that have only been slightly touched by photoshop\n\nYeah, the image looks photoshopped to me. If someone told me this was a real photo I would just assume that the photographer touched it up."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Lorim_Shikikan",
+                            "text": "In fact there is something even more blatant : the hand.\n\nHands and feet are the disease of the AI.",
+                            "replies": [
+                                {
+                                    "author": "ratsta",
+                                    "text": "What's blatant about the hand other than the unclipped nail?"
+                                },
+                                {
+                                    "author": "Nefarity",
+                                    "text": "Models don't get bad manicures yo."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Essar",
+                            "text": "You're spouting absolute nonsense, my dude."
+                        },
+                        {
+                            "author": "tragedyy_",
+                            "text": "I call bullshit on every single criticism you posted and it feels forced like you were trying to find it so you did. The only thing that threw me off was asain people don't usually have green eyes.",
+                            "replies": [
+                                {
+                                    "author": "deepmindfulness",
+                                    "text": "I mean\u2026 I was specifically looking for things that look wrong\u2026 you know, because that\u2019s what OP asked for. \ud83e\udd37\ud83c\udffb\u200d\u2642\ufe0f"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Similar-Sport753",
+                            "text": "I'm pretty sure you would output a similar analysis on a picture that's actually not AI."
+                        },
+                        {
+                            "author": "vault_nsfw",
+                            "text": "Lens distortions: easily fixed in post with the click of a checkbox in lightroom (or in-camera)\nSmooth skin, sharp eyes: common practice in edited photos\nLooks perfect: common practice in professional photos\nYou can see things because you're looking for things, you could see the same things in real photos if you thought it was AI.\n\nBut you are right in one thing, you're hyperaware."
+                        },
+                        {
+                            "author": "skate_nbw",
+                            "text": "I don't agree about the eyes point as I have seen many real life photos that have a diffused lighting and there is anyway a light source visible in the eyes. The rest I agree with 100%. For me the biggest give-away is if I find a surprising sharpness around the eyes and the mouth, that doesn't fit to the sharpness of the rest of the face (in this image also the hand). For the time being the best way to mitigate this is running these specific parts of the image through a very slight grausian blur filter in Photoshop or Gimp. If you would have done that, then only the \"too perfect\" symmetrics of the face would have been a hint IMHO."
+                        },
+                        {
+                            "author": "dennisler",
+                            "text": "Or an image take with a mobile phone where \"bokeh\" is used and extra sharpening on the eyes. But for a normal user that doesn't pixel peep I guess the photo looks real. It is just as real as most model shots in magazines, commercials etc. but not close to what a normal person would achieve."
+                        },
+                        {
+                            "author": "joe-re",
+                            "text": "Great analysis, good for training the human eye.\n\nAlso light: catch light in eyes is from below, light on face is from above"
+                        },
+                        {
+                            "author": "Appropriate_Ant_4629",
+                            "text": "> The eyes are too sharp\n\nI think the biggest problem with the eyes is that they aren't quite pointing in the same direction.\n\nPerhaps she had recent brain trauma?",
+                            "replies": [
+                                {
+                                    "author": "Original-Nothing582",
+                                    "text": "There are a lot of humans with slightly lazy eyes."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "ver0cious",
+                            "text": ">First, an image, taken this close to someone\u2019s face would have more lens distortion around the edges. \n\nNo, that depends on what type of lens you're using. This looks like a 50mm cropped photo from the amount of background blur."
+                        },
+                        {
+                            "author": "yoshiK",
+                            "text": "> First, an image, taken this close to someone\u2019s face would have more lens distortion around the edges. \n\nI think there are ways around that, you could use a longer lens, crop in and then remove lens distortion in software. I think from a photographer's perspective, you want lens distortion in this image. \n\n> There are also inconsistencies in the way the light looks. \n\nTo me that is currently one of the clearest tell tale signs that something is ai generated. Though I disagree that the problem is soft light on the skin and hard light in the eyes. The way eyes reflect lightning, it always look \"harsh.\" What we are seeing here, is a reflection of a small to medium soft box lightning the face from below with perhaps a hint of a high key light from a clam shell setup. However, on the face we see very classical high key lightning, so the soft box is not there. (Also in such a setup more light would bleed through to the left side of her face.) \n\n> The eyes are too sharp. In a photo like this, the softness of the skin would also be as soft within the eyes. The hand is also sharper than the face which wouldn\u2019t make sense unless there\u2019s a ton of Photoshop or it was a fake image. \n\nNow that you pointed it out, I see what you mean. Though consider the current picture of [FLOTUS](https://www.whitehouse.gov/wp-content/uploads/2025/01/First-Lady-Melania-Trump.jpg) on the Whitehouse website. \n\n\nFor me there is another problem, real lenses have a focal plane. [In this picture](https://c.wallhere.com/photos/4f/72/women_model_women_outdoors-175652.jpg!d) the model's right hand is before the focal plane, and her left hand is behind the focal plane. Thing is, you can trace the focal plane also along the stairs and along the pavement behind her. In the ai generated image here, the points that are sharp don't lie on a plane, the tip of the nose, the lips and the eyes are sharp, as is her hand."
+                        },
+                        {
+                            "author": "adesantalighieri",
+                            "text": "Sounds like you need a vacation my man",
+                            "replies": [
+                                {
+                                    "author": "deepmindfulness",
+                                    "text": "I\u2019m on vacation right now. Your mom says hi.\n\n![gif](giphy|DfbpTbQ9TvSX6)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Enshitification",
+                    "text": "The skin texture is good. The blue nose is a little odd.",
+                    "replies": [
+                        {
+                            "author": "Able-Ad2838",
+                            "text": "Thank you"
+                        },
+                        {
+                            "author": "NotEnoughIT",
+                            "text": "It's just old piercings that have healed over. Ya. Or something."
+                        }
+                    ]
+                },
+                {
+                    "author": "Effective_Garbage_34",
+                    "text": "Looks real to me! (What is real?) *existential dread intensifies*"
+                },
+                {
+                    "author": "Heaven2004_LCM",
+                    "text": "Definitely looks like it's taken with a studio set up in mind, most people will be convinced too.\n\nHOWEVER, the eyes *feel* off if anyone glance at them once, *look* off if anyone glances twice. Reflection is one thing, but the iris is also super distorted and messy."
+                },
+                {
+                    "author": "duelmeharderdaddy",
+                    "text": "Enough for people to scam(don't please) but the eyes are immediately jarring"
+                },
+                {
+                    "author": "_CMDR_",
+                    "text": "Catch lights in eyes aren\u2019t symmetrical."
+                },
+                {
+                    "author": "Artforartsake99",
+                    "text": "The eyes are dead give away dead AI eyes, something about the blur makes it feel instantly AI too.  But well normies are much easier to fool than smut makers on  this sub.\n\nI dunno you made the job easy for yourself it\u2019s easy to do realistic details up close, do a normal photo see how close you can get , close ups don\u2019t count imo."
+                },
+                {
+                    "author": "bittyc",
+                    "text": "Looks great!"
+                },
+                {
+                    "author": "MiroElMirlo",
+                    "text": "I was scrolling through my feed without seeing which subreddit this was from and I immediately thought \"that's an ai girl\". Nothing in particular that made think that though, its just a vibe. Although the skin is a bit too flawless. I believe most people wouldn't think twice about it  though."
+                },
+                {
+                    "author": "radialmonster",
+                    "text": "The eyebrow hairs arent going the same direction"
+                },
+                {
+                    "author": "Mr_Zonca",
+                    "text": "The hair, where it transitions is a very hard inconsistent line, other than that I love it!"
+                },
+                {
+                    "author": "vibribbon",
+                    "text": "Fingernails and light reflections in the eyes are different.  There was an article about that a while ago.  If I wasn't specifically looking for anything I'd be fooled."
+                },
+                {
+                    "author": "NEOCRONE",
+                    "text": "80% can pass Facebook check. Dress embroidery, nails, fingers, eyes are weird, plus it has AI feel. Skin and hair is good.\n\nRemove the hand and embroidery, slap on some filters, probably."
+                },
+                {
+                    "author": "Hedede",
+                    "text": "It looks more like a hyperrealistic 3D render than a real photo."
+                },
+                {
+                    "author": "CountLippe",
+                    "text": "It looks realistic enough that we'd all appreciate you sharing the workflow."
+                },
+                {
+                    "author": "Reason_He_Wins_Again",
+                    "text": "https://www.youtube.com/watch?v=b7NrJqV7i2k"
+                },
+                {
+                    "author": "Ecoaardvark",
+                    "text": "I could tell it was AI in an instant."
+                },
+                {
+                    "author": "PizdaPulaSupraCaca",
+                    "text": "I lost"
+                },
+                {
+                    "author": "Doraschi",
+                    "text": "Good enough to catfish a desperate Korean man into a seedy model on the outskirts of desolation road."
+                },
+                {
+                    "author": "RedPanda888",
+                    "text": "Mouth shape is a little telling. The slightly open mouth/cracks in lips are a very common feature in AI images where someone doesn't prompt enough specifically for facial expression and/or lips (which can be hard because as soon as you start prompting lip details it goes into overdrive and starts slapping pink lipstick everywhere). Additionally the slightly open mouth doesn't appear to match the expression in her eyes. The ethnicity of this girl appears almost blended, and her nose doesn't quite fit the nose that someone of her apparent ethnicity would have. \n\nApart from that, skin texture is good and color is nice. At a glance many wouldn't notice, but the more you look and if someone asks you to decide it seems there are a few tells that could indicate AI."
+                },
+                {
+                    "author": "Etsu_Riot",
+                    "text": "I hope you don't mind, but I stole your image and tried to add a little more \"realism\" to it. (Maybe it worked. I don't know.) I used img2img and ADetailer. The model is epicrealismXL\\_v8Kiss. As you can see, I removed the hand because, well, hands. xD\n\nhttps://preview.redd.it/iqmowwzevvee1.jpeg?width=1080&format=pjpg&auto=webp&s=f7992ad2c28449576001154ca1ccc8c23b9711fa\n\nSteps: 20, Sampler: DPM++ 2M Karras, CFG scale: 5, Size: 1080x1080, Denoising strength: 0.5, ADetailer model: face\\_yolov8n.pt, ADetailer denoising strength: 0.4, ADetailer model 2nd: mediapipe\\_face\\_mesh\\_eyes\\_only",
+                    "replies": [
+                        {
+                            "author": "Etsu_Riot",
+                            "text": "I made a few others. This one has a denoising strength of 0.8:\n\nhttps://preview.redd.it/dij7w4lcwvee1.jpeg?width=1080&format=pjpg&auto=webp&s=b7197728a967a0689fde1a4dd02ed60e57b7f2df\n\nI used ADetailer only for the eyes but not the face."
+                        }
+                    ]
+                },
+                {
+                    "author": "Nervous_Dragonfruit8",
+                    "text": "Very real!!! Nice work! May I ask what Lora or model you used"
+                },
+                {
+                    "author": "yetonemorerusername",
+                    "text": "Not bad.  I\u2019d have bought that it was a real person but with an instagram filter to smoothe her skin."
+                },
+                {
+                    "author": "GoudaMane",
+                    "text": "I am in love with this real existing woman"
+                },
+                {
+                    "author": "Infamous-Interest148",
+                    "text": "It\u2019s good. Maybe needs a touch of peach fuzz on the top lip and visible in the highlights on the face. But this is pretty good. And it\u2019s not unheard of for Asians to use coloured contacts."
+                },
+                {
+                    "author": "randomhaus64",
+                    "text": "I can see you have nose rings and studs that you attempted to edit out of your training data"
+                },
+                {
+                    "author": "Able-Hat-8773",
+                    "text": "pretty good"
+                },
+                {
+                    "author": "ireshine",
+                    "text": "The eyes, AI cant help it self, it always put a dark border around the iris, even if the iris should be cover by the eyes-lids, pupils should be a circle and the reflections/light flare should be the same. and iris should be circle, not look squashed.\n\nthere ISO noise but not all over the image,"
+                },
+                {
+                    "author": "Sea-Resort730",
+                    "text": "pretty good!  ask on r/stablediffusionreal"
+                },
+                {
+                    "author": "mercm8",
+                    "text": "Unless you share the workflow with the seed I'm gonna call your bluff  and say this is a real photo with a bit of photoshopping used to bait people into pretending they can call out AI images"
+                },
+                {
+                    "author": "smallfried",
+                    "text": "The lighting looks professional. And most people don't carry lighting equipment with them when taking a photo. Statistically that makes the chances it's fake higher.\n\nCamera also seems high quality, with a large aperture zoom lens. \n\nFor realism, fine tuning for in the moment phone camera photos with only natural lighting might work better."
+                },
+                {
+                    "author": "Powered_JJ",
+                    "text": "As a portrait photographer, I'm used to seeing faces up close (when retouching, etc.).  \nI would believe that it is an actual photograph. Great job!  \nCould you share your workflow, please? :)"
+                },
+                {
+                    "author": "augustus_brutus",
+                    "text": "It's really good. I'm a hater but love this one."
+                },
+                {
+                    "author": "Synthetellect",
+                    "text": "I'm pretty sure I've seen her nudes."
+                },
+                {
+                    "author": "laviguerjeremy",
+                    "text": "From someone whos pretty into photography, Realistic...no, at a glance maybe. Good? Absolutely... the really cool thing about prompted works is that you can DO ANYTHING with the subject. Lean into that."
+                },
+                {
+                    "author": "moschles",
+                    "text": "the \"grainy\" pixels of CCD phone camera was reproduced believably."
+                },
+                {
+                    "author": "Dense-Imagination671",
+                    "text": "What program /gensrator ai you use"
+                },
+                {
+                    "author": "tomhermans",
+                    "text": "I had to check in what subreddit it was posted.. so pretty pretty good I think."
+                },
+                {
+                    "author": "gurilagarden",
+                    "text": "you'll be catfishing in no time."
+                },
+                {
+                    "author": "fadingsignal",
+                    "text": "I would say that basically every one of the things that my brain scans for in AI images are not present here. The skin detail, noise, etc. all look very real.\n\nThe only things that look odd are the composition, and that errant reflection, but this is probably the most realistic image I've ever seen generated so far personally."
+                },
+                {
+                    "author": "PeachCai",
+                    "text": "Without knowing, i'd have never given it a second look.  Looks great!  I don't understand what is going on top left of the image with that odd reflection across the face - but for me its the hand that stood out the most odd (on second look).  The fingers look like they belong to two people, don't appear to be interacting with the face at all, and the image suggests an unnaturally long index finger.  You could argue the pattern on the garment has an unusually large gap at the right collar when compared to the left."
+                },
+                {
+                    "author": "jib_reddit",
+                    "text": "What is with the big reflection on her hair?  Is it supposed to look like it is shot though a pane of glass? I have never seen something look like that on a real photo."
+                },
+                {
+                    "author": "rogueparagon",
+                    "text": "wait which model did you use for this, if you don\u2019t mind me asking? i have been trying to get the most realistic pics using various models but can\u2019t seem to hit the nail on the"
+                },
+                {
+                    "author": "ImNotARobotFOSHO",
+                    "text": "Start by not saying it's a photo"
+                },
+                {
+                    "author": "ayuwoki84",
+                    "text": "2025 idk what is real any more, but if is real u look cute"
+                },
+                {
+                    "author": "NailEastern7395",
+                    "text": "Now you can finally say it\u2019s a real photo and not AI, busting the so-called experts lol"
+                },
+                {
+                    "author": "redMAC2",
+                    "text": "Very. It even has reflections and all, as if taken from the other side of a window.\n\nJust don't scam people with it."
+                },
+                {
+                    "author": "adampm1",
+                    "text": "Got some BUCK teeth."
+                },
+                {
+                    "author": "WASasquatch",
+                    "text": "The problem with \"realism\" here is not so much fidelity, it's how AI mixes in all sorts of angled into one cohesive image, and you can kinda tell things are off."
+                },
+                {
+                    "author": "yamfun",
+                    "text": "Looks like Ugaki Misato"
+                },
+                {
+                    "author": "Original-Nothing582",
+                    "text": "Is the nose uusally so long and mouth so low? Really small chin too."
+                },
+                {
+                    "author": "oli-ran",
+                    "text": "9 out of 10 realistic"
+                },
+                {
+                    "author": "kjaergaard_a",
+                    "text": "The skin is great,  but the eyes look, not present. But this is better then alot of other ai images"
+                },
+                {
+                    "author": "Architecht-Of-Demise",
+                    "text": "Un-Realistic"
+                },
+                {
+                    "author": "FeelingAdditional221",
+                    "text": "she have only two teeth"
+                },
+                {
+                    "author": "1lucas999",
+                    "text": "The hair is getting mixed with the background as it was glasses reflection"
+                },
+                {
+                    "author": "Nattya_",
+                    "text": "iris is not round"
+                },
+                {
+                    "author": "byx24",
+                    "text": "On first glance, her chin is too narrow and small, this is an immediate, dead giveaway. Lots of streamers use filters that narrows their chins, giving it a downward pointy appearance. And those images end up in AI's training data.\n\nOn second look, her nose is a little too narrow. Another result from streamers' \"beauty\" filters."
+                },
+                {
+                    "author": "traumfisch",
+                    "text": "Very realistic. The split upper lip is the only tell I could see"
+                },
+                {
+                    "author": "franckJPLF",
+                    "text": "https://preview.redd.it/rxuvg7gav0fe1.jpeg?width=750&format=pjpg&auto=webp&s=99cc727d09a9b5696c324fa56501a3e5e62729d5\n\nBackward eyebrows \ud83d\ude40"
+                },
+                {
+                    "author": "Ja5p5",
+                    "text": "Only thing that threw me was her fingernail on the picture right it comes down the finger in an unnatural way"
+                },
+                {
+                    "author": "Own_Proof",
+                    "text": "It\u2019s something about the eyes & mouth area"
+                },
+                {
+                    "author": "pcdenjin",
+                    "text": "Looks like a screenshot from CSI Miami."
+                },
+                {
+                    "author": "NateBerukAnjing",
+                    "text": "so you're not gonna share the lora?"
+                },
+                {
+                    "author": "dariusredraven",
+                    "text": "Not realistic at all unless you are a middle aged Korean woman..  if you are then it's perfectly realistic. Looks good"
+                },
+                {
+                    "author": "R_Boa",
+                    "text": "Very realistic imo. It's really hard to distinguish this. Hopefully, scammers don't have their hands on tools like this."
+                },
+                {
+                    "author": "Ekgladiator",
+                    "text": "At a first glance (before realizing the sub), it looked real enough that I had to do a double take before realizing it wasn't >!u/lilykawaiiii!< (NSFW/ ONLYFANS, YE HAVE BEEN WARNED). Once I looked harder, I still don't see many imperfections but the only resemblance left was the eyes"
+                }
+            ]
+        },
+        {
+            "title": "Sony Alpha A7 III Style - Flux.dev",
+            "author": "FortranUA",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "FortranUA",
+                    "text": "**Trained My First Non-LoFi LoRA: Sony Alpha A7 III Style!** \ud83c\udf89\n\nHey everyone! After focusing on LoFi aesthetics for a while, I decided to branch out and try something new. This is my **first non-LoFi LoRA**, and I\u2019m super excited to share it with you all. I went all-in and trained it at **2048 resolution instead of the usual 1024 -** honestly, I\u2019m not 100% sure if it makes a huge difference in quality, but I\u2019m pretty happy with the final results.\n\n[https://civitai.com/models/1174190](https://civitai.com/models/1174190)\n\n# About the LoRA\n\nThis **Sony Alpha A7 III Style LoRA** is designed to capture the signature look of the Sony Alpha7 III camera. It\u2019s known for its outstanding **dynamic range**, **natural yet vibrant colors**, and **professional-quality output**. Here's the short version:\n\n* **Enhanced details**\n* **Sophisticated depth of field (DoF)** and blur\n* **Richer, more vibrant colors**\n\nWhether you're creating **realistic portraits**, **cinematic landscapes**, or artistic compositions, this LoRA gives a polished and professional edge to your creations.\n\n# Training Details\n\n* **Resolution**: Trained on RunPod at **2048** resolution instead of the standard 1024, ensuring finer details and sharper outputs.\n* **Base Checkpoint**: Built on **my own ultrareal fine-tune v2** instead of [Flux.dev](http://Flux.dev), for an extra layer of realism.\n* **Generation Tip**: 40 Steps, DPMPP2M + Beta, 2.5 CFG. Generating at **1.5MP or even 2MP** yields the best results, with sharper details and richer outputs (but some details sometimes may degrade slightly).\n\nFor all the images I\u2019ve shared, I used my [ultrareal fine-tune checkpoint ](https://civitai.com/models/978314)in **2MP resolution**, and I think it really brings out the best in this LoRA\n\nIf you\u2019re interested, the LoRA is now live on Civitai. Feel free to check it out, and let me know what you think. Feedback is always welcome \ud83d\ude0a  \n  \nP.S.: I know these settings take a long time to generate, but IMO, the quality is worth it",
+                    "replies": [
+                        {
+                            "author": "FortranUA",
+                            "text": "Yeah, also I trained a new version of checkpoint [https://civitai.com/models/978314](https://civitai.com/models/978314)"
+                        }
+                    ]
+                },
+                {
+                    "author": "ComprehensiveQuail77",
+                    "text": "nice"
+                },
+                {
+                    "author": "zachsliquidart",
+                    "text": "You could have named this LoRA after any DSLR or mirrorless camera.",
+                    "replies": [
+                        {
+                            "author": "YMIR_THE_FROSTY",
+                            "text": "Gonna assume its cause he used pics from that specific camera to train it.",
+                            "replies": [
+                                {
+                                    "author": "zachsliquidart",
+                                    "text": "Sure that's possible but visually there is no intrinsic difference between digital cameras besides slight color differences in magenta or green.  And post processed images are just whatever the users tastes are."
+                                },
+                                {
+                                    "author": "FortranUA",
+                                    "text": "Yep, exactly. All the pics for dataset were taken with this camera - gotta keep the vibe consistent"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "D4rkr4in",
+                            "text": "yeah but it's funnier that it's named after a specific model - it's like those party drugs pressed into specific logos",
+                            "replies": [
+                                {
+                                    "author": "zachsliquidart",
+                                    "text": "Mitsubishi \ud83d\ude02"
+                                },
+                                {
+                                    "author": "FortranUA",
+                                    "text": "Haha, fair enough. Naming things is harder than it looks, I guess"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "BusterBoom8",
+                    "text": "That 6th image is stunning.",
+                    "replies": [
+                        {
+                            "author": "FortranUA",
+                            "text": "Thanx =) But I had to change the color of the liquid to avoid the NSFW tag\ud83d\ude0f",
+                            "replies": [
+                                {
+                                    "author": "FortranUA",
+                                    "text": "i see someone disliked, but i mean red color, not white \ud83d\ude01"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Candiru666",
+                            "text": "The lips look weird though"
+                        }
+                    ]
+                },
+                {
+                    "author": "batuhansrc",
+                    "text": "God!! Flux skin looks fine on editorial shoots, this needs to be integrated into the photoshop action for skin retouching!!!"
+                },
+                {
+                    "author": "TekRabbit",
+                    "text": "This is awesome. \n\nCan you briefly explain what you mean when you say \u201ctrained a Lora..\u201d\n\nI get the idea. But what\u2019s your process?\n\nHow many images did you upload, did you hand tag them all? And then were all of these images created in flux text 2 Imgur with only your unique Lora applied nothing else?\n\nI read your comment I just don\u2019t pick up on the specifics"
+                },
+                {
+                    "author": "Enshitification",
+                    "text": "Is the LoRA really an approximation of the specific camera, or of the images chosen in the dataset? Do you have any examples with and without the LoRA at the same settings to compare?",
+                    "replies": [
+                        {
+                            "author": "FortranUA",
+                            "text": "That means all the images in the dataset are from this camera. \ud83d\ude0a In some moments, the results are pretty similar to the real thing, and in others, not so much (for those cases, I use a different version of the LoRA). This was mostly a test to see how well I could replicate the style of the camera, and for my second attempt, it\u2019s not too bad (I already have a LoRA for an older Sony camera too.). What about comparison, i can later make a test and make additional post or i dunno"
+                        }
+                    ]
+                },
+                {
+                    "author": "Paraleluniverse200",
+                    "text": "That looks crazy, would you consider doing something like this for xl?"
+                },
+                {
+                    "author": "ramonartist",
+                    "text": "I was expecting a big file size Lora, but it's quite small I'll give this try"
+                },
+                {
+                    "author": "AsicResistor",
+                    "text": "I've been running an a7r3 for quite a while, these pictures really remind me of it very strongly.  \nNice job!"
+                },
+                {
+                    "author": "AI_Characters",
+                    "text": "Great model as always.\n\nAnd more importantly: Great new prompts that I am blatantly going to steal again. They are great! More \"interesting compositions\" than my (and your previous) usual prompts."
+                },
+                {
+                    "author": "moschles",
+                    "text": "photo 14  \ud83d\ude33"
+                },
+                {
+                    "author": "ninjasaid13",
+                    "text": "How does work with fantastical generations?",
+                    "replies": [
+                        {
+                            "author": "FortranUA",
+                            "text": "Can you please send an example of scene or prompt?"
+                        }
+                    ]
+                },
+                {
+                    "author": "Spirited_Example_341",
+                    "text": "ooh fun\n\ni actually has the a7 III \n\ngood camera :-)"
+                }
+            ]
+        },
+        {
+            "title": "Here's how to take some of the guesswork out of finetuning/lora: an investigation into the hidden dynamics of training.",
+            "author": "spacepxl",
+            "text": "This mini-research project is something I've been working on for several months, and I've teased it in comments a few times. By controlling the randomness used in training, and creating separate dataset splits for training and validation, it's possible to measure training progress in a clear, reliable way.\n\nI'm hoping to see the adoption of these methods into the more developed training tools, like onetrainer, kohya sd-scripts, etc. Onetrainer will probably be the easiest to implement it in, since it already has support for validation loss, and the only change required is to control the seeding for it. I may attempt to create a PR for it.\n\nBy establishing a way to measure progress, I'm also able to test the effects of various training settings and commonly cited rules, like how batch size affects learning rate, the effects of dataset size, etc.\n\n[https://github.com/spacepxl/demystifying-sd-finetuning](https://github.com/spacepxl/demystifying-sd-finetuning)",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "Stepfunction",
+                    "text": "This is incredible! After reading this I really do feel like we've all been flying blind with our training efforts. I'll get to work on an sd-scripts version when I'm able. It would probably make sense to calculate test and validation loss on a small batch though instead of a single sample (depending on the type of training), though that could become expensive.\n\nIn your experiments, was there a particular frequency of evaluation that you targeted? (i.e. every 10/100/1%/etc.)?",
+                    "replies": [
+                        {
+                            "author": "spacepxl",
+                            "text": "You're right, I calculated it on multiple images (using separate dataloaders, and running through all the images in each set), and also repeated each image multiple times with different noise and timesteps. More samples helps smooth out the curve. 8 samples per set is noisy, but you can still see trends. I went up to 32 samples for most of the runs which gave nice smooth curves. I think there's also a benefit to using more images instead of just repeating a few images, but that requires sacrificing more of the training set.\n\nI changed around the validation frequency depending on the experiment and learning rate. For loras I generally validated at the same interval as checkpoint saves. It's pretty fast to run, since it's running in inference mode and about the same number of NFE's as generating a test image.",
+                            "replies": [
+                                {
+                                    "author": "Stepfunction",
+                                    "text": "Great, that's really helpful, thank you!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "ArmadstheDoom",
+                    "text": "So this is very impressive, although trying to read it makes my head hurt because I don't entirely understand what I'm looking at. I've never really grasped what the graphs mean or what convergence looks like, so for me, this isn't really useful. But it *is* going to be useful for people who are smart enough to understand all this data. More data and research is always good to see, so thank you for this! \n\nOne question though. Are you 'validation' images that you mention 'regularization' images? Or are they different?",
+                    "replies": [
+                        {
+                            "author": "spacepxl",
+                            "text": "So the thing is, if you're using most training tools which only report training loss (the noisy curve), you actually shouldn't see it converge. That randomness is intrinsic, it's necessary for the model to learn correctly. What I'm doing here, is running a separate evaluation, similar to generating image samples periodically during training. But instead of generating images and trying to judge progress by how the images look, I'm measuring the loss on those images in a way that's repeatable, so it cancels out the noise. \n\nBy measuring that on images that are similar to the training images, but not actually trained on, we can see how well the model is learning the *concept* in the images, vs just memorizing the actual training images. I then take that new tool and use it to adjust the training hyperparameters.\n\nIt's totally different from the regularization images used for dreambooth. That's basically just adding a bunch of unrelated images into the training data, in the hope that it will prevent the model from forgetting all the other things it knows. I didn't test it here, but it would be something interesting to test in the future.",
+                            "replies": [
+                                {
+                                    "author": "ArmadstheDoom",
+                                    "text": "Okay, so I didn't understand most of what you just said, but I can tell that it's probably correct and sounds smart. I really can't wrap my head around the details; but I really am glad people like you exist to push this kind of thing forward."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "SpinnakerLad",
+                    "text": "Nice work! At one point I briefly experimented with different learning rates for different parts of the UNET (Kohya has an option for this). My theory was fine tuning for things like a concept or identity you're better off concentrating on the middle layers as they'll be dealing with higher levels features due to the reduced latent dimensions whilst for something like a style you're better off concentrating on the start and end layers as it's more about local pixel by pixel details.\n\n\nI never managed to find anything compelling here but then I was just trying out stuff almost at random and looking at the resultant images. Would be interesting to repeat the experiments within the framework you used here.",
+                    "replies": [
+                        {
+                            "author": "spacepxl",
+                            "text": "Totally, that would be a great thing to test. It might also be interesting to use different lora ranks for different layers too, ie higher ranks in the thick middle layers and lower ranks on the outside. Although I don't know how well supported that would be since most tools assume the same rank for the whole lora."
+                        }
+                    ]
+                },
+                {
+                    "author": "lechatsportif",
+                    "text": "Thank you for this exhaustive research!  Did you end up with a set of rough guidelines for training \"base model\" (for example a new juggernaught) vs style vs likeness?\n\nThe learning rates you explored are lower than I've seen in the community youtuber.  Can you do a quick example on how to set batch size for them based on the relationship you explained (sqrt seemed to be the pref)?  For example: 1e-6, and 5e-7?",
+                    "replies": [
+                        {
+                            "author": "spacepxl",
+                            "text": "It's hard to come up with preset formulas that will guarantee good results. That's why having validation loss is so useful, because it makes it much easier to dial in all the settings for each new dataset. I think coming up with a set of universal rules would be a good project for an academic researcher with a budget, someone who can do thousands of training runs across a large number of very different datasets to find the real trends with confidence.\n\nRe: learning rates, it depends on finetuning vs lora, and with lora it depends heavily on alpha. Finetuning requires lower learning rates. If you use lora with alpha=1, I found that lr in the 1e-4 range was fine, which is roughly in line with many of the tutorials out there. It also depends on how big your dataset is (my preference is much larger than most) and whether you're interested in the best possible results, or just good enough and as fast as possible. And it will also likely depend on the model, larger models might tolerate higher learning rates.\n\nExample of adjusting learning rate based on batch size: suppose you have a configuration that works well, at batch size = 1 and learning rate = 1e-6. If you want to change the batch size from 1 to 4, you would change the learning rate by sqrt(4/1) = 2. So your new equivalent configuration would be batch size = 4, learning rate = 2e-6. In other words, `new_lr = old_lr * sqrt(new_bs/old_bs)`",
+                            "replies": [
+                                {
+                                    "author": "lechatsportif",
+                                    "text": "Wow!  that implies a much faster training experience to me.  Do you also have a rough guideline on training set number, or do these patterns generalize across sets sizes (20,500,1000,10000)?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "leftmyheartintruckee",
+                    "text": "Awesome write up! Nice to see methodical exploration w quantification and visualization. There\u2019s so much YouTube / unsupported slop out there. \nTwo comments\n- re: training TE. IMO seems unnecessary and adds complexity and risk. I think for most cases you\u2019re  better off with a \u201cpivot finetune\u201d, eg train a textual inversion then train the diffusion network on the new token. You get the desired effect but more controlled. \n- re: val loss. I also added it to my training since it seemed like valuable signal that most weren\u2019t looking at. However, the true goal for a lot of image generation IMO is qualitative - aesthetics, realism, etc - and the connection to val loss is loose at best. I am interested in exploring measuring some proxy for this - FID is the research standard for measuring quality but as I understand has issues. I\u2019ve explored CLIP MMD which seemed fine. I think there\u2019s room for improvement there though. \n\nGreat work! Thanks for sharing",
+                    "replies": [
+                        {
+                            "author": "spacepxl",
+                            "text": "Agree that loss isn't the endgame metric for measuring image quality. FID as far as I know requires very large sample sizes to be meaningful. All I can say for sure is that mse loss is a good proxy metric, since it's the same as what's being optimized. So it's useful for measuring training speed, even if you don't pick the minimum checkpoint in the end.\n\nI suspect that once you pass the minimum loss point, you would still gain on FID or other quality metrics up to a point, because it's trading variety for memorization. At some point the FID would be hurt again by the lack of variety.\n\nI want to investigate pivotal tuning, also the wider context of captioning strategies. Name vs rare token vs pt embedding would be interesting to compare. But I also wanted to finish up and publish what I had, since I've been working on this for a while and the main goal is really just to get more trainers to implement meaningful validation methods, whether that's stable loss or something else."
+                        }
+                    ]
+                },
+                {
+                    "author": "Old_Reach4779",
+                    "text": "Mini-research? Your work is a lot better than the average AI paper. This is a HUGE work! Well done!!!"
+                },
+                {
+                    "author": "StableLlama",
+                    "text": "That's great!   \nWhat I wonder: how does Prodigy relate to this?\n\n  \nIt'd be really great when you could extend this project by adding a Prodigy run for the LR comparison",
+                    "replies": [
+                        {
+                            "author": "spacepxl",
+                            "text": "Good call, I added that to my list of future tests"
+                        }
+                    ]
+                },
+                {
+                    "author": "Shadow-Amulet-Ambush",
+                    "text": "The axis in the graphs aren\u2019t labeled so I\u2019m not sure what I\u2019m looking at. What should I take away from reading this in terms of lora training? Use alpha 1, rank 128, batch size 4, and multiply the base recommended learning rate (0.0005 or something on civit ai) by the square root of the batch size (4)? How do I know how many total steps and repeats to use?\n\nIf the x axis is number of steps and the y axis is some measure of quality, it looks like 1 single step is always the most effective and it gets worse towards the middle before recovering on the farther end. This is obviously not the case so I\u2019m misunderstanding something. Again I\u2019m left wondering how many total steps and repeats to use.\n\n I\u2019m also unsure of what to make of your statement that batch size doesn\u2019t matter for quality when I\u2019m thinking of number of steps. Increasing batch size lowers total number of steps, so should repeats be the gold standard rather than steps since it doesn\u2019t change in regards to other parameters?\n\nAlso how do you include other layers besides the attention layers in the training of a lora?",
+                    "replies": [
+                        {
+                            "author": "spacepxl",
+                            "text": "For most of the screenshots, all the tensorboard logs, the vertical axis is loss and the horizontal is training steps. Lower loss is better, so that high/low/high trend is starting from untrained, reaching an optimal point, then overtraining. Some overtraining might be ok, but the point where validation loss is the lowest is where the model has the best general knowledge of the concept.\n\nI'm intentionally not making any absolute recommendations about what training hyperparameters are best. If you have a config that you like, stick with it. What I am showing is how changing those settings will affect the results. I've never used the civitai trainer, but 0.05 lr sounds very high if it's using AdamW. I would guess that they set the default as high as possible in order to save cost by reducing steps.\n\nRepeats don't mean anything in this context, that's used to balance multiple concepts with different numbers of images. If you're only training on one dataset/concept, repeats are the same thing as epochs. I prefer to think of everything in terms of number of image samples processed by the model, which is steps \\* batchsize.\n\nWhen I say batch size doesn't matter, I mean that the minimum loss for batchsize=1 is the same as for batchsize=4. They happen in a different number of steps, because 100 steps at batchsize=4 is equivalent to 400 steps at batchsize=1, and you need to adjust learning rate when you change batch size, but when you scale it correctly, the minimum loss is the same. My takeaway here was that raising the batch size helps with hardware efficiency, not quality. If you have the memory headroom to increase the batch size, the time per step goes up, but not as fast as the batch size, because it can process more data in parallel which is more efficient.\n\nAs for target layers, it depends on the trainer tool. I know that onetrainer has an option for it, but idk about others.",
+                            "replies": [
+                                {
+                                    "author": "CeFurkan",
+                                    "text": "Batch size 1 yields the best. Accurate LR bigger batch size yields similar quality but i think still batch size 1 slightly better."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "CeFurkan",
+                    "text": "You found same conclusion as mine :)\n\n\u00a0learning\\_rate \\* sqrt(batch\\_size):\n\nThis is what I am recommending to my followers for many months now since FLUX",
+                    "replies": [
+                        {
+                            "author": "spacepxl",
+                            "text": "something something paywall (joke)\n\nIt would also be interesting to test if that's true for SGD, since the lycoris paper authors found that the effect of alpha on learning rate was different between SGD and AdamW",
+                            "replies": [
+                                {
+                                    "author": "CeFurkan",
+                                    "text": "could be. I am using Adafactor :D"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "CeFurkan",
+                    "text": "You have got some amazing writing I am reading. I believe with accurate learning rate you can reach maximum quality with Adafactor\u00a0as well. I prefer it since it has the most VRAM optimization. What do you think about this?",
+                    "replies": [
+                        {
+                            "author": "spacepxl",
+                            "text": "I didn't test adafactor with lower learning rates for long enough to say for sure that it's always worse, but with a high enough lr to match convergence in equal number of steps, it underperformed adamw. This matches with what I've read elsewhere that adafactor is a strictly worse optimizer than adamw, and the only advantage to it is memory saving. \n\nIt was also significantly slower in terms of it/s, I think because pytorch defaults to the slower for-loop implementation to save memory, vs the for-each default with most other optimizers. So it's a double wammy, potentially more steps required, and more time per step. I would only use it as a last resort, and prefer AdamW8bit attn+ff lora instead of adafactor finetune if the goal is memory reduction.",
+                            "replies": [
+                                {
+                                    "author": "CeFurkan",
+                                    "text": "I see. But lets say you don't care about speed. However since you didnt test impossible to know. I should research adamw and compare it i guess. but memory is really important to make more people GPUs trainable :D"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Antique-Bus-7787",
+                    "text": "Thanks for this detailed analysis. It would be useful while training but it can definitely be useful when training is already done by testing the same (overtrained?) model at different weights. Surely some different weight of like 0.86 or 0.94 or 1.34 could be better than using the default 1.0...",
+                    "replies": [
+                        {
+                            "author": "spacepxl",
+                            "text": "Yes, you could totally do that by just evaluating different weight merges at fixed timesteps. Same idea might also work for testing different captions."
+                        }
+                    ]
+                },
+                {
+                    "author": "AIPornCollector",
+                    "text": "What an absolute gigachad."
+                },
+                {
+                    "author": "No-Educator-249",
+                    "text": "Extremely fascinating. From what I understood from one of your findings, you mentioned that higher ranks are \"better\". Could you please elaborate on this?\n\nFor LoRA training, I found that the difference between a 32 rank and 16 rank LoRA to be negligible during inference, the only difference being the filesize. I am talking about illustration style and character LoRAs, though. If I'm training a real person, I use rank 32 due to photorealistic datasets having much more information and complexity.\n\nAlso, what's your take on the use of Min SNR Gamma? I found that it's mostly useful for photorealistic datasets, but then again, I can't fully confirm this unless other people verify it through their own training runs.",
+                    "replies": [
+                        {
+                            "author": "tom83_be",
+                            "text": "From my experience (and I think what is written in the text to some extend reflects that) higher dim can yield better results. Sometimes a lot better, sometimes only slightly; this depends on the subject and data set being trained. What I can add is, that going beyond (and I guess even training at) rank 128 does not make much sense, especially for the \"newer\" models like SD 3.5. Around that point resource consumption (VRAM) and speed gets close to doing a full fine tune (especially if you can also use the new layer offloading feature in OneTrainer) while not reaching its quality.",
+                            "replies": [
+                                {
+                                    "author": "spacepxl",
+                                    "text": "I agree with this explanation. Higher rank means more parameters, which means more capacity to learn. That added capacity isn't always needed, depending on the task. And if you get to the point where your lora matrices are similar in size to the original weight, you would be better off just finetuning the weights directly, and just limiting what layers are targeted to get to a similar number of parameters."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "spacepxl",
+                            "text": "Already replied to tom83\\_be about rank. For Min SNR gamma, it's basically loss clipping at the high SNR timesteps. It's supposed to speed up convergence by putting more effort into the low SNR (more noisy) timesteps, which means it's focusing more on content/composition instead of fine details. I think it's probably fine to use when the model is already good at fine details, but it might be harmful if you care about getting those details right and have enough time for a longer training run. I would like to test it though. Same deal with the various timestep sampling strategies that are common for Flux, which generally focus on the middle timesteps for faster convergence."
+                        }
+                    ]
+                },
+                {
+                    "author": "tom83_be",
+                    "text": "Thanks for sharing your findings! Many things are absolutely in line with what one has learned through trial and error over time (like you described it in the text). Especially the point about loss training loss curves and how they are essentially \"worthless\" (if we keep out cases where we \"break\" the model for example by extreme high LRs) ca not be repeated too often. Special thanks also for pointing out the difference to the OneTrainer validation functionality. Documentation on that was not really good last time I checked, so your info was highly appreciated.\n\nI hope your addition to the concept of validation is adapted in some of the trainers as it will be very helpful. Thinking about this further one could even imagine semi or even fully automatic optimization of training parameters given a fixed dataset based on this (one can dream, right?).",
+                    "replies": [
+                        {
+                            "author": "tom83_be",
+                            "text": "If I may add this: Two aspects I would find interesting to see evaluated in the same way are \n\n* \"warmup steps\"; I usually go for at least two epochs, some people say it should be at about 10% of the full run; or at least at 2%\n* using something different than constant LR; I use it quite often but cosine with restarts as well as REX also seem to be interesting",
+                            "replies": [
+                                {
+                                    "author": "spacepxl",
+                                    "text": "Definitely, schedulers were already on my list to investigate in the future, but I've added warmup now too. The problem with schedulers in general is that you need to know how long you want to train for before you start training, and if you're measuring progress with validation, you won't know how long to train for until you've already trained at least 1 run."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Strange-History7511",
+                    "text": "fantastic write up! how much of this do you think changes with Flux?"
+                },
+                {
+                    "author": "Enshitification",
+                    "text": "Great analysis and info! I'm glad to see data backing up my intuitive choice of using alpha at one."
+                }
+            ]
+        },
+        {
+            "title": "Fast Hunyuan + LoRA looks soo good \ud83d\ude0d\u2764\ufe0f( full video in the comments )",
+            "author": "Final-Start-4589",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "Draufgaenger",
+                    "text": "How much vram does that need?"
+                },
+                {
+                    "author": "MSTK_Burns",
+                    "text": "Ive trained and tested two Loras, tested many from Civitai and literally none of them produce the character/celebrity it's supposed to . I have no idea what I'm doing wrong and I'm starting to give up on hunyuan",
+                    "replies": [
+                        {
+                            "author": "AlternativeAbject504",
+                            "text": "what script have you use,d? pictures or videos, what settings and which nodes are you using to call the lora, wrapper or native?"
+                        }
+                    ]
+                },
+                {
+                    "author": "Final-Start-4589",
+                    "text": "want to try it out for your self download the workflow from this video \n\n[https://youtu.be/u9jGTdJq\\_o8?si=N-dfo6OZPk5QE7q3](https://youtu.be/u9jGTdJq_o8?si=N-dfo6OZPk5QE7q3)",
+                    "replies": [
+                        {
+                            "author": "AlternativeAbject504",
+                            "text": "nice video, but misleading, you are using in here gguf and Hunyuan fast is a different destillation of the model, nevertheles, great work",
+                            "replies": [
+                                {
+                                    "author": "Ken-g6",
+                                    "text": "There are ggufs of Hunyuan Fast, naturally. [https://huggingface.co/city96/FastHunyuan-gguf](https://huggingface.co/city96/FastHunyuan-gguf)"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Karsticles",
+                            "text": "What are your machine specs?",
+                            "replies": [
+                                {
+                                    "author": "Final-Start-4589",
+                                    "text": "rtx 4060"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "AnonymousTimewaster",
+                    "text": "I've got some really good results but most generations come out like pure mush and I have no idea why."
+                },
+                {
+                    "author": "Jeffu",
+                    "text": "Thanks for sharing! How do you suggest training your own Hunyuan lora?"
+                },
+                {
+                    "author": "GosuGian",
+                    "text": "Awesome thank you for sharing the workflow"
+                }
+            ]
+        },
+        {
+            "title": "Are dual GPU:s out of the question for local AI image generation with ComfyUI? I can't afford an RTX 3090, but I desperately thought that maybe two RTX 3060 12GB = 24GB VRAM would work. However, would AI even be able to utilize two GPU:s?",
+            "author": "Cumoisseur",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "_KoingWolf_",
+                    "text": "Lot of misinformation out there with regards to two gpus for StableDiffusion. As simple as possible - You cannot combine them to generate 1 image. You can separate parts of the workflow that eventually leads to 1 image. However, you cannot split things like models across two cards. \n\nBest example: Loading Flux on one card, the VAE/ clip on the other.",
+                    "replies": [
+                        {
+                            "author": "sophosympatheia",
+                            "text": "This is the correct answer. It can help with big models like Flux where the model itself can fill all the available VRAM on your card, but that's about the extent of it. It also sucks whenever you download a new Comfy workflow because you have to go in and manually swap out the model-loading nodes for the versions that support multi-gpu.",
+                            "replies": [
+                                {
+                                    "author": "_KoingWolf_",
+                                    "text": "That workflow thing is such a damn pain. I actually stopped working in Flux, for now, partly because of the hassles with doing that and also the time to generate on a 3090 when I just want to do some experimenting. Wishing nothing but the best to everyone trying to snag a 5090, will make this stuff a thing of the past."
+                                },
+                                {
+                                    "author": "cmsj",
+                                    "text": "How much VRAM does Flux actually need? I find it weird that this isn\u2019t the first piece of information on every model\u2019s HF page!"
+                                },
+                                {
+                                    "author": "dasnihil",
+                                    "text": "can split loras too"
+                                },
+                                {
+                                    "author": "Nexustar",
+                                    "text": "It's less than 20 lines of python to read a json workflow and replace one node with another. This shouldn't be a deal breaker."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Anaeijon",
+                            "text": "Technically, you can also split models across multiple cards. The diffusion model is just a feed-forward model, which means you can do a layer split, which means, one half of the model is on one GPU and the other half on the other GPU.\n\nWe can dynamically load layers to GPU VRAM too. It's slow but it worked even fairly early on.\n\nThis is common practice in the whole filed, just not common in image generation \n\nI'm not 100% sure why it isn't common here, but I suspect, that (typically for image data processing) the hidden layer outputs (internal states of the model during generation) are fairly large, which makes communicatio between the GPUs really slow at the point where data has to flow from one GPU to the other. The next problem is, that it basically would let one GPU idle while the other works on its layers and then they switch. Over all, it might even be a faster solution to keep all layer weights in RAM and dynamically load them to VRAM.\n\nAnyway, it doesn't matter if it is technically possible.\nUnless you are going to reimplement the whole diffusion process yourself, there's no existing software that can do this by default.",
+                            "replies": [
+                                {
+                                    "author": "roller3d",
+                                    "text": "I don't really understand it completely, but apparently there are something called skip connections in the SD architecture where later layers need the output of not only the adjacent previous layer, but outputs of multiple previous layers that makes splitting layers inefficient."
+                                },
+                                {
+                                    "author": "nooblito",
+                                    "text": "xdit"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Operation_Fluffy",
+                            "text": "Could probably also run two parallel generations too, right? (This is in the spirit of your answer but not directly addressed. ) Two images would generate in the time of one, but any single image would take the same amount of time.",
+                            "replies": [
+                                {
+                                    "author": "thil3000",
+                                    "text": "If the model fit on each of the gpus vram yes"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "percocetpenguin",
+                            "text": "The more correct answer is that that has not been implemented. The underlying code is capable of doing that but the high level implementation is lacking.",
+                            "replies": [
+                                {
+                                    "author": "JstuffJr",
+                                    "text": "Yes, the bandwidth is there with nvlink on 2x3090, it just hasn\u2019t been publicly implemented yet. Pray o5 etc lowers the friction to do so in the future. \n\nBut by then lower precision acceleration will likely dominate in addition to 1x 6090 etc beating theoretical 2x3090 bf16."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "lamnatheshark",
+                            "text": "This.\nThis is what I do.\nI have two 4060 ti 16gb.\nTypical flux use is bf16 model on one card, and clip/vae on the other.\n\nFor LLM, it works flawlessly, I can use some big 32B models separated on both cards without any effort."
+                        },
+                        {
+                            "author": "scottix",
+                            "text": "I wouldn't say impossible but impractical. People found the amount of transfer between the two you need outweighs the gains."
+                        },
+                        {
+                            "author": "Shadow-Amulet-Ambush",
+                            "text": "Yeah so you could load an 11 gb flux checkpoint on one card and the Vae and clip on another card right?"
+                        },
+                        {
+                            "author": "hanahlol",
+                            "text": "For your best example will that generate images close to what a single card can do? I have a 16gb 4060ti that takes about 2m for one image with flux. I have a 6gb 980ti on hand but I\u2019m guessing that\u2019s not enough vram for the vae/clip?"
+                        },
+                        {
+                            "author": "One_Adhesiveness9962",
+                            "text": "this just isn't true, you can totally load half a model to 2 gpu's"
+                        },
+                        {
+                            "author": "Striking-Bison-8933",
+                            "text": "Yeah right. You can load different models with different cards. But loading the same model with a multiple cards is another matter entirely."
+                        },
+                        {
+                            "author": "roshanpr",
+                            "text": "Or using SWARM but there is so much misinformation here that this post is cancer"
+                        },
+                        {
+                            "author": "adampm1",
+                            "text": "Can you use these for lora generation? (Like if i need 20 gb ram, but only have 12 in each card)",
+                            "replies": [
+                                {
+                                    "author": "Commercial-Chest-992",
+                                    "text": "This is a qualified yes: if the lora training application supports it, you can use more than one GPU during training. Whether there are real benefits for training time is another question."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "yall_gotta_move",
+                    "text": "Multi-GPU support is a planned feature for ComfyUI in the future, per a Q&A session they did on Discord back in December.\n\nIt won't have tensor parallelism or even model parallelism due to inherent limitations in the diffusion model architecture (in other words, you won't be able to split the layers across the two GPUs as if they were a single 24GB GPU).\n\nBut batch parallelism or pipeline parallelism - that is, running a copy of the same workflow on the 2nd GPU with a different seed - should be easily achievable.\n\nIn fact, according to this [feature request for A1111](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/16422), this is already implemented with SwarmUI (which uses Comfy as its diffusion backend).",
+                    "replies": [
+                        {
+                            "author": "Jealous_Piece_1703",
+                            "text": "What about batch parallelism for 1 card that have enough VRAM to run the same workflow twice?",
+                            "replies": [
+                                {
+                                    "author": "yall_gotta_move",
+                                    "text": "That's what happens already when you set batch\\_size > 1. It doesn't have multiple copies of the model, but it pushes extra copies of the image data through the model.\n\nWith a 2nd GPU you'll still generate \\~twice as many images in the same amount of time."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Rousherte",
+                    "text": "It works with LLMs this way. Image diffusion, here it sadly doesn't work yet. Several GPUs cannot diffuse together the same image. The only thing multi-gpu setup enables is processing images in batches (training/inference). \n\nHowever, there's some advancements in the domain: [https://github.com/mit-han-lab/distrifuser](https://github.com/mit-han-lab/distrifuser)"
+                },
+                {
+                    "author": "protector111",
+                    "text": "No"
+                },
+                {
+                    "author": "jmellin",
+                    "text": "Short answer: no, you can never share a full model on multiple cards. It needs to loaded full in VRAM.\n\nLong answer: if you split a model in to its different components you can load those components on to different cards and run inference."
+                },
+                {
+                    "author": "Alternative_Gas1209",
+                    "text": "Will not work"
+                },
+                {
+                    "author": "ResponsibleWafer4270",
+                    "text": "I try to explain in english, but it is not my mothertonge. Tecnology of crossover for graphics card is going to be lost more and more. It is because the G cards have more Vram then in the past and more power. So there is no need of two ones.\n\nI suggest you instead of using 2 x 3060 a Tesla P40 with 24 Vram. The last time is used a Tesla was the P4 with 8 Vram and not greater in messuares than a movil phone. The handicap fo Teslas is for me the temperature and fans. For the P4 i used 2 fans controled by temperature sensors. I supposed that a P40 need 3-4 fans, but in price could it be cheaper. The other handicap is that the tecnology of the P40 is 8 years old. But for 150$ could it be worth."
+                },
+                {
+                    "author": "One_Adhesiveness9962",
+                    "text": "yes you can, don't listen to all the haters. if I have 10+ downvotes u know im talkin true and they (nvidia monopoly) just want to hide the truth.",
+                    "replies": [
+                        {
+                            "author": "silenceimpaired",
+                            "text": "Go on\u2026 I\u2019m listening, tell me how :) I have two cards.",
+                            "replies": [
+                                {
+                                    "author": "Agile-Music-2295",
+                                    "text": "You put them together so they\u2019re touching. Get some candles and dim the lights. Put on Barry white and comeback in an hour."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "getfitdotus",
+                    "text": "This is possible to speed up the process of generation with two cards. I found a project I wanted to implement into a comfy node but have not got around to it. [https://github.com/chengzeyi/ParaAttention](https://github.com/chengzeyi/ParaAttention)"
+                },
+                {
+                    "author": "Plums_Raider",
+                    "text": "i do that exactly. and for ollama it works about like this. for image generation it doesnt, but its also possible to use multigpu in comfyui with 2x 3060. like this im able to archive 40steps flux images with fp8 or gguf q8 on gpu1+cpu, t5xxl fp16, clip and vae on second gpu. takes about 2.5minutes and i find the quality very nice for the waiting time, compared to other \"magic tricks\" where people just remove the whole t5xxl model or use 8step loras or nf4 and certainly get quality degration. so all in all, its worth for me, but i also like to ue it that way to generate some stuff on my second gpu and play some games on gpu1."
+                },
+                {
+                    "author": "Mundane-Apricot6981",
+                    "text": "I think you will understand images?\n\nhttps://preview.redd.it/59lmuljtoyee1.png?width=594&format=png&auto=webp&s=9ed973768862c41a2a273a73acb87a4e12d88225",
+                    "replies": [
+                        {
+                            "author": "August_T_Marble",
+                            "text": "To be fair to OP, those are from a year ago and if you don't understand the architecture enough to arrive at the answer yourself, it might seem reasonable to assume things can change in a year or two of updates."
+                        }
+                    ]
+                },
+                {
+                    "author": "neutralpoliticsbot",
+                    "text": "Not the way you think"
+                },
+                {
+                    "author": "chub0ka",
+                    "text": "Pipeline parallelism would work where you pay just passing activations from one card to another once. But that works better for LLMs where activations are thin between transformer layers, and not for UNET models",
+                    "replies": [
+                        {
+                            "author": "silenceimpaired",
+                            "text": "It\u2019s weird to me that GGUF for LLM can use two cards fine but it can\u2019t be solved for image generation.",
+                            "replies": [
+                                {
+                                    "author": "chub0ka",
+                                    "text": "Easy to put half transformer layers on one card and half on another. With unet layers activations in the middle are much bigger so sending those from card to card is expensive but still should work"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "bittyc",
+                    "text": "Im getting decent SD image outputs with an old 1060 my neighbor left out for the trash. Hoping to scoop a 5090 next week though for local video.",
+                    "replies": [
+                        {
+                            "author": "silenceimpaired",
+                            "text": "Let me know where this trash can is where you hope to find a 5090 ;)"
+                        }
+                    ]
+                },
+                {
+                    "author": "Arawski99",
+                    "text": "Short Answer: VRAM does not stack this way. It duplicates memory. It only increases processing computer power on the same 12 GB of mirrored VRAM data, and only if the application is programmed to support it well and no driver issues."
+                },
+                {
+                    "author": "leftmyheartintruckee",
+                    "text": "I would go with an on demand cloud approach. \nOr an image generator product \nMore cost effective and better experience IMO"
+                },
+                {
+                    "author": "bossonhigs",
+                    "text": "**3050 and 3060TI are incompatible for SLI**. The only 3000 series cards that had SLI were the 3090.\n\nHowever, people are having dual GPU setup with two different GPUs. Nvidia and AMD... I wouldn't bother.\n\nbtw sli standard is dead long time ago"
+                },
+                {
+                    "author": "CodeMichaelD",
+                    "text": "1. Solve gpu p2p communication [https://github.com/tinygrad/open-gpu-kernel-modules](https://github.com/tinygrad/open-gpu-kernel-modules)\n2. Become coding magician and wonderfully fix [this repo here](https://github.com/NickLucche/stable-diffusion-nvidia-docker?tab=readme-ov-file#model-parallel--currently-disabled-use-data-parallel-for-true-parallelism-)\n3. Fix all the messy Comfy nodes and built-in memory managment for sharded models (mission impossible). **ETC..**"
+                },
+                {
+                    "author": "chainsawx72",
+                    "text": "For what it's worth I have just have a single 3060.\n\nMy images take about 20 seconds each using SDXL, around 20 steps lowres and 10 steps to 2x it up to 1440x1024"
+                },
+                {
+                    "author": "diogodiogogod",
+                    "text": "This question has been made 100 times before. no"
+                },
+                {
+                    "author": "ComprehensiveQuail77",
+                    "text": "in my country 3060 x2 price = 3090 price..",
+                    "replies": [
+                        {
+                            "author": "Wonderful-Body9511",
+                            "text": "In my country I can buy 3-4 lmao"
+                        }
+                    ]
+                },
+                {
+                    "author": "Absolute-Nobody0079",
+                    "text": "I'd just wait for Nvidia Digits and see if it can run image and video models.",
+                    "replies": [
+                        {
+                            "author": "RestorativeAlly",
+                            "text": "If they can't afford a 3090, there's no chance they'll be affording something that costs more than a 5090.",
+                            "replies": [
+                                {
+                                    "author": "Absolute-Nobody0079",
+                                    "text": "I might be able to secure the budget by this May, when it might get released. And it might be a better investment than buying RTX. And maybe it's just me but buying a digits might sense more than buying a 5090 overall."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "victorc25",
+                    "text": "No and it doesn\u2019t matter how many times this is asked, the response will still be no\u00a0",
+                    "replies": [
+                        {
+                            "author": "silenceimpaired",
+                            "text": "You sure seem confident. I\u2019m curious about your background."
+                        },
+                        {
+                            "author": "Agile-Music-2295",
+                            "text": "We get that. But what about three GPUs???"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "GAME-CHANGING: Newly released LoRA found a way to finally overcome the tardigrade issues with FLUX \u2013 This is BIG news folks!",
+            "author": "WizWhitebeard",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "WizWhitebeard",
+                    "text": "Finally the tardigrade censorship is over. Let us all rejoice and start planning a good welcome party for our tardigrade overlords!\n\nLoRA is available here: [https://civitai.com/models/1178319](https://civitai.com/models/1178319) get it while its hot!"
+                },
+                {
+                    "author": "BuddysDad",
+                    "text": "Praise!"
+                },
+                {
+                    "author": "HappySquash6388",
+                    "text": "Tardigrade changing the grade. All hail."
+                },
+                {
+                    "author": "TheFeshy",
+                    "text": "\\#4 looks like a screenshot from Subnautica"
+                },
+                {
+                    "author": "schuylkilladelphia",
+                    "text": "First the tape, now water bears. This guy's an unhinged madman!",
+                    "replies": [
+                        {
+                            "author": "WizWhitebeard",
+                            "text": "hope you haven't missed my Sardine Tin LoRA or my Punch-Out Ringside Pixel Portrait LoRA! Any prompt-engineer worth their name, are sure to have them in their toolbox.",
+                            "replies": [
+                                {
+                                    "author": "schuylkilladelphia",
+                                    "text": "Right here officer, arrest this evil genius!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Steven_Strange_1998",
+                    "text": "Flux finally useful"
+                },
+                {
+                    "author": "spitfire_pilot",
+                    "text": "https://preview.redd.it/iy1ex817g1fe1.jpeg?width=1024&format=pjpg&auto=webp&s=377483879389607b04852c7366168ff6d91ea21e",
+                    "replies": [
+                        {
+                            "author": "WizWhitebeard",
+                            "text": "reminds me of my ex!",
+                            "replies": [
+                                {
+                                    "author": "spitfire_pilot",
+                                    "text": "https://preview.redd.it/im8mqquwi1fe1.jpeg?width=1024&format=pjpg&auto=webp&s=d67b0102b60cf95dd14b45c8cb5fc2555908f588"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Background Removal models have been making giant leaps in 2024. What about upscalers, anything better than SUPIR?",
+            "author": "Caffdy",
+            "text": "",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "TurbTastic",
+                    "text": "Flux has an Upscale ControlNet model that can do good work. I haven't figured out how to get it to do tiling yet. I was mostly using it to turn shitty low-res images into high quality ones in the 1024-1536 resolution range. \n\nhttps://huggingface.co/jasperai/Flux.1-dev-Controlnet-Upscaler\n\nFor background removal I haven't seen anything beat the quality of Inspyrenet when the advanced torchlit setting is enabled. Without that extra setting the quality is more similar to other top models."
+                },
+                {
+                    "author": "Generic_Name_Here",
+                    "text": "What\u2019s your BG removal model?"
+                },
+                {
+                    "author": "Tomorrow_Previous",
+                    "text": "I'm interested too! SUPIR was great news when it came out, but I could never run it due to the VRAM requirements :/",
+                    "replies": [
+                        {
+                            "author": "Shadow-Amulet-Ambush",
+                            "text": "Sometimes if I want to upscale something with SUPIR to get those crisp details, I\u2019ll just set up a workflow to run all the ones I want to do from a directory overnight. Doesn\u2019t matter how long it takes if it works while I\u2019m sleeping. Even if it takes 12 hours it would be done after I sleep and get back from work.",
+                            "replies": [
+                                {
+                                    "author": "Tomorrow_Previous",
+                                    "text": "What kind of workflow? Can you share it?"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "phallushead",
+                            "text": "Same"
+                        }
+                    ]
+                },
+                {
+                    "author": "kornerson",
+                    "text": "From my experience, nothing better than SUPIR yet."
+                },
+                {
+                    "author": "ffgg333",
+                    "text": "I want to know too, I want to know wich one is the best for anime artstyles, I am looking at openmodeldb.info and most models look the same. Also, what is the best Ai for removing  backgrounds?"
+                }
+            ]
+        },
+        {
+            "title": "Mobile Wallpaper Experiments [Flux Dev]",
+            "author": "sktksm",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "Dysterqvist",
+                    "text": "What is the experiment?",
+                    "replies": [
+                        {
+                            "author": "sktksm",
+                            "text": "Flux IPAdapter + img2text + detail daemon + loras. here is the workflow image for comfy UI, If you want to experiment yourself: [https://drive.google.com/file/d/1EtPAnbCl6KKRz\\_3pO5u-hNjOl9X2exEF/view?usp=sharing](https://drive.google.com/file/d/1EtPAnbCl6KKRz_3pO5u-hNjOl9X2exEF/view?usp=sharing)",
+                            "replies": [
+                                {
+                                    "author": "Dysterqvist",
+                                    "text": "Thanks for sharing!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "hashslingingslosher",
+                    "text": "How do you like IPAdapterFlux vs Redux?",
+                    "replies": [
+                        {
+                            "author": "sktksm",
+                            "text": "I prefer Redux, IPAdapter generates a lot of artifacts"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Have always dug the low fidelity from the first pass of an SDXL model.",
+            "author": "New_Physics_2741",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "GatePorters",
+                    "text": "It\u2019s like Disco Diffusion style but less nonsensical with more cohesion. \n\nNice work",
+                    "replies": [
+                        {
+                            "author": "New_Physics_2741",
+                            "text": "Give me some time and I can upload the WF somewhere - 10 hours or so...",
+                            "replies": [
+                                {
+                                    "author": "comfyui_user_999",
+                                    "text": "For what it's worth, the workflow is embedded in the PNGs you uploaded, too."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "jib_reddit",
+                    "text": "Yeah, I have always liked the aesthetics of SDXL for some reason,  I just wish it did eyes and hands better a lot of the time."
+                },
+                {
+                    "author": "Lysandresupport",
+                    "text": "5th image makes my (scifi/fantasy) imagination run wild! What kind of world/planet is that? What's that ship doing there? Great stuff, man."
+                }
+            ]
+        },
+        {
+            "title": "My first deforum video, that is so weird!",
+            "author": "xxxmaxi",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "lainol",
+                    "text": "Then check this out, [https://github.com/Rakile/DeforumationQT](https://github.com/Rakile/DeforumationQT)",
+                    "replies": [
+                        {
+                            "author": "flasticpeet",
+                            "text": "Oh man, I haven't touched Deforum in over a year. I remember thinking how awesome it would be if you could fly through an animation with realtime controls, and you actually made it!\n\nOne important trick I found for getting smooth animations was using seed travel. You could schedule the seed to increase by 1 over n-frames, that way it would smoothly blend between noise patterns.\n\nIs that implemented?",
+                            "replies": [
+                                {
+                                    "author": "lainol",
+                                    "text": "I think so, we have some settings for seed behaviour.  Take a look.  Not much technical info on it.  But I think we have that \ud83d\ude06"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "BerrDev",
+                    "text": "I still really enjoy these. Looks cool"
+                },
+                {
+                    "author": "SerBadDadBod",
+                    "text": "Thanks, I hate it! Lol ^(eye stuff bothers me)"
+                },
+                {
+                    "author": "Fragrant_Ad_1604",
+                    "text": "Very unstable details. Shapes good!"
+                },
+                {
+                    "author": "a_beautiful_rhind",
+                    "text": "Man, Iove deforum. It makes great trippy videos: https://i.imgur.com/Se0MhxC.mp4"
+                },
+                {
+                    "author": "Electrical_Pool_5745",
+                    "text": "Great job! I still love Deforum and the trippy animations that can be made using it!"
+                }
+            ]
+        },
+        {
+            "title": "NOOB FRIENDLY: REACTOR - Manual ComfyUI Installation - Step-by-Step - This is the Full Unlocked Nodes w/ New Hosting Repository",
+            "author": "FitContribution2946",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "mikiex",
+                    "text": "Step one select a dodgy downloaded movie \ud83d\ude04"
+                },
+                {
+                    "author": "FitContribution2946",
+                    "text": "Since Reactor was taken down by Github it has been reposted at [Codeberg.org](http://Codeberg.org)\n\nThe installation instructions on the repo are rather confusing so this video helps streamline and make sense.\n\nThis is for the ComfyUI manual installation. \n\n\\*NOTE\\* a portable Comfyui installation is possible but the repo instructions will likely take you off a cliff. Instead of running install.bat, you need to run [install.py](http://install.py) with the python.exe found in the ./python\\_embeded folder",
+                    "replies": [
+                        {
+                            "author": "Hans_Meiser_Koeln",
+                            "text": "https://codeberg.org/Gourieff/comfyui-reactor-node"
+                        }
+                    ]
+                },
+                {
+                    "author": "tnil25",
+                    "text": "Gary you really need a better webcam",
+                    "replies": [
+                        {
+                            "author": "FitContribution2946",
+                            "text": "You know it's frustrating. I had money at the time and asked someone what the better camera to get is and they pushed me on to this one which wasn't that expensive. Then later on they came back with another .. the lesson here I guess do your own research."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "You can now fine-tune HunyuanVideo on Replicate",
+            "author": "deepfates",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "Spirited_Example_341",
+                    "text": "and you know what its gonna be fine tuned too lol\n\nnot saying but\n\nwinks"
+                },
+                {
+                    "author": "Lucaspittol",
+                    "text": "Is it possible to run the trained model locally in Comfyui? How?\n\n  \n(EDIT: it does work, takes about 45 minutes using short clips on H100 (expensive) and it provides a comfyui-ready file)."
+                }
+            ]
+        },
+        {
+            "title": "Here's my attempt at a \"real Aloy\" (FLUX) - Thoughts?",
+            "author": "AI_Characters",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "bshawfoolery",
+                    "text": "I could absolutely see Aloy playing center on a college basketball team \ud83e\udd23"
+                },
+                {
+                    "author": "Impressive_Outside50",
+                    "text": "Cool! Is it working with img2img pipeline?",
+                    "replies": [
+                        {
+                            "author": "AI_Characters",
+                            "text": "Honestly I dont know because I dont usually do img2img nor do I have a good one.\n\nConsidering the outfit model is relatively flexible at txt2img should make it flexible at img2img too though I think?"
+                        }
+                    ]
+                },
+                {
+                    "author": "tmvr",
+                    "text": "Some great ones in there! The third one is my favorite:\n\nhttps://preview.redd.it/t5qen1tgfxee1.png?width=640&format=png&auto=webp&s=82f1095a40702f96f0fc53700efceec61e240a51"
+                },
+                {
+                    "author": "Dangthing",
+                    "text": "Looks very solid. Outfits look good in basically all images and most of the Aloy's are at least recognizable if not outright good. Image 2 could believably pass as a shot from Horizon Zero Dawn if you weren't paying crazy close attention."
+                },
+                {
+                    "author": "Abba_Fiskbullar",
+                    "text": "You could use images of Aloy's face model Hannah Hoekstra for training if you need some real world reference.",
+                    "replies": [
+                        {
+                            "author": "AI_Characters",
+                            "text": "No it looks too different to work effectively."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Searching for graphics cards...",
+            "author": "Tyler_Zoro",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "Lucaspittol",
+                    "text": "Seems like a box selector designed in the mid-2010s and never updated again."
+                },
+                {
+                    "author": "physalisx",
+                    "text": "Above... way above, please"
+                },
+                {
+                    "author": "Simple_Advertising_8",
+                    "text": "Yeah, everyone was shitting on the 4060 because the 16gb version didn't improve gaming performance over the 8gb one....\n\n\nDudes if I wanted to just game I'd buy AMD. That card was a huge improvement for me."
+                },
+                {
+                    "author": "Tyler_Zoro",
+                    "text": "Newegg has up to 32GB filterable...",
+                    "replies": [
+                        {
+                            "author": "Linkpharm2",
+                            "text": "Yup, 5090"
+                        },
+                        {
+                            "author": "Tacelidi",
+                            "text": "+new G7 VRAM"
+                        }
+                    ]
+                },
+                {
+                    "author": "T-Loy",
+                    "text": "Off topic rant, why the actual fuck are search masks for numerical values so fucking often check boxes. No, I do not want to search for 32\",34\",40\" and 42\" monitors, I want to to search for 32\"-42\" monitors. Or the other time I wanted a glass bottle that had a physical limit of 8cm diameter for where I wanted to carry it, nope nothing, I was lucky if the 1l search mask was actually returning 1l bottles.\u00a0/rant"
+                },
+                {
+                    "author": "RZ_1911",
+                    "text": "3090 .. 24gb \n\nThere is possible to install 48gb on old - 2 sided 3090 cards (where memory is on both sides of card )",
+                    "replies": [
+                        {
+                            "author": "Electrical-Eye-3715",
+                            "text": "Frankenstein won't end well when issues starts showing up",
+                            "replies": [
+                                {
+                                    "author": "RZ_1911",
+                                    "text": "Well it\u2019s not a Frankenstein by itself .. double sided 3090 is from quadro 48gb . Chip itself supports 48g from start . \n\nBut limitations apply .. \n\n On quadro - ddr6 . On 3090 6x . That means - it\u2019s extremely HOT. Generic double sided 3090 suffered from memory overheat on 2nd side .. with 2g chips - it will be even more hot"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "ddapixel",
+                    "text": "It feels good to be at the top, for once."
+                },
+                {
+                    "author": "artemyfast",
+                    "text": "7?\n\nAre there 7GB cards?\n\nWhy would you make a 7GB card",
+                    "replies": [
+                        {
+                            "author": "Tyler_Zoro",
+                            "text": "It's all about coming in under the price point of that 8GB card ;-)"
+                        }
+                    ]
+                },
+                {
+                    "author": "headachebalm",
+                    "text": "https://i.redd.it/qbdplrf62zee1.gif"
+                },
+                {
+                    "author": "LockeBlocke",
+                    "text": "Just type it in the search bar? If the amount of VRAM is in the name, you should find it.",
+                    "replies": [
+                        {
+                            "author": "Tyler_Zoro",
+                            "text": "> Just type it in the search bar?\n\nSEO title crap leads to just showing you everything at that point. That's why the filters are valuable, they have to pick a value, not just spam keywords.",
+                            "replies": [
+                                {
+                                    "author": "LockeBlocke",
+                                    "text": "Using a combination of both helps. Searching \"nvidia geforce 24gb\" got me mostly 24gb cards with only some 12gb cards thrown in."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "anjumkaiser",
+                    "text": "What do we have to get to get some decent memory in gpu? Everything in affordable range seems to be stuck in 12-16gb bracket, and every model seems to take much more than that to fine tune.",
+                    "replies": [
+                        {
+                            "author": "Tyler_Zoro",
+                            "text": "Memory is the key differentiator for people with deep pockets. There is no way NVidia and AMD are going to start offering a budget, high-vram GPU. That would hit their bottom-line hard. :-("
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "So how DO you caption images for training a lora?",
+            "author": "Adkit",
+            "text": "Nobody seems to have a clear answer. I know it probably changes depending on if you're doing SDXL or flux or pony but why is there so much misinformation and contradiction out there? I want to train a flux model of my cat. I've seen people say no captions, single word captions, captions in natural language only, captions in booru tags only, and captions in both natural language and booru tags. I've seen all of these options recommended and called the optimal option. So which one is it? x.x",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "the_bollo",
+                    "text": "Different models expect different caption styles because they can use different text encoders. Flux and Hunyuan like natural language captions because they use LLM-esque text encoders. SDXL likes tags because it uses a simpler encoder.\n\nThe number one thing to keep in mind when creating LoRAs is to caption everything but the details of your subject. For example:\n\n**Bad**: Trixie, a 35 year old tall blonde woman with a black and red neck tattoo, wearing her signature dark denim jeans and white tank top. She stands next to a coffee cart. An old Chinese man stands behind the register.  \n**Good**: Trixie stands next to a coffee cart. An old Chinese man stands behind the register.\n\nIn the bad example, you've unintentionally taught the model what a blonde woman is (now blonde women will always have that specific blonde hairstyle), what dark denim jeans and a white tank top are, and that a \"black and red neck tattoo\" is a named attribute of Trixie. Now you get concept bleed\u00a0*and*\u00a0you have to itemize every attribute of Trixie in future prompts if you want them to appear.\n\nIn the good example, the model just learns all the various facets associated with the unspecified subject in the scene (other than being given a name). So you can simply prompt \"Trixie.\""
+                },
+                {
+                    "author": "External_Quarter",
+                    "text": "In general, you want to caption your images in a manner similar to that of the checkpoint you're training on. For Flux, that means verbose natural language. [Here is a fairly exhaustive comparison between captioning approaches to Flux](https://civitai.com/articles/6792/flux-captioning-differences-training-diary).\n\n Here are some other assorted tips:\n\n- Using no caption is probably better than using a bad/inaccurate caption\n- Limit your trigger word to 1-2 tokens such as `ohwx` followed by a class such as `cat`\n- Do not caption things that should be \"always true\" when the LoRA is applied; for example, if your cat has green eyes, do not include `green eyes` in the caption - doing so will dilute the model's understanding and consistency of your character\n- Recognize that most of us are hobbyists exploring a new field of technology and take any proclamations about \"best practices\" with a big grain of salt\n\nHope that helps."
+                },
+                {
+                    "author": "chubbypillow",
+                    "text": "The truth is on the topic of LoRA training, different people got different need and use purpose, and got different dataset as well, there isn't a one-for-all-purpose solution. Everybody says their configs are the best but that's just for their need and their dataset. You gotta experiment a lot when it comes to training. \n \nLike, so many people say that \"you only need square images of that person's close-up\" and \"you don't need regularization images\", but in my test if I don't train on other AR, his neck looks weird in other AR, if I don't train with reg images, it can hardly do other art style apart from photorealism. \n \nBe patient, experiment, that's all you can do."
+                },
+                {
+                    "author": "AconexOfficial",
+                    "text": "usually do a mix of natural language and tags. then token shuffle + activation token"
+                }
+            ]
+        },
+        {
+            "title": "\"Fast Hunyuan + LoRA in ComfyUI: The Ultimate Low VRAM Workflow Tutorial",
+            "author": "Wooden-Sandwich3458",
+            "text": "[External Link]",
+            "subreddit": "StableDiffusion",
+            "comments": []
+        },
+        {
+            "title": "Is there a FluxGym style SDXL/1.5 trainer?",
+            "author": "Ezequiel_CasasP",
+            "text": "From the first time I tried FluxGym I was amazed by how simple it is to use and how optimized it is. \n\nRegarding training SDXL/1.5, I always found it somewhat difficult. I learned how to use Onetrainer and I can more or less get by, but it has so many parameters and settings that I miss the simplicity of FluxGym. \nI have also tried Kohya And while I had promising results, it was too much for me. \n\nI know that FluxGym is based on Kohya, so it would not be unreasonable to transpose the training to SDXL and 1.5... \nIs there anything similar to FluxGym in terms of interface, simplicity and optimization for training SDXL and 1.5? Maybe an SDGym lol\n\nThanks in advance! ",
+            "subreddit": "StableDiffusion",
+            "comments": [
+                {
+                    "author": "DJSpadge",
+                    "text": "Came here to ask the same thing. I am happy with my SDXL setup, but find kohya a huge pain in the hole."
+                },
+                {
+                    "author": "Amon_star",
+                    "text": "ostris toolkit maybe"
+                }
+            ]
+        }
+    ]
+}

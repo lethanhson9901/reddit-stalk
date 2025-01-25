@@ -1,0 +1,34 @@
+{
+    "items": [
+        {
+            "title": "NotebookLM Plus included with Google Workspace from February 2025",
+            "author": "Balance-Ok",
+            "text": "[External Link]",
+            "subreddit": "notebooklm",
+            "comments": [
+                {
+                    "author": "rddt-rsrchr",
+                    "text": "What are the key benefits of Plus? A higher audio output limit?",
+                    "replies": [
+                        {
+                            "author": "googleOliver",
+                            "text": "You can find a few others described here: [https://notebooklm.google/plus?sjid=6354637580997168669-NC](https://notebooklm.google/plus?sjid=6354637580997168669-NC)"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Is there any way to find out where, in a PDF, NotebookLM is pointing me?",
+            "author": "Glaucomys_sabrinus",
+            "text": "I'm falling in love with NotebookLM, but there's one thing that's holding me back from uploading my entire library to it: its (seeming) inability to tell me where in the book it's grabbing the quotes from. (Why? I'd love, more than anything else, to be able to walk over to my bookshelf and start reading right in that section.)\n\nObviously, the traditional way to do this is through page numbers, but I know that when I upload a PDF of a book, it (usually) doesn't contain page numbers. But it seems like it could say something like \"This is in Chapter 4, about 7/8 to the end\". At present, I need to scroll up laboriously (yeah, I realize I'm referring to \"flick my finger on my scrolling wheel\" \"labor\", yeah, I realize this is the epitome of a First-World Problem...) to see what the chapter is, and then look for clues as to how far into the chapter it is. It usually takes a minute or two to do this, which really slows down my use of this (incredible, intellectually-life-changing) software.\n\nAny ideas for how to hack this? Or to suggest this feature in some official channel?",
+            "subreddit": "notebooklm",
+            "comments": [
+                {
+                    "author": "Icy-Expression-5836",
+                    "text": "Ctrl F and search for specific words"
+                }
+            ]
+        }
+    ]
+}

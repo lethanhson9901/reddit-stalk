@@ -1,0 +1,1018 @@
+{
+    "items": [
+        {
+            "title": "What do the best VP Product do extraordinarily well?",
+            "author": "j00sh7",
+            "text": "What have you seen the best VP of Product do well? What makes them good leaders? ",
+            "subreddit": "ProductManagement",
+            "comments": [
+                {
+                    "author": "bostonlilypad",
+                    "text": "Good coaches, clear communication, concise planning, protecting the team from bs, and my favorite vp was just a kind human, really helps to work for nice people.",
+                    "replies": [
+                        {
+                            "author": "1carb_barffle",
+                            "text": "Good decision makers when presented with the right information too"
+                        },
+                        {
+                            "author": "potato_opus",
+                            "text": "I miss my old VP. He did all of this and was the kindest boss I've ever worked for. He left recently and they promoted our old senior PM to his position and sheesh, the difference is palpable. New guy is still nice but is a yes man and is way more removed from the actual work the other PMs and I are doing, which is a terrible combo.",
+                            "replies": [
+                                {
+                                    "author": "bostonlilypad",
+                                    "text": "Follow the old vp. This is what me and my network do. We just follow the people we love to work for."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "plantcorndogdelight",
+                            "text": "This is applicable to senior leads of any function"
+                        }
+                    ]
+                },
+                {
+                    "author": "Lost-Iron",
+                    "text": "Listen to your PMs that are in the trenches and not assume the product is the same as it was 10 years ago.",
+                    "replies": [
+                        {
+                            "author": "chase-bears",
+                            "text": "I think it is important to listen and have a clear point of view that is informed by customers and the team about where the product should be headed."
+                        },
+                        {
+                            "author": "acloudgirl",
+                            "text": "We just had one that didn\u2019t listen. Left within a year!"
+                        }
+                    ]
+                },
+                {
+                    "author": "FootballBat",
+                    "text": "Tell the VP Engineering to go fuck themselves.",
+                    "replies": [
+                        {
+                            "author": "Tikkygraphic",
+                            "text": "I thought it was the VP of sales we\u2019re supposed to tell to go fuck themselves?",
+                            "replies": [
+                                {
+                                    "author": "UghWhyDude",
+                                    "text": "That's the baseline of what we expect them to do. \n\nOP asked for what the best do."
+                                },
+                                {
+                                    "author": "Independent_Pitch598",
+                                    "text": "It is a good union: Sales+Product to guide Engineering to the place where they belong"
+                                },
+                                {
+                                    "author": "audreyality",
+                                    "text": "Maybe they could fuck off together? \ud83d\udc49\ud83d\udc48"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "ostroga-mi",
+                            "text": "Currently have no VP Product, but the VP of Engineering is a con artist and there's no one else in the c-suite that has enough technical knowledge to call them out on it, so I absolutely see the value in this.",
+                            "replies": [
+                                {
+                                    "author": "PeoplesPeople303",
+                                    "text": "So common. This always drives me crazy."
+                                },
+                                {
+                                    "author": "bostonlilypad",
+                                    "text": "I\u2019ve seen this a lot."
+                                },
+                                {
+                                    "author": "Novel-Place",
+                                    "text": "Omg. I wonder if you work at my old company. \ud83e\udd23 I was seriously close multiple times to going directly to the president and telling her. She had a hardware background, no software, and no ability to know what an absolutely horrendous con artist the guy was. He was a glorified consultant from Amazon. How he ever got hired there in the first place was a mystery to me."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "rtd131",
+                            "text": "Then the VP of engineering becomes the VP of Product haha \ud83d\ude39",
+                            "replies": [
+                                {
+                                    "author": "demeschor",
+                                    "text": "<war flashbacks>"
+                                },
+                                {
+                                    "author": "Independent_Pitch598",
+                                    "text": "In normal companies - no, in normal companies engineering is just a function to serve product to reach goals. \n\nIf it works bad - outsource and consulting. This is basics for CEO that helps to keep salary and egos of devs aligned with reality."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Cromm24",
+                            "text": "This made me chuckle ![gif](emote|free_emotes_pack|joy)"
+                        },
+                        {
+                            "author": "poetlaureate24",
+                            "text": "Can\u2019t put it much better. In most startups the engineering leadership has been there longer than product leadership so you really need this skillset to survive and thrive."
+                        }
+                    ]
+                },
+                {
+                    "author": "GrouchyDirection7201",
+                    "text": "The best ones do few things well\n\n\\-Understand the consumer mindset shifts, tech shifts and macro shifts (regulatory environment, M&A activity etc) very well, very quickly to formulate focused strategy\n\n\\-Understand what gaps prevent the org from execution\n\n\\-Build the alignment in-org and externally to allow execution - obtain exec buy-in, build relationships\n\n  \nHavent seen many examples of this.",
+                    "replies": [
+                        {
+                            "author": "bostonlilypad",
+                            "text": "The focused strategy is so important imo.",
+                            "replies": [
+                                {
+                                    "author": "PumpkinGator",
+                                    "text": "Yes yes yes- focus strategy with the backbone to decline/defer intrusive priorities"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "coffeeville",
+                    "text": "Foster an actual team culture and consistent shared processes. I didn\u2019t even realize my old one wasn\u2019t doing that til the new person showed up and created a group chat, regular syncs, off sites with our peers. It sounds crazy but previously it was assumed since our domains were unique we didn\u2019t need to be communicating or even using consistent processes for documentation and planning."
+                },
+                {
+                    "author": "acloudgirl",
+                    "text": "Not appoint their stupid cronies/talentless hacks as \u201chead of product\u201d on the way out (which will happen to a VP of Product\u201d."
+                },
+                {
+                    "author": "ForwardMongoose3321",
+                    "text": "It's all about how they act as a representative of the people below them in talks with other leaders:\n\n* Pushing back to the VP of Sales on how much the roadmap needs to change for one customer\n* Pushing back to Engineering leaders about staffing\n* Pushing back to a \"Product Vision\" co-founder on a stupid idea\n* Being able to defend a date being missed. The best leaders will be able to take one or two talking points from the people in the trenches and fight a war against whoever is looking at those dates."
+                },
+                {
+                    "author": "rajomic",
+                    "text": "- they have a background in Product and as such, they can connect with (and speak to) their Product teams (at any level) in their org (when needed)\n- they stay in their lane, and let their direct-reports run.\n- they communicate frequently within their org, keeping everyone apprised on the business as a whole, and from a Product perspective \n- they support their org in the c-suite\n- they are exceptional listeners\n- they have empathy \n- they are approachable\n- they thoroughly know the business, and will happily share their knowledge to anyone who asks, and to a level appropriate for the recipient",
+                    "replies": [
+                        {
+                            "author": "KosstAmojen",
+                            "text": "I have a former VP who represented the antithesis of 80% of this. The worst was that they had zero background in product previously and therefore couldn\u2019t understand why people didn\u2019t suddenly react to every little whim of the executive team. As someone who\u2019s done this for a long time, it was the most stressful year of my career. \n\nThe worst part, they were a genuinely intelligent and friendly human being. \n\nI lost a lot of respect for our CPO who didn\u2019t take action or at least attempt to find them a mentor."
+                        },
+                        {
+                            "author": "TNvN3dyrwe",
+                            "text": "Beautifully stated -- thanks for sharing.\n\nThat aspect of open & transparent communication is what we all want but sadly it's not been my experience over the years at various companies. This forum stresses the importance of active listening & empathy which helps us build better products for users but support from VP is crucial when things go sideways with so many cross-functional teams we work with."
+                        },
+                        {
+                            "author": "Novel-Place",
+                            "text": "\ud83d\udc4f saving this for myself as I continue to take on more leadership. It\u2019s a good one."
+                        }
+                    ]
+                },
+                {
+                    "author": "poetlaureate24",
+                    "text": "Manage the CEO"
+                },
+                {
+                    "author": "trowaman",
+                    "text": "Basically, this: https://images.app.goo.gl/wQxb7exEjprExCBV6",
+                    "replies": [
+                        {
+                            "author": "j00sh7",
+                            "text": "I think this is true.\n\nIt\u2019s easy to be insecure when you\u2019re doing everything right, because your work has given the rest of the team a larger lever. They\u2019re actually the ones producing more; you\u2019re working through them to accomplish a bigger vision."
+                        }
+                    ]
+                },
+                {
+                    "author": "diablodq",
+                    "text": "Politics"
+                },
+                {
+                    "author": "mister-noggin",
+                    "text": "* Provide clear strategic direction while giving everyone under them freedom to work on the execution of the strategy, and remain open to new information that indicates the strategy should change\n* Understand product management, help mentor the people under them, and give them a path for career progression\n* Provide cover so that people are free to do their jobs and aren't terrified of failing, and back them publicly\n* Create clear expectations for success, celebrate that success, and don't hold grudges"
+                },
+                {
+                    "author": "Artistic_Jelly4132",
+                    "text": "Trust his Directors and senior PMs. Layout the guiding principles and then back off to let them execute."
+                },
+                {
+                    "author": "SkeithTerror20",
+                    "text": "Want to know too"
+                },
+                {
+                    "author": "doobsicle",
+                    "text": "Generate revenue. Sustain growth."
+                },
+                {
+                    "author": "ChedChexton",
+                    "text": "Listen to your PMs and have a clear vision for the future and WHY the product should be heading in that direction"
+                },
+                {
+                    "author": "ExistingNectarine34",
+                    "text": "Tell us the fucking priority. What should I be focused on for the love of god???"
+                },
+                {
+                    "author": "IntensePancakes",
+                    "text": "Simplify things and create clarity rather than adding to the confusion."
+                },
+                {
+                    "author": "DukesOfMayonnaise",
+                    "text": "Advocate for your people/part of the org, don\u2019t make them ask you for it."
+                },
+                {
+                    "author": "DaPendallo",
+                    "text": "Work on huge B2B deals or implement a strategy regarding product that requires multi department coordination or huge resources"
+                },
+                {
+                    "author": "Independent_Pitch598",
+                    "text": "Manage CEO and delivering an idea that Engineering is easy replaceable and must do what business wants."
+                },
+                {
+                    "author": "Khroneflakes",
+                    "text": "Listen, stay out of the way, and provide guidance when needed"
+                },
+                {
+                    "author": "PoutineFamine",
+                    "text": "Maintain a strong product vision and are still deep into the details of all of their areas"
+                },
+                {
+                    "author": "caligulaismad",
+                    "text": "making clear what are the main priorities and not letting other things come in that orbit"
+                },
+                {
+                    "author": "This-Bug8771",
+                    "text": "Rest and Vest"
+                },
+                {
+                    "author": "CrackSammiches",
+                    "text": "Talk charismatically. Being good at anything else is just a bonus. They only need to be tall and talk good."
+                },
+                {
+                    "author": "Honest_Prod7070",
+                    "text": "Know how to manage up to c-suite while creating effective worthwhile experience for team to create value. Especially at smaller companies with constant change, they need to know how be a steadying force and shield team from politics."
+                }
+            ]
+        },
+        {
+            "title": "Which is your fav digital product?",
+            "author": "Main-Independence-97",
+            "text": "I\u2019ve been reflecting for a while, trying to identify my absolute favorite digital product, but I keep circling back to the popular ones, mostly because they\u2019ve become such a habitual part of my routine.\n\nI\u2019d love to hear from you\u2014what\u2019s your favorite digital product and why? Your insights might help me discover something new or think differently!",
+            "subreddit": "ProductManagement",
+            "comments": [
+                {
+                    "author": "RMakowski",
+                    "text": "I've recently found excalidraw.com(not an ad). an analog of Mira or draw.io but with a very minimalist look and feel. I would really like to talk to their PM - the tool is perfect. UI/UX is minimalistic, monetization is not overly intrusive.",
+                    "replies": [
+                        {
+                            "author": "BiologicalMigrant",
+                            "text": "I prefer excalidraw for solo sketching, but for lightweight whiteboarding with others it's Metro Retro for me. Draw.io feels a bit older now, and Miro is too full of stuff."
+                        },
+                        {
+                            "author": "PinealisDMT",
+                            "text": "Excalidraw is excellent. Love it."
+                        },
+                        {
+                            "author": "Scorpi0n92",
+                            "text": "Why do you believe the PM deserves the credit here, rather than the founder(s) + engineers?\n\nSurely, you don\u2019t need a PM to build something like this, especially in a company with a headcount of 1-15 people, max.\n\nI doubt they\u2019re larger than that at this stage, though I do love the tool as well.",
+                            "replies": [
+                                {
+                                    "author": "RMakowski",
+                                    "text": "I used PM as an umbrella term to denote a person who makes product decisions. If it's the founder, that just means that he plays the role of a product manager."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "noelsacid",
+                    "text": "NTS Radio. Yeah it's just a music radio station with listen on demand, and a few other features in its app, but it just nails what I want in a music app - the feeling of context,  curation, style (Vs endless \"personalised\" algorithm)\n\nNotebook LM. I'm kind of in a honeymoon phase, but I'm spending hours using it to learn stuff. For me it feels like a peek into the future. \n\nAlso Reddit is underrated. Sure it's being enshittified by various forces, but it's one of the only things keeping the internet usable for information seeking.",
+                    "replies": [
+                        {
+                            "author": "Gubbarewala",
+                            "text": "How are you using notebook lm, if I may ask? What does the journey look like for you",
+                            "replies": [
+                                {
+                                    "author": "noelsacid",
+                                    "text": "If you're researching a specific topic it's a fantastic way to draw out the main themes and ideas. I use it to prepare for meetings, interviews, as well as general topic learning. I grab a load of sources, provide a prompt and listen to the audio overview. Then if I want to dig in I'll use the chat interface. \n\nThe audio overview means I can digest it all on the go. The \"interactive mode\" makes it possible to ask ad hoc questions verbally, and go deep on specific areas. \n\nThe quality of the summarisation seems higher than elsewhere. With some other AI tools I feel like a summary is all it can go - like they're unnecessarily brief - but with Notebook LM I feel like I can dig into the detail on demand. \n\nHope this helps?"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Aggressive_Perfectr",
+                            "text": "I love NTS but they could do a better job at track listings. Some shows that are supposed to have them don\u2019t. It\u2019s a small issue, but as a donor, it\u2019s an annoying one."
+                        },
+                        {
+                            "author": "JediSurfer8888",
+                            "text": "I second Notebook LM in spite of being a Google tool. It is really a great implementation of easily accessible AI utility. Kind of temporarily wrecked my de-googling attempts... Perfect for me who for a long time have been disciplined with gathering and organizing data sources and personal notes. Looking forward to trying other similar non-google tools. In fact, the whole google suite of tools is awesome as far as productivity and convenience goes, but it is obviously dangerous to give them the full map of yourself given the dystopian AI driven world we quickly are moving towards."
+                        }
+                    ]
+                },
+                {
+                    "author": "NoDragonfruit2833",
+                    "text": "Well, with that question, i felt like I'm back at all those Product Strategy interviews. \n\nBesides that, I think it can be the Google Maps. Other than routing and driver solutions, I always use Google Maps location information (UGC, Menu, Photos etc.) rather than Tripadvisor or other platforms."
+                },
+                {
+                    "author": "ImJKP",
+                    "text": "**Signal.**\n\nIt solves a real and important problem, it doesn't exploit me, and using it doesn't enrich a monster.",
+                    "replies": [
+                        {
+                            "author": "low_flying_aircraft",
+                            "text": "100% \n\nI wish it was more widely used :(",
+                            "replies": [
+                                {
+                                    "author": "DarcSwan",
+                                    "text": "They need you to create the network effect! My whole family and friend group use Signal because of my nagging."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "PMinVegas",
+                            "text": "What is the problem it solves for you?"
+                        }
+                    ]
+                },
+                {
+                    "author": "Even-Calligrapher623",
+                    "text": "Citymapper",
+                    "replies": [
+                        {
+                            "author": "nrv_vrn09",
+                            "text": "When I came to New York the first time, Google Maps failed me so bad.. with some reddit searches I found city mapper. It works great in all large metropolitans I've been to in the US and Europe."
+                        }
+                    ]
+                },
+                {
+                    "author": "Thanos_50",
+                    "text": "Google maps"
+                },
+                {
+                    "author": "FastFingersDude",
+                    "text": "Roam Research. Similar to Notion, but very focused."
+                },
+                {
+                    "author": "Tori_gold",
+                    "text": "Another vote for Notebook LM\n\nAnd the Premom app\u2014 super easy to use and intuitive. It has a nice feature that lets you upload photos of your lh (or other ) at home tests and will score them for you."
+                },
+                {
+                    "author": "Harleypin",
+                    "text": "Storygraph - app for tracking reading\n\nIt's a bootstrapped startup that has taken on Amazon's GoodReads and is infinitely more user friendly. The founder is very inspiring, and talks often to users, takes polls, shares the roadmap etc.\n\nExample of thoughtful features:\n\n- content warnings: you can add them to reviews, and filter out books on topics you want to avoid\n- buddy reads: for book clubs/reading something with someone, you can tag notes to a specific page, and it won't be revealed until the other reader has reached that page (avoids spoilers and keeps the comments in context)\n\nIt's well designed, and though it's not an \"essential\" product, it's helped me form a positive habit (significantly more reading), and flexes around me. There's no ads, the free version has everything you need and more, and the team behind the app seem to just be good hardworking people putting something interesting into the world \ud83d\udc4d"
+                },
+                {
+                    "author": "Mobile_Spot3178",
+                    "text": "All time: Youtube, [chess.com](http://chess.com) app  \nA new one: tried Photoshop with AI tools to try different designs in my home -> mindblown.",
+                    "replies": [
+                        {
+                            "author": "Electronic_Boot_1598",
+                            "text": "you pick chess.com over lichess?"
+                        },
+                        {
+                            "author": "Adventurous_Tone7391",
+                            "text": "YouTube?  Really?",
+                            "replies": [
+                                {
+                                    "author": "Mobile_Spot3178",
+                                    "text": "Yup. Youtube is pretty much the only video content I watch. You?"
+                                },
+                                {
+                                    "author": "left_hook_Walsh3",
+                                    "text": "YouTube is very good"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Andthenwefade",
+                    "text": "When I was contracting I used Freeagent for my accounting, and it was so beautifully simple that it made very boring things quite enjoyable. So I always say that when asked this question."
+                },
+                {
+                    "author": "toritxtornado",
+                    "text": "reddit and chatgpt are what i use the most, so i guess i\u2019ll say those"
+                },
+                {
+                    "author": "Astrotoad21",
+                    "text": "Wikipedia.",
+                    "replies": [
+                        {
+                            "author": "Prior-Actuator-8110",
+                            "text": "Wikipedia seems a bit obsolete nowadays in 2025 with all the AI around.",
+                            "replies": [
+                                {
+                                    "author": "Astrotoad21",
+                                    "text": "Nothing against AI, I use it a bunch - but when I want to sit down and learn about a new subject, I like the Wikipedia article form with pictures/illusstrarions a lot more. Also pretty amazing that it\u2019s crowdsourced, crowdfunded, and distributed. Basically non-commercial. OpenAI on the other hand\u2026"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "PhilosophyFluffy4500",
+                    "text": "To be honest, it actually depends on my current interests. \n\nFor now, I\u2019m more focused on improving traffic, getting clicks, and acquiring clients. I have multiple digital products, including SEO tools, AI platforms, and marketing tools. \n\nMy favorite is Lemlist, which I\u2019m currently using to reach out to my clients. \n\nAnd, of course, Spotify is my go-to when I\u2019m stressed."
+                },
+                {
+                    "author": "left_hook_Walsh3",
+                    "text": "Maybe not a traditional product but I love poolsuite.net (used to be Poolsuite FM)"
+                },
+                {
+                    "author": "Ok_Risk_8330",
+                    "text": "Granola ao"
+                },
+                {
+                    "author": "GlorbAndAGloob",
+                    "text": "I've gotten really into The Story Graph recently. I read a LOT and love to break down data around my reading habits and this app delivers. I especially love that it is an independent app that keeps that data out of the hands of Amazon.\n\nAnother new one I just started playing with is Carv. It's a hybrid digital/physical product pairing - sensors that clip onto your ski boots that provide real time data to an app that analyzes your technique and provides audio coaching in real time. It's improved my skiing this season.",
+                    "replies": [
+                        {
+                            "author": "TNvN3dyrwe",
+                            "text": "Love your brief on Carv.  Not a skier but into tennis as of late so that real time coach in the app sounds cool."
+                        }
+                    ]
+                },
+                {
+                    "author": "SkeithTerror20",
+                    "text": "Right now:\n\nTodoist\nNotion\nExcalidraw"
+                },
+                {
+                    "author": "knarfeel",
+                    "text": "Google Maps, ChatGPT, Pokemon TCG Pocket recently, Notion."
+                },
+                {
+                    "author": "kirso",
+                    "text": "Capacities.io\nGranola\nMacrofactor\nLibby\nThe Way\nTimeleft"
+                },
+                {
+                    "author": "Prior-Actuator-8110",
+                    "text": "Duolingo is pretty cool. One of the few \u201creal\u201d EdTech companies. \n\nAlso Grindr \ud83e\udd23 lol",
+                    "replies": [
+                        {
+                            "author": "ohshouldi",
+                            "text": "Are you for real about Grindr? \nIt\u2019s one of the few apps where I got so pissed I actually sent elaborate feedback (I think it happened like 2 times in my life)"
+                        }
+                    ]
+                },
+                {
+                    "author": "314ngi",
+                    "text": "Waze, such an elegant app"
+                },
+                {
+                    "author": "potato_opus",
+                    "text": "I love Google Meet. Sleek UX, great backgrounds with excellent resolution. I like that it's in the browser and integrated with all my work and client meetings since we use workspace. I also just discovered how to start an instant meeting in Slack with the shortcut /meet (if integrated). Super useful if a Slack huddle is too small for your purpose.",
+                    "replies": [
+                        {
+                            "author": "Disastrous_Ferret160",
+                            "text": "Same with me"
+                        }
+                    ]
+                },
+                {
+                    "author": "IllLecture661",
+                    "text": "Arc browser is incredible.\n\nBlueSky as a product is fine. Nothing revolutionary there but I am liking what I\u2019m seeing in terms of company ethos and their plans for monetization.\n\nPlex. Anything to disrupt the trashcan circus that is streaming products is a win in my book."
+                },
+                {
+                    "author": "allstarmike",
+                    "text": "Cursor. Perplexity."
+                },
+                {
+                    "author": "andsimon_",
+                    "text": "Watch Duty. It's simple, reliable, and incredibly helpful for staying updated in dynamic situations. Similar to other responses here as I have not felt exploited at all."
+                },
+                {
+                    "author": "TheR1D2",
+                    "text": "Productivity -> Notion . Communication -> WhatsApp"
+                },
+                {
+                    "author": "alu_",
+                    "text": "Google Maps"
+                },
+                {
+                    "author": "NoCarry4248",
+                    "text": "tumblr"
+                },
+                {
+                    "author": "isbajpai",
+                    "text": "Netflix, all the way!\nThe best consumer experience I have ever experienced \ud83d\ude4c\ud83c\udffb",
+                    "replies": [
+                        {
+                            "author": "albert_pacino",
+                            "text": "Personally I find it a ball of shite"
+                        },
+                        {
+                            "author": "Main-Independence-97",
+                            "text": "It's a plus one, but the reasons for personal recommendation and an amazing consumer experience aren't considered enough apparently. Other OTTs are doing so."
+                        },
+                        {
+                            "author": "gynorbi",
+                            "text": "I think the quality of content is really breaking the experience.\n\nFor example Apple+ now feels like a better decision as I know the stuff on there will be quality."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "What are some of the most common problems you experience when dealing with an engineering team, regardless of the level, from IC to CTO?",
+            "author": "lolikroli",
+            "text": "There's a post asking, *\"What do the best VP Product do extraordinarily well?\".* The comment with the most upvotes is, *\"Tell the VP Engineering to go fuck themselves.\"* This indicates a lot of frustration in dealing with Engineering. I'd love to know how true that is and to hear your perspective!",
+            "subreddit": "ProductManagement",
+            "comments": [
+                {
+                    "author": "mister-noggin",
+                    "text": "**Opposition to collaboration:** I like to take a very collaborative approach with engineering. I will bring the problem and the context around it. I'd like to have a good conversation with engineering to talk about different approaches for solving the problem, discuss the tradeoffs, how it can be broken down into smaller pieces, and come to a conclusion about how what we're going to do. Working together, we can put together some sketches, documentation, etc. Whatever we need to capture the solution. I've worked with some teams that don't want to understand the customer or the problems, and just want to be handed requirements. The latter results in a few things: \n\n* More detailed requirements are necessary\n* No matter how detailed the requirements, there will always be questions. If the engineering team was part of the ideation phase, they can do a better job of answering some of those questions on their own because they actually understand what's going on. They're not just a bunch of code monkeys\n* Maybe I'll come up with the best solution on my own, but probably not. The engineering team sometimes have the best ideas about how to solve problems. Working together we can do a better job most of the time\n* It takes a lot of time to put together requirements. Then I still have to have the discussion with the team about what we're doing and get feedback. But now that conversation is happening much later in the process. Maybe they uncover some technical problems that make my proposal difficult. Worst case, I have to go redo most of the requirements, and then process repeats itself. This back and forth can take months\n\n**Writing everything themselves (or nothing):** it can be difficult to get engineers who can find a good balance between writing new code versus using tools or existing code. Some want to write everything themselves. Others want to use a library for everything. Some want to refactor every piece of code they touch, others never want to\n\n**Insisting on 100% solutions:** we don't always have to cover every possible use case and write the most beautiful code in the world. It's great to start with something that's hacked together quickly and provides the bare minimum functionality. We can get that in front of a few customers and see if it's worth building something better. Again, it's a balance",
+                    "replies": [
+                        {
+                            "author": "lolikroli",
+                            "text": ">**Opposition to collaboration**\n\nThis is a difficult problem to solve. Most often what I saw working best in these cases is having a tech/team lead who is involved in the process and can guide the rest of engineering team later in the dev cycle. Often when I tried to get a team like that involved more in the process I would end up being the only one talking anyway, having to explicitly nudge others to contribute which was rarely productive\n\n>**Writing everything themselves (or nothing)**\n\nYes, that's a never ending debate among engineers themselves\n\n>**Insisting on 100% solutions**\n\nI'd say this is indeed often not reasonable. The problem sometime lies in these hacky solutions end up being a permanent solution and an ongoing headache for developers. And there should be tolerance in business to higher rate of errors/bugs that often come with hacky solutions. Often there are people throwing tantrums when things are breaking and engineering is of course held accountable",
+                            "replies": [
+                                {
+                                    "author": "advancedOption",
+                                    "text": "There is a point where we do have to accept that engineers collaborating with UX designers, Product Managers, et al is too much ambiguity for the personality type that often dominates engineering teams. Ambiguity being: We don't know exactly what or how to build something. Which is Product's role to get from ambiguity to (near) clarity.\n\nI try to figure out which of the engineering team are curious (a sign they see the ambiguity and aren't unsettled by it) or those that complain about the direction of the product (a sign they aren't just code monkeys and want to be invested in the direction of the product) and try to include them. \n\nAs you say, the best thing is often to work with a good tech lead and let them manage the personality types that they're better set up to work with. Which is why it's incredibly important leaders know that team/tech leads have to be collaborative and able to handle ambiguity. The worst roles I've had are where it was the tech lead who would just bark for more and more and more requirements before they would even talk to me, essentially \"solve everything, then I'll tell you how wrong you are!\" so I would then go back and rework everything including full redesign, they could then point at Product as the reason for delays. Infuriating. Venting aside...\n\nSo by finding the people in the team that can be collaborative you can also work around a tech lead that's not. \n\nIt's the same TBH with product people and designers, there's some that operate well ONLY in ambiguity, and suck at working out like functional requirements, detailing them, designing to them etc. but those people are still useful, but only in the ambiguity phase, like Devs that hate ambiguity are only useful in the delivery phase."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "This-Bug8771",
+                    "text": "We're in the business usually to make money. Otherwise, we'd be a not for profit or a non-profit.",
+                    "replies": [
+                        {
+                            "author": "lolikroli",
+                            "text": "In your experience, how is engineering being an obstacle to making money?",
+                            "replies": [
+                                {
+                                    "author": "Kaufnizer",
+                                    "text": "Optimizing code to a level that customers and business doesn't need. Not being aware of costs for services."
+                                },
+                                {
+                                    "author": "This-Bug8771",
+                                    "text": "Not always but I have worked with Eng (in big tech) who focused on working on what they wanted to and not what they always needed to."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Kaufnizer",
+                    "text": "Lack of ownership and openness. Especially with overseas teams. This includes design and engineers. They think product calls all the shots and never push back, even when I'm making shortsighted decisions with limited information (that THEY have) that might negatively affect the customer or business. I'm my view, the product TEAM makes decisions, and that's not only the product manager. I'm a big believer if the product trio  It's hard to get that point across, especially when there are cultural barriers that prevent them from feeling able to be open (ex. High regard for hierarchical authority)."
+                },
+                {
+                    "author": "PingXiaoPo",
+                    "text": "The only problem I ever have with engineering teams is when they are not working together with me. There are some Engineers that see product management as enemy to fight and defend against. This is very hard to overcome.",
+                    "replies": [
+                        {
+                            "author": "lolikroli",
+                            "text": "Well, there are lazy devs, and you're the one who makes them do the work, so their resistance is natural /s\n\nI think partially the problem is in the difficulty to tie dev performance to product metrics, so there's no incentive",
+                            "replies": [
+                                {
+                                    "author": "LightWolfCavalry",
+                                    "text": "Part of this comes from the fact that many, many, _many_ product managers won\u2019t (or can\u2019t) set priorities.\u00a0\n\nMany engineers rightly fear blame for \u201cmaking the wrong thing\u201d, and want someone else to own the decision of what thing to make, so it\u2019s no longer engineering\u2019s fault if it fails.\u00a0\n\nWhere product managers say \u201cI\u2019m not sure what to do\u201d when faced with a business dilemma, many engineers hear \u201cI don\u2019t want to risk being accountable for making the wrong decision\u201d. Not wanting to be accountable themselves of failing to do anything, many engineers try to do _everything_ based on the rationale that they can\u2019t be faulted for not executing without having a clear priority.\u00a0\n\nI don\u2019t want to point fingers - I really think it\u2019s a fundamental breakdown in communication. I think engineers owe it to PMs to take \u201cI don\u2019t know\u201d at face value. I think PMs owe it to engineers to assume some accountability by setting a priority, even when evidence is murky that the priority is the best path.\u00a0\n\nAs the USMC likes to say: a bad plan, violently executed, trumps no plan at all.\u00a0"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "token_friend",
+                    "text": "I've exclusively worked in startups/growth environments.\n\nFor me, I categorize work into three areas:\n\n* **Low-hanging fruit/quick wins**: Immediate value, keeps us afloat.\n* **The Dreaded Middle - Feature factory/\"normal work\"**: Standard, iterative tasks that maintain the status quo.\n* **Visionary/transformative projects**: High-risk, high-reward efforts that can redefine our company and industry.\n\nMost engineers tend to focus entirely too much on the middle; just maintaining the status quo. It's a safe place for them and they tend to be risk-adverse.\n\nI on the other hand want the majority of my resources dedicated to the 2 extremes: quick wins & transformative projects. Fuck the middle.\n\nThe biggest chore for me is building the trust & rapport required for engineering to willingly take risks with me. And then of course, having to rebuild that trust every-time the risk doesn't pan out.\n\nIt's especially tough working with engineers who believe that you can mitigate all risks by planning (typically those from enterprise or have been around a bit too long); you cannot. That mindset just forces you to keep all your attention on the safe stuff in the middle that maintains the status quo.",
+                    "replies": [
+                        {
+                            "author": "TNvN3dyrwe",
+                            "text": "Great categories and even better insights on the mind of the typical engineer. Cool articulation as it makes perfect sense after reading your post."
+                        },
+                        {
+                            "author": "lolikroli",
+                            "text": "Not sure why would engineers resist to work on the first point, maybe the tasks are too simple and not challenging enough, just boring?\n\nWhat is the risk for engineers to work on something that doesn't pan out, just that the stuff they built ends up being thrown out? I understand the risk for you as a decision maker, you carry responsibility for your decisions"
+                        }
+                    ]
+                },
+                {
+                    "author": "mazzicc",
+                    "text": "They take the \u201cwe know how the product works\u201d (which they should) to \u201cwe know what the product should do\u201d (which they don\u2019t always). Especially for Design decisions. \n\nWe all probably have experience looking at a terrible UI and recognizing \u201cthis was designed by an engineer\u201d because it is \u201clogical\u201d but not enjoyable to use or even intuitive. \n\nThe other common problem I see is they usually want to prioritize operational improvements over new development, even when the operational improvements aren\u2019t actually needed. I had a long argument over developing a new feature being more important than making our most commonly used page load faster. They argued it\u2019s the most common page so it\u2019s super important. They ignored the fact that they were talking about taking it from a 2 second load to a 1 second load, and the customers didn\u2019t care about how long it took to load that page, but they were constantly asking for the new feature.  \n\nThat\u2019s a specific example of just not having the same priories as the business.",
+                    "replies": [
+                        {
+                            "author": "TNvN3dyrwe",
+                            "text": "Great example!  \n  \nCan I ask how you typically get everyone on the same page? I'm specifically looking to accelerate the alignment between product & eng. I realize it depends on the existing operating model & culture but looking for ideas to tighten things up with our teams."
+                        }
+                    ]
+                },
+                {
+                    "author": "Tim_Riggins_",
+                    "text": "Not making an effort to understand the product in terms of how users actually use it and what value it provides. So basically just looking at it like a widget and not going any deeper than that with their understanding. \n\nAlso, not testing related workflows.",
+                    "replies": [
+                        {
+                            "author": "lolikroli",
+                            "text": ">Not making an effort to understand the product\u00a0\n\nWhat exactly ends up being a problem, a wrong thing being built? Or they just don't contribute with ideas?\n\n>Also, not testing related workflows.\n\nSo things breaking and bugs in general?",
+                            "replies": [
+                                {
+                                    "author": "Tim_Riggins_",
+                                    "text": "When you\u2019re building things, not every decision point is going to be outlined as an acceptance criteria. In those cases, you either have to understand what will be the best choice based on your users, or ask your PM. So, it either leads to poor decision making and a poor user experience, or too many questions / back and forth. \n\nFor the second point, yes. Breaking shit"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "espressonut420",
+                    "text": "We have a collaborative planning process with engineering leadership, which basically means they call the shots on prioritization. If they don\u2019t want to work on something they\u2019ll say \u201coh I think we need more architectural design work on this one before we bring it to the scrum team\u201d but their pet projects are top priority right away and our product leaders say \u201cwell we can\u2019t say no to addressing must-fix tech debt.\u201d",
+                    "replies": [
+                        {
+                            "author": "Serious-Gate582",
+                            "text": "So for them collaborative means a dictatorship? I wonder how they justify working only on OPEX development."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Users being a pain",
+            "author": "Tall_Status_2540",
+            "text": "I am the senior product manager of an internal tool and it mainly caters to an ops team. I have this weekly call with an ops team and it is the most stressful time of my week. The team continuously keeps asking why their features are not being built why is there a delay and always put me on the spot. They threaten me that they will move on to a different tool and openly calls out that they are furstrated with the product. To be frank the demands for which the features are being built primarily comes from the leadership and also there is a demand management team. We have other users types also and their demands also needs to be met, I ensure that critical bugs and product issues get fixed as soon as possible and minor feature improvements go through(but things do take time). I am the only one who joins this call from product and I am always being cornered. Please advise how can I manage this meeting better so that they dont dominate me completely\nOrganization- Large corporate",
+            "subreddit": "ProductManagement",
+            "comments": [
+                {
+                    "author": "12-24_neverforget",
+                    "text": "This is a tough but not uncommon position to be in, especially with internal tools. Idk what you're doing now, so you may be doing some of what I'm about to share already but here's some action you could take:\n\n- find an ally among that group , bring them along the process. Show them how you make decisions and how things work. I find that non prod/eng folks really have no idea how things work and therefore no empathy. Once they learn, the conversations are usually more productive. Bring in an eng to help explain if you've got any allies there \n\n- low hanging fruit. Find one thing that's a small lift technically but a big pain point for them and get it done even if it doesn't fit your roadmap. They're never going to be on your side if you don't solve any of their problems. Fixing bugs quickly doesn't have any impact because in their mind, shit should just work.\n\n- take control of the meeting. Seems like you've created a venue for them to air their grievances. That would be fine if there was a healthy relationship, but that doesn't seem to be the case. Introducing and enforcing structure will help you drive the conversation to be more productive rather than destructive. Set a clear agenda for that meeting and make sure there's no room/time for anything else.",
+                    "replies": [
+                        {
+                            "author": "IMHO__",
+                            "text": "This is most often the case with internal products.\n1 and 3 stated by u/12-24_neverforget definitely works. It should help you also grow in a way to negotiate better with the ones above and the ones below. It's a opportunity for you to build a skill.\n\nAlso, you should make the leadership team understand the constant requirements for the internal product anf have a fixed budget allocated for this (at least a minimal budget) so that you can work with your team and prioritise their pain points and translate them into stories to work upon."
+                        },
+                        {
+                            "author": "Longjumping_Many_690",
+                            "text": "This is excellent advice. I was in a similar boat a few years back and tried 1 & 2, and tweaked 3 into smaller group meetings instead of a weekly free for all - and things got much better. No, I don't get carried round the office like a king now, but life is definitely 90% less shit. These things will take months to bear fruit, but it will get better."
+                        },
+                        {
+                            "author": "Tall_Status_2540",
+                            "text": "I find your 3rd point extremely valuable. I will ask for an agenda before the call starts",
+                            "replies": [
+                                {
+                                    "author": "LogicRaven_",
+                                    "text": "Just to clarify, I believe the above comment meant that you make and drive the agenda, not that you ask for it.\n\nFor example you could start with showing the latest roadmap, what was delivered since the last call, what will be delivered for them soon.\n\nYou could also check if their requests should be escalated somehow or not. People involved in the roadmapping should know about that this customer might churn."
+                                },
+                                {
+                                    "author": "Adventurous_Tone7391",
+                                    "text": "Why ask?  Make."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "freddyknuckles",
+                    "text": "Move to an every-other week meeting cadence.  You\u2019ll have half the meetings and half the stress.  There\u2019s a big mental difference between hating Wednesdays and hating every-other Wednesday.  \n\nIf you get pushback offer to meet half as often \u2014 but for twice as long.  Can\u2019t believe how much this helped me once.",
+                    "replies": [
+                        {
+                            "author": "Tall_Status_2540",
+                            "text": "This is really helpful advice. Anyway lot doesn\u2019t change every week. I am going to get my manager buyin on this."
+                        }
+                    ]
+                },
+                {
+                    "author": "Annual-Telephone7520",
+                    "text": "It sounds like you feel they're being unfair, but it also sounds like they're not getting what they should be getting. They're expressing their concerns, which is what they're supposed to do and in theory what you're supposed to want from them. You're in a difficult position, but it seems like your role (regardless of you) is set up to be the buffer between these things\u2014almost as the solution to them by absorbing the blows. Not easy for you, but it doesn't have that much to do with the users. \n\nWe might call this being stuck between a rock and a hard place, but while the users are the rock, it's not clear whether your leaders are actually a hard place. If your job is to try to help these users, your leaders need to hear that they're not providing it. You're the feedback loop. The roadmap and priorities suggested by another commenter is a good idea, but it might be even more important for leadership to see.",
+                    "replies": [
+                        {
+                            "author": "Tall_Status_2540",
+                            "text": "This is valuable advice. I will try to get more feedback into the leaders. I was managing more at my side now, I recently took up the role so will try and include more leadership into this. Do you suggest I let this information reach till my skip or just my manager",
+                            "replies": [
+                                {
+                                    "author": "infraspinatosaurus",
+                                    "text": "I\u2019d suggest digging into your user feedback to see if you can translate feature requests to lost time (\u201cthis workflow requires X manual step; changing the workflow will save Y hours per month\u201d). It sounds like your leadership and your users aren\u2019t aligned on what\u2019s important, which you can definitely help them do by visualizing. It\u2019s not uncommon for leadership to be focused on functionality necessary to achieve some new business goal, while users care less about what they\u2019re not working on yet than they do about their day to day issues.\n\nBut you do need to make some friends on the team. Pick a loud person and a quiet one and start there. Giving them one on one time and honesty goes a long way, as does taking interest in deeply understanding their problems to the point that the type of analysis above is possible. You are a partner in all of this, not just their complaint box. Once you\u2019ve turned that corner with a couple of people the tone tends to change."
+                                },
+                                {
+                                    "author": "Annual-Telephone7520",
+                                    "text": "To me, the job fits between these two groups and the task is to align them and to align them in the right place. That is, if these two groups are on different pages, you need to (1) identify and actually know the right page and (2) get the group(s) that are on the wrong page onto the right one (sometimes its both). The power dynamics of the role will typically make it \"easier\" for you to believe the leaders are right\u2014and well you can respond as you want to that reality. But if the leaders are wrong, dense, or far away from the problem, and you follow them, you can't be surprised or really even think its unfair for the other side to doubt you.\n\nOften a lot of the \"solutions\" seem to solve for isolating or not having to hear or deal with the users. Some seem more compassionate and well meaning than others, but there's a difference between trying to make them feel heard, actually listening to them, and advocating for them (if they're right). It's not even really advocating for them, it's working on the right product/thing rather than simply the organizationally easy one."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "tangential_point",
+                    "text": "A directional roadmap that includes some of their requests and the other priority features (particularly from leadership) can help show the features they requested have consideration and will come in due time\u2026 asking them to prioritize their requests and underscoring that product work goes beyond features (bugs, tech debt, etc). If there is a large feature they want that isn\u2019t much of a priority given other stakeholder demands you can ask them to help the case & report back to them when leadership doesn\u2019t go to it might help \ud83e\udd37\u200d\u2642\ufe0f maybe it\u2019s time for another PM to attend these meetings?",
+                    "replies": [
+                        {
+                            "author": "Tall_Status_2540",
+                            "text": "Thanks for the feedback. Yes I should definitely get more PMs into this call. Yes I have to ask them to prioritise their list.",
+                            "replies": [
+                                {
+                                    "author": "tangential_point",
+                                    "text": "You\u2019re welcome, good luck!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Best-Shame-2029",
+                    "text": "1) Bucket all the demands\n2) prio them using eisenhower matrix\n3) communicate ground situation to leadership\n4) ask for help to leadership in terms of resources, communication to ops team and their mandate on change shortlisting/prio settings\n5) Reduce the frequency of calls after step #4 do it biweekly instead of weekly.\n6) If people still shout ask them to formally write their grievances and offer them to participate in a demo day \n7) ensure you find and resolve common denominator from #1 (tech debt may need making harsh decisions)",
+                    "replies": [
+                        {
+                            "author": "Tall_Status_2540",
+                            "text": "Excellent advice"
+                        }
+                    ]
+                },
+                {
+                    "author": "doogsieman",
+                    "text": "In addition to the recommendations above, having a goal and following RICE framework might help. Then prioritize all requests that help your goal. If your goal is too wide, narrow it down. Then take 10-15 mins every meeting to show them the entire roadmap and why things are prioritized the way they are (eg. we are doing XYZ first because it directly impacts the goal of \u201cmaking things easier\u201d). \n\nYou could also show them other requests being prioritized and their reason for being prioritized higher than other requests etc. This will give features/bugs more visibility and hopefully take them off your back.\n\nGood luck",
+                    "replies": [
+                        {
+                            "author": "Tall_Status_2540",
+                            "text": "Thanks for giving feedback. Do you thinking showing my roadmap to them is good idea, because it would open up myself for more questions I guess. May be I could show an abstract level roadmap",
+                            "replies": [
+                                {
+                                    "author": "doogsieman",
+                                    "text": "Yes, abstract level would be best. You are right, I wouldn\u2019t show them every little detail, just key releases. I usually maintain both exec and peer level roadMaps. It\u2019s a challenge to maintain, but helps a lot with exec level meetings"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "AmericanSpirit4",
+                    "text": "I have a similar issue but the people on the call don\u2019t even use the product and will say that a user told them of the problem and that we need x solution to fix it. \n\nI\u2019ll then ask them if I can sit down with the user to have them walk me through it and they get mad and throw their title at me and say it needs to be done. \n\nIt\u2019s crazy how much control people with no stake want over product solutions. If their solution doesn\u2019t solve the problem they don\u2019t have to be the user dealing with it or the product person explaining why the solution was built."
+                },
+                {
+                    "author": "TheWarpRider",
+                    "text": "I was one of those ops people before I joined Product Management. When you can't see behind the factory walls, it is too tempting to just be like \"Can't they just put a damn button here, what the hell is taking so long\". Then when you are on the other side, you see exactly what is taking so long.\n\nNow I would suggest something like this to run your meetings:\n\n1. Here are the items that are in the priority order based on Product Management research.\n2. Here is why they are in that order (i.e. feature 1 will eliminate 100 hours per week of manual work, bug fix 2 is impacting high profile customer at risk of putting business deals on hold, etc.)\n3. You have something you want in the number one spot. Great! Please provide me with the data that shows how your item is higher priority than these items.\n   1. If they really can do this, it is worth a conversation with leadership.\n   2. Chances are they cannot do this. If not, don't budge for it. Follow your instincts and tune out the bad attitudes.\n\nThe idea here is to teach your audience that your weekly call is not a \"whoever can shout the loudest or get the most red-faced gets their desired prioritization position\" free-for-all.",
+                    "replies": [
+                        {
+                            "author": "TNvN3dyrwe",
+                            "text": "Rock solid advice on being firm yet kind on what value you're driving for the org as the PM.  It might be a bit bumpy for the first couple of your bi-weekly meetings but taking a more assertive approach will benefit everyone. OP's passion is clearly evident; leverage that good intention to drive better behaviours with your partners.",
+                            "replies": [
+                                {
+                                    "author": "TheWarpRider",
+                                    "text": "Yes, that is good addition, thanks. The sparring shouldn't be framed as a competition like \"My features are better than yours, boo-hoo-hoo, but rather framed with statements like \"We need to work as one team and not what's best for this department or that, but what's best for the company as a whole.\" and \"I think we can all agree we need to point our limited resources to the areas where we are going to make the most measurable impact\". It sets some tone of authority while also inviting everyone to get on board with your thinking in a collaborative way. You might still have a troublemaker even after saying those things, but at that point a bad light will be shining on them."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Honest_Prod7070",
+                            "text": "I was once on the other side as well. Being able to clearly show what is being worked on ahead of their asks, thus higher priority, will usually be sufficient. Any broader disagreements can be escalated or brought to upcoming planning."
+                        }
+                    ]
+                },
+                {
+                    "author": "mactorymmv",
+                    "text": "I'm not sure you're cut out to be a PM.\n\nListen to users and deliver value for the business (which may or may not be what users want). This is literally the job.",
+                    "replies": [
+                        {
+                            "author": "Potential-Billionea",
+                            "text": "You have no empathy at all. Are you sure you\u2019re cut out to be a PM?"
+                        },
+                        {
+                            "author": "DrStarBeast",
+                            "text": "They hate you for telling the truth.\n\nOP sounds like a weak leader. The job isn't hard but the political job of managing competing demands is.\u00a0\nEdit: OP is Indian. Color me not surprised.\u00a0"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Tool Workflow/User Journey Documentation",
+            "author": "carpe_noctem1990",
+            "text": "Any suggestions for a good tool to brainstorm & document workflows?\n\nE.g. You are building a complex ERP system, which requires meticulously crafted workflows & user journeys. Where do you keep track of them in such as way that it allows:\n\nA) overview of processes and associated features on meta level\nB) click and expand to see a detailed view of a specific \"sub-workflow\"\nC) Conditional logic/different pathway\nD) Connect/link to documentation on user personal or tickets in jira\n\nThe overall goal here is to create & visualize a common understanding of the workflows across the team.\n\nI did start documentation on miro boards, but feel it gets messy very quickly, as the UI doesn't allow for nesting or expand and collapse mechanism. \n\nAny recommendations? \ud83d\ude00 What has worked for you?",
+            "subreddit": "ProductManagement",
+            "comments": [
+                {
+                    "author": "redzjiujitsu",
+                    "text": "Lucid but don't use Lucid Chart, use the other one they offer, forgot the name. It's their competitor for Miro though."
+                },
+                {
+                    "author": "Joknasa2578",
+                    "text": "Have you looked into Figjam? It has more advances features like interactive workflow prototyping and detailed user journey mapping. This might be a good fit for what you're looking for. If you're already using Jira, have you tried Confluence?",
+                    "replies": [
+                        {
+                            "author": "Honest_Prod7070",
+                            "text": "Agree here, they offer great templates for this type of work like the service blueprint: https://www.figma.com/templates/service-blueprint-template/"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "How would you improve Linkedin as a Product Manager?",
+            "author": "Fickle_Vermicelli793",
+            "text": "Over the past couple of months, I\u2019ve been challenging myself to be more active on LinkedIn. It feels a bit cringy. But I know I\u2019m not alone in this! Many people I talk to share the same feeling when they're told to build their brand and be more visible on LinkedIn.  \n\nWearing my product manager hat, I\u2019ve been wondering: why do so many people dread the idea of posting on LinkedIn?  \n\nAs I dug deeper into this topic, I found that many folks are also frustrated with the job section. There are fake job listings and unreliable recruiters, which can be really disheartening.  \n\nAre they losing touch with their users? While most of their revenue comes from businesses, a significant portion relies on users. So, what\u2019s really going on? and, what would you do to solve the problem as a PM?",
+            "subreddit": "ProductManagement",
+            "comments": [
+                {
+                    "author": "Baelgul",
+                    "text": "Simple change that would make a world of difference to the user - show the initial posting date of job listings. \n\nThere\u2019s thousands of listings that are literally just harvesting applicants data with no intention of hiring and this would drastically cut those down.",
+                    "replies": [
+                        {
+                            "author": "jakubiakopa",
+                            "text": "Make the job posting paid and it will filter itself in no time."
+                        },
+                        {
+                            "author": "Fickle_Vermicelli793",
+                            "text": "They actually show that (unless it's a sponsored job). As a user, you can filter, for example, jobs posted in the past 24 hours.",
+                            "replies": [
+                                {
+                                    "author": "Is_ItOn",
+                                    "text": "A PM giving a workaround to an enhancement request after requesting feedback. Priceless \ud83e\udd23"
+                                },
+                                {
+                                    "author": "Baelgul",
+                                    "text": "What they do not do however is show the original posting date, so when things are consistently reposted it looks like it was just redone a week ago meanwhile, the job listing is six months old"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "blueclawsoftware",
+                            "text": "Along those same lines don't allow companies to post the same job as being remote with the location set to each major metro area. I see this a lot where one job shows up in the list 5 or 6 times."
+                        },
+                        {
+                            "author": "piratedengineer",
+                            "text": "Some recruiters are just reposting the job listing so that it shows up in the latest"
+                        }
+                    ]
+                },
+                {
+                    "author": "Ok-Tax5517",
+                    "text": "As a PM I'd be interested in exploring LinkedIn as a networking tool rather than a social media platform.\n\nIt's seems like there is a lot of untapped potential for encouraging interaction or at least letting me take private notes on how I know a person. Connecting on LinkedIn has replaced business cards in my experience and I think that's a largely untapped paradigm for thinking about the platform.",
+                    "replies": [
+                        {
+                            "author": "kimchibear",
+                            "text": "This is exactly what LinkedIn was until 2012 when they enabled User Generated Content."
+                        },
+                        {
+                            "author": "Fickle_Vermicelli793",
+                            "text": "I love this thought!"
+                        },
+                        {
+                            "author": "4look4rd",
+                            "text": "It\u2019s trying to be too many things right now. The primary focus seems to be a job board or a platform for recruiters and candidates. I think the social media component is just to keep users, engaged and generate more data for AI.\n\nI don\u2019t think there\u2019s any value in it as a networking tool or is a social media platform. I think LinkedIn skills is an interesting concept,  but too ambitious and poorly executed."
+                        }
+                    ]
+                },
+                {
+                    "author": "TyGuyy",
+                    "text": "I cut down on how much time I was spending on LinkedIn for a variety of reasons. Mainly because I hated what it was becoming. But If I had to improve the platform, I'd start with The Feed:  \n  \nThe content feels artificial and way too click-baity. I'd TRY to redesign the algorithm to prioritize actual professional conversations and expertise sharing over \"I'm humbled to announce...\" posts. Or \"LOOK AT ME, LOOK AT WHAT I DID...\" crap.  Think more industry insights, less humble brags.\n\n**Job Search Nightmare:**  \nMan, the job section is a mess. Too many fake listings and sketchy recruiters. I'd implement stronger verification for job postings and recruiters, similar to how Airbnb vets their hosts. Plus, add a reliability score based on hiring history and candidate feedback - maybe that is getting too close to Glassdoor, but there has to be a balance here. And they should hold people and users accountable. \n\n**UX:**  \nThe UI feels cluttered and corporate. It needs to feel more natural and conversational, like how people actually network in real life. I'd simplify the UI and make it easier to have meaningful convos without feeling like you're writing a corporate press release every single time, etc. \n\nAll the shit I'd do, however, is probably wishful thinking.  LinkedIn's caught between being a professional network and a biz platform. They need to refocus on what made them special, which was making genuine professional connections.\n\nThe rev will follow if they nail that UX. \n\nJust my 2 cents as someone who's both frustrated by, and dependent on it at times. \n\n\u00af\\\\\\_(\u30c4)\\_/\u00af",
+                    "replies": [
+                        {
+                            "author": "Fickle_Vermicelli793",
+                            "text": "\ud83d\udd1d I echo everything you just said. It would be wonderful to have a filter based on the type of content you'd like to see! Personally, I would really enjoy a platform where I can dive into expertise on specific topics instead of just seeing updates like, 'I have been promoted,' etc. While I understand that people like to share those milestones, it tends to clutter my feed. As for the job section, I'm right there with you on your thoughts! I do wonder if it's sustainable for their business since they depend on paid ads. I quite like what Otta (now Welcome to the Jungle) is doing with their response rates (although not always accurate)."
+                        }
+                    ]
+                },
+                {
+                    "author": "SarriPleaseHurry",
+                    "text": "Option to hide reposted jobs. Option to get alerts for SORTED by date instead of manually doing it. \n\nA dark mode would be nice too.",
+                    "replies": [
+                        {
+                            "author": "EfficientCopy8436",
+                            "text": "Dark mode exists"
+                        }
+                    ]
+                },
+                {
+                    "author": "Photo_LA",
+                    "text": "Job section filters are terrible."
+                },
+                {
+                    "author": "JohnWicksDerg",
+                    "text": "I feel like LI is basically 'Awful Taste but Great Execution' but for product vision. The problem for me is that their priorities shifted towards creating a retentive feed and a UGC ecosystem that they could monetize with ads. All of the core features that have to do with finding a job (networking, job listings, etc.) have stagnated or actively become worse. \n\nThey put all their resources into an experience which only benefits them and the relatively small cohort of users who actually enjoy creating / engaging with content on LI. Job seekers, as a user group (which I feel should be one of their core user groups), are no better off today than they were \\~10 years ago on the site."
+                },
+                {
+                    "author": "walkslikeaduck08",
+                    "text": "What outcome are they trying to drive should be the main question? If it\u2019s engagement, then power posters (like now) should be given priority. If it\u2019s conversion to premium, maybe it\u2019s the ability to turn off your feed"
+                },
+                {
+                    "author": "bo-peep-206",
+                    "text": "I\u2019ve also been thinking about the way LinkedIn feels lately \u2014 not just the job section, but the entire experience of engaging on the platform. There\u2019s something disheartening about wondering if the person commenting on your post actually thought through their response or if it\u2019s just an AI bot trying to seem insightful. It adds to the feeling of inauthenticity that so many people mention when they talk about LinkedIn.\n\nAs a product manager, I think this comes back to trust. Whether it\u2019s fake job listings, unreliable recruiters, or AI-generated comments, users are experiencing friction that chips away at the sense of genuine connection LinkedIn is supposed to foster. And when trust erodes, engagement suffers.\n\nIf I were tackling this problem as a PM, I\u2019d start with two things:\n\n1. Redefine what authenticity means on LinkedIn: Make it easier to identify real engagement \u2014 whether that\u2019s through transparency (e.g., labels for AI-generated responses) or highlighting posts/comments from verified users who consistently provide value. Help users feel confident that the interactions they\u2019re having are meaningful.\n2. Double down on user feedback: LinkedIn is a complex ecosystem serving multiple audiences. But if users feel ignored or like their frustrations (e.g., fake jobs, disingenuous networking) aren\u2019t being addressed, they\u2019ll disengage. A robust feedback loop \u2014 combined with clear action plans \u2014 could show users that LinkedIn is listening and evolving."
+                },
+                {
+                    "author": "crustang",
+                    "text": "Have a community notes type feature for recruiters \n\nI would love to find a way to reduce the amount of RPO spam/scammers, blackball ghosters, etc."
+                },
+                {
+                    "author": "TripleBanEvasion",
+                    "text": "Shut it down",
+                    "replies": [
+                        {
+                            "author": "rollingSleepyPanda",
+                            "text": "Had to scroll pretty down to find a sensible take. Linkedin is too far gone for anything other than scorched earth."
+                        }
+                    ]
+                },
+                {
+                    "author": "blueclawsoftware",
+                    "text": "Embrace AI and update the job section to actually match companies and people together, replacing the antiquated idea of a job board. Given all the company and personal information they have they are the one company that could pull this off.\n\nBut given how bad their \"recommended for you\" jobs are I won't hold my breath.",
+                    "replies": [
+                        {
+                            "author": "trowaman",
+                            "text": "Oh man, my first thought was to remove the AI slop. There\u2019s been studies that users will actively disengage from a product if they see it uses AI.",
+                            "replies": [
+                                {
+                                    "author": "blueclawsoftware",
+                                    "text": "Normally, I would agree because most of it is slop just to try to appease investors. AI well applied could do some really powerful things. Just like any other technology."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "crustang",
+                            "text": "Their recommended for you algorithm feels like it\u2019s powered by Bing"
+                        }
+                    ]
+                },
+                {
+                    "author": "Independent_Pitch598",
+                    "text": "Open to work that is visible only to recruiters BUT also hide from recruiters of your company and their circle.",
+                    "replies": [
+                        {
+                            "author": "kimchibear",
+                            "text": "That feature already hides the Open to Work flag from recruiters of your company. Recruiter networks would tend to be concentrated among recruiters in a particular industry / region, so expanding to even first degree contacts could take a sizable bite out of reach.",
+                            "replies": [
+                                {
+                                    "author": "Independent_Pitch598",
+                                    "text": "What \u201cthat\u201d feature?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "karmacousteau",
+                    "text": "Alter the algorithm to boost Linkedin lunatic posts to increase user engagement."
+                },
+                {
+                    "author": "SteelMarshal",
+                    "text": "Stop being over priced for personal use."
+                },
+                {
+                    "author": "Boring_Sun7828",
+                    "text": "I see a bunch of scattered ideas here, so here's a bit of a more comprehensive approach and some of the reasoning why.\n\n**Goal**: build on the original concept of the site serving as an aid to networking. (A) Facilitate connecting individuals who **both** benefit from meeting each other, and (B) Facilitate connecting hiring managers with qualified and capable individuals looking for work.  \n\n\n**Changes**  \nFor (A): Build out functionality where a user can specify what they have to offer (and ideally some way to back it up, eg reference a past job, educational experience, certificate program, reference statement from a former manager, etc), and the type of people they are looking to meet. For instance, \"Experienced PM looking to connect with mid-level engineers interested in social media platforms for discussion and mutual learning.\". Take a page from various dating apps for the way matchmaking works, and improve the messaging and communication abilities. Create group messaging tools limited to small groups (eg, <10) and that are invite-only (eg, a member of the group has to invite you in). Prominently publish best practices on building your professional network. Create different classes of \"connections\": former colleagues, friend of a friend, social groups, growing your network, etc, so individuals can organize lists of people that now are often 500+. Allow users to store private notes about contacts - \"I met Jimmy at \\[place\\], and he loves \\[hobby\\]. His kids are \\[ages and names\\]\", and reminders (\"reach out to Jimmy in October 2025 to reconnect and learn what he's now up to\"). \n\nFor (B): When a job is posted, do two important things: (1) evaluate that role against various best practices (eg, skills-focused rather than years of experience, flag language that is likely discriminatory, etc) and (2) Immediately flag a short list of candidates who would be an excellent fit. Surface best-practice documentation during the job posting process (admittedly, I haven't posted a new job on LI for about three years, so maybe they've done this), and put a \"rating score\" on every job posting to show how well it complies with best practices. Create a dedicated communication channel (eg, not the hiring manager's personal DMs) where applicants can reach out with questions and express interest. \n\nI'm leaving a ton out, but I hate long comments. Happy to elaborate on any of this. Please don't jump to the assumption that if I haven't mentioned something, I think it shouldn't be done. I'm trying to share some high-level ideas, and would generally work with a team to pressure-test all of this."
+                },
+                {
+                    "author": "Tsudaar",
+                    "text": "You're mixing two different reasons for using the site. 1 is jobs, and 1 is the social feed. It's like Facebook and Marketplace.\u00a0\n\n\nCoincidently, while you're trying to post more and people are being encouraged to post more, for the people who are consumers its become really poor quality recently because its filled with so much guff.\u00a0\n\n\nI'll come back when I'm job hunting, but the social feed is no longer interesting or useful.\u00a0\n\n\nBuild a brand and trying to become an influencer without any substance to influence with is such a bullshit job."
+                },
+                {
+                    "author": "rmend8194",
+                    "text": "definitely noticed a big bump of posts from people on Linkedin. I myself had been trying more last year but it def feels cringe. I also notice that alot of the new posts seem to be AI generated. Even noticed some comments."
+                },
+                {
+                    "author": "ridesn0w",
+                    "text": "Remove the lunatics. It\u2019s such a bizarre social network. Just kill the social networking pieces.\u00a0"
+                },
+                {
+                    "author": "Swimming_Leopard_148",
+                    "text": "The connections concept currently means nothing. In theory I\u2019m happy to make new connections with people with shared interests but invariably I never engage with that person again. Encourage people to restrict their connections to people they have at least one meaningful interaction with, and promote \u2018follow\u2019 for everyone else"
+                },
+                {
+                    "author": "VjDj83",
+                    "text": "Filter out the lunatic fringe through some additional profile and content checks."
+                },
+                {
+                    "author": "AftmostBigfoot9",
+                    "text": "This is what fixing linkedin taught me about b2b sales"
+                },
+                {
+                    "author": "dazeechayn",
+                    "text": "Open a looky loo pricing tier pay 5 bucks/mo to see who\u2019s viewing your profile.  A few years later increase to 10 with a connection cluster visualizer for triangulating connections during a job search."
+                },
+                {
+                    "author": "throw-money-away",
+                    "text": "You write like chatgpt LinkedIn lunatic post"
+                },
+                {
+                    "author": "remixrotation",
+                    "text": "Expiration dates on posts. Anyone who does a weekly happenings posts each week does not want their old updates showing up in the feeds after x days or weeks. I think. Lol."
+                },
+                {
+                    "author": "Thanos_50",
+                    "text": "Flag political and copied post\nBan orgs posting fake offers (link with epfo account to verify)\nUnnecessary networking will be prohibited as most people do that for increasing visibility"
+                },
+                {
+                    "author": "Astrotoad21",
+                    "text": "Having third party apps on top of it. I\u2019ve had so many ideas on stuff to build with linked in data, but they don\u2019t provide any APIs and they really crack down on data scraping I\u2019ve heard.\n\nI bet their product value would shoot through the roof is they allowed this and made an eco-system of it."
+                },
+                {
+                    "author": "Fudouri",
+                    "text": "You're making the classic mistake of not identifying the customer."
+                }
+            ]
+        },
+        {
+            "title": "Role of PM during deployment of non-customer facing things?",
+            "author": "throwRAlike",
+            "text": "I\u2019m a Platform PM for a large company, we are currently in the deployment process for 4 different highly technical things and I\u2019m not really sure what I should be doing with my day. \n\nI\u2019ve already prepped release notes and communicated downstream affects with all relevant teams. We are essentially now just building our services in new environments and I don\u2019t really know what to do with my day other than ask Eng for updates every few days.\n\nHow do you add value when all of your work is deployment? Do you just keep working in requirements for upcoming work and let Eng handle deployment?",
+            "subreddit": "ProductManagement",
+            "comments": [
+                {
+                    "author": "Forrest319",
+                    "text": "After these 4 things go out, are you guys done? There is nothing else you are planning on doing.",
+                    "replies": [
+                        {
+                            "author": "throwRAlike",
+                            "text": "Yeah I\u2019m working on the next up stuff right now, but I feel like I should be more involved in deployment? Maybe not though? That\u2019s why I\u2019m wondering what the role of PM is during deployment",
+                            "replies": [
+                                {
+                                    "author": "Forrest319",
+                                    "text": "I literally had a meeting about a new deployment process today for some purely backend services. I just facilitated the conversation between the various parties actually involved and got them on the same page. But I'm completely uninvolved in the execution of that process and I will be sound asleep when that code is released to Production."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "walkslikeaduck08",
+                    "text": "To the other commenter\u2019s point: is your team getting into maintenance mode after that? Are there platform improvements that were important but out of scope? Are there any other problems you can solve for other teams?"
+                },
+                {
+                    "author": "SnarkyLalaith",
+                    "text": "I worked for a platform team and we were so busy. \n\nThere is a lot of communication on what is. Ext for us as a company, to make sure we are where we need to be. \n\nYou never want anyone to ask \u201cwhat is next\u201d and not have an answer. \n\nAnd just because you are platform and internal doesn\u2019t mean what the external teams are doing isn\u2019t relevant. \n\nMake sure you know what your eng team wants and needs built. Make sure you understand how what you build supports the customers. The customer might even be internal stakeholders. And then start building your team towards what is prioritized and needed for company success."
+                },
+                {
+                    "author": "Basic_Town_9104",
+                    "text": "Internal tooling, support tools, automation, tools for developers, security, etc. are cool and can make for a great platform PM impact story. You may also connect with the core product PMs and discuss what enabling systems and capabilities will create leverage for the core product. You might be the performance gap hero while they focus on opportunity gaps. \n\nOffer help, but otherwise let the deployers deploy."
+                }
+            ]
+        }
+    ]
+}

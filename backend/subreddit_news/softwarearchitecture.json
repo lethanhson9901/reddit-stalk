@@ -1,0 +1,159 @@
+{
+    "items": [
+        {
+            "title": "Fast JSON Processing in Real-time Systems: simdjson and Zero-Copy Design",
+            "author": "dani_estuary",
+            "text": "[External Link]",
+            "subreddit": "softwarearchitecture",
+            "comments": []
+        },
+        {
+            "title": "Architecture as a Mnemonic Device",
+            "author": "StrategicHarmony",
+            "text": "It seems like 90%+ of good software design principles can be explained by treating it as an exercise in making your code as easy to remember as possible.\n\nFor example, consider the extreme case: a hypothetical competition for designing an architecture in which the only criteria for winning (other than seeming like it will actually work as intended) is memorability.\n\nWhat would you do to win this competition? I expect:\n\n1. Group related things together. Gives you a better chance of remembering where to find something when you wanted to debug or change it.\n2. Keep repetition to a practical minimum. Fewer things to remember when you want to change something, because fewer places to change it.\n3. Have clear, meaningful, consistent names for things. Ideally, a consistent style/structure for names, too.\n4. Try to keep the number of dependencies between sections/entities low. Fewer lines between boxes means fewer knock-on effects to recall, breakages to consider when planning a change, investigating a bug, or writing a test.\n5. Don't put too much stuff in any one class, function, or source file. Conceptual size/complexity alone is a good reason to split something up. It's worth breaking out a coherent sub-part into a sub-module if you'll more easily recall what is where, but of course balance this with...\n6. Don't split things up excessively, just for the sake of splitting them, if you don't really need to and it's going to increase overall complexity.\n7. Do similar things in similar ways. e.g. It's easier to recall if there's only one basic pattern you follow for retrieving data from this database, or only one way to intercept different events in module X before some process is finalised, etc.\n8. Make something that's you can document/diagram clearly and simply. Of course some systems are inherently and unavoidably more complex than others. But given the same set of functional requirements, a simpler diagram (that's equal in explanatory power, and achieves the functional criteria) is almost always the better plan. It's like the design version of occam's razor.\n\nand so on.\n\nImportant functional requirements like reliability and security are easier to evaluate, test, fix, and verify if you can remember where the relevant parts are, what effect a change is likely to have, etc.\n\nI don't think any of the genuine exceptions to this (e.g. purely performance optimisations, language-specific or platform-specific norms, etc) really disprove the primacy of the overall guideline, for four main reasons.\n\n1. The fact that this isn't the only (useful) criteria, and it's almost certainly not, doesn't mean it's not the main one.\n2. It even makes it easier to implement other, conflicting requirements. E.g. if you need to make a performance optimisation that unfortunately increases complexity and reduces memorability, it's easier to narrow down where the performance bottleneck is, plan the change, make and test it, if the things surrounding it are easy to recall and hold in your mind.\n3. The fact that people form cargo cults around something they read or have heard about or had good experience with in a previous project, and that sometimes this cult becomes an operational requirement at an organisation, doesn't mean it's a useful or sensible requirement.\n4. It's not merely an analogy or an interesting way to look at architecture, it's the practical use of an architecture, day to day. The computer doesn't care how the code is architected. A giant ball of spaghetti code with names like a, a1, a2 could get the same job done just as efficiently (from the processor's point of view) and indeed that is what it might end up running, depending on the compiler/interpreter/minifier. Human developers care though, and their speed and correctness depends on how well they can recall where to start hunting a bug, where to make a specific change, what effects a change will trigger, where to review or test a specific behaviour, etc.\n\nSo if it's an unavoidable truth, what's the point of even making this point? I think there are a few core reasons it's worth establishing this principle clearly and keeping in mind. It helps you:\n\n1. Remember (or intuit) many other good design principles, because it provides a clear explanation for why they matter and how to apply them in a pragmatic rather than a dogmatic way.\n2. Prioritise your style guides. You might reduce time agonising over, or debating those principles that have some merit in aiding memorability, but really make a tiny difference compared to other aspects you could spend time on. Or similarly, reduce time spent on questions which have many valid answers, all of them quite similar in practical value, and one just needs to be picked out of a hat.\n3. Prevent habitual shoehorning in of a one-size-fits-all architecture, by instead providing a way to evaluate how appropriate one proposed design is for the actual project (and team) at hand, when compared to another.\n4. Understand that good documentation/diagramming is actually a time saving exercise for developers, and an integral part of ongoing development, rather than a separate chore, an unfortunate time sink, or an exercise with a lot of formal requirements and little clear value.\n\nThoughts, criticisms?",
+            "subreddit": "softwarearchitecture",
+            "comments": [
+                {
+                    "author": "alien3d",
+                    "text": "too long word"
+                }
+            ]
+        },
+        {
+            "title": "Recommendations for building a secure real-time chat app with a self-hosted backend",
+            "author": "skyt2000",
+            "text": "I\u2019m building an iOS app with the following features:\n\n1. Real-time chat (group chats & 1-on-1), message encryption, search, replies/reactions, typing/read/delivered/online indicators, notifications, customizable UI, and anonymous chatrooms.\n\n2. Optional video/audio calling.\n\n3. Push notifications via FCM.\n\n4. Self-hosted backend (preferably serverless, deployed using Google Cloud Run).\n\nI\u2019m considering [MessageKit](https://github.com/MessageKit/MessageKit) for the chat UI. Are there any good open-source servers with Swift SDKs or APIs that could help me achieve this? Something similar to [GetStream.io](https://getstream.io/) but self-hostable would be ideal. Any advice or recommendations?",
+            "subreddit": "softwarearchitecture",
+            "comments": [
+                {
+                    "author": "LaSweetmia",
+                    "text": "I don't mean this in an insulting way, but the question you asked and the options you gave indicate to me that you don't have enough background knowledge yet to actually build an application that would withstand the necessary scrutiny and audit to be considered \"secure\".\n\nIf this is just a side project to learn, go ahead with whatever you feel comfortable to master and use it to learn. If this is supposed to be an actual software, that's supposed to be used in the wild, I would not be willing to provide advice as this would violate my personal ethics and expectations of what constitutes \"secure software\", sorry.\n\nReal secure software, especially in the realm of communication can safe lives and topple governments. Every software that just pretends to be that is nothing but a potential weapon for the powerful, endangering those who use it in good faith.\n\nDisclaimer: I don't consider myself able to write software to this high standard either."
+                },
+                {
+                    "author": "skotchpine",
+                    "text": "I haven\u2019t done video/audio calling, so can\u2019t comment there\n\nThe rest is available in virtually any backend stack with varying effort and reliability\n\nI would time-box some prototypes. See what ecosystems you\u2019re happy in and carry on"
+                }
+            ]
+        },
+        {
+            "title": "I am writing some documentation for a system design. Discovered the new features of Mermaid. Trying to decide between C4 and Architecture.",
+            "author": "shufflepoint",
+            "text": "It seems to me that either would work to do a high-level diagram of a system**.** But it's all new to me, so I was hoping to get the opinions of others as to where you would use **C4Context** versus **architecture-beta.**",
+            "subreddit": "softwarearchitecture",
+            "comments": [
+                {
+                    "author": "joelparkerhenderson",
+                    "text": "C4 for the high-level overviews because it's widespread, and has a better grasp of the levels, and also is semantically compatible with many more tools e.g. PlantUML, [Draw.io](http://Draw.io), etc. \n\nFor anything that involves actual code areas I prefer PlantUML sequence diagrams, activity diagrams, state diagrams, timing diagrams, etc."
+                },
+                {
+                    "author": "ben_bliksem",
+                    "text": "I use C4 at a high level for the enterprise architects, after that it's good ol' circles, squares and arrows with Excalidraw and mermaid for sequence diagrams."
+                },
+                {
+                    "author": "flavius-as",
+                    "text": "Personally, C4 when I want to impress hipsters, otherwise regular CASE tools.",
+                    "replies": [
+                        {
+                            "author": "Ykieks",
+                            "text": " What would be the \"regular CASE tools\" for you?",
+                            "replies": [
+                                {
+                                    "author": "shufflepoint",
+                                    "text": "I assume commenter meant Rational, EA, or PlantUML."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Veuxdo",
+                    "text": "I would start with the later. C4 is pretty opinionated/heavy handed with its terminology. If you're doing just a high-level overview you won't get much benefit from it."
+                },
+                {
+                    "author": "FTeachMeYourWays",
+                    "text": "Excalidraw or draw.io keep it simple\n\nNew ai tools will do this for you also",
+                    "replies": [
+                        {
+                            "author": "shufflepoint",
+                            "text": "I really want to try one of the AI tools that'll take my hand sketches. Any to recommend trying?",
+                            "replies": [
+                                {
+                                    "author": "FTeachMeYourWays",
+                                    "text": "Maybe this https://sketch2scheme.com/ alot of people say chtgpt can do it to but paid version. Any gokd luck. Not something I have done yet."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Thoughts on AI software architecture startup",
+            "author": "Jack_Hackerman",
+            "text": "(Not promoting anything)  \nI\u2019ve been working in the industry for the last 9 years (currently a TL), and I\u2019ve frequently encountered challenges like these: difficulty visualizing project module/object dependencies, navigating app data flow, and even senior-level developers struggling to maintain clean architecture during the development process. In most projects I\u2019ve worked on, teams either end up with a \u201cbig ball of mud\u201d or, after 20+ years of development, try to migrate from a monolith to microservices\u2014a massive pain that can take years. (Funny enough, I was once tasked with rewriting about 10 poorly written microservices back into a monolith, which took me around 6 months on my own.)\n\nSo, I decided to start an AI-powered software architecture software and would love to hear your thoughts. Here\u2019s what it does so far:\n\n* Codebase visualization generation - It creates something like a UML diagram showing dependencies between modules for PHP, Java, C#, Python, JS/TS. I\u2019m planning to add dataflow diagrams and support for more languages.\n* I haven\u2019t used Cursor or GitHub Copilot for this, but I know a feature I\u2019ll definitely need is functionality that works on the entire project\u2014not just autocompletion for a single file. I\u2019m adding that now.\n\nHere\u2019s what I plan to add next:\n\n* Instant code reviews and bug fixes suggestions - similar to CodeRabbit but in real-time).\n* Architectural suggestions - such as coupling/cohesion warnings, SOLID principles violations, etc.\n* Visualization of dataflow, architectural tests, including contract validation tests between services/microservices and other major system components.\n\nWhat are your thoughts? Would you use something like this if I release it?",
+            "subreddit": "softwarearchitecture",
+            "comments": [
+                {
+                    "author": "Mysterious-Rent7233",
+                    "text": "Do dependency diagrams actually need AI? Are yours more intelligent than what would be created from normal static code analysis?\n\nIf so, maybe there's something useful there. Why don't you publish some diagrams of open source projects and see if people find them useful. If so, you might have a product. If not, probably not.",
+                    "replies": [
+                        {
+                            "author": "Jack_Hackerman",
+                            "text": "I build dependency graphs using static analysis tools, not Ai. Ai is used later on analysis step"
+                        }
+                    ]
+                },
+                {
+                    "author": "blank_horizon",
+                    "text": "Sounds interesting, I would love to learn more about this. Always found that architecture diagrams and mental maps of systems tend to deviate from the actual implementation unless it's continually updated. \n\nAt least for the microservice contract case, I can see it being useful to have all the diagrams and everything in one place, instead of spread out across many documents across different tools, across different teams as an organization grows."
+                },
+                {
+                    "author": "ramishka",
+                    "text": "Codebase visualization generation - Which specific problem would this actually solve? For example, when a new feature is being worked on or being designed, we would rarely ever need to know about the entire codebase all at once.   \nWe would typically need to know about a particular existing business flow. And these flows could could be complex and involve asynchronous parts such as bouncing off through multiple queues, scheduled tasks, delayed executions, multi threaded exec etc.  \n\nIn my experience, I would not trust an LLM in their current state to do this analysis. One hallucination or a misinterpreted step would be enough the completely screw up the design. \n\nThe above will apply to migrations too. In a migration, new system will be based on business scenarios, domains, modules of the legacy system. So it would be akin to a new systems design from scratch, not just a 1-1 code conversion. \n\nNot to discourage you, but in its current state I would not entrust an AI with this kind of architectural decision making. AI can help, but then again how do I verify its accuracy for such high level decision? I'd likely have to analyze most of it myself anyway."
+                },
+                {
+                    "author": "saipavan23",
+                    "text": "Eraser application already do this"
+                },
+                {
+                    "author": "Veuxdo",
+                    "text": "> Codebase visualization generation - It creates something like a UML diagram showing dependencies between modules for PHP, Java, C#, Python, JS/TS. I\u2019m planning to add dataflow diagrams and support for more languages.\n\nI think you have your work cut out for you. For multiple reasons, current LLMs can't really do this in a meaningful way. I wrote on this late last year: https://www.ilograph.com/blog/posts/diagrams-ai-can-and-cannot-generate/#system-diagramming-with-ai"
+                },
+                {
+                    "author": "UnReasonableApple",
+                    "text": "My AGI technology is essentially a self bootstrapping self evolving system of systems of self evolving executable architectures of self evolving executable architectures. Once you develop something that can design new architectures on the fly, you see why just using it to improve itself is way smarter than trying to offer it as a product to others. If your product is any good, and makes money, how does it respond to \u201ceat your maker\u2019s lunch by reverse engineering thyself\u201d as an input? Pickaxes for AI startups only work insofar as they are sold in areas without gold to be found. A good pickaxe in gold rich territory is a dumb thing to sell.",
+                    "replies": [
+                        {
+                            "author": "Jack_Hackerman",
+                            "text": "Yes"
+                        }
+                    ]
+                },
+                {
+                    "author": "simon-brown",
+                    "text": "> It creates something like a UML diagram showing dependencies between modules for PHP, Java, C#, Python, JS/TS\n\nTake Java as an example ... what do you mean by \"dependencies between modules\"? Is a module a single Java class, a collection of classes, a package, a JAR file, a Maven dependency, etc? No two codebases are the same, and the way developers structure a codebase varies wildly. I'm curious how you can make sense of an arbitrary codebase without input from the team.",
+                    "replies": [
+                        {
+                            "author": "lucperard",
+                            "text": "Hey Simon, have you tried this free service https://castsoftware.com/cast-imaging-trial?\nYou upload your project files (source code, DDLs, dependencies) and you get to navigate the interactive map of every application\u2019s object (class, method, function, webpage, table, stored proc, etc.) and their every dependency."
+                        }
+                    ]
+                },
+                {
+                    "author": "lucperard",
+                    "text": "There\u2019s already this service that generates an interactive map of software\u2019s inner workings out of its source code and DDL files: [https://castsoftware.com/cast-imaging-trial](https://castsoftware.com/cast-imaging-trial) Supports all Java/JEE, .NET, C#, SQL, NoSQL, even COBOL. Check out this auto-generated E2E call graph from HTML page through PostgreSQL tables via methods & functions from several frameworks. Free for applications up to 250kLoC.\n\nhttps://preview.redd.it/51evjzqumxee1.png?width=2542&format=png&auto=webp&s=45eaaee262e9ece13244c2af97800cddefa67b24"
+                },
+                {
+                    "author": "scicdcr",
+                    "text": "Do you even have a idea what are you talking about and how mind boggling  complex that would be. Microsoft and GitHub have put billion dollars into copilot and it doesn't receive any serious praise so now they are giving it for free. May be and just may be it could be  done for small personal project but do you understand how big enterprises projects are.",
+                    "replies": [
+                        {
+                            "author": "Mysterious-Rent7233",
+                            "text": "Github Copilot is a huge success:\n\n[https://x.com/EricFlaningam/status/1822004906846204070?lang=en](https://x.com/EricFlaningam/status/1822004906846204070?lang=en)\n\nBut yes this seems like a hard problem to take on. He's attacking from a different angle than Microsoft, so maybe he'll find a niche."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

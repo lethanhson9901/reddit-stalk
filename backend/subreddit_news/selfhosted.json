@@ -1,0 +1,1636 @@
+{
+    "items": [
+        {
+            "title": "For those who sometimes need to return begging to Spotify",
+            "author": "Common_Drop7721",
+            "text": "Intended for music server owners (such as navidrome, plexamp, etc.).\n\nThis thin wrapper of Zotify lets you search for, as well as download albums and tracks from spotify and automatically sort them using ./artist/album/track format (planning to add a configuration for that in the future). Hope you guys like it.\n\n[https://github.com/Xoconoch/zotifarr](https://github.com/Xoconoch/zotifarr)\n\nBefore you lossless elitists come here to beat me up: I totally agree with you, spotify sucks and it should be erased from earth's history, but its catalog is just... unbeatable **in a noob-friendly way**. I am well aware of soulseek, torrents and  all that stuff but imagine trying to explain how to use lidarr to your mom who just switched from spotify to the navidrome server you set up last week, kind of a pain isn't it? that is the main purpose of this: to be a simple web page accessible from any web browser where your family members can search for an album (or a track) and painlessly add it to the library, no shenanigans, no rss feeds, no trackers, no piracy-nerd BS.\n\nedit: typo",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "w1r3di0",
+                    "text": "You're too nice for the reddit crowd, thanks for your contribution",
+                    "replies": [
+                        {
+                            "author": "jsabater76",
+                            "text": "Agreed, but it is not the Reddit crowd, but the Internet (especially the anonymous, mob-like kind). Fortunately, there are still good things and good people in it, this being one of such cases \ud83d\ude00",
+                            "replies": [
+                                {
+                                    "author": "Steve_Huffmans_Daddy",
+                                    "text": "Seconded. r/selfhosted is fantastic"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "drinksomewhisky",
+                    "text": "Does this actually pull the song from Spotify or does it look for and pull from other sources like YouTube?\n\nI have tried https://github.com/miraclx/freyr-js\n\nFreyr ok, but has a lot of mismatches as it searches outside sources and sometimes picks the wrong song. It\u2019s mainly good for mainstream music as those are easy searches.",
+                    "replies": [
+                        {
+                            "author": "ForceItDeeper",
+                            "text": "Ive had better luck using software to transfer my spotify playlists onto youtube and yoinking them with ytdl-sub than any of those AIO programs for downloading spotify playlists off youtube. There were less mismatches and the metadata was much better"
+                        },
+                        {
+                            "author": "crumb_factory",
+                            "text": "zotify downloads directly from spotify",
+                            "replies": [
+                                {
+                                    "author": "myhrmans",
+                                    "text": "In afraid this is gonna backfire on us.\n\nSpotify will see this and block the open source way of building players (like librespot) and it will kill all other legit applications like using librespot with Snapcast :("
+                                }
+                            ]
+                        },
+                        {
+                            "author": "combinecrab",
+                            "text": "I believe they are using an open source spotify client and then intercepting the audio file"
+                        }
+                    ]
+                },
+                {
+                    "author": "Medium_Skirt",
+                    "text": "Can I just use the docker-compose to install it on windows docker without installing sysbox, building the project, etc?\nIf not, can you add pre-built image to pull with docker compose?",
+                    "replies": [
+                        {
+                            "author": "Aodh472",
+                            "text": "No Docker project should start its documentation with \u201cinstall this package\u201d.  That\u2019s like the whole point of Docker.  100% agree"
+                        },
+                        {
+                            "author": "UrbanCircles",
+                            "text": "I\u2019d second this. Just a docker compose install would be the way (even if downloads take slightly longer because of series)",
+                            "replies": [
+                                {
+                                    "author": "rjames24000",
+                                    "text": "+1 please let me know when theres a prebuilt image to pull i can use on unraid"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "cfjuan",
+                            "text": "I\u00b4m very interested too in this option. I\u00b4m not used to use sysbox. Thanks you"
+                        }
+                    ]
+                },
+                {
+                    "author": "jeroenishere12",
+                    "text": "Cool! Does it support playlists?",
+                    "replies": [
+                        {
+                            "author": "densmorea",
+                            "text": "Appears to be just artists and song search so far, I would love this if so"
+                        },
+                        {
+                            "author": "No_Presentation4286",
+                            "text": "can u say what this software is about ?"
+                        }
+                    ]
+                },
+                {
+                    "author": "Vokasak",
+                    "text": ">Before you lossless elitists come here to beat me up\n\n>but imagine trying to explain how to use lidarr to your mom who just switched from spotify to the navidrome server you set up last week, kind of a pain isn't it? that is the main purpose of this: to be a simple web page accessible from any web browser where your family members can search for an album (or a track) and painlessly add it to the library, no shenanigans, no rss feeds, no trackers, no piracy-nerd BS.\n\nLidarr with plugins, deemix. Ease of use and lossless in one.\n\nJust today I was just in my car (parked, eating), listening to music from my navidrome, and I noticed how much better lossless sounds than Spotify and the mp3s of my youth. I've never been an ~audiophile~, but those people are on to something. Better quality music does sound better.",
+                    "replies": [
+                        {
+                            "author": "psy-q",
+                            "text": "The MP3s of our youths were often encoded using really bad old encoders, things that were optimized for speed over quality but still took 20 minutes to encode a 3 minute track, so corners were cut. A modern LAME 320 kbps encoding is in a different league. They can be compared vs. lossless e.g. in these tests: https://abx.digitalfeed.net/list.lame.html",
+                            "replies": [
+                                {
+                                    "author": "SawkeeReemo",
+                                    "text": "V0 vbr MP3s take up less space and are indistinguishable from 320s. At least in my experience when listening on professional equipment. \n\nAnd if you want to do even better, OPUS 128 is indistinguishable from lossless to 99.9% of humans. \u2026or so they say."
+                                },
+                                {
+                                    "author": "BubbleNucleator",
+                                    "text": "\"No one will never need more than 128 kbps for music\" -circa 1997"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Common_Drop7721",
+                            "text": "Totally agree with you, lossless is objectively better sounding and people who are savvy enough should always prioritize it over lossy options, however we end up in the same grandma-friendly dilemma, do we want the audio to be the best of the best? or do we want it to be accessible for everybody in the house without you having to step in and add it?  \n  \nAlso, Deemix is awesome! but in my user's specific case, they found deezer's catalog to be rather limited. Not to mention the constantly refreshing arl's problem."
+                        },
+                        {
+                            "author": "divinecomedian3",
+                            "text": "The main reason I don't use Lidarr is because it's album-focused. You can't download individual songs. 95% of the time I don't want the entire album."
+                        },
+                        {
+                            "author": "ForceItDeeper",
+                            "text": "ive never gotten deemix to work properly. Ill have to give it another go, I was pretty new to self hosting, and to using linux actually, last time I tried"
+                        },
+                        {
+                            "author": "Outrageous_Fold_5411",
+                            "text": "Which plugins do you use with Lidarr?\n\nI\u2019ve never heard of Deemix. I did a quick search, and it looks like there *may* be a Docker container? Can you integrate Deemix with Lidarr? I\u2019m genuinely curious about your setup.",
+                            "replies": [
+                                {
+                                    "author": "Vokasak",
+                                    "text": ">Which plugins do you use with Lidarr?\n\nOnly the deemix plugin, which basically just adds support for deemix as a download client. My setup isn't very complicated or exotic.\n\n>I\u2019ve never heard of Deemix. I did a quick search, and it looks like there *may* be a Docker container?\n\nIt's pretty neat! I do use the docker container, as my server runs Unraid and that's the easiest way.\n\n>Can you integrate Deemix with Lidarr?\n\nYup! That's what the plugin does, basically treats deemix similarly to a torrent client; it'll show deemix results in searches, the whole deal."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "ovizii",
+                            "text": "Do you have a how-to or some specific links for \"Lidarr with plugins, deemix. Ease of use and lossless in one.\""
+                        },
+                        {
+                            "author": "CulturalTortoise",
+                            "text": "Any tutorials on getting Lidarr and deemix working? I couldn't get deemix/spotify part sync'd up."
+                        }
+                    ]
+                },
+                {
+                    "author": "ReluctantToast777",
+                    "text": "Obligatory \"if you have the means, please support the artist\". \n\nFor ease this sounds great, but if you can, also buy the music as directly as possible, buy a physical copy/vinyl, donate directly or join a Patreon if they're small, etc."
+                },
+                {
+                    "author": "combinecrab",
+                    "text": "Why are you using sysbox if this is just a web interface for the zotify library ?",
+                    "replies": [
+                        {
+                            "author": "Common_Drop7721",
+                            "text": "Because in order to handle parallel downloads I am using mini-zotify containers inside the main container. I ran into this problem because zotify was not really made for multiple sessions working at the same time (temp files and that kind of stuff) and so I use child-containers to isolate such stuff so it doesn't conflict. \n\nI am pretty sure there are better ways of doing it, but I am not aware of them and didn't manage to find them before discovering DinD.",
+                            "replies": [
+                                {
+                                    "author": "combinecrab",
+                                    "text": "Does that not have rate limit issues on spotify end ? Can you release a branch with single downloads that are just in a long download queue ?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "UrbanCircles",
+                    "text": "This is fantastic! Do you need a Spotify account to make it work, or is it plug and play?"
+                },
+                {
+                    "author": "caa_admin",
+                    "text": "Pretty sad OP has to spend more time typing up a disclaimer than post content to keep potential trolls at bay. Good job with this project OP!"
+                },
+                {
+                    "author": "Spantheslayer",
+                    "text": "God bless you and hope you have a nice cozy pillow just the way you like for the rest of your life."
+                },
+                {
+                    "author": "Wild_Magician_4508",
+                    "text": ">SUPPORT YOU(r) ARTISTS\n\n...and a picture of ui....pretty please?",
+                    "replies": [
+                        {
+                            "author": "CulturalTortoise",
+                            "text": "UI is on the Github",
+                            "replies": [
+                                {
+                                    "author": "Wild_Magician_4508",
+                                    "text": "My man, I apologize. I did not see the picture of the UI. My bad. TY so much for sharing."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "schaka",
+                    "text": "You can just use Soularr to download everything you need that's in lidarr via slskd.\n\nI've also started work on Naviseerr to do the same and truly replace paid services, but it's on hold until I can make the time again",
+                    "replies": [
+                        {
+                            "author": "densmorea",
+                            "text": "Going to check this out also thanks"
+                        }
+                    ]
+                },
+                {
+                    "author": "Lulzagna",
+                    "text": "I use sonarr and radarr, but lidarr just doesn't work. Downloads albums, then it throws errors that it can't import tracks because it couldn't match them.",
+                    "replies": [
+                        {
+                            "author": "RiffyDivine2",
+                            "text": "You can then hit the manual button and do it yourself. It likely could be as simple as it was looking for the US album with 10 tracks but you got the Japanese import with 12 so it errors out and is simple to address.",
+                            "replies": [
+                                {
+                                    "author": "Lulzagna",
+                                    "text": "I tried this, but it got even more confusing - the album I'm testing right now has 13 tracks and when I try to map the files manually, it only has 12 as it's excluding the \"bonus\" track - looks like it's referencing the vinyl track list instead of the CD.\n\nNow if I click the \"Album\" input it will let me re-select the album for the one track, but there's no distinguishing between vinyl versus CD. It disables the \"import\" button if I try mixing the tracks. Trying to select the album on any of the vinyl tracks still lists them as the vinyl track.\n\nSo, I tried importing just the vinyl tracks and hoping I could import the CD bonus track after, but it just set the album to the Vinyl release and marked it complete.\n\nI've edited the main entry's release to the 13 track CD again and the files are now \"unmapped\", but trying to add them has the same issue - it's automatically assuming they're for the vinyl release and I can't override the release.\n\nEdit: damn-it, there's a select dropdown at the bottom that has different operations including changing the release. Not the best UX, but it is there. Now I need to figure out why the other album didn't import.\n\nThank-you for the suggestion to get me to take a second and third look."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Computingss",
+                    "text": "do you need a premium account for this to work? and what is the difference between this a deemix?",
+                    "replies": [
+                        {
+                            "author": "DM_Me_Summits_In_UAE",
+                            "text": "As per GitHub description, just a free account is sufficient. I wonder how it works. Nice work OP!"
+                        }
+                    ]
+                },
+                {
+                    "author": "mancaveit",
+                    "text": "Does it download the playlists made by user? I have so many that I want to download and move to my navidrome",
+                    "replies": [
+                        {
+                            "author": "Common_Drop7721",
+                            "text": "As long as the playlist is discoverable by the account being used (be it that it is a public playlist or it is owned by the account), it should appear under the search results. Planning to add direct url download in the future anyway.\n\nBut before you do it BE CAREFUL!, \u201cplaylist downloading\u201d means it downloads all tracks in that playlist, not an m3u file. So if you\u2019ve already got some of them in your navidrome library, there will be duplicates and, depending on the size of the playlist, you will have a not so big, or an enormous problem to solve."
+                        }
+                    ]
+                },
+                {
+                    "author": "theblindness",
+                    "text": ">Before you lossless elitists come here to beat me up: I totally agree with you, spotify sucks\n\nI don't have a problem with compressed audio or even Spotify. The Spotify tech is good and the service works. What I have a problem with is all these random personal projects unrelated to NZBDrone all named something ending in \"arr\". If your project isn't an NZBDrone fork, pick a different name.",
+                    "replies": [
+                        {
+                            "author": "Common_Drop7721",
+                            "text": "Will be honest with you, I genuinely thought the -arr on all those projects was because of pirates traditionally saying \"arr\" in cartoons. \n\nThat said, I will change the name in order to avoid confusion but also: I don't see the harm on having plenty of -arr projects, even if they are not an NZBDrone fork.",
+                            "replies": [
+                                {
+                                    "author": "UnfairerThree2",
+                                    "text": "Pretty sure that\u2019s exactly why they picked it. To be fair it\u2019s not like they own the \u201carr\u201d suffix, but it does make it confusing to newcomers about what is and isn\u2019t associated with the larger / more trusted NZBDrone work"
+                                },
+                                {
+                                    "author": "creamyatealamma",
+                                    "text": "That's because there is no harm in your naming. I'll never understand their problem with the suffix just reddit being reddit."
+                                },
+                                {
+                                    "author": "GoldCoinDonation",
+                                    "text": "What did the pirate say on his 80th birthday?\n\nAye matey."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "TatoAktywny",
+                            "text": "From now on, my dear friend, the name of each and every project i do (and yes, none of them are even remotely related to NZBDrone) will end with \"arr\".   \nEvery filename created by me will end with \"arr\".\n\nAnd it will bring a huge smile on my face knowing that everytime i do anything i will piss some \"arr\" supremacist nerd off.",
+                            "replies": [
+                                {
+                                    "author": "theblindness",
+                                    "text": "Okayarr. Cool starry brarr."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "densmorea",
+                    "text": "man that was a tough setup but finally got it working thanks this is neat"
+                },
+                {
+                    "author": "mrbeez",
+                    "text": "today is a great day to close your spotify account"
+                },
+                {
+                    "author": "NewDad907",
+                    "text": "Ok, but what does Zotify/Zotifarr **actually** download the files as? I mean, what file type? Is it only playable through the self hosted application?\n\nI went to both Gits and I didn\u2019t see what file type was being downloaded. I can already \u201cdownload\u201d Spotify within the app for offline listening."
+                },
+                {
+                    "author": "PleaseDontEatMyVRAM",
+                    "text": "saved post, will have to mess with this later"
+                },
+                {
+                    "author": "techma2019",
+                    "text": "Awesome. Thank you!"
+                },
+                {
+                    "author": "vhsjayden",
+                    "text": "I would totally use home hosted music solutions but I love the discovery aspect of Spotify."
+                },
+                {
+                    "author": "lastditchefrt",
+                    "text": "Ou guys remember deezloader?"
+                }
+            ]
+        },
+        {
+            "title": "DumbDrop & DumbPad now have DumbAuth!",
+            "author": "abite",
+            "text": "After receiving some feedback on [DumbDrop](https://github.com/abiteman/DumbDrop) & [DumbPad](https://github.com/abiteman/dumbpad) that people want some sort of auth as not everyone uses a reverse proxy with auth or Authelia, I decided to add some dumb auth!\n\n[Yep, that's it.](https://preview.redd.it/1znvhqfrczee1.png?width=1920&format=png&auto=webp&s=8588db0871e95732f2cbb32b4237495cdfcb249b)\n\n\n\nA stupid simple pin, set via environment variable. If left empty, it's still dumb, and there's no pin!\n\n  \nI appreciate all of the feedback and hope people find these Dumb projects useful!",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "LutimoDancer3459",
+                    "text": "Do you plan more dumb things to do?",
+                    "replies": [
+                        {
+                            "author": "abite",
+                            "text": "I have a plethora of DumbIdeas I'm thinking about making.\n\nSometimes the simple things are all people need! A DumbSuite could be perfect for someone running on old or super light hardware.",
+                            "replies": [
+                                {
+                                    "author": "provocateur133",
+                                    "text": "What about an assistant named DumbAss?"
+                                },
+                                {
+                                    "author": "Space_v2",
+                                    "text": "Please do a DumbCalc who is Dumb at math and does everything wrong"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "VorpalWay",
+                    "text": "Wouldn't the simplest dumbest auth simply be [Http basic auth](https://en.m.wikipedia.org/wiki/Basic_access_authentication)? This has a full on login page. It isn't dumb enough!\n\nWhat I'm saying is that it could be dumber (and also, a bit more secure than just 4 digits).",
+                    "replies": [
+                        {
+                            "author": "abite",
+                            "text": "Fair enough \ud83d\ude02 5 digits it is...\n\nI did think about making it variable, so the env variable could be any digital between 4 and 10 characters long. So you could theoretically dictate the level of security. But that started to get too smart. Could revisit that though.",
+                            "replies": [
+                                {
+                                    "author": "Baader-Meinhof",
+                                    "text": "I would appreciate a longer pin option."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "GoldPhysical",
+                            "text": "This was my initial thought when I read this yesterday. If you don\u2019t have authelia, or alternatives setup, just do this."
+                        },
+                        {
+                            "author": "Fifthdread",
+                            "text": "I find that with basic auth, I can' auto-fill with password managers, since it makes a little pop-up window show up. At least that's what I think basic auth looks like.",
+                            "replies": [
+                                {
+                                    "author": "VorpalWay",
+                                    "text": "Ah, that probably depends on the browser. Pretty sure it works in Firefox with keepassxc (that is what I use). Though I don't use this auth form often, so I could be confusing it with the native saved passwords of the browser..."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "mnosz",
+                    "text": "That was quick haha. I was the one to mention not having auth as an issue in the last post.",
+                    "replies": [
+                        {
+                            "author": "abite",
+                            "text": "It was a good point! And I was bored \ud83d\ude02"
+                        }
+                    ]
+                },
+                {
+                    "author": "Dreadino",
+                    "text": "I\u2019m not sure if it already exists, but here is an idea: add a path to the url to point to a different directory. https://drop.mydomain.com would point to /mnt/share/drop, while https://drop.mydomain.com/newyorktrip could point to /mnt/share/photos/2025/new_york.\n\nAs a user I\u2019d still get a url/qrCode, no additional steps",
+                    "replies": [
+                        {
+                            "author": "abite",
+                            "text": "Solid idea, ill look into this"
+                        }
+                    ]
+                },
+                {
+                    "author": "nashosted",
+                    "text": "Oh so this is only for your dumb apps? Awww I thought I could use dumbauth on any app I selfhosted. Well I guess I\u2019m just dumb.",
+                    "replies": [
+                        {
+                            "author": "abite",
+                            "text": "Yeah I'm not smart enough to make that \ud83d\ude02"
+                        }
+                    ]
+                },
+                {
+                    "author": "willowless",
+                    "text": "Dude you're cracking me up. These are gold. I look forward to the full DumbCloud..",
+                    "replies": [
+                        {
+                            "author": "abite",
+                            "text": "Slowly but surely, I give it a month and we replace Google, Adobe, and Microsoft entirely \ud83d\ude02"
+                        }
+                    ]
+                },
+                {
+                    "author": "material403",
+                    "text": "Do you plan to support multipart upload?",
+                    "replies": [
+                        {
+                            "author": "abite",
+                            "text": "That's the current method! DumbDrop supports chunking. The largest file i know a user has dropped is 4GB. Haven't tested larger than that",
+                            "replies": [
+                                {
+                                    "author": "material403",
+                                    "text": "Thanks so much I am now spending time today setting this up with r/immich ! They have not implemented it and with reverse proxy behind cloudflare it's a pain to upload large videos."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "radakul",
+                    "text": "This is neat - question though: is there any significant difference between this project and similar ones like SnapDrop or PairDrop(my personal favorite?)",
+                    "replies": [
+                        {
+                            "author": "abite",
+                            "text": "From a brief look at those, its just a matter of this being... dumb. It's as simple as it gets, any web browser can drop files or folders and they go into one predetermined folder. No pairing devices, no choosing destinations, nothing. \n\nThis solution would be easier potentially to share with others as you just tell or send them the URL and give them the pin (if set).\n\nIt's just dumb!"
+                        }
+                    ]
+                },
+                {
+                    "author": "ShinyAnkleBalls",
+                    "text": "Can't wait to see what dumbProject you will share next!"
+                },
+                {
+                    "author": "tinybitninja",
+                    "text": "Where is the link?",
+                    "replies": [
+                        {
+                            "author": "abite",
+                            "text": "Both DumbPad and DumbDrop are linked as their names to the github repo in the post."
+                        }
+                    ]
+                },
+                {
+                    "author": "steveiliop56",
+                    "text": "Wait until dumbauth meets dumbbruteforce lmao"
+                },
+                {
+                    "author": "CJKaufmanGFX",
+                    "text": "I love it"
+                },
+                {
+                    "author": "TheFumingatzor",
+                    "text": "Is you dumb?",
+                    "replies": [
+                        {
+                            "author": "abite",
+                            "text": "Very, is why I only have dumb idea"
+                        }
+                    ]
+                },
+                {
+                    "author": "TrvlMike",
+                    "text": "I know the Selfhost folks repeated this, but I really love the idea of \"dumb\" self-hosted apps that are extremely simple for home users. I use Authentik but it's overkill for home use.",
+                    "replies": [
+                        {
+                            "author": "abite",
+                            "text": "Exactly, a lot of users don't need the ability to add a bunch of user accounts with authentication or an entire database, etc. Simple is good!"
+                        }
+                    ]
+                },
+                {
+                    "author": "thefoxman88",
+                    "text": "I'd love some UNraid community templates for these apps!",
+                    "replies": [
+                        {
+                            "author": "abite",
+                            "text": "Me too! I gotta figure out how to do that as I never have. Looks like there's a couple of tutorials I can use."
+                        }
+                    ]
+                },
+                {
+                    "author": "sailorbob134280",
+                    "text": "Kinda love this ecosystem, ngl. If you want more fancy-pants auth, it seems like a great one for a reverse proxy middleware, like authelia + traefik. I wouldn't set that up just for this, but if you've already got it, this seems like a pretty solid addition."
+                }
+            ]
+        },
+        {
+            "title": "Introducing Subsyncarr: Fix Out-of-Sync Subtitles Automatically in Your Media Library",
+            "author": "mrorbitman",
+            "text": "Ever been watching something on Jellyfin and the subtitles are just... off? Actors are speaking but the caption text appears a second too early or too late? Or maybe you've downloaded a subtitle file that's perfect except for that annoying drift that gets worse as the movie goes on?\n\nEnter **Subsyncarr** - a Docker container that automatically fixes out-of-sync subtitles in your media library. \n\n**How it works:**\n\n- Uses speech recognition to analyze your video files\n- Automatically aligns subtitles using two different sync engines (ffsubsync and autosubsync)\n- Runs on a schedule (default: daily at midnight)\n- Creates new subtitle files (doesn't modify your originals, so it is non-destructive)\n- Zero configuration needed - just point it at your media folder\n- Deploy easily with docker-compose\n\n**Quick Start:**\n\n```yaml\nversion: \"3.8\"\nservices:\n  subsyncarr:\n    image: mrorbitman/subsyncarr:latest\n    container_name: subsyncarr\n    volumes:\n      - /path/to/your/media:/scan_dir\n    restart: unless-stopped\n```\n\nAfter a bit, Jellyfin should notice the new subtitle files are created and they'll appear as an option in your client, named with `ffsubsync` and `autosubsync` tags so that you can identify each sync engine's subtitle (for various reasons, sometimes one sync engine does a better job with the sync than the other one).\n\nLinks:\n\n- GitHub: https://github.com/johnpc/subsyncarr\n- Docker Hub: https://hub.docker.com/r/mrorbitman/subsyncarr\n\nWould love to hear your feedback and suggestions! This is one of my first public containers, built out of frustration with manually adjusting subtitles.\n\nAnd as always feel free to give it star on github if the project interests you!",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "Zalosath",
+                    "text": "Thank you, I've been wanting this for ages! Bless you sir/madam"
+                },
+                {
+                    "author": "brkr1",
+                    "text": "Just asking, doesn't bazarr do the same?",
+                    "replies": [
+                        {
+                            "author": "mrorbitman",
+                            "text": "I actually use and love Bazarr! However I still have this problem occasionally with subs Bazarr grabs. When the subtitle timings don't line up, that is where subsyncarr comes in.\n\nFrom the Bazarr docs it looks like it is trying to sync them, since I do have that option set to on. But every now and again this is still a problem, and subsyncarr has fixed it for me",
+                            "replies": [
+                                {
+                                    "author": "brkr1",
+                                    "text": "What I meant is that Bazarr also syncs out of sync subtitles.. anyway, I'll try Subsyncarr nonetheless."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "West_Grade_8433",
+                            "text": "Not sure about the syncing but bazarr definitely adds third party subtitles and pretty much fixes that issue.",
+                            "replies": [
+                                {
+                                    "author": "lordpuddingcup",
+                                    "text": "Never worked for me I have lots that the bazaar sync didn\u2019t appear to do anything"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "tharic99",
+                    "text": "Let's say you've got 8,000 media items. Does the container iteratively go through scanning all 8,000 media items every night at midnight or does it track that it's done these 7,895 already?",
+                    "replies": [
+                        {
+                            "author": "mrorbitman",
+                            "text": "It does not re-process subtitles that it's already processed. It figures that out by determining if the file that it would create (such as mysubs.ffsubsync.srt) already exists. If it already exists, it skips.\n\nIt does scan your entire filesystem for new .srt files every day, although that's not a very intensive process for the vast majority of homelab media servers (mine is much larger than 8000 items :D)"
+                        },
+                        {
+                            "author": "Ystebad",
+                            "text": "This"
+                        }
+                    ]
+                },
+                {
+                    "author": "iDuts",
+                    "text": "Sounds nice! How much of the file gets read? Does it keep track of which one it already checked on previously scheduled run? Thinking of using it with non local files but have a daily 400GB download quota.",
+                    "replies": [
+                        {
+                            "author": "mrorbitman",
+                            "text": "I wouldn't recommend it over the network. The most intensive part is stripping the audio track from the video file, which requires the entire file be available to read."
+                        }
+                    ]
+                },
+                {
+                    "author": "Buzz1ight",
+                    "text": "How do I nominate someone for knighthood? Thank you!"
+                },
+                {
+                    "author": "Nico_is_not_a_god",
+                    "text": "Looks really useful! A few questions:\n\nIf it uses speech recognition to analyze the video files, how does it interface with SDH subs (no on-screen speech but the subtitle file has an entry for [wind blows]) or foreign language subs (character says something in French and the subtitle is in English)? I've watched some media where the characters are moving their mouths but you can't hear the words (due to music overlay or stylistic silence) and only *sometimes* this gets a subtitle that says <silence>.\n\nWhen it aligns a subtitle file for a video is it doing it as a solid \"Block\" or per line? Like, does it try to figure out \"how many ms to add/subtract to the file to line it up\" or does it try to do that for every single line / subtitle individually? There would be upsides and downsides for both of these approaches, but the first would be better at fixing a mismatch (you got subtitles that were tuned for a longer opening sequence, for example) while the second would be better at fixing a subtitle file with \"mistakes\" (you got subtitles where one or two lines show up early/late). If you use the second approach, how does that interact with subtitles like <silence> or (wind blows) or lyrics to music?",
+                    "replies": [
+                        {
+                            "author": "mrorbitman",
+                            "text": "Right now it uses two different engines with different underlying techniques\n\nSee \n\n* https://github.com/smacke/ffsubsync\n* https://github.com/oseiskar/autosubsync\n\nThe READMEs of those repos have more information on how they work under the hood. This project just scans your media libraries and invokes those dependencies, so I'm not inventing anything about how the syncing actually works.",
+                            "replies": [
+                                {
+                                    "author": "Nico_is_not_a_god",
+                                    "text": "Ah, from reading those they'd both break on a subtitle that contains a subtitle for \"silence\" as it'll try to align that to the next spoken-word bit of dialogue in the video. Still interesting and useful for media that doesn't have that quirk!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "UnacceptableUse",
+                    "text": "This has been such an annoying issue, thanks"
+                },
+                {
+                    "author": "MundanePercentage674",
+                    "text": "Damn thank man"
+                },
+                {
+                    "author": "CheatsheepReddit",
+                    "text": "Thank you!! This is exactly what I needed"
+                },
+                {
+                    "author": "DevilHunter81",
+                    "text": "Can you add an API or something that bazarr can call with some parameters (path of the subtitle file or the movie name) to only sync the mentioned subtitle?",
+                    "replies": [
+                        {
+                            "author": "mrorbitman",
+                            "text": "Unfortunately I do not plan to do this.\n\nI'd take a look at a PR adding support for this and merge if it makes sense, but it's not part of my vision how I want it to work as I understand it right now.",
+                            "replies": [
+                                {
+                                    "author": "DevilHunter81",
+                                    "text": "Understood, no problem.\n\nIf you don't plan to  be externally triggered, maybe you could add a method to start the process as soon as a new srt file is created in the watched directory?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "eaglw",
+                    "text": "I had a series that had subtitles that worked for the first 1/3 of the media. Then I had to shift of 2 seconds and it worked for 1/3. And last time I had to shift again for the last third. \n\nWould this work in a case like this?\n\nWould this work for big differences? Like subtitles that doesn\u2019t include the intro of the show?",
+                    "replies": [
+                        {
+                            "author": "mrorbitman",
+                            "text": "Yes it for sure works for big differences. I\u2019ve had mixed luck when it comes to drift that gets worse as the movie goes on, but it does at least sometimes work for that"
+                        }
+                    ]
+                },
+                {
+                    "author": "CumInsideMeDaddyCum",
+                    "text": "Ia this resource intensive?",
+                    "replies": [
+                        {
+                            "author": "mrorbitman",
+                            "text": "It only processes one file at a time, so it's respectful of your CPU - it'll only engage with a single core at a time. Because of this it can take longer to run the first time though, if you have a large existing library."
+                        }
+                    ]
+                },
+                {
+                    "author": "creep303",
+                    "text": "~~nice! am i able to point it multipe dirs? My media library is set to \"trash guides\" standard so i have a /data/media/tv & /data/media/movies folder can i point to to the /data folder and have it handle everything?~~\n\n  \nedit: nm, i skipped a whole section of the readme lol",
+                    "replies": [
+                        {
+                            "author": "mrorbitman",
+                            "text": "The answer is yes to others reading this! Just point it at /data and it'll scan your entire data directory and all sub directories",
+                            "replies": [
+                                {
+                                    "author": "false_god",
+                                    "text": "Is there a way to link to 2 folders? Or maybe ignore some folders?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "remottt07",
+                    "text": "Can it be used to sync non-English subtitles ? \n\nI know it will be hard to know the exact line but at least to sync the speech start time of the related line \u201cwhich is unreadable to the code point\u201d",
+                    "replies": [
+                        {
+                            "author": "mrorbitman",
+                            "text": "I don't think it's reliable for non-english subtitles right now. I have an issue cut to support a language-agnostic sync engine and I'll release an update to include it at some point this weekend."
+                        }
+                    ]
+                },
+                {
+                    "author": "braindancer3",
+                    "text": "You mentioned Jellyfin, but I assume it would work just as well for Plex?",
+                    "replies": [
+                        {
+                            "author": "mrorbitman",
+                            "text": "Yep it works for plex too!"
+                        }
+                    ]
+                },
+                {
+                    "author": "SrFrancia",
+                    "text": "This is VERY cool .o."
+                },
+                {
+                    "author": "Ryland0",
+                    "text": "How are we able to monitor the transaction progress?",
+                    "replies": [
+                        {
+                            "author": "mrorbitman",
+                            "text": "You can tail the docker logs I suppose, but there is no user interface.",
+                            "replies": [
+                                {
+                                    "author": "Ryland0",
+                                    "text": "Thank you for your reply. Also, can confirm language files are an issue (you have a report on GH).\n\nsubsync  | 1/24/2025, 7:39:24 PM No matching video file found for: Akira.en.srt"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Pacoboyd",
+                    "text": "Is this like SubSync? That's currently what I used but it's no longer developed, though still works.",
+                    "replies": [
+                        {
+                            "author": "mrorbitman",
+                            "text": "SubSync could be an engine. Right now the only engines are ffsubsync and autosubsync"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "This Week in Self-Hosted (24 January 2025)",
+            "author": "shol-ly",
+            "text": "Happy Friday, r/selfhosted! Linked below is the latest edition of *This Week in Self-Hosted*, a weekly newsletter recap of the latest activity in self-hosted software and content.\n\nThis week's features include:\n\n* New native Bitwarden apps\n* Software updates and launches\n* A spotlight on [Many Notes](https://github.com/brufdev/many-notes?ref=selfh.st) - a self-hosted Markdown-based note-taking app\n* A ton of great guides and updates from the community (including this subreddit!)\n\nThanks, and as usual, feel free to reach out with feedback!\n\n---\n\n[This Week in Self-Hosted (24 January 2025)](https://selfh.st/newsletter/2025-01-24/?ref=reddit)",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "brufdev",
+                    "text": "I'm the creator of Many Notes, and I'm happy to see a mention in your newsletter!\n\nI've already released v0.4.2, which adds support for Authentik and Keycloak OAuth, and I'm currently working on the next version. If you find any issues, please feel free to open an issue on GitHub and I'll be happy to help. Happy Friday self-hosters!",
+                    "replies": [
+                        {
+                            "author": "LegendOfDave88",
+                            "text": "I'll definitely be checking this one out over the weekend especially since there is now Authentik support."
+                        }
+                    ]
+                },
+                {
+                    "author": "Chemical-Advisor562",
+                    "text": "It is nice to see that others also care about self hosting stuff. \nI think about it as part of our digital freedom, and I am proud to keep myself free from depending on big companies and SaaS stuff. \nKeep up our digital independence!"
+                },
+                {
+                    "author": "ssddanbrown",
+                    "text": "> Partnering with unethical advertisers and sponsors will also remain a non-option. \n\nYeah, this can be tricky. I recently had a gambling website ask to sponsor BookStack but I wasn't comfortable with essentially advertising them via our website/readme sponsors list. Also what is considered ethical can be quite a personal perspective. Ironically, I feel this post's sponsor is a somewhat unethical for the [reasons in my post here](https://danb.me/blog/poisoned-source/) but I appreciate that these specific reasons are something I consider a lot more important than others, and I respect the need to be compensated for your efforts in producing this content.",
+                    "replies": [
+                        {
+                            "author": "shol-ly",
+                            "text": "> I feel this post's sponsor is a somewhat unethical for the reasons in my post here\n\nCompletely valid point - I knew you commenting on this post wasn't going to be a good thing.\n\nI'll need to reconsider how sponsors are vetted to take things like licensing concerns that aren't always obvious into account. I appreciate the feedback.",
+                            "replies": [
+                                {
+                                    "author": "ssddanbrown",
+                                    "text": "> I knew you commenting on this post wasn't going to be a good thing.\n\nSorry, didn't mean to call it out in that way, just meant to highlight how tricky this can be. It's not possible to vet sponsors and set your \"ethical\" lines to match the priorities and expectations of all your possible readers, so I don't expect to always agree with who others may partner with. You just gotta find your own ethical line of what you're personally comfortable with."
+                                },
+                                {
+                                    "author": "Reefer59",
+                                    "text": "I think you have done a great job with your sponsorships and am glad to see you not selling your soul like some on YouTube for the sake of a dollar or free gear. If you have you at least hidden it very well,lol."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "abite",
+                    "text": "Honored to have DumbPad and DumbDrop make the list! Didn't think those dumb projects would gain any traction! \ud83d\ude02",
+                    "replies": [
+                        {
+                            "author": "Reefer59",
+                            "text": "I like DumbPad. I just want a place to copy stuff down or make a note for myself without having to worry about formatting or anything else really. Gave both projects a star.",
+                            "replies": [
+                                {
+                                    "author": "abite",
+                                    "text": "Appreciate it!"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "shol-ly",
+                            "text": "Read the last paragraph of the 'This Week in Self-Hosted' section if you haven't already!",
+                            "replies": [
+                                {
+                                    "author": "abite",
+                                    "text": "\ud83d\ude02 I love it! Can't wait to push out some more DumbIdeas!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Dal1971",
+                    "text": "My favourite read, every Friday \u2764\ufe0f"
+                },
+                {
+                    "author": "100lv",
+                    "text": "New week - new good newsletter."
+                },
+                {
+                    "author": "sir_verfam",
+                    "text": "Have to say after reading this I can't wait for my first Dumbphone. ;-) Completly open source and self hosted of course."
+                }
+            ]
+        },
+        {
+            "title": "Is whoami the coolest reverse proxy debug tool?",
+            "author": "purepersistence",
+            "text": "For years I made my life difficult debugging reverse proxy issues. Like which headers are getting passed by the reverse proxy and what are their values? When things don't work right the headers might not actually be passed, might not have the right value, might get mishandled by downstream servers, might not be trusted by the destination. It's good to know for sure what's leaving the reverse proxy because if that's not what it should be, all bets are off.\n\nI found this simple docker container called [whoami](https://github.com/traefik/whoami). You can deploy it and change your proxy host to point to that instead. It will display all the headers and values passed to it by the proxy.\n\nThought I would share in case I'm not the only one that doesn't know already.\n\n[whoami screenshot](https://preview.redd.it/ssxeiclzvxee1.png?width=738&format=png&auto=webp&s=0fcb5fb8bb3c6c9377832f0c55ba820162800ba3)\n\n",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "mattsteg43",
+                    "text": "anyone who's running traefik and has read the docs \\*should\\* know about it at least, since it's a traefik tool and used in their example compose.  It's handy.",
+                    "replies": [
+                        {
+                            "author": "biswb",
+                            "text": "I don't run traefik, but its a handy tool, so hopefully it gets more noticed, its very useful",
+                            "replies": [
+                                {
+                                    "author": "purepersistence",
+                                    "text": ">anyone who's running traefik\n\nThat doesn't include me."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "all_ready_gone",
+                    "text": "I use the more involved  [smocker](https://github.com/smocker-dev/smocker) for this. Easy for discovery and can even work as a proxy"
+                },
+                {
+                    "author": "clintkev251",
+                    "text": "Yeah this is my go-to debug container. I use it in a bunch of example stacks at work even"
+                },
+                {
+                    "author": "VorpalWay",
+                    "text": "Not sure why you are blurring out part of the 192.168.* IP. It is a private IP as I assume you know.",
+                    "replies": [
+                        {
+                            "author": "purepersistence",
+                            "text": "I\u2019d tell ya but I\u2019d have to kill ya.\nEdit: Sorry bad joke! Nothing ill intended.",
+                            "replies": [
+                                {
+                                    "author": "VorpalWay",
+                                    "text": "Ah I see, you probably wrote some incriminating information in the digits using [upside down calculator letters](https://www.dictionary.com/e/calculator-words/)."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "ctark",
+                    "text": "Ohhh very cool"
+                },
+                {
+                    "author": "IdiocracyToday",
+                    "text": "Pretty sweet"
+                },
+                {
+                    "author": "scuddlebud",
+                    "text": "Yup I use traefik and this thing is everywhere in the docs. Sometimes I see it in other docs that are not traefik too."
+                },
+                {
+                    "author": "rumblemcskurmish",
+                    "text": "Wha?!? This is genius.  Thanks for sharing."
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[deleted]",
+                    "replies": [
+                        {
+                            "author": "fortunatefaileur",
+                            "text": "No, this shows what the backend is receiving, which is extremely helpful when debugging proxies and oidc etc."
+                        },
+                        {
+                            "author": "purepersistence",
+                            "text": "No. Your browser can show you what's leaving the browser. This shows you headers that the reverse proxy adds to the request."
+                        },
+                        {
+                            "author": "SilentlyItchy",
+                            "text": "This is what the service recieves, which might be different from what the client sent because of the reverse proxy, just like it's said in the post"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Zotifarrr update!",
+            "author": "Common_Drop7721",
+            "text": "Yesterday I posted [this project](https://github.com/Xoconoch/zotifarrr) and got some feedback from you guys, all valuable opinions! Based on that feedback I decided to make some minor updates:\n\n* Changed the project's name from \"Zotifarr\" to \"Zotifarrr\" because this project is not a NZBDrone fork, so it is not worthy of using the sacred -arr suffix\n* Added playlists support\n* Ditched sysbox! now it is an ol' regular docker-compose install\n\nLet me clarify one thing: this **is pirating software**. I don't care how you use it, but whenever you do, remember this: the content you consume *needs* financial support to continue existing. If you consume it without providing that financial support, you are actively contributing to its potential demise. Said contribution can be more or less significant. For example, it's not the same to pirate an album by Taylor Swift as it is to pirate an album by that indie rock band that has only two releases.\n\nI started this project because I hate Big Tech and the dystopia of hyper-surveillance they advocate for. Self-hosting is part of protesting against them. That said, my words are little more than just that\u2014words, intentions I put into text in the hope that they will be heard. So please, be responsible with this tool.\n\nedit: typo (fat thumbs)  \nedit 2: [previous post](https://www.reddit.com/r/selfhosted/comments/1i8lhow/for_those_who_sometimes_need_to_return_begging_to/)",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "hoowahman",
+                    "text": "Honestly what is this project? No description anywhere.",
+                    "replies": [
+                        {
+                            "author": "PreparedForZombies",
+                            "text": "[For those who sometimes need to return begging to Spotify : r/selfhosted](https://www.reddit.com/r/selfhosted/comments/1i8lhow/for_those_who_sometimes_need_to_return_begging_to/)\n\nEDIT - I agree, a quick blurb on github would be helpful.",
+                            "replies": [
+                                {
+                                    "author": "Common_Drop7721",
+                                    "text": "Forgot to add it on the updated readme, done."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "bacitoto-san",
+                            "text": "You should include link to the [previous post](https://www.reddit.com/r/selfhosted/s/IfFeJ81iQg) OP\n\nMaybe just add that small description to the github"
+                        }
+                    ]
+                },
+                {
+                    "author": "hurrrrrrz",
+                    "text": "Is a Spotify premium account needed or can I just use a free dummy account? Not to be used with main account anyways? Thanks for answering my questions! :)",
+                    "replies": [
+                        {
+                            "author": "Common_Drop7721",
+                            "text": "Pretty much the same recommendations for Zotify apply here: it is rare to see an account banned for using this tool, but I'd still recommend using a burner, perhaps even multiple in order to avoid region locks! and no, premium is not required.",
+                            "replies": [
+                                {
+                                    "author": "hurrrrrrz",
+                                    "text": "Thanks for your app and for your answers. Have a nice weekend!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "sevenlayercookie5",
+                    "text": "Cool idea! I installed, it's reading the albums and says it's downloading and converting, however in download directory there are sub folders of each album, accompanied by .tmp files of the same name. No files in the subfolder. Seems like something off with conversion process maybe?\n\nCan I ask why it's necessary to convert to .ogg? converting from one lossy format to another seems like will only lose quality. Can you include an option to just keep whatever is downloaded from Spotify?\n\nI like the interface and the idea! Would be cool if you added a web player where you can stream directly from Zotifarrr.\n\n  \nOh and also to enable progressive web app features",
+                    "replies": [
+                        {
+                            "author": "Common_Drop7721",
+                            "text": "Yeah I think I fucked up, I'll check it in a couple hours"
+                        },
+                        {
+                            "author": "Common_Drop7721",
+                            "text": "The problem was I forgot to add ffmpeg install to the Dockerfile, it should work properly now"
+                        }
+                    ]
+                },
+                {
+                    "author": "densmorea",
+                    "text": "Does Spotify url work for custom or private playlists"
+                },
+                {
+                    "author": "Sudden_Lake6147",
+                    "text": "Can it connect to prowlarr as well to utilise any indexer?"
+                },
+                {
+                    "author": "WorriedAd6477",
+                    "text": "Can you do Unraid support?",
+                    "replies": [
+                        {
+                            "author": "Common_Drop7721",
+                            "text": "If it can run docker, it can run zotifarrr"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Introducing TubeTube - A Fresh YouTube Downloader Option \ud83d\ude80",
+            "author": "mattblackonly",
+            "text": "If you're not satisfied with your current solution or fancy a change, try **TubeTube**.\n\n[https://github.com/MattBlackOnly/TubeTube](https://github.com/MattBlackOnly/TubeTube)\n\nhttps://preview.redd.it/kkcmwc9jazmd1.png?width=1366&format=png&auto=webp&s=952ef26964e3d7109d0902a4fcdfc07a50f6f0a1\n\n# Features:\n\n* Parallel downloads for faster processing\n* Mobile-friendly design\n* Automatically embeds thumbnails and metadata (like descriptions)\n* Automatically organizes downloads (e.g., playlists, channels) into appropriately named folders\n* Optional subtitle downloads\n* Powered by the exceptional yt-dlp\n\nhttps://preview.redd.it/w6wcdqnkazmd1.png?width=1366&format=png&auto=webp&s=c93f0509301f06dadd2acf8d28756442e3d4b5a8\n\nIf you're happy with your current tool, that\u2019s awesome\u2014stick with it!\n\n**Alternatives**: yt-dlp-web-ui, TubeArchivist, TubeSync, PinchFlat, YoutubeDL-Material, ytdl-sub-gui, metube etc. etc.\n\n***NOTE: TubeTube is meant to complement PinchFlat (which is widely considered as best in-class for downloading periodic content), not replace it.***",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "guesswhochickenpoo",
+                    "text": "So is this just effectively a GUI for yt-dlp that allows ad-hoc downloads of videos?",
+                    "replies": [
+                        {
+                            "author": "mattblackonly",
+                            "text": "Yes, exactly",
+                            "replies": [
+                                {
+                                    "author": "guesswhochickenpoo",
+                                    "text": "Cool. Might give it a rip. Thanks for making it!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Goaliedude3919",
+                    "text": "Here's my biggest question: What subtitle track does it download?\n\nFor example, the episodes of Taskmaster uploaded to their YT channel have the auto-generated garbage subtitles, but they also have real subtitles that have been uploaded with the video."
+                },
+                {
+                    "author": "tdp_equinox_2",
+                    "text": "Any chance for lidarr integration?\n\nI just adopted lidatube for a similar purpose and love that it can scrub missing content from lidarr, but it's documentation and options for ytdlp settings are far more basic than yours, I'd love to use yours instead (I probably will switch anyways).\n\nhttps://github.com/TheWicklowWolf/LidaTube\n\nI'd also like a change to how the integration works for selecting albums, because with lidatube it's a little janky. It should be like a cascading folder structure you can collapse and expand for artist>albums, instead of it's current method, of just all things in a giant list. \n\nAlso looking forward to testing to see if your project supports OPUS like YTDLP unlike lidatube, which only supports a few codecs."
+                },
+                {
+                    "author": "Rdavey228",
+                    "text": "Would be great if there was a download to local device option. The download button only downloads the file locally to the docker server. Id like to be able to press a button to download to the device im on once it's been downloaded to the server.\n\nCan that be implemented?",
+                    "replies": [
+                        {
+                            "author": "christoy123",
+                            "text": "Absolutely second this. My dad likes to download the odd song off youtube so this would be a great feature for me to have for him. Saves him using those dodgy website versions that get taken down every other day."
+                        }
+                    ]
+                },
+                {
+                    "author": "feerlessleadr",
+                    "text": "Looks cool, thanks!\n\nIn looking at the compose file, there is a volume for temp. Does that mean that this downloads to the temp directory, and then moves to the final directory? \n\nIf not, what is the temp directory used for?"
+                },
+                {
+                    "author": "Rilukian",
+                    "text": "Nice name.",
+                    "replies": [
+                        {
+                            "author": "guesswhochickenpoo",
+                            "text": "Tubular."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Alert me when someone is here?",
+            "author": "Looski",
+            "text": "Hey, so my wife just got a new office which is behind a locked door, but is student facing. I am trying to figure out if there is a simple technical way to alert her when a student has arrived. Maybe PWA where they can hit a button and it will notify her tech? I dunno. What is out there? I'm not at the point where I could create my own. Any ideas would be super.",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "joost00719",
+                    "text": "What about a doorbell?",
+                    "replies": [
+                        {
+                            "author": "Snoo-7986",
+                            "text": "Simplist is normally the best way to go.  Just get a doorbell with motion detection, and then get it to notify you when someone approches.\n\nJob done.",
+                            "replies": [
+                                {
+                                    "author": "apandaze",
+                                    "text": "[https://shop.everythingsmart.io/products/everything-presence-lite](https://shop.everythingsmart.io/products/everything-presence-lite)"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "hexwit",
+                            "text": "Is it AI powered?"
+                        },
+                        {
+                            "author": "Phantom_kusuri",
+                            "text": "They could even knock.\u00a0"
+                        },
+                        {
+                            "author": "Visible_Solution_214",
+                            "text": "Ha ha I laughed at this.  Simple solutions are the most effective.  Hi 5."
+                        },
+                        {
+                            "author": "Ariquitaun",
+                            "text": "Madman"
+                        }
+                    ]
+                },
+                {
+                    "author": "seniorducker",
+                    "text": "Not to sound like an ass but couldn't they just knock... Working in education as a tech myself. The kids are useless and wouldn't notice a button or press anything anyway. Or just prop the door open. If she's in the office having the door open shouldn't be an issue anyway"
+                },
+                {
+                    "author": "Looski",
+                    "text": "Lmao, OK, overthinking stuff. A doorbell. Damn simple solutions. Thanks guys!"
+                },
+                {
+                    "author": "Reefer59",
+                    "text": "They could knock on the door."
+                },
+                {
+                    "author": "MilchreisMann412",
+                    "text": "What you are describing is...  a doorbell? Dunno about selhosted things but there should plenty off-the-shelf solutions. Even dumb ones with a battery powered button and a buzzer for inside the room"
+                },
+                {
+                    "author": "guesswhochickenpoo",
+                    "text": "A doorbell is one option as others have said. But do you wanted to get \u201cFancy\u201d Home Assistant on a Pi (or any machine you already have available) plus one of many Zigbee buttons out there could do anything you want. Phone notification, turn and RGB bulb read, whatever."
+                },
+                {
+                    "author": "BureauOfBureaucrats",
+                    "text": "A doorbell?\u00a0"
+                },
+                {
+                    "author": "tribak",
+                    "text": "Try with a Rube Goldberg machine"
+                },
+                {
+                    "author": "Dalem246",
+                    "text": "Well if your looking for a self hosted solution you can probably use home assistant and a motion sensor or a button, which once pressed or detecting movement for longer than 5-10 seconds it will notify her devices.",
+                    "replies": [
+                        {
+                            "author": "AreYouDoneNow",
+                            "text": "This is the way, you can use home assistant as a VM or on a miniPC/Raspberry pi, a smart button and a custom automation to recreate the function of a doorbell.",
+                            "replies": [
+                                {
+                                    "author": "whomthefuckisthat",
+                                    "text": "That\u2019s a lot of work to recreate a doorbell. Not trying to kink shame about it though idk why you got downvoted on a hobbyist sub."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "pacovw",
+                    "text": "https://www.mi.com/global/product/xiaomi-motion-sensor-2s/"
+                }
+            ]
+        },
+        {
+            "title": "De-Googling My Life - little article I wrote",
+            "author": "DFS_0019287",
+            "text": "[External Link]",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "Akashic101",
+                    "text": "If I may make a small suggestion regarding the layout of your website, currently there is currently no margin around the body which makes the text go right up against the edge of the screen making it a bit harder to read. I suggest adding a small margin around the body [so the text is a bit more centered](https://imgur.com/fbwZUaY)",
+                    "replies": [
+                        {
+                            "author": "DFS_0019287",
+                            "text": "Thanks!  I added a bit more padding which should help."
+                        }
+                    ]
+                },
+                {
+                    "author": "Outrageous_Trade_303",
+                    "text": "how do you de-google from google maps for gps navigation?",
+                    "replies": [
+                        {
+                            "author": "DFS_0019287",
+                            "text": "I have a Garmin GPS in my car.  It's completely offline during operation.\n\nThere's also an OSM app for Android.",
+                            "replies": [
+                                {
+                                    "author": "Outrageous_Trade_303",
+                                    "text": "so you are just missing the real time traffic conditions"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Dovecot v2.4.0 is finally here",
+            "author": "thunk_stuff",
+            "text": "[External Link]",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "ThePixlPirate",
+                    "text": "Awesome\u2026.wtf is it?",
+                    "replies": [
+                        {
+                            "author": "Bloodrose_GW2",
+                            "text": "One of the most widely used POP3/IMAP servers",
+                            "replies": [
+                                {
+                                    "author": "thunk_stuff",
+                                    "text": "And it's been 8 years or so since v2.3.0"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Lawyers who self-host, what tools do you use the most?",
+            "author": "_MyNameIsJakub_",
+            "text": "Any inspiration? Share your setup with me, please.",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "cloudswithflaire",
+                    "text": "You know, I\u2019m sure that\u2019s going to be lawyers who selfhost just like the rest of us . I think it\u2019ll probably be same answers most people give hah - Jellyfin, HomeAssitant, etc \n\nYou\u2019d have to imagine that\u2019s one of the professions that would naturally be a lot less inclined to selfhost. \n\nThe liability they\u2019d take on by managing anything related to their Practice would be insane. And if their work involves going to trial or working anywhere within a mile of medical records - that\u2019s gotta be like putting the loaded gun against their own heads\u2026.\n\nThere are legitimate cyber security experts lawyers out there, I\u2019m curious what their take would be. \n\nFun post OP \ud83d\udc4d",
+                    "replies": [
+                        {
+                            "author": "_MyNameIsJakub_",
+                            "text": ">The liability they\u2019d take on by managing anything related to their Practice would be insane. And if their work involves going to trial or working anywhere within a mile of medical records - that\u2019s gotta be like putting the loaded gun against their own heads\u2026.\n\nHmm. That's an interesting take! Thank you for sharing. I'd like to offer a counterview, though.\n\nNote that not all lawyers are attorneys, please. From what I observe in my social bubble, in-housers tend to go with self-hosted tools managed by their IT department(s). Not sure if it's their choice or IT's preference altogether.\n\nAbout the attorneys\u2026 It's a double-edged sword, isn't it? You either accept liability by self-hosting or trusting 3rd party vendors. I can see some areas of law where self-hosting is almost necessary.",
+                            "replies": [
+                                {
+                                    "author": "cloudswithflaire",
+                                    "text": "If it's in-house IT department who's responsible for the tools, I don't think I would consider that to be selfhosted really. It's being managed and maintained by a professional who is (presumably) being paid for his time and experience.\n\nThose 3rd vendors will be engaging in and sticking to different types of Compliance. If Dropbox leeks your customer's private expansion and franchising plans - Dropbox has a medium sized issue that they have an entire department with countless people to work the problem. If a small private firm with a dozen people leeks those same docs - the long-term prospects for that firm go off a cliff... and maybe a blackhole at the bottom of the cliff. lol\n\nDisclaimer: I self-identify as a criminal, not a lawyer, so my information and understanding of the law may not be quite as up to date as a practicing lawyer."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "laserdicks",
+                            "text": "Correct."
+                        }
+                    ]
+                },
+                {
+                    "author": "RatioZealousideal555",
+                    "text": "Our small firm does privacy law cases for a national data protection authority. This has been one of the main reasons for me to develop a homelab: to build more practical knowledge that I can then use in cases against big tech. I\u2019m much less impressed now when their lawyers try to pretend things are too complicated for authorities to understand. \n\nI guess the only thing we do self hosted is a raspberry pi SMB share attached to the printer/scanner. I\u2019d like to install Sterling PDF for automatic OCR as well but this would require better hardware. \n\nWe have briefly looked at Nextcloud because the EDPS advises this for the EU institutions. In the end our small firm moved from Dropbox to MS365.",
+                    "replies": [
+                        {
+                            "author": "VorpalWay",
+                            "text": "Are you aware of [paperless-ngx](https://docs.paperless-ngx.com/)?\n\nI'm not a lawyer (I'm currently a developer), I mainly use it to manage receipts for things that have longer warranties and other important documents I might want to search for later on. For my use case it runs fine on a Pi5 with an external SSD attached. If I scan a lot to the ingest folder it can get a bit behind, but it catches up since I don't scan stuff all the time. A single A4 page at 600 dpi probably takes 10-20 seconds to process I would guess? Ingesting non-scanned PDFs is much quicker.\n\nSo it is possible that a Pi 5 could handle OCR for you.\n\nFor actual PDF manipulation there are also normal PC programs. A few open source ones I know of are [krop](https://github.com/arminstraub/krop) and [pdfmixtool](https://gitlab.com/scarpetta/pdfmixtool). Though my needs have been simple and I wouldn't say these are user friendly. Sterling certainly seems more advanced from the screen shots I'm finding.",
+                            "replies": [
+                                {
+                                    "author": "RatioZealousideal555",
+                                    "text": "Thanks! I tried running paperless-ngx on the raspberry pi but it\u2019s a 3b and just couldn\u2019t handle it. Thanks for reporting on the performance of the Pi 5, I might try upgrading!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "anonymous-69",
+                    "text": "Whisparr",
+                    "replies": [
+                        {
+                            "author": "cloudswithflaire",
+                            "text": "Strange, I thought that was only for politicians and the clergy?"
+                        }
+                    ]
+                },
+                {
+                    "author": "Elemis89",
+                    "text": "I install for a lot lawyer nextcloud and collabora for privacy.",
+                    "replies": [
+                        {
+                            "author": "_MyNameIsJakub_",
+                            "text": "What's the ratio between Collabora and OnlyOffice for Nextcloud deployments? \ud83e\udd14",
+                            "replies": [
+                                {
+                                    "author": "Elemis89",
+                                    "text": "Because in one place can talk with client and staff, save and archive a lot of documents."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "nashosted",
+                    "text": "Bookstack and StirlingPDF are a couple we use.",
+                    "replies": [
+                        {
+                            "author": "_MyNameIsJakub_",
+                            "text": "Noted. Thanks for the tips!"
+                        }
+                    ]
+                },
+                {
+                    "author": "sexybeard77",
+                    "text": "Wire guard VPN server to let my phone and laptop access my self-hosted stuff. Nextcloud for universal file access and a second internet-accessible instance for creating shared links for clients and the other side of the case or deal to access. Docassemble for document automation. Baserow for some file management tasks. I have not managed to get Traggo or Timetagger to fit my workflows so no longer host those. And I use Mailinabox on a VPS for my email. I have started using Docmost to build an internal process guide but could just as easily have used Bookstack. Paperless-ngx to ingest reciepts, tax documents, and other administrative things.  Additional instances of Paperless-ngx as needed to load client documents to digitize and review - i spin these up as needed for individual matters.  And the usual things for personal use including pihole, Jellyfin, Immich.  My next project will probably be to use Ghost to build a blog/newsletter but tbh that has been my \u201cnext\u201d project for years.\n\nEdit: yes, I have internal and offsite backup, and no, none of my work touches medical records."
+                },
+                {
+                    "author": "AnnualRutabaga7643",
+                    "text": "docassemble.org",
+                    "replies": [
+                        {
+                            "author": "_MyNameIsJakub_",
+                            "text": "Holy shit! I totally missed this. Thank you."
+                        }
+                    ]
+                },
+                {
+                    "author": "esoj_Ra",
+                    "text": "Is there any software that allows me to assign cases to team members and enables a manager to track the progress of all team members' cases?"
+                },
+                {
+                    "author": "10leej",
+                    "text": "My brother hosts invoice ninja, nextcloud and paperless (yes the original one) on his office server. All of which is on a VLAn without WAN access running RHEL9",
+                    "replies": [
+                        {
+                            "author": "_MyNameIsJakub_",
+                            "text": "Why the old one? \ud83d\udc40",
+                            "replies": [
+                                {
+                                    "author": "10leej",
+                                    "text": "because he hasn't gotten around to updating it since he set it up. It doesn't face the net so I dont see the problem myself."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "io-x",
+                    "text": "Lawyarr is a must."
+                },
+                {
+                    "author": "valdecircarvalho",
+                    "text": "Lawyers shouldn\u2019t be selhosting for their core business.",
+                    "replies": [
+                        {
+                            "author": "_MyNameIsJakub_",
+                            "text": "Right? But they still do! \ud83d\ude33"
+                        }
+                    ]
+                },
+                {
+                    "author": "This-Gene1183",
+                    "text": "Java"
+                }
+            ]
+        },
+        {
+            "title": "\ud83c\udf88First 1000 Downloads. Thanks everyone!\ud83c\udf88",
+            "author": "Nightslide1",
+            "text": "A few months back I've created a post here about [GitSave](https://github.com/TimWitzdam/GitSave). Back then it was just a tiny little project but it has grown a bit in popularity.\n\nWhen I first posted about GitSave, I had no idea what to expect. Would anyone care? Was this solving a real problem? Turns out, **you did care**. Which is quite cool.\n\nSince V1.0 quite some things have changed:\n\n* You can now back up private GitHub repos\n* Also there's no need anymore to hustle around with SMB mounting points\n* And some uninteresting but maybe useful stuff like logging\n\nI just wanted to thank all of you for being part of this amazing community!",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "_-T0R-_",
+                    "text": "This is actually very cool! Great job!",
+                    "replies": [
+                        {
+                            "author": "Nightslide1",
+                            "text": "Thanks!"
+                        }
+                    ]
+                },
+                {
+                    "author": "xxxsneekxxx",
+                    "text": "That's interesting, congrats. But is there an actual need for it, I'm curious?",
+                    "replies": [
+                        {
+                            "author": "Nightslide1",
+                            "text": "You/Some friend could fuck up the repo by force pushing or you just want to make sure a codebase is locally available even after it gets deleted.",
+                            "replies": [
+                                {
+                                    "author": "UnacceptableUse",
+                                    "text": "Would be great for stuff like emulators that might get taken off github"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "happzappy",
+                            "text": "I store a lot of my docs in git repos and something like this tool will be valuable for me"
+                        }
+                    ]
+                },
+                {
+                    "author": "_SeaCat_",
+                    "text": "Congrats! But how do you measure \"downloads\" and what are they for an open-source project hosted on github?",
+                    "replies": [
+                        {
+                            "author": "Nightslide1",
+                            "text": "Oh shit, totally forgot to mention that in the post. I meant downloads on Docker Hub haha."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "any good open source alternative to google alerts?",
+            "author": "roycorderov",
+            "text": "I have tried to use google alerts but I find them very bad, and I would like to find one that is free or better that is open source or self-hosted, do you know any?",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "Darkchamber292",
+                    "text": "https://github.com/dgtlmoon/changedetection.io"
+                },
+                {
+                    "author": "Mini_Package",
+                    "text": "You could host SearXNG, then use its API to search for what you want with a script and alert you that way as it includes Google searching.\n\nIt would be trivial to set up; the simplest way would be running a bash script that checks it and sends notifications to a service like Pushbullet or a self-hosted equivalent."
+                },
+                {
+                    "author": "AnomalyNexus",
+                    "text": "There is no direct equivalent because google alerts is basically google search under the hood. You need to actually search the web to see if a thing got a new mention on the web.\n\ni.e. not possible on a consumer scale"
+                },
+                {
+                    "author": "Intelligent-Let-4752",
+                    "text": "ntfy!?"
+                }
+            ]
+        },
+        {
+            "title": "Do you expose your dashboard to the web?",
+            "author": "orangeflyingmonkey_",
+            "text": "Seeing there are quite a few cool dashboards,  do you put them on the web so family and friends can access your services more easily? (if you're sharing Plex/arr) or is it more for personal server monitoring and management?",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "Reefer59",
+                    "text": "I only expose myself on the web.",
+                    "replies": [
+                        {
+                            "author": "Disastrous-Account10",
+                            "text": "Dad?"
+                        }
+                    ]
+                },
+                {
+                    "author": "Least-Flatworm7361",
+                    "text": "It's just for personal use for me.\nIf I have a service that needs to be accessible for family members I try to give it an easy to remember subdomain.",
+                    "replies": [
+                        {
+                            "author": "orangeflyingmonkey_",
+                            "text": "Gotcha!"
+                        }
+                    ]
+                },
+                {
+                    "author": "Intelligent_Rub_8437",
+                    "text": "Via tunnels. Not directly on internet.",
+                    "replies": [
+                        {
+                            "author": "orangeflyingmonkey_",
+                            "text": "ok yea I was thinking of doing it through Traefik reverse proxy and cloudflare domain",
+                            "replies": [
+                                {
+                                    "author": "rickyh7",
+                                    "text": "I run tailscale and only connect to my dashboard over that works great. Only a handful of services are truly exposed to the internet"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "ThatHappenedOneTime",
+                    "text": "I have nearly everything exposed behind Authelia.",
+                    "replies": [
+                        {
+                            "author": "orangeflyingmonkey_",
+                            "text": "Great! What dashboard do you use?",
+                            "replies": [
+                                {
+                                    "author": "purepersistence",
+                                    "text": "I have Homepage behind Authelia."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "NullVoidXNilMission",
+                    "text": "fuck no"
+                },
+                {
+                    "author": "hamzamix",
+                    "text": "No I use tailscale",
+                    "replies": [
+                        {
+                            "author": "orangeflyingmonkey_",
+                            "text": "got it!"
+                        }
+                    ]
+                },
+                {
+                    "author": "Stellar-Platypus",
+                    "text": "I expose everything to the internet via a cloudflared tunnel so that I can access it on the go.\nNot sure, what kind of protection it provides.",
+                    "replies": [
+                        {
+                            "author": "geektogether",
+                            "text": "Just means you have to configure cloudflare correctly and trust them. Personally, i will do more like adding crowdsec and openappsec."
+                        },
+                        {
+                            "author": "t1nk3rz",
+                            "text": "In the Cloudflare zero trust page under security you can enable mfa though one-time pin and whitelist only your email for your exposed apps though tunnels,plus is included for free with your cloudflare account"
+                        }
+                    ]
+                },
+                {
+                    "author": "Rilukian",
+                    "text": "No, because I don't want anybody BUT me to use my dashboard.\n\n\nIf I do need to access my dashboard from outside, I use tailscale.",
+                    "replies": [
+                        {
+                            "author": "orangeflyingmonkey_",
+                            "text": "Ofcourse. Got to have it behind a secure wall"
+                        }
+                    ]
+                },
+                {
+                    "author": "Angelic5403",
+                    "text": "The question is why? If the service is private why should you put on the most public place available on the earth?\n\nYou should put it under a private network like a VPN to prevent several of the risks you could encounter on internet",
+                    "replies": [
+                        {
+                            "author": "orangeflyingmonkey_",
+                            "text": "I want to expose Plex and Overseerr to the web. Homepage is really cool as it can also display recently added media, etc. Would be nice to have that available to people I am sharing with but concerned about security of plex tokens and API",
+                            "replies": [
+                                {
+                                    "author": "Angelic5403",
+                                    "text": "If your project requires plex is exposed on internet you have to do some task to guaranteed security.\n\nFirst of all you have to check if plex is designed to be exposed directly on internet, this can seem a trivial task but a lot of services made for self hosting are not designed under this assumption or maybe only partially.\nfor example some services provide a simple authentication (username and password) which could not ready for security authentication on internet. Indeed for some of them the developers recommended to disable internal auth and demanded it to a SSO service before move to production.\nYou should defend your service from brute force attacks, maybe with a fail2ban service.\nAlso ddos and enumerating attacks can bring to some stomachache, put the service behind a CDN proxy can help to reduce these issues.\nPay also attention at the reverse proxy you will choose; these  should implements https with certificate always updated and a suitable configuration (e.g. CSP and cors policies).\nAs last but not least the service must be maintained and updated: new CVE appear every day, a developer team have to fix ASAP and you have to update your deployment accordingly.\n\nAs you can see there are a lot of considerations to deal with.\nExpose a service online is not hard if you understand the implications but you have yo pay several attentions.\n\nPs. Sorry for my poor English, my peak is ask where the toilet is"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "willjasen",
+                    "text": "My uptime dashboard that shows if my other websites are up is available publicly via a Cloudflare tunnel - everything else is only available through Tailscale"
+                },
+                {
+                    "author": "whitefox250",
+                    "text": "I also use a CF tunnel. Anything I am hosting is SSL and has a login page. If it doesn't have a login I will VPN via Tailscale.\n\nSo far I've not had any security issues, and I only expose what's necessary. I use Homarr because it has a login page, I prefer Heimdall but it doesn't have a login."
+                },
+                {
+                    "author": "100lv",
+                    "text": "Yes. Directly, but first I have authentication  with Google ID (2FA) and then login to my services."
+                },
+                {
+                    "author": "GoldPhysical",
+                    "text": "Interesting to see these responses, especially all the only VPN / Tailscale responses.\n\nPersonally, I use a Reverse Proxy, Fail2Ban enabled with Authelia & 2FA on everything I can.\n\nThere are obviously some things I keep to a Tailscale only use case, but that\u2019s a limited scope.\n\nAlso looking at potentially implementing a ZTNA solution instead, but that\u2019ll come down the road."
+                },
+                {
+                    "author": "geeky217",
+                    "text": " Nope. Thats what a vpn is for."
+                },
+                {
+                    "author": "young_mummy",
+                    "text": "Kind of. I have my own full dashboard for me only, not exposed. \n\nThen I have a dashboard managed inside of Authentik which gives each individual user access to the services they have permissions to."
+                },
+                {
+                    "author": "Jandalslap-_-",
+                    "text": "Organizr is a good solution for front end media services it has built in authentication. But I run my other private (get)Homepage services behind a vpn. This is all using SWAG with subdomains."
+                },
+                {
+                    "author": "BfrogPrice2116",
+                    "text": "One for private network and one for public is a good approach.\n\nI use NPM for internal proxy for https://app.domaon.local and have a dashboard for all of my services, servers, tools, etc.\n\nExternally I would ensure you're using ssl/also and choose a dashboard with built-in Auth, or integration with Authelia or Authentik. Also enable 2fa/mfa always.\n\nI use Homarr for both."
+                },
+                {
+                    "author": "Bachihani",
+                    "text": "I use homarr currently exposed with plans to get authelia running soon"
+                },
+                {
+                    "author": "Psychostickusername",
+                    "text": "I have a domain name with subdomains first my key apps, all secured with passwords and through nginx so I wouldn't say they're exposed, but I and a few family can login to them, but only I have a login for the dashboard"
+                },
+                {
+                    "author": "CJKaufmanGFX",
+                    "text": "Homarr, accessed either with tailscale or NPM + CloudFlare"
+                },
+                {
+                    "author": "michelfrancisb",
+                    "text": "For things I want public (i.e. family & friends w/ auth) facing, I expose them via Cloudlfare tunnels.   \nFor things just for me (i.e. stat monitoring, admin panels, etc.), exposed over Tailscale."
+                },
+                {
+                    "author": "terAREya",
+                    "text": "I do but there is authentication"
+                },
+                {
+                    "author": "AnApexBread",
+                    "text": "Yes. I expose almost all my services. \n\nMy dashboard (Heimdal) included. The public view can see the services, and the private view can see the stats for the services."
+                },
+                {
+                    "author": "IC3P3",
+                    "text": "Yes, but I have one Homarr profile only for when I'm in my home network and one for external use"
+                },
+                {
+                    "author": "TheSzene",
+                    "text": "Some day I randomly found someones dashboard without any login requirements, so I did mess with the guys Adguard instance a few days. I gave him hints that he must secure it more in some text fields, he ignored it so I changed all his most accessed sites to another 18+ domain and only after that he understood that his setup was not a good idea. Since then his dashboard isn't so easily accessable anymore.\n\nTl;do \nI wouldn't make it public, just use a vpn client."
+                },
+                {
+                    "author": "Onoitsu2",
+                    "text": "Exposed, secured with Authentik as needed."
+                },
+                {
+                    "author": "jsiwks",
+                    "text": "If you want to expose through a tunneled reverse proxy with a VPS (like a self hosted Cloudflare Tunnel) you could try [Pangolin](https://github.com/fosrl/pangolin). The installation is very easy and it has built in authentication and share links!"
+                },
+                {
+                    "author": "SeriousPlankton2000",
+                    "text": "You should expose to the web whatever you want me to see and use."
+                },
+                {
+                    "author": "DazzlingTap2",
+                    "text": "I don't have a dashboard, I use discord or other messaging app and send links if others need access. I mostly use CLI or portainer if I want to access or manage my apps. But for exposing apps, \n\n\\- I expose Jellyfin, HASS, Navidrome, Filebrowser and other apps that has proper auth or support Authelia via reverse proxy\n\n\\- everything else I access with tailscale only, e.g. admin dashboard, arrs, unknown apps"
+                },
+                {
+                    "author": "lastditchefrt",
+                    "text": "Anything that can control infrastructure is VPN, never exposed. \u200b"
+                },
+                {
+                    "author": "paper42_",
+                    "text": "no, everyone and almost everything is behind a vpn"
+                },
+                {
+                    "author": "TheyCallMeDozer",
+                    "text": "Not dashboars per say but I do have a few apps, for example Plex by default using its own SSL server. Audiobookshelf, kavita, iminch and overseer. There are others I'm working on such as temporary file share and such. \n\nHave had no major issues when keeping the apps updated with watchtower, biggest thing has been bots doing port scans, but that's common"
+                },
+                {
+                    "author": "ishanjain28",
+                    "text": "My wan dashboard and caddy dashboards are public. Didn't build anything for jellyfin because I don't see the utility there. https://dash.ishanjain.me/public-dashboards/a9e953e60060400d9492581b454df732?orgId=1",
+                    "replies": [
+                        {
+                            "author": "wtfblubby",
+                            "text": "Aaaand it's down",
+                            "replies": [
+                                {
+                                    "author": "ishanjain28",
+                                    "text": "I had time range picker active. People might be making long rang queries and influxdb crashed"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "orangeflyingmonkey_",
+                            "text": "this looks great! thanks for the link"
+                        }
+                    ]
+                },
+                {
+                    "author": "viviolay",
+                    "text": "do you mean dashboard like in homepage made to list links to all your services or dashboard like my unraid dashboard for running one\u2019s server.\n\nSorta to A, never to B.",
+                    "replies": [
+                        {
+                            "author": "orangeflyingmonkey_",
+                            "text": "yea. Like setting up links for Plex and maybe a file server. Also displaying recently added media, etc. Basically they dont have to remember bunch of different domains and just goto this one page anf find everything. But the thing is that most of these widgets rely on plex tokens or api keys. Not sure how to secure those.",
+                            "replies": [
+                                {
+                                    "author": "tim36272",
+                                    "text": ">the thing is that most of these widgets rely on plex tokens or api keys. Not sure how to secure those.\n\nOn every widget I've ever seen (GetHomepage) the data is all retrieved server side and presented to the client. The key doesn't go to the client. So you shouldn't have to worry about that particular aspect of security unless there are widgets that work differently out there."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "carolina_balam",
+                    "text": "Cf tunnel",
+                    "replies": [
+                        {
+                            "author": "orangeflyingmonkey_",
+                            "text": "CF Tunnel doesn't allow plex streaming so can't use that. I have a CF domain and Traefil reverse proxy though.",
+                            "replies": [
+                                {
+                                    "author": "carolina_balam",
+                                    "text": "Oh, for plex either just hit the remote access option ON and it works, it'll open the port automatically, i guess upnp does that id you have it on in router or you can do manual port forwarding, vpn also works like wireguard or tailscale, reverse proxy works as well"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "ThePixlPirate",
+                    "text": "I use cloudflare tunnels because I like to access all of my services no matter where I\u2019m at",
+                    "replies": [
+                        {
+                            "author": "wuhanvirusparty",
+                            "text": "And the people using tailscale, they need some sort of client, right?",
+                            "replies": [
+                                {
+                                    "author": "ThePixlPirate",
+                                    "text": "Not sure, I don\u2019t use tailscale and just use cloudflare tunnels. \n\nFamily can go to unraid.myurl.com, radarr.myurl.com, etc but they don\u2019t have any passwords to anything aside from jellyseerr and jellyfin"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Open-Source Markdown Renderer for Obsidian Alternatives\u2014Anyone Interested?",
+            "author": "__DED_",
+            "text": "Hey everyone,\n\nI\u2019ve been using Obsidian for a while, and while it\u2019s great, there are some things I don\u2019t like but can\u2019t change through plugins. It got me thinking: wouldn\u2019t it be awesome to have a FOSS markdown renderer that mimics Obsidian\u2019s?\n\nThe idea is to create a standalone, open-source rendering engine that others can plug into their projects. It\u2019d be a solid foundation for anyone building an Obsidian alternative or a similar app, without having to start from scratch. I tried to make it but it turned out to be pretty challenging.\n\nDoes this sound interesting? Would anyone want to collaborate on something like this?",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "Wyvern-the-Dragon",
+                    "text": "I afraid obsi is too indispensable right now because of tons of community things: guides, plugins (sometimes gamechanging) , themes, etc"
+                },
+                {
+                    "author": "Savafan1",
+                    "text": "Have you looked at this list: [https://github.com/mundimark/awesome-markdown-editors?tab=readme-ov-file](https://github.com/mundimark/awesome-markdown-editors?tab=readme-ov-file)\n\n  \nThere are many other open-source editors available already that might fit your needs, or that could be a good starting place.",
+                    "replies": [
+                        {
+                            "author": "mark-haus",
+                            "text": "My kingdom for a JS based markdown editor that supports vim keys, where I can just embed it into a site. Or even just a javascript based vim input engine so I can integrate it with another JS editor."
+                        }
+                    ]
+                },
+                {
+                    "author": "brufdev",
+                    "text": "If you're just looking for an open-source renderer, check this out: [https://marked.js.org/](https://marked.js.org/)\n\nI'm building a markdown app for self-hosters using Marked and it's great!\n\n[https://github.com/brufdev/many-notes](https://github.com/brufdev/many-notes)"
+                },
+                {
+                    "author": "andre4949",
+                    "text": "There is logseq which has some functionality but I haven't tried it. It is an open source, pricacy based knowledge database almost like obsidian."
+                }
+            ]
+        },
+        {
+            "title": "App for monitoring prices and sales on webshops over time?",
+            "author": "soggynaan",
+            "text": "I was eyeing a product online for a month, and yesterday I coincidentally saw it was on sale but sold out. Plus, they had artificially inflated the original price prior to the sale to make it seem as if it's priced off more than it really was.\n\nAnything to monitor and alert me for such things?",
+            "subreddit": "selfhosted",
+            "comments": [
+                {
+                    "author": "Imafikus",
+                    "text": "You can give [notify-me.rs](http://notify-me.rs) a try if you want. We have a free plan. \n\nIf you do give it a try, let me know what you think, since I'm one of the founders. \n\nCheers!"
+                },
+                {
+                    "author": "shadoodled",
+                    "text": "changedetection.io"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,639 @@
+{
+    "items": [
+        {
+            "title": "Coming soon: 100% Local Video Understanding Engine (an open-source project that can classify, caption, transcribe, and understand any video on your local device)",
+            "author": "ParsaKhaz",
+            "text": "[External Link]",
+            "subreddit": "ollama",
+            "comments": [
+                {
+                    "author": "ParsaKhaz",
+                    "text": "This video understanding engine was in part inspired by\u00a0[r/cddelgado](https://www.reddit.com/r/cddelgado/)'s comment and leverages\u00a0[r/Moondream](https://www.reddit.com/r/Moondream/)\u00a02B, Whisper, CLIP, and LLama 3.1 to understand videos, 100% locally, on your own machine.\n\nThis matters because until now, video understanding has been locked behind expensive cloud APIs. Whether captioning content, transcribing speech, or analyzing what's happening in a video, developers and users had to send their private data to remote servers and pay premium prices.\n\nWhat makes this possible now is the combination of recent breakthroughs: Moondream for understanding images locally, CLIP for intelligently analyzing video frames, Whisper for converting speech to text, and Llama for connecting all the pieces. Your computer can now watch any video and explain what's happening, generate captions, transcribe conversations, and classify content - while keeping everything private and offline.\n\nI'm working on a full tutorial, setup guide, and refactoring the script now - who's interested?\n\nhttps://preview.redd.it/q3xgdw36bvee1.jpeg?width=833&format=pjpg&auto=webp&s=da530c00559f70c8f4f8a979c5895521f87c27a1",
+                    "replies": [
+                        {
+                            "author": "Chuka444",
+                            "text": "Me!"
+                        },
+                        {
+                            "author": "kidogodub",
+                            "text": "I'm interested! Thanks!",
+                            "replies": [
+                                {
+                                    "author": "ParsaKhaz",
+                                    "text": "I\u2019ll @ you when it\u2019s ready! What would you use it for?"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "AnonsAnonAnonagain",
+                            "text": "I\u2019m so stoked! This is amazing! And I can\u2019t wait to try it out!\nSeriously!"
+                        },
+                        {
+                            "author": "krigeta1",
+                            "text": "Me, sir!"
+                        },
+                        {
+                            "author": "_godisnowhere_",
+                            "text": "\u261d\ud83c\udffb"
+                        },
+                        {
+                            "author": "Wilsown",
+                            "text": "I'm in dire need for something like this! Cant wait!",
+                            "replies": [
+                                {
+                                    "author": "ParsaKhaz",
+                                    "text": "Nice what\u2019s your use case?"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "yaggii82",
+                            "text": "Very interested",
+                            "replies": [
+                                {
+                                    "author": "ParsaKhaz",
+                                    "text": "I\u2019ll keep you posted!"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "scythefalcon",
+                            "text": "I'm very interested. Please DM me"
+                        },
+                        {
+                            "author": "Technical-Airline522",
+                            "text": "I am"
+                        }
+                    ]
+                },
+                {
+                    "author": "ikmalsaid",
+                    "text": "Let's goooo",
+                    "replies": [
+                        {
+                            "author": "ParsaKhaz",
+                            "text": "haha thanks! crunching this out tn for yall"
+                        }
+                    ]
+                },
+                {
+                    "author": "iKy1e",
+                    "text": "Awesome, this is the sort of thing I've been wanting to for ages. So many models seem only focused on the visual side of things, and ignore the audio side of video understanding entirely.",
+                    "replies": [
+                        {
+                            "author": "ParsaKhaz",
+                            "text": "Yeah it\u2019s pretty neat being able to connect the audio (by transcribing it) back into the LLM and visual scene description from the VLM to get an understanding of the video in the form of the initial summary and descriptive captions at the top. All locally. We live in crazy times."
+                        }
+                    ]
+                },
+                {
+                    "author": "Ren_Zekta",
+                    "text": "PEAK!!!! I NEED THIS!!!",
+                    "replies": [
+                        {
+                            "author": "ParsaKhaz",
+                            "text": "Haha thanks, what would you use it for?",
+                            "replies": [
+                                {
+                                    "author": "Ren_Zekta",
+                                    "text": "I want to somehow make a program with multiple AIs to make \"living AI character\". This AI sees the the video with user and and hears the audio (or maybe there would be separate AI for that), then both move the data to LLM with a character card, it generates response in character, then ai teached on this character's voice reads the reply of LLM, then a program for vtube or something will use this audio as input to move the lips, probably some other AI will send some movements to it using LLM answer, and everything combined it's basically a living character.\n\nProbably something like that already exists though. I heard once someone made this kind of stuff in 2024."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "PricePerGig",
+                    "text": "need! amazing. would love to know the hardware requirements and what the hoped for/expected fps will be with NVIDIA's new 'little box' . Exciting stuff.",
+                    "replies": [
+                        {
+                            "author": "ParsaKhaz",
+                            "text": "Great question, so far I\u2019ve only tested on a 4090! The llama 3.1 8b is the main vram and resource hog, the other models are much smaller"
+                        }
+                    ]
+                },
+                {
+                    "author": "Banana-Slamma69",
+                    "text": "neat!",
+                    "replies": [
+                        {
+                            "author": "ParsaKhaz",
+                            "text": "thanks!"
+                        }
+                    ]
+                },
+                {
+                    "author": "Azuree1701",
+                    "text": "I\u2019m very interested in this. Might be a close to perfect fit for my video journals I want to do. I want  something to transcribe everything I say so it\u2019s searchable but also caytgorize and summarize everything. I look forward to more info. Thank you.",
+                    "replies": [
+                        {
+                            "author": "ParsaKhaz",
+                            "text": "An interesting use case for video understanding is definitely searchable videos. In a not so distant timeframe, this engine could eventually break videos into chapters like YouTube does. Nice thing is, if you want your video to be searchable across certain dimensions, you can feed the specific classifications that you want to be able to search across (\u201csunny?\u201d \u201cNumber of people?\u201d \u201cplaying sports?\u201d) etc and make a video taggable and searchable across an infinite number of classifiers, esp since the underlying VLM is generalized and performs pretty well with these type of tasks. It\u2019s pretty much infinite metadata at any time frame. \n\nWe live in an age where this is possible completely locally. It\u2019s pretty insane. I built a separate script just for classifying videos like I described. Still need to merge the two."
+                        }
+                    ]
+                },
+                {
+                    "author": "asankhs",
+                    "text": "Ah this is great, we actually built a much simpler version for video surveillance and safety - https://github.com/securade/sentinel",
+                    "replies": [
+                        {
+                            "author": "reality_comes",
+                            "text": "What model does this use?",
+                            "replies": [
+                                {
+                                    "author": "asankhs",
+                                    "text": "The application uses two main AI models:\n\n**Video Captioning**: Salesforce/blip-image-captioning-large\n\n**Visual Q&A**: dandelin/vilt-b32-finetuned-vqa\n\nBut we can switch to any other transformer based model easily. Chose these because they work even with CPU and on edge devices."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "gacekk8",
+                    "text": "I think there are ai options coming to Frigate NVR on the upcoming release as well.",
+                    "replies": [
+                        {
+                            "author": "ParsaKhaz",
+                            "text": "Interesting I\u2019ll check it out"
+                        }
+                    ]
+                },
+                {
+                    "author": "Fun_Librarian_7699",
+                    "text": "Will it be possible to run it live, so with a webcam?",
+                    "replies": [
+                        {
+                            "author": "ParsaKhaz",
+                            "text": "Not quite, we are a ways out from that being possible"
+                        }
+                    ]
+                },
+                {
+                    "author": "romayojr",
+                    "text": "count me in!",
+                    "replies": [
+                        {
+                            "author": "ParsaKhaz",
+                            "text": "Have a video you want me to run it on?"
+                        }
+                    ]
+                },
+                {
+                    "author": "VE3VVS",
+                    "text": "Count me as interested",
+                    "replies": [
+                        {
+                            "author": "ParsaKhaz",
+                            "text": "Have a video I can run it on for you?"
+                        }
+                    ]
+                },
+                {
+                    "author": "L3_Fr3nch",
+                    "text": "RemindMe! 2 weeks",
+                    "replies": [
+                        {
+                            "author": "RemindMeBot",
+                            "text": "I will be messaging you in 14 days on [**2025-02-07 06:34:49 UTC**](http://www.wolframalpha.com/input/?i=2025-02-07%2006:34:49%20UTC%20To%20Local%20Time) to remind you of [**this link**](https://www.reddit.com/r/ollama/comments/1i8n38z/coming_soon_100_local_video_understanding_engine/m8vcnx7/?context=3)\n\n[**6 OTHERS CLICKED THIS LINK**](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2Follama%2Fcomments%2F1i8n38z%2Fcoming_soon_100_local_video_understanding_engine%2Fm8vcnx7%2F%5D%0A%0ARemindMe%21%202025-02-07%2006%3A34%3A49%20UTC) to send a PM to also be reminded and to reduce spam.\n\n^(Parent commenter can ) [^(delete this message to hide from others.)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Delete%20Comment&message=Delete%21%201i8n38z)\n\n*****\n\n|[^(Info)](https://www.reddit.com/r/RemindMeBot/comments/e1bko7/remindmebot_info_v21/)|[^(Custom)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here)|[^(Your Reminders)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=List%20Of%20Reminders&message=MyReminders%21)|[^(Feedback)](https://www.reddit.com/message/compose/?to=Watchful1&subject=RemindMeBot%20Feedback)|\n|-|-|-|-|"
+                        }
+                    ]
+                },
+                {
+                    "author": "nerd_ass_",
+                    "text": "This seems good dude highly interested pls anyone hit me up if he releases it"
+                },
+                {
+                    "author": "Smokeey1",
+                    "text": "RemindMe! 2 weeks"
+                },
+                {
+                    "author": "JerryBond106",
+                    "text": "RemindMe! 2 weeks"
+                },
+                {
+                    "author": "Slightly_Zen",
+                    "text": "RemindMe! 2 weeks"
+                },
+                {
+                    "author": "Wilsown",
+                    "text": "RemindMe! 2 weeks"
+                },
+                {
+                    "author": "Rajendrasinh_09",
+                    "text": "RemindMe! In 15 days"
+                },
+                {
+                    "author": "Journeyj012",
+                    "text": "How much vram?",
+                    "replies": [
+                        {
+                            "author": "ParsaKhaz",
+                            "text": "16gb, due to llama 3.1 8b",
+                            "replies": [
+                                {
+                                    "author": "Journeyj012",
+                                    "text": "Is that Q4, Q8 or FP16?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "paul_tu",
+                    "text": "RemindMe! 3 weeks"
+                },
+                {
+                    "author": "bacocololo",
+                    "text": "Me too :)"
+                },
+                {
+                    "author": "krigeta1",
+                    "text": "Excited to watch some series with it! \ud83e\udd29"
+                },
+                {
+                    "author": "Bjeaurn",
+                    "text": "Me me me!"
+                }
+            ]
+        },
+        {
+            "title": "A list of all the top Open Source Chat UI for ollama/any LLM in general. (community edition)",
+            "author": "VisibleLawfulness246",
+            "text": "Here's my list right now\n\n* Open Web UI\n* LibreChat\n* anythingLLM\n* GPT4all\n* oobabooga\n* verba\n* dify\n* SillyTavern\n* Danswer\n* Lobe Ui\n* hugging face chat-Ui\n* kobold Cpp/ for from llama cpp\n* private gpt\n* serge chat\n* JanHQ\n\nWhat am I missing from this list?\n\nadding this image from my research",
+            "subreddit": "ollama",
+            "comments": [
+                {
+                    "author": "Silver_Jaguar_24",
+                    "text": "I use Msty. It's great.",
+                    "replies": [
+                        {
+                            "author": "VisibleLawfulness246",
+                            "text": "can you share the github link?",
+                            "replies": [
+                                {
+                                    "author": "overand",
+                                    "text": "It's closed source, so, likely not something I'm going to use."
+                                },
+                                {
+                                    "author": "Comfortable_Ad_8117",
+                                    "text": "It a downloadable app - https://msty.app/"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Arsuin",
+                    "text": "best mobile app \nhttps://github.com/ibrahimcetin/reins\n/ https://apps.apple.com/tr/app/reins-chat-for-ollama/id6739738501",
+                    "replies": [
+                        {
+                            "author": "Longjumping_Ad_6586",
+                            "text": "you will get enough information in the comments about the app guys\u00a0[https://youtube.com/shorts/O1hGBDF8YwQ?feature=share](https://youtube.com/shorts/O1hGBDF8YwQ?feature=share)",
+                            "replies": [
+                                {
+                                    "author": "Longjumping_Ad_6586",
+                                    "text": "https://preview.redd.it/hsetpi8oyyee1.png?width=1290&format=png&auto=webp&s=59d45a407452bb1131d5bae06124c823647927aa"
+                                },
+                                {
+                                    "author": "Longjumping_Ad_6586",
+                                    "text": "https://preview.redd.it/wd2jextqyyee1.png?width=1290&format=png&auto=webp&s=fa5253d4b068831970a0bf4dc0401c0aeb005fb0"
+                                },
+                                {
+                                    "author": "Longjumping_Ad_6586",
+                                    "text": "https://preview.redd.it/eb7kjoftyyee1.png?width=1290&format=png&auto=webp&s=c539351f23dd7b8347dc6a0e0ba90bff93c6ab4c"
+                                },
+                                {
+                                    "author": "Longjumping_Ad_6586",
+                                    "text": "https://preview.redd.it/qijjoijxyyee1.png?width=1290&format=png&auto=webp&s=8f62571826bc40119edac1c420f03586b81f97ae"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "admajic",
+                    "text": "Lmstudio?\nI've been using it as a front end for ollama",
+                    "replies": [
+                        {
+                            "author": "TheInfiniteUniverse_",
+                            "text": "Isn't it closed source?"
+                        }
+                    ]
+                },
+                {
+                    "author": "LordGosub",
+                    "text": "ollamac here"
+                },
+                {
+                    "author": "DiscoMilk",
+                    "text": "I use Alpaca on Linux https://github.com/Jeffser/Alpaca"
+                },
+                {
+                    "author": "BidWestern1056",
+                    "text": "shameless self plug for npcsh\u00a0https://github.com/cagostino/npcsh"
+                },
+                {
+                    "author": "IvanIsak",
+                    "text": "Cool! Thx!",
+                    "replies": [
+                        {
+                            "author": "VisibleLawfulness246",
+                            "text": "whats your use case? what tool do you use?",
+                            "replies": [
+                                {
+                                    "author": "IvanIsak",
+                                    "text": "I tried to use Openweb ui, but it was very hard, now I trying LibreChat"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "afonsolage",
+                    "text": "Is there any Agentic AI work flow builder, which is truly open source? (not free tier or open source with bs license)",
+                    "replies": [
+                        {
+                            "author": "BidWestern1056",
+                            "text": "yo\u00a0https://github.com/cagostino/npcsh",
+                            "replies": [
+                                {
+                                    "author": "[deleted]",
+                                    "text": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "_sagar_",
+                    "text": "Which one is easy to setup?",
+                    "replies": [
+                        {
+                            "author": "VisibleLawfulness246",
+                            "text": "Jan HQ and anything LLM are very easy to setup for personal use. both of them have a desktop app that takes away all the tech dependencies stuff"
+                        },
+                        {
+                            "author": "Silver_Jaguar_24",
+                            "text": "[https://msty.app/](https://msty.app/) in my experience is easy."
+                        }
+                    ]
+                },
+                {
+                    "author": "JerryBond106",
+                    "text": "I'm on LM studio, looking for a change. Thx! Do you have a list of these for implementing whisper (for transcription)? That'd be awesome ngl"
+                },
+                {
+                    "author": "Substantial-Comb-148",
+                    "text": "GPT4ALL for the win! on a Linux setup works good even on low powered laptops with only 16GB of memory, even running it on 8GB memory worked! Forgot about JanAI another good one. I haven't found one that's Multi-modal for generating pictures, except for running StableDiffusion locally."
+                },
+                {
+                    "author": "Marans",
+                    "text": "AnythingLLM. I'm using that at work, since it's has a rag too. Can use any API or local Ollama model and such, support is huge. Available as docker and windows installer (which comes with Ollama)"
+                },
+                {
+                    "author": "Prudent_Move_3420",
+                    "text": "Alpaca"
+                },
+                {
+                    "author": "sugarfreecaffeine",
+                    "text": "Chatbox\n\nhttps://github.com/Bin-Huang/chatbox"
+                },
+                {
+                    "author": "AlgorithmicKing",
+                    "text": "You asked whether you're missing something:  \nCherry Studio ([CherryHQ/cherry-studio: \ud83c\udf52 Cherry Studio is a desktop client that supports for multiple LLM providers](https://github.com/CherryHQ/cherry-studio))\n\nMtsy ([Msty - Using AI Models made Simple and Easy](https://msty.app/)) Not open source like LM studio",
+                    "replies": [
+                        {
+                            "author": "VisibleLawfulness246",
+                            "text": "thanks for the recommendation. cherry-studio looks nice. mtsy I'm not a big fan of closed source gateway"
+                        }
+                    ]
+                },
+                {
+                    "author": "hawkedmd",
+                    "text": "[Big AGI](https://github.com/enricoros/big-AGI)"
+                }
+            ]
+        },
+        {
+            "title": "How I fixed R1 from being a whiney bitch",
+            "author": "redonculous",
+            "text": "Do you find R1's thoughts are whiney and lacking self confidence?  \nDo you find it wasting tokens second guessing itself?  \n  \n  \nSimply add this to the end of your prompt for much more concise and confident output.\n\n    You are very knowledgeable. An expert. Think and respond with confidence.  \n\nIn my testing it really works! I'd be happy to hear how it responds for you guys too.",
+            "subreddit": "ollama",
+            "comments": [
+                {
+                    "author": "Silver_Jaguar_24",
+                    "text": "So you had to stroke it's ego and give it some encouragement to get it to work properly? lmao",
+                    "replies": [
+                        {
+                            "author": "praqueviver",
+                            "text": "Just like people!",
+                            "replies": [
+                                {
+                                    "author": "DifficultyFit1895",
+                                    "text": "I\u2019m good enough, I\u2019m smart enough, and doggone it, people like me!\n\n![gif](giphy|3o7TKnKXMdf5qNtVLi)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "getmevodka",
+                    "text": "classic impostor syndrome lol"
+                },
+                {
+                    "author": "ForceBru",
+                    "text": "- R1 having social anxiety here: https://www.reddit.com/r/LocalLLaMA/s/jvro8YSZ0F\n- Dissociative personality disorder here: https://www.reddit.com/r/LocalLLaMA/s/094pzSVA7t\n\nI think some psychologists could do interesting research into social anxiety and \u201cbeing a whiny bitch\u201d of LLMs",
+                    "replies": [
+                        {
+                            "author": "edwios",
+                            "text": "That is a R1-distilled finetune of the Qwen (or LLaMA for some) model. The true R1 architecture is the 670b one which makes all the differences."
+                        }
+                    ]
+                },
+                {
+                    "author": "urabewe",
+                    "text": "There were times when it would just get into loops of second guessing itself and going back and forth between two solutions for so long I finally just interrupted it. I'll have to try this out.",
+                    "replies": [
+                        {
+                            "author": "redonculous",
+                            "text": "Please update us if it worked for you too \ud83d\ude0a"
+                        }
+                    ]
+                },
+                {
+                    "author": "insidesliderspin",
+                    "text": "It actually passed the strawberry test this time instead of languishing in a loop of uncertainty and no output.",
+                    "replies": [
+                        {
+                            "author": "redonculous",
+                            "text": "Pleased it worked for you too!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "I added ollama support for an open-source operator agent",
+            "author": "Swimming_Driver4974",
+            "text": "I created a similar Operator Agent framework like OpenAI's one, and made it open-source. Just added support for Ollama so it can be run completely locally using text and vision models. It's not perfect, but has potential: [https://github.com/GPT-Protocol/007-agent](https://github.com/GPT-Protocol/007-agent)",
+            "subreddit": "ollama",
+            "comments": [
+                {
+                    "author": "MajinAnix",
+                    "text": "Which local vision model should I use?",
+                    "replies": [
+                        {
+                            "author": "Swimming_Driver4974",
+                            "text": "Llava"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "DataBridge: Local, Modular, fully open source RAG System (Now easier than ever to get started!)",
+            "author": "yes-no-maybe_idk",
+            "text": "Hey r/ollama!\n\n  \nI'm back with an exciting update for\u00a0**DataBridge**, the open-source, fully local, multimodal RAG system you've been supporting so generously. Thanks to your amazing feedback, we've made significant improvements, especially around\u00a0**Docker support**\u00a0to make getting started easier than ever!\n\n**What\u2019s New?**  \n\ud83d\udce6\u00a0**Docker Support**\u00a0\u2013 The most requested feature is here! Now, you can spin up DataBridge effortlessly.  \n\u26a1\u00a0**CAG (Cache Augmented Generation)**\u00a0\u2013 Coming very, very soon to boost efficiency (you can explore the CAG branch to try it out today).  \n\ud83c\udf10\u00a0**Graph RAG**\u00a0\u2013 On the way, stay tuned for exciting updates!  \n\ud83d\udcca\u00a0**Evaluations and Comparisons**\u00a0\u2013 We\u2019re working on adding benchmarking to help you compare various setups.\n\n**New Video:**  \nI\u2019ve put together a detailed walkthrough that covers:\n\n* **Installation & Setup**\u00a0\u2013 Whether you're using Docker or manual installation.\n* **Basic Ingestion & Querying**\u00a0\u2013 Learn how to quickly bring your data into DataBridge.\n* **Shell & UI Demo**\u00a0\u2013 See DataBridge in action with both CLI and UI components.\n* **Component Swapping**\u00a0\u2013 Easily switch completion models (e.g., from LLaMA to OpenAI).\n\n\ud83d\udc49\u00a0[**Watch the video here**](https://www.youtube.com/watch?v=__Kpt7tVQ6k&t=7s)\u00a0\ud83d\udc48\n\n**Looking for:**  \n\\- Your thoughts and feedback  \n\\- Feature requests and use cases  \n\\- Bug reports  \n\\- Contributors to join the journey\n\nA huge thanks to the community for your continued support and enthusiasm. Your feedback has been invaluable in shaping DataBridge.\n\n**Links:**  \n\ud83d\udd17 GitHub:\u00a0[https://github.com/databridge-org/databridge-core](https://github.com/databridge-org/databridge-core)  \n\ud83d\udcd6 Docs:\u00a0[https://databridge.gitbook.io/databridge-docs](https://databridge.gitbook.io/databridge-docs)\n\n  \nPS: I used DataBridge and gpt4 to help me structure this post.",
+            "subreddit": "ollama",
+            "comments": []
+        },
+        {
+            "title": "How to run models that are not on ollama website? Especially uncensored ones",
+            "author": "discoveringnature12",
+            "text": "trying to figure out how to run models not listed https://ollama.com/library. Want to run uncensored models.",
+            "subreddit": "ollama",
+            "comments": [
+                {
+                    "author": "waywardspooky",
+                    "text": "ollama run [hf.co/bartowski/Darkest-muse-v1-GGUF:Q6\\_K](http://hf.co/bartowski/Darkest-muse-v1-GGUF:Q6_K)\n\n  \nyou pull directly from hugging face any model and quant using that method. otherwise you need to use the method outlined here\n\n[https://github.com/ollama/ollama/blob/main/docs/import.md](https://github.com/ollama/ollama/blob/main/docs/import.md)"
+                },
+                {
+                    "author": "You_Wen_AzzHu",
+                    "text": "Use openwebui to import the gguf directly. It just works."
+                },
+                {
+                    "author": "M3GaPrincess",
+                    "text": "One easy way is to search models on huggingface. They have a button now \"use this model\", which often has the \"ollama\" option, and will give you the command to pull the model."
+                },
+                {
+                    "author": "microview",
+                    "text": "You can use tools like llama.cpp to convert GGUF models to work with Ollama.\n\n    git clone https://github.com/ggerganov/llama.cpp.git\n    cd llama.cpp\n    make\n    python3 convert.py --config config.json\n    ollama run <model-name>"
+                },
+                {
+                    "author": "redonculous",
+                    "text": "Install page assist. Click settings > manage models > custom models > add model"
+                },
+                {
+                    "author": "Lines25",
+                    "text": "Try using ModelFiles (it only supports GGUF btw), other interface for models and/or cloud variants. One of that should work perfectly"
+                }
+            ]
+        },
+        {
+            "title": "Llama 3.1 405B + 8x AMD Instinct Mi60 AI Server - Shockingly Good!",
+            "author": "Any_Praline_8178",
+            "text": "[External Link]",
+            "subreddit": "ollama",
+            "comments": [
+                {
+                    "author": "bhagatbhai",
+                    "text": "Very nice. I have 2 mi100. I run ollama but even with llama 70b it struggles to go beyond 8 TPS. I guess I will have to try vllm.",
+                    "replies": [
+                        {
+                            "author": "Any_Praline_8178",
+                            "text": "Yes you do, and thank you for stats on the M100s. I will be interested to see what they can do in vLLM. We may discover the reason that AMD stopped making the Mi60s."
+                        }
+                    ]
+                },
+                {
+                    "author": "YearnMar10",
+                    "text": "Nice! What happens if you use near full context?"
+                }
+            ]
+        },
+        {
+            "title": "AI-Powered Bot for Automated Job Applications on LinkedIn",
+            "author": "Own-Perception-1574",
+            "text": "\nI want to develop an AI-powered bot capable of automating the job application process on LinkedIn. This bot would analyze job descriptions (JDs), customize the CV or resume based on the requirements, and apply to relevant positions automatically. Does a similar AI solution already exist in the market?\n\n",
+            "subreddit": "ollama",
+            "comments": [
+                {
+                    "author": "legendov",
+                    "text": "Doesnt matter, do your thing"
+                },
+                {
+                    "author": "Dixie9311",
+                    "text": "Probably does, probably doesn't. If you want to do this as a learning project, it doesn't matter if it exists, you can try your hands on making one yourself."
+                },
+                {
+                    "author": "CodeFarmer",
+                    "text": "I know at least two people doing this privately for their own job searches - the recruiters are certainly deploying AI at the other end, so making a bot to talk to the bots is a reasonable idea.\n\nGood luck with it, it's an interesting project."
+                },
+                {
+                    "author": "autogenerated2005",
+                    "text": "ScreenPipe actually offers a similar automation tool you can check out. It\u2019s designed to streamline the job application process by analyzing job descriptions and tailoring resumes to match the job requirements."
+                }
+            ]
+        },
+        {
+            "title": "I want to try to replicate the RAG functionality similar to LM Studio using open source tools. Any ideas on where to start?",
+            "author": "ikmalsaid",
+            "text": "",
+            "subreddit": "ollama",
+            "comments": [
+                {
+                    "author": "pokemonplayer2001",
+                    "text": "Start by giving a lot more detail of your goal."
+                },
+                {
+                    "author": "YearnMar10",
+                    "text": "I don\u2019t know much about it, but afaik you need something line ollama, probably best with an LLM that supports tool use, with the tool making use of a vector database.\nI could be also totally wrong here, maybe there\u2019s a simpler way. But I hope it helps you to know how to get started with researching."
+                },
+                {
+                    "author": "relay2005",
+                    "text": "Learn langgraph and langchain"
+                },
+                {
+                    "author": "PeteInBrissie",
+                    "text": "I've done this... throw a few bucks bolt.new's way and ask it to write it for you on the platform of your choice. You don't need open source, it's really simple stuff just done well. Tell Bolt to point it at your Ollama if you want privacy."
+                }
+            ]
+        },
+        {
+            "title": "LLM website that lets you use any model and pay as you go. I can\u2019t remember what it\u2019s called.",
+            "author": "opelly",
+            "text": "The title says it all. I came across a website a while ago that has a ChatGPT like interface, but lets you use all kinds of different models, and pay by the token. I specifically remember a leaderboard that ranks the models by popularity and even showed the number of tokens that each model had generated among all users on the website. I can\u2019t find it for the life of me. Please let me know what site this is if it rings a bell. Thank you!!",
+            "subreddit": "ollama",
+            "comments": [
+                {
+                    "author": "imkebe",
+                    "text": "openrouter?",
+                    "replies": [
+                        {
+                            "author": "opelly",
+                            "text": "THANK YOU!! That\u2019s exactly what it was!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "List of top Open Source Chat UI for ollama/any LLM in general. (community edition)",
+            "author": "VisibleLawfulness246",
+            "text": "Hey community, I am trying to compile a list of all the open-source ChatGPT UI. Here is the list from my research. Let's make this thread helpful. tell me- what do you use? and what are the pros and cons along with alternatives your tool of choice.\n\npersonally I'm a big fan of Open WebUI but I'm looking to try out what all is new in the community,\n\n* Open WebUI\n* LibreChat\n* anythingLLM\n* GPT4all\n* oobabooga\n* verba\n* dify\n* SillyTavern\n* Danswer\n* Lobe Ui\n* hugging face chat-Ui\n* kobold Cpp/ for from llama cpp\n* private gpt\n* serge chat\n* JanHQ\n\nWhat am I missing from this list? ",
+            "subreddit": "ollama",
+            "comments": [
+                {
+                    "author": "FudgePrimary4172",
+                    "text": "ill stick to openwebui. Its state of the art",
+                    "replies": [
+                        {
+                            "author": "VisibleLawfulness246",
+                            "text": "yes it's the best. do you use it in your company or personal use?"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

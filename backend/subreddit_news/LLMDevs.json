@@ -1,0 +1,58 @@
+{
+    "items": [
+        {
+            "title": "Top 5 Open Source Libraries to structure LLM Outputs",
+            "author": "Sam_Tech1",
+            "text": "Curated this list of Top 5 Open Source libraries to make LLM Outputs more reliable and structured making them more production ready: \n\n* **Instructor** simplifies the process of guiding LLMs to generate structured outputs with built-in validation, making it great for straightforward use cases.\n* **Outlines** excels at creating reusable workflows and leveraging advanced prompting for consistent, structured outputs.\n* **Marvin** provides robust schema validation using Pydantic, ensuring data reliability, but it relies on clean inputs from the LLM.\n* **Guidance** offers advanced templating and workflow orchestration, making it ideal for complex tasks requiring high precision.\n* **Fructose** is perfect for seamless data extraction and transformation, particularly in API responses and data pipelines.\n\n  \nDive deep into the code examples to understand what suits best for your organisation: [https://athina-ai-hub.ghost.io/ghost/#/editor/post/678ff75919ad000001a692d3](https://athina-ai-hub.ghost.io/ghost/#/editor/post/678ff75919ad000001a692d3)",
+            "subreddit": "LLMDevs",
+            "comments": [
+                {
+                    "author": "antares07923",
+                    "text": "So, I'm confused about the use of these, in my experience with any of the more recent models, just asking them to return json and giving the structure of the json or xml tags has been enough.  But I haven't run any of this at scale.  What is the purpose of these libraries?",
+                    "replies": [
+                        {
+                            "author": "Sam_Tech1",
+                            "text": "These libraries are mostly used when we have a production use case specially in case of consumer facing application where precision is important and chances of error are null.",
+                            "replies": [
+                                {
+                                    "author": "antares07923",
+                                    "text": "So, I think if you ask the llm for json, the check after to see if the output follows a json template is pretty simple.  If you're just using it for that, pulling in other libraries is going to be overkill.  \n\nSo I guess my question is:  Are you using these libraries for anything other than the validation of the json that comes out of an inference?\n\nAlso, just for your knowledge, chances of an error being null, and chances of an error being 0 are different.  null != 0 or None"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "zingyandnuts",
+                    "text": "BAML is also popular [https://docs.boundaryml.com/guide/introduction/what-is-baml](https://docs.boundaryml.com/guide/introduction/what-is-baml)"
+                },
+                {
+                    "author": "TheProdigalSon26",
+                    "text": "You should check out adaline.ai; it is designed to help you iterate, evaluate, develop, and monitor your prompt. Once your prompt is properly structured outputs will also be structured.",
+                    "replies": [
+                        {
+                            "author": "Sam_Tech1",
+                            "text": "Sure will check it out"
+                        }
+                    ]
+                },
+                {
+                    "author": "naked_number_one",
+                    "text": "I usually add instructions to my prompts requiring output in JSON format that can be validated against a given JSON Schema. Then I validate the output using that same schema. It works like a charm.\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b"
+                }
+            ]
+        },
+        {
+            "title": "List of top Open Source Chat UI for ollama/any LLM in general. (community edition)",
+            "author": "VisibleLawfulness246",
+            "text": "Hey community, I am trying to compile a list of all the open-source ChatGPT UI. Here is the list from my research. Let's make this thread helpful. tell me- what do you use? and what are the pros and cons along with alternatives to your tool of choice?\n\npersonally I'm a big fan of Open WebUI but I'm looking to try out what all is new in the community,\n\n* Open WebUI\n* LibreChat\n* anythingLLM\n* GPT4all\n* oobabooga\n* verba\n* dify\n* SillyTavern\n* Danswer\n* Lobe Ui\n* hugging face chat-Ui\n* kobold Cpp/ for from llama cpp\n* private gpt\n* serge chat\n* JanHQ\n\nWhat am I missing from this list?",
+            "subreddit": "LLMDevs",
+            "comments": [
+                {
+                    "author": "SentientBaba420",
+                    "text": "Yup, been using Open WebUI myself for a while now! One thing that drew me to it was its ease of use and customizability - super helpful for experimenting with different LLM integrations. That being said, I've also heard great things about LibreChat and anythingLLM from other community members."
+                }
+            ]
+        }
+    ]
+}

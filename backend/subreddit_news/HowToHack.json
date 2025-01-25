@@ -1,0 +1,36 @@
+{
+    "items": [
+        {
+            "title": "Study suggestion request (Reverse engineering)",
+            "author": "Electronic_Sort_2918",
+            "text": "Hello everybody. I know that reverse engineering is hard and all but i am really having fun with crackmes, I may say that is better than anything else i've tried. With the experience i am building and learning a lot about binaries and how they are made in the inside, I do know that there is an ELF file that is responsible for a series of things and I do know that there a so called global offset table and so on. The problem that im noticing is that I do have all this notions but they lack in terms of organization. I know the right things but they are scattered in my head. I do want to tide up thise knowledge and making sense out of it. \n\n  \nNow it comes to you guys. Do you have a nice study suggestion regarding binaries and how they are made? Expose the topics in order of study. Thank you for everybody that wants to help me, as usual. I love you",
+            "subreddit": "HowToHack",
+            "comments": [
+                {
+                    "author": "FSCK_Fascists",
+                    "text": "step 1- learn to program. C and assembly are best in this regard.\n\nstep 2- use a disassembler and try to reconstruct the code.",
+                    "replies": [
+                        {
+                            "author": "Electronic_Sort_2918",
+                            "text": "I think that I'm average in C programming & asm. I did them in college and I have an acceptable overall understanding about those. I was looking more about technical stuff like ELF / GOT / PLT since is essential to exploits"
+                        }
+                    ]
+                },
+                {
+                    "author": "OneDrunkAndroid",
+                    "text": "Learn C and write an ELF file parser. Have you tried looking at an ELF file specification?\n\n\nhttps://en.m.wikipedia.org/wiki/Executable_and_Linkable_Format",
+                    "replies": [
+                        {
+                            "author": "Electronic_Sort_2918",
+                            "text": "Actually I was thinking about making one of those as a starting point. Your comment proved my point. Thank you"
+                        }
+                    ]
+                },
+                {
+                    "author": "Creative-String-5624",
+                    "text": "I need suggestions too"
+                }
+            ]
+        }
+    ]
+}

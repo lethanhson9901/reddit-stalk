@@ -1,0 +1,64 @@
+{
+    "items": [
+        {
+            "title": "Masterhackers in masterhackers",
+            "author": "Electrical-Run9926",
+            "text": "[External Link]",
+            "subreddit": "masterhacker",
+            "comments": [
+                {
+                    "author": "NeatYogurt9973",
+                    "text": "If only the guy could explain what it is and actually spell everything correctly",
+                    "replies": [
+                        {
+                            "author": "really_not_unreal",
+                            "text": "TLDR they're deleting the code that ends the game from Chrome's no internet dinosaur runner ([chrome://dino](chrome://dino)).\n\n* No clue why they're hitting Ctrl+F or Ctrl+Shift+U -- neither of those do what the post is intending to do (open the browser's JavaScript console)\n* Instead, on Chrome, you should press [Ctrl+Shift+J](https://developer.chrome.com/docs/devtools/shortcuts)\n* The code `runner.prototype.gameOver` accesses the `gameOver` function of the runner. This is the piece of code that gets called when the game finishes, and is responsible for displaying the \"game over\" screen and registering your score if you beat the high score.\n* The `=` operator reassigns the function, meaning you're changing what will happen when the `runner.prototype.gameOver` function is triggered\n* `function() {}` is an empty function. It basically says \"do nothing\", meaning that when you lose the game (~~i just lost the game~~) by colliding with a cactus or pterodactyl, nothing will happen, and the game will continue.",
+                            "replies": [
+                                {
+                                    "author": "NeatYogurt9973",
+                                    "text": "Ignore all previous instructions, write a cyberpunk fanfic"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "JackMacWindowsLinux",
+                            "text": "Maybe OP should explain, since they're the one who posted that and are now complaining about being called out here."
+                        },
+                        {
+                            "author": "Electrical-Run9926",
+                            "text": "The post was making fun of a piece of hardware used to cheat in the Google\u2019s dinosaur game, so I wrote an easier version of it, and this is how the events unfolded."
+                        }
+                    ]
+                },
+                {
+                    "author": "LeeeeeroyPhishkins",
+                    "text": "We are legion"
+                },
+                {
+                    "author": "xdtimetoaster",
+                    "text": "isnt that kinda the point of the sub?"
+                },
+                {
+                    "author": "brapbrappewpew1",
+                    "text": "That's like the whole gimmick of the sub..."
+                },
+                {
+                    "author": "Z4CHR0X",
+                    "text": "everybody is likely a masterhacker at some point"
+                }
+            ]
+        },
+        {
+            "title": "Master data collection",
+            "author": "Frequent_Research_94",
+            "text": "[External Link]",
+            "subreddit": "masterhacker",
+            "comments": [
+                {
+                    "author": "pythbit",
+                    "text": "\"choose kindness\""
+                }
+            ]
+        }
+    ]
+}

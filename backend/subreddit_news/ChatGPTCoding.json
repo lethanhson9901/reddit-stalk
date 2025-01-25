@@ -1,0 +1,999 @@
+{
+    "items": [
+        {
+            "title": "I am among the first people to gain access to OpenAI\u2019s \u201cOperator\u201d Agent. Here are my thoughts.",
+            "author": "No-Definition-2886",
+            "text": "[External Link]",
+            "subreddit": "ChatGPTCoding",
+            "comments": [
+                {
+                    "author": "SirGolan",
+                    "text": "Your task definitely hits on a couple of current weakness of agents like this: loops and long horizon task context. What it would have needed to do is loop 50 times on the task \"look up influencer YouTube, find on LinkedIn, write to specific spreadsheet, etc\" but also it would have to keep the context of which ones it had already looked at so as not to duplicate any. Or it could make that list first and loop through it to find info on each one. I don't know of any agentic systems that support this, though it's not super hard to implement. Probably the hard part is getting the agent to know when to do it. Similarly, this particular agent probably needs some internal scratch pad to write down the info it finds before transferring it to a spreadsheet. If they implemented it how I imagine they did, it probably loses all that context the second it navigates away from the page that shows it. (Note I don't have access to it so I'm assuming here)",
+                    "replies": [
+                        {
+                            "author": "techdaddykraken",
+                            "text": "I think the larger problem that we\u2019re uncovering and now needs to be addressed is runtime memory for agents. \n\nIt seems highly inefficient to have these agents writing code\u2026from their own knowledge composed of vector embedding layers\u2026.created from code. \n\nLike when GPT-4o writes Python code to format a spreadsheet. That is GPT-4o generating two distinct outputs. A Python program, and then running it and responding with the results of that program.\n\nWe need a halfway-layer between full fledged local disk memory, and local storage in a programming language/scratchpad. Some form of memory that can be attached to the embedding layer directly, is semi-permanent and can be reset easily, but is also able to hold large enough amounts of storage to make it useful, and doesn\u2019t require separate programming to initiate or function. A composable RAM if you will, for the agent itself that it can modulate. \n\nWe\u2019ve given the agent a brain in the form of its trained knowledge, and we\u2019ve given it primitive eyes, and taught it to communicate, and we\u2019ve given it long term memory, but it still has no short-term memory. \n\nAnd we can\u2019t just tell it to make a Python program every time it needs to do something. \n\nImagine if every time you had to fold laundry or brush your teeth you had to write out the instructions beforehand on a sticky note and stick it to the wall beside you and stare at it line by line while you did it. That is essentially what we are having these AI agents do. We have to figure out a way to get them to store instructions for common tasks in a way that is connected to their overall knowledge, but doesn\u2019t taint their training data, and is modular/composable, without driving up memory costs or hampering performance in other areas.\n\nGoogle published a really good paper on this very topic a few weeks ago, I\u2019ll see if I can find it\n\nIt\u2019s not the original article but a condensed version:\n\nhttps://medium.com/@mparekh/ai-google-ai-research-builds-on-transformers-to-titans-rtz-606-2dd3f2015335\n\nTL:DR; Models/Agents need short term memory that is able to \u2018learn\u2019 and \u2018forget\u2019 information \u2018in-process\u2019 while it executes a task, rather than just going off all of the known information from the beginning. Like when o1 reasons, it needs to be able to actually store the good conclusions it draws into a working memory, and discard the bad conclusions as it goes along. Currently it is simply aggregating knowledge, taking the good and the bad from different sources and doing its best to sift through linearly. In reality, humans use a much more intuitive approach, paying attention to only certain elements and discarding the rest. This is only possible with a specific cognition layer devoted to evaluating importance of facts and discarding the old world model as the new one is built, currently LLM architecture does not account for this. Basically, LLM\u2019s lack cognitive dissonance and agreement. Without that, we can\u2019t take their intelligence to the next level of evolution.",
+                            "replies": [
+                                {
+                                    "author": "Jackasaurous_Rex",
+                                    "text": "Incredibly interesting thanks for writing all that"
+                                },
+                                {
+                                    "author": "Select-Career-2947",
+                                    "text": "Really interesting comment, thanks. \n\nI carried out a bit of a thought experiment in the shower the other day about how you might go about building an LLM-powered agent for playing a video game such as Slay the Spire (a roguelike deckbuilder game which is entirely linear and turn-based but requires strategic decision making when choosing cards and planning strategic combos) and ran into similar logical challenges. It's really hard to design a framework that effectively prioritises knowledge of the current state, potential future states, and previous states (such as choices not taken), whilst also maintaining a coherent knowledge of the holistic list of entities within the game (which is essential for strategic and non-tactical decision-making.\n\nIt feels like we need to develop more novel approaches to integrating \"thinking\" and recollection."
+                                },
+                                {
+                                    "author": "ThreeKiloZero",
+                                    "text": "Nice read. They also don't have a real temporal understanding yet. Adding another dimension like that will make the memory use exponentially higher. It can be done; it's just resource-intensive. What you are talking about is, IMO, the concept of self-awareness in time. So rather than the network (model) being only active when it's processing context and outputting tokens, it's got to be always on and have access to a memory model that persists it's world and data states yet can be addressed like context. I think these things are possible in latent space but they will be encoded and decoded in a different way. Maybe the new concept stuff has legs. I think once we break through that wall, we are a short step to what would be considered artificial consciousness."
+                                },
+                                {
+                                    "author": "RepresentativeAny573",
+                                    "text": "I think the real problem with current LLM models is they have almost no ability to critically evaluate, which means they cannot learn anything novel without outside input. Even if we added a mechanism for it to try stuff out and remember what works, how would it know what does and does not work? \n\no1 loves to give me explainations and test upper limits and edge cases for code and other content I have it genrate. The problem is that as soon as I get a little bit too far outside of the training data it completely falls apart. It will run tons of \"tests\" to show that the code works, except every one of them is completely wrong. The only way to get good critical evaluation is human feedback until it happens upon the right solution. The problem is, no human wants to have it fail 100+ times to get to the right solution."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "etherlore",
+                            "text": "The operator needs to ask sub-agents to perform the heavy tasks, and then organize and drive other sub-agents based on the results. Essentially having a single LLM do it all won\u2019t work. That\u2019s not how humans operate either, we divide and conquer.",
+                            "replies": [
+                                {
+                                    "author": "SirGolan",
+                                    "text": "I've tried this setup as well, but it still isn't great for tasks like this where there really just needs to be a loop. Either the master agent doesn't provide enough info to the sub-agents (\"Go find another influencer\" doesn't include enough context), or the master forgets where it is in the list. Admittedly haven't tried this sort of thing with o1 or R1 yet."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "ceacar",
+                    "text": "Imagine 5 years later, how good will it be. \nAll intern and junior data analyst job might be at risk.",
+                    "replies": [
+                        {
+                            "author": "GneissFrog",
+                            "text": "Those intern and junior data analyst jobs that \"might be at risk\" will be filled by people who have spent the next 5 years using tools like this. The folks who dismiss these tools are the ones at risk. Companies won't suddenly stop the cycle of replacing more expensive senior employees with new hires. If anything, it's a lot of the more expensive employees on payroll who will have to justify what their experience is worth.",
+                            "replies": [
+                                {
+                                    "author": "t_krett",
+                                    "text": "Why would you need a human in the loop for tasks that can be described as \"computer use\"? The guy who monitors these tools is much more likely to have a background in core domains than just \"ai tool use\"."
+                                },
+                                {
+                                    "author": "toomuchtodotoday",
+                                    "text": "https://www.newsweek.com/employers-would-rather-hire-ai-then-gen-z-graduates-report-2019314"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "It'll get better! But it's nothing insane or ground-breaking, at least not yet. To me, it seems like a polished side project from 10x engineer.",
+                            "replies": [
+                                {
+                                    "author": "Character-Dot-4078",
+                                    "text": "The next step is teaching it to teach itself properly."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "PermanentLiminality",
+                            "text": "Five years of AI time means something like a year in human time.",
+                            "replies": [
+                                {
+                                    "author": "ThomasPopp",
+                                    "text": "AI is like dog years for us"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Bismar7",
+                            "text": "Exponential not linear. It will feel as though no progress is being made, but the jump from 50% to 100% will happen just as quickly as the jump made from 1% to 2%. \n\nLikely intern level AI will be out by 2026, however, greater production historically is always met by greater demand and AI has associated energy costs. That creates an opportunity cost with human time.\n\nI.E. there will be structural change related to employment, but the notion that this will result in an end to human employment is foolish."
+                        },
+                        {
+                            "author": "Repulsive_Spend_7155",
+                            "text": "5 years? at the rate all of this is going i give it 5 months",
+                            "replies": [
+                                {
+                                    "author": "Calazon2",
+                                    "text": "!remindme 6 months"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "EuphoriaSoul",
+                            "text": "Interns and junior data analysts are already at risk. It\u2019s actually way easier to prompt than asking your team for stuff.",
+                            "replies": [
+                                {
+                                    "author": "DaveG28",
+                                    "text": "Especially if you don't care whether it gives you a correct answer and accept any old hallucination."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "arebum",
+                            "text": "I manage interns, granted they're engineers, and I give them far more complex tasks lol. Plus, why not just give the intern these tools?"
+                        },
+                        {
+                            "author": "ankbon",
+                            "text": "Remind Me! 1 year"
+                        }
+                    ]
+                },
+                {
+                    "author": "RadioactiveTwix",
+                    "text": "TL;DR version?",
+                    "replies": [
+                        {
+                            "author": "nosimsol",
+                            "text": "It\u2019s not as great as you would hope yet. And it hallucinates as much as early models did.",
+                            "replies": [
+                                {
+                                    "author": "RadioactiveTwix",
+                                    "text": "Thank you kind redditor!"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "earthlingkevin",
+                            "text": "It's bad. Slow, and makes things up."
+                        },
+                        {
+                            "author": "HighTechPipefitter",
+                            "text": "Meh..."
+                        },
+                        {
+                            "author": "MaxDentron",
+                            "text": "The author, a devoted AI enthusiast, tested OpenAI\u2019s new AI agent, *Operator*, which is powered by a Computer-Using Agent (CUA) model and designed to perform web-based tasks autonomously. Despite their excitement, the test revealed significant flaws, confirming the author\u2019s skepticism about AI agents.\n\n**Key Points:**\n\n1. **Task Description**: The author asked Operator to find 50 financial influencers on YouTube, gather their LinkedIn info and emails, summarize their channels, and format the data in a table.\n2. **Performance**:\n   * Initially impressive: Operator autonomously searched Bing, visited websites, and compiled a spreadsheet.\n   * Major issues: Operator hallucinated (fabricated data), struggled to verify information, and failed to ask for help when needed (e.g., signing into Google Sheets).\n   * Results: After 20 minutes, Operator only produced data for 18 influencers, much of it inaccurate.\n3. **Drawbacks**:\n   * **Speed**: Operator\u2019s slow navigation and typing made the process inefficient.\n   * **Errors**: Fabricated LinkedIn profiles and emails undermined reliability.\n   * **Lack of adaptability**: It didn\u2019t use the most efficient methods (e.g., starting directly on YouTube) or ask for assistance when stuck.\n4. **Conclusion**: While Operator demonstrates exciting potential for automating repetitive tasks, it\u2019s not yet practical for professional use. It\u2019s slow, error-prone, and requires substantial improvements in speed, accuracy, and functionality to compete with human performance.\n\nThe author remains optimistic about the future of such tools but notes that, for now, they\u2019ll stick to completing these tasks manually."
+                        },
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "TL;DR: Operator sucks. It's not replacing your job.",
+                            "replies": [
+                                {
+                                    "author": "subzerofun",
+                                    "text": "I was bursting out laughing when reading your analogies like \"It was like a schizophrenic on psilocybin.\" and \"grandma use a rusty typewrite\"! Thanks for the fun read.\n\nGiving ai agents complicated tasks is like giving a generally educated, able person a list of things to do and after every step they take, they also have to ingest a random drug. They try to follow their task, but on the way descent into a pychedelic rabbithole. After a few iterations they start to ask themselves what their initial goal even was and just randomly make shit up. Then they proudly present you their data after eating tokens worth thousands of dollars: \"There are are two \"R\"s in Crypto. It is spelled C-R-Y-P-T-O, so the first \"R\" is in \"C-R-Y\" and the second one in \"R-Y-P-T-O\". So the myth that Crypto is spelled with only one \"R\" is an online inside joke. You can trust me, here are my sources: \"wikipedia.org/wiki/Crypto-with-two-R-true\" , \"github.com/jellybelly5000/crypto-R-compute\", \"reddit.com/r/cryptoAlwaysWithTwoRs\"."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "DazerHD1",
+                    "text": "I think operator is not suited for such task at the moment they said it was is practically a preview so I think it\u2019s at the moment good for the tasks they showed at the presentation and will get better over time with more complex tasks you have to remember that they said they want to incorporate operator into ChatGPT in the future and I don\u2019t know if you saw it but in the browser code for Operator or something like that the word Orion was found again it could be just hyping but at this moment we can\u2019t be sure",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "OpenAI is unfortunately a hype master. While some things (like O1) are cool and useful, other things (like Sora) were complete letdowns.",
+                            "replies": [
+                                {
+                                    "author": "DazerHD1",
+                                    "text": "You also have to remember how fast OpenAI was growing as a company in the last like 3 years I think also when you remember ChatGPT 3 was impressive because it was new and when you compare gpt4o there is a world difference when there would have been an ai hype before gpt 3 then gpt 3 would have also be marked as a product with many flaws and it was it just takes time to optimize these things sora was out for like 2 months gpt was out for years and was refined over time give it like a year or two maybe even less with the current developments in the USA if true like stargate and it will be way more refined and I know gpt is not perfect but it\u2019s way more sophisticated than something like operator which is a completely new model in early preview \nEdit: this is just my opinion and I make my own educated guesses on what could happen I want to clarify that this doesn\u2019t has to be the case but we can\u2019t know for sure"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "xamott",
+                    "text": "You had access and that\u2019s what you did with it? Gather data about \u201cinfluencers\u201d?",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "I mean.. yeah.\n\nLead-gen. I need to contact them and ask them to be partners. it'd be nice if AI did it all for me.",
+                            "replies": [
+                                {
+                                    "author": "xamott",
+                                    "text": "I\u2019m so glad I\u2019ve never used the term lead-gen."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "slartibartphast",
+                    "text": "It's odd it behaves like old models but is supposed to be the latest. Lately even on the current model I have wondered why it makes so much stuff up when it could be the actual data. And it never tells you that unless you ask (oh that was example data)."
+                },
+                {
+                    "author": "bemore_",
+                    "text": "Why do we call it intelligence, when a robot can't solve a captcha?\n\nThese man create a statistical text generating chat bot and call it intelligence. Intelligence is the one year old baby that learns how to walk without one instruction being uttered. Yet billions will be pumped into these algorithmic programs to..  control your browser, instead of billions spent educating humans that have the actual intelligence, the A.I to solve real complex problems\n\nHow can you not hallucinate when you're not connected to reality?",
+                    "replies": [
+                        {
+                            "author": "DaveG28",
+                            "text": "You stumble on what most blows my mind about people's response to ai claiming how amazing it is.... Everything i see about it strongly suggests there is no \"I\" in the ai that's public yet... It's better and better coded dumb software instead, and llm is being used to *mimic* intelligence better and better, not actually achieve it.\n\nI'm sure I'm missing something and / or maybe it's that I am responding to all the public stuff while some of the most amazing tech advances is still in the Research side, but still, it's what it seems to me",
+                            "replies": [
+                                {
+                                    "author": "captfitz",
+                                    "text": ">llm is being used to *mimic* intelligence better and better, not actually achieve it.\n\nI think what you're missing is that \"mimicking\" intelligence at some point becomes functionally indistinguishable from \"actual\" intelligence"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "I think they can solve captchas. They are just told to not.",
+                            "replies": [
+                                {
+                                    "author": "bemore_",
+                                    "text": "I don't think they can, especially any that require replicating human-like behavior"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "ill-fatedcopper",
+                            "text": "I view a LLM as an interactive encyclopedia containing all the information in the world. \n\nThink about that for a moment and we can all agree it is an absolutely amazing accomplishment.\n\nBut it is no more intelligent than the hard cover books comprising the Encyclopedia Britannica at your local library."
+                        }
+                    ]
+                },
+                {
+                    "author": "Astral-projekt",
+                    "text": "Lol bro is taking the alpha and going \u201cit\u2019s not taking your job\u201d\u2026 dude, it\u2019s day 1. You have no chill, tech is evolving exponentially faster than humans. Give it 5 years",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Remind Me! 5 years",
+                            "replies": [
+                                {
+                                    "author": "RemindMeBot",
+                                    "text": "I will be messaging you in 5 years on [**2030-01-24 02:16:28 UTC**](http://www.wolframalpha.com/input/?i=2030-01-24%2002:16:28%20UTC%20To%20Local%20Time) to remind you of [**this link**](https://www.reddit.com/r/ChatGPTCoding/comments/1i8jl52/i_am_among_the_first_people_to_gain_access_to/m8ua5i6/?context=3)\n\n[**10 OTHERS CLICKED THIS LINK**](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2FChatGPTCoding%2Fcomments%2F1i8jl52%2Fi_am_among_the_first_people_to_gain_access_to%2Fm8ua5i6%2F%5D%0A%0ARemindMe%21%202030-01-24%2002%3A16%3A28%20UTC) to send a PM to also be reminded and to reduce spam.\n\n^(Parent commenter can ) [^(delete this message to hide from others.)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Delete%20Comment&message=Delete%21%201i8jl52)\n\n*****\n\n|[^(Info)](https://www.reddit.com/r/RemindMeBot/comments/e1bko7/remindmebot_info_v21/)|[^(Custom)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here)|[^(Your Reminders)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=List%20Of%20Reminders&message=MyReminders%21)|[^(Feedback)](https://www.reddit.com/message/compose/?to=Watchful1&subject=RemindMeBot%20Feedback)|\n|-|-|-|-|"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "AverageAlien",
+                    "text": "Can Operator use your computer to code and build an application autonomously? I don't know if it would be easier for it to just use VScode or terminal commands, but if it could build applications, that would be very powerful.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "No it can't. It's not a coding agent even in the slightest.",
+                            "replies": [
+                                {
+                                    "author": "NinjaLanternShark",
+                                    "text": "Also if I understand, it's operating a web browser only. \n\nThe next logical step would be an agent that could operate your computer -- switch among different apps like humans do. \n\nCool and scary at the same time."
+                                },
+                                {
+                                    "author": "Repulsive_Spend_7155",
+                                    "text": "Can you have it log into some other LLM and have it prompt that for coding snippets?"
+                                },
+                                {
+                                    "author": "[deleted]",
+                                    "text": "[removed]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "PmMeSmileyFacesO_O",
+                    "text": "Can it play COD?",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "\\*Maybe\\* Pokemon. But probably not"
+                        }
+                    ]
+                },
+                {
+                    "author": "EcstaticImport",
+                    "text": "But can it run crysis?"
+                },
+                {
+                    "author": "Almontas",
+                    "text": "How does it compare to Anthropic\u2019s computer use",
+                    "replies": [
+                        {
+                            "author": "ExtensionCounty2",
+                            "text": "I've used the anthropic demo when it came out. Similar stage to OP's report when I tested \\~2 months ago. Its a slightly different approach in the sense that it controls at the OS level and not the browser level. I.e. it launches a copy of the browser and does button clicks within at the OS level when I demo'd it. \n\nIf you notice the OpenAI announcement the test benchmarks they mention are still very low rates in terms of passing. BrowserGym, etc. There is a ton of variability in what we do as people in using an OS or applications like the browser to accomplish a goal. The reasoning could probably be corrected, but there are dozens of subtle clues we do to know a webpage or app is ready to use.   \n  \nex: A webapp that loads progressively, the AI can't just wait for onPageLoad or similar event, it needs to know that the page/app is ready to work or else it gets very confused. Generally, this is hacked around by adding long delays in like OP witnessed. i.e. if I chill for 5 secs its likely on a decent web connection the page will be ready."
+                        },
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Tbh, I have not used it. I like how with Operator, you don't have to download anything. You just go to the website and use it."
+                        }
+                    ]
+                },
+                {
+                    "author": "Weaves87",
+                    "text": "Great test, great write up \ud83d\udc4d.\n\nIt makes sense now why they featured very simple consumer-focused workflows.\n\nDid Operator context switch between navigating the web (LinkedIn pages) and adding information to the spreadsheet? I\u2019m curious about its behavior.\n\nI think that lead generation is very, very possible with agentic AI using current models. I just don\u2019t think there will be any one-shot off the shelf solution that works for every niche and market, we aren\u2019t there yet.\n\nI\u2019m working on something similar - building up an agent of layered LLM and tool calls, and have been very surprised (in a good way) with the result at times. But it takes a LOT of tuning and programming, requires having a human in the middle to help \u201ccourse correct\u201d, requires good domain knowledge, and there needs to be a good task/memory system in place that is tailored to the task at hand to keep it on track and help fix incorrect behaviors",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "It did switch between tabs which was interesting! It:\n\n* Looked up \"YouTube financial influencers\"\n* Searched through a few tabs\n* Struggled to find a place to write notes\n* Found an ad-infested one, wrote down 18 influencers with hallucinated emails and linkedins\n\nIt didn't actually search for LinkedIn profiles. I agree that it would be possible to sit down and build a lead-generation agent. But Operator can't do it, not yet.",
+                            "replies": [
+                                {
+                                    "author": "Weaves87",
+                                    "text": "I\u2019d be very curious to see how it performs finding just one lead, instead of multiple. Simplifying its workflow, so to speak.\n\nOne thing that isn\u2019t talked about as much with designing an agentic AI is that it needs more than just tool access and a memory component - it needs a very effective task management component as well. Based on your description of what happened, it sounds like it lacked direction mid-process, and it started to wing things towards the end, especially when it came to recording the results"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Current-Ticket4214",
+                    "text": "My experience with ChatGPT is that it just regularly makes shit up, prioritizing output over correctness. It\u2019s like a politician who plays SME, but knows almost nothing about the subject. This behavior plagues any complex multi-step request. ChatGPT fails at logic and hallucinates because output is prioritized over correctness. I wouldn\u2019t expect anything different from Operator"
+                },
+                {
+                    "author": "SufficientStrategy96",
+                    "text": "I don\u2019t think OAI tried to say that Operator can do all of this? It sounds like it\u2019s meant for simple tasks like dinner reservations, or the other things they demoed. It\u2019s definitely disappointing from an AI agent standpoint, but it\u2019s not being advertised as such."
+                },
+                {
+                    "author": "duh-one",
+                    "text": "I\u2019m working on an open source browser extension like operator. Anyone interested in contributing?"
+                },
+                {
+                    "author": "Electrical_Delay_959",
+                    "text": "Thanks for the post, it's very informative! I've been using [browser-use](https://github.com/browser-use/browser-use) for a while and I'm (moderatedly) happy with the results. Have you tried it? How does it compare to Operator? Thanks :)"
+                },
+                {
+                    "author": "ConstableDiffusion",
+                    "text": "It\u2019s interesting, but it\u2019s still limited enough right now that I\u2019m struggling to come up with things for it to do other than things that ChatGPT can already do with apparently less effort"
+                },
+                {
+                    "author": "EverretEvolved",
+                    "text": "What other operators are out there currently?"
+                },
+                {
+                    "author": "gob_magic",
+                    "text": "Cheap, Fast, Reliable. Sometimes I\u2019d like to pick Cheap and Reliable. Give me a slow yet smart Operator, but cheaper. \n\nI can offload a lot of critical tasks at \u201cnight\u201d. 10pm to 8am for these low cost, yet slow-smart operators. \n\nIt\u2019s an old habit of wanting automation as good as humans, faster, but these get expensive."
+                },
+                {
+                    "author": "t_krett",
+                    "text": "No wonder that it's slow. If you look at the example at https://openai.com/index/computer-using-agent/ they are training it to interact with the web like a boomer.\n\nThis kind of makes it an unfair comparison. If you know anything about ux design you know that to make an interface human-friendly  you have to [assume that people don't use their brain when interacting with a device](https://en.wikipedia.org/wiki/Don%27t_Make_Me_Think), they hate that. If you would force the average person to after every interaction pause, take in the whole screen and refer back to their chain of thought they would also take 15 minutes to do anything."
+                },
+                {
+                    "author": "t_krett",
+                    "text": "I think the doesn't-ask-for-login interaction is because they have postponed working out the details of handling privileges for an ai. Just letting the operator use credentials everywhere is a dumb move at this stage. \n\nBut I assume having a human in the loop is something they don't actually want in the final version."
+                },
+                {
+                    "author": "Particular-Sea2005",
+                    "text": "Now what happens if mix Google AI and ChatGPT Operator, is it possible to mix and match the two?"
+                },
+                {
+                    "author": "SCP-ASH",
+                    "text": "Thanks for writing this up!\n\nIt's quite interesting. I'm sure a lot of people would be interested in asking it to do the following:\n\n- Double check each influencers details before adding them. Maybe after adding them.\n\n- Save sources\n\n- Respond directly rather than use a spreadsheet, and perhaps to do just one person (see if it impacts hallucinations).\n\n- Use a specific spreadsheet like Google sheets, given login details. Probably to a fresh account you dont mind sharing details of. It'd be nice to be asked, but if you know ahead of time, it'd be nice to be able to ignore it and let it get on too.\n\n- Given a list, can it verify emails/LinkedIn. Even if it can't replace it with a non-hallucinated one, just a yes/no hallucination column \n\n- Tell it to only add email/linked in once it has found one. Something to test as a workaround for hallucination might be to get it to copy everything on the page, and paste into the spreadsheet, then delete everything except name,  email, linkedin. Get it to use the clipboard between pages. Get it to only delete so it can't hallucinate information onto the spreadsheet.\n\nAlso just for fun and learning: \n\n- You say it can't write code, and I realise it's not meant to. But for fun, it'd be interesting to see if given two websites (one an online IDE, another some relevant documentation) if it can code something simple\n\n- Have two basic text documents and ask it to add the info from one to the other. Just something basic\n\n- Given your login, can it control another operator, and get it to do a very basic task? If so, when the second operator hallucinates or fails, can it fact-check it, or have a dialogue with it? I imagine this won't work but might be interesting.\n\nIf you can get it to be somewhat reliable and predictable, or able to determine by itself when it has failed, it's more useful and even if it's slow, it doesn't really matter. Slow AI is only a problem if everything else you could possibly do is halted until the AI is done. Usually you can work on something else in parallel so it still saves you the time to complete the task."
+                },
+                {
+                    "author": "katerinaptrv12",
+                    "text": "RL is big on their tool box today.\n\nMaybe they released like that to retrieve data to tech it further to learn with it's mistakes."
+                },
+                {
+                    "author": "inteblio",
+                    "text": "In the demonstration he'd pre signed into the websites."
+                },
+                {
+                    "author": "Terrible_Tutor",
+                    "text": "Searched Bing lol"
+                },
+                {
+                    "author": "fasti-au",
+                    "text": "I think the issue is more about the prompting.  You really need to build a workflow for it to use.  Unlike a person it has no idea that Insta YouTube etc exist until it searches for how to find influencers so you probably need a reasoner to prompt it as I expect computer use is trained on functioncalling not reasoning. \n\nEveryone keeps thinking that llms are everything.  They are just translators for words to computer. You use a calculator for math.  So should it.  Why guess. LLMs guess make function calls to the tool with intelligent prompts and you get farther than if you ask a 10 year old about life experiences.  Just because it can read doesn\u2019t mean it connects the information in a way that has fact or reality.  \n\n\nIe you have to treat it like it knows nothing so using the right words improve the request. \n\nIf you wrote social media influencers or reasoned a better prompt using r1 o1 stuff you would get a prompt that had the right keywords to match the right industry.  \n\n\nThink of it like this.       Google facial.  Get very different results to makeup facial.   One word defines its focus. \n\nI don\u2019t see why it needs a browser that\u2019s watchable other than to make the user take blame.  In reality it\u2019s just macro recording users tasks for replacement as the next feature.   Llm does your job documents it. Writes an agent  agent does work.  User takes blame for inefficient or errors and gets kicked for performance reduces staff.  Tada. There\u2019s your swap over. \n\n\nUsing corporate run computer use models will speed up your role being changed"
+                },
+                {
+                    "author": "grimorg80",
+                    "text": "That doesn't surprise me. \n\nAs many of us have been discussing, a \"true\" AI agent requires all those cognitive functions that are still lacking in LLMs as they stand today.\n\nThat's also why other data access solutions on other models like MCP on Claude are not the solution to all our problems.\n\nIt's great that all these companies are developing new ways to let the model find data or connect to data, or see a screen, etc..\n\nBut the issue is that they don't have what it takes to do much with that. Memory, long-term thinking, recursive thinking, awareness of focus and focus shift, etc...\n\nUntil those capabilities are engineered, these \"input/output features\" won't be particularly useful.\n\nI mean... Buying tickets to a game? Booking a table at a restaurant? Booking a one off cleaner? Do you really need the AI to do that? Those are all things a human can do much faster, especially in the cases shown in their demo, which are all \"you already know what you want and how you want it and there's no repetition\". \n\nThat's why they don't show more interesting examples: because it can't do it"
+                },
+                {
+                    "author": "sweetpea___",
+                    "text": "Thanks this is really interesting. And your idea is cool. \n\nCouple of thoughts.\n\nYour feedback reveals your own weakness in lack of clear instructions to Operator. If you had told them to search YouTube and provided access to a spreadsheet... Perhaps the answer might have been more accurate. \n\nWe all know the clearer the question the better the answer.\n\nSecondly, as OAI describes on their website, we plebs simply aren't ready for the best. We must experience a fairly rapid planned obsolescence of sorts, as we the users, and you the customer beta tester, run through older versions, immediately identifying the most important issues and gaps so they can be fixed/built/profited from. \n\nI agree it doesn't feel close but how could it for us _at this stage_ \n\nJust think what was happening a year ago, how far things have come already.\n\n So long as we can collectively power the AIs, the potential for incredible support across all our work is profound."
+                },
+                {
+                    "author": "Commercial-Living443",
+                    "text": "Did you forget that Microsoft has majority , 49 percent of open ai and of course it would ask bing."
+                },
+                {
+                    "author": "Top-Opinion-7854",
+                    "text": "Ah like the early days of autoGPT no one can solve the long term memory and hallucination problems that arise when trying to accomplish complex goals. I think a current approach that may work is to break things down into many different agents being orchestrated together by a central agent that gets high level details but avoids the minutiae. Fairly behind the curve myself on this but seems like openAI is not using multiple agent models here but a single I\u2019m not sure tho"
+                },
+                {
+                    "author": "com-plec-city",
+                    "text": "Thanks for the post. Our company tasked us to \u201cput AI on everything\u201d and we\u2019re struggling to make it useful when it comes to real workplace tasks."
+                },
+                {
+                    "author": "MonstaGraphics",
+                    "text": "I'm just imagining it thinking \"God Damnit more websites that need me to sign up again\"\n\nI know that feeling!"
+                },
+                {
+                    "author": "ID-10T_Error",
+                    "text": "So can we use it with Google remote desktop through chrome is the real question"
+                },
+                {
+                    "author": "N7Valor",
+                    "text": ">For the next iteration, I expect OpenAI to make some major improvements in speed and hallucinations.\n\nDon't hold your breath.  Hallucinations and making things up wholecloth is why I stopped around GPT3 and considered AI to be worthless.\n\nI didn't change my mind until Claude Sonnet 3.5, which still has that problem, but the percentage of things it made up was low enough that I could actually work with it.  Sounds like OpenAI never bothered to fix that problem from **years** ago.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "They absolutely fixed it with the more recent models. It's interesting that Operator is suffering from it though; maybe they use a much weaker helper model"
+                        }
+                    ]
+                },
+                {
+                    "author": "No-Poetry-2695",
+                    "text": "I think the main problem is that it\u2019s navigating a human optimized information set. Maybe try to ask it to organize a human website that is optimized for AI use and then use a clean reset to test a task on both sites"
+                },
+                {
+                    "author": "chrisbrns",
+                    "text": "I can assure you, it\u2019s taking jobs. We\u2019re building on it now and you have underestimated the value of basic automation. Just today we found 95k of resource savings via automation by operator. When api lands, we see a superior multiple on this. \n\nAs anything that is new, it\u2019s new. Wait for what agents will do when we can isolate in environments with custom applications that have no ability to be interfaced."
+                },
+                {
+                    "author": "burhop",
+                    "text": "Thanks, dude! Appreciate the work.",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Thanks for reading!"
+                        }
+                    ]
+                },
+                {
+                    "author": "Sharp-Feeling42",
+                    "text": "Words words words"
+                },
+                {
+                    "author": "azshall",
+                    "text": "people use bing?"
+                },
+                {
+                    "author": "metrohs",
+                    "text": "Was this generated by AI?",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "no. Literally 0% of this was written by an AI."
+                        }
+                    ]
+                },
+                {
+                    "author": "sapoepsilon",
+                    "text": "Mucho texto",
+                    "replies": [
+                        {
+                            "author": "No-Definition-2886",
+                            "text": "Maybe I was mistaken.\n\nIt *might* take your job \ud83d\ude09"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Architect + Code",
+            "author": "FiacR",
+            "text": "[External Link]",
+            "subreddit": "ChatGPTCoding",
+            "comments": [
+                {
+                    "author": "Vivek_Ajesh",
+                    "text": "Yeah i wish im just attracted to those cheap costs. sadly Sonnet 3.6 is just better than v3. I wish it wasnt but its still the case",
+                    "replies": [
+                        {
+                            "author": "FiacR",
+                            "text": "I love caviar and champagne (o1 and Sonnet) but most days I can only afford cheap beer and pasta (R1 and V3). They do the job for me most of the time except for special occasions.",
+                            "replies": [
+                                {
+                                    "author": "WhateverOrElse",
+                                    "text": "Beer and pasta is more nourishing anyway.. https://aider.chat/2025/01/24/r1-sonnet.html"
+                                },
+                                {
+                                    "author": "holy_ace",
+                                    "text": "*A round of applause can be heard faintly in the background*"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Jisamaniac",
+                            "text": "3.6 is out??",
+                            "replies": [
+                                {
+                                    "author": "Vivek_Ajesh",
+                                    "text": "well 3.5 (new) is 3.6"
+                                },
+                                {
+                                    "author": "hassan789_",
+                                    "text": "It\u2019s just what Reddit calls the \u201cnew\u201d 3.5"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Ferris440",
+                    "text": "This is the way :) but v3 can sonnet 3.5 v2 for code?"
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[removed]",
+                    "replies": [
+                        {
+                            "author": "AutoModerator",
+                            "text": "Sorry, your submission has been removed due to inadequate account karma.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTCoding) if you have any questions or concerns.*"
+                        }
+                    ]
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[removed]",
+                    "replies": [
+                        {
+                            "author": "AutoModerator",
+                            "text": "Sorry, your submission has been removed due to inadequate account karma.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTCoding) if you have any questions or concerns.*"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Which coding ai should i invest in?",
+            "author": "successfulswecs",
+            "text": "I am majoring in computer science and was thinking of paying for Claude, but I am willing to hear from this subreddit about which one I can pay for that is really good. my budget is 20 per month. ",
+            "subreddit": "ChatGPTCoding",
+            "comments": [
+                {
+                    "author": "fredkzk",
+                    "text": "Prior to paying a monthly, consider a free alt to test ai coding? Aider is a must. Follow IndyDevDan on YouTube.",
+                    "replies": [
+                        {
+                            "author": "Mr_Hyper_Focus",
+                            "text": "Just to add to this advice: aider is great. So is Cline or Roo Cline. Pair them up with Google Gemini or deepseek and you\u2019ll have a really good low budget setup. You can use Continue with the free codestral api for autocomplete too.",
+                            "replies": [
+                                {
+                                    "author": "ForeverAdventurous78",
+                                    "text": "with deepseek v3? I connected it with openrouter. And using Cline in VS Code. Is that what you mean? Is it the current best budget set-up? thanks!"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "stormthulu",
+                            "text": "Aider isn\u2019t a must. Some people prefer it. Personally I don\u2019t like it, and I\u2019ve seen it make some pretty dumb mistakes."
+                        },
+                        {
+                            "author": "successfulswecs",
+                            "text": "thank you"
+                        }
+                    ]
+                },
+                {
+                    "author": "Zuricho",
+                    "text": "Just get Cursor, add your Google AI Studio API key, as well as Deepseek through Cline Roo.",
+                    "replies": [
+                        {
+                            "author": "kayk1",
+                            "text": "Just so they know why you recommend Google - they provide some free models while they are in testing. So you can go a long way with no investment. And deepseek has models for very cheap. So with this setup you get a huge bang for your buck compared to Anthropic etc."
+                        },
+                        {
+                            "author": "smealdor",
+                            "text": "how is cline roo better than cline?",
+                            "replies": [
+                                {
+                                    "author": "Ashen-shug4r",
+                                    "text": "They're direct competitors. Roo Cline tends to be the most feature packed and continuously updated. The Dev is quite iterative with any feedback that is given so a lot gets added quickly."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Funny_Ad_3472",
+                    "text": "There is Gemini, there is Claude, there is chatgpt, there is deepseek, there is Grok. No need to pay for any specific one. Just get api credits for the best models like openai api and Claude api, and just use the api with some chat interface when you are out of free usage for any of these chat platforms. Trust me you won't even spend 10 dollars in api costs in a month",
+                    "replies": [
+                        {
+                            "author": "vessoo",
+                            "text": "It really depends on how much work you do. Also, the copy/paste from chat windows is terrible. Integrated solutions like Cursor and its composer (even GitHub Copilot Edits) are much more powerful. Providing context to the AI is invaluable, and it is very difficult to do with a chat window.",
+                            "replies": [
+                                {
+                                    "author": "Funny_Ad_3472",
+                                    "text": "I've built great tools, not as a very skilled developer with the copy paste chat windows. And not every using LLM is coding so co pilot, cursor may not be ideal for those ones"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "McNoxey",
+                            "text": "Those arent agents .",
+                            "replies": [
+                                {
+                                    "author": "Calazon2",
+                                    "text": "Somebody majoring in computer science should not be using agents."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Muted_Estate890",
+                    "text": "Cursor + Claude 3.5 Sonnet = Magic. Also check out Void editor (https://voideditor.com/) their BETA will be launching soon so might be cool"
+                },
+                {
+                    "author": "clericrobe",
+                    "text": "Buy $5 of credits on OpenRouter. See how it goes. You don\u2019t have to lock in to anything."
+                },
+                {
+                    "author": "Temporary_Payment593",
+                    "text": "Here is my research, just pick what you need. I'm personally using cursor, also considering windsurf.\n\nhttps://preview.redd.it/3t4wyfivxxee1.png?width=1614&format=png&auto=webp&s=31994996f34b0492d13280d6f58666457cc1f981",
+                    "replies": [
+                        {
+                            "author": "SgUncle_Eric",
+                            "text": "Windsurf.ai burn \ud83d\udd25 big pocket holes, you are better off on Cursor, been there done that lol \ud83d\ude02\n\n![gif](giphy|26n6Gx9moCgs1pUuk)"
+                        },
+                        {
+                            "author": "[deleted]",
+                            "text": "[removed]",
+                            "replies": [
+                                {
+                                    "author": "AutoModerator",
+                                    "text": "Sorry, your submission has been removed due to inadequate account karma.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTCoding) if you have any questions or concerns.*"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "paradite",
+                            "text": "Nice. I wrote a similar piece on various tools and categorized them: https://prompt.16x.engineer/blog/ai-coding-l1-l5"
+                        }
+                    ]
+                },
+                {
+                    "author": "chronomancer57",
+                    "text": "Trae.ai is free rn, comes with free Claude 3.5 sonnet"
+                },
+                {
+                    "author": "funbike",
+                    "text": "If you are just using a web AI, stick with Claude Sonnet.  But APIs are much more powerful way to use AI.\n\nI use several APIs.  Which model is best keeps changing.  This week I plan to switch to DeepSeek.  I'm thinking of going with openrouter as I'll have access to most models with it, and I'll be able to keep up better.",
+                    "replies": [
+                        {
+                            "author": "WheresMyEtherElon",
+                            "text": "> If you are just using a web AI, stick with Claude Sonnet. \n\nDeepseek with reasoning is free (the web version)."
+                        }
+                    ]
+                },
+                {
+                    "author": "Terrible_Tutor",
+                    "text": "Cursor.ai you get your IDE and access to all the models"
+                },
+                {
+                    "author": "SgUncle_Eric",
+                    "text": "Depends on what you are building. Simple stuff or complex build, if simple landing pages, not complicated, can go for Lovable.dev. If more complex then go Cursor.ai and if even more complex like frontend, backend, API all that, then you need to learn how to use Vs Code, Cline or Roo Code extension, Github, Vercel/Netlify deployment etc.\n\n![gif](giphy|fDbzXb6Cv5L56)"
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[removed]",
+                    "replies": [
+                        {
+                            "author": "AutoModerator",
+                            "text": "Sorry, your submission has been removed due to inadequate account karma.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTCoding) if you have any questions or concerns.*"
+                        }
+                    ]
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[removed]",
+                    "replies": [
+                        {
+                            "author": "AutoModerator",
+                            "text": "Sorry, your submission has been removed due to inadequate account karma.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTCoding) if you have any questions or concerns.*"
+                        }
+                    ]
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[removed]",
+                    "replies": [
+                        {
+                            "author": "AutoModerator",
+                            "text": "Sorry, your submission has been removed due to inadequate account karma.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTCoding) if you have any questions or concerns.*"
+                        }
+                    ]
+                },
+                {
+                    "author": "Comprehensive_Space2",
+                    "text": "can you build cool frontend UI's with Cursor + Claude API?"
+                },
+                {
+                    "author": "rattierats",
+                    "text": "You might also want to check if any of the suggested (or other) AI providers have a student plan - maybe you can get a better price?   \nI'm super happy that Jetbrains products are free for students (IntelliJ is wonderful), for example:)"
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[removed]",
+                    "replies": [
+                        {
+                            "author": "AutoModerator",
+                            "text": "Sorry, your submission has been removed due to inadequate account karma.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTCoding) if you have any questions or concerns.*"
+                        }
+                    ]
+                },
+                {
+                    "author": "Rrrrhizzle",
+                    "text": "Windsurf 100%"
+                },
+                {
+                    "author": "RGBGraphicZ",
+                    "text": "You can use Github Copilot as it provides enough credits for free to use and if not then Gemini is great as well for a little help in coding, you can also check the Deepseek R1, its web version is completely free and if you still go with the API it's still cheap."
+                },
+                {
+                    "author": "alekslyse",
+                    "text": "The superior one is Vstudio with Cline or Roo Cline (Its renamed Roo Code now) as it takes your whole file as a context, something that will create a very accurate suggestions, but if you are suing it with Claude its VERY expensive (you can eat up 10-15USD in 30 minutes), but using deepseek you can cut the cost for some of the claude benefits.\n\nOther than that I would say Cursor and Windsurf is both good, but you NEED to check the diff before accepting as both have a habit of removing things it not supposed to do, so check what it change and you would be fine."
+                },
+                {
+                    "author": "NoHotel8779",
+                    "text": "Definitely Claude, don't listen to them about the rate limits just buy the web pro version and use this extension to track your usage if you're really worried about rate limits [https://chromewebstore.google.com/detail/claude-usage-tracker/knemcdpkggnbhpoaaagmjiigenifejfo?hl=en](https://chromewebstore.google.com/detail/claude-usage-tracker/knemcdpkggnbhpoaaagmjiigenifejfo?hl=en)\n\nThe trick about rate limits is that if your chat is more than 5 messages that are each 300 lines long and that you see that you could get the same output to your next message by staying a new chat you should start a new chat. That is because unlike chatgpt which has a rolling context window Claude rereads the whole convo each message you send which makes it more precise but also more expensive to run hence the slightly more restrictive rate limits compared to chatgpt. It makes it more accurate tho so it's worth it.\n\nAs you can see Claude is the best ai on the market for coding, o1 is above it but you only get 50 request per week, if you wanna get more it'll be 10x the price (200$) which in my opinion is not worth it for 3% of added coding performance also considering it thinks for ages before providing it's answer. So Claude is the best choice rn.\n\nhttps://preview.redd.it/ldmbqtcbuzee1.png?width=826&format=png&auto=webp&s=dd295d3f5e9d578d180b6635af563f3cb1b3aaee\n\n(Source: [livebench.ai](https://livebench.ai) then click on \"Coding average\" to sort by coding performance)\n\nAs you can see in this screenshot gpt4o (chatgpt, red) is really not the way to go as its worse than the cheapest new google Gemini model (purple) which is ridiculous considering the price difference. As you can see Claude 3.5 sonnet (blue) is at the top behind o1 which is not worth it for the reasons discussed above, you can also see deepseek R1 (deepseek reasoning mode, deepthink, also blue) is right below it which is quite impressive considering it's a free and open source model but it takes time to reason unlike Claude 3.5 sonnet and still gets slightly worse performance. So overall Claude is the way to go."
+                },
+                {
+                    "author": "d4rkfibr",
+                    "text": "DEEPSEEK"
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[removed]",
+                    "replies": [
+                        {
+                            "author": "AutoModerator",
+                            "text": "Sorry, your submission has been removed due to inadequate account karma.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTCoding) if you have any questions or concerns.*"
+                        }
+                    ]
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[removed]",
+                    "replies": [
+                        {
+                            "author": "AutoModerator",
+                            "text": "Sorry, your submission has been removed due to inadequate account karma.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTCoding) if you have any questions or concerns.*"
+                        }
+                    ]
+                },
+                {
+                    "author": "johns10davenport",
+                    "text": "If you're coding, get cursor."
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[removed]",
+                    "replies": [
+                        {
+                            "author": "AutoModerator",
+                            "text": "Sorry, your submission has been removed due to inadequate account karma.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTCoding) if you have any questions or concerns.*"
+                        }
+                    ]
+                },
+                {
+                    "author": "Tipsy247",
+                    "text": "Chatgpt is sufficient."
+                },
+                {
+                    "author": "Agile_Initiative4471",
+                    "text": "I recommend trying Cursor. I was using GPT, then Claude, and Cursor makes it so much easier."
+                },
+                {
+                    "author": "pedatn",
+                    "text": "I\u2019m very happy with qwen 2.5 coder 3b for autocomplete. Free and light."
+                },
+                {
+                    "author": "L1f3trip",
+                    "text": "None."
+                },
+                {
+                    "author": "orbit99za",
+                    "text": "None, do it yourself,  just like and thousands of others had to Do, it did not exist in 2005, it took us much longer...but you know what...I know how it works.\n\nI fix AI code almost full time,  and it's keeping my Cat very very happy."
+                }
+            ]
+        },
+        {
+            "title": "Slowly come to the realisation that I want a coding workflow augmented by machine intelligence.",
+            "author": "qwertyMu",
+            "text": "Senior Engineer who\u2019s resisted the urge to go for cursor or similar. But in recent months I\u2019ve been finding it harder to resist using a local llm or chatGPT to speed things up. \n\nI don\u2019t really want to pay for cursor so my ideal is to spin up something open source but I don\u2019t really know where to start. Used R1 in hugging chat for a bit the other day it\u2019s too intriguing not to explore. I\u2019m running an M1 Mac. Any advice would be appreciated. ",
+            "subreddit": "ChatGPTCoding",
+            "comments": [
+                {
+                    "author": "Recoil42",
+                    "text": "VSCode + Cline (or Roo Cline) + DeepSeek V3. Buy like $5 in DeepSeek API credits, start there. \n\nUse DeepSeek R1 only for complex problems, as it's slower. \n\nFor React/Vue component prototyping, lean on Vercel V0. \n\nYou won't be leaning on a local model \u2014\u00a0M1 is too slow for the robust ones and you need the spare RAM. \n\nIf you're doing a lot of backend work and you like CLI usage, use Aider.",
+                    "replies": [
+                        {
+                            "author": "qwertyMu",
+                            "text": "Thank you for this. I tend to use Typescript and react for the front end and mainly python and occasionally .net for the backend so I\u2019ll start with the cline and have a play.",
+                            "replies": [
+                                {
+                                    "author": "Recoil42",
+                                    "text": "Start with Cline and some DeepSeek credits, you won't use much. It's (V3) like a fraction of a penny per request. Very easy on the wallet, whereas Sonnet chews through $$$.\n\nAlso play around with V0's free tier. It's per-day limited quite harshly but really illustrates the *potential* for prototyping components and layouts quite well."
+                                },
+                                {
+                                    "author": "Pirateangel113",
+                                    "text": "Also deepseek is CCP so if you need privacy don't use it also they use everything you put in it for training so just be aware of that."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "redditordidinot",
+                            "text": "Using a similar set of tools myself with great success. Would just like to add for the OP that OpenRouter can be helpful in that it provides an easy way to try all of the most popular models while only paying for what you use.  It's supported in Cline and Roo Code."
+                        }
+                    ]
+                },
+                {
+                    "author": "LocomotiveMedical",
+                    "text": "What do you want it to help you do?"
+                },
+                {
+                    "author": "coloradical5280",
+                    "text": "Cursor or Windsurf or Continue dot dev, with R1.  You'll be very happy.  I don't recommend clive only because the way they handle API flows (often sending GET calls for over 66k tokens, resulting in an error that says you're over context window for that API call, and it's quite annoying, none of the others have that issue).",
+                    "replies": [
+                        {
+                            "author": "qwertyMu",
+                            "text": "Ah ok interesting thanks for this. I guess that\u2019s tough to handle even programmatically if you\u2019re not in control of the size of the input for example.",
+                            "replies": [
+                                {
+                                    "author": "coloradical5280",
+                                    "text": "\u00a0I mean, context window limitations are a well-documented constraint in LLM implementations (typically 4k-128k tokens depending on API tier). While some aggregation is normal, Clive's approach of queuing 60k+ tokens before API submission suggests either:\n\n1. Inadequate input validation against the provider's max\\_context\\_window parameter, or\n2. Missing chunking mechanisms in the pre-processing pipeline\n\nSince continue dot dev is open source, I know they handle this by implementing:\n\n* Token counting via tiktoken/equivalent before API calls\n* Dynamic request splitting using sliding window patterns\n* Intermediate checkpoints for long agent chains\n\nThis isn't just about breakpoints - it's about building a proper token-aware orchestration layer. Clive could implement a simple BytePairEncoding estimator and set max\\_sequence\\_length thresholds per API endpoint to prevent these errors.\n\nNo idea why they're struggling with this, given how good they are at almost everything else."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Funny_Acanthaceae285",
+                    "text": "OpenHands + R1 is really cool. You can also try Cline or aider and just see what you like most. All can be installed and run with a few clicks / commands."
+                },
+                {
+                    "author": "coolandy00",
+                    "text": "If you are looking for Flutter based, then HuTouch"
+                },
+                {
+                    "author": "Poococktail",
+                    "text": "Senior doesn't even want Codeium or Github CoPilot in Vscode?"
+                }
+            ]
+        },
+        {
+            "title": "Tired of messy code input for LLMs? I built codepack to fix that. \ud83e\udd80 \ud83d\ude80",
+            "author": "JasonLovesDoggo",
+            "text": "I was frustrated with how difficult it was to cleanly input entire codebases into LLMs, so I built `codepack`. It converts a directory into a single, organized text file, making it much easier to work with. It's fast and has powerful filtering capabilities. Oh, and it's written in rust ofc.\n\n**Quick Demo:** Let's say you have a directory `cool_project`. Running:\n\n    codepack ./cool_project -e py\n\ncreates a `cool_projec.txt` containing all the python code from that directory & its children.\n\nGitHub link: [https://github.com/JasonLovesDoggo/codepack](https://github.com/JasonLovesDoggo/codepack)\n\nDocs: [https://codepack.jasoncameron.dev/](https://codepack.jasoncameron.dev/)\n\nI\u2019d love any **feedback**, **stars**, or **contributions**! \ud83e\udd80 \ud83d\ude80",
+            "subreddit": "ChatGPTCoding",
+            "comments": [
+                {
+                    "author": "InternalActual334",
+                    "text": "I made something like this for unity and C#. Do you think people would find it useful?",
+                    "replies": [
+                        {
+                            "author": "JasonLovesDoggo",
+                            "text": "Oh, what do you mean? Mind sharing it? If you have a tool that you find useful, many other people in your situation will also find it useful. That's why I built/publicized codepack.",
+                            "replies": [
+                                {
+                                    "author": "InternalActual334",
+                                    "text": "It basically works like this, but within Unity. You can input any number of folder paths and it will aggregate all the C# scripts in the folder into a single .txt each time you run the game in the editor.\n\nI used to use this for giving ai context before cursor. Each script is separated by a delimiter and I have another tool that allows me to copy the entire contents (or individual scripts) to my clipboard.\n\nI also built a whole version control system that can convert the .txt back into individual c# files and overwrite the ones in the folder."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "DarkTechnocrat",
+                    "text": "I was just looking for something to do this. Thanks for sharing!"
+                },
+                {
+                    "author": "magnetesk",
+                    "text": "How does this compare to the commonly used repomix? https://github.com/yamadashy/repomix",
+                    "replies": [
+                        {
+                            "author": "JasonLovesDoggo",
+                            "text": "This project does have a couple more filtering options, but overall unless you have a specific need for that, repo mix is probably your better option. \n\nThough given the language differences, I would imagine this project is slightly faster so if you have large code bases that could be a factor."
+                        }
+                    ]
+                },
+                {
+                    "author": "Independent_Roof9997",
+                    "text": "I haven't thought about it. I usually don't put that much context into it. So for me this is actually new. Hey OP could you tell me, copying and giving away a large codebase eats alot of input tokens. You said something about filtering logic? Tell me how does this work?",
+                    "replies": [
+                        {
+                            "author": "JasonLovesDoggo",
+                            "text": "Well, there's a couple filtering options. Either you can include/exclude specific file types by globs or, You can use the filter option to only include files that contain a specific string. \n\nThere are a lot more details in the readme"
+                        }
+                    ]
+                },
+                {
+                    "author": "gaggina",
+                    "text": "repomix does the same"
+                },
+                {
+                    "author": "hesher",
+                    "text": "*you* built it? ;)\n\nIf I had a dollar for every time this script was created\u2026 it\u2019s almost a rite of passage at this point",
+                    "replies": [
+                        {
+                            "author": "JasonLovesDoggo",
+                            "text": "Yes. You're welcome to check the commit history if you desire",
+                            "replies": [
+                                {
+                                    "author": "[deleted]",
+                                    "text": "[deleted]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Sellitus",
+                    "text": "Bro, everyone who codes and uses LLMs has built this script, and I'm almost not even kidding. It's one of those convenience features that takes a couple prompts to create a really flexible version of"
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[removed]",
+                    "replies": [
+                        {
+                            "author": "AutoModerator",
+                            "text": "Sorry, your submission has been removed due to inadequate account karma.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTCoding) if you have any questions or concerns.*"
+                        }
+                    ]
+                },
+                {
+                    "author": "wuu73",
+                    "text": "I made a GUI version of something similar, that lists every file in the dir/subdirectories and has checkboxes next to each one to include. It pre-checks the likely code files most people would want to include but allows people to check or uncheck any files - that way you can include only what\u2019s needed especially if you are going to go over the context length limit.\n\nI have a Windows installer that installs it to the right click menu so you just right click in any folder to open it in that directory. I have a working Mac version just getting ready to package it in some kind of easy installer or app pkg. \n\nA lot of people have made similar ones but I personally prefer a GUI because if there are a lot of files I can quickly scroll the window and just find the exact files I want to include.\n\nMine is called aicodeprep-gui, have two versions on GitHub but the cross platform/Mac one isn\u2019t totally ready yet. wuu73.org/aicp \n\nI will star yours.\n\nI am adding some extra stuff like a token count, tokens per file on the GUI so people can fine tune which files to include.",
+                    "replies": [
+                        {
+                            "author": "JasonLovesDoggo",
+                            "text": "That's quite nice! Personally I just prefer staying within the terminal when possible so that's why codepack is a CLI. I tried making a TUI for it but it just didn't go well. \n\ncodepack also has windows/mac/linux installers which you can find in the releases. These also contain the codepack-update binary which auto-updates the tool when called"
+                        },
+                        {
+                            "author": "wuu73",
+                            "text": "https://preview.redd.it/p8dy8cxqazee1.jpeg?width=4032&format=pjpg&auto=webp&s=f3eb6c4212d48e3e082c19a04e410eb2f9007c55"
+                        },
+                        {
+                            "author": "chinawcswing",
+                            "text": "Ya this is what I do.\n\nThe problem is that the context window of chatgpt is too small to handle any big code base.\n\nSo you have to figure out which files you need to include for the specific prompt that you have.\n\nI imagine a better solution here would be some kind of RAG system. The prompt would be analyzed and then the related files would be RAGed into the prompt.\n\nThis would work a whole lot better if you had ultra clean code, smaller files, and excessive comments."
+                        }
+                    ]
+                },
+                {
+                    "author": "G_M81",
+                    "text": "I have a go one somewhere on on my computer I wrote ages ago. Does a few languages and you can strip comments. If I find it I'll pop it on GitHub. It's quick and dirty though."
+                }
+            ]
+        },
+        {
+            "title": "A Summary of AI-assisted Programming Products",
+            "author": "Temporary_Payment593",
+            "text": "[External Link]",
+            "subreddit": "ChatGPTCoding",
+            "comments": [
+                {
+                    "author": "nicseo",
+                    "text": "this is great! would love to hear any thoughts you have about the ones you've tested"
+                },
+                {
+                    "author": "gman1023",
+                    "text": "2 more\n\n[Trae.ai](http://Trae.ai) \n\n[https://voideditor.com/](https://voideditor.com/)"
+                }
+            ]
+        },
+        {
+            "title": "Roo Code now has Discord!",
+            "author": "hannesrudolph",
+            "text": "[External Link]",
+            "subreddit": "ChatGPTCoding",
+            "comments": []
+        },
+        {
+            "title": "[Project] I built my first AI automation/agent using ChatGPT (as its brain) to solve my life's biggest challenge and automate my work with WhatsApp, OpenAI, and Google Calendar \ud83d\udcc6",
+            "author": "Rodirem",
+            "text": "If you\u2019ve got hectic days like me, you know the drill: endless messages from work and wife,\u00a0*\u201cDon\u2019t forget the budget overview meeting on Thursday at 5 PM\u201d*\u00a0or\u00a0*\u201cBring milk on your way home!\u201d*\u00a0(which I always forget).\n\nSo, I decided to automate my way out of this madness. The project has 3 parts: WhatsApp (where all the chaos begins), OpenAI\u2019s API (the brains behind the operation), Google Calendar (my lifesaving external memory).\n\nI built a little AI automation/agent (not sure how to describe it) I call\u00a0MyPersonalVA, to connect and automate all the parts together:\n\n* I use WhatsApp Business API and forward all relevant messages to MyPersonalVA contact.\n* Those messages go through OpenAI\u2019s ChatGPT, which reads them, identifies key details like dates, times, and tasks, and suggests the next step.\n* Finally, it syncs with the Google Calendar and creates events or reminders with a single tap.\n\nNow, whenever I get those \u201cDon\u2019t forget\u201d messages, I just forward them, and MyPersonalVA handles the rest. No more forgotten meetings or tasks... It really helps me with managing the chaos, and it is pretty easy to use.\n\nLet me know if you want to know anything or learn more about it :)",
+            "subreddit": "ChatGPTCoding",
+            "comments": [
+                {
+                    "author": "Rodirem",
+                    "text": "You can also try it if you want. Just send it a message :)\n\n[https://api.whatsapp.com/send?phone=447555850727&text=hi](https://api.whatsapp.com/send?phone=447555850727&text=hi)\n\nLet me know what you think \ud83d\ude4f\ud83c\udffb",
+                    "replies": [
+                        {
+                            "author": "Picatrixter",
+                            "text": "any repo?",
+                            "replies": [
+                                {
+                                    "author": "Rodirem",
+                                    "text": "Willing to share if there\u2019s a demand for it \u263a\ufe0f"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "[deleted]",
+                    "text": "[removed]",
+                    "replies": [
+                        {
+                            "author": "AutoModerator",
+                            "text": "Sorry, your submission has been removed due to inadequate account karma.\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/ChatGPTCoding) if you have any questions or concerns.*"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

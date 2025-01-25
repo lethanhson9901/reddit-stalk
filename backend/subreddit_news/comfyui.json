@@ -1,0 +1,200 @@
+{
+    "items": [
+        {
+            "title": "\"Fast Hunyuan + LoRA in ComfyUI: The Ultimate Low VRAM Workflow Tutorial",
+            "author": "Consistent-Tax-758",
+            "text": "[External Link]",
+            "subreddit": "comfyui",
+            "comments": [
+                {
+                    "author": "MaleficentChicken134",
+                    "text": "Would this work with 6GB VRAM?"
+                }
+            ]
+        },
+        {
+            "title": "Perfected 2-Stage SDXL workflow (Workflow Included)",
+            "author": "Good-Koala-5781",
+            "text": "[21 second upscaled output on an RTX 4080](https://preview.redd.it/ka3hugwbc0fe1.png?width=1947&format=png&auto=webp&s=2486fc2f942b4d881bbaabb8f9a3bc39355ac76f)",
+            "subreddit": "comfyui",
+            "comments": [
+                {
+                    "author": "Good-Koala-5781",
+                    "text": "Workflow: [https://drive.google.com/file/d/1V1au89gOfMIw-Yg09WUW-xILIEZ2Wjxm/view?usp=sharing](https://drive.google.com/file/d/1V1au89gOfMIw-Yg09WUW-xILIEZ2Wjxm/view?usp=sharing)"
+                }
+            ]
+        },
+        {
+            "title": "Kijai making changes to Hunyuan nodes IMG2V via LORA?",
+            "author": "Oldguy7219",
+            "text": "Looks like som,e changes coming our way from master Kijai!  [https://github.com/kijai/ComfyUI-HunyuanVideoWrapper](https://github.com/kijai/ComfyUI-HunyuanVideoWrapper)",
+            "subreddit": "comfyui",
+            "comments": [
+                {
+                    "author": "noyart",
+                    "text": "Wasnt the i2v gonna be released this month? Is that what this post is ref to?"
+                },
+                {
+                    "author": "_half_real_",
+                    "text": "https://github.com/kijai/ComfyUI-HunyuanVideoWrapper/issues/299\nWorks \"to some extent\", was trained on low res, apparently."
+                }
+            ]
+        },
+        {
+            "title": "A quick (maybe dumb) vram tip",
+            "author": "c_gdev",
+            "text": "So when using the Hunyuan video model, I often come very close to going over my vram limit. It doesn't crash, but it gets 20 times slower if I use system ram. (Like a 2 minute render becomes 40 minutes.)\n\nSo here are some things I can try to do to not go over my vram limit:\n\n* Use a portable version of Chrome or other browser. - It doesn't have any extensions installed. Less impact.\n\n* Close the browser. - it might kill your current render, but the next cued one should run if the the command prompt is still open.\n\n* Don't open large video files or browse the web while rendering. Those things use resources / need decoding, which can add to vram use. \n\nAdd your own thoughts :)",
+            "subreddit": "comfyui",
+            "comments": [
+                {
+                    "author": "LumaBrik",
+                    "text": "All you need to do is in your Nvidia control panel is set 'Prefer No System Fallback' and it will OOM instead of off loading to system RAM and slowing right down, as you are seeing.",
+                    "replies": [
+                        {
+                            "author": "c_gdev",
+                            "text": "I'll give it a try. Thanks."
+                        }
+                    ]
+                },
+                {
+                    "author": "ObligationOwn3555",
+                    "text": "If your CPU has in iGPU, you can get even a better impact by just plugging the display port cable into the motherboard instead of GPU. In doing so, the desktop is rendered with the CPU and the GPU Is fully dedicated to inference",
+                    "replies": [
+                        {
+                            "author": "c_gdev",
+                            "text": "Thanks, appreciated."
+                        }
+                    ]
+                },
+                {
+                    "author": "bantu9",
+                    "text": "disable hardware acceleration on your browser",
+                    "replies": [
+                        {
+                            "author": "c_gdev",
+                            "text": "Probably easier, thanks."
+                        }
+                    ]
+                },
+                {
+                    "author": "wholelottaluv69",
+                    "text": "This situation is the one use that I have found for the integrated graphics feature of my cpu.  When generating video, I plug the monitor into the mobo's igpu socket instead of using the gpu.  That saves me somewhere around 1gb or so of vram.    And I don't have to resort to closing the browser....",
+                    "replies": [
+                        {
+                            "author": "c_gdev",
+                            "text": "That's... maybe a thing I could try."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Guys with Flux and some Loras.",
+            "author": "segad_sp",
+            "text": "[External Link]",
+            "subreddit": "comfyui",
+            "comments": [
+                {
+                    "author": "Guilherme370",
+                    "text": "FINALLY SOMETHING OHTER THAN FLUXCHIN GIRLS!  \nAaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n\nthanks!  \nalso, the amount of details looks astonishing",
+                    "replies": [
+                        {
+                            "author": "segad_sp",
+                            "text": "why we don't see more AI guys here???",
+                            "replies": [
+                                {
+                                    "author": "Guilherme370",
+                                    "text": "Sadly because the majority of people making models or sharing images will only care about women, heck, even some \"new workflow\" or \"showcase of some technique\"... what are the images most of the time? the usual portrait images of a pretty woman doing nothing in specific, looking at the camera!\n\nEven worse is that out there (not just flux, sd15 and sdxl too) you get some really impressive finetunes, you then try out some generations and find out that it has a bias towards making women or including women, even when not asked for! :D (sad smile)"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "segad_sp",
+                            "text": "i'm so obsessed by details..."
+                        }
+                    ]
+                },
+                {
+                    "author": "jmccormack",
+                    "text": "Put this guy on tinder and you're gonna get hella matches fr fr",
+                    "replies": [
+                        {
+                            "author": "segad_sp",
+                            "text": "hahahha true!"
+                        }
+                    ]
+                },
+                {
+                    "author": "Shot_Pianist_8242",
+                    "text": "I see you have a type. Make a big boss from Metal Gears Solid 5."
+                },
+                {
+                    "author": "pepperspray911",
+                    "text": "Awesome work. Hope you make them available at some point!"
+                },
+                {
+                    "author": "-chaotic_randomness-",
+                    "text": "What loras did you use?",
+                    "replies": [
+                        {
+                            "author": "segad_sp",
+                            "text": "i trained some facial, body features and body types..."
+                        }
+                    ]
+                },
+                {
+                    "author": "pepperspray911",
+                    "text": "No need to gatekeep. Make with the lora names and settings!",
+                    "replies": [
+                        {
+                            "author": "segad_sp",
+                            "text": "no loras downloable on internet... i trained some loras... lora names?: faceSkinFeat, bodybuilderType, beardsFeat, eyeDetailed, bodyHairFeat... the name of custom loras"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "How do I blend/composite inidividual images like this into one final image?",
+            "author": "cbsudux",
+            "text": "I have 3 images of elements.\n\nA man + coffee mug + background.\n\nhttps://preview.redd.it/xvn7kmo2gxee1.png?width=1296&format=png&auto=webp&s=bae7565b1ba7fe27febd6caae6d3d745dea1399b\n\nHow do I create a final image given this prompt?\n\n**In a cafe a cartioon style elderly man lifts a cup to drink coffee**\n\nhttps://preview.redd.it/sg65oefagxee1.png?width=1080&format=png&auto=webp&s=b7b32f364cf0f0433b81a1044627531e29a577da\n\nhttps://preview.redd.it/nrz8norbgxee1.png?width=1080&format=png&auto=webp&s=05e9a04469fe39b07427591b3e24eb75ff169b57\n\n  \n",
+            "subreddit": "comfyui",
+            "comments": [
+                {
+                    "author": "Famagusta3",
+                    "text": "Very short:  ip-adapter with attention masking for the composition.",
+                    "replies": [
+                        {
+                            "author": "cbsudux",
+                            "text": "with flux or sdxl?"
+                        }
+                    ]
+                },
+                {
+                    "author": "6ft1in",
+                    "text": "Flux Redux will do better job for you .  \n[https://www.youtube.com/watch?v=xcQYE9G4kQM](https://www.youtube.com/watch?v=xcQYE9G4kQM)",
+                    "replies": [
+                        {
+                            "author": "cbsudux",
+                            "text": "this is good! but not close enough. The gaming chair distorts a bit (no cushion) and the living room changes too. She's also wearing a different t shirt/top. \n\nhttps://preview.redd.it/al806v480zee1.png?width=2448&format=png&auto=webp&s=4301cddfc342dc02f8b50a34a539674b8c046d0a",
+                            "replies": [
+                                {
+                                    "author": "cbsudux",
+                                    "text": "https://preview.redd.it/l97mqx5d0zee1.png?width=496&format=png&auto=webp&s=5306e475a7472d85182fe7514ee40c920317e51f"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "monsieur__A",
+                            "text": "Yep redux is amazing"
+                        }
+                    ]
+                },
+                {
+                    "author": "TurbTastic",
+                    "text": "Checkout OmniGen, but you might have to mix in some other tools to get the best results. Another commenter mentioned Flux Redux which would also be worth trying."
+                }
+            ]
+        }
+    ]
+}

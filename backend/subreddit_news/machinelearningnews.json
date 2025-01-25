@@ -1,0 +1,37 @@
+{
+    "items": [
+        {
+            "title": "Microsoft AI Introduces Sigma: An Efficient Large Language Model Tailored for AI Infrastructure Optimization",
+            "author": "ai-lover",
+            "text": "SIGMA features an innovative architecture that includes the Differential Query-Key-Value (DiffQKV) attention mechanism and benefits from extensive pre-training on system-specific data. DiffQKV optimizes inference efficiency by adopting tailored strategies for the Query (Q), Key (K), and Value (V) components of the attention mechanism. Unlike traditional approaches, which compress these components uniformly, DiffQKV applies selective compression. This involves aggressive compression of Key components while sparing Value components to maintain performance. The model also employs augmented Q dimensions, enhancing its representational capacity without significantly impacting inference speed.\n\nSIGMA\u2019s pre-training incorporates 6 trillion tokens, including 19.5 billion tokens from system-domain-specific sources and 1 trillion synthesized and rewritten tokens. This focused training ensures that SIGMA performs on par with state-of-the-art models in general domains while excelling in system-specific tasks. To evaluate its capabilities, Microsoft introduced AIMICIUS, a benchmark specifically designed for system-related tasks. SIGMA\u2019s performance on AIMICIUS demonstrates substantial improvements, outperforming GPT-4 with an absolute improvement of up to 52.5%......\n\nRead the full article here: [https://www.marktechpost.com/2025/01/23/microsoft-ai-introduces-sigma-an-efficient-large-language-model-tailored-for-ai-infrastructure-optimization/](https://www.marktechpost.com/2025/01/23/microsoft-ai-introduces-sigma-an-efficient-large-language-model-tailored-for-ai-infrastructure-optimization/)\n\nPaper: [https://arxiv.org/abs/2501.13629](https://arxiv.org/abs/2501.13629)\n\nhttps://preview.redd.it/g7me4pxz0wee1.png?width=1428&format=png&auto=webp&s=1056ca84ee42339fa8274eee41523f1370ec261c\n\n",
+            "subreddit": "machinelearningnews",
+            "comments": [
+                {
+                    "author": "humanatwork",
+                    "text": "I\u2019d imagine Nvidia will have the advantage here as they can draw from their own hardware and design infrastructure to reinforce Llama-Mesh and Nemotron models maximally. This was always the next step though in order to cut costs and improve performance enough to reach the next big milestone without breaking the bank anymore than they already are and intend to.",
+                    "replies": [
+                        {
+                            "author": "JohnnyLovesData",
+                            "text": "So, Cerebras' Wafer Scale Engine ?"
+                        }
+                    ]
+                },
+                {
+                    "author": "1deasEMW",
+                    "text": "![gif](giphy|CAYVZA5NRb529kKQUc|downsized)"
+                },
+                {
+                    "author": "tselatyjr",
+                    "text": "I'd like to see them fix Copilot first before this stuff"
+                }
+            ]
+        },
+        {
+            "title": "Mobile-Agent-E: A Hierarchical Multi-Agent Framework Combining Cognitive Science and AI to Redefine Complex Task Handling on Smartphones",
+            "author": "ai-lover",
+            "text": "Researchers from the University of Illinois Urbana-Champaign and Alibaba Group have developed Mobile-Agent-E, a novel mobile assistant that addresses these challenges through a hierarchical multi-agent framework. The system features a Manager agent responsible for planning and breaking down tasks into sub-goals, supported by four subordinate agents: Perceptor, Operator, Action Reflector, and Notetaker. These agents specialize in visual perception, immediate action execution, error verification, and information aggregation. A standout feature of Mobile-Agent-E is its self-evolution module, which includes a long-term memory system.\n\nMobile-Agent-E operates by continuously refining its performance through feedback loops. After completing each task, the system\u2019s Experience Reflectors update its Tips and propose new Shortcuts based on interaction history. These updates are inspired by human cognitive processes, where episodic memory informs future decisions, and procedural knowledge facilitates efficient task execution. For example, if a user frequently performs a sequence of actions, such as searching for a location and creating a note, the system creates a Shortcut to streamline this process in the future. Mobile-Agent-E balances high-level planning and low-level action precision by incorporating these learnings into its hierarchical framework......\n\nRead the full article: [https://www.marktechpost.com/2025/01/23/mobile-agent-e-a-hierarchical-multi-agent-framework-combining-cognitive-science-and-ai-to-redefine-complex-task-handling-on-smartphones/](https://www.marktechpost.com/2025/01/23/mobile-agent-e-a-hierarchical-multi-agent-framework-combining-cognitive-science-and-ai-to-redefine-complex-task-handling-on-smartphones/)\n\nPaper: [https://arxiv.org/abs/2501.11733](https://arxiv.org/abs/2501.11733)\n\nGitHub Page: [https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E](https://github.com/X-PLUG/MobileAgent/tree/main/Mobile-Agent-E)\n\nProject Page: [https://x-plug.github.io/MobileAgent/](https://x-plug.github.io/MobileAgent/)",
+            "subreddit": "machinelearningnews",
+            "comments": []
+        }
+    ]
+}

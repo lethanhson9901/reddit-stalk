@@ -1,0 +1,38 @@
+{
+    "items": [
+        {
+            "title": "What are the best MLOps conferences to attend this 2025?",
+            "author": "pablopazosdominguez",
+            "text": "",
+            "subreddit": "mlops",
+            "comments": [
+                {
+                    "author": "arena_one",
+                    "text": "I would be interested in this too!"
+                },
+                {
+                    "author": "pharmaDonkey",
+                    "text": "i attended the databricks one last year, was pretty good",
+                    "replies": [
+                        {
+                            "author": "Tasty-Scientist6192",
+                            "text": "It used to be good years ago, but it's a corporate pay-to-speak event nowadays."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Meta ML Architecture and Design Interview",
+            "author": "Outrageous_Bad9826",
+            "text": "I have an upcoming Meta ML Architecture interview for an L6 role in about a month, and my background is in MLOps(not a data scientist). I was hoping to get some pointers on the following:\n\n1. What is the typical question pattern for the Meta ML Architecture round? any examples?\n2. I\u2019m not a data scientist, I can handle model related questions to a certain level. I\u2019m curious how deep the model-related questions might go. (For context, I was once asked a differential equation formula for an MLOps role, so I want to be prepared.)\n3. Unlike a usual system design interview, I assume ML architecture design might differ due to the unique lifecycle. Would it suffice to walk through the full ML lifecycle at each stage, or would presenting a detailed diagram also be expected?\n4. Me being an MLOps engineer, should I set the expectation or the areas of topics upfront and confirm with the interviewer if they want to focus on any particular areas? or follow the full life cycle and let them direct us? The reason I'm asking this question is, if they want to focus more on the implementation/deployment/troubleshooting and maintenance or more on Model development I can pivot accordingly.\n\nIf anyone has example questions or insights, I\u2019d greatly appreciate your help.",
+            "subreddit": "mlops",
+            "comments": [
+                {
+                    "author": "sxg17",
+                    "text": "Hey! I'm a MLE (not MLOps eng) and I recently went through the Meta L5 ML Architecture & Design\u00a0interview.  I don't have all the answers but I'll share the resources that I found super helpful: \n\n* Machine Learning System Design Interview\u00a0Book (Ali Aminian, Alex Xu) - chapters to focus on are 10, 5, and 7. Meta tends to ask questions based on these -  I  got asked a variation of chapter 7\n* These posts by Bharathi Priyaa - [part 1](https://medium.com/@reachpriyaa/how-to-crack-machine-learning-interviews-at-faang-78a2882a05c5) and [part 2](https://medium.com/@reachpriyaa/part-2-how-to-crack-machine-learning-interviews-at-faang-pointers-for-junior-senior-staff-4b89e10bff28)\n* MLEPath [ml sys design video](https://www.youtube.com/watch?v=XN2ymraj27g) and [related article](https://medium.com/@mlepath/your-definitive-guide-to-machine-learning-system-design-interview-9d5dd3febb1b) \\- good for understanding how to frame your answers / what to should cover in the time you have\n\nIt\u2019s unlikely they\u2019ll ask detailed model equations during the interview. The actual interview time is typically 35 minutes (excluding intros etc), so there isn\u2019t really much time for deep theory questions. I wasn\u2019t asked any.\n\nAs you mentioned, you can set expectations with the interviewer at the beginning of the interview/get their buy in. You'll probably still have to cover the full lifecycle but you can try to focus on your strengths/MLOps area more."
+                }
+            ]
+        }
+    ]
+}

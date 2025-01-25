@@ -1,16 +1,38 @@
 import json
 
+def sort_data(data):
+    # Group items by subreddit
+    subreddit_groups = {}
+    for item in data.get("items", []):
+        subreddit = item.get("subreddit", "")
+        if subreddit not in subreddit_groups:
+            subreddit_groups[subreddit] = []
+        subreddit_groups[subreddit].append(item)
+    
+    # Sort each subreddit group by score (descending)
+    for subreddit, items in subreddit_groups.items():
+        subreddit_groups[subreddit] = sorted(items, key=lambda x: x.get("score", 0), reverse=True)
+    
+    # Flatten the sorted groups back into a single list
+    sorted_items = []
+    for subreddit in sorted(subreddit_groups.keys()):  # Sort subreddits alphabetically
+        sorted_items.extend(subreddit_groups[subreddit])
+    
+    # Update the original data with sorted items
+    data["items"] = sorted_items
+    return data
+
 def clean_comments(comments):
-    cleaned_comments = []
+    cleaned_comments = {}
     for comment in comments:
         author = comment.get("author", "")
         text = comment.get("text", "")
         if author and text:
             replies = clean_comments(comment.get("replies", []))  # Recursively clean replies
-            comment_data = {"author": author, "text": text}
+            comment_data = {"text": text}
             if replies:  # Only include "replies" if it's not empty
                 comment_data["replies"] = replies
-            cleaned_comments.append(comment_data)
+            cleaned_comments[author] = comment_data
     return cleaned_comments
 
 def clean_json_data(data):
@@ -21,6 +43,7 @@ def clean_json_data(data):
             "author": item.get("author", ""),
             "text": item.get("text", ""),
             "subreddit": item.get("subreddit", ""),  # Include subreddit information
+            "score": item.get("score", 0),  # Include score for reference
             "comments": clean_comments(item.get("comments", []))  # Clean comments hierarchically
         }
     
@@ -37,7 +60,11 @@ def main():
     with open(input_file, 'r') as file:
         data = json.load(file)
     
-    cleaned_data = clean_json_data(data)
+    # Sort data by subreddit and score
+    sorted_data = sort_data(data)
+    
+    # Clean the sorted data
+    cleaned_data = clean_json_data(sorted_data)
     
     with open(output_file, 'w') as file:
         json.dump(cleaned_data, file, indent=4)

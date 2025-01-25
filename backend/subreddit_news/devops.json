@@ -1,0 +1,458 @@
+{
+    "items": [
+        {
+            "title": "Hey folks Anybody interested in Tech Talk call? We've got Michael Hausenblas - AWS Observability principal, CNCF Ambassador, ex-RedHat Developer Advocate ..",
+            "author": "Dubinko",
+            "text": "Hey Folks,\n\nMichael Hausenblas [https://www.linkedin.com/in/mhausenblas/](https://www.linkedin.com/in/mhausenblas/) will do a call where we will talk about:\n\n\\- Observability (Open Source solutions, SaaS observability, AWS Observability etc.)  \n\\- Career advices and hiring practices, what are the expectations from modern day DevOps engineer  \n\\- Q&A for various other topics\n\n**Its free event.** No payments, No ads.\n\nif you are interested write something in the comments and i'll dm details (alternatively even details in my profile post)\n\nevent details & link: [https://prepare.sh/lab/6793919569cd8dcc626ae869](https://prepare.sh/lab/6793919569cd8dcc626ae869)\n\n29 Jan, 16:00 UTC (or 11:00 EST)",
+            "subreddit": "devops",
+            "comments": [
+                {
+                    "author": "blarrybob",
+                    "text": "I\u2019d like to join!"
+                },
+                {
+                    "author": "BigFluffyCloudz",
+                    "text": "I'm here for it."
+                },
+                {
+                    "author": "timee_bot",
+                    "text": "View in your timezone:  \n[29 Jan, 16:00 UTC][0]  \n\n[0]: https://timee.io/20250129T1600?tl=Hey%20folks%20Anybody%20interested%20in%20Tech%20Talk%20call%3F%20We've%20got%20Michael%20Hausenblas%20-%20AWS%20Observability%20principal%2C%20CNCF%20Ambassador%2C%20ex-RedHat%20Developer%20Advocate%20.."
+                },
+                {
+                    "author": "worldpwn",
+                    "text": "I want to join \ud83d\udc4d"
+                },
+                {
+                    "author": "swiftycon",
+                    "text": "I'm interested!"
+                },
+                {
+                    "author": "mortalhal",
+                    "text": "Interested"
+                },
+                {
+                    "author": "pythonQu",
+                    "text": "Interested"
+                },
+                {
+                    "author": "LeatherDefinition583",
+                    "text": "I am interested. What time and date is it ?"
+                },
+                {
+                    "author": "Flowkeys",
+                    "text": "Definitely interested \ud83d\udc4d"
+                },
+                {
+                    "author": "exight",
+                    "text": "I want to join"
+                },
+                {
+                    "author": "TitusKalvarija",
+                    "text": "I would like to join.\n\nThank you for the event"
+                },
+                {
+                    "author": "TowARow",
+                    "text": "interested"
+                },
+                {
+                    "author": "borgkocka",
+                    "text": "Interested, thank you."
+                },
+                {
+                    "author": "deiwor",
+                    "text": "Very interesting, link please? \ud83d\ude00"
+                },
+                {
+                    "author": "DormantLemon",
+                    "text": "I\u2019d love to join; time zone is a bits of a pita but definitely would like to sit in!"
+                },
+                {
+                    "author": "nowhacker",
+                    "text": "interested"
+                },
+                {
+                    "author": "BaluBlanc",
+                    "text": "I'd like to join as well.   And thanks."
+                },
+                {
+                    "author": "FlipperRSBoy",
+                    "text": "I am interested. Thanks"
+                },
+                {
+                    "author": "winstonmyers",
+                    "text": "This sounds fantastic! Thanks for organizing. I'd love to attend."
+                },
+                {
+                    "author": "sys-dev",
+                    "text": "I\u2019m interested."
+                },
+                {
+                    "author": "br64k",
+                    "text": "Sounds interesting. I'll attend."
+                },
+                {
+                    "author": "missconyelo",
+                    "text": "I'm interested"
+                },
+                {
+                    "author": "waythirfty",
+                    "text": "I am interested, Thanks!"
+                },
+                {
+                    "author": "jjneely",
+                    "text": "I'm an Observability SME and I'd love to join to keep my own skills up to date!  Thanks!"
+                },
+                {
+                    "author": "vincentdesmet",
+                    "text": "Interesting! It\u2019s 11pm my time zone but I\u2019ll try to be there"
+                },
+                {
+                    "author": "TearDifferent5503",
+                    "text": "That sounds, interesting! Please DM me details"
+                },
+                {
+                    "author": "GeniusPengiun",
+                    "text": "RedHat eww\n\nAWS eww"
+                }
+            ]
+        },
+        {
+            "title": "Should I take on the Associate Devops Engineer role as a fresher?",
+            "author": "lbttxlobster69",
+            "text": "I'm a 2024 computer science graduate who spent the last 7 months learning Devops and cloud Technologies on my own (linux, Jenkins, Docker, Kubernetes, Terraform, Ansible, AWS, grafana etc). Devops has been the field I wanted to work in and now I managed to crack an interview at a company where they're hiring freshers for the role of associate Devops Engineer (they were particularly looking for freshers but only selects the ones that has a good grasp on for everything works. Interview was kinda hard). I've received the offer letter.\n\nI keep on reading in developer subreddits that you need experience in developer or sysadmin roles to be a good devops Engineer. I have moderate knowledge in springboot framework, and web development in react js (but no industry level experience in neither development nor devops, not even internships). So I'm having second thoughts now whether I should take on the devops offer, they'll provide 3 months training but I'm afraid It'll difficult to switch to any developer roles later (if that's something I want in the future) due to the lack of coding experience.\n\nWas anyone of you in a similar boat? Let me know your experience and how it went after you started your career as a devops Engineer without prior developer roles. Is to a bad idea to start as a fresher in this role or am I just overthinking?",
+            "subreddit": "devops",
+            "comments": [
+                {
+                    "author": "electricninja911",
+                    "text": "Do it. Break stuff and learn from it. I did not start as a developer, but started as a junior cloud engineer. I was lucky to get it without a dev/swe background, but was also ready to put in the work to learn a lot of IaaC programming, system design and system resiliency principles. I am glad I did it and ever since I joined the work, my career trajectory has been only upwards despite some downturns.",
+                    "replies": [
+                        {
+                            "author": "ohhmy097",
+                            "text": "Second this, i rotated from a network engineering position and before that firewall policy with a CS major. No prior devops background but i knew thats what i wanted to do so i grinded looking for associate devops and platform engineer roles. Found one 2 years ago, excelled in it, and was promoted first year.  I\u2019m hoping to get my SR title within the next 2 years"
+                        },
+                        {
+                            "author": "lbttxlobster69",
+                            "text": "Thanks for sharing man. That's motivating stuff"
+                        }
+                    ]
+                },
+                {
+                    "author": "NNeast",
+                    "text": "If you like it rough, go for it",
+                    "replies": [
+                        {
+                            "author": "lbttxlobster69",
+                            "text": "Yeah I'm willing to put in the work"
+                        }
+                    ]
+                },
+                {
+                    "author": "Mountain_b0y",
+                    "text": "Dev ops can mean a lot of things. I think it really depends on what your team is doing.\n\nAlmost none of my \u201cdevops\u201d folks could do application development at this point, it\u2019s been too long and they\u2019ve been using other skills. And that\u2019s fine. I don\u2019t need them to muck about with Spring or React.  Because they are incredibly busy dealing with Kubernetes and terraform and our CI/CD system, etc etc.\n\nThat said: some of our strongest, senior staff engineers work across the stack in all respects and that\u2019s because they spent years doing application development, and most of the time, yes, they did those years of traditional software development first.\n\nBut, they were also doing those years of traditional software development when platform engineering, cloud engineering, SRE, and \u201cdevops\u201d wasn\u2019t as much of a developed area. The distinction between application development and system administration was much more stark.\n\nIf you\u2019re interested in working in platform engineering, or devops, I wouldn\u2019t advise you to go work in application engineering first. I think you should jump in and start using the frameworks and tools on the job- your list was good: Kubernetes, Grafana, Docker, Terraform or Tofu, Containers, Cloud Services.  I would look at system architecture, and also make sure that you understand some of the sys arch pieces like CDN, webservers, load balancers, etc.",
+                    "replies": [
+                        {
+                            "author": "lbttxlobster69",
+                            "text": "Yeah I'm aware that most senior devops engineers will be rusty in their coding skills. I'm just afraid of becoming a 10+ yr exp devops Engineer who has dogshit knowledge in programming lol. Thanks I'll look more into the topics that you mentioned in last paragraph.",
+                            "replies": [
+                                {
+                                    "author": "verdinho-verdoso",
+                                    "text": "You haven\u2019t even started yet and you\u2019re already thinking about 10 years from now. In 10 years maybe devops doesn\u2019t even exist anymore, so don\u2019t worry and one step at a time, every day is a new technology to learn"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "NY10",
+                    "text": "Take it. You learn things on the job. Don\u2019t run away"
+                },
+                {
+                    "author": "JacqueShellacque",
+                    "text": "You've been offered an opportunity to learn a lot of things. There are no real ways to box or categorize the knowledge you'll need, most of it you'll learn as you go. The people who interviewed you, unless completely incompetent, would've had other candidates to vet and selected you, meaning you must have at least a minimum of the pre-requisites. So there's nothing really to think about here."
+                },
+                {
+                    "author": "rabbit_in_a_bun",
+                    "text": "Not that old, only 20 years exp, mostly as integration/automation/verification/ and devops.\n\nFor your journey, you can use a workplace to learn how devs work. You do not have to stay in that place for 10 years.\nWhen you build and maintain pipelines, you will see a heckton of failures, and you would want to be involved to learn where they come from. Could be a compilation error, could be using bad drivers, could be an OS quirk, could be a failed automatic test... Since devops have their grubby little fingers into many different things, we learn a lot about how to make a good process work, and this is where a lot of new developers are lacking. Think about it like this: in 2 years you will switch to a junior dev role, but you will fix your own builds and you will master git by then, and you will know what broke and where.\n\nAs for what you need to do in order to move to a dev role later on: do a couple of questions a day on leetcode. Use actual code in your pipelines. Try to understand what's going on in the project you work on. Work on automation testing, add tests and checks of your own to your pipelines etc'. Very important - be with excelent terms with the devs. Go eat with them, sit near them (because you want to support them better), make friends with them, if you have code related issues in your jobs, ask them to explain to you what the error is and how the code reached that bug etc'.\n\nWhen you do go for a dev role, you will need to write in your cv all the coding that you did, and emphasize how much you have contributed to the code quality and its ci/cd process.\n\nAnother option, if you are buddies with the devs right now, maybe they can help you out, either at the current place or maybe they know a place looking for juniors and they can vouch for you.",
+                    "replies": [
+                        {
+                            "author": "lbttxlobster69",
+                            "text": "Thanks for the insights."
+                        }
+                    ]
+                },
+                {
+                    "author": "Legitimate-Grand8952",
+                    "text": "Can you please share what questions you were asked during the interview.",
+                    "replies": [
+                        {
+                            "author": "lbttxlobster69",
+                            "text": "Questions were mainly about CI/CD pipelines,How to set them up and how to write jenkinsfile, how to pass env variables, testing etc. and some questions regarding docker and Kubernetes, writing docker-compose file, volumes, networks etc. in-depth questions on networking and linux commands. Service specific questions from AWS like how will you setup a complex application using elastic beanstalk etc. Ig it's pretty easy questions for the actual devops engineers in this sub",
+                            "replies": [
+                                {
+                                    "author": "Np_slip_69420",
+                                    "text": "Were DSA/leetcode questions asked in the initial rounds of interview ? If so how much ? \n\nI have a buddy who said you don\u2019t need DSA for devops related roles (for interviews), but I read here on Reddit that few companies (such as Faang ) or startup\u2019s do ask ask DSA in the first 1-2 round of the interview"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "bilingual-german",
+                    "text": "I think you should try, but please be prepared that there are not many entry level positions in the devops field. I would argue any software engineering position is better than no position at all.\n\nThere are also some topics you might want to be at least prepared to answer some questions about, but no one should expect a fresher to know everything. Just be honest. Coming straight from university can also be an advantage, because you're used to learning things fast. \n\nIt's also more important to understand the general concepts than knowing every implementation.",
+                    "replies": [
+                        {
+                            "author": "lbttxlobster69",
+                            "text": "May I know what those topics are? I only learned the devops technologies I mentioned in the post and I started learning them in the previous 7 months, so yeah in some tools I just have surface level knowledge",
+                            "replies": [
+                                {
+                                    "author": "bilingual-german",
+                                    "text": "I think your list of technologies is already pretty good.\n\nOf course people might ask you how these tools work internally. Or to compare them and explain the differences and when they are used.\n\nAnd then they might ask you some more about architecture, systems design, networking & protocols (IP, DNS, HTTP, HTTPS, ...), security (TLS certs, SSH, ...), database optimization techniques, maybe how git works and how you would use it."
+                                },
+                                {
+                                    "author": "Mysterious-Primary18",
+                                    "text": "What did you use for resources to learn those skills in seven months? That\u2019s impressive!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "steviejackson94",
+                    "text": "Do it, 100%\n\nI got offered a similar opportunity, ive learnt so much"
+                },
+                {
+                    "author": "Delicious_Order_8954",
+                    "text": "Congratulations on getting the offer. I'm trying to break into DevOps too. I recently graduated with a Master's in Cybersecurity but there is a real lack of opportunities in that domain here in Canada. \n\nI've also been learning DevOps tools on my own, I've pretty much covered all that you've mentioned. Do you have any tips on the job search? I have about 2 years of experience working as a full-stack developer which I'm hoping will help me stand out.",
+                    "replies": [
+                        {
+                            "author": "Boonigan",
+                            "text": "Do some projects outside of work. Having a lab environment at home has done wonders for me, not only in learning but showing passion for what I do when I\u2019m able to mention it in an interview.\n\nIt\u2019s gone a long way when interviewing for my last two DevOps jobs, with the one I recently landed being a senior role."
+                        }
+                    ]
+                },
+                {
+                    "author": "pojzon_poe",
+                    "text": "I translate every \u201cAssociate\u201d X into \u201cNot rly a\u201d X. Fits like a glove every time.\n\nAws associate architect ? Aws \u201cnot rly an\u201d architect.\n\nAssociate devOps? \u201cNot rly a\u201d devops"
+                },
+                {
+                    "author": "Pale_Contribution_89",
+                    "text": "It's a nice to have,\u00a0 but no you don't need to have experience as a developer to be a devops engineer.\u00a0\n\n\nI would jump on this opportunity with both hands considering the job market right now"
+                }
+            ]
+        },
+        {
+            "title": "Interview question: a pod is not able to schedule. How do you troubleshoot it ?",
+            "author": "Key_Lead3784",
+            "text": "This was the question asked in the interview. From that there were many other questions like how do I troubleshoot when there's crashbackloopoff etc. I told every possible way for both the questions like checking events, logs, resource constraints, taint or tolerations, checking liveness and readyness probe, node resource everything. But the interviewer was looking for something different. How would you answer these questions ?\nHow do you troubleshoot when pod is not scheduling\nHow do you troubleshoot when there's crashbackloopoff\nHow do you troubleshoot when remains in pending for large amount of time ?",
+            "subreddit": "devops",
+            "comments": [
+                {
+                    "author": "dariusbiggs",
+                    "text": "1. `describe` the pod, that'll tell you why it's not working. \n\nFrom there it can lead you to many places, like\n\n- Unable to download a container image\n- Unable to mount a volume, or secret, or config map\n- No nodes available to schedule it\n- Failing readiness or health checks\n- Crash looping workload\n- etc.."
+                },
+                {
+                    "author": "ermguni",
+                    "text": "Did you go straight to answers or ask any questions? Maybe the interviewer wanted to have a conversation and not a monologue.",
+                    "replies": [
+                        {
+                            "author": "YumWoonSen",
+                            "text": "This.  I often ask interview questions to see how people think, not necessarily to see what they know. \n\nOne of my favorites is \"Your phone rings and the person says <the stuff we manage> is down.  What do you do?\"  It never fails to amuse me when someone's first answer is, \"Refer them to the help desk.\""
+                        }
+                    ]
+                },
+                {
+                    "author": "bilingual-german",
+                    "text": "https://learnk8s.io/troubleshooting-deployments"
+                },
+                {
+                    "author": "GrayRoberts",
+                    "text": "I check events. Usually will find a missing PV, secret, config map. Sometimes the deployment yaml will capture status as well. OpenShift gives you more UI to work with.",
+                    "replies": [
+                        {
+                            "author": "Liquid_G",
+                            "text": "I'm pretty sure missing PV/secret/configmap etc will only make itself known after the pod is actually scheduled."
+                        },
+                        {
+                            "author": "Key_Lead3784",
+                            "text": "I told this one but idk why the person didn't accept it",
+                            "replies": [
+                                {
+                                    "author": "MumeiNoName",
+                                    "text": "What were they looking for? Did you have a convo with them or was this a one way interview"
+                                },
+                                {
+                                    "author": "bilingual-german",
+                                    "text": "In think you're expected to know which type of errors exist and what the typical reasons for these are. \n\n- unschedulable -> resources are not enough, the control node doesn't have a node available which could run the workload\n- ImagePullBackOff -> wrong image url, tag not available, auth problems\n- CrashLoopBackOff -> the pod can be created from the image, but it fails fast. Usually you need to look in the log of the previous run."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "theyellowbrother",
+                    "text": "k describe pod usually tells you everything you need. Bad image name that doesn't exist in artifact repo. Artifact repo is unaccessible (can't nslookup, ping), lack of resources, bad tag etc.. If not, describe service. \n\n99% of my problem is the above. Always read the first line. Then I try to pull the image locally and see if I can run it. The 1% is something obscure like missing GPU drivers for the image."
+                },
+                {
+                    "author": "harry7cao",
+                    "text": "I would answer: run kubectl describe pod. The reason of pod being stuck in pending is displayed there. Then depends on the reason such as pv, service account, resource request, taint, etc we can debug more"
+                },
+                {
+                    "author": "dacydergoth",
+                    "text": "If you're jumping straight to describe pod your observability solution has failed to send an alert. So fix that too :-)",
+                    "replies": [
+                        {
+                            "author": "jba1224a",
+                            "text": "We don\u2019t have observability tools, those cost money! /s",
+                            "replies": [
+                                {
+                                    "author": "InsolentDreams",
+                                    "text": "Running Prometheus costs almost nothing.  Sorry but there\u2019s no excuse for no monitoring.  It\u2019s a fallacy.  Now if you don\u2019t have experience with the tool it is (more) understandable but as a devops professional managing kubernetes means you need to become proficient at Prometheus"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "paleopierce",
+                    "text": "I would first put in an always-up liveness check so that the pod will stay up and then do k describe, check image, events, get onto the pod, etc., to check."
+                },
+                {
+                    "author": "jba1224a",
+                    "text": "Get hooked into the cluster, I\u2019d use K9S but kctl is also a go to.\n\nRun a describe on the pod\n\nFrom there sort out why it\u2019s not scheduling.  Go check for taints on the nodes.\n\nFrom there it will be pretty apparent which direction to go in - but typical reasons you\u2019d see would be affinity selection issues (check labels) or node selection issues (check node bases).\n\nThe question isn\u2019t really aimed at you solving the specific problem of pod scheduling, the intent is to understand if you know how to troubleshoot K8S in general."
+                },
+                {
+                    "author": "ComplexAd3500",
+                    "text": "This question is usually asked to have a conversation with the candidate and I ask this as well in interviews. Usually I expect follow up questions like,  are the node\u2019s tainted? Whats the max nodes can scale to and what is the current value they are at? Is the connection to container registry established correctly? There can be other follow up questions too but no candidate I interviewed asked more than 3 follow up questions to which I gave positive responses to see what other questions can they come up with but usually candidates are impatient and try to come up with a solution after 1 or 2 questions."
+                },
+                {
+                    "author": "serverhorror",
+                    "text": "They weren't looking for something different they were looking for your chain of reasoning, why you chose which option, and why you chose them first.\n\nIt's all about explaining your reasoning. \n\nI do that all the time, ask a question, listen to _how_ it is answered and then take the option away. Even if it is correct. Even if there are no more \"correct\" answers. I want to know how the situation unfolds under the \"_Shit, I don't know!_\"-situation.\n\nIt's likely that you used all the correct answers, but you didn't state your reasoning clearly enough for how this specific interviewer wanted to hear it."
+                },
+                {
+                    "author": "Ok_Satisfaction8141",
+                    "text": "\u201ca pod is not able to schedule\u201d. All\nyou mention happens after scheduling. I think the question was focused to troubleshoot kubernetes control plain components m, specifically the kube-scheduler."
+                },
+                {
+                    "author": "Classic_Handle_9818",
+                    "text": "i started collating stuff like this from my different interviews, includes stuff from like general terraform/coding stuff that i run into and prod troubleshooting stuations\n\n[https://devopsdaily.substack.com/](https://devopsdaily.substack.com/)"
+                },
+                {
+                    "author": "InsolentDreams",
+                    "text": "As others have said interviewing is less about knowing the right answer and more about explaining the right answer and why it\u2019s the right answer(s).  More often than not when interviewing I could fix the problem faster than I could describe it and that\u2019s not useful to try and get you a job.  It takes a different skill set to be able to interview rather than actually fixing the problem.\n\nAlso if the interviewer was non-technical he could be just reading off a script and expecting a specific answer or certain keywords which you didn\u2019t satisfy.  If he was a good interviewer he would realize his lack of knowledge in this space and ask good follow up questions to validate his assumption/conclusion of your answers based on his script and his (lack of) domain knowledge."
+                },
+                {
+                    "author": "admiralsj",
+                    "text": "If this is a production system with strict access controls, an observability platform is usually the first port of call.\n\nWith the right alerting the answer could be  \"I read the alert that tells me exactly why it's failing\""
+                },
+                {
+                    "author": "DFORKZ",
+                    "text": "DELETE"
+                }
+            ]
+        },
+        {
+            "title": "Feeling Stuck on What to Study!",
+            "author": "Ok_Professor3644",
+            "text": "Hey everyone,\n\nI\u2019m a junior DevOps engineer, and I\u2019ve been feeling a bit stuck lately when it comes to what I should focus on learning next. I love studying and picking up new skills, but my work tasks aren\u2019t particularly challenging or new, and I\u2019m bound by a specific tech stack\u2014so I don\u2019t really get to experiment with other tools at work.  \n  \nI\u2019ve already studied the core DevOps tools and concepts  \n  \nHere\u2019s what\u2019s on my mind:  \n1- should i learn new tools? but i don't get to use them so i feel it's pointless and waste of time?  \n2- should i Go deeper into concepts and aspects like container and Kubernetes security, reliability engineering, or advanced troubleshooting.  \n3- should I explore entirely different areas like AI/ML, distributed systems, or backend fundamentals to expand my knowledge beyond DevOps?\n\nI\u2019m not sure how to prioritize or if I\u2019m overthinking it. What\u2019s worked for you in similar situations? How do you decide what to study to stay sharp and keep growing as a professional?\n\nWould love to hear your thoughts and what you\u2019ve been focusing on lately and share experience \n\nand Thanks in advance",
+            "subreddit": "devops",
+            "comments": [
+                {
+                    "author": "Smashing-baby",
+                    "text": "Go deeper, not wider right now. Focus on K8s security and reliability - those skills are valuable everywhere.\n\nBuild a homelab to experiment with new tools. That way you're not limited by work restrictions and can break stuff without consequences."
+                },
+                {
+                    "author": "IDENTITETEN",
+                    "text": "Programming."
+                },
+                {
+                    "author": "modsaregh3y",
+                    "text": "Also a junior devops and feel the same sometimes, thinking I\u2019ve got a tech sussed. Then I interact with a senior, and notice I haven\u2019t scratched the surface. \n\nMaybe see how deep that stack goes, or hoe to use it differently. Other than that, check what stacks people are hiting for, and train those \ud83e\udd37\u200d\u2642\ufe0f"
+                },
+                {
+                    "author": "WarOctopus",
+                    "text": "I say start by learning how to use a computer - like for real.  No Windows, no Mac, but straight Linux and all of how to use it like an expert.  This will pay dividends as you move on to anything else.  This is a good way to get going:\n\nhttps://missing.csail.mit.edu/"
+                },
+                {
+                    "author": "Illustrious-Paper393",
+                    "text": "This can be tricky, be sure you know everything you feel you can know about what stack you are working with now. There is always something you can optimize (imo), especially in K8's. Also, along the same lines K8's can be really tricky to troubleshoot if there is something you havent seen yet, start tinkering with stuff to see what happens."
+                },
+                {
+                    "author": "Dense_Ad_321",
+                    "text": "Focus on something that You use everyday and will help You solve a problem. Learn X if it gonna help You with Y, Z etc"
+                },
+                {
+                    "author": "Bigdaddy_V1",
+                    "text": "I\u2019ll recommend learning ML/AI because sooner than later it\u2019ll be integrated into most systems and services"
+                },
+                {
+                    "author": "New-Peanut-5610",
+                    "text": "Any advice to land a junior role? Currently a full stack dev for 1.5 years but been spending a lot of time learning about DevOps related technologies"
+                }
+            ]
+        },
+        {
+            "title": "Article about the number of pipelines",
+            "author": "PoireauMasque",
+            "text": "Hello,\n\nI am building a new product, and I want to challenge my usual takes over CICD pipelines, and I am specifically trying to determine how many pipeline do I want. \n\nSo I have been searching for resources talking about this, but I have really hard time finding any. I can find 50 articles explaining what is CICD and IAC, another 50 will talk about the different possible tools. And they are always in a very silo philosophy: \"Here the info if you want to do IAC pipeline\", \"here the info if you want to do app pipeline\". \n\nBut I can not find anything talking about the more global pipelines.  \n\nI am looking for example for thing like the values of 1 pipeline for the IAC + 1 per product versus 1 pipeline for everything, or anything in general that consider. Or anything that can be related to the fact that IAC and App are not leaving in their own silo but are totally mingle and the pipeline will be at some level. \n\nSo I was wondering if you had good article talking about this?",
+            "subreddit": "devops",
+            "comments": [
+                {
+                    "author": "External_Mushroom115",
+                    "text": "Both approaches are very common up to the point I'ld say it's a matter personal preference so talk to your dev team to figure out how they see things.\n\nSingle pipeline for IAC and APP:  all is in one repo, nice & tidy. Handy for small applications. Stuff to think about is this: suppose tomorrow you need to change your IAC for another project/product to integrate with. Who will do that? Do you want to mix IAC stuff of various projects in a single app repo?\n\nAnother issue that could occur with this setup (but really depends on how you implement it) is that you can run into circular dependency: a piece of IAC is expected to be present before IAC is actually deployed. Another thing to consider is this: change rate on ICA is typically much lower than on app sources. So do you want to spend time & resources on (re)deploying (unchanged) IAC resources ?\n\nNote that there is a very thin line between IAC and APP: e.g. from a functional perspective, are cloud functions IAC or APP? And what about the deployment perspective? \n\nSeparate pipelines for IAC and app  is a little more work to start with but it does mitigate some of the downside mentioned above."
+                },
+                {
+                    "author": "bdzer0",
+                    "text": "Pretty simple IMO.  Use as many pipelines as make sense for your specific use case.  Looking for some 'standard' is pointless."
+                },
+                {
+                    "author": "dacydergoth",
+                    "text": "Less is more. I prefer a single, parameterized pipeline as it forces disciple on you and means you don't have huge drift between pipelines. Say for example a new requirement comes in to run an extra security scanner stage in each pipeline. Which is easier to update? One pipeline or 50?"
+                },
+                {
+                    "author": "See-9",
+                    "text": "!remindme 1 day",
+                    "replies": [
+                        {
+                            "author": "RemindMeBot",
+                            "text": "I will be messaging you in 1 day on [**2025-01-25 19:29:44 UTC**](http://www.wolframalpha.com/input/?i=2025-01-25%2019:29:44%20UTC%20To%20Local%20Time) to remind you of [**this link**](https://www.reddit.com/r/devops/comments/1i93oag/article_about_the_number_of_pipelines/m8ypoit/?context=3)\n\n[**CLICK THIS LINK**](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5Bhttps%3A%2F%2Fwww.reddit.com%2Fr%2Fdevops%2Fcomments%2F1i93oag%2Farticle_about_the_number_of_pipelines%2Fm8ypoit%2F%5D%0A%0ARemindMe%21%202025-01-25%2019%3A29%3A44%20UTC) to send a PM to also be reminded and to reduce spam.\n\n^(Parent commenter can ) [^(delete this message to hide from others.)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Delete%20Comment&message=Delete%21%201i93oag)\n\n*****\n\n|[^(Info)](https://www.reddit.com/r/RemindMeBot/comments/e1bko7/remindmebot_info_v21/)|[^(Custom)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=Reminder&message=%5BLink%20or%20message%20inside%20square%20brackets%5D%0A%0ARemindMe%21%20Time%20period%20here)|[^(Your Reminders)](https://www.reddit.com/message/compose/?to=RemindMeBot&subject=List%20Of%20Reminders&message=MyReminders%21)|[^(Feedback)](https://www.reddit.com/message/compose/?to=Watchful1&subject=RemindMeBot%20Feedback)|\n|-|-|-|-|"
+                        }
+                    ]
+                },
+                {
+                    "author": "MulberryExisting5007",
+                    "text": "My opinion: one is too few, and fifty is too many. Often you\u2019ll see a pipeline that\u2019s used to orchestrate other pipelines (\u201cpromote all changes from dev to qa\u201d). I\u2019ve been at orgs where running a promotion took hours of manual execution. Having 56 pipelines was great for dev teams that were component focused and wanted to be able to quickly push their changes, but hard on the people who were tasked with production rollout. I automated it of course, but I was shocked that the team was literally eye-balling each pipeline and then clicking on it to execute."
+                },
+                {
+                    "author": "divad1196",
+                    "text": "When people see they can write many pipelines, with many stages themselves containing multiple jobs...\nThey abuse it.\n\nAt work, I am on Gitlab, so you don't really have \"multiple pipelines\". I have jobs that runs before the MR and some that runs upon tag creation. We handle the versioning manually for simplicity.\n\n- when we add a tag, it's from code on main branch that passed all the tests already. It creates and publish the artifacts (docker images, python modules, ..)\n- before merging the MR, it runs one or 2 jobs that does all the tests in fast-fail. The tests should have been successful on the devs machine.\n\nThe point is: you might not need much. So stop wondering and just create it when you think you need it. At some point, when facing issues or disconfort with your decisions, you will reconsider what you have."
+                },
+                {
+                    "author": "Jonteponte71",
+                    "text": "We have *one* common CI/CD pipeline that we want 600 applications to use. They can choose to not use parts of it and override with their own build code, but then they are on their own and if they have issues with it they can\u2019t expect help from us. But we are also lucky in that most apps are Java microservices on Spring Boot, running on Openshift so mostly very consistent\ud83e\udd37\u200d\u2642\ufe0f"
+                }
+            ]
+        },
+        {
+            "title": "GIT CI/CD Suggestions Html Templates inside databases",
+            "author": "Imaginary-Ground-259",
+            "text": "Hello \ud83d\udc4b, \n\nI have 3 databases (system integration testing, staging and production). Each have a table holding html templates for different contract types + specifications.\n\nAt the moment there is no versioning on the databases itself, so my suggestion was to version them in git, have 4 branches build, sit, stg and prd. I'm a bit green on CI/CD (work as an system engineer but trying to gain devops knowledge) but my idea was to push to build and then merge to the other branches, then eventually trigger a pipeline to test and deploy on the databases.\n\nI need suggestions on how to organise the repo itself. Ideally the templates should be identical in all 3 branches, at the moment the app is still I'm development, so they are not identical. Considering this, should I just push the html templates on the repo directory or segregate them into different folders sit/, stg/ and prd/ ?",
+            "subreddit": "devops",
+            "comments": [
+                {
+                    "author": "kkapelon",
+                    "text": "You should save the html templates in Git and version them accordingly. That is the whole point of using Git.\n\nIs there any technical or business reason that forces you to have rendered HTML files inside a single table in a DB?"
+                },
+                {
+                    "author": "kryptn",
+                    "text": "Rendered templates or actual html templates? is the generated html an artifact for the user?\n\ndoes the database only have these html templates? is the database itself the deployable artifact?\n\n\nUsually I'd expect html templates to be in source control and used across all environments. Your CI pipeline would build your application with those templates, run tests against those routes that use those templates, and produce a deployable artifact if those tests pass. This is also where you'd do other parallel jobs to run linters or scanners. \n\nThen you'd update the next environment to use the passing artifact. \n\nSchema changes for a database would happen by running migrations which would presumably be built with that same artifact.",
+                    "replies": [
+                        {
+                            "author": "Imaginary-Ground-259",
+                            "text": "Ok so answers to your questions:\n- actual html templates with placeholders to fill in the customer details like name, address etc\n- databases only has this table and another table for references\n- wrt to the database being a deployable artifact, I am aware that changes to the databases are done via liquibase scripts (why they are currently not versioned, I have no idea as the department who handles then is a sister company)\n\nYou have given me a lot to go over and I appreciate your feedback immensely \ud83d\ude4f I might have some more questions once I go through your feedback thoroughly."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

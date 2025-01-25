@@ -1,0 +1,68 @@
+{
+    "items": [
+        {
+            "title": "Local LLaMA Server For Under $300 - Is It Possible?",
+            "author": "Fission4555",
+            "text": "I have a Lenovo mini pc with a 1x AMD Ryzen\u2122 5 PRO 4650GE Processor and 16gb ram. And its not using the integrated gpu at all, is there anyway to get it to use that? Its fairly slow at a 1000 word essay on llama3.2:\n\ntotal duration: 1m8.2609401s\n\nload duration: 21.0008ms\n\nprompt eval count: 35 token(s)\n\nprompt eval duration: 149ms\n\nprompt eval rate: 234.90 tokens/s\n\neval count: 1200 token(s)\n\neval duration: 1m8.088s\n\neval rate: 17.62 tokens/s\n\nIf I sell this, can I get something better thats just for AI processing? something like the \u00a0[NVIDIA Jetson Orin Nano Super Developer Kit](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/nano-super-developer-kit/)\u00a0that would have more ram?",
+            "subreddit": "LocalLLM",
+            "comments": [
+                {
+                    "author": "suprjami",
+                    "text": "There is no point using the GPU, the bottleneck is RAM bandwidth not compute.\n\nI have a 5600G with the same generation GPU as you, and inference runs within 1 tok/sec whether using CPU or GPU with ROCm.\n\nOnce you get into later CPU generations with Ryzen 7000 or 9000 and RDNA GPU, only then does the GPU do inference faster than CPU.\n\nIf you still want to try it, instructions are here: [rocswap](https://github.com/superjamie/rocswap). Your GPU is probably `gfc90c` but you need to build for `gfx900` and set environment variable `HSA_OVERRIDE_GFX_VERSION=9.0.0`.\n\nYou could also try Vulkan inference which will just work, but be the same speed or slower.\n\nThe best thing you can do on this system is buy fast RAM, but from the 17 tok/sec eval rate you appear to have fast RAM already. With 3200 MHz RAM on the 5600G I get ~15 tok/sec with the same model, Llama 3.2 3B Q8.\n\nYou can buy small ITX or mATX cases about 3 or 4 litres which take a full-sized GPU. Get one of them and a nVidia 3060 12G. That's the cheapest small useful system I can think of."
+                },
+                {
+                    "author": "PVPicker",
+                    "text": "What size llama models you running ? I have used mining cards P104 & P102s that are below $50 on eBay that are pretty fast.",
+                    "replies": [
+                        {
+                            "author": "Fission4555",
+                            "text": "for now just the llama3.2:3b model.  But id like to do bigger ones in the future.",
+                            "replies": [
+                                {
+                                    "author": "PVPicker",
+                                    "text": "I need to install some bench-marking script, but here's the timed result of asking it to write a 1000 word essay on the important of short essays on a 10GB P102-100 on Ubuntu. 16 seconds total. A seller was dumping them on eBay for $49 so I snagged a few of them as they offer compute similar to a 1080 Ti. There are also 8GB P104-100s on ebay for $40 that offer compute performance similar to a 1080. These are older cards, use a lot of power and a few of them have rust on the back shield somehow. Find a cheap used workstation that supports ATX power supplies (or already has PCI-E power cables), upgrade the power supply if needed, pop in a few mining cards.\n\n**$ time ollama run llama3.2:3b \"Can you write a 1000 word essay on the importance of short essays?\"**\n\n*(bunch of text here)*\n\n**real    0m16.354s**\n\n**user    0m0.074s**\n\n**sys     0m0.066s**"
+                                },
+                                {
+                                    "author": "ThinkExtension2328",
+                                    "text": "That\u2019s very easy if all you do is run a 3b model, look into mini pc\u2019s and run ollama server on them."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Anyone running r1 70b on a Mac Mini M4 Pro?",
+            "author": "MidnightProgrammer",
+            "text": "I used to have 2x3090, but I am down to one 3090 now, so I am limited to \\~30B models.  Is 70B r1 a big improvement over the 30B?  Anyone running it on a Mac Mini M4 Pro?  I am curious how well it would run the 70B version and what quant size you can get away with.  I'm also considering the Mac Book Pro M4 Pro/Max w/ 64G.",
+            "subreddit": "LocalLLM",
+            "comments": [
+                {
+                    "author": "Its_Powerful_Bonus",
+                    "text": "My Mac Studio M1 Ultra 64GB can run 72B Q6 with LMStudio. \n\nmlx-community/Qwen2.5-72B-Instruct-6bit\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 59.09 GB \u00a0 \u00a0 \u00a0  \nmlx-community/DeepSeek-R1-Distill-Llama-70B-6bit \u00a0 \u00a0 \u00a0 \u00a0 57.34 GB \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\n\nWhen I need bigger context I'm loading Q4 models.\n\nmlx-community/DeepSeek-R1-Distill-Llama-70B-4bit \u00a0 \u00a0 \u00a0 \u00a0 39.71 GB\u00a0 \n\n70B Q6 \\~8-9t/s  \n70B Q4 \\~12 t/s\n\nWorking with LLMs on MacBook won't be quiet, so my choice is to have Mac Studio to do heavy lifting. Cheers!",
+                    "replies": [
+                        {
+                            "author": "imtourist",
+                            "text": "I'd probably wait until the M4 Mac Studio since the laptop will be held back by thermal limits of its chassis.  In addition hopefully the SSD in the new Mac Studio will be like the mini be replaceable with 3rd party SSDs, the ones in the notebook are fully soldered in place.",
+                            "replies": [
+                                {
+                                    "author": "Its_Powerful_Bonus",
+                                    "text": "I have really big headache in terms of what to buy to speed up things after M1 Ultra. I\u2019ve been thinking about M4 Ultra, 2xRTX5090, 2xRTX4090 \u2026 at the end of day M1 Ultra speed and efficiency is great with one (serious) downside - speed of ingesting context. Everything else is good enough and I\u2019m happy with it. With nvidia when I\u2019m thinking about 1500W power supply I\u2019m scared \ud83d\ude31"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "jarec707",
+                            "text": "are the mlx-community models better optimized for Macs than other models?"
+                        }
+                    ]
+                },
+                {
+                    "author": "WarlaxZ",
+                    "text": "Read the release notes. 70b isn't that much better (and sometimes performs worse) then 32b as it comes from a different model, llama Vs qwen"
+                }
+            ]
+        }
+    ]
+}

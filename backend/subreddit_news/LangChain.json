@@ -1,0 +1,78 @@
+{
+    "items": [
+        {
+            "title": "\ud83d\udd25 DeepSeek's R1's Breakthrough in AI Reasoning \ud83d\udd25",
+            "author": "Diamant-AI",
+            "text": "[External Link]",
+            "subreddit": "LangChain",
+            "comments": [
+                {
+                    "author": "Muted_Estate890",
+                    "text": "So cool! I read somewhere that Deepseek started as a side project, and now they\u2019re out here outperforming Llama. Wild!",
+                    "replies": [
+                        {
+                            "author": "Diamant-AI",
+                            "text": "Definitely!"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "LangChain vs. CrewAI vs. Others: Which Framework is Best for Building LLM Projects?",
+            "author": "Eragon678",
+            "text": "\nI\u2019m currently working on an LLM-powered task automation project (integrating APIs, managing context, and task chaining), and I\u2019m stuck between LangChain, CrewAI, LlamaIndex, openai swarm and other frameworks. Maybe I am overthinking still need this community help\n\n\nThought which are stuck in my mind\n\n1. How easy is it to implementcomplex workflows and API integration?\n2. How much production ready are these and how much can they scale\n3. How data like rags files, context etc scales\n4. How do they compare in performance or ease of use?\n5. Any other alternative I can consider \n",
+            "subreddit": "LangChain",
+            "comments": [
+                {
+                    "author": "AlphaRue",
+                    "text": "1. For complex workflows graph architecture reigns king. \n\na. Complex workflows\n\n  Semantic kernel is the only relatively mature graph architecture worth using\n\n  I prefer pydanticAI\u2019s implementation here but it is quite new\n\n  Langgraph is a mess\n\n  It is also super easy to setup your own functions with a graph architecture.\n\nb. APIs\n  Integrating api usage is fairly easy in almost all frameworks. So is setting up and api to call your workflow from\n\n2. Most of these frameworks are not adding a ton of overhead. It is up to you to determine maturity, likelihood they stay maintained etc. and how much that matters to you\n\n3. RAG scaling depends on your vector db and retrieval techniques not the framework.\n  \n  PgVector and Qdrant are both very performant here.\n\n  Context length again depends on the model used, not the framework.\n\n4. Much of this is personal preference. I like pydanticAI and smolAgents. Many of the other frameworks abstract things I would rather not have abstracted. \n\n5. In terms of doing something innovative dspy and textgrad come to mind, but I personally would not use them for other reasons (slow development cycle, uncertain funding)",
+                    "replies": [
+                        {
+                            "author": "Ok_Economist3865",
+                            "text": "I wanna know why langgraph is a mess, why I have not faced such troubles, is it maybe I just worked too much learning and building with langgraph without knowing what abstractions are or maybe i was just too desperate for things to work all the time thats why i have not faced issues with you.\n\nBtw before langgraph, I worked and built stuff with autogen as well"
+                        }
+                    ]
+                },
+                {
+                    "author": "eavanvalkenburg",
+                    "text": "Also look at Semantic Kernel, production grade, easy to use and available for dotnet, python and java"
+                },
+                {
+                    "author": "codekarate3",
+                    "text": "If you are looking for Typescript/Javascript options, then check out Mastra. The workflows API is simpler than LangGraphs.\n\nIf you are looking for Python, you might also evaluate Letta and Haystack. There are a lot of options to sort through for sure.\n\nIf you are looking for those more complicated workflows, then you do want some kind of graph based approach (Mastra Workflows, LangGraph, CrewAI Flows).\n\nScale is probably more dependent on the deployment process, not necessarily the framework (though I haven't tried all of the one's you listed). Performance/Scale is also dependent on the types of workloads. Do you need extra low latency (like a real time voice application) or long running processes (where you are running workflows that could run for 10+ minutes at a time). Each has it's own challenges. Assuming it's the latter, then look for a framework with clear deployment docs and ideally not just one deployment platform."
+                },
+                {
+                    "author": "Ok_Conversation9888",
+                    "text": "Amazing Post \ud83d\udceb"
+                }
+            ]
+        },
+        {
+            "title": "Multi Agent Chat Based System Framework Help!",
+            "author": "Sudden-Garbage2895",
+            "text": "I am building a system for my school where ideally there will be some sort of web based chat interface that will send api calls to the system. I want the system to use to multiple agents, I.e. a manager agent, one for explaining complex topics, one for coding tasks ( will have a custom tool to execute code ), one for maths, one for research etc\u2026 the system will decide which agents to use to solve the problem before giving the user the final output.\n\nWhat\u2019s the best framework for this? I have tried llama index but it was a bit painful. I have been looking at crewai, auto-gen, lang graph etc\u2026\n\nAny advice would be really helpful!",
+            "subreddit": "LangChain",
+            "comments": [
+                {
+                    "author": "Schmiddi-75",
+                    "text": "Langraph is very well suited for that (and probably the other tools as well). The user just sends a request to a service/agent that decides to which service it'll forward the question. You can even adjust it so that multiple services/agents will be called at the same time and once you got all the answers, you can summarise this info etc."
+                },
+                {
+                    "author": "dashingvinit07",
+                    "text": "This is fantastic! You can use LangGraph to build the pipeline. By the way, which school are you from?"
+                },
+                {
+                    "author": "taniele",
+                    "text": "Hey! I think I can help with this. I've been working on something very similar and found a solution that might save you a lot of time and complexity.\n\nI've been using Toolhouse for the past few months, and it actually handles exactly what you're trying to build - a web-based chat interface with multiple specialized tools and capabilities. Let me break down how it maps to your requirements:\n\n1. Web-based chat interface with API calls \u2713 (built-in)\n2. Multiple specialized agents \u2713 (through tools system)\n3. Code execution \u2713 (has a built-in code interpreter)\n4. Research capabilities \u2713 (web search, content fetching)\n5. Complex topic explanations \u2713 (through context-aware responses)\n\nThe best part is you don't have to build the infrastructure for agent routing - it automatically handles tool selection based on the user's needs. I found it much simpler than setting up LlamaIndex or dealing with the complexity of AutoGen.\n\nI've built a specialized chat application with it (you can see an example here: https://app.toolhouse.ai/chat/4e2bfca0-c053-42f8-a067-7cc69bc77f47), and the development experience was surprisingly smooth. There's a generous free tier that would work well for a school project.\n\nThe platform handles all the complex stuff (API integration, memory management, tool routing) while letting you focus on customizing the capabilities you need for your school's use case. You can even add custom tools if you need specific functionality.\n\nHappy to share more details about my implementation if you're interested! Always excited to help fellow developers working on educational AI projects.",
+                    "replies": [
+                        {
+                            "author": "Sudden-Garbage2895",
+                            "text": "This looks great, my only issue would be that the idea with this project is that it eventually becomes available for the entire school to use and will be locally hosted on a server that we have (with a powerful GPU). So can this run locally with Ollama for the models for free (me and my team want to keep costs very low).\n\nThat\u2019s why I initially tried llama-index (which I found to be quite clunky).\n\nCan crewai support this kind of thing at all?"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

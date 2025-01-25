@@ -1,0 +1,1284 @@
+{
+    "items": [
+        {
+            "title": "My \"Damn, I'm old\" moment",
+            "author": "PickleLips64151",
+            "text": "Had a ticket not to long ago from a QA tester that the phone validation in the UI would accept `(000) 000-0000` as valid. During some discussion, I asked if we should validate against \"555\" numbers, like `(XXX) 555-XXXX`. \n\nJunior dev asked me what \"555\" numbers where.\n\nSo in order to asauge my feelings of old age, anyone want to share their personal \"Damn, I'm old\" moments?",
+            "subreddit": "ExperiencedDevs",
+            "comments": [
+                {
+                    "author": "poolpog",
+                    "text": "i still feel like Docker is really, quite a new tool",
+                    "replies": [
+                        {
+                            "author": "PickleLips64151",
+                            "text": "It is! It's like, what, two or three years old? Right?",
+                            "replies": [
+                                {
+                                    "author": "poolpog",
+                                    "text": "at least two, yes"
+                                },
+                                {
+                                    "author": "nanotree",
+                                    "text": "It doesn't help if you work somewhere non-big-tech with legacy solutions that weren't designed to be containerized, so everyone just runs VMs or whatever."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "brainhack3r",
+                            "text": "A brand new 11 year old too...  about to enter middle school."
+                        },
+                        {
+                            "author": "extra_rice",
+                            "text": "In terms of containerisation, what makes me feel old is remembering how we used to deploy Java apps as WAR on a shared application server like Tomcat back in the day. Now it's just pods on Kubernetes clusters.",
+                            "replies": [
+                                {
+                                    "author": "likwidfuzion",
+                                    "text": "Oh my word, I haven\u2019t seen the words Tomcat and WAR since my early days working on Liferay widgets many moons ago."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "_throwingit_awaaayyy",
+                            "text": "Omg lol"
+                        }
+                    ]
+                },
+                {
+                    "author": "ChicagoJohn123",
+                    "text": "I added a comment to a PR that you couldn\u2019t assume order was maintained in a Python dictionary. Other people responded that you could now. It turned out that change had been made twelve years ago.",
+                    "replies": [
+                        {
+                            "author": "PickleLips64151",
+                            "text": "Ouch."
+                        },
+                        {
+                            "author": "TehLittleOne",
+                            "text": "For the record, it's as of 3.7, which is only mid 2018 not 12 years ago. Not that old!",
+                            "replies": [
+                                {
+                                    "author": "sevvers",
+                                    "text": "So two years... Wait shit\u00a0"
+                                },
+                                {
+                                    "author": "ThreePointsShort",
+                                    "text": "/pedant\n\nDict insertion order is effectively guaranteed in Python 3.6 as well, but as an implementation detail of the CPython interpreter rather than as a specified language feature. But it looks like Python 3.6 came out in late 2016, so you're still right in that it hasn't been 12 years yet!"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "ashultz",
+                            "text": "that's just going to create bad habits, there's nothing in the dict/map concept that should hang on to order and getting comfy with that sort of extra behavior will just make you expect it where it is not\n\nto force this sort of discipline when iterating keys in go maps their order is randomized specifically so you don't rely on a behavior that is not in the spec",
+                            "replies": [
+                                {
+                                    "author": "extra_rice",
+                                    "text": "Exactly my thought. Regardless of how Python guarantees order in a dict, I still would have found it strange to rely on that for the reason you stated.\n\nI like how Java's done it in the standard library where you can take advantage of how each specific Map implementation is designed, but at the top level, the Map interface doesn't guarantee anything but the absolute standard functionality."
+                                },
+                                {
+                                    "author": "ChicagoJohn123",
+                                    "text": "I think in this case it was for a unit test. I\u2019m less persnickety in that context."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Amablue",
+                            "text": "[Similar thing just happened to me today](https://old.reddit.com/r/vim/comments/1i8ky2i/roast_my_weird_habit_and_suggest_how_to_improve/m8ydr3k/?context=3). I had a vim keybind to handle something I thought was annoying, and someone pointed out that it was unnecessary. I looked up when the feature that made it unnecessary was added, and it was about 3 years old. My original keybind (which I got from a redditor no less) was 14 years old."
+                        },
+                        {
+                            "author": "brainhack3r",
+                            "text": "I have this happen all the time... It's the curse of the old developer.\n\nYou think something is \"new\" and might be risky so you don't adopt it but it turns out it's been mainstream for like 5-10 years.\n\nlol"
+                        },
+                        {
+                            "author": "BroBroMate",
+                            "text": "If it makes you feel any better, \n\nI was this week old when I learned via a PR that Python dictionaries are (mostly) inherently thread-safe due to how the GIL works.\n\nhttps://web.archive.org/web/20201108091210/http://effbot.org/pyfaq/what-kinds-of-global-value-mutation-are-thread-safe.htm\n\nLet me rephrase that \"mostly inherently thread-safe... ...in CPython, for now.\"\n\nI still asked for an explicit lock though, to make it clear that it's shared between threads... ...and in case we ever run this code under no-GIL Python."
+                        },
+                        {
+                            "author": "SpaceMonkeyOnABike",
+                            "text": "Is it also guaranteed that the code will not be run under an older python environment?",
+                            "replies": [
+                                {
+                                    "author": "smontesi",
+                                    "text": "(Keys order is insertion order) It\u2019s an implementation detail of CPython 3.6 and a spec of Python 3.7, we\u2019re pretty safe\u2026\n\nHad to look it up btw, so I guess I\u2019m old too lol"
+                                },
+                                {
+                                    "author": "liquidpele",
+                                    "text": "At this point, yes, your dependencies won't support pre 3.6 anymore."
+                                },
+                                {
+                                    "author": "poolpog",
+                                    "text": "or any python environment?"
+                                },
+                                {
+                                    "author": "Beautiful-Recipe-642",
+                                    "text": "Dude, we're shipping the dev laptop to production,  it only needs to run there."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "not_wyoming",
+                            "text": "*Ow*, this one made my knees hurt"
+                        },
+                        {
+                            "author": "ZhuangZhe",
+                            "text": "I was burned too many times. I know they made the change. I still don't trust it."
+                        },
+                        {
+                            "author": "tfsh-alto",
+                            "text": "Lots of people don't realise this (and I don't blame them!). I'm an interviewer at a FANG company and my favourite question has a very sophisticated (but simple) answer if you know python dictionaries maintain insertion order. (or you remember the OrderedDict class exists)\n\n\nI've asked this question 20+ times now, no candidate has mentioned ever that. The stronger ones go down the route of creating a DoubleLinkedList with a lookup table by hand. (this is effectively the LinkedHashMap, for those who are Java inclined, though sadly, no one's ever mentioned that class to me either)",
+                            "replies": [
+                                {
+                                    "author": "Regular-Active-9877",
+                                    "text": "Is it your favorite question because it is essentially trivia?\n\nMaintaining key order seems like a language detail that you should not rely on unless absolutely necessary for performance."
+                                },
+                                {
+                                    "author": "not_wyoming",
+                                    "text": "This is an....*interesting* choice to say the least. I've definitely been pinged (in FAANG interviews no less) for invoking language-specific features, even after explaining them to the interviewer. \n\nIf 20+ candidates haven't come up with this answer, it might be worth reflecting on whether this is your favorite question because it's useful at assessing candidate competency or if there are other reasons you enjoy asking it \ud83e\udd14\ud83e\udd14\ud83e\udd14"
+                                },
+                                {
+                                    "author": "Ma1eficent",
+                                    "text": "Got the classic fizz buzz interview question and wrote out a tiny little generator in python on the whiteboard and it so perplexed my interviewer I pulled out my laptop and ran it to prove it really was a solution."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "DeterminedQuokka",
+                            "text": "I did this same thing recently"
+                        },
+                        {
+                            "author": "CapstickWentHome",
+                            "text": "I was looking up an issue I was having with Perforce yesterday, and a 13 year old forum thread I found included the comment \"God I can't believe people still use Perforce\"."
+                        },
+                        {
+                            "author": "mothzilla",
+                            "text": "It feels weird to assume that it is though."
+                        },
+                        {
+                            "author": "Separate_Increase210",
+                            "text": "In all fairness, I implemented a solution in 2022 that relied on this before learning I was restricted to PYTHON 2. (which does not assume ordered dicts).\n\nI had to import and use OrderedDict, it was a simple fix. But it shouldn't have been required in 2022. I think you were quite possibly in the right in your assumptions here."
+                        },
+                        {
+                            "author": "bwainfweeze",
+                            "text": "I\u2019ve built LRU caches in two languages based on that being true. Dead simple if your map recalls key insertion order. \n\n(They typically attach a linked list across the entries. If you\u2019re going to fetch a cache line anyway, and round up object sizes for compressed pointers, might as well make some hay while the sun shines)"
+                        },
+                        {
+                            "author": "dauchande",
+                            "text": "Just the fact we\u2019re talking about Python as if it\u2019s old\u2026"
+                        }
+                    ]
+                },
+                {
+                    "author": "EnderMB",
+                    "text": "Mine was discussing 2D games with one of the junior engineers. He grew up on 3D games, and to quote him \"I wasn't born when graphics were shit\".\n\nOne guy I briefly worked with had come over from an acquisition. He was in his late fifties and had been a software engineer all his life. He joined us to work on a migration project to move customers from an old COBOL platform to a brand-new TypeScript platform that heavily used Kafka and Postgres with a custom engine to keep space low. He was struggling a little with TypeScript, but quickly got the hang of things and was a joy to work with. We completed the migration, and he promptly retired afterwards. During his last few weeks he told us that his first job was at IBM, where he worked for a client to build a COBOL platform - the very one he had just deprecated. He retired as a software engineer delivering the replacement to his first ever project. He kept it pretty quiet around most of the team, but said that it felt like a great time to leave software as a lifetime of working at a desk had taken its toll.\n\nI believe he has *technically* un-retired, because he sells pottery and upholstered rescued furniture now, but it's a nice story I never tire of sharing.",
+                    "replies": [
+                        {
+                            "author": "fmmmf",
+                            "text": "I audibly gasped haha, i cant imagine that...damn what a full circle moment and one hell of a sign to retire!"
+                        },
+                        {
+                            "author": "summerteeth",
+                            "text": "The 2D thing is weird because there are still really big 2D titles that come out.",
+                            "replies": [
+                                {
+                                    "author": "EnderMB",
+                                    "text": "It was a while back, but I think the context from us was talking about Alex Kidd on the Master System, and loving games like Sonic 3 and Knuckles. This little shit grew up on the likes of GTA: San Andreas, and they weren't a particularly heavy gamer."
+                                },
+                                {
+                                    "author": "Terrible_Positive_81",
+                                    "text": "Used to get 2d Snes emulated roms on floppy disk from my friend and my colleagues like what is snes?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "pinkkittyftommua",
+                    "text": "Anytime I find myself telling an anecdote about working on y2k fixes and I realize people\u2019s eyes are glazing over.",
+                    "replies": [
+                        {
+                            "author": "UntestedMethod",
+                            "text": "Haha at this point we're closer to the 2038 problem than Y2K",
+                            "replies": [
+                                {
+                                    "author": "DigmonsDrill",
+                                    "text": "Even closer to 2036!"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "PickleLips64151",
+                            "text": "I was at a very fancy (tuxedos and formal dresses) New Year's party on Dec 31, 1999. \n\nSome jokester decided to flip the main power breaker off right as we were counting down to midnight. A very brief moment of panic followed by laughter and relief. Good times.",
+                            "replies": [
+                                {
+                                    "author": "pinkkittyftommua",
+                                    "text": "I wish I had thought of that \ud83d\ude02"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Careful-Combination7",
+                    "text": "I had to explain disk defragmenting to someone recently.\u00a0 I'm not sure what to think anymore",
+                    "replies": [
+                        {
+                            "author": "PickleLips64151",
+                            "text": "Ah, my favorite game on a Windows machine: watching the colors change on those little squares."
+                        },
+                        {
+                            "author": "PickleLips64151",
+                            "text": "Be sure to schedule your colonoscopy soon.",
+                            "replies": [
+                                {
+                                    "author": "Repulsive_Birthday21",
+                                    "text": "Faaaaaaaauuuuuhhhhhhkk"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "agumonkey",
+                            "text": "let's all only talk about tape backups :p"
+                        },
+                        {
+                            "author": "ZhuangZhe",
+                            "text": "r/oddlysatisfying\n\nIt felt good to know your electrons were nice and tidy."
+                        },
+                        {
+                            "author": "angrathias",
+                            "text": "Still valid for databases, come to think of it, probably still valid for disk drives given eager reading caches",
+                            "replies": [
+                                {
+                                    "author": "Zeevo",
+                                    "text": "who is running a database on a platter?"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Kiylyou",
+                            "text": "We have to deal with this in embedded",
+                            "replies": [
+                                {
+                                    "author": "Careful-Combination7",
+                                    "text": "Go on"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "UrbanPandaChef",
+                            "text": "I'm 90% sure that even most of my 50+ co-workers wouldn't know what that is. \n\nI'm guessing a lot of people here work at tech companies. As someone at a non-tech fin company you greatly overestimate the average developer's general PC knowledge."
+                        }
+                    ]
+                },
+                {
+                    "author": "ReloadRestart",
+                    "text": "Intern was telling a junior at the office about accessing Instagram during lessons in High School, and the junior replied \"I am so old we only had MySpace in High School.\"\n\nI slunk away silently as Tim Berners-Lee created the first web browser the year after I left High School."
+                },
+                {
+                    "author": "MachineSchooling",
+                    "text": "Referenced [this](https://xkcd.com/927/) xkcd comic to a gen z junior. They asked what xkcd was.",
+                    "replies": [
+                        {
+                            "author": "lurking_physicist",
+                            "text": "xkcd will be 20 this year. Some of your coworkers will soon be younger than xkcd.",
+                            "replies": [
+                                {
+                                    "author": "bwainfweeze",
+                                    "text": "I\u2019m kinda surprised it isn\u2019t older than that."
+                                },
+                                {
+                                    "author": "CpnStumpy",
+                                    "text": "It burns, but not in a good way... oh God make it stop \ud83d\ude2d"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "DrFloyd5",
+                            "text": "Aww. You got to show XKCD to one of the lucky 10,000"
+                        },
+                        {
+                            "author": "positivelymonkey",
+                            "text": "Link them to thedailywtf."
+                        },
+                        {
+                            "author": "nobuhok",
+                            "text": "Wait, how do you pronounce xkcd?",
+                            "replies": [
+                                {
+                                    "author": "NatoBoram",
+                                    "text": "X, K, C, D\n\nJust like you'd pronounce SQL"
+                                },
+                                {
+                                    "author": "MrDilbert",
+                                    "text": "Letter by letter"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "bwainfweeze",
+                            "text": "Oh no."
+                        },
+                        {
+                            "author": "Wolv3_",
+                            "text": "That's just bad education, their professors should've exposed them to that ;)"
+                        },
+                        {
+                            "author": "StingingNarwhal",
+                            "text": "I literally shared that same one today!"
+                        }
+                    ]
+                },
+                {
+                    "author": "Yakb0",
+                    "text": "WWE (the wrestling company) recently had some kind of corporate action that caused hell with our trading system. I kept referring to it as \"The WWF issue\". Finally one of the other devs pointed out that I'm showing my age.\n\nThey changed from WWF to WWE in 2002.",
+                    "replies": [
+                        {
+                            "author": "bwainfweeze",
+                            "text": "The lost out to the World Wildlife Fund.\n\nPepperidge Farms remembers.",
+                            "replies": [
+                                {
+                                    "author": "shhheeeeeeeeiit",
+                                    "text": "F the WWF"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "false79",
+                    "text": "Two words: Macromedia Flash",
+                    "replies": [
+                        {
+                            "author": "NiteShdw",
+                            "text": "I worked on a project in college to convert a HyperCard application to Flash."
+                        },
+                        {
+                            "author": "PabloZissou",
+                            "text": "Ahh but are you experienced enough to know the site eye4you.com!? (Yeah I should either retire or die already \ud83e\udd23)",
+                            "replies": [
+                                {
+                                    "author": "false79",
+                                    "text": "Lol, yep.\n\n\nYou, me, we old!"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "gemengelage",
+                    "text": "Coworker sent me a screenshot of some not so great Java code that converted data from an sql query. It used a lot of `new Integer(... )` and `new Double(...)` and my coworker was poking fun at that. I said \"maybe it's written in Java 1.4 and they didn't have autoboxing back then\".\n\nI thought I was being facetious. The code was 22 years old.",
+                    "replies": [
+                        {
+                            "author": "Intrepid-Stand-8540",
+                            "text": "What is autoboxing?",
+                            "replies": [
+                                {
+                                    "author": "MrDilbert",
+                                    "text": "Automatically converting a primitive value (e.g. int) into its wrapper object type (e.g. Integer)."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "CpnStumpy",
+                            "text": "I had to explain to a coworker what a god object was and why it's an anti-pattern the other day.\n\nI am constantly finding out that my coworkers don't just all know things that I thought we all learned cutting our teeth, then I realize it's not a \"We\" and I'm the graybeard and I'm not ready to not have some other graybeard dropping knowledge from the purple box days..."
+                        }
+                    ]
+                },
+                {
+                    "author": "mrfredngo",
+                    "text": "Interesting enough \u2014 In Korea I guess they don\u2019t have this convention\u2026 so they used some random phone number for Squid Games and ruined some poor lady\u2019s life \ud83d\ude41\n\nhttps://www.theguardian.com/media/2021/oct/07/netflix-edits-squid-game-phone-number-woman-deluged-calls",
+                    "replies": [
+                        {
+                            "author": "NiteShdw",
+                            "text": "Why do people call numbers in TV shows or movies?",
+                            "replies": [
+                                {
+                                    "author": "NegativeWeb1",
+                                    "text": "Sometimes the numbers will actually be owned by the production company and act as a real-life Easter egg."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "timle8n1-",
+                    "text": "Ask them if they know how they decided to hand out area codes originally. That is why did NYC get 212 and all the way across the country LA got 213.\n\nWhen that makes no sense, show them a rotary phone.",
+                    "replies": [
+                        {
+                            "author": "lupercalpainting",
+                            "text": "It\u2019s less \u201cwork\u201d to spin 212 or 213 vs 999, and since so many people live there you should prefer those areas to have \u201ceasier\u201d area codes?",
+                            "replies": [
+                                {
+                                    "author": "UntestedMethod",
+                                    "text": "Yes. Same why emergency numbers end with 11"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "PickleLips64151",
+                            "text": "There was also a rule about the second digit of the area code that escapes me right now. ~~Something about flipping the bit for local/long-long distance~~, if you actually dialed all 10 digits. Which I didn't have to do as a kid. God, I'm old.\n\nEdit: `X1X` were states with multiple area codes (pre-1950). `X0X` were for states with a single area code."
+                        },
+                        {
+                            "author": "AsASloth",
+                            "text": "Don't forget to lump in Chicago who got 312"
+                        },
+                        {
+                            "author": "pm_me_n_wecantalk",
+                            "text": "Moved to Canada and this bothered me much. I was like why the first 3 digits of phone number in NA has no \u201cco relation\u201d (geographic). Went down the rabbit hole and figured it out and then seeing rotary phone etc \u2026 it makes way more sense to me."
+                        },
+                        {
+                            "author": "nobuhok",
+                            "text": "Man, I remember when phone numbers (in my country) were only 3-4 digits long."
+                        }
+                    ]
+                },
+                {
+                    "author": "official_business",
+                    "text": "Had a younger guy take a photo of a monitor with his phone and attach that to the bug tracker.\n\nI showed him how to use print screen and told him in the past we used to make jokes about people using polaroids to take screenshots.\n\n*\"What's a polaroid?\"*",
+                    "replies": [
+                        {
+                            "author": "PickleLips64151",
+                            "text": "\ud83d\ude10 I feel that one."
+                        }
+                    ]
+                },
+                {
+                    "author": "Izacus",
+                    "text": "Put a Matrix meme in my presentation/talk. Found out there's a pretty big bunch of coworkers that haven't been born when that movie was in theatres.",
+                    "replies": [
+                        {
+                            "author": "PickleLips64151",
+                            "text": "They're part of the simulation."
+                        }
+                    ]
+                },
+                {
+                    "author": "b1-88er",
+                    "text": "When I had to learn jsonnet (Frankenstein baby of json and lisp) to use tanka (tool to render yamls) so I can deploy k8s controller. The controller in turn is gonna take custom crd and turn it into a pod that will wrap a container that is gonna have supervised permissions anyway. \n\nModern infrastructure became the nonsense Cambrian explosion of frameworks and tools that poised js frontend years ago.\n\nI feel old because people really have no idea what engineering is and they all pretend that adding more complexity will solve anything."
+                },
+                {
+                    "author": "fzammetti",
+                    "text": "'I've got this great new idea to make websites great... I know it's crazy, but we're gonna render the HTML on... wait for it... THE SERVER! It's such an awesome idea I can't believe no one thought of it before!\"\n\nSMH\n\nOr, although not development specifically, but because I'm A LOT older than even that: people complaining about the Samsung Galaxy S25 having ONLY 12Gb RAM, and I'm sitting here thinking \"I remember when my DESKTOP computer had a staggering two KILOBYTES of RAM!\"",
+                    "replies": [
+                        {
+                            "author": "Intrepid-Stand-8540",
+                            "text": "Why do they need so much ram on their phone?\u00a0",
+                            "replies": [
+                                {
+                                    "author": "thaddeus_rexulus",
+                                    "text": "Because we like to keep up with the times so that every step we take to improve hardware is counteracted 100% by how poorly we write the software"
+                                },
+                                {
+                                    "author": "fzammetti",
+                                    "text": "You know what's most crazy about it? You get this insane amount of RAM, and the OS STILL kills apps like it's the Shropshire Slasher. I've got 12Gb on the phone in my hand right now and I STILL can't reliably keep half a dozen average apps running in the background without some of them restarting when I go back to them. I know it's just bad software design intended to keep things running smoothly and keep battery life up, but it's frustrating as hell (although I'm super-glad it's not an iOS device at least because there it's practically guaranteed every app restarts every time, but that's small consolation)."
+                                },
+                                {
+                                    "author": "StateParkMasturbator",
+                                    "text": "If you play games on it, they'll auto shutdown and force you to restart. Depending on the phone and game, that could account for several seconds per restart of poop time, especially back when I played Pokemon Go and switched back and forth between the browser on a Samsung Galaxy Note 5."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "ThlintoRatscar",
+                    "text": "Had to explain what a \"desk phone\" was.\n\nI almost died when I had no rebuttal to their \"why not just use their cell phone?\" follow up."
+                },
+                {
+                    "author": "Flagon_dragon",
+                    "text": "You can think of DNS like a phone book.\n\n\nHad to update that one to \"it's like your phone - you know their name but not their number\"\n\n\nAnd then spent time talking about rotary phones, area codes, and could still reel off numbers of friends from the 80s"
+                },
+                {
+                    "author": "salty_cluck",
+                    "text": "I was mentioned Firebug to a colleague and they had no idea what I was talking about."
+                },
+                {
+                    "author": "wantsennui",
+                    "text": "Area codes. I went through similar conversations in the past year.\n\nhttps://en.wikipedia.org/wiki/List_of_North_American_Numbering_Plan_area_codes\n\nSearch for \u201cNot assignable as an area code\u201d in the chart later in the article"
+                },
+                {
+                    "author": "JonnyRocks",
+                    "text": "at work? i use newspaper analogies all the time. we are building a fresh new version of an application. was working on my next delivery while a previous push was being tested. team asked if i could throw a small change in and i said, i could but it would be fresh off the press and the ink wont be dry. not everyone got the analogy.\n\ni also graduated college in tbe 90s and anything after that was only 2 years ago to me."
+                },
+                {
+                    "author": "StrayCatAme",
+                    "text": "I'm afraid to ask but, what is a \"555\" number?",
+                    "replies": [
+                        {
+                            "author": "PickleLips64151",
+                            "text": "[WikiPedia's explaination](https://en.m.wikipedia.org/wiki/555_(telephone_number)).\n\ntl/dr: used in movies so real people wouldn't get random phone calls.",
+                            "replies": [
+                                {
+                                    "author": "StrayCatAme",
+                                    "text": "Oh thanks for responding, I do remember seeing those numbers in movies and games, just never thought to much about it haha"
+                                },
+                                {
+                                    "author": "ImSoCul",
+                                    "text": "oh I didn't know this and I'm 29. Is this really a old people thing?"
+                                },
+                                {
+                                    "author": "LondonPilot",
+                                    "text": "Wasn\u2019t there a joke in a TV program, I\u2019m thinking possibly The Simpson, where someone (Homer?) was going to call a number, but saw it was a 555 number (of course it was, all numbers in American TV programs were 555 numbers) so didn\u2019t bother calling because it had to be fake?"
+                                },
+                                {
+                                    "author": "MoreRopePlease",
+                                    "text": "867-5309 was actually someones number, I think"
+                                },
+                                {
+                                    "author": "space-to-bakersfield",
+                                    "text": "Btw, this doesn't apply to all 555 numbers. From the link you gave:\n\n> Only 555-0100 through 555-0199 are now specifically reserved for fictional use; the other numbers have been reserved for actual assignment."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "lordnikkon",
+                            "text": "numbers that start with 555 have been reserved by phone companies since they started issuing phone numbers so they either are not in use or go to the operator. So movies and TV shows will always give out a fake number that starts with 555 so it not actually someones real number"
+                        },
+                        {
+                            "author": "MrDilbert",
+                            "text": "Go watch \"Last Action Hero\" :D"
+                        }
+                    ]
+                },
+                {
+                    "author": "Technical-Cicada-602",
+                    "text": "I had to double check if it was safe to free(NULL) yesterday because I\u2019m old enough to have used compilers where it\u2019s not. \u00a0"
+                },
+                {
+                    "author": "htraos",
+                    "text": "In a meeting somebody mentioned in passing \"floppy disk\", and this younger person had no idea what that is."
+                },
+                {
+                    "author": "StTheo",
+                    "text": "People complaining about needing to support Safari or Edge have either forgotten about or never had to support IE."
+                },
+                {
+                    "author": "Doctuh",
+                    "text": "An entire generation now believes they are currently inventing server-side rendering of HTML.",
+                    "replies": [
+                        {
+                            "author": "NatoBoram",
+                            "text": "An entire generation can now use Hydration because the way SSR was done before was stupid trash and now it's gotten better"
+                        }
+                    ]
+                },
+                {
+                    "author": "mrfredngo",
+                    "text": "Do they not use 555 numbers in tv/movies anymore? People still call each other in movies no?",
+                    "replies": [
+                        {
+                            "author": "DigmonsDrill",
+                            "text": "One thing they do is use a real phone number but the marketing department has bought the number and it answers. Better Call Saul was at (505) 503-4455 and they put an in-universe recording there. I haven't tried it myself today.\n\nI wonder what happens when they stop paying for the number and it recycles to someone in the real world.",
+                            "replies": [
+                                {
+                                    "author": "mrfredngo",
+                                    "text": "They get screwed!"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "ThrawOwayAccount",
+                            "text": "They still use them."
+                        },
+                        {
+                            "author": "PickleLips64151",
+                            "text": "I haven't really paid attention, tbh. Considering they never say good bye on calls, maybe they never give out their numbers, too?"
+                        },
+                        {
+                            "author": "CJ22xxKinvara",
+                            "text": "They do sometimes. But if you don\u2019t know to look for them you may not notice it. Though I do notice them a lot more in movies from before cell phones when people used pay phones"
+                        }
+                    ]
+                },
+                {
+                    "author": "sburges3",
+                    "text": "Don\u2019t forget to check for 867-5309.",
+                    "replies": [
+                        {
+                            "author": "salty_cluck",
+                            "text": "867-5309"
+                        },
+                        {
+                            "author": "bwainfweeze",
+                            "text": "It was only a couple years ago I realized that number is all the diagonals on the keypad."
+                        },
+                        {
+                            "author": "craigpardey",
+                            "text": "Jenny!"
+                        }
+                    ]
+                },
+                {
+                    "author": "originalchronoguy",
+                    "text": "Tell them what POPCORN is on the phone and let that blow their mind."
+                },
+                {
+                    "author": "wantsennui",
+                    "text": "Not only 555 but also the X11 series and some other obscure ones like those which are gov\u2019t reserved as well."
+                },
+                {
+                    "author": "AbbreviationsFar4wh",
+                    "text": "555 six three 0 nine!"
+                },
+                {
+                    "author": "jb3689",
+                    "text": "Explaining the shipit squirrel is always a kick"
+                },
+                {
+                    "author": "hippydipster",
+                    "text": "I do work with a government contractor, and one of the apps they maintain was originally developed pre swing, so uses AWT.  Hey, I remember that!  Yup.  Old as fuck."
+                },
+                {
+                    "author": "OgreMk5",
+                    "text": "Similar. My son in one of his first adult acts, had to call the doctor to get a medical account in his name. \n\nThe person said, you have to call x office. Their number is 123-help-you. (Not the actual number).\n\nAnd he was like... how do you dial letters?\n\nI had to show him the letters on the phone number pad."
+                },
+                {
+                    "author": "Opheltes",
+                    "text": "I was taking to a guy who's 23\n\n> Him: I'm a big fan of Final Fantasy 7\n\n> Me: Oh, final fantasy came too late for me. I'm part of the NES generation \n\n> Him: What's an NES?"
+                },
+                {
+                    "author": "dauchande",
+                    "text": "For me, it\u2019s not learning new stuff that\u2019s hard, it\u2019s all about forgetting old stuff that\u2019s no longer valid.  Can\u2019t tell you how many \u201ceras\u201d of programming methods I\u2019ve had to forget."
+                },
+                {
+                    "author": "PabloZissou",
+                    "text": "I explained someone that sometimes inner joins are a better option...",
+                    "replies": [
+                        {
+                            "author": "solarmist",
+                            "text": "I\u2019m not tracking. Are inner joins rare?"
+                        }
+                    ]
+                },
+                {
+                    "author": "Intrepid-Stand-8540",
+                    "text": "What are 555 numbers? I'm not American. I assume it's an American thing",
+                    "replies": [
+                        {
+                            "author": "bohemian-bahamian",
+                            "text": "It's the area code used for phone numbers in US TV shows and movies. They're guaranteed not to be valid numbers issued by providers."
+                        }
+                    ]
+                },
+                {
+                    "author": "bouncycastletech",
+                    "text": "I try to compare React vs other front end ecosystems with VHS vs Betamax\u2014Betamax had a lot of technical advantages, but VHS is more popular so I prefer going with the more popular thing. \nIt wasn\u2019t that common for people to not know what Betamax was. But now they also need an explanation of VHS. \n\nI\u2019m not sure what to use now. MP3 vs OGG? Pre-X Twitter vs Mastadon?",
+                    "replies": [
+                        {
+                            "author": "Vegetable-Visual-767",
+                            "text": "I was going to say HD DVD vs BluRay but Sony just announced they stopped producing more BluRays."
+                        }
+                    ]
+                },
+                {
+                    "author": "Repulsive_Birthday21",
+                    "text": "We were discussing replacing a truck load of business logic currently hiding in spreadsheets.\n\nI referred to Excel as Lotus 123.",
+                    "replies": [
+                        {
+                            "author": "ughnotanothername",
+                            "text": "I miss Lotus 123. It was better than Excel."
+                        }
+                    ]
+                },
+                {
+                    "author": "morpowababy",
+                    "text": "I'm in my 20s and I get this but yeah, probably from older movies and tv shows."
+                },
+                {
+                    "author": "Resident-Trouble-574",
+                    "text": "BTW, if you have to validate phone numbers, just use something like [GitHub - google/libphonenumber: Google's common Java, C++ and JavaScript library for parsing, formatting, and validating international phone numbers.](https://github.com/google/libphonenumber) .\n\nImplementing a custom validation is very hard and error prone."
+                }
+            ]
+        },
+        {
+            "title": "How to proceed with a dissolved team?",
+            "author": "TKLun",
+            "text": "So I have never encountered this situation before, personally or second hand. \n\nEssentially in a very short period of time, nearly everyone in the team just got up and left. Each had their own reasons that they explained, but I'm sure there's something underlying going on. Maybe it's project? Maybe it's the manager? Don't know. \n\nThe first kicker, I just joined last month as an internal transfer. The second kicker, the manager is also leaving and the last experienced member is leaving next week.\n\nNext month, the team and project will be reduced down to just myself. \n\nThere are some things to point out tho:\n1. The project isn't going away. It literally exists because of regulatory purposes\n2. Upper management is dedicating effort to hire for this team specifically. \n\nRight now I'm taking this as a blank slate and to build the team back up in the direction I want. But until then, I got another week to try to absorb everything I can from the last remaining engineer, and to make sure things are running as usual for the time being. How exactly should i navigate the situation? ",
+            "subreddit": "ExperiencedDevs",
+            "comments": [
+                {
+                    "author": "LossPreventionGuy",
+                    "text": "in software, if everyone is jumping off the bridge, you generally should jump too.",
+                    "replies": [
+                        {
+                            "author": "TKLun",
+                            "text": "There\u2019s a reason why I mentioned the manager and not upper management. I have an inkling.\u00a0\n\nI don\u2019t know if he\u2019s leaving under his own fruition or it was an outside decision. I didn\u2019t think I was in the position of asking\u2026but I have a feeling it\u2019s the later.\u00a0\n\nIf the bridge is gone too\u2026maybe it\u2019s a good time to build a new bridge?",
+                            "replies": [
+                                {
+                                    "author": "sgtholly",
+                                    "text": "Something destroyed the old bridge. If you\u2019ve done nothing to prevent the new one from being destroyed, you will never get a new one built. \n\nMost likely, the upper management is terrible And/or working conditions/pace are untenable. Run away."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "csanon212",
+                            "text": "I agree. One time I stayed in a sinking ship. I ended up having no support. No one understood the business logic."
+                        }
+                    ]
+                },
+                {
+                    "author": "sole-it",
+                    "text": "buy lunches, dinners, and a lot of drinks for the last experienced member to learn all the truth, so you can decide if you shall jump ship too.\n\n`regulatory purposes` is a very vague phrase. With the new administration, a lot of things are going to change.",
+                    "replies": [
+                        {
+                            "author": "TKLun",
+                            "text": "Global firm based in US regarding EU specific regulation requirements.\u00a0\n\nAnd def will need to get the last guy to spill any beans. If only he was a drinker\u2026",
+                            "replies": [
+                                {
+                                    "author": "sole-it",
+                                    "text": "I bet that guy will probably won't resist to urge to vent if you could build some trust between each other before his last day. I have learnt a lot of mind-opening stuff that i wasn't supposed to know from a few situations like this."
+                                },
+                                {
+                                    "author": "rv5742",
+                                    "text": "See if you can reach out to the team members that left. They might be more willing to talk now that they are in a better position."
+                                },
+                                {
+                                    "author": "DSJustice",
+                                    "text": "I'm sure he can point you to one of the previous members who *is* a drinker."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "brainhack3r",
+                            "text": "yup... this.  Make sure you get as much intel as possible."
+                        },
+                        {
+                            "author": "INTERGALACTIC_CAGR",
+                            "text": "you spelled dictator wrong"
+                        }
+                    ]
+                },
+                {
+                    "author": "NameMyPony",
+                    "text": "Enjoy the free promotion or take it easy till you find something new.",
+                    "replies": [
+                        {
+                            "author": "TKLun",
+                            "text": "Ha. I suppose I\u2019ll take the free promotion",
+                            "replies": [
+                                {
+                                    "author": "Maxion",
+                                    "text": "Make sure it's a free promotion from your perspective, and not your employers."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "LogicRaven_",
+                    "text": "Mass exodus is rarely a coincidence. Would be important to know why. Bad management might continue or might change a bit seeing the consequences (need to rehire the team). But if they have compliance issues, then the risk for you is higher. \n\nTalk with everyone you can get hold of from the old team and try to figure out the situation. \n\nIf you receive compliance training from the company, pay attention. For example a possible GDPR breach can mean a legal case and fine for the company. But Anti Money Laundering laws have strict reporting obligations, and even engineers could go to jail failing to report a breach. You would want to understand what type of regulatory the team is covering and what does it mean for you. \n\nAssuming the others are leaving because of bad management: you have some leverage now to negotiate your position in the team and how processes around the team should work. Meaning you could ask for adjustments, but would need to know what to ask for, what was difficult earlier.\n\nDon't assume that you will lead the team just because you are the only engineer left. If you want to be a team lead, discuss with the manager(s) and get an agreement now. Ask them what do they need from a lead and listen carefully. I would ask for being involved in the hiring also, preferably owning the quality evaluation of the candidates.\n\nFor knowledge transfer: soak up as much as possible, but also ask them to document things and make a video recording of the knowledge sharing sessions if possible. \n\nRebuilding a team from scratch can be a valuable learning experience for you. Both the hiring and building up team processes from scratch."
+                },
+                {
+                    "author": "justUseAnSvm",
+                    "text": "Two options:\n\n1) Leave yourself. If you need to put points on the board, do this. This project might not go anywhere, but there won't be any big wins coming. It'll be months before a functioning team is put into place, and without a manager, it will be rudderless for a while.\n\n2) Stay. Take ownership over the whole project: planning, execution, review, build the team up, and onboard a new manager. If you just hang in there, you'll naturally be in a leadership position just through seniority, and that's a big plus for whatever manager is coming in and what's to get set up.\n\nPersonally, I'd jump ship right now, but at other points in my career I'd want to simply coast. I've been on a team that had the same thing happen, and basically the whole project ground to a halt. Eventually that project became a main focus for the company (we were a start up), but at the time the outlook went from leading a team of 4 people, to the project just being myself.\n\nHowever, the company, the expectations on you, and the overall disposition of management will determine what's a good idea or not. Sometimes teams just get downsized to a few \"keep in place\" warm bodies and go into maintainence mode. That's really not good for your career, but it can work, as long as management keeping the project around lets them get whatever they want.\n\nLots of factors, so there's no clear answer. That said, a bias towards working on up and coming projects is always best for your long term career outlook."
+                },
+                {
+                    "author": "dudeaciously",
+                    "text": "This was the situation in my first job .  The new VP yelled at our Director in front of all staff.  Everyone quit in solidarity to him.  I was too junior to find another job so quickly.  I stayed became the team lead and hired all new people.  It was sweet because I hired non Aholes (or so I thought).\n\nThen the same thing happened to that VP.  Then I left, to a much more senior position.",
+                    "replies": [
+                        {
+                            "author": "DreadSocialistOrwell",
+                            "text": "This is a large part of why I quit my last job.  \n\nMy manager - also a business analyst - had a terrible habit of saying things about the team members while on calls with the entire team or subsets of teams.  Things that should have been addressed in 1 on 1s were instead shared with everyone. \n\nThe first time it happened I was shocked into silence for about 5 minutes and excused myself from the meeting to hit the men's room.\n\nIn the 12 months I was there, this was almost a twice monthly occurrence and 4 teammates (it was a large team then broken into sub teams) just quit without notice, telling everyone it was our manager's shitty attitude.\n\nI quit because the manager, after returning from a 3 week vacation, told me that I couldn't take mine.  My vacation / days off were negotiated as part of me accepting the position and had been on the company calendar since my day 1."
+                        }
+                    ]
+                },
+                {
+                    "author": "PasswordIsDongers",
+                    "text": ">The project isn't going away. It literally exists because of regulatory purposes \n\nThey know something you don't, yet."
+                },
+                {
+                    "author": "bobs-yer-unkl",
+                    "text": "It sounds like you have some archaeology to do on both the codebase and the backlog. How is the tech debt? How is the test coverage*? Are there tools in place to keep dependencies up to date, or at least flag outdated dependencies and dependencies with CVEs? Are there static code analysis tools in place? Even the free ones (like PMD) are better than nothing.\n\nAre the users and other stakeholders good agile partners? One thing the agile cheerleaders don't talk about enough is that agile only works if the stakeholders who should be providing feedback are willing to participate in the tight feedback loops. Working on a compliance system, is your legal department a stakeholder that participates in sprint reviews?\n\n\\* Code coverage is a shitty metric, in that 100% coverage doesn't mean that the tests prove anything. The logic could be facile and the assertions meaningless, and the coverage could be 100%. But a low code coverage metric is meaningful. It means that your tests can't be good, because most of your code isn't invoked during test execution."
+                },
+                {
+                    "author": "Goingone",
+                    "text": "It\u2019s a great opportunity to step up if you\u2019re not destined to fail. And if they are the type of place to reward you for that, this sounds great. \n\nBut of course everyone leaving isn\u2019t a great sign\u2026",
+                    "replies": [
+                        {
+                            "author": "CelebrationConnect31",
+                            "text": "Not every place will reward you for stepping up.",
+                            "replies": [
+                                {
+                                    "author": "TKLun",
+                                    "text": "Tbh i am vying for a leadership role and is something that i told higher-ups from the get go. Which is the main reason why im sticking around"
+                                },
+                                {
+                                    "author": "Goingone",
+                                    "text": "Nope"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "onemanforeachvill",
+                    "text": "If this is a regulatory thing, possibly you have a compliance department. Might be worth asking them what any issues have come up in the past."
+                },
+                {
+                    "author": "Decent_Perception676",
+                    "text": "Best primer on navigating situations like this\u2026 The First 90 Days. Highly recommend reading it to all devs I work with, regardless if they are in management or not."
+                },
+                {
+                    "author": "DeterminedQuokka",
+                    "text": "So what I would do is pay a lot of attention to the actual hiring process. If you are the only one, then they should let you heavily influence who is getting hired. Because you need to be on the same page. \n\nI\u2019ve been in a similar situation (although more people left) where the upper management decided everyone who left was gross and terrible and they needed a fixer upper in that world I would take off also. \n\nI can\u2019t tell from this what order people took off in. But if it was always the highest level person. I wouldn\u2019t volunteer to be that person even for a promo. There is something wrong with that position. Probably politics. \n\nYou can definitely rebuild from the bottom. It\u2019s just a question of the power you have in terms of finding the right people. \n\nI would ask about borrowing someone internally while you search and try to convince that person to stay if they are good."
+                },
+                {
+                    "author": "ryuzaki49",
+                    "text": "Maybe it was a domino effect?\u00a0\n\n\nMaybe knowledge is siloed and the remaining engineers had to figure out stufd by themselves with no one able to help them.\u00a0\n\n\nIt could be a stressant situation they didnt like.\u00a0"
+                },
+                {
+                    "author": "iammobius1",
+                    "text": "I've been on two sides of this:\n\nSide 1: Just joined a company because it absorbed our startup. Company was run by an extremely narcissistic CEO who was slinging a sledgehammer for the sake of slinging a sledgehammer. No political tact. Anyways, started shedding our talent real quick because it was obvious this place would be a nightmare to stick around for. I felt I was further justified in jumping ship myself, as one person who stuck behind for the promised 33% raise on good performance was never given that raise after the allotted year. The expectations were impossible. As in: dev with 2-3 years experience was expected to replace 20 years of genuine talent on a rather complex data heavy product, at the same velocity of feature addition/improvement/fixes, on day 1. With little to no mentorship.\n\nSide 2: Just joined a company because a friend poached me (made it in on merit I promise! they just referenced me and said \"more moneys.\"). A lot of the old guard at the level I joined at was wildly incompetent. Company was rapidly growing from small to medium and the old ways weren't going to cut it. We're talking 20 year old tech stacks with little thought for growth when designed and a refusal to improve their situation when faced with the weight of the tech debt and ensuing issues as we scale. A lot of them left on their own accord, likely due to the pressure, upper management turned down their requested raises, and with one or two straight up fired. Whole team was replaced in less than a year, and the current team is still going strong 5 years later, with many more members added and far more power through the organization than they've ever had.\n\nSo, my point in these examples is this: socialize with those around you (management, as well as the team members who are leaving/left) and get a feel for what's really going on here. Is the company experiencing significant growth and is there an \"old guard\" or \"good old boys\" feeling across those who are leaving, or across management? Do things need to be sledgehammered because they won't work for the business, or are they being sledgehammered because management thinks everything is a nail when you're actually making screws? Make your choice based off what you see. Either way, sticking around for a bit to figure out what's happening is probably in your best interest. At least you'll get a paycheck out of it for a while."
+                },
+                {
+                    "author": "jb3689",
+                    "text": "It's leadership. I've gone through this before. For any sufficiently funded business, they will get through it. As painful as it is to see everyone go, people are replaceable.\n\n> Right now I'm taking this as a blank slate and to build the team back up in the direction I want.\n\nThis _can_ happen, but you can also have leaders come in that are very prescriptive. I wouldn't say that the power void is necessarily a lane open to you, and it depends on where the valuable parts of the product are. If I were you, I'd make sure I was staffed in the most impactful parts of the org to best leverage my experience. I didn't do this (I stayed in a reliability focussed role instead of a high-leverage scale and automation role) and think it was ultimately a mistake for me. To come back to the initial point, imagine that new external hires are best-in-class with a ton of experience in the specific domain - not much room for you to grow up into. My story was joining an infra team, getting a ton of experience, team gutted, a bunch of effort spent plugging holes with the goal of moving into a staff position, then the company poaching someone who had done the exact same role with the exact same tech at AWS at scale - it was the right move for the business, but I pretty much had to find another role after that if I wanted to grow.\n\nAlso understand that being one of the only people who knows how things work is not necessarily advantageous. People will use you as a crutch (as they should), but you may not get recognized for that. Look out for yourself and make sure you have high impact assignments before helping others."
+                },
+                {
+                    "author": "PayLegitimate7167",
+                    "text": "From experience  \nProject might become BAU  \nIt might become a ping pong ball as no manager would want to take it on  \nYou might get merged into another team"
+                },
+                {
+                    "author": "Oftentimes_Ephemeral",
+                    "text": "There is a lesson to be learned at each job. Don\u2019t leave until you\u2019ve learned yours."
+                },
+                {
+                    "author": "CelebrationConnect31",
+                    "text": "Been there, \n\nAspects to consider before you decide to stay or leave:  \n  \nWhile technical team might be leaving the question is if there is a good support on business side. People who understand functionalities of the system, how it should work etc. if yes not all is lost. There would be a lot of reverse engineering but if domain knowledge is present in organization it is not so bad.  \n  \nDo you have competent management who has idea how to move forward? Ask the skip manager what is the plan. Do they have a strong road map or their plan is a lot of hand-waving.\n\nLook at the code and documentation. Does it look like the project has an architecture or is it all just a spaghetti? Are tests working and can you consider them a documenation as a code?\n\n\n\nWhat can you do:\n\nHave honest talk with experienced guy leaving. Make him give you a tech talk on how to set up the environment, how did the team develop features in the past, most important profiles, flags, tables. If possible ask your manager to hire some of the guys as consultant for knowledge transfer. Record the talk! This will become a holy scripture for you and new team members. A memory of civilization lost. Try to reach out to people who \"left\". There is a good chance there are stull in the organization just on the garden leave until end of month.\n\nHow was it to me:\n\nNot all of my team left but the last two experienced people who could actually do the work were about to leave. The rest of the team were juniors who didn't know much about software development. I raised alarm to the manager and... nothing happened. Zero fs given. i saw one of the juniors bail by asking for team transfer. Business side was mess as well. It was a project in legacy technologies without tests with some non-standard solutions. Since I didn't wanted to be left as a guy for cleaning up the mess I requested team transfer as well as a second guy. \n\n  \nI am not sure what happened after but I know some time later the organization came up with FooApp 2.0 in newer technologies so my guess its that they made a full rewrite as a cover up for \"we allowed all people who could support FooApp 1.0 to leave\""
+                }
+            ]
+        },
+        {
+            "title": "My manager refusing to give important tasks",
+            "author": "Historical_Ad4384",
+            "text": "I'm on a promotional path from L4 to L5. My manager has been delaying my development plan towards my promotion for over a year stating there are no topics available for him to give me the full responsibility associated with L5. \n\nMeanwhile there's another guy who's also at L4 and on the same promotional path to L5. He has gotten a whole new product assigned to him by my manager for launching it as a MVP followed by a generalized availability, so that's part of his promotional plan and also it aligns with the company's OKR for the year. \n\nAfter a lot of \"begging\" I was given a topic to own but it's not a product in itself but rather an internal technincal process that doesn't align directly with the company's OKR as it doesn't generate revenue but simply an internals process improvement which is also a major topic that is nice to have but no significant company wide visibility or importance for management. \n\nSince no one wanted to pick it up because of the nature of this task, I was let to have it. All good, I have been taking its development forward, establishing processes, testing it, making releases, supporting it and creating backlogs. \n\nBut having changed multiple jobs over 12 years I know a bluff when I see one. Recently another new product came up that directly aligns with my company's OKR because it will generate revenue and I have been for long looking for an opportunity that will have direct  impact on the company's revenue to take up as part of my development plan in order to prove my capabilities and become visibile to the higher management for my promotion. \n\nBecause it is a direct customer facing product ''s technical responsibility it will strengthen my L5 development plan and bring me management visibility. Since my manager is being lazy with me and is delaying me an opportunity to take up higher responsibilities that involves cross team communication, collaboration, motivating people, driving business to generate value within the company which this project has the capacity to do so, I asked my manager to be assigned to this project. \n\nHis reply was you have mostly worked alone on projects over the years since you have been here and I can't assign you to this topic otherwise you would again be alone and I need to see how you work in a team. I have been collaborating with other team members in my current tasks, reviewing design and code with architects that are affected by this process improvement and working with developers in adapting this process improvement in their projects within my team.\n\nIs my manager justified in denying me tasks that he knows would help my cause? As far as he has told me there's no fighting for the L5 availability because it's open for all who is qualified but maybe I should be skeptical towards it as well. What would be a good way to convince my manager? I have stated all the functional and technical issues impacts I have been making but he doesn't seem interested in them and circles back to the same point. What should I make of it? Any advice is highly appreciated? ",
+            "subreddit": "ExperiencedDevs",
+            "comments": [
+                {
+                    "author": "PragmaticBoredom",
+                    "text": ">His reply was you have mostly worked alone on projects over the years since you have been here and I can't assign you to this topic otherwise you would again be alone and I need to see how you work in a team.\n\nI know this is difficult to hear, but your manager has clearly communicated that they want to see you doing some significant teamwork. You may think you've done a lot of teamwork, but your manager does not perceive it that way.\n\nYou should try to understand exactly what your manager wants to see so you can work on that. Don't be afraid to ask for coaching or advice. You need to let go of your idea that you've been doing enough teamwork and be open to working with your manager.\n\nIn the context of your current task, you said:\n\n>Since no one wanted to pick it up because of the nature of this task, I was let to have it. All good, I have been taking its development forward, establishing processes, testing it, making releases, supporting it and creating backlogs.\n\nWhich parts of this have you been doing in a team context? I know it's not the most interesting task, but are there opportunities for teamwork? Pursue those. If you can't think of any, ask your manager for coaching.\n\nFinally, I think it's important that you finish this current task you were assigned before pushing hard to request more work. You asked for a specific task to prove yourself and you were given one. It would not be a good look if you de-prioritized it at the first opportunity to jump to something else. You need to demonstrate that you can own something from start to finish without getting bored or changing tasks if you want a promotion.",
+                    "replies": [
+                        {
+                            "author": "pheonixblade9",
+                            "text": "+1.\n\nAssuming your manager is working in good faith, you just need to absolutely knock it out of the park and build trust, OP.\n\nRemember that they have a whole team of people who also want to work only on super complex high impact work, and your manager has to balance that with the overall goals of the team. it's not an easy job.\n\nyour manager is not \"denying you tasks\", they are distributing them in a way they feel is most likely to satisfy the business goals of the team.\n\ngenerally, for a manager, the priority goes\n\n1) business' needs\n\n2) individual's needs\n\n3) manager's needs",
+                            "replies": [
+                                {
+                                    "author": "Historical_Ad4384",
+                                    "text": "Well my team doesn't have enough people to distribute and me trying to bring in goodwill with alignment of my private goals vs OKR is not being received well."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "INTERGALACTIC_CAGR",
+                            "text": "the guy who gave him no opportunity for teamwork over the yers and doesn't seem to appreciate the teamwork that was demonstrated? that guy?\n\nI err on the side of the managers are usually bad at their jobs, you seem to think the opposite and that's okay.",
+                            "replies": [
+                                {
+                                    "author": "SituationSoap",
+                                    "text": "As someone who's been on both sides, there are a lot of ICs who build up a story in their head about what's going on that doesn't sync up with any real version of reality. You try to explain to them what you need out of them, and it's like talking to a wall. A couple days later they're right back to doing the exact same things you were just asking them not to do."
+                                },
+                                {
+                                    "author": "JaySocials671",
+                                    "text": "I agree with leaning towards siding with the development side."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Decent_Perception676",
+                    "text": "High stake, high visibility work is not assigned to people based on their personal need for career growth.  It\u2019s based on who leadership has confidence can get the work done effectively. No business is going to risk an important initiative just so you can get a promotion cause you really feel like you deserve it.\n\nSo\u2026 you need to fix your relationship with your manager, cause they don\u2019t see you as someone they want to put on a high stakes project. I imagine demanding to be put on projects isn\u2019t helping. Work with them on the feedback they have given you.\n\nAnd you need to relationship build outside of your team as well. Your manager will have to propose the promotion to their boss for approval, and that boss will have to consider multiple requests from multiple managers. And there is absolutely a set budget, so they don\u2019t just give a yes to every request. You best have other managers on other teams also singing your praises, if you want to be a compelling case.",
+                    "replies": [
+                        {
+                            "author": "dotnetdemonsc",
+                            "text": "I don\u2019t think there\u2019s any salvaging a relationship with OP\u2019s manager. Perception has a funny way of taking a stranglehold on how someone views another, especially in the case of manager and subordinate. Even if OP managed to do more team-oriented activities that are visible, it could still be chalked up to \u201cmerely show to get the promotion\u201d\u2014and the manager has good reason not to promote someone who is going to fall back to old habits as that makes the manager look bad for not gatekeeping efficiently enough.\n\nI don\u2019t like it either, OP, but this is truly a case of \u201cput up or shut up\u201d in my humble opinion. You may want to consider trying to look elsewhere to apply for a higher title."
+                        },
+                        {
+                            "author": "Historical_Ad4384",
+                            "text": "How will other managers event judge my work because of its all cross domain with clear set of responsibilities between the cross functional teams that are to be respected"
+                        }
+                    ]
+                },
+                {
+                    "author": "ActiveBarStool",
+                    "text": "bro respectfully why do you care so much?\n\njust go get a new job, quit being a sucker. you'll probably get a title bump/raise in the process if you're actually worth being an L5.\n\nno need to grovel/be where you're unwanted/unvalued",
+                    "replies": [
+                        {
+                            "author": "Historical_Ad4384",
+                            "text": "Given the market, I won't even land up any job at all because I'm in country where I don't speak the language and the market is flooded with the likes of me.",
+                            "replies": [
+                                {
+                                    "author": "UlyssiesPhilemon",
+                                    "text": "Sorry to hear that, but I believe you've answered your own question already."
+                                },
+                                {
+                                    "author": "ActiveBarStool",
+                                    "text": "sorry to hear it. you sure about that though?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Oakw00dy",
+                    "text": "Managers will seek to promote those of their reports that help them to achieve their goals. Maybe the manager is not seeing how you can help *them* make progress on their objectives? It sounds to me like you're more concerned about your career advancement than your team's success.",
+                    "replies": [
+                        {
+                            "author": "Historical_Ad4384",
+                            "text": "What's the problem in trying to align both of them?"
+                        }
+                    ]
+                },
+                {
+                    "author": "meevis_kahuna",
+                    "text": "I would ask your manager specifically what they would be looking for in order to put you up for promotion.  Most firms have some sort of role definition going point by point as to what defines a junior, mid level, senior, etc\n\nHonestly assess yourself against these metrics and set up a coaching meeting to make sure you're aligned.  Then work on improving your issues point by point. \n\nBottom line is, it seems like your manager doesn't \"feel\" like you're ready for a promotion.  Fair or unfair, you need to objectively demonstrate that you are by the company metrics.",
+                    "replies": [
+                        {
+                            "author": "liquidpele",
+                            "text": "Sigh...    I kind of hate this advice, because part of the job of being a higher level is knowing what needs to be done.  Frankly, the whole post comes across as them thinking that years served means promotion.",
+                            "replies": [
+                                {
+                                    "author": "meevis_kahuna",
+                                    "text": "You're right that someone ready for a high level promotion should already have a better idea about how to move to the next level.  But, they are here asking for this advice, so I'm giving it.  \n\nIt's also possible that this manager is biased against them.  In that case, documenting the milestones in writing could be effective to avoid moving goalposts.  \n\nIn any case, I don't see how my suggestion could hurt their chances, and it might help them see their situation more clearly."
+                                },
+                                {
+                                    "author": "Historical_Ad4384",
+                                    "text": "No way I feel years served should mean promoting but the value I bring based on the crumbs I feed off of are worth it's salt. I end up of doing the work of 2 people and generate value off of whatever I have but it's shrugged off as meh. The grind being I end up receiving what others deem as untouchable and when I try to fight for my right I get schooled."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Historical_Ad4384",
+                            "text": "My manager wants to see L6 accepting my principles to put in clear terms. The issue being the principles are around such a boring topic that the L6 have been finding the excuses for over 5 months to skip reviewing them even if I provide a well  documented approach with everything in one place. When I reviewed this behavior with my manager after repeated attempts to rectify, he just replied you need to motivate them but the topic is boring in itself that the all the L6 would consider answering the operational calls than be bored to death because they literally have better things to do in life. I can't sit and school L6 to follow up me. They need to have interest as well within the organizational topics irrespective of the engagement level associated with it because they are L6. My perception maybe wrong as well but do correct me.",
+                            "replies": [
+                                {
+                                    "author": "meevis_kahuna",
+                                    "text": "I don't understand this well enough to comment, yet.  I'm not well-versed in your firms management tiers or what \"putting your principles in clear terms\" means.  \n\nPart of advancement is clear communication.  Can you rephrase in a way that someone from outside your firm could understand?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "hachface",
+                    "text": "Are there already L5s available to take on the project you want? This could just be a case of too many stars and not enough sky. The company and your manager have no particular incentive to promote you if vetted engineers are available to take on the work.\n\nUltimately promotions and raises are retention strategies. They need to value you enough to be afraid that you'll walk if you don't get promoted. If they could live without you then you have no leverage and they can keep spinning your wheels with process indefinitely. Your manager is busy with their own career; they aren't responsible for yours.",
+                    "replies": [
+                        {
+                            "author": "Historical_Ad4384",
+                            "text": "There is more sky than stars and I'm putting in my goodwill to help with the overwhelming tasks for matching the OKR because I already did something similar against that tasks that I have requested my nnanager for me to contribute to, so in my mind it already makes sense and relieves the other developers of additional efforts while aligning me to the OKR value as well. Don't see how it can be wrong."
+                        }
+                    ]
+                },
+                {
+                    "author": "Historical_Ad4384",
+                    "text": "I'm not in FAANG but my company follows a similar job structure like FAANG"
+                },
+                {
+                    "author": "dhir89765",
+                    "text": "Managers basically put people into three buckets:\n1. I really want to keep this guy and keep him happy\n2. This guy is okay, I don't actively want to get rid of him, but if he left I'd be meh about it\n3. I want to get rid of this guy as soon as the company will let me.  Hopefully he leaves on his own.\n\nIt sounds like you're in bucket 2 or 3, you should try to get yourself in bucket 1 if you want a nice project.",
+                    "replies": [
+                        {
+                            "author": "Historical_Ad4384",
+                            "text": "I'm most probably in 2 but I want to get into 1 but my manager doesn't seem to allow me the chance as well like I posted.",
+                            "replies": [
+                                {
+                                    "author": "dhir89765",
+                                    "text": "That's like saying \"I really want this girl to be attracted to me but she never gives me the chance\".  You have to charm him/win him over.  The goal is to get him to feel good about you and like you a lot.  Then the projects will fall into your lap"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "fortunatefaileur",
+                    "text": "glad to see google management wasn\u2019t improved by the layoffs",
+                    "replies": [
+                        {
+                            "author": "PragmaticBoredom",
+                            "text": "OP isn't at FAANG.\n\nMany companies cloned their titles from FAANG because cargo cult.",
+                            "replies": [
+                                {
+                                    "author": "[deleted]",
+                                    "text": "[deleted]"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "netwhoo",
+                            "text": "Isn\u2019t this Amazon?",
+                            "replies": [
+                                {
+                                    "author": "madbomber-",
+                                    "text": "Nah, levels at Amazon are shifted. Amazon L4 is equivalent to google L3. You\u2019d never see one with 12 YOE"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "pheonixblade9",
+                            "text": "hah, was also my thought that this sounds like Google."
+                        }
+                    ]
+                },
+                {
+                    "author": "TopSwagCode",
+                    "text": "I haven't really had managers assign me work. Useally we do that our self as a team. Seems like micromanaging to have him assign it to single devs.",
+                    "replies": [
+                        {
+                            "author": "Historical_Ad4384",
+                            "text": "I just see people directly asking up work and my manager supporting them. One day we have a topic that gains traction and suddenly someone is dedicates their life to it and my manager is happy. The one time I tried to do it in a respectable way, I am being schooled."
+                        }
+                    ]
+                },
+                {
+                    "author": "jb3689",
+                    "text": "I would find a new manager. That's just me. If I don't have a healthy relationship with my manager, for whatever reason, then I want to go find someone else. It's really that simple. People have different dynamics with one another."
+                },
+                {
+                    "author": "ballsohaahd",
+                    "text": "Managers are mostly useless to engineers, and only hold them back.  They\u2019ll pick like 1/10 people to give good projects to and not care about their mistakes.  Everyone else gets shitty projects and their mistakes, whether actually valid or not are nitpicked and then held for review time to prevent needing to spend raise money or budget on them.  When they leave the rest of the team takes their work and they can rehire someone else.\n\n Basically if it doesn\u2019t seem you\u2019re being taken care of, it\u2019s that you\u2019re not and shouldn\u2019t hold out hope.",
+                    "replies": [
+                        {
+                            "author": "gumol",
+                            "text": "is it just me that thinks that managers are extremely valuable and help developers a lot?\n\nI\u2019m very grateful for management chain, they have my back"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Sharing npm library with fullstack monorepo",
+            "author": "nodeat",
+            "text": "Hi. Next week we will poke some solutions but we also looking for suggestions / experience with this requirements :\n- 3 new project with 4-5 developers fullstack team for each. Rest API backend + react frontend\n- 3 independant domain with same design design / ergonomic \n- Common design system with shared front libraires (Mostly base components and common layout, navigation menu, auth \u2026)\n\nIdeally we would like to have a front + backend mono-repo by domain/team.\n\nBut we also want having the best developers experience with the design system that all team will used and maintain. So one possibility is private npm package but seems a bit boring to publish, update version every time, hot reload more difficult ?\n\nAny alternative ? Doesn\u2019t know if including it with git sub modules on a npm workspace can offer better developer experience ?",
+            "subreddit": "ExperiencedDevs",
+            "comments": [
+                {
+                    "author": "Acrobatic-Bowler3285",
+                    "text": "[https://nx.dev/](https://nx.dev/)\n\nEventhough I did not use nx myself in production, I've seen big teams utilizing as in your setup. Add rest api's, nextjs projects and any apps as an \"app\" and any other shared library as \"library\", then you can use shared libraries within app projects."
+                },
+                {
+                    "author": "tarwn",
+                    "text": "I've done that setup with a private npm package (components, storybook, and a living styleguide that had archetypes for common combinations of components and page types, and published files like CSS variables and such). For the local developer experience (when I'm working on project A and also want to make additions to the common library) we would have both projects running with dev servers and we would use npm link from project A to the design library project so it would use the files being built in the design library instead of the ones in it's own local node\\_modules (which required us to build to disk instead of in memory for the design library in local dev webpack config). I can't recall if HMR worked, and npm link could be problematic in other ways (library compatibility was even more critical, I can't remember more).\n\nA process-based alternative we had for a different company was to have the central library as a private npm package, but make alterations or new components within the consuming project (Project A again) to provide them out and have fast feedback loops, then once things were good have a separate sub-task to add it into the design library, flesh out storybook, etc. You could build your feature for Project A and push it out, build the component change in the Design Library and push it out, then have a final task in Project A to advance the version of the design library in package.json and pull down the fresh one, remove the local implementation of the component, and fixup the import and any other changes that happened to the component in the 2nd version. This had the advantage of HMR and fast feedback loops during initial development, the disadvantage of it being a process with extra steps, but it also meant the final shareable component was the second go around and sometimes got improved or cleaned up further because now you knew how it needed to work but were writing it for a wider audience."
+                },
+                {
+                    "author": "originalchronoguy",
+                    "text": "We've been doing private NPMS for well over 6 years now and it has worked well. The biggest hump was creating a build process which we solved by using D-in-D (Docker in Docker) which runs an image that builds the NPMs.\n\nAs someone noted here, NPMs can be a black box. So we have multiple NPMs that rely on other private NPMs. There is one base one for mixins and SASS/LESS. Then depending on product, there are NPMs for creating the layout shell, auth, personalized data,etc. All those secondary NPMs rely on the first which is the global corporate design CSS/patterns/mixins. You can't deviate from the corporate design. So if a new pattern like a modal alert needs to be built, it needs to be built in the base first layer NPM. Tagged, then the other NPMS and apps have to pull latest tag.\n\nSo the issue is if you are working on that first one, it hasn't been tagged yet. So the secondary and third NPMS requiring that as a dependency won't build. So D-in-D solved it. It does the build, push it to a docker running  internal repo, local devs just pick it up from an environment variable in their local/QA/lower environment. Test everything before committing the base NPM. Has been solid for years."
+                },
+                {
+                    "author": "bippityboppityboo_69",
+                    "text": "You can go pretty far with just something like yarn workspaces."
+                },
+                {
+                    "author": "Cahnis",
+                    "text": "Hear ye! Hear Ye!\n\nprivate npm packages are a fucking pain and will become a black box / silo for most of your devs.",
+                    "replies": [
+                        {
+                            "author": "theyellowbrother",
+                            "text": "Why? We tag our NPMs. Any developer using tag 1.0.12 or 1.0.13 can just go to git, look at the npm repo and build it themselves. Want to add a feature? Pull, add, tag 1.0.14, code review and there is a new one in the artifactory server.",
+                            "replies": [
+                                {
+                                    "author": "Cahnis",
+                                    "text": "We have an integration bug where the token is not refreshing, and that is really hard to replicate without running everything. The auth is in an admin-template module on a private repo."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Forced Relocation",
+            "author": "solardroplet",
+            "text": "I am a female dev at a bank with 5 YOE. Due to many shakeups at the company, I have been working the past 3 years for an opposite coast team. We were given RTO orders around a year ago, which means I've been going into the large nearby office x4 a week with only one other coworker in my department.\n\nI was informed recently that this RTO was not cutting it, and that I need to relocate to a tech hub office, all 4 of which are in other states.\n\nIf I don't relocate, I would be let go around August and given a 6 month severance package.\n\nI'm not truly interested in staying with my company for all the usual reasons: this was my first job out of college and the next promotion would be 6 years away/I'm not getting the mentorship and support I need/my life is in my current state and I want to stay. I am ready for a new hybrid job where I can actually be with my team in person and get technical and professional mentorship. \n\nIn my personal life, the plan was to move in with my partner this year. I would prefer to do this and live off severance + savings and focus on finding a new job. \n\nHowever, I'm worried about giving up a job in this market, especially living in a HCOL area.\n\nDo I take the offer as a backup, study and interview like crazy until I'm forced to move by July, and then worst case scenario relocate?\n\nThe location I'd pick is the next state over in a MCOL city where no coworkers or managers are located. I'd rent a furnished apartment and hide out there, continuing to study and interview until I land a new position. Obviously though I'd be physically isolated from my support system and likely miserable.\n\nOn my team I'm considered a good developer, but we push more paperwork than code. I got my ass kicked in technical interviews out of college, and actually got this job with no whiteboarding/take home problems (instead collaborated on a word problem with my old manager + was asked technical questions), so while I'm starting to dive into the leetcode grind I am nervous about it.\n\nIs having a job while interviewing worth putting my life on pause in this market?\n\nTL;DR: Company is requiring relocation to another state by summer, do I take 6 months severance in August and run or do I move and continue to interview for my next job while I'm out there?\n",
+            "subreddit": "ExperiencedDevs",
+            "comments": [
+                {
+                    "author": "Winter_Essay3971",
+                    "text": "You're in a good position. 7 month warning about RTO + 6 months of severance is great. And you have 5 YOE so you have a lot more bargaining power than a new grad.\n\nI agree with your plan to keep applying and interviewing now. I don't think you need to put your life on pause. Maybe dial back effort at your current job to 70%.\n\nLeetcode isn't everything, make sure you're studying system design (I watch mock interviews and make Anki flashcards) and can talk in depth about your current and past jobs and communicate that you've had impactful, non-junior responsibilities.\n\nAs for what you should do if it gets to July and you still don't have an offer, that's a bit tougher. I personally would probably keep the job and move, live in a basic cheap apartment, and just visit my partner as often as possible."
+                },
+                {
+                    "author": "PotentialCopy56",
+                    "text": "do you need to give them an answer now? august is long time away. I'd be looking for another job until like May/June and if I cant find something better by then maybe consider the move. I personally would never upheave my entire live for a job especially in today's market. there's no job security anymore or at least what was left of it is now gone."
+                },
+                {
+                    "author": "RebeccaBlue",
+                    "text": "God, that sucks.  I'm so sorry.\n\nIf it were me, I'd stay where my life is.  There's nothing that would prevent your employer from doing something like laying you off shortly after you relocated.  (I've heard of that happening to people recently.)"
+                },
+                {
+                    "author": "casualfinderbot",
+                    "text": "I would ask how confident are you in your engineering skills?\u00a0\n\n\nIf you\u2019re a great coder IMO it\u2019s always pretty easy to get a job. I know because I\u2019ve interviewed a large number of people with really amazing resumes and almost everyone either isn\u2019t very good at coding or has some horrible personality that makes them unhirable.\n\u00a0\n\nLiterally we were looking for anyone who was just good at coding and seemed nice to work with, yet all these people with crazy titles like \u201cstaff engineer\u201d or seniors at facebook just flopped on stuff that simply wasn\u2019t that hard.\u00a0\n\n\nJust saying that b/c in my experience if you can just code well getting a job is not hard, but ofc will be much much harder if you can\u2019t. And if you can\u2019t code and have mostly been doing paperwork, it might be pretty hard for you to get another decent job"
+                },
+                {
+                    "author": "Relative-Debt6509",
+                    "text": "One more thing thats not clear to me: are they offering relocation assistance? That\u2019s a key fact for me without it I wouldn\u2019t even consider moving. In the grand scheme of things it\u2019s peanuts if you\u2019re renting but it\u2019s a gesture. If they\u2019re offering assistance in the way of cash I\u2019d take the cash. Study for interviews. Take a vacation to the new work location and interview. If you decide to work for a different company you can always give back the cash. If you like the work location you have more info. I know it might be hard to hear but this company is doing right by you compared to the horror stories we\u2019ve heard recently."
+                },
+                {
+                    "author": "b1e",
+                    "text": "If you\u2019re serious about your partner, might as well move in since you\u2019ll save a bit that way. Then focus on interviewing.\n\nThere\u2019s no guarantee relocation won\u2019t be followed by a layoff anyways."
+                }
+            ]
+        },
+        {
+            "title": "Important things to know about your current job, for the purpose of interviewing?",
+            "author": "Winter_Essay3971",
+            "text": "I'm talking about things you would want to know so you can talk intelligently about your job in interviews and your resume, and not come off as (1) too junior or (2) too siloed / lacking in scope. Even if they seem obvious to most of us.\n\nStuff like:\n- what is your company's build/deployment process?\n- how many users does everything serve?\n- did the products you're working on replace a previous product? if so, why was a new one built?\n- what security practices are used and why?",
+            "subreddit": "ExperiencedDevs",
+            "comments": [
+                {
+                    "author": "FireThestral",
+                    "text": "One that I\u2019ve liked during this recent round is \u201cHow do you plan work?\u201d. It can lead to some tangents that can cover a lot of the developer experience in the company.\n\nSome places say \u201cthe PM gives me a ticket\u201d, and some describe a more engineering-led work generation.\n\nFollow up questions would be:\n- How do you interact with other teams to ensure alignment?\n- How much comes from the manager? From the PM?\n- Once you have a work item, how do you scope/design it? For small tickets? For larger projects?\n- How frequently do you deploy changes? Is there interest-team coordination required? (From here, launch into CI/CD of your like)\n- How involved is upper-management in planning? Do they just set OKRs? Do they share the \u201cwhy\u201d along with the \u201cwhat\u201d?\n\nMore junior interviewers may just say that the Tech Lead worries about that, and you can pivot into more day-to-day questions. I find this line of questioning to be more interesting with Staff+/Lead/EM interviewers.",
+                    "replies": [
+                        {
+                            "author": "nikita2206",
+                            "text": "> with other teams to ensure alignment\n\nCurious what answers can this question have other than we message peers/lead of that team asking questions (maybe some variations of \u2018we do this in a public channel\u2019 vs \u2018we do this in direct messages\u2019)",
+                            "replies": [
+                                {
+                                    "author": "gjionergqwebrlkbjg",
+                                    "text": "That's method of communication, not how you ensure alignment. Do you meet with them and align work before starting? Who is driving that? What kind of outcome you get from those meetings? How do you prioritize what to work on first? How do you make sure the systems are integrated well? How do you communicate progress? What do you do if there are delays of some sort? What mistakes did you make and what did you learn from those?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "UnrelentingStupidity",
+                    "text": "- how often do you ship, and how far up do you have to reach for approval \n- how many users does the org/team serve \n- how much greenfield dev / vs legacy maintenance? What shape does the maintenance take? (Just security and dependencies? Algorithmic changes?)\n- security might not be the most pertinent unless you\u2019re interviewing for sec positions \n\nThis is how I would phrase your questions, if it were me, but YMMV"
+                },
+                {
+                    "author": "kevinkaburu",
+                    "text": "Figure out how you can describe the work you did, in a way that clearly gets across a positive impact to the team/product/company & end user/client\n\nThat\u2019s stuff like:\n\n* is your work making money? (increased sales, market, or mind share)\n* saving costs? (less $/time req to do something the business needs done)\n* increasing performance (stuff works faster, scales better, etc)\n* importantly, it can\u2019t just be your work was faster (worked more hours) or less $ (some was offshored)"
+                }
+            ]
+        },
+        {
+            "title": "Contractor vs Permanent dev interviews",
+            "author": "PayLegitimate7167",
+            "text": "Do the processes differ or are they the same (like same no. of steps), anyone have experience?",
+            "subreddit": "ExperiencedDevs",
+            "comments": [
+                {
+                    "author": "couchjitsu",
+                    "text": "Probably depends on the company.\n\nIf anything, in my experience, contractors have fewer steps because it's cheaper and easy to let them go",
+                    "replies": [
+                        {
+                            "author": "PayLegitimate7167",
+                            "text": "Exactly, do I spend months in a 6 round interview process for a permie role or find a contract role instead with maybe less steps. In this day in age of lay offs ...",
+                            "replies": [
+                                {
+                                    "author": "PragmaticBoredom",
+                                    "text": "Why limit yourself to one target? You should be applying to multiple openings at the same time.\n\nIf a company's interview loop is too demanding you can just leave it. I wouldn't exclude yourself from roles because you think the interview loop might take a long time. Ask them how long it will take. Leave if it's taking longer than you can tolerate. Don't just guess before you even apply."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "ninetofivedev",
+                            "text": "It\u2019s not easy to fire a contractor other than not renewing the contract.",
+                            "replies": [
+                                {
+                                    "author": "couchjitsu",
+                                    "text": "Depends on the contract. I've seen plenty with a 30 day ( or less) out clause.\n\nAdditionally if they're through an agency you can often let them go even sooner with no financial penalty"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "gjionergqwebrlkbjg",
+                    "text": "At most companies I worked at they were shorter. But the process of getting rid of one takes at most a week, not months like for FTE.",
+                    "replies": [
+                        {
+                            "author": "PayLegitimate7167",
+                            "text": "Don't forget a permie can be let go without notice during their probationary period",
+                            "replies": [
+                                {
+                                    "author": "gjionergqwebrlkbjg",
+                                    "text": "In theory.\n\nIn order to fire someone, I have to have some evidence. More evidence than I need to keep someone.\n\nSo I have to first have a reason to think they are a poor fit, give them time to improve, and only then can initiate the process.\n\nTo fire a contractor, if they are from a partner company, I just have to ask my boss to swap that contractor out. As long as I don't do it too frequently, nobody will even ask too many questions. For independent contractors I have to initiate process of finding a replacement, but if someone is a net negative, just getting rid of them is also fairly quick."
+                                },
+                                {
+                                    "author": "originalchronoguy",
+                                    "text": "contractors can get their contract terminated on the spot. So I see no difference."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "originalchronoguy",
+                    "text": "Contractor is an easier route into big tech. Even at FAANG. There are departments that don't do engineering directly. So they don't have those 5 rounds. Those departments have budgets to spend so they may hire a small dev team for a department specific project (Shadow IT).\n\nI see this at both Google and Apple. Many people go this route to get the names on their resume.\n\nFTEs have a different standard of hiring.",
+                    "replies": [
+                        {
+                            "author": "lnkprk114",
+                            "text": "I contracted for 2 years at Google on a major project. Entire interview was a 45 minute conversation.",
+                            "replies": [
+                                {
+                                    "author": "PayLegitimate7167",
+                                    "text": "Seriously! Pity those Leetcode grinders reading this :D"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "serial_crusher",
+                    "text": "You guys interview your contractors?  At my company somebody just goes to the contracting agency and says \u201cgive me 3 warm bodies\u201d and 3 warm bodies show up."
+                },
+                {
+                    "author": "filthy-peon",
+                    "text": "Easiest interview process I ever had was contractor. Instayed there the longest, it was the best paid and the project made sense :)",
+                    "replies": [
+                        {
+                            "author": "PayLegitimate7167",
+                            "text": "The irony, perms go though harder processes and get paid less :D"
+                        }
+                    ]
+                },
+                {
+                    "author": "bakeforest",
+                    "text": "All of my permanent roles have required at least 5 interviews. I've gotten contract roles with 1-2 phone calls most of the time."
+                },
+                {
+                    "author": "0x11110110",
+                    "text": "Currently in a contract (W2) role assigned at big tech. My interviews were numerous but much easier compared to similar interviews. 1 phone call with the recruiter, 1 code screen, and 3 back-to-back on-site interviews",
+                    "replies": [
+                        {
+                            "author": "Knightwing1941",
+                            "text": "3 back to back onsite interviews? Like in one day or multiple times on site?",
+                            "replies": [
+                                {
+                                    "author": "0x11110110",
+                                    "text": "Sorry I could\u2019ve worded that differently. It was one day on-site with 3 different interviewers"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "uuggehor",
+                    "text": "With contractors, current tech stack matters a lot more than with permanents. Process itself is also a bit shorter in general."
+                },
+                {
+                    "author": "SquiffSquiff",
+                    "text": "I'm in the UK. Generally a contract position is 2 or max 3 calls and the process can take less than a week from first contact to start if they are serious. I've not had HR/'cultural' or take homes/pairing for contracts",
+                    "replies": [
+                        {
+                            "author": "PayLegitimate7167",
+                            "text": "I see are there recommended places to find these contracts?"
+                        }
+                    ]
+                },
+                {
+                    "author": "a_reply_to_a_post",
+                    "text": "think it depends on the company for sure...we use an agency and they provided people they vet...if they're not a fit it's easier to shift them off a project, and likewise if they don't wanna work on our stuff they can get put on another project from their agency\n\nin my personal work experience, landing contract roles has been easier because they're not incurring the overhead of paying for your insurance but that also may have changed since i've been playing the full-time game for the past decade and do less freelance / contract work on my own, but usually i'd land stuff through potential clients seeing my portfolio or a word of mouth introduction, so landing those type of roles is a different approach than the full time job approach where you fire off resumes into the ether and hope you remember how to bubble sort when it's time to try a trie"
+                },
+                {
+                    "author": "khaili109",
+                    "text": "From my experience they\u2019ve been the same."
+                },
+                {
+                    "author": "soundman32",
+                    "text": "Last 3 contract interviews have been 30-45 minute video chat to see if we get on.  CV shows skill set, so no need to discuss that part, the client knows you can do the job, it's just to see if you can fit in the team."
+                },
+                {
+                    "author": "wrex1816",
+                    "text": "Interview then for the job at hand. \n\nBuilding a rest service? *\"Can you tell me about your experience in building REST services?\"*\n\nIf this needs to be asked, I am skeptical of whether you hold enough seniority to actually be interviewing people?"
+                }
+            ]
+        }
+    ]
+}

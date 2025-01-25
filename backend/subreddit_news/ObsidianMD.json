@@ -1,0 +1,392 @@
+{
+    "items": [
+        {
+            "title": "My Vault after the past ~4 months",
+            "author": "csanicola",
+            "text": "[External Link]",
+            "subreddit": "ObsidianMD",
+            "comments": [
+                {
+                    "author": "Mathisbuilder75",
+                    "text": "What the hell is that glow \ud83d\ude2d",
+                    "replies": [
+                        {
+                            "author": "lleoaeris",
+                            "text": "what glow? do you see a glow?",
+                            "replies": [
+                                {
+                                    "author": "hoddap",
+                                    "text": "You\u2019re blinded by the blue light"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "csanicola",
+                            "text": "I actually used this previous post as a template for the glow:\nhttps://www.reddit.com/r/ObsidianMD/s/LvrnJc1cRo",
+                            "replies": [
+                                {
+                                    "author": "Mathisbuilder75",
+                                    "text": "It prevents you from seeing the toolbar on the left"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "csanicola",
+                    "text": "for reference, please refer to my GitHub of what plugins, snippets, and themes I use:  \n[https://github.com/csanicola/obsidian-backup](https://github.com/csanicola/obsidian-backup)",
+                    "replies": [
+                        {
+                            "author": "ayeebe",
+                            "text": "Thank you so much.",
+                            "replies": [
+                                {
+                                    "author": "Acceptable_Scar9267",
+                                    "text": "Thank you"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "aquilabyrd",
+                    "text": "r for data science my beloved"
+                },
+                {
+                    "author": "Empty_Vegetable_80",
+                    "text": "Noice one, i like it a lot man, thx for giving me new ideas!Stay healthy"
+                },
+                {
+                    "author": "scambl",
+                    "text": "This is awesome! How\u2019s watching those thousand movies going? I wanted to start a daily movie habit and it became really challenging. Any tips?",
+                    "replies": [
+                        {
+                            "author": "csanicola",
+                            "text": "It\u2019s slow going that\u2019s for sure because I made the mistake of starting in release order and those silent movies require a lot of focus. I find the easiest way to keep interest in to not go in order with the list but go by genre and pick a new genre each night to keep it fresh. Good luck!"
+                        }
+                    ]
+                },
+                {
+                    "author": "jrharte",
+                    "text": "I'm interested to know what \"safety box\" is used for.\n\nAnd also how you are storing recipes? Is that recipe note a Dataview query to pull notes?",
+                    "replies": [
+                        {
+                            "author": "csanicola",
+                            "text": "I use my safety box as a place to keep my car, credit card, health, tax info, etc. Anything that I need to have a reference for. It\u2019s super helpful having it all in one or two docs rather than trying to find insurance cards or a pic of my car to remember what my license is. \n\nAs of now I have my recipes separated by Entrees and Side Dishes and I find it easy enough to use the side header list to find the recipe I\u2019m looking for."
+                        }
+                    ]
+                },
+                {
+                    "author": "reddit4kevin",
+                    "text": "How do you split them up like that? Like the right-side -- calendar + tasks? And left-side -- notes list + bookmarks (I think)?"
+                },
+                {
+                    "author": "yoleks",
+                    "text": "I'm a complete noob and just scratching the Obsidian surface, if I clone your repo I'd get your setup and I can then just customize it ? \n\nI love your Daly note setup as well! It's super simple and slick"
+                },
+                {
+                    "author": "Safe_Duty8392",
+                    "text": "How did you disabled the folder arrows ? I'm using border theme and the arrows appear above the folder icon"
+                },
+                {
+                    "author": "Gadon_",
+                    "text": "May I have your Daily template. Seems helpful to me."
+                }
+            ]
+        },
+        {
+            "title": "Anyway to change the splash/loading screen so i dont get flashbanged",
+            "author": "TheJustNatan",
+            "text": "[External Link]",
+            "subreddit": "ObsidianMD",
+            "comments": [
+                {
+                    "author": "DrBhu",
+                    "text": "You could should scream \"fire in the hole\" and throw it at strangers bevor it pops up",
+                    "replies": [
+                        {
+                            "author": "KickFamous5005",
+                            "text": "don't peek if there's an OP tho"
+                        }
+                    ]
+                },
+                {
+                    "author": "constantbeta",
+                    "text": "I just use dark theme and it doesn't do this",
+                    "replies": [
+                        {
+                            "author": "TheJustNatan",
+                            "text": "its on dark mode but for some reason the loading screen isnt",
+                            "replies": [
+                                {
+                                    "author": "kepano",
+                                    "text": "what is the specific device/OS?"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "merlinuwe",
+                    "text": "Try magicuser theme. One of the reasons, I use it.",
+                    "replies": [
+                        {
+                            "author": "TheJustNatan",
+                            "text": "hmm doesn't seem to change for me, might be because im on android",
+                            "replies": [
+                                {
+                                    "author": "merlinuwe",
+                                    "text": "Dark theme?"
+                                },
+                                {
+                                    "author": "minmidmax",
+                                    "text": "Dark theme and dark splash on android for me."
+                                },
+                                {
+                                    "author": "Geethebluesky",
+                                    "text": "I have a Setting under Appearance, \"Base color scheme\" lets you choose Dark/Light specifically for Obsidian and nothing else if you don't want to switch your whole phone to another mode. No need for a theme."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "djlaustin",
+                            "text": "An aside here: You comment a lot on MagicUser. Not meant to be a snide comment here (I'm intrigued by the theme), but what is it about MagicUser you like so much? It's super customizable, but I always feel like it's a rabbit hole for me. There must be some features you like/love other color and styling? I always appreciate your post comments -- I learn from you.",
+                            "replies": [
+                                {
+                                    "author": "merlinuwe",
+                                    "text": "You already mentioned it: It's super customizable.\n\nFor me (99 % used on PC with Windows 10/11, dark mode):\n\n- Numbered table rows and columns. (teacher...)\n\n- Scrollbar width and color adaptable (I'm a little bit handicaped)\n\n- Inline comments (for pupils)\n\n- Colored rainbow folder icons \n\n- Font customizations (readability for pupils)\n\n- Intelligent contrasts for dark themes (modals and windows with colored borders)\n\n...\n\nYou better read this, because everyone of us prefers other features. There are a LOT more than what I mentioned.\n\nhttps://github.com/drbap/magicuser-theme-for-obsidian\n\nTake the time and do all of the settings according to your needs and after that you're ready for a long time.(It is one of the few rabbit holes that you can get out of after the initial configuration.)\n\nBut the most impressive is the maintainer, who realized a high quality and feature rich theme - exact what I need. Not much open issues, most of the time: zero. ;-)\n\nTipp: Also look at his dashboard navigator plugin, if you like to speed up your search experience.\n\nhttps://github.com/drbap/dashboard-navigator-for-obsidian"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Hefty_Cup_8160",
+                    "text": "dark mode?"
+                },
+                {
+                    "author": "techwizrd",
+                    "text": "I'm using Adwaita and having it Adapt to System. In dark mode, the background is black for me."
+                },
+                {
+                    "author": "jbarr107",
+                    "text": "On my Pixel 8a, I never see the loading screen, just a plain black screen on startup, then the Vault.\n\nI have Dark Mode enabled system-wide, and I'm using the light default theme in Obsidian.\n\nGo figure."
+                }
+            ]
+        },
+        {
+            "title": "GitSync Update: Multi-Repo Support, 2024 Gems of the Year, and more!",
+            "author": "ViscousPotential",
+            "text": "Hey all,\n\nI\u2019m thrilled to share some incredible news and updates about GitSync! \ud83d\ude80\n\n**First, the big news:**  \nGitSync has been [awarded](https://obsidian.md/blog/2024-goty-winners/#:~:text=%F0%9F%8F%86%20git%20sync%20by%20viscouspot) **2024 Gems of the Year** in the **Tools** category! \ud83c\udfc6  \nThis wouldn\u2019t have been possible without your amazing support, feedback, and trust. Thank you for being part of this journey!\n\n**Now, onto the updates:**  \nThe latest version of GitSync is here, and it\u2019s packed with powerful new features and improvements:\n\n* **Improved Authentication and Sync Performance** \u2013 Smoother, faster, and more reliable syncing.\n* **Manual Sync & Multi-Repo Support** \u2013 Manage multiple repositories and trigger syncs when you need them.\n* **Enhanced Error Handling & Conflict Resolution** \u2013 Fewer hiccups and more tools to handle edge cases.\n* **Now Available in Spanish!** \ud83c\udf0e \u2013 \u00a1Hola, comunidad hispanohablante!\n\n**Plus, we\u2019ve launched a brand-new Wiki** \ud83c\udf89  \nDiscover tips, tricks, and detailed guides for using GitSync to its fullest. Check it out [here](https://github.com/ViscousPot/GitSync/wiki) and suggest updates and changes you want to see [here](https://github.com/ViscousPot/GitSync/discussions)!\n\nAll of this comes alongside the features you already know and love :)\n\nAs always, I want to thank this incredible community for your support, feedback, and encouragement. It\u2019s because of you that GitSync continues to grow and improve. Whether you\u2019ve helped with testing, shared your ideas, or simply used the app, you\u2019ve made a difference.\n\n**Looking ahead:** I\u2019m planning more improvements, so keep those suggestions coming!\n\nAvailable now on:  \n[Play Store](https://play.google.com/store/apps/details?id=com.viscouspot.gitsync)  \n[GitHub](https://github.com/ViscousPot/GitSync) ([Sponsor](https://github.com/sponsors/ViscousPot))\n\nThanks again for being part of the GitSync journey, and as always, I can be reached at [bugs.viscouspotential@gmail.com](mailto:bugs.viscouspotential@gmail.com) or by creating an issue on the GitHub page if you're facing any issues!",
+            "subreddit": "ObsidianMD",
+            "comments": [
+                {
+                    "author": "englishstudmuffin",
+                    "text": "This app looks pretty cool! I just finished configuring git automations across my devices, including an android device. But this looks like a more unified way of doing things than a handful of custom scripts and a combination of Termux and Tasker. Having a more mobile friendly experience would be great as well. I don't mind opening up the command line on desktop but on mobile it's a huge drag. Local conflicts become a lot less a downside to managing syncing with git with a proper gui.  \n  \nOne thing I had to work around when I first set up my repo on my android device was my .git directory getting corrupted, which is apparently a common problem in emulated android storage. I had to separate my git working tree from the actual repository files. Does this support that or work around that problem in some way? And for automatic syncing, do you allow users to customize the git actions performed during a \"sync\" operation? For instance, I pull on app open and commit/push on close. I'm not gonna die on that hill though.\n\nDo you use some official implementation of git for android (if there even is one)?",
+                    "replies": [
+                        {
+                            "author": "ViscousPotential",
+                            "text": "There's probably a lot more details in the repo than I can cover here, but I'll try to answer some of your questions!  \n[https://github.com/ViscousPot/GitSync](https://github.com/ViscousPot/GitSync)\n\n1. I'm not familiar with the emulated android storage problem you outlined here. It may be a termux git only issue. If you have any documentation or links I could look at to understand better, I can check if it affects GitSync!  \n2. Currently the auto sync and in-app \"sync now\" options do a fetch, pull, commit, push. This applies to both app open and close. It keeps it pretty simple and predictable while allowing me to add some merge conflict resolution handling. There is a bit of a debounce to prevent spam and some other \"safety\" features like an automatic rescheduling if network is lost during the sync. Feel free to open a feature request on GitHub if you do want to die on that hill :)  \n3. GitSync uses JGit, which is an Apache (I believe) reimplementation of git in Java. It's well maintained and has been around for a while. It's powered SGit and MGit too (the combo of full git clients for Android that I'm aware of)\n\nThanks for checking out the app and do let me know if you have any issues :)"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "How Obsidian and what I eat helped me stick to my journaling habit for over a year",
+            "author": "scambl",
+            "text": "I used to freeze looking at a blank page in my journal, thinking I had to chronicle lofty reflections that could pass wisdom on to future generations. Usually, this meant I could go days or weeks without writing anything.\n\nThen, I found a habit that not only took the pressure off finding something to write about, but also helped me established a consistent daily routine\u2014**I started simply writing down what I ate for each meal**.\n\n### Making Food the Focal Point\nEvery day, we make choices about what we eat, which makes it the perfect inspiration for a daily writing habit.\n\nThe most obvious is to write what we ate. You ordered a grilled cheese sandwich, so you write \"grilled cheese\" under the \"lunch\" portion of your daily note habit.\n\nBut there's so much more to it than that:\n\n- Where'd you get the grilled cheese from?\n- Did you eat a grilled cheese because it was something fast you could chow down on so you wouldn't be late to your job interview?\n- How'd it taste?\n- Did you eat it with anyone else?\n- Did you do anything to fancy it up? (anyone else add mayo to make it extra creamy?)\n\nThe habit can expand and contract based on how much time you have to write and how interesting each meal was.\n\n### Subtle Ways This Builds a Habit\n\n- **Consistency Through Routine:** Meals happen every day. By pairing writing with a guaranteed daily occurrence, there's no friction finding a \"good\" time or topic to journal.\n- **Mindful Observation:** Describing what and how I eat encourages me to notice little details. Early on I realized how much I was eating out, and changing my bad habit was easy (and kind of fun, since every new meal meant I got to write it in my journal)\n\n### What I gained\n\n- **Increased Self-Awareness:** Even brief notes on how I felt after each meal made it easy to spot unhealthy patterns (like stress-eating) or beneficial changes (like adding more protein).\n- **Reduced Decision Fatigue:** By referencing past meals and how they made me feel, I could make better choices over time\u2014leading to less stress around food selection.\n- **Gentle Entry to Broader Journaling:** As capturing my meals became second nature, I found myself naturally adding reflections on my energy levels, personal goals, or everyday insights\u2014without feeling forced.\n- **Getting out of cooking ruts:** Sometimes I'd get tired of writing about the same meal, so I'd try something new\u2014whether that's a new recipe or a new restaurant\u2014if only to have something new to write about.\n- **Time Constraints:** Entries can be as short as a line or two. The key is consistency, not length.\n\n### The Bigger Picture\n\nIt started with jotting down my meals, but I quickly learned that journaling doesn\u2019t have to be a grand production. The routine of writing my meals is both meaningful and manageable\n\nUltimately, by anchoring a simple, repetitive task (eating) to short bursts of writing, I found a natural rhythm that kept me journaling day after day. If you\u2019re struggling to start or maintain a journal, consider using your meals as a way to get into the habit!",
+            "subreddit": "ObsidianMD",
+            "comments": [
+                {
+                    "author": "merlinuwe",
+                    "text": "A good idea."
+                },
+                {
+                    "author": "blaidd31204",
+                    "text": "I like the idea.  It takes 30 days to make a habit stick.  You keeping it going shows what you can do if you do it every day."
+                },
+                {
+                    "author": "Bunteknete",
+                    "text": "Somehow this feels like it was processed by ChatGPT... Don't want to offend you. Just curious: Do you use AI to process your notes?! Just wondering if my AI-sensors are working or if I got too suspicious of AI-content lol.",
+                    "replies": [
+                        {
+                            "author": "scambl",
+                            "text": "No offense taken! I don\u2019t use AI for any of my posts. I\u2019ve been an online writer for 10 years and have been wanting to write more on Reddit as a hobby. The reason it reads like AI might be because AI is largely trained on the style of online writing I\u2019ve been doing for a decade. Also, I read a bunch of successful text posts on this sub and others before writing my own to see what formats are successful. It might feel stiff because I\u2019m trying to mirror others\u2019 writing styles as I test and learn the way I wanna post online. I definitely don\u2019t wanna sound like AI so this is good feedback.\n\nAs far as using AI to process my notes, I\u2019m optimistic about the future of AI in relation to my journal (I.e in 5 years searching through all my entries to find positive/negative patterns to reinforce/change) but at the moment it seems a little bit underdeveloped to have any real utility",
+                            "replies": [
+                                {
+                                    "author": "Bunteknete",
+                                    "text": "Thanks for the reply, yeah I was on the fence and really could not tell, so you can also just take it as a compliment :) The content certainly is original enough, the form just seemed too structured/optimized for a casual post, which triggered the ChatGPT suspicion. But your explanation makes sense to me... keep it up :)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "How do you take lecture notes in Obsidian?",
+            "author": "RevThomasWatson",
+            "text": "I've been using obsidian for \\~2 years now. For notes I take during lectures, I tend to have one, monolithic note that has all the notes for that class so I can easily scroll through it as I'm studying for the exam. This makes it far harder to connect subjects to/within the notes. I've considered making each day's lecture it's own note, but this slows down looking for/through the content. What's your system for lecture notes?",
+            "subreddit": "ObsidianMD",
+            "comments": [
+                {
+                    "author": "TUMS27",
+                    "text": "Make each topic or chapter as its own note. Then have a main page or moc that links to all the chapters/topics for that course. I also do a fair amount of my homework in obsidian as well, so I link those to the moc as well. If there's a fair amount of additional resources I'll link those too, thngs like textbooks, code, and various other resources. Those are usually external links as I don't need everything physically in obsidian, but I like having it all accessible in one place. \n\nThis helps with organization and studying. But also, if the professor allows access to my computer for any midterms, then it's all readily accessible from one place",
+                    "replies": [
+                        {
+                            "author": "runnerego",
+                            "text": "I started leaning towards this, as I am using AI to summarize each section of the lecture's transcript to provide titles for each linked note as a starting point"
+                        }
+                    ]
+                },
+                {
+                    "author": "RevolutionaryCoyote",
+                    "text": "I make a different note for each lecture. I have a habit of creating wiki links as I type. A few days after the lecture, I go back to the note and review\n\nI also fill out separate note pages for the important concepts. When I'm recalling information, I search based on the concept. I like to have a summary of important context, maybe some equations.  And if I need more, I have the back link that brings me to the lecture notes. \n\nSometimes I create flash cards based on the notes.\n\nIf you want to have one consolidated note, you can take notes in separate pages, and then have another note that links to the others with a ! so they all display. Like\n\n![[note 1]]\n\n![[note 2]]\n\nThat way they all display in one page.",
+                    "replies": [
+                        {
+                            "author": "Little_Bishop1",
+                            "text": "Why do you use ![[]]",
+                            "replies": [
+                                {
+                                    "author": "kaglet_",
+                                    "text": "Display another note as an embed"
+                                },
+                                {
+                                    "author": "alciade",
+                                    "text": "That way you embed a note in another one, [you can read more about it here](https://help.obsidian.md/Linking+notes+and+files/Embed+files)!"
+                                }
+                            ]
+                        },
+                        {
+                            "author": "RevThomasWatson",
+                            "text": "Ooooo this does help a lot. Thanks"
+                        }
+                    ]
+                },
+                {
+                    "author": "MisterHelloKitty",
+                    "text": "Would love to know as well"
+                },
+                {
+                    "author": "Project_O",
+                    "text": "When I would attend lectures, I\u2019d record the lecture so I could pause and relisten to things. I got spoiled by audiobooks so the ability to rewind, pause, so I can capture better quality notes instead what I think I heard. \n\nHumans only have one internal language processing center in their brains and if it\u2019s busy trying to write what the professor said in your own words then you are no longer listening to the professor. \n\nThis has been my experience anyway. I try to use the lectures to observe the examples provided and broadly approach new topics and tie them things I already know. \n\nI then use the recordings to fine tune the notes. \n\nRepetition is part of my learning process so I don\u2019t mind re-listening the lecture when I can play it at 1.75x speed and skip the boring parts",
+                    "replies": [
+                        {
+                            "author": "RevThomasWatson",
+                            "text": "I have a friend who records all the lectures and uses coconote to create the transcript/notes/flashcards. I'd say that apart from the transcript, the output is not nearly as refined as if a human were to do it (the AI doesn't know what is/isn't important) but it's a great backup resource to look to if I felt I didn't understand something that I wrote or to listen back to the lecture itself."
+                        }
+                    ]
+                },
+                {
+                    "author": "MusicClear6082",
+                    "text": "what I do is, I create a subfolder for the lecture/class. And just create notes for each topic/idea covered in the class. \n\nthat way, that work fine on as stand-alone notes (as in, if you refer back to a specific idea, the entire note won\u2019t be bounded to that lecture that might have other topics) \n\nbut if you want to go back to everything covered in the lecture, you can just go into the folder",
+                    "replies": [
+                        {
+                            "author": "kyle_irl",
+                            "text": "I do this too, but I use tags and links along the way to supercede the folder structure. I like the organization of folders, but I need to pull notes across other classes and lectures that touch on a particular subject or theme."
+                        },
+                        {
+                            "author": "RevThomasWatson",
+                            "text": "See, I would ideally love to do this, but I don't really understand how you get there from what the professor is teaching. Sometimes the topics are not so clear cut. Also are you creating notes for topics during the lecture itself or are you creating these topical notes after the lecture in review? I feel like if I were to do this during a class, I would be too focused on making the system rather than taking the actual notes."
+                        }
+                    ]
+                },
+                {
+                    "author": "elkaki123",
+                    "text": "I take normal notes, zero linking.\n\nWhen I study I start making separate, more condensed notes. Kind of like before obsidian where I used to summarize, here is similar but I separate more stuff and make links.\n\nI always keep the original notes just in case, and those are the only files I put in folders, the rest all goes into a single one.\n\nEdit: while it might work to some extent, I don't think composing notes live is efficient or doable. They will always turn incomplete, wrong or just not the way you prefer them organized, so it's better to do that with a bit more time."
+                },
+                {
+                    "author": "Valuable_Meeting539",
+                    "text": "use smart compose plugin"
+                },
+                {
+                    "author": "JorgeGodoy",
+                    "text": "This is my approach for a long time that is now used with Obsidian. https://www.reddit.com/r/ObsidianMD/comments/1eztzyf/taking_class_notes/"
+                },
+                {
+                    "author": "perpetualwish",
+                    "text": "This changed the way I take notes completely\n\n[Taking ZETTLEKASTEN university school notes using Obsidian MD (concept mapping example and graph)](https://www.youtube.com/watch?v=MQ_VBXZU_qM&t=191s)"
+                },
+                {
+                    "author": "Colllapstar",
+                    "text": "Yess and if its like a folder for the college and it has a folder including the subjects should each subject has it's chapter 1? It doesn't let you name 2 notes with same name and i don't like how the folder is named Data Structures for example and it includes a file named data structure that includes links to the chapters its ALOT any ideass guys"
+                }
+            ]
+        },
+        {
+            "title": "\ud83d\ude80 Check out this week's Obsidian Plugins Review",
+            "author": "a20110",
+            "text": "[External Link]",
+            "subreddit": "ObsidianMD",
+            "comments": [
+                {
+                    "author": "Content_Trouble_",
+                    "text": "Is there any value add to meaningless AI text paragraphs at all? \n\nExample:\n\nThe first one gives a good summary:\n\n>The Force Read Mode plugin for Obsidian ensures that markdown files within specified folders are always opened in read (preview) mode, preventing accidental edits and enforcing a read-only experience in designated directories.\n\n(gonna ignore the obvious AI hallucination of calling the read mode preview mode)\n\nBut the second paragraph feels like a first year college student padding their word count because they know nothing about the subject:\n\n>The Force Read Mode plugin is beneficial for users who wish to safeguard certain notes from unintended modifications by enforcing a read-only state. Its straightforward configuration and seamless integration make it a practical addition for maintaining the integrity of critical documents.\n\nAnd every post is full of these meaningless sentences, like:\n\n>The Latex Exporter plugin is a valuable tool for users who wish to leverage Obsidian for writing and exporting LaTeX documents\n\nDon't get me wrong, I enjoy these posts and find them valuable, but seeing these AI slop paragraphs makes me distrust the reliability and correctness of *all* info in these posts.",
+                    "replies": [
+                        {
+                            "author": "duck__yeah",
+                            "text": "Probably would be better to lower the cadence of posts so they can review things and write the review themselves."
+                        }
+                    ]
+                },
+                {
+                    "author": "Acceptable_Scar9267",
+                    "text": "Thanks! Can\u2019t wait for the next one\u00a0"
+                }
+            ]
+        },
+        {
+            "title": "I am searching for a plugin or function that suggests intelligent links between notes in Obsidian.",
+            "author": "agent007653",
+            "text": "Specifically, I am looking for a plugin that scans newly added notes for terms or phrases that can be linked to existing notes in my vault. It should then ask for confirmation to create these links.\nFor example, if I have a note about Sigmund Freud (e.g., his biography or a summary of his Wikipedia page) and I import two newspaper articles discussing the history of psychology, where Sigmund Freud is mentioned, the plugin should detect this. It should suggest linking the term\n\"Sigmund Freud\" in the articles to my existing note about him.\n\nThis way, when I click on \"Sigmund Freud\" in the text, I am redirected to my detailed note about him\u2014similar to how links work in Wikipedia. The goal is to seamlessly connect related content within my vault for better organization and navigation.",
+            "subreddit": "ObsidianMD",
+            "comments": [
+                {
+                    "author": "jbarr107",
+                    "text": "The \"Virtual Linker / Glossary\" community plugin auto-creates Links based on note titles.\n\nFor example, if you have a note titled \"Sigmund Freud\", any time you use the phrase \"Sigmund Freud\" in another note, it will appear as a link. It also takes into account the note property \"Alias\" so if I have a note titled \"Maps of Content\" and apply an Alias of \"MoC\" to that note, any other note that includes the phrase \"Maps of Content\" or \"MoC\", those will render those as links.\n\n* Note that these are \"virtual\" links recognized only by the plugin, so these do NOT reflect in the Graph View.\n* Note that there is a right-click option on a virtual link to turn it into a \"real\" link.\n* Note that this is an automatic function. It does not prompt you to create these virtual links. Since they are not \"real\" links, the notes are not altered."
+                },
+                {
+                    "author": "Jukombee",
+                    "text": "Using note linker plugin it suggests to turn every word or sentence to a link to a page with the same name"
+                },
+                {
+                    "author": "mirrorscope",
+                    "text": "The core product can check for unlinked mentions of notes. So if you have a note \"Freud\" you can check for unlinked mentions of that string and create these links.",
+                    "replies": [
+                        {
+                            "author": "agent007653",
+                            "text": "How can I do that, what do you mean with core product ?",
+                            "replies": [
+                                {
+                                    "author": "JorgeGodoy",
+                                    "text": "Without community plugins = core. \n\nYou can enable the backlinks core plugin. And when opening the Freud note, you'll check unlinked mentions."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "TheOwlHypothesis",
+                    "text": "[https://github.com/brianpetro/obsidian-smart-connections](https://github.com/brianpetro/obsidian-smart-connections)\n\nhere you go. Available as a plugin."
+                },
+                {
+                    "author": "hobo_fapstronaut",
+                    "text": "Graph metrics plugin has measures that do this. Some metrics are based on word similarity so it suggests grouping notes based on the words they use which may help you find linkages.\n\nThe other metrics rely on the network structure of your notes and honestly I find them more informative than the ones based on word similarity. There are a lot of metrics but the gist is if you have a note that has a lot of similar links to another note, but it doesn't actually link directly to it, it can suggest that the two should be connected based on your structure. \n\nIt also has another metric that is particularly good that sees what notes are often closely co-present like if they're mentioned in the same sentence, same paragraph or same note and how often and then scores that potential link. So if two notes are often mentioned in the same paragraph they will be considered a stronger candidate for a link than ones that might be mentioned in the same note but on different paragraphs."
+                }
+            ]
+        },
+        {
+            "title": "A Simple and Natural Note Taking System",
+            "author": "Active-Teach6311",
+            "text": "Actually, there is no system. Just want to share this. It's of course a YMMV thing.\n\n\u00a01. Constantly remind yourself the clear reasons why you need to keep notes.\n\n\u00a0This way you will not be distracted by trivial stuff. When I started, I needed to solve two pressing issues:\n\n\u00a0(1) There are pieces of information that if I don't jot down and have a\u00a0 centralized and permanent place for them, I will forget and can't locate them when I need them.\n\n\u00a0\u00a0(2) I have ideas that I would like to be able to come back to at a later date.\n\n\u00a02. Start simple and let your note structure grow naturally.\n\n\u00a0When I decided to start a note system, I didn't make a system. I didn't lay out all the folder structure. There was no Johnny Decimal, nor PARA, and Obsidian didn't exist.\n\n\u00a0I just started to write the first note, and put it in an appropriate folder. If it's a recipe I see on the internet, I save it in the \"recipe\" folder. If it's a piece of musing about music, I put it in the \"music\" folder.\n\n\u00a0There were no other folders. Over time, your folders will grow organically to cover more or less all aspects of your life. But there is no need to have a grand design. At first I used a program with only folders. Then Evernote appeared and I replicated the structure with nested tags. Then, other apps.\n\n\u00a03. There are only 2 main requirements for my note system:\n\n\u00a0(1) When I need to retrieve a piece of information, I need to be able to find it effortlessly. I achieve this by navigating using folders, tags, or do a search. As long as the note is in the system, these three methods never fail.\n\n(2) I need to be able to review all my notes when I choose to, so nothing falls through cracks. This I can achieve by browsing my notes by folder, or by tag.\n\nReally, what more can you ask from a note system? My notes are not my \"second brain.\" I only have one brain, which does the thinking. All ideas come from that brain. My notes are aids to defeat oblivion, but they don't think for me.",
+            "subreddit": "ObsidianMD",
+            "comments": [
+                {
+                    "author": "merlinuwe",
+                    "text": "So it is."
+                }
+            ]
+        }
+    ]
+}

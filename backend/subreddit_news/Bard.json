@@ -1,0 +1,548 @@
+{
+    "items": [
+        {
+            "title": "Gemini 2.0 Flash Thinking 01-21 has been AMAZING!",
+            "author": "TriumphantConch",
+            "text": "Hi guys, I don\u2019t know about others but this model specifically has been AMAZING and absolutely helpful for helping me optimizing my business (helping crafting an ad, a branding message, etc)\n\nAny of you have a good use case? Please do share!",
+            "subreddit": "Bard",
+            "comments": [
+                {
+                    "author": "oneoneeleven",
+                    "text": "I co-sign this 100%.\n\nIt\u2019s got a great \u2018personality\u2019 too. Almost Claude-like but much more thorough",
+                    "replies": [
+                        {
+                            "author": "TriumphantConch",
+                            "text": "I got one that for whatever reason likes to scream at me and uses All Caps in the replies lmao"
+                        },
+                        {
+                            "author": "Ak734b",
+                            "text": "How did you do it? Claude like personality?"
+                        },
+                        {
+                            "author": "CCCrescent",
+                            "text": "1206 and 0121 are like two sides of the same coin"
+                        }
+                    ]
+                },
+                {
+                    "author": "iTsPhillgood",
+                    "text": "When is it coming google advance???"
+                },
+                {
+                    "author": "NoelART",
+                    "text": "what is the difference between this one and 1206? (I mainly use 1206)"
+                },
+                {
+                    "author": "VitruvianVan",
+                    "text": "I\u2019ve consistently worked with the class 4 and above LLMs since March 2023 and this one may presently be the best, especially considering its 1MM token context window.  IMHO, it is equivalent to the newest version of Sonnet 3.5 (which I instruct to think through problems step by step) and much slower, but with a 5X context window.  Thus, it has the edge.  It is maybe 10% better than Gemini Experimental 1206."
+                },
+                {
+                    "author": "Zestyclose_Profit475",
+                    "text": "i have a question. Does it even realize it has its own thought process?",
+                    "replies": [
+                        {
+                            "author": "robertpiosik",
+                            "text": "\"thought process\" is an auto-generated context to your prompt. It kinda extends it. It helps looking at the problem from multiple perspectives as we often message models very sparingly."
+                        },
+                        {
+                            "author": "dtails",
+                            "text": "What is realize? What is thought process beyond the symbolic words to describe what is artificially segregated. Do humans realize how many brain cells are contributing to this very thought? It\u2019s absolutely impossible to arrive at an answer."
+                        },
+                        {
+                            "author": "Zeroboi1",
+                            "text": "i tried \"testing\" the older model to see if it's aware of the thought window or not and it was completely oblivious, I don't know if things changed with the new model tho"
+                        }
+                    ]
+                },
+                {
+                    "author": "Forward-Fishing4671",
+                    "text": "It's good, and I don't want to take away from that. It's great it worked for your use case. As a free thing in AIStudio it is better value than anything my ChatGPT subscription was giving me. However it's still a flash model and that can become painfully apparent at times. If you focus it in on one thing at a time it usually handles it as well as or even better than 1206, but it can quickly get confused.\n\nI've had several instances where the thoughts have come up with questions for me as the user to seek additional information, but in the output the model has decided to hallucinate and answer those questions itself even though it couldn't possibly know the answers. Earlier I spent so long focusing it (run prompt, get crap, edit and rerun prompt to try and avoid the crap, repeat ad nauseum) I probably could have just sorted it all myself. It also has an annoying tendency to assume you want more from it than you do and not just sticking to the instructions. No doubt some of my issues are down to my own prompting, but I think better is still possible.",
+                    "replies": [
+                        {
+                            "author": "evia89",
+                            "text": "aistudio recently reduced limits for a lot of users so you need both",
+                            "replies": [
+                                {
+                                    "author": "Forward-Fishing4671",
+                                    "text": "Yeah, I've just been finding out about the weird rate limiting on 1206 in the last few minutes! It would be helpful if they actually said what the limit was. As I say I don't dislike 2.0 flash (with or without thinking), it just requires a lot of handholding to get good output."
+                                },
+                                {
+                                    "author": "ThrowAwayEvryDy",
+                                    "text": "Do you know if it was just free accounts or all users?"
+                                },
+                                {
+                                    "author": "layaute",
+                                    "text": "what do you mean"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "djm07231",
+                    "text": "I am not sure if it has that much of a use case compared to R1, for me at least.\n\nMy work is code heavy and R1 does better with them and for faster turnaround time I can use Gemini-exp-1206 which has better coding performance according to Livebench."
+                },
+                {
+                    "author": "Acceptable-Debt-294",
+                    "text": "This model is still experimental, indeed after a few tens of thousands of contexts sometimes, the thought process is lost and converted into a direct response, especially if the input is long. :("
+                },
+                {
+                    "author": "KnowgodsloveAI",
+                    "text": "Gemini thinking has been very underwhelming and programming for me it gets dependencies wrong can't set up a proper Docker environment with Cuda I switched to R1 and it handles it no problem"
+                },
+                {
+                    "author": "MarceloTT",
+                    "text": "For code, I still prefer Claude and o1."
+                },
+                {
+                    "author": "3-4pm",
+                    "text": "Much better than deep seek or openai IMHO."
+                }
+            ]
+        },
+        {
+            "title": "Why is the default temperature of the new Gemini model set to 0.7?",
+            "author": "OttoKretschmer",
+            "text": "It is 1.0 for 1206.  Why the change?",
+            "subreddit": "Bard",
+            "comments": [
+                {
+                    "author": "ArthurParkerhouse",
+                    "text": "Lower Temp = More Deterministic = It will follow Instructions (and therefore, the \"thoughts\" produced will be followed) more closely. \n\nHere's a decent generalized table for Temperature an Top_P settings. \n\n___\n\nAs a general guideline you can kind of think of Temperature and TopP settings like this:\n\n## Temperature Table (Guidelines)\n\n| USE CASE | TEMPERATURE | RATIONALE |\n| --- | --- | --- |\n| **Coding / Math / Strictest System Instruction Following** | **0.0 - 0.1** | Maximize determinism and accuracy. Stick rigidly to instructions. 0.1 allows for *very slight* variation if absolutely necessary for testing or edge cases, but 0.0 is generally best. |\n| **Strict System Instruction Following for Detail-Oriented Analysis (Fiction, Data, etc.)** | **0.2 - 0.5** | Maintain strong instruction following while allowing for a touch of natural variation. Good for complex analysis where you want consistent, but not robotic, outputs. Lower end for more structured data, higher end for nuanced textual analysis. |\n| **General Conversation (Focused)** | **0.5 - 0.7** | Balances coherence and natural conversation flow. Keeps the conversation relatively focused on the topic while allowing for some natural turns and variations in phrasing. |\n| **Translation (Accurate & Professional)** | **0.3 - 0.6** | Prioritizes accuracy and faithfulness to the original text. Lower end for highly technical or legal translation, higher end for more general text where some stylistic naturalness is acceptable. |\n| **General Conversation (Casual)** | **0.7 - 0.9** | More relaxed and varied conversation. Allows for more spontaneity and less predictable responses, making it feel more natural and less robotic. |\n| **Creative Narrative Writing (Coherent Story)** | **0.8 - 1.2** | Encourages creativity and imaginative language while still maintaining a relatively coherent narrative structure. The lower end for tighter plots, higher end for more exploratory writing. |\n| **Creative Poetry & Figurative Language** | **1.2 - 1.5** | Emphasizes creative word choice, metaphor, and unexpected connections. Allows for more abstract and less literal interpretations. |\n| **Brainstorming & Idea Generation** | **1.0 - 1.5** | Promotes diverse and less conventional ideas. Encourages the model to explore a wider range of possibilities. |\n| **Creative Wildcard / Unpredictable Exploration** | **1.5 - 2.0 (and potentially higher, depending on the model)** | Maximum randomness and exploration. Expect highly varied, surprising, and potentially nonsensical outputs. Use with caution and for specific experimental purposes. |\n\n---\n\n## Top-P (Nucleus Sampling) Settings Table\n\n**Understanding Top-P (Nucleus Sampling):**\n\nTop-P, also known as nucleus sampling, is another parameter that controls the randomness and predictability of language model outputs. Instead of directly controlling the probability distribution like temperature, Top-P focuses on the *cumulative probability* of the next possible tokens.\n\n**How Top-P Works:**\n\n1. **Probability Ranking:** The model calculates the probabilities of all possible next tokens.\n2. **Cumulative Probability Sum:** It sorts these tokens by probability in descending order and starts adding up their probabilities.\n3. **P-Value Threshold:** It continues adding probabilities until the cumulative sum reaches a threshold value, \"P\" (e.g., P = 0.9).\n4. **Nucleus Selection:** The set of tokens whose cumulative probability reaches \"P\" forms the \"nucleus.\"\n5. **Sampling within the Nucleus:** The model then samples the next token *only* from within this nucleus.\n\n**Effect of Top-P:**\n\n- **Higher Top-P (closer to 1.0):** More tokens are included in the nucleus, leading to more diverse and potentially more creative outputs, similar to higher temperature, but often with better coherence.\n- **Lower Top-P (closer to 0.0):** Fewer tokens are in the nucleus, restricting the choices to the most probable tokens. This leads to more focused, deterministic, and predictable outputs, similar to lower temperature, but can sometimes be overly repetitive.\n- **Dynamic Vocabulary:** Top-P dynamically adjusts the \"vocabulary\" of possible next tokens based on the probability distribution at each step, making it more adaptive than temperature in some cases.\n\n**Top-P Use Case Guidelines:**\n\n| USE CASE | TOP-P VALUE (Guideline) | RATIONALE |\n| --- | --- | --- |\n| **Highly Deterministic Output (Accuracy Focused)** | **0.01 - 0.3** | Extremely restricts the token choices to the most probable options. Useful when you need very precise and predictable outputs, almost like forcing the model to choose from a very small, high-probability vocabulary. Can be very repetitive if used alone without temperature. |\n| **Deterministic but with some Natural Variation** | **0.3 - 0.6** | Still favors probable tokens, but allows for a slightly wider range of choices, introducing some natural variation while maintaining coherence and focus. Good for tasks where you want consistent style but not robotic outputs. |\n| **Balanced Coherence and Creativity** | **0.7 - 0.9** | A good general-purpose range for many creative tasks. Allows the model to explore a reasonable range of possibilities while still prioritizing coherent and relevant outputs. Often considered a sweet spot for conversation and creative writing. |\n| **Favoring Creativity and Exploration** | **0.9 - 0.95** | Expands the nucleus to include a wider range of less probable but still potentially relevant tokens. Encourages more diverse and surprising outputs, leaning towards more creative and less predictable text. |\n| **Very High Creativity & Exploration (Approaching Random)** | **0.95 - 1.0 (or effectively disabling Top-P)** | Includes almost all possible tokens in the nucleus (or all if set to 1.0, essentially disabling Top-P's filtering effect). This makes Top-P have minimal impact, and the output becomes more driven by the underlying probabilities of the model, or by temperature if used in combination. Can lead to less coherent outputs if used alone. |\n\n---\n\n## Temperature AND Top-P Settings Table for Different Scenarios\n\n| SCENARIO | TEMPERATURE | TOP-P | RATIONALE |\n| --- | --- | --- | --- |\n| **Ultra-Deterministic Coding/Math/Strict Instructions** | **0.0** | **0.1 - 0.3** | Temperature 0.0 enforces maximum determinism. Top-P further refines this by restricting choices to the very highest probability tokens, ensuring extremely predictable and accurate outputs. |\n| **Consistent Data Analysis/Cleaning** | **0.1 - 0.2** | **0.5 - 0.7** | Low temperature maintains consistency. Moderate Top-P allows for some natural variation in phrasing while still prioritizing data integrity and accuracy. |\n| **Formal & Accurate Translation** | **0.3 - 0.5** | **0.6 - 0.8** | Low-mid temperature for accuracy. Mid-range Top-P ensures coherence and natural phrasing in the target language without sacrificing fidelity to the source. |\n| **Technical Documentation Generation** | **0.4 - 0.6** | **0.7 - 0.8** | Slightly higher temperature and Top-P than translation to allow for clearer and more varied explanations, while still maintaining accuracy and technical correctness. |\n| **General Conversation (Focused & On-Topic)** | **0.6 - 0.8** | **0.8 - 0.9** | Moderate temperature and high Top-P. Temperature provides naturalness, Top-P helps maintain topic focus and coherence in conversation. |\n| **Creative Story Writing (Coherent Narrative)** | **0.75 - 1.0** | **0.80 - 0.95** | Higher temperature for creativity and imaginative language. High Top-P ensures the story remains reasonably coherent and doesn't wander too far off track. |\n| **Brainstorming & Idea Generation (Diverse Ideas)** | **1.2 - 1.5** | **0.9 - 0.95** | High temperature for maximum idea diversity. Very high Top-P still provides *some* level of coherence to the generated ideas, preventing them from becoming completely random. |\n| **Poetry & Lyrical Writing (Creative & Evocative)** | **1.3 - 1.6** | **0.9 - 1.0** | High temperature for creative and unexpected word choices. Top-P can be set very high or even effectively disabled (1.0) to allow for maximum creative freedom, or slightly lower to maintain a loose thread of coherence. |\n| **\"Wildcard\" Exploration / Maximum Randomness** | **1.8 - 2.0+** | **0.95 - 1.0** | Very high temperature for maximum randomness. Top-P set very high or disabled to minimize its influence and allow temperature to dominate, leading to highly unpredictable and experimental outputs. |",
+                    "replies": [
+                        {
+                            "author": "Guiltlessraptor",
+                            "text": "Wow, that's helpful. Thanks for this write-up."
+                        },
+                        {
+                            "author": "nottoolatte",
+                            "text": "Very helpful! was that written with AI?",
+                            "replies": [
+                                {
+                                    "author": "ArthurParkerhouse",
+                                    "text": "Thanks! I made the first table myself, then used 1206 to iterate, refine and create the other two based on the format of the first."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Timely-Group5649",
+                    "text": "That's the setting I use for writing. I've found .7-.75 best for fictional creative writing. \n\nI use .55- .6 for non-fiction.\n\n1.0 can get wild and often just screams AI.",
+                    "replies": [
+                        {
+                            "author": "OttoKretschmer",
+                            "text": "Ok then. Thanks for sharing your experiences ;D"
+                        },
+                        {
+                            "author": "HelpfulHand3",
+                            "text": "Are you sure this is for the Gemini models? They go to 2.0 and I find values over 1.0 still quite coherent.",
+                            "replies": [
+                                {
+                                    "author": "Timely-Group5649",
+                                    "text": "I'm only relating to my experiences with creative writing. It avoids dramatic wording and flows well for me.\n\n1.0 leans into hallucinating and overdoing it, in my experience."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "HelpfulHand3",
+                    "text": "The Flash 2.0 Thinking model is 0.7 for me too in AI Studio. I am guessing because it's a reasoning model they want a more deterministic default value?\n\nhttps://preview.redd.it/1ij4ypfawyee1.png?width=239&format=png&auto=webp&s=8b53d2bfba076d3c265cd48fa15107baf36a5a56\n\n  \nBut regular 2.0 is still 1.0."
+                },
+                {
+                    "author": "m98789",
+                    "text": "Heuristic determined experientially"
+                }
+            ]
+        },
+        {
+            "title": "Getting rate limited in google ai studio",
+            "author": "Intrepid-Walk1227",
+            "text": "https://preview.redd.it/t1xsvd1bzvee1.png?width=1587&format=png&auto=webp&s=e56fd0f4926e302a19ed3239e6a347ddfacb8774\n\nis anyone facing this issue i'm able to make only 1 request in like 2-3 mins on gemini experimental 1206. ",
+            "subreddit": "Bard",
+            "comments": [
+                {
+                    "author": "Superfishintights",
+                    "text": "Probably due to all the edgelords getting flash thinking to count to 1 million"
+                },
+                {
+                    "author": "AncientGreekHistory",
+                    "text": "Must be a moving number, because I've never hit a rate limit on Google. Maybe they were topping out."
+                },
+                {
+                    "author": "Fragrant-Energy2416",
+                    "text": "I'm in the same situation, and I've seen others go through the same thing, and the restrictions started a while ago."
+                },
+                {
+                    "author": "Cautious_Concert4411",
+                    "text": "I'm facing the same issue. When did they do this?"
+                },
+                {
+                    "author": "ericadelamer",
+                    "text": "Same issue. Glad to know it's not just me."
+                },
+                {
+                    "author": "ThreeWaySLI1080TIplz",
+                    "text": "Same here. Thought Gemini just hated me or something."
+                },
+                {
+                    "author": "MapleMAD",
+                    "text": "Seems like they are trying to push casual users towards Flash 2.0 Thinking."
+                },
+                {
+                    "author": "ripviserion",
+                    "text": "yes, I am having the same. Let's hope they are preparing for a new model"
+                },
+                {
+                    "author": "LSXPRIME",
+                    "text": "For first time yes, just tried Gemma2-9B for once then got rate limited, switched to 1206 and used once then got rate limited too"
+                },
+                {
+                    "author": "LawfulLeah",
+                    "text": "NOOOOOO\n\ni never had a rate limit in 1206\n\nthe apocalypse has arrived"
+                },
+                {
+                    "author": "Informal_Cobbler_954",
+                    "text": "I am using 10 or 15 rpm on the api, for 1206.\u00a0",
+                    "replies": [
+                        {
+                            "author": "Virtamancer",
+                            "text": "Someone said they are limited to 50/day, are you? I thought for sure I read that the rate (when things are working) is something bonkers like 50/min or 500/min."
+                        }
+                    ]
+                },
+                {
+                    "author": "Amazing-Tea8292",
+                    "text": "Same issue Google has started showing its work \ud83d\ude04\ud83d\ude01\ud83d\ude06"
+                },
+                {
+                    "author": "hyxon4",
+                    "text": "Updated model should be arriving soon.",
+                    "replies": [
+                        {
+                            "author": "Careless_Wave4118",
+                            "text": "Today I\u2019d assume?"
+                        }
+                    ]
+                },
+                {
+                    "author": "Ckdk619",
+                    "text": "Same issue"
+                },
+                {
+                    "author": "JimSlimBimbo",
+                    "text": "same issue"
+                },
+                {
+                    "author": "Endonium",
+                    "text": "1206 has a rate limit of 100 requests per day in the free tier: https://www.reddit.com/r/Bard/comments/1hzfk82/the_1206_model_is_likely_gemini_20_pro_its_free/",
+                    "replies": [
+                        {
+                            "author": "Urzuck",
+                            "text": "It's currently bugged, don't know if they are realising a new version, you actually hit the rate limit after the first message."
+                        }
+                    ]
+                },
+                {
+                    "author": "MetalGearSolid108",
+                    "text": "I haven't used 1206 in a couple days. Tried today and got Rate Limited. Something is going on."
+                },
+                {
+                    "author": "yy_taiji",
+                    "text": "YES, I've posted about it some time ago and thought I was crazy, good to know it's not happening only to me"
+                },
+                {
+                    "author": "MMORPGnews",
+                    "text": "It's over. Any other free api services?"
+                },
+                {
+                    "author": "Icy-Seaworthiness596",
+                    "text": "It's good now there is deepseek which has gone ahead, bye bye ai Studio. Just having millions of tokens is not everything.",
+                    "replies": [
+                        {
+                            "author": "Thomas-Lore",
+                            "text": "It's best to just use all of them - switching depending on what you need at the moment or what limits you hit - instead of relaying on just one."
+                        },
+                        {
+                            "author": "Informal_Cobbler_954",
+                            "text": "every one says deep seek is awesome, but when using Arabic it looks like small model like 2B."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "This was shot on Veo 2",
+            "author": "Ak734b",
+            "text": "[External Link]",
+            "subreddit": "Bard",
+            "comments": [
+                {
+                    "author": "Short_Page5421",
+                    "text": "For youtube video, original creator link\n\n[https://youtu.be/riExf1Hv30M?si=gEx0aqMxHL4Lgv1l](https://youtu.be/riExf1Hv30M?si=gEx0aqMxHL4Lgv1l)"
+                },
+                {
+                    "author": "Sufi_2425",
+                    "text": "The first time an AI movie is genuinely impressive and feels alive!\n\nThe author put it very well in the description box, saying they were trying to avoid that cold and clinical feel of many AI movies that we've seen.\n\nThat's how you demo a tool. I genuinely feel compelled to give Veo 2 a go myself now."
+                },
+                {
+                    "author": "Temp3ror",
+                    "text": "Totally awesome! No difference whatsoever in quality from pre-AI techniques."
+                },
+                {
+                    "author": "2309r_23oir",
+                    "text": "OMG"
+                },
+                {
+                    "author": "Elephant789",
+                    "text": "Could you link to the video instead of X?",
+                    "replies": [
+                        {
+                            "author": "Ak734b",
+                            "text": "I think it's only posted on X for now so I can't do that unfortunately! \n\nI check I didn't find it",
+                            "replies": [
+                                {
+                                    "author": "Elephant789",
+                                    "text": "Alrighty, thanks for checking."
+                                }
+                            ]
+                        },
+                        {
+                            "author": "Short_Page5421",
+                            "text": "[https://youtu.be/riExf1Hv30M?si=gEx0aqMxHL4Lgv1l](https://youtu.be/riExf1Hv30M?si=gEx0aqMxHL4Lgv1l)"
+                        },
+                        {
+                            "author": "Electronic-Air5728",
+                            "text": "(\u30fc_\u30fc;)"
+                        }
+                    ]
+                },
+                {
+                    "author": "Informal_Cobbler_954",
+                    "text": "Wow !!!!\n\n\nQuestion, are the sounds also generated?",
+                    "replies": [
+                        {
+                            "author": "Ak734b",
+                            "text": "There's no information available regarding that so I can't tell.\n\nAlthough it could be both! ***Cz sound/music with AI is the same impressive like other mediums (IMO)***"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "What's with the new ai studio telling me \"You've reached your rate limit. Please try again later.\" every 10 seconds making it unusable especially when using 1206",
+            "author": "Mohammad_King_Gh",
+            "text": "I'm experiencing extreme rate limiting issues on Google AI Studio. After sending just one or two messages (within about 60 seconds), I'm immediately hit with a \"You've reached your rate limit\" message. This happens consistently across all models, including the latest (e.g., Gemini 1.5 Flash) and older ones.\n\nThis issue is very recent, within the last 2-3 days. It wasn't like this before. I can sometimes get a response after retrying 2-3 times, but it's very inconsistent. Even after waiting a few minutes and trying again, I'm still rate-limited.\n\nHas anyone else encountered this? Is this a known bug, or did Google recently change the rate limits for Google AI Studio? Any information or advice would be greatly appreciated. Thanks!\n\n**Edit:**\u00a0Google AI Studio\u00a0just\u00a0started strictly enforcing rate limits. It's supposedly 2 requests per minute (RPM) based on what i remember reading from some source, but it's way worse. I'm hitting the limit even after waiting 3-4 minutes between tries! This makes it totally unusable. The main reason I use this is the 1206 model, it's the best and has fewer errors. Now, I can't even use\u00a0that. I get that limits are needed, but this is overkill. I'm thinking of switching to another platform if it stays like this. It feels like a bug, or a glitch with the limits since it's so strict.",
+            "subreddit": "Bard",
+            "comments": [
+                {
+                    "author": "Think-Boysenberry-47",
+                    "text": "I'm a paying Gemini user and I get the same message in the app very oten during the day"
+                },
+                {
+                    "author": "Various_Ad408",
+                    "text": "thats so annoying its not working at all, didnt even use ai studio this much today, i hope thats not intentionnal or they're killing google ai studio for no reason :/"
+                },
+                {
+                    "author": "zigaliro",
+                    "text": "Same for me. Seems like they changed something about the rate limits.",
+                    "replies": [
+                        {
+                            "author": "Dinosaurrxd",
+                            "text": "Actually started enforcing them I believe",
+                            "replies": [
+                                {
+                                    "author": "Ckdk619",
+                                    "text": "I think it's a bug considering that whenever I encounter the rate limit message, it works right away when I change my system prompt by a letter or by 1 spacing."
+                                },
+                                {
+                                    "author": "ThrowAwayEvryDy",
+                                    "text": "I'm not even reaching 2 million tokens, so I don't see why i'm hitting a limit"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Did the limits on ai studio change?",
+            "author": "Virtamancer",
+            "text": "I've only done like less than 5 this whole work day but it keeps saying I've reached my limit. Small too, under 5k tokens.\n\nUsually I can do a couple per minute it seems, or maybe 1 per minute or something\u2014I don't know what the rate normally is because the only times I've triggered it in the past I assumed it was a mistake and refreshing the page caused it to work again.",
+            "subreddit": "Bard",
+            "comments": [
+                {
+                    "author": "Aaco0638",
+                    "text": "Either internal issues on the backend or preparing to launch a new model. \n\nI have also been experiencing the same issue even though it was hours since i last prompted."
+                },
+                {
+                    "author": "Urzuck",
+                    "text": "There seems to be an error with the 1206 model, the other all works for me. It's either bugged or they are realising a new model soon, it's not a rate limit limitation since you hit it after the first message or the first two.",
+                    "replies": [
+                        {
+                            "author": "Virtamancer",
+                            "text": "Yeah, it was 1206 for me.\n\nCool if we're getting a new model. What a time to be alive."
+                        }
+                    ]
+                },
+                {
+                    "author": "alexx_kidd",
+                    "text": "Yes, but I don't think it's intentional. If I repeat the prompt again, it lets me proceed"
+                },
+                {
+                    "author": "JimJamurToe",
+                    "text": "Just happens on 1206 for me, others don't give me this error"
+                },
+                {
+                    "author": "Any-Blacksmith-2054",
+                    "text": "For me, 1206 stop working after 50 reqs/per day. Then I have to wait 24h or so"
+                }
+            ]
+        },
+        {
+            "title": "Exp-0121 vs Deepseek R1",
+            "author": "Neither-Phone-7264",
+            "text": "Title. What are their pros and cons? What do they do better at, and worse at compared to each other? And which one do you prefer?",
+            "subreddit": "Bard",
+            "comments": [
+                {
+                    "author": "tdev001",
+                    "text": "One is a flash (small) model, the other is not."
+                },
+                {
+                    "author": "Nid_All",
+                    "text": "R1 is comparable with O1 let\u2019s wait for the 2.0 Pro thinking and see",
+                    "replies": [
+                        {
+                            "author": "Neither-Phone-7264",
+                            "text": "Isn't it topping the lm leaderboard?"
+                        }
+                    ]
+                },
+                {
+                    "author": "holy_ace",
+                    "text": "ive been loving the \"Thinking\" process behind Flash2.0Think especially for high-level reasoning and logic outlines better than r1"
+                },
+                {
+                    "author": "Glory_Hawley",
+                    "text": "From my experience R1 is very good for creative writing, it adds authentic details and frankly I am impressed with its ability to convey the character and writing dialogue",
+                    "replies": [
+                        {
+                            "author": "Bernafterpostinggg",
+                            "text": "The latest 2.0 Thinking is incredible for creative writing.",
+                            "replies": [
+                                {
+                                    "author": "Glory_Hawley",
+                                    "text": "Cool. I haven't really tested it for myself, but I'll give it a try soon!"
+                                },
+                                {
+                                    "author": "Slow_Gas_3162",
+                                    "text": "Hi, may you help me? In my case, it portrays characters as very one dimensional. I do not have this problem with 2.0 flash experimental -it handles complex character structure and character development very well- but for some reason, thinking either makes the character ruthless, or very soft. I think it is because it needs specific treatment when it comes to system prompt and settings rather than just copy-pasting the settings from 2.0 flash. Can you share your settings? And also how do you prepare the character card? I normally use list-like structure with each item covered in square brackets, but it seems to not work for the thinking model."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "author": "Ak734b",
+                    "text": "Flash has 1M context which is really useful apso 65k output ( altho it's kind of broken and doesn't really work - but they will fix it soon! Probably )"
+                },
+                {
+                    "author": "Sure_Guidance_888",
+                    "text": "i hope millions tpu fleet will soon happen to train"
+                },
+                {
+                    "author": "dylanneve1",
+                    "text": "r1 is better than Flash thinking across the board\n\nlivebench.org is a good reference, for me lmarena doesn't reflect model performance at all. I hope Google will respond with something decent soon, o3-mini is coming presumably next week and they are going to get their ass handed to them. We need 2.0 Pro / 2.0 Pro Thinking ASAP",
+                    "replies": [
+                        {
+                            "author": "BatmanvSuperman3",
+                            "text": "Not only is o3 mini coming next week, but it\u2019s coming to the FREE tier as well (obviously with reduced rates).\n\nSo Logan and Google need to release the Kraken."
+                        }
+                    ]
+                },
+                {
+                    "author": "Low-Champion-4194",
+                    "text": "I'm really liking Deepseek R1, using it majorly since it's release."
+                },
+                {
+                    "author": "FOFRumbleOne",
+                    "text": "Last month it was Gemini time with their 2.0, android XR, vision & realtime but this month it's every other player taking the scene except Gemini, Ironically Gemini comeback is updated flash (experimental) model. Anyhow R1 is solid compared to any other model not just (experimental) 0121"
+                },
+                {
+                    "author": "Distinct-Wallaby-667",
+                    "text": "The Gemini Flash is free",
+                    "replies": [
+                        {
+                            "author": "Neither-Phone-7264",
+                            "text": "They're both free.",
+                            "replies": [
+                                {
+                                    "author": "Distinct-Wallaby-667",
+                                    "text": "Even the Api?"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "AI-Powered Apps Hit $1 Billion In Sales With ChatGPT And Gemini At The Helm In 2024",
+            "author": "EthanWilliams_TG",
+            "text": "[External Link]",
+            "subreddit": "Bard",
+            "comments": []
+        },
+        {
+            "title": "Gemini in Chrome",
+            "author": "Special_Command7893",
+            "text": "My idea for Google Chrome is to double-duty Google Lens on Chrome as Gemini. It would function as a desktop equivalent to \"ask about this screen\" on mobile and allow you to ask even more detailed questions about anything online (I find Google Lens questions restricted) and use Gemini's extensions (hopefully! I mean, without the extensions, it's basically the same thing).\n\nAn example use for this: you are looking at a bike tour and click on Google Lens in Chrome, switch the slider to \"Gemini,\" and highlight the paragraph describing the locations the tour will visit. Prompt anything about it, and put it on a map, etc., easily.\n\nTo be clear, I'm not suggesting they replace Google Lens in Chrome, just add Gemini functionality. Since Gemini doesn't have a sidebar function unlike other browsers, this would give it that functionality in a truly beneficial way while highlighting the multimodal functionality of Gemini.",
+            "subreddit": "Bard",
+            "comments": []
+        },
+        {
+            "title": "Veo2 is way better. Is this game changer for Google ?",
+            "author": "Less-Shirt5163",
+            "text": "[External Link]",
+            "subreddit": "Bard",
+            "comments": [
+                {
+                    "author": "Junior_Command_9377",
+                    "text": "Definitely it is game changer no doubt like everything it generates it's super good no morphing and really good"
+                }
+            ]
+        },
+        {
+            "title": "Fast Folders - The Ultimate Google Gemini Chat Organizer",
+            "author": "BigTempsy",
+            "text": "Morning all,\n\nFast Folders link: [https://chromewebstore.google.com/detail/fast-folders-the-ultimate/dgmakhnmibfdnkhopleclbfmfncdmfhf?hl=en&authuser=0](https://chromewebstore.google.com/detail/fast-folders-the-ultimate/dgmakhnmibfdnkhopleclbfmfncdmfhf?hl=en&authuser=0)\n\nV 1.1.0 update\n\nNew update from my chrome extension lets you rename folders in the sidebar and while inside the folder it self clicking the pencil icon. Also Import and export JSON data for backups.\n\nFor those not in the know this is a chat organization tool for Google Gemini just released this week and i'm still collecting data from users so any feedback is welcome and many more features to come.\n\n  \nmany thanks \n\nhttps://preview.redd.it/tcgt10wrixee1.jpg?width=1280&format=pjpg&auto=webp&s=e44a1ce587a3cbc48336c07a7fed3e01e184618f\n\n",
+            "subreddit": "Bard",
+            "comments": [
+                {
+                    "author": "CtrlAltDelve",
+                    "text": "This is super cool! Glad to see some extensions for the web interface. \n\nBe sure to take a look at the [Complexity addon](https://chromewebstore.google.com/detail/complexity-perplexity-ai/ffppmilmeaekegkpckebkeahjgmhggpj) for potential inspiration on what you might be able to add. I know Perplexity is totally different, but you might find a gem or two in there that you could incorporate!",
+                    "replies": [
+                        {
+                            "author": "BigTempsy",
+                            "text": "Nice thanks a lot for this recommendation I haven\u2019t seen this before. I\u2019ll take note for future updates! Cheers"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Is there a way to stop AIStudio from showing last recorded video segments in stream mode?",
+            "author": "Different-Animator56",
+            "text": "As title asks. I don't want the chat cluttered with videos of the stream every time I get a response. Is there a way to stop it from doing that?",
+            "subreddit": "Bard",
+            "comments": [
+                {
+                    "author": "CtrlAltDelve",
+                    "text": "Not at this time. \n\nReminder, AI Studio is a developer tool to test and prototype, not a consumer product (although I'd argue its a significantly better product than Gemini Advanced). It's unlikely you're going to get that kind of feature any time soon!"
+                }
+            ]
+        }
+    ]
+}
